@@ -25,9 +25,33 @@ const similarPrompts = allPrompts
 const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en";
 const pageTitle = `${prompt.title} - Free AI Prompt Template`;
 const pageDesc = `Copy and optimize the free AI prompt for: "${prompt.title}". Features tags: ${prompt.tags.join(', ')}.`;
+
+// Generate structured JSON-LD for CreativeWork
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": prompt.title,
+  "description": pageDesc,
+  "genre": prompt.category,
+  "keywords": prompt.tags.join(','),
+  "image": prompt.imageUrl ? (prompt.imageUrl.startsWith('http') ? prompt.imageUrl : new URL(prompt.imageUrl, Astro.url).href) : undefined,
+  "creator": {
+    "@type": "Organization",
+    "name": "Awesome Prompting Hacks"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Awesome Prompting Hacks",
+    "logo": {
+      "@type": "ImageObject",
+      "url": new URL("/favicon.svg", Astro.url).href
+    }
+  },
+  "text": prompt.prompt
+};
 ---
 
-<BaseLayout title={pageTitle} description={pageDesc}>
+<BaseLayout title={pageTitle} description={pageDesc} image={prompt.imageUrl} jsonLd={jsonLd}>
   <div class="back-link-row">
     <a href="/" class="back-link">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

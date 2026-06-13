@@ -5,10 +5,17 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
+  image?: string;
   jsonLd?: Record<string, any>;
 }
 
-const { title, description, jsonLd } = Astro.props;
+const { title, description, image, jsonLd } = Astro.props;
+const canonicalUrl = Astro.url.href;
+
+// Build absolute OG image path
+const ogImage = image
+  ? (image.startsWith('http') ? image : new URL(image, Astro.url).href)
+  : new URL('/og-image.png', Astro.url).href;
 ---
 
 <!DOCTYPE html>
@@ -24,11 +31,21 @@ const { title, description, jsonLd } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
     
     <!-- Open Graph tags for social display -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     
     <!-- Inline Dynamic JSON-LD structured schema block -->
     {jsonLd && (

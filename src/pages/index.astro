@@ -29,9 +29,26 @@ const popularTags = Object.entries(tagCounts)
 
 const pageTitle = "Awesome Prompting Hacks - Free Production-Grade AI Prompts";
 const pageDesc = "High-performance curated prompt templates for Midjourney, ChatGPT, Gemini, and Claude. Copy templates and optimize your workflows instantly.";
+
+// Generate structured JSON-LD for WebSite
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Awesome Prompting Hacks",
+  "url": Astro.url.origin,
+  "description": pageDesc,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${Astro.url.origin}/?search={search_term_string}`
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
 ---
 
-<BaseLayout title={pageTitle} description={pageDesc}>
+<BaseLayout title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
   <div class="hero">
     <h1>Awesome Prompting Hacks</h1>
     <p class="subtitle">Discover, copy, and refine production-grade prompt templates. Optimized for execution with the Hello Prompting optimizer console.</p>
