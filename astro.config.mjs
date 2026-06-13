@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://omnivaluation.example.com',
+  site: 'https://zion369369.github.io',
+  base: '/awesome-prompting-hacks',
   integrations: [sitemap()]
 });

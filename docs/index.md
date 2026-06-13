@@ -1,61 +1,73 @@
 # 🚀 Awesome Prompting Hacks: The Ultimate Prompt Engineering Guide
 
-A curated list of production-grade prompt templates, SaaS alternative cheat sheets, tax calculator frameworks, and AI workflows for ChatGPT, Claude, Gemini, and Grok.
+A curated list of production-grade prompt templates, visual styles, and AI workflows for Midjourney, ChatGPT, Claude, Gemini, and Grok.
 
-All templates are optimized for execution using the [Awesome Prompting Console toolkit](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+All templates are optimized for execution using the [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en).
 
 ---
 
 ## 🔧 Prompt Optimization Console Toolkit
 
-[![Awesome Prompting Console](https://img.shields.io/badge/Awesome_Prompting-Console_Toolkit-blue?style=for-the-badge)](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+[![Hello Prompting Console](https://img.shields.io/badge/Hello_Prompting-Console_Toolkit-blue?style=for-the-badge)](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en)
 
-**Awesome Prompting Console** acts as an AI prompt engineer in your browser:
-*   **Prompt Score™ Live**: Health checks on prompt clarity.
-*   **Google 4-Part Framework**: Automatic structure injection (Persona, Task, Context, Format).
-*   **One-Click Super Prompts**: Upgrading generic inputs instantly.
-
----
-
-## 📊 SaaS Evaluation & Comparison Prompts
-
-Copy-paste templates to compare enterprise software:
-
-*   [SALESFORCE-VS-HUBSPOT-FOR-REAL-ESTATE](prompts/compare-saas/compare-salesforce-vs-hubspot-for-real-estate.md)
-*   [SALESFORCE-VS-HUBSPOT-FOR-HEALTHCARE](prompts/compare-saas/compare-salesforce-vs-hubspot-for-healthcare.md)
-*   [CLICKUP-VS-JIRA-FOR-SOFTWARE-DEVELOPMENT](prompts/compare-saas/compare-clickup-vs-jira-for-software-development.md)
-*   [QUICKBOOKS-VS-XERO-FOR-E-COMMERCE](prompts/compare-saas/compare-quickbooks-vs-xero-for-e-commerce.md)
+**Hello Prompting Console** acts as an AI prompt engineer directly in your browser:
+*   **Prompt Score™ Live**: Audits and scores prompt health in real-time.
+*   **Google 4-Part Framework**: Auto-injects Persona, Task, Context, and Format templates.
+*   **One-Click Super Prompts**: Instantly upgrades generic inputs to professional prompts.
 
 ---
 
-## 💸 Tax Planning & Computation Prompts
+## 🎨 AI Prompt Templates Gallery
 
-Templates to calculate localized liabilities:
+Explore our free, production-ready prompt engineering templates:
 
-*   [REAL-ESTATE-BRACKET-35-ZIP-90210](prompts/tax-planning/calculate-real-estate-bracket-35-zip-90210.md)
-*   [CRYPTOCURRENCY-BRACKET-22-ZIP-10001](prompts/tax-planning/calculate-cryptocurrency-bracket-22-zip-10001.md)
-*   [PUBLIC-EQUITIES-BRACKET-37-ZIP-33139](prompts/tax-planning/calculate-public-equities-bracket-37-zip-33139.md)
+*   [1960s Diner with Neon](prompts/1960s-diner-with-neon.md) - *Tags: 1960s, american car, kodak, neon, palm springs, v 7, vintage photography*
+*   [3D Pixar Bird Character](prompts/3d-pixar-bird-character.md) - *Tags: 3d render, black bird, cartoon style, character design, digital art, pixar, v 7*
+*   [Angelic Robot on Mount Cutlass](prompts/angelic-robot-on-mount-cutlass.md) - *Tags: angelic robot, cinematic photography, concept art, digital art, futuristic, mount cutlass, v 7*
+*   [Anime Bouquet of Roses](prompts/anime-bouquet-of-roses.md) - *Tags: anime style, bouquet, colorful cartoon, high detail, v 7, vector illustration, white roses*
+*   [Anime Boy Gliding Over Valley](prompts/anime-boy-gliding-over-valley.md) - *Tags: adventure, anime, dynamic motion blur, japanese anime film style, lush green valley, v 7, vibrant colors*
+*   [Aquarium-Headed Woman Portrait](prompts/aquarium-headed-woman-portrait.md) - *Tags: 1950s, aquarium, portrait, street view, v 7, vintage style, xucodtr*
+*   [Asian Woman Opening Window](prompts/asian-woman-opening-window.md) - *Tags: asian woman, floral, natural light, photography, portrait, romantic, v 7*
+*   [Black Cat Behind Watermelon](prompts/black-cat-behind-watermelon.md) - *Tags: black cat, photography, studio shot, summer, v 7, vibrant colors, watermelon*
+*   [Black Model in Issey Miyake](prompts/black-model-in-issey-miyake.md) - *Tags: arcteryx, black male model, e-commerce, issey miyake, minimalist, product photography, v 7*
+*   [Blurred Flowers Minimalist Shot](prompts/blurred-flowers-minimalist-shot.md) - *Tags: blurred background, canon eos r5, extreme close-up, minimalist photography, mother and son, sunlight, v 7*
+*   [Cheetah and Woman in Motion](prompts/cheetah-and-woman-in-motion.md) - *Tags: african woman, cheetah, golden plains, motion blur, raw style, symbolism, v 7*
+*   [Chubby Cat with Flowers](prompts/chubby-cat-with-flowers.md) - *Tags: cute animals, floral, golden hour, nature, photography, soft focus, v 7*
+*   [Cinematic Couple at Sunset](prompts/cinematic-couple-at-sunset.md) - *Tags: beach photography, cinematic visuals, lagos beach, portugal, romantic aesthetics, sunset, v 7*
+*   [Colorful 3D Organic Wave](prompts/colorful-3d-organic-wave.md) - *Tags: 3d art, abstract, digital rendering, organic design, v 7, wave, white frame*
+*   [Cute Anime Diet Journey](prompts/cute-anime-diet-journey.md) - *Tags: 4-panel manga, cute anime style, hand-drawn aesthetic, japanese manga, slice of life, v 7, vibrant colors*
+*   [Detailed Pirate on Island](prompts/detailed-pirate-on-island.md) - *Tags: anna dittmann, carne griffiths, conrad roset, dynamic pose, female pirate, tropical island, v 7*
+*   [Dynamic Beauty Portrait Photography](prompts/dynamic-beauty-portrait-photography.md) - *Tags: beauty photography, female portrait, hyper-realistic, instagram marketing, makeup, motion blur, v 7*
+*   [Elegant Chanel Bottle Close-Up](prompts/elegant-chanel-bottle-close-up-2.md) - *Tags: chanel, elegant lighting, luxury, muted color palette, perfume bottle, soft focus, v 7*
+*   [Elegant Woman with Shampoo](prompts/elegant-woman-with-shampoo.md) - *Tags: advertising, minimalist design, photography, product showcase, shampoo, springtime, v 7*
+*   [Faceless Woman in Towel](prompts/faceless-woman-in-towel.md) - *Tags: close-up portrait, film-like, minimalism, nostalgic, organic, soft lighting, v 7*
+*   [Fluffy Cat on Floaty](prompts/fluffy-cat-on-floaty.md) - *Tags: 85mm lens, cats, cinematic, luxury, photorealism, summer, v 7*
+*   [Grotesque Cabbage Humanoid Photography](prompts/grotesque-cabbage-humanoid-photography.md) - *Tags: cinematic photography, creature design, documentary photography, folk horror, hyperreal, unsettling art, v 7*
+*   [High-Resolution Gundam Portrait](prompts/high-resolution-gundam-portrait.md) - *Tags: canon eos r5, futuristic design, gundam, high resolution, model photography, v 7, white background*
+*   [Hip-Hop Cat Street Dance](prompts/hip-hop-cat-street-dance.md) - *Tags: cat photography, cool colors, full body shot, high definition, hip-hop style, street fashion, v 7*
+*   [Hyper-Realistic Alice Portrait](prompts/hyper-realistic-alice-portrait.md) - *Tags: alice in wonderland, black and white, card symbols, dark fantasy, hyper realistic, surrealism, v 7*
+*   [Jabba the Hutt Croissant](prompts/jabba-the-hutt-croissant.md) - *Tags: cafe, croissant, food art, jabba the hutt, sculpture, v 7, whimsical design*
+*   [Medieval Knight on Horse](prompts/medieval-knight-on-horse.md) - *Tags: bold colors, geometric design, knight, medieval art, red and black, stylized elements, v 7*
+*   [Medieval Soldier by River](prompts/medieval-soldier-by-river.md) - *Tags: impasto brushstrokes, john constable, landscape, medieval theme, oil painting, soldier, v 7*
+*   [Mid-Century House with Boston Terrier](prompts/mid-century-house-with-boston-terrier.md) - *Tags: architecture, boston terrier, graphic design, mid century modern, minimalism, palm springs, v 7*
+*   [Minimalist Rowboat at Sunrise](prompts/minimalist-rowboat-at-sunrise.md) - *Tags: calm lake, cinematic atmosphere, fine art photography, japanese aesthetics, minimalist style, pastel colors, v 7*
+*   [Minimalist Tulips in Pot](prompts/minimalist-tulips-in-pot.md) - *Tags: 2d shapes, bold colors, checkerboard background, dopamine decor, flat minimalist illustration, modern flat style, v 7*
+*   [Modern Cozy Living Room](prompts/modern-cozy-living-room.md) - *Tags: contemporary decor, indoor plants, modern interior design, natural materials, open-plan living room, v 7, warm color palette*
+*   [Pastel Ethereal Shapes Gradient](prompts/pastel-ethereal-shapes-gradient.md) - *Tags: abstract shapes, contemporary art, dynamic gradients, ethereal art, pastel colors, textures, v 7*
+*   [Photorealistic Female Form Hills](prompts/photorealistic-female-form-hills.md) - *Tags: body shape, iceland, landscape, nature art, photorealistic, stormy clouds, v 7*
+*   [Photorealistic Japanese Girl Portrait](prompts/photorealistic-japanese-girl-portrait.md) - *Tags: 8k resolution, cinematic, japanese girl, modern fashion, photorealistic, portrait photography, v 7*
+*   [Puppet Leader with Glowing Eyes](prompts/puppet-leader-with-glowing-eyes.md) - *Tags: arabic street signs, close-up, intense expression, planet of the apes, puppet art, surrealism, v 7*
+*   [Realistic Qiqi Flying Broom](prompts/realistic-qiqi-flying-broom.md) - *Tags: 8k resolution, cg rendering, coastal town, qiqi, studio ghibli, super realistic, v 7*
+*   [Realistic Zeus Portrait Lightning](prompts/realistic-zeus-portrait-lightning.md) - *Tags: black and white, classical art, mythology, portrait, realistic, v 7, zeus*
+*   [Slavic Mythology Oil Painting](prompts/slavic-mythology-oil-painting.md) - *Tags: dark fantasy, dynamic composition, gothic art, oil painting, romantic portrait, slavic mythology, v 7*
+*   [Steampunk Mechanic Expression Sheet](prompts/steampunk-mechanic-expression-sheet.md) - *Tags: character design, expression sheet, gadgets, illustration, muted colors, steampunk, v 7*
+*   [Theater Education Connection Graphic](prompts/theater-education-connection-graphic.md) - *Tags: bold typography, diverse representation, geometric shapes, minimalist design, modern graphic, theater education, v 7*
+*   [Tropical Jungle Footprint Illustration](prompts/tropical-jungle-footprint-illustration.md) - *Tags: environmental conservation, nature photography, raw style, realistic shadows, tropical jungle, v 7, white background*
+*   [Vintage Sci-Fi Saucer Chickens](prompts/vintage-sci-fi-saucer-chickens.md) - *Tags: chickens, flying saucer, illustration, movie posters, retro art, v 7, vintage sci-fi*
+*   [Whimsical Girl with Cat](prompts/whimsical-girl-with-cat-2.md) - *Tags: character design, charming girl, children's book style, hand-drawn art, pastel colors, v 7, whimsical illustration*
+*   [White T-Shirt on White Background](prompts/white-t-shirt-on-white-background.md) - *Tags: apparel, graphic design, mockups, tshirt design, v 7, white background, women fashion*
 
 ---
 
-## 🔍 Competitor Assessment & Alternatives Prompts
-
-Templates to discover software alternatives:
-
-*   [SALESFORCE-ALTERNATIVES](prompts/saas-alternatives/find-best-salesforce-alternatives.md)
-*   [HUBSPOT-ALTERNATIVES](prompts/saas-alternatives/find-best-hubspot-alternatives.md)
-*   [CLICKUP-ALTERNATIVES](prompts/saas-alternatives/find-best-clickup-alternatives.md)
-*   [JIRA-ALTERNATIVES](prompts/saas-alternatives/find-best-jira-alternatives.md)
-*   [QUICKBOOKS-ALTERNATIVES](prompts/saas-alternatives/find-best-quickbooks-alternatives.md)
-*   [XERO-ALTERNATIVES](prompts/saas-alternatives/find-best-xero-alternatives.md)
-
----
-
-## 🏆 Role-Based Workflow Prompts
-
-Templates to audit tool categories by user persona:
-
-*   [CRM-FOR-DEVELOPER](prompts/role-workflows/best-crm-for-developer.md)
-*   [CRM-FOR-REAL-ESTATE-AGENT](prompts/role-workflows/best-crm-for-real-estate-agent.md)
-*   [PROJECT-MANAGEMENT-FOR-DEVELOPER](prompts/role-workflows/best-project-management-for-developer.md)
-*   [ACCOUNTING-FOR-ECOMMERCE-SELLER](prompts/role-workflows/best-accounting-for-ecommerce-seller.md)
+## 📄 License
+This repository is licensed under the MIT License.

@@ -40,12 +40,11 @@ const { title, description, jsonLd } = Astro.props;
       <header>
         <div class="header-inner">
           <a href="/" class="logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
             </svg>
-            <span>OmniValuation</span>
+            <span>Awesome Prompting Hacks</span>
           </a>
         </div>
       </header>
@@ -56,7 +55,7 @@ const { title, description, jsonLd } = Astro.props;
 
       <footer>
         <div class="footer-inner">
-          <p>&copy; {new Date().getFullYear()} OmniValuation Utilities. All calculations are model estimations.</p>
+          <p>&copy; {new Date().getFullYear()} Awesome Prompting Hacks. All prompt templates are community resources.</p>
           <div class="footer-links">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>

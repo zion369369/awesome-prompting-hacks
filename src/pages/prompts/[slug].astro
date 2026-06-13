@@ -1,0 +1,429 @@
+---
+// src/pages/prompts/[slug].astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import prompts from '../../data/scraped_prompts.json';
+
+export async function getStaticPaths() {
+  return prompts.map((item) => ({
+    params: { slug: item.slug },
+    props: { prompt: item, allPrompts: prompts }
+  }));
+}
+
+const { prompt, allPrompts } = Astro.props;
+
+// Calculate similar prompts by matching tags
+const similarPrompts = allPrompts
+  .filter((item) => item.slug !== prompt.slug)
+  .map((item) => {
+    const commonTags = item.tags.filter((t) => prompt.tags.includes(t)).length;
+    return { ...item, commonTags };
+  })
+  .sort((a, b) => b.commonTags - a.commonTags)
+  .slice(0, 3);
+
+const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en";
+const pageTitle = `${prompt.title} - Free AI Prompt Template`;
+const pageDesc = `Copy and optimize the free AI prompt for: "${prompt.title}". Features tags: ${prompt.tags.join(', ')}.`;
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <div class="back-link-row">
+    <a href="/" class="back-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      Back to Prompt Gallery
+    </a>
+  </div>
+
+  <div class="layout-split">
+    <!-- Left: Title, image, and prompt box -->
+    <div class="main-details">
+      <h1 class="prompt-title">{prompt.title}</h1>
+      
+      <div class="category-meta">
+        <span class="badge category-badge">{prompt.category.toUpperCase()}</span>
+        <span class="meta-label">Output Preview</span>
+      </div>
+
+      <!-- Featured Image Output Preview -->
+      {prompt.imageUrl && (
+        <div class="image-preview-container card-glass">
+          <img src={prompt.imageUrl} alt={prompt.title} class="image-preview" loading="lazy" />
+          <div class="glow-layer"></div>
+        </div>
+      )}
+
+      <!-- Prompt Container -->
+      <div class="card-glass prompt-console">
+        <div class="console-header">
+          <span class="console-title">Prompt Template</span>
+          <button id="copy-btn" class="btn-copy" data-prompt={prompt.prompt}>
+            <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="btn-text">Copy Prompt</span>
+          </button>
+        </div>
+        <div class="console-body">
+          <pre class="prompt-code-block"><code id="prompt-code">{prompt.prompt}</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items -->
+    <div class="sidebar">
+      <!-- Hello Prompting Console Widget -->
+      <div class="card-glass widget-extension">
+        <h3>⚡ Hello Prompting Toolkit</h3>
+        <p class="widget-desc">Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p>
+        
+        <div class="widget-features">
+          <div class="feature-item">
+            <span class="feature-bullet">✓</span>
+            <span>Google 4-Part Structure Auto-Injection</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-bullet">✓</span>
+            <span>Live Prompt Score™ Evaluator</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-bullet">✓</span>
+            <span>One-Click Super Prompts Upgrader</span>
+          </div>
+        </div>
+
+        <a href={CHROME_STORE_URL} target="_blank" rel="noopener" class="btn-primary install-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="8" x2="12" y2="2"></line>
+            <line x1="12" y1="16" x2="12" y2="22"></line>
+            <line x1="8" y1="12" x2="2" y2="12"></line>
+            <line x1="16" y1="12" x2="22" y2="12"></line>
+          </svg>
+          Add to Chrome (Free)
+        </a>
+      </div>
+
+      <!-- Prompt Tags -->
+      <div class="card-glass widget-tags">
+        <h4>Related Tags</h4>
+        <div class="tags-cloud">
+          {prompt.tags.map((tag) => (
+            <span class="tag-badge">#{tag}</span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Similar Prompts -->
+      {similarPrompts.length > 0 && (
+        <div class="card-glass widget-similar">
+          <h4>Similar Prompts</h4>
+          <div class="similar-list">
+            {similarPrompts.map((item) => (
+              <a href={`/prompts/${item.slug}`} class="similar-item">
+                <span class="similar-title">{item.title}</span>
+                <span class="similar-meta">{item.tags.slice(0, 2).join(', ')}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <style>
+    .back-link-row {
+      margin-bottom: 24px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: hsl(var(--text-secondary));
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: var(--transition-smooth);
+    }
+
+    .back-link:hover {
+      color: hsl(var(--primary));
+      transform: translateX(-3px);
+    }
+
+    .prompt-title {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .category-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+    }
+
+    .category-badge {
+      background: rgba(14, 165, 233, 0.15);
+      color: hsl(var(--primary));
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+
+    .meta-label {
+      font-size: 0.85rem;
+      color: hsl(var(--text-muted));
+    }
+
+    /* Output preview layout */
+    .image-preview-container {
+      position: relative;
+      padding: 16px;
+      border-radius: 16px;
+      margin-bottom: 32px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      background: rgba(30, 41, 59, 0.4);
+    }
+
+    .image-preview {
+      max-width: 100%;
+      max-height: 500px;
+      border-radius: 12px;
+      object-fit: contain;
+      z-index: 1;
+      transition: var(--transition-smooth);
+    }
+
+    .image-preview-container:hover .image-preview {
+      transform: scale(1.015);
+    }
+
+    .glow-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Console styled box */
+    .prompt-console {
+      padding: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .console-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: rgba(30, 41, 59, 0.5);
+      border-bottom: 1px solid hsl(var(--border));
+    }
+
+    .console-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: hsl(var(--text-secondary));
+    }
+
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .btn-copy:hover {
+      background: rgba(14, 165, 233, 0.15);
+      border-color: rgba(14, 165, 233, 0.3);
+      color: hsl(var(--primary));
+    }
+
+    .console-body {
+      padding: 24px;
+    }
+
+    .prompt-code-block {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.05rem;
+      color: hsl(var(--text-primary));
+      line-height: 1.5;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .widget-extension {
+      border: 1px solid rgba(14, 165, 233, 0.25);
+      background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.06), transparent 70%), var(--glass-bg);
+    }
+
+    .widget-extension h3 {
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .widget-desc {
+      font-size: 0.95rem;
+      color: hsl(var(--text-secondary));
+      margin-bottom: 20px;
+    }
+
+    .widget-features {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: hsl(var(--text-primary));
+    }
+
+    .feature-bullet {
+      color: hsl(var(--primary));
+      font-weight: bold;
+    }
+
+    .install-btn {
+      width: 100%;
+      gap: 8px;
+    }
+
+    .chrome-icon {
+      flex-shrink: 0;
+    }
+
+    /* Tag styles */
+    .widget-tags h4, .widget-similar h4 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 8px;
+    }
+
+    .tags-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag-badge {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: hsl(var(--text-secondary));
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    /* Similar items list */
+    .similar-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .similar-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .similar-item:hover {
+      border-color: rgba(14, 165, 233, 0.2);
+      background: rgba(14, 165, 233, 0.02);
+      transform: translateY(-1px);
+    }
+
+    .similar-title {
+      font-weight: 500;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .similar-meta {
+      font-size: 0.8rem;
+      color: hsl(var(--text-muted));
+    }
+  </style>
+
+  <!-- Client-Side Copy Script -->
+  <script>
+    const copyBtn = document.getElementById('copy-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const text = copyBtn.getAttribute('data-prompt') || '';
+        navigator.clipboard.writeText(text).then(() => {
+          const btnText = copyBtn.querySelector('.btn-text');
+          const originalText = btnText ? btnText.textContent : 'Copy Prompt';
+          
+          if (btnText) {
+            btnText.textContent = 'Copied!';
+          }
+          copyBtn.style.transform = 'scale(0.95)';
+          copyBtn.style.borderColor = 'hsl(var(--success))';
+          copyBtn.style.color = '#10b981';
+          
+          setTimeout(() => {
+            if (btnText) {
+              btnText.textContent = originalText;
+            }
+            copyBtn.style.transform = 'none';
+            copyBtn.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            copyBtn.style.color = '#fff';
+          }, 2000);
+        }).catch(err => {
+          console.error('Copy failed:', err);
+        });
+      });
+    }
+  </script>
+</BaseLayout>
