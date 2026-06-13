@@ -1,0 +1,334 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import saasData from '../data/saas_comparisons.json';
+import taxData from '../data/tax_calculators.json';
+
+const pageTitle = "OmniValuation - Multi-Variable Programmatic Tools";
+const pageDesc = "High-performance software comparison, alternatives, and marginal tax calculator indexes. Instant calculations with zero subscription friction.";
+
+const softwareList = ["salesforce", "hubspot", "clickup", "jira", "quickbooks", "xero"];
+const bestForList = [
+  { category: "crm", role: "developer", title: "CRM for Developers", meta: "Category: CRM | Target: Devs" },
+  { category: "crm", role: "real-estate-agent", title: "CRM for Real Estate Agents", meta: "Category: CRM | Target: Agents" },
+  { category: "project-management", role: "developer", title: "PM Tools for Developers", meta: "Category: PM | Target: Devs" },
+  { category: "accounting", role: "ecommerce-seller", title: "Accounting for E-commerce Sellers", meta: "Category: Accounting | Target: Sellers" }
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <div class="hero">
+    <h1>Autonomous Valuation Engines</h1>
+    <p class="subtitle">Select a tool from the dynamic indexes below. Use the instant filter to search by software name, asset type, or location.</p>
+    
+    <!-- Client-Side Instant Search Filter -->
+    <div class="search-box card-glass">
+      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="tool-search" placeholder="Type to search e.g., 'salesforce', 'crypto', 'miami'..." class="input-field search-input" />
+    </div>
+  </div>
+
+  <div class="sections-grid">
+    <!-- SaaS Comparison Tools Section -->
+    <div class="card-glass tool-section">
+      <div class="section-title-row">
+        <h2>Software Comparison Engines</h2>
+        <span class="badge saas-badge">Compare</span>
+      </div>
+      <p class="section-desc">Evaluate licensing structures, pipeline setups, and TCO limits.</p>
+      
+      <div class="links-list" id="saas-list">
+        {saasData.map((item) => {
+          const sa = item.software_a.toLowerCase().replace(/\s+/g, '-');
+          const sb = item.software_b.toLowerCase().replace(/\s+/g, '-');
+          const ind = item.industry.toLowerCase().replace(/\s+/g, '-');
+          const keywords = `${item.software_a} ${item.software_b} ${item.industry}`.toLowerCase();
+          return (
+            <a href={`/compare/${sa}-vs-${sb}-for-${ind}`} class="tool-link" data-keywords={keywords}>
+              <div class="link-details">
+                <span class="tool-title">{item.software_a} vs {item.software_b}</span>
+                <span class="tool-meta">Industry: {item.industry}</span>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Tax Calculators Section -->
+    <div class="card-glass tool-section">
+      <div class="section-title-row">
+        <h2>Regional Tax Estimators</h2>
+        <span class="badge tax-badge">Tax</span>
+      </div>
+      <p class="section-desc">Assess regional tax structures and standard write-off rules.</p>
+
+      <div class="links-list" id="tax-list">
+        {taxData.map((item) => {
+          const asset = item.asset_type.toLowerCase().replace(/\s+/g, '-');
+          const bracket = item.tax_bracket.replace(/%/g, '');
+          const keywords = `${item.asset_type} ${item.region} ${item.zip_code}`.toLowerCase();
+          return (
+            <a href={`/tax/${asset}-bracket-${bracket}-zip-${item.zip_code}`} class="tool-link" data-keywords={keywords}>
+              <div class="link-details">
+                <span class="tool-title">{item.asset_type} Calculator</span>
+                <span class="tool-meta">Zip: {item.zip_code} | {item.region}</span>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Alternatives Section -->
+    <div class="card-glass tool-section">
+      <div class="section-title-row">
+        <h2>Alternatives Index</h2>
+        <span class="badge alt-badge">Alternatives</span>
+      </div>
+      <p class="section-desc">Compare top competitors and find budget alternative solutions.</p>
+
+      <div class="links-list" id="alt-list">
+        {softwareList.map((software) => {
+          const keywords = `${software} alternatives competitors`.toLowerCase();
+          const dispName = software.charAt(0).toUpperCase() + software.slice(1);
+          return (
+            <a href={`/alternatives/best-${software}-alternatives`} class="tool-link" data-keywords={keywords}>
+              <div class="link-details">
+                <span class="tool-title">Best {dispName} Alternatives</span>
+                <span class="tool-meta">Competitors and replacements for {dispName}</span>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Best For Section -->
+    <div class="card-glass tool-section">
+      <div class="section-title-row">
+        <h2>Persona Best-For Guides</h2>
+        <span class="badge persona-badge">Personas</span>
+      </div>
+      <p class="section-desc">Find tools optimized for your specific role and workspace constraints.</p>
+
+      <div class="links-list" id="bestfor-list">
+        {bestForList.map((item) => {
+          const keywords = `${item.title} ${item.category} ${item.role}`.toLowerCase();
+          return (
+            <a href={`/best-for/best-${item.category}-for-${item.role}`} class="tool-link" data-keywords={keywords}>
+              <div class="link-details">
+                <span class="tool-title">{item.title}</span>
+                <span class="tool-meta">{item.meta}</span>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero {
+      text-align: center;
+      margin-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0;
+    }
+
+    .hero .subtitle {
+      margin: 0 auto;
+    }
+
+    /* Search bar styling */
+    .search-box {
+      max-width: 600px;
+      width: 100%;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(30, 41, 59, 0.4);
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+
+    .search-icon {
+      color: hsl(var(--text-muted));
+    }
+
+    .search-input {
+      border: none;
+      background: transparent;
+      padding: 10px 0;
+      font-size: 1.1rem;
+      width: 100%;
+    }
+
+    .search-input:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    .sections-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 992px) {
+      .sections-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .section-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .tool-section h2 {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+    }
+
+    .saas-badge {
+      background: rgba(14, 165, 233, 0.15);
+      color: hsl(var(--primary));
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+
+    .tax-badge {
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+
+    .alt-badge {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .persona-badge {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .section-desc {
+      color: hsl(var(--text-secondary));
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .tool-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid hsl(var(--border));
+      border-radius: 12px;
+      padding: 16px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .tool-link:hover {
+      border-color: hsl(var(--primary));
+      background: rgba(14, 165, 233, 0.04);
+      transform: translateY(-2px);
+    }
+
+    .tool-link svg {
+      color: hsl(var(--text-muted));
+      transition: var(--transition-smooth);
+    }
+
+    .tool-link:hover svg {
+      color: hsl(var(--primary));
+      transform: translateX(4px);
+    }
+
+    .link-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .tool-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .tool-meta {
+      font-size: 0.85rem;
+      color: hsl(var(--text-secondary));
+    }
+  </style>
+
+  <!-- Instant Search Script -->
+  <script>
+    const searchInput = document.getElementById('tool-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const links = document.querySelectorAll('.tool-link');
+
+        links.forEach(link => {
+          const keywords = link.getAttribute('data-keywords') || '';
+          if (query === '' || keywords.includes(query)) {
+            link.style.display = 'flex';
+          } else {
+            link.style.display = 'none';
+          }
+        });
+      });
+    }
+  </script>
+</BaseLayout>

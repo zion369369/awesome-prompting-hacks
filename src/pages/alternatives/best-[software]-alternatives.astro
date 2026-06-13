@@ -1,0 +1,276 @@
+---
+// src/pages/alternatives/best-[software]-alternatives.astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import saasData from '../../data/saas_comparisons.json';
+
+export async function getStaticPaths() {
+  const softwareList = ["salesforce", "hubspot", "clickup", "jira", "quickbooks", "xero"];
+  return softwareList.map(software => ({
+    params: { software },
+    props: { 
+      softwareKey: software,
+      softwareName: software.charAt(0).toUpperCase() + software.slice(1) 
+    }
+  }));
+}
+
+const { softwareKey, softwareName } = Astro.props;
+
+const pageTitle = `Best ${softwareName} Alternatives & Competitors (${new Date().getFullYear()})`;
+const pageDesc = `Detailed market evaluation: Discover the best alternatives to ${softwareName}. Compare pricing, onboarding limits, and custom dashboard features.`;
+
+// Find competitor alternatives from our comparisons database
+const competitors = saasData.filter(item => 
+  item.software_a.toLowerCase() === softwareKey || 
+  item.software_b.toLowerCase() === softwareKey
+).map(item => {
+  const isA = item.software_a.toLowerCase() === softwareKey;
+  return {
+    name: isA ? item.software_b : item.software_a,
+    pricing: isA ? item.average_pricing_b : item.average_pricing_a,
+    feature: isA ? item.best_feature_b : item.best_feature_a,
+    setup: item.setup_time,
+    rating: item.difficulty_score,
+    industry: item.industry
+  };
+});
+
+// JSON-LD ItemList schema
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": pageTitle,
+      "description": pageDesc,
+      "itemListElement": competitors.map((comp, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": comp.name,
+          "applicationCategory": "BusinessApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          }
+        }
+      }))
+    }
+  ]
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
+  <div class="alternatives-header">
+    <h1>Best <span>{softwareName}</span> Alternatives</h1>
+    <p class="subtitle">A curated index of top-rated market competitors and cost-efficient alternatives for enterprise operations.</p>
+  </div>
+
+  <div class="layout-split">
+    <!-- Alternatives List Column -->
+    <div class="card-glass flex-column">
+      <h2>Top Competitor Alternatives</h2>
+      
+      {competitors.length > 0 ? (
+        <div class="competitor-list">
+          {competitors.map((comp) => (
+            <div class="competitor-card">
+              <div class="comp-title-row">
+                <h3>{comp.name}</h3>
+                <span class="comp-rating">Rating: {comp.rating}/10</span>
+              </div>
+              
+              <div class="comp-details-grid">
+                <div class="comp-detail">
+                  <strong>Estimated Pricing:</strong>
+                  <span>{comp.pricing}</span>
+                </div>
+                <div class="comp-detail">
+                  <strong>Setup Onboarding:</strong>
+                  <span>{comp.setup}</span>
+                </div>
+                <div class="comp-detail">
+                  <strong>Target Sector:</strong>
+                  <span>{comp.industry}</span>
+                </div>
+              </div>
+
+              <div class="comp-feature-highlight">
+                <strong>Key Alternative Advantage:</strong>
+                <p>{comp.feature}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p class="no-records">No alternative records matched in current regional database.</p>
+      )}
+
+      <!-- Conversion CTA Section -->
+      <div class="conversion-banner-card">
+        <h3>Supercharge Your AI Workspace</h3>
+        <p>Whether you deploy {softwareName} or an alternative, write better prompts instantly. Let Hello Prompting scan and optimize instructions inside your browser.</p>
+        <a href="https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en" class="btn-primary">
+          Install Hello Prompting Chrome Extension
+        </a>
+      </div>
+    </div>
+
+    <!-- Ad Unit Sidebar -->
+    <div class="sidebar-container">
+      <div class="ad-placement-box">
+        <span class="ad-badge">Advertisement</span>
+        <div class="ad-stub-frame" id="ad-frame-alt">
+          Relevant Alternatives Solutions Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .alternatives-header h1 span {
+      color: hsl(var(--primary));
+    }
+
+    .competitor-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .competitor-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid hsl(var(--border));
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: var(--transition-smooth);
+    }
+
+    .competitor-card:hover {
+      border-color: rgba(14, 165, 233, 0.2);
+    }
+
+    .comp-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid hsl(var(--border));
+      padding-bottom: 12px;
+    }
+
+    .comp-title-row h3 {
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    .comp-rating {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: hsl(var(--primary));
+    }
+
+    .comp-details-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .comp-details-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .comp-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .comp-detail strong {
+      font-size: 0.8rem;
+      color: hsl(var(--text-secondary));
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .comp-detail span {
+      font-size: 0.95rem;
+      color: #fff;
+    }
+
+    .comp-feature-highlight {
+      background: rgba(14, 165, 233, 0.02);
+      border: 1px dashed rgba(14, 165, 233, 0.1);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.95rem;
+    }
+
+    .comp-feature-highlight strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .comp-feature-highlight p {
+      color: hsl(var(--text-secondary));
+    }
+
+    .no-records {
+      color: hsl(var(--text-secondary));
+      font-style: italic;
+    }
+
+    .conversion-banner-card {
+      border-top: 1px solid hsl(var(--border));
+      padding-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .conversion-banner-card p {
+      color: hsl(var(--text-secondary));
+      font-size: 0.95rem;
+    }
+
+    .sidebar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  </style>
+
+  <script>
+    // Lazy load ad refresh loop implementation
+    let activeTime = 0;
+    const adFrame = document.getElementById('ad-frame-alt');
+
+    setInterval(() => {
+      activeTime += 15;
+      if (activeTime >= 45) {
+        activeTime = 0;
+        if (adFrame) {
+          adFrame.style.opacity = '0.3';
+          setTimeout(() => {
+            adFrame.textContent = 'Explore SaaS Alternative Solutions [Refreshed]';
+            adFrame.style.opacity = '1';
+          }, 400);
+        }
+      }
+    }, 15000);
+  </script>
+</BaseLayout>

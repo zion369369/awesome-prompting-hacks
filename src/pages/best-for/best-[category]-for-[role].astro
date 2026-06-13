@@ -1,0 +1,257 @@
+---
+// src/pages/best-for/best-[category]-for-[role].astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import saasData from '../../data/saas_comparisons.json';
+
+export async function getStaticPaths() {
+  const paths = [
+    { params: { category: "crm", role: "developer" }, props: { categoryKey: "crm", categoryName: "CRM Platforms", roleKey: "developer", roleName: "Developers" } },
+    { params: { category: "crm", role: "real-estate-agent" }, props: { categoryKey: "crm", categoryName: "CRM Platforms", roleKey: "real-estate-agent", roleName: "Real Estate Agents" } },
+    { params: { category: "project-management", role: "developer" }, props: { categoryKey: "project-management", categoryName: "Project Management Tools", roleKey: "developer", roleName: "Developers" } },
+    { params: { category: "accounting", role: "ecommerce-seller" }, props: { categoryKey: "accounting", categoryName: "Accounting Software", roleKey: "ecommerce-seller", roleName: "E-commerce Sellers" } }
+  ];
+  return paths;
+}
+
+const { categoryKey, categoryName, roleKey, roleName } = Astro.props;
+
+const pageTitle = `Best ${categoryName} for ${roleName} (${new Date().getFullYear()} Report)`;
+const pageDesc = `Detailed market evaluation: Discover which ${categoryName} is best optimized for ${roleName}. Review features, setup difficulty, and TCO pricing models.`;
+
+// Filter tools depending on category selections
+const recommendedTools = saasData.filter(item => {
+  const ind = item.industry.toLowerCase();
+  const sa = item.software_a.toLowerCase();
+  const sb = item.software_b.toLowerCase();
+
+  if (categoryKey === "crm") {
+    return (sa === "salesforce" || sb === "hubspot");
+  } else if (categoryKey === "project-management") {
+    return (sa === "clickup" || sb === "jira");
+  } else if (categoryKey === "accounting") {
+    return (sa === "quickbooks" || sb === "xero");
+  }
+  return false;
+});
+
+// JSON-LD Product recommendation metadata
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": pageTitle,
+      "description": pageDesc,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": roleName
+      }
+    }
+  ]
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
+  <div class="best-for-header">
+    <h1>Best <span>{categoryName}</span> for {roleName}</h1>
+    <p class="subtitle">An objective assessment of software suites compiled specifically for **{roleName}** workflow constraints.</p>
+  </div>
+
+  <div class="layout-split">
+    <!-- Main Content Column -->
+    <div class="card-glass flex-column">
+      <h2>Recommended Platforms</h2>
+
+      <div class="recommendations-container">
+        {recommendedTools.map((item) => (
+          <div class="rec-card">
+            <div class="rec-header">
+              <h3>{item.software_a} vs {item.software_b}</h3>
+              <span class="setup-badge">Setup: {item.setup_time}</span>
+            </div>
+            
+            <p class="rec-intro">When evaluating tools for <strong>{roleName}</strong>, the comparison centers on features and operational overhead.</p>
+            
+            <div class="rec-metrics">
+              <div class="metric-item">
+                <strong>{item.software_a} Advantage:</strong>
+                <p>{item.best_feature_a}</p>
+              </div>
+              <div class="metric-item">
+                <strong>{item.software_b} Advantage:</strong>
+                <p>{item.best_feature_b}</p>
+              </div>
+            </div>
+
+            <div class="verdict-box">
+              <h4>Verdict Recommendation</h4>
+              <p>For most {roleName} organizations, <strong>{item.cheaper_option}</strong> is recommended due to lower implementation barriers and rapid onboarding speed.</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Conversion CTA Section -->
+      <div class="conversion-banner-card">
+        <h3>Maximize AI Output Efficiency</h3>
+        <p>No matter which {categoryName} you choose, get professional prompts instantly. Install the Hello Prompting Chrome Extension to score, draft, and structure AI inputs directly in your workspace.</p>
+        <a href="https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en" class="btn-primary">
+          Download Hello Prompting Chrome Extension
+        </a>
+      </div>
+    </div>
+
+    <!-- Ad Unit Sidebar -->
+    <div class="sidebar-container">
+      <div class="ad-placement-box">
+        <span class="ad-badge">Advertisement</span>
+        <div class="ad-stub-frame" id="ad-frame-best">
+          Relevant Solutions for {roleName} Loading...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .best-for-header h1 span {
+      color: hsl(var(--primary));
+    }
+
+    .recommendations-container {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .rec-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid hsl(var(--border));
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .rec-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid hsl(var(--border));
+      padding-bottom: 12px;
+    }
+
+    .rec-header h3 {
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    .setup-badge {
+      font-size: 0.8rem;
+      background: rgba(14, 165, 233, 0.1);
+      color: hsl(var(--primary));
+      border: 1px solid rgba(14, 165, 233, 0.2);
+      padding: 4px 10px;
+      border-radius: 9999px;
+    }
+
+    .rec-intro {
+      font-size: 0.95rem;
+      color: hsl(var(--text-secondary));
+    }
+
+    .rec-metrics {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .rec-metrics {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .metric-item {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 0.95rem;
+    }
+
+    .metric-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .metric-item p {
+      color: hsl(var(--text-secondary));
+    }
+
+    .verdict-box {
+      background: rgba(14, 165, 233, 0.02);
+      border: 1px solid rgba(14, 165, 233, 0.1);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .verdict-box h4 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .verdict-box p {
+      color: hsl(var(--text-secondary));
+      font-size: 0.95rem;
+    }
+
+    .conversion-banner-card {
+      border-top: 1px solid hsl(var(--border));
+      padding-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .conversion-banner-card p {
+      color: hsl(var(--text-secondary));
+      font-size: 0.95rem;
+    }
+
+    .sidebar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  </style>
+
+  <script>
+    // Lazy load ad refresh loop implementation
+    let activeTime = 0;
+    const adFrame = document.getElementById('ad-frame-best');
+
+    setInterval(() => {
+      activeTime += 15;
+      if (activeTime >= 45) {
+        activeTime = 0;
+        if (adFrame) {
+          adFrame.style.opacity = '0.3';
+          setTimeout(() => {
+            adFrame.textContent = 'Optimize Workflows with Managed Integrations [Refreshed]';
+            adFrame.style.opacity = '1';
+          }, 400);
+        }
+      }
+    }, 15000);
+  </script>
+</BaseLayout>

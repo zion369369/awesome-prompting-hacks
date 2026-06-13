@@ -1,0 +1,54 @@
+---
+// src/pages/privacy.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Privacy Policy" description="Privacy policy and data processing policies for OmniValuation.">
+  <div class="card-glass content-container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: June 13, 2026</p>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <p>Our calculation utilities process numerical inputs entirely client-side via JavaScript. We do not store or transmit calculation inputs or personal identifiers to external database servers.</p>
+    </section>
+
+    <section>
+      <h2>2. Third-Party Advertisements</h2>
+      <p>We work with programmatic ad networks to display standard advertising elements. These networks may place tracking cookies on your device to serve targeted advertisements based on your browsing history. You may opt out of personalized advertising by visiting your browser settings or the Google Ad Settings panel.</p>
+    </section>
+
+    <section>
+      <h2>3. Analytics</h2>
+      <p>We collect basic visitor analytics (e.g. browser type, visiting device, and referral traffic sources) to monitor sitemap indexing performance and maintain our traffic routing algorithms.</p>
+    </section>
+  </div>
+
+  <style>
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .last-updated {
+      color: hsl(var(--text-secondary));
+      font-style: italic;
+      font-size: 0.9rem;
+      border-bottom: 1px solid hsl(var(--border));
+      padding-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    section p {
+      color: hsl(var(--text-secondary));
+    }
+  </style>
+</BaseLayout>

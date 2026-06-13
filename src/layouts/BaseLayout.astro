@@ -1,0 +1,68 @@
+---
+// src/layouts/BaseLayout.astro
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  jsonLd?: Record<string, any>;
+}
+
+const { title, description, jsonLd } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Core SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph tags for social display -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Inline Dynamic JSON-LD structured schema block -->
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="header-inner">
+          <a href="/" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>OmniValuation</span>
+          </a>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <slot />
+      </main>
+
+      <footer>
+        <div class="footer-inner">
+          <p>&copy; {new Date().getFullYear()} OmniValuation Utilities. All calculations are model estimations.</p>
+          <div class="footer-links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
