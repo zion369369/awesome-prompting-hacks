@@ -123,9 +123,22 @@ async function harvest() {
       }
     }
     
-    // Save to file
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(scrapedPrompts, null, 2), 'utf-8');
-    console.log(`[HARVESTER] Harvest complete! Saved ${scrapedPrompts.length} prompts to ${OUTPUT_FILE}`);
+    // Save to file (merging with existing if exists)
+    let existingPrompts = [];
+    if (fs.existsSync(OUTPUT_FILE)) {
+      try {
+        existingPrompts = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
+      } catch (err) {
+        console.warn(`[WARNING] Failed to parse existing prompts file: ${err.message}`);
+      }
+    }
+    const mergedMap = new Map();
+    existingPrompts.forEach(item => mergedMap.set(item.slug, item));
+    scrapedPrompts.forEach(item => mergedMap.set(item.slug, item));
+    const mergedPrompts = Array.from(mergedMap.values());
+
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(mergedPrompts, null, 2), 'utf-8');
+    console.log(`[HARVESTER] Harvest complete! Crawled ${scrapedPrompts.length} prompts. Total database size: ${mergedPrompts.length} prompts.`);
   } catch (err) {
     console.error('[HARVESTER] Critical error during harvesting:', err.message);
     process.exit(1);

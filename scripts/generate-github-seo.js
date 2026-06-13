@@ -27,7 +27,7 @@ const PROMPTS_OUT_DIR = nodePath.join(DOCS_DIR, 'prompts');
 const scrapedPromptsPath = nodePath.join(__dirname, '../src/data/scraped_prompts.json');
 
 // Extension reference - Branded organically as an Awesome Prompting utility
-const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en";
+const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en";
 const EXTENSION_BADGE = `[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](${CHROME_STORE_URL})`;
 
 /**
