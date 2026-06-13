@@ -1,0 +1,8 @@
+# Robots.txt for Awesome Prompting Hacks
+# Optimized for Google, Bing, DuckDuckGo, and other major search engines
+
+User-agent: *
+Allow: /
+
+# Sitemap Index URL
+Sitemap: https://zion369369.github.io/awesome-prompting-hacks/sitemap-index.xml

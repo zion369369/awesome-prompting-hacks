@@ -7,5 +7,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://zion369369.github.io',
   base: '/awesome-prompting-hacks',
+  outDir: './docs',
   integrations: [sitemap()]
 });
