@@ -152,8 +152,8 @@ async function harvest() {
       const rows2 = parseCSV(csvContent2);
       console.log(`[HARVESTER] Parsed ${rows2.length} rows from CSV 2.`);
 
-      // Crop awesome-chatgpt-prompts to first 1000 entries to keep static build efficient
-      const chatgptLimit = 1000;
+      // Crop awesome-chatgpt-prompts to first 2000 entries to keep static build efficient
+      const chatgptLimit = 2000;
       let count = 0;
 
       for (let i = 1; i < rows2.length; i++) {

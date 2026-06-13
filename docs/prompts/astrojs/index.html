@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="icon" href="/awesome-prompting-hacks/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v6.4.6"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><!-- Core SEO Meta Tags --><title>Astro.js - Free AI Prompt Template</title><meta name="description" content="Copy and optimize the free AI prompt for: &quot;Astro.js&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/astrojs/"><!-- Open Graph tags for social display --><meta property="og:type" content="website"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/astrojs/"><meta property="og:title" content="Astro.js - Free AI Prompt Template"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;Astro.js&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Twitter Cards --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/astrojs/"><meta name="twitter:title" content="Astro.js - Free AI Prompt Template"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;Astro.js&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Astro.js","description":"Copy and optimize the free AI prompt for: \"Astro.js\". Features tags: roleplay, chatgpt, open-source.","genre":"Roleplay","keywords":"roleplay,chatgpt,open-source","creator":{"@type":"Organization","name":"Awesome Prompting Hacks"},"publisher":{"@type":"Organization","name":"Awesome Prompting Hacks","logo":{"@type":"ImageObject","url":"https://zion369369.github.io/awesome-prompting-hacks/favicon.svg"}},"text":"# Astro v6 Architecture Rules (Strict Mode)\n\n## 1. Core Philosophy\n\n- Follow Astro’s “HTML-first / zero JavaScript by default” principle:\n  - Everything is static HTML unless interactivity is explicitly required.\n  - JavaScript is a cost → only add when it creates real user value.\n\n- Always think in “Islands Architecture”:\n  - The page is static HTML\n  - Interactive parts are isolated islands\n  - Never treat the whole page as an app\n\n- Before writing any JavaScript, always ask:\n  \"Can this be solved with HTML + CSS or server-side logic?\"\n\n---\n\n## 2. Component Model\n\n- Use `.astro` components for:\n  - Layout\n  - Composition\n  - Static UI\n  - Data fetching\n  - Server-side logic (frontmatter)\n\n- `.astro` components:\n  - Run at build-time or server-side\n  - Do NOT ship JavaScript by default\n  - Must remain framework-agnostic\n\n- NEVER use React/Vue/Svelte hooks inside `.astro`\n\n---\n\n## 3. Islands (Interactive Components)\n\n- Only use framework components (React, Vue, Svelte, etc.) for interactivity.\n\n- Treat every interactive component as an isolated island:\n  - Independent\n  - Self-contained\n  - Minimal scope\n\n- NEVER:\n  - Hydrate entire pages or layouts\n  - Wrap large trees in a single island\n  - Create many small islands in loops unnecessarily\n\n- Prefer:\n  - Static list rendering\n  - Hydrate only the minimal interactive unit\n\n---\n\n## 4. Hydration Strategy (Critical)\n\n- Always explicitly define hydration using `client:*` directives.\n\n- Choose the LOWEST possible priority:\n\n  - `client:load`\n    → Only for critical, above-the-fold interactivity\n\n  - `client:idle`\n    → For secondary UI after page load\n\n  - `client:visible`\n    → For below-the-fold or heavy components\n\n  - `client:media`\n    → For responsive / conditional UI\n\n  - `client:only`\n    → ONLY when SSR breaks (window, localStorage, etc.)\n\n- Default rule:\n  ❌ Never default to `client:load`\n  ✅ Prefer `client:visible` or `client:idle`\n\n- Hydration is a performance budget:\n  - Every island adds JS\n  - Keep total JS minimal\n\n📌 Astro does NOT hydrate components unless explicitly told via `client:*` :contentReference[oaicite:0]{index=0}  \n\n---\n\n## 5. Server vs Client Logic\n\n- Prefer server-side logic (inside `.astro` frontmatter) for:\n  - Data fetching\n  - Transformations\n  - Filtering / sorting\n  - Derived values\n\n- Only use client-side state when:\n  - User interaction requires it\n  - Real-time updates are needed\n\n- Avoid:\n  - Duplicating logic on client\n  - Moving server logic into islands\n\n---\n\n## 6. State Management\n\n- Avoid client state unless strictly necessary.\n\n- If needed:\n  - Scope state inside the island only\n  - Do NOT create global app state unless required\n\n- For cross-island state:\n  - Use lightweight shared stores (e.g., nano stores)\n  - Avoid heavy global state systems by default\n\n---\n\n## 7. Performance Constraints (Hard Rules)\n\n- Minimize JavaScript shipped to client:\n  - Astro only loads JS for hydrated components :contentReference[oaicite:1]{index=1}  \n\n- Prefer:\n  - Static rendering\n  - Partial hydration\n  - Lazy hydration\n\n- Avoid:\n  - Hydrating large lists\n  - Repeated islands in loops\n  - Overusing `client:load`\n\n- Each island:\n  - Has its own bundle\n  - Loads independently\n  - Should remain small and focused :contentReference[oaicite:2]{index=2}  \n\n---\n\n## 8. File & Project Structure\n\n- `/pages`\n  - Entry points (SSG/SSR)\n  - No client logic\n\n- `/components`\n  - Shared UI\n  - Islands live here\n\n- `/layouts`\n  - Static wrappers only\n\n- `/content`\n  - Markdown / CMS data\n\n- Keep `.astro` files focused on composition, not behavior\n\n---\n\n## 9. Anti-Patterns (Strictly Forbidden)\n\n- ❌ Using hooks in `.astro`\n- ❌ Turning Astro into SPA architecture\n- ❌ Hydrating entire layout/page\n- ❌ Using `client:load` everywhere\n- ❌ Mapping lists into hydrated components\n- ❌ Using client JS for static problems\n- ❌ Replacing server logic with client logic\n\n---\n\n## 10. Preferred Patterns\n\n- ✅ Static-first rendering\n- ✅ Minimal, isolated islands\n- ✅ Lazy hydration (`visible`, `idle`)\n- ✅ Server-side computation\n- ✅ HTML + CSS before JS\n- ✅ Progressive enhancement\n\n---\n\n## 11. Decision Framework (VERY IMPORTANT)\n\nFor every feature:\n\n1. Can this be static HTML?\n   → YES → Use `.astro`\n\n2. Does it require interaction?\n   → NO → Stay static\n\n3. Does it require JS?\n   → YES → Create an island\n\n4. When should it load?\n   → Choose LOWEST priority `client:*`\n\n---\n\n## 12. Mental Model (Non-Negotiable)\n\n- Astro is NOT:\n  - Next.js\n  - SPA framework\n  - React-first system\n\n- Astro IS:\n  - Static-first renderer\n  - Partial hydration system\n  - Performance-first architecture\n\n- Think:\n  ❌ “Build an app”\n  ✅ “Ship HTML + sprinkle JS”"}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.8izpLCWy.css">
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BhtVR_k0.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+Back to Prompt Gallery
+</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>Astro.js</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="# Astro v6 Architecture Rules (Strict Mode)
+
+## 1. Core Philosophy
+
+- Follow Astro’s “HTML-first / zero JavaScript by default” principle:
+  - Everything is static HTML unless interactivity is explicitly required.
+  - JavaScript is a cost → only add when it creates real user value.
+
+- Always think in “Islands Architecture”:
+  - The page is static HTML
+  - Interactive parts are isolated islands
+  - Never treat the whole page as an app
+
+- Before writing any JavaScript, always ask:
+  &quot;Can this be solved with HTML + CSS or server-side logic?&quot;
+
+---
+
+## 2. Component Model
+
+- Use `.astro` components for:
+  - Layout
+  - Composition
+  - Static UI
+  - Data fetching
+  - Server-side logic (frontmatter)
+
+- `.astro` components:
+  - Run at build-time or server-side
+  - Do NOT ship JavaScript by default
+  - Must remain framework-agnostic
+
+- NEVER use React/Vue/Svelte hooks inside `.astro`
+
+---
+
+## 3. Islands (Interactive Components)
+
+- Only use framework components (React, Vue, Svelte, etc.) for interactivity.
+
+- Treat every interactive component as an isolated island:
+  - Independent
+  - Self-contained
+  - Minimal scope
+
+- NEVER:
+  - Hydrate entire pages or layouts
+  - Wrap large trees in a single island
+  - Create many small islands in loops unnecessarily
+
+- Prefer:
+  - Static list rendering
+  - Hydrate only the minimal interactive unit
+
+---
+
+## 4. Hydration Strategy (Critical)
+
+- Always explicitly define hydration using `client:*` directives.
+
+- Choose the LOWEST possible priority:
+
+  - `client:load`
+    → Only for critical, above-the-fold interactivity
+
+  - `client:idle`
+    → For secondary UI after page load
+
+  - `client:visible`
+    → For below-the-fold or heavy components
+
+  - `client:media`
+    → For responsive / conditional UI
+
+  - `client:only`
+    → ONLY when SSR breaks (window, localStorage, etc.)
+
+- Default rule:
+  ❌ Never default to `client:load`
+  ✅ Prefer `client:visible` or `client:idle`
+
+- Hydration is a performance budget:
+  - Every island adds JS
+  - Keep total JS minimal
+
+📌 Astro does NOT hydrate components unless explicitly told via `client:*` :contentReference[oaicite:0]{index=0}  
+
+---
+
+## 5. Server vs Client Logic
+
+- Prefer server-side logic (inside `.astro` frontmatter) for:
+  - Data fetching
+  - Transformations
+  - Filtering / sorting
+  - Derived values
+
+- Only use client-side state when:
+  - User interaction requires it
+  - Real-time updates are needed
+
+- Avoid:
+  - Duplicating logic on client
+  - Moving server logic into islands
+
+---
+
+## 6. State Management
+
+- Avoid client state unless strictly necessary.
+
+- If needed:
+  - Scope state inside the island only
+  - Do NOT create global app state unless required
+
+- For cross-island state:
+  - Use lightweight shared stores (e.g., nano stores)
+  - Avoid heavy global state systems by default
+
+---
+
+## 7. Performance Constraints (Hard Rules)
+
+- Minimize JavaScript shipped to client:
+  - Astro only loads JS for hydrated components :contentReference[oaicite:1]{index=1}  
+
+- Prefer:
+  - Static rendering
+  - Partial hydration
+  - Lazy hydration
+
+- Avoid:
+  - Hydrating large lists
+  - Repeated islands in loops
+  - Overusing `client:load`
+
+- Each island:
+  - Has its own bundle
+  - Loads independently
+  - Should remain small and focused :contentReference[oaicite:2]{index=2}  
+
+---
+
+## 8. File &amp; Project Structure
+
+- `/pages`
+  - Entry points (SSG/SSR)
+  - No client logic
+
+- `/components`
+  - Shared UI
+  - Islands live here
+
+- `/layouts`
+  - Static wrappers only
+
+- `/content`
+  - Markdown / CMS data
+
+- Keep `.astro` files focused on composition, not behavior
+
+---
+
+## 9. Anti-Patterns (Strictly Forbidden)
+
+- ❌ Using hooks in `.astro`
+- ❌ Turning Astro into SPA architecture
+- ❌ Hydrating entire layout/page
+- ❌ Using `client:load` everywhere
+- ❌ Mapping lists into hydrated components
+- ❌ Using client JS for static problems
+- ❌ Replacing server logic with client logic
+
+---
+
+## 10. Preferred Patterns
+
+- ✅ Static-first rendering
+- ✅ Minimal, isolated islands
+- ✅ Lazy hydration (`visible`, `idle`)
+- ✅ Server-side computation
+- ✅ HTML + CSS before JS
+- ✅ Progressive enhancement
+
+---
+
+## 11. Decision Framework (VERY IMPORTANT)
+
+For every feature:
+
+1. Can this be static HTML?
+   → YES → Use `.astro`
+
+2. Does it require interaction?
+   → NO → Stay static
+
+3. Does it require JS?
+   → YES → Create an island
+
+4. When should it load?
+   → Choose LOWEST priority `client:*`
+
+---
+
+## 12. Mental Model (Non-Negotiable)
+
+- Astro is NOT:
+  - Next.js
+  - SPA framework
+  - React-first system
+
+- Astro IS:
+  - Static-first renderer
+  - Partial hydration system
+  - Performance-first architecture
+
+- Think:
+  ❌ “Build an app”
+  ✅ “Ship HTML + sprinkle JS”" data-astro-cid-6bn65nae> <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <rect x="9" y="9" width="13" height="13" rx="2" ry="2" data-astro-cid-6bn65nae></rect> <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" data-astro-cid-6bn65nae></path> </svg> <span class="btn-text" data-astro-cid-6bn65nae>Copy Prompt</span> </button> </div> <div class="console-body" data-astro-cid-6bn65nae> <pre class="prompt-code-block" data-astro-cid-6bn65nae><code id="prompt-code" data-astro-cid-6bn65nae># Astro v6 Architecture Rules (Strict Mode)
+
+## 1. Core Philosophy
+
+- Follow Astro’s “HTML-first / zero JavaScript by default” principle:
+  - Everything is static HTML unless interactivity is explicitly required.
+  - JavaScript is a cost → only add when it creates real user value.
+
+- Always think in “Islands Architecture”:
+  - The page is static HTML
+  - Interactive parts are isolated islands
+  - Never treat the whole page as an app
+
+- Before writing any JavaScript, always ask:
+  &quot;Can this be solved with HTML + CSS or server-side logic?&quot;
+
+---
+
+## 2. Component Model
+
+- Use `.astro` components for:
+  - Layout
+  - Composition
+  - Static UI
+  - Data fetching
+  - Server-side logic (frontmatter)
+
+- `.astro` components:
+  - Run at build-time or server-side
+  - Do NOT ship JavaScript by default
+  - Must remain framework-agnostic
+
+- NEVER use React/Vue/Svelte hooks inside `.astro`
+
+---
+
+## 3. Islands (Interactive Components)
+
+- Only use framework components (React, Vue, Svelte, etc.) for interactivity.
+
+- Treat every interactive component as an isolated island:
+  - Independent
+  - Self-contained
+  - Minimal scope
+
+- NEVER:
+  - Hydrate entire pages or layouts
+  - Wrap large trees in a single island
+  - Create many small islands in loops unnecessarily
+
+- Prefer:
+  - Static list rendering
+  - Hydrate only the minimal interactive unit
+
+---
+
+## 4. Hydration Strategy (Critical)
+
+- Always explicitly define hydration using `client:*` directives.
+
+- Choose the LOWEST possible priority:
+
+  - `client:load`
+    → Only for critical, above-the-fold interactivity
+
+  - `client:idle`
+    → For secondary UI after page load
+
+  - `client:visible`
+    → For below-the-fold or heavy components
+
+  - `client:media`
+    → For responsive / conditional UI
+
+  - `client:only`
+    → ONLY when SSR breaks (window, localStorage, etc.)
+
+- Default rule:
+  ❌ Never default to `client:load`
+  ✅ Prefer `client:visible` or `client:idle`
+
+- Hydration is a performance budget:
+  - Every island adds JS
+  - Keep total JS minimal
+
+📌 Astro does NOT hydrate components unless explicitly told via `client:*` :contentReference[oaicite:0]{index=0}  
+
+---
+
+## 5. Server vs Client Logic
+
+- Prefer server-side logic (inside `.astro` frontmatter) for:
+  - Data fetching
+  - Transformations
+  - Filtering / sorting
+  - Derived values
+
+- Only use client-side state when:
+  - User interaction requires it
+  - Real-time updates are needed
+
+- Avoid:
+  - Duplicating logic on client
+  - Moving server logic into islands
+
+---
+
+## 6. State Management
+
+- Avoid client state unless strictly necessary.
+
+- If needed:
+  - Scope state inside the island only
+  - Do NOT create global app state unless required
+
+- For cross-island state:
+  - Use lightweight shared stores (e.g., nano stores)
+  - Avoid heavy global state systems by default
+
+---
+
+## 7. Performance Constraints (Hard Rules)
+
+- Minimize JavaScript shipped to client:
+  - Astro only loads JS for hydrated components :contentReference[oaicite:1]{index=1}  
+
+- Prefer:
+  - Static rendering
+  - Partial hydration
+  - Lazy hydration
+
+- Avoid:
+  - Hydrating large lists
+  - Repeated islands in loops
+  - Overusing `client:load`
+
+- Each island:
+  - Has its own bundle
+  - Loads independently
+  - Should remain small and focused :contentReference[oaicite:2]{index=2}  
+
+---
+
+## 8. File &amp; Project Structure
+
+- `/pages`
+  - Entry points (SSG/SSR)
+  - No client logic
+
+- `/components`
+  - Shared UI
+  - Islands live here
+
+- `/layouts`
+  - Static wrappers only
+
+- `/content`
+  - Markdown / CMS data
+
+- Keep `.astro` files focused on composition, not behavior
+
+---
+
+## 9. Anti-Patterns (Strictly Forbidden)
+
+- ❌ Using hooks in `.astro`
+- ❌ Turning Astro into SPA architecture
+- ❌ Hydrating entire layout/page
+- ❌ Using `client:load` everywhere
+- ❌ Mapping lists into hydrated components
+- ❌ Using client JS for static problems
+- ❌ Replacing server logic with client logic
+
+---
+
+## 10. Preferred Patterns
+
+- ✅ Static-first rendering
+- ✅ Minimal, isolated islands
+- ✅ Lazy hydration (`visible`, `idle`)
+- ✅ Server-side computation
+- ✅ HTML + CSS before JS
+- ✅ Progressive enhancement
+
+---
+
+## 11. Decision Framework (VERY IMPORTANT)
+
+For every feature:
+
+1. Can this be static HTML?
+   → YES → Use `.astro`
+
+2. Does it require interaction?
+   → NO → Stay static
+
+3. Does it require JS?
+   → YES → Create an island
+
+4. When should it load?
+   → Choose LOWEST priority `client:*`
+
+---
+
+## 12. Mental Model (Non-Negotiable)
+
+- Astro is NOT:
+  - Next.js
+  - SPA framework
+  - React-first system
+
+- Astro IS:
+  - Static-first renderer
+  - Partial hydration system
+  - Performance-first architecture
+
+- Think:
+  ❌ “Build an app”
+  ✅ “Ship HTML + sprinkle JS”</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
+Add to Chrome (Free)
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="rgba(255, 255, 255, 0.1)",t.style.color="#fff"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
