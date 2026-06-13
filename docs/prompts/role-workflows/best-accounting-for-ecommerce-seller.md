@@ -1,23 +1,29 @@
-# Best CRM Platforms for real estate agent
+# 🏆 Prompt Template: Best ACCOUNTING Platforms for ecommerce seller
 
-An objective evaluation of platforms for target persona profiles.
+An analytical prompt template to evaluate software suites for target persona profiles.
 
 [![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en)
 
 ---
 
-## 🏆 Recommendation Matrix
+## 🏆 Context Parameters
 
-*   **Role Class**: real-estate-agent
-*   **Product Type**: crm
+*   **Role Class**: ecommerce-seller
+*   **Product Type**: accounting
 
 ---
 
-## 🤖 Prompt Optimizer Helper
+## 🤖 The Prompt Engineering Code
+
+Copy and paste this structured prompt into ChatGPT, Claude, Gemini, or Grok:
 
 ```text
-"Act as a professional software auditor. Analyze the best crm suites specifically matching user workflow requirements for real-estate-agent."
+"Act as a professional software auditor. Analyze the best accounting suites specifically matching user workflow requirements for ecommerce-seller."
 ```
+
+---
+
+## 🔧 Automatic Optimization
 
 > [!IMPORTANT]
 > Score, expand, and refine comparative prompts automatically in your window via the [browser-level prompt optimizer tool](https://chromewebstore.google.com/detail/Hello%20Prompting:%20Best%20AI%20Prompt%20Optimizer/idfecahooccghgkjohelhjecjeeeapah?hl=en).

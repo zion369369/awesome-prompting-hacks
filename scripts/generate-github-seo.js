@@ -2,7 +2,7 @@
  * scripts/generate-github-seo.js
  * Programmatic SEO Markdown Engine for GitHub (DA 99).
  * 
- * ES-Module compliant version compiling all playbooks.
+ * Re-branded to focus entirely on Prompt Engineering Templates.
  */
 
 import fs from 'fs';
@@ -13,12 +13,12 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = nodePath.dirname(__filename);
 
-// Target Directories
+// Target Directories focusing on Prompts
 const DOCS_DIR = nodePath.join(__dirname, '../docs');
-const COMPARE_DIR = nodePath.join(DOCS_DIR, 'compare');
-const TAX_DIR = nodePath.join(DOCS_DIR, 'tax');
-const ALTERNATIVE_DIR = nodePath.join(DOCS_DIR, 'alternatives');
-const BESTFOR_DIR = nodePath.join(DOCS_DIR, 'best-for');
+const COMPARE_DIR = nodePath.join(DOCS_DIR, 'prompts/compare-saas');
+const TAX_DIR = nodePath.join(DOCS_DIR, 'prompts/tax-planning');
+const ALTERNATIVE_DIR = nodePath.join(DOCS_DIR, 'prompts/saas-alternatives');
+const BESTFOR_DIR = nodePath.join(DOCS_DIR, 'prompts/role-workflows');
 
 // Ensure output directories exist
 [DOCS_DIR, COMPARE_DIR, TAX_DIR, ALTERNATIVE_DIR, BESTFOR_DIR].forEach(dir => {
@@ -42,46 +42,43 @@ function generateSaasMarkdown(item) {
   const sa = item.software_a.toLowerCase().replace(/\s+/g, '-');
   const sb = item.software_b.toLowerCase().replace(/\s+/g, '-');
   const ind = item.industry.toLowerCase().replace(/\s+/g, '-');
-  const filename = `${sa}-vs-${sb}-for-${ind}.md`;
+  const filename = `compare-${sa}-vs-${sb}-for-${ind}.md`;
 
-  const mdContent = `# ${item.software_a} vs ${item.software_b} for ${item.industry}
+  const mdContent = `# 📋 Prompt Template: Compare ${item.software_a} vs ${item.software_b} for ${item.industry}
 
-An objective comparative matrix compiled for operations in the **${item.industry}** sector.
+An elite prompt framework configured to evaluate systems in the **${item.industry}** sector.
 
 ${EXTENSION_BADGE}
 
 ---
 
-## 📊 Comparison Summary Matrix
+## ⚡ Target Comparative Metrics
 
-| Dimension | ${item.software_a} | ${item.software_b} |
-| :--- | :--- | :--- |
-| **Pricing** | ${item.average_pricing_a} | ${item.average_pricing_b} |
-| **Setup** | ${item.setup_time} | - |
-| **Rating** | **${item.difficulty_score}/10** | - |
+Use this template to generate objective matrices including:
+*   **Pricing Ranges**: ${item.average_pricing_a} vs ${item.average_pricing_b}
+*   **Onboarding Phase**: ${item.setup_time}
+*   **Difficulty Threshold**: ${item.difficulty_score}/10
 
 ---
 
-## 💡 Prompt Optimization Hack
+## 💡 The Prompt Engineering Code
 
-### Naive SaaS Prompt
-\`\`\`text
-"${item.software_a} vs ${item.software_b} comparison for my company"
-\`\`\`
-*Prompt Score™: 35%*
+Copy and paste this structured prompt into ChatGPT, Claude, Gemini, or Grok:
 
-### Optimized Super Prompt
 \`\`\`text
-"Act as a professional SaaS Integration Consultant. Compare ${item.software_a} and ${item.software_b} for a business operating in ${item.industry}. Detail licensing structures, implementation costs, and feature matrices."
+"Act as a professional SaaS Integration Consultant. Compare ${item.software_a} and ${item.software_b} for a business operating in ${item.industry}. Detail licensing structures, implementation costs, and feature matrices. Analyze key strengths such as '${item.best_feature_a}' vs '${item.best_feature_b}'. Output as a markdown table with a final verdict recommendation."
 \`\`\`
-*Prompt Score™: 98%*
+
+---
+
+## 🔧 Automatic Optimization
 
 > [!TIP]
 > To auto-generate, audit, and score these checklists directly within your AI window, deploy the [Prompt Engineering Console tool](${CHROME_STORE_URL}).
 `;
 
   fs.writeFileSync(nodePath.join(COMPARE_DIR, filename), mdContent, 'utf-8');
-  return `docs/compare/${filename}`;
+  return `docs/prompts/compare-saas/${filename}`;
 }
 
 /**
@@ -90,17 +87,17 @@ ${EXTENSION_BADGE}
 function generateTaxMarkdown(item) {
   const asset = item.asset_type.toLowerCase().replace(/\s+/g, '-');
   const bracket = item.tax_bracket.replace(/%/g, '');
-  const filename = `${asset}-bracket-${bracket}-zip-${item.zip_code}.md`;
+  const filename = `calculate-${asset}-bracket-${bracket}-zip-${item.zip_code}.md`;
 
-  const mdContent = `# Marginal Tax Calculator for ${item.asset_type} (${item.tax_bracket} Bracket, Zip ${item.zip_code})
+  const mdContent = `# 💸 Prompt Template: Calculate ${item.asset_type} Tax for ${item.tax_bracket} Bracket (Zip ${item.zip_code})
 
-A localized marginal liability model mapping asset returns for region: **${item.region}**.
+An advanced prompt schema mapping marginal returns and local surcharges for region: **${item.region}**.
 
 ${EXTENSION_BADGE}
 
 ---
 
-## 📈 Localized Tax Parameters
+## 📈 Localized Model Context
 
 *   **Asset Type**: ${item.asset_type}
 *   **Base Rate**: ${(item.base_rate * 100).toFixed(1)}%
@@ -109,66 +106,70 @@ ${EXTENSION_BADGE}
 
 ---
 
-## 🤖 Prompt Engineering Helper
+## 🤖 The Prompt Engineering Code
 
-### Naive Tax Prompt
-\`\`\`text
-"how to save taxes in ${item.zip_code}"
-\`\`\`
-*Prompt Score™: 22%*
+Copy and paste this structured prompt into ChatGPT, Claude, Gemini, or Grok:
 
-### Optimized Super Prompt
 \`\`\`text
-"Act as a CPA and Corporate Tax Attorney. Detail a tax mitigation checklist for ${item.asset_type} assets in Zip Code ${item.zip_code} (${item.region}). Incorporate standard write-offs like ${item.deductions_available} and evaluate a ${item.recommended_entity} structure."
+"Act as a CPA and Corporate Tax Attorney. Detail a tax mitigation checklist for ${item.asset_type} assets in Zip Code ${item.zip_code} (${item.region}). Incorporate standard write-offs like ${item.deductions_available} and evaluate a ${item.recommended_entity} structure. Outline standard tax mitigation strategies."
 \`\`\`
-*Prompt Score™: 95%*
+
+---
+
+## 🔧 Automatic Optimization
 
 > [!IMPORTANT]
 > To compile audits instantly without manual drafting, integrate the browser-level [Prompt Optimization toolkit](${CHROME_STORE_URL}) directly in your console.
 `;
 
   fs.writeFileSync(nodePath.join(TAX_DIR, filename), mdContent, 'utf-8');
-  return `docs/tax/${filename}`;
+  return `docs/prompts/tax-planning/${filename}`;
 }
 
 /**
  * Generate Alternatives page
  */
 function generateAlternativeMarkdown(software) {
-  const filename = `best-${software}-alternatives.md`;
+  const filename = `find-best-${software}-alternatives.md`;
   const name = software.charAt(0).toUpperCase() + software.slice(1);
   const competitors = saasData.filter(item => 
     item.software_a.toLowerCase() === software || 
     item.software_b.toLowerCase() === software
   ).map(item => item.software_a.toLowerCase() === software ? item.software_b : item.software_a);
 
-  const mdContent = `# Best ${name} Alternatives & Competitors
+  const mdContent = `# 🔍 Prompt Template: Find Best ${name} Alternatives & Competitors
 
-Explore top replacement options for **${name}** software.
+A high-fidelity prompt template to discover cost-effective competitor solutions replacing **${name}**.
 
 ${EXTENSION_BADGE}
 
 ---
 
-## 🔍 Top Market Competitors
+## 🔍 Context Parameters
 
-*   **Direct alternatives identified**: ${competitors.join(', ')}
+*   **Target Software**: ${name}
+*   **Competitors List**: ${competitors.join(', ')}
 
 ---
 
-## 🤖 Workspace Prompt Optimizer
+## 🤖 The Prompt Engineering Code
 
-Before migrating tool databases, write a transition plan:
+Copy and paste this structured prompt into ChatGPT, Claude, Gemini, or Grok:
+
 \`\`\`text
-"Act as a System Administrator. Write a database migration script and transition checklists to migrate all operations from ${name} to ${competitors[0] || 'alternative software'}. Structure as step-by-step tasks."
+"Act as an Enterprise System Administrator. Write a database migration script and transition checklists to migrate all operations from ${name} to ${competitors[0] || 'alternative software'}. Structure as step-by-step tasks."
 \`\`\`
+
+---
+
+## 🔧 Automatic Optimization
 
 > [!TIP]
 > To expand system transition scripts dynamically, activate the [browser-level prompt optimizer tool](${CHROME_STORE_URL}).
 `;
 
   fs.writeFileSync(nodePath.join(ALTERNATIVE_DIR, filename), mdContent, 'utf-8');
-  return `docs/alternatives/${filename}`;
+  return `docs/prompts/saas-alternatives/${filename}`;
 }
 
 /**
@@ -176,33 +177,39 @@ Before migrating tool databases, write a transition plan:
  */
 function generateBestForMarkdown(item) {
   const filename = `best-${item.category}-for-${item.role}.md`;
-  const mdContent = `# Best ${item.category.toUpperCase()} Platforms for ${item.role.replace(/-/g, ' ')}
+  const mdContent = `# 🏆 Prompt Template: Best ${item.category.toUpperCase()} Platforms for ${item.role.replace(/-/g, ' ')}
 
-An objective evaluation of platforms for target persona profiles.
+An analytical prompt template to evaluate software suites for target persona profiles.
 
 ${EXTENSION_BADGE}
 
 ---
 
-## 🏆 Recommendation Matrix
+## 🏆 Context Parameters
 
 *   **Role Class**: ${item.role}
 *   **Product Type**: ${item.category}
 
 ---
 
-## 🤖 Prompt Optimizer Helper
+## 🤖 The Prompt Engineering Code
+
+Copy and paste this structured prompt into ChatGPT, Claude, Gemini, or Grok:
 
 \`\`\`text
 "Act as a professional software auditor. Analyze the best ${item.category} suites specifically matching user workflow requirements for ${item.role}."
 \`\`\`
+
+---
+
+## 🔧 Automatic Optimization
 
 > [!IMPORTANT]
 > Score, expand, and refine comparative prompts automatically in your window via the [browser-level prompt optimizer tool](${CHROME_STORE_URL}).
 `;
 
   fs.writeFileSync(nodePath.join(BESTFOR_DIR, filename), mdContent, 'utf-8');
-  return `docs/best-for/${filename}`;
+  return `docs/prompts/role-workflows/${filename}`;
 }
 
 /**
@@ -228,27 +235,35 @@ All templates are optimized for execution using the [Awesome Prompting Console t
 
 ---
 
-## 📊 Software Comparison Indexes
+## 📊 SaaS Evaluation & Comparison Prompts
 
-${saasUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase()}](${url})`).join('\n')}
+Copy-paste templates to compare enterprise software:
 
----
-
-## 💸 Localized Tax Estimators
-
-${taxUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase()}](${url})`).join('\n')}
+${saasUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase().replace(/COMPARE-/g, '')}](${url})`).join('\n')}
 
 ---
 
-## 🔍 Alternatives Directory
+## 💸 Tax Planning & Computation Prompts
 
-${altUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase()}](${url})`).join('\n')}
+Templates to calculate localized liabilities:
+
+${taxUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase().replace(/CALCULATE-/g, '')}](${url})`).join('\n')}
 
 ---
 
-## 🏆 Persona Best-For Guides
+## 🔍 Competitor Assessment & Alternatives Prompts
 
-${bestForUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase()}](${url})`).join('\n')}
+Templates to discover software alternatives:
+
+${altUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase().replace(/FIND-BEST-/g, '')}](${url})`).join('\n')}
+
+---
+
+## 🏆 Role-Based Workflow Prompts
+
+Templates to audit tool categories by user persona:
+
+${bestForUrls.map(url => `*   [${nodePath.basename(url, '.md').toUpperCase().replace(/BEST-/g, '')}](${url})`).join('\n')}
 `;
 
   fs.writeFileSync(nodePath.join(__dirname, '../README.md'), readmeContent, 'utf-8');
