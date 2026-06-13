@@ -1,146 +1,187 @@
 /**
  * scripts/harvest-prompts.js
- * Scraper to fetch real-world prompt templates from PromptLibrary.org.
+ * Parses open-source prompt templates from JuliusBrussee/the-prompt-library CSV dataset
+ * and merges them into our active Awesome Prompting Hacks database.
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import * as cheerio from 'cheerio';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data/scraped_prompts.json');
+const SCRATCH_CSV_PATH = 'C:\\Users\\SURFACE LAPTOP\\.gemini\\antigravity\\brain\\de1e8602-6656-4fce-a355-6c2147e8ca68\\scratch\\the-prompt-library\\data\\master_100_ai_prompts.csv';
 
-// Ensure output directory exists
-const dataDir = path.dirname(OUTPUT_FILE);
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+function slugify(text) {
+  return text.toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '') // remove special characters
+    .replace(/\s+/g, '-')         // replace spaces with hyphens
+    .replace(/-+/g, '-');         // remove duplicate hyphens
 }
 
-async function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+function parseCSV(content) {
+  const rows = [];
+  let currentField = '';
+  let currentRow = [];
+  let inQuotes = false;
+  
+  for (let i = 0; i < content.length; i++) {
+    const char = content[i];
+    const nextChar = content[i + 1];
+    
+    if (char === '"') {
+      if (inQuotes && nextChar === '"') {
+        currentField += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      currentRow.push(currentField);
+      currentField = '';
+    } else if ((char === '\r' || char === '\n') && !inQuotes) {
+      if (char === '\r' && nextChar === '\n') {
+        i++;
+      }
+      currentRow.push(currentField);
+      rows.push(currentRow);
+      currentRow = [];
+      currentField = '';
+    } else {
+      currentField += char;
+    }
+  }
+  
+  if (currentField || currentRow.length > 0) {
+    currentRow.push(currentField);
+    rows.push(currentRow);
+  }
+  
+  return rows;
 }
 
 async function harvest() {
-  console.log('[HARVESTER] Starting prompt harvesting from PromptLibrary.org...');
+  console.log('[HARVESTER] Harvesting from open-source JuliusBrussee/the-prompt-library repository...');
   
   try {
-    // 1. Fetch homepage
-    console.log('[HARVESTER] Fetching homepage...');
-    const homeRes = await fetch('https://promptlibrary.org/');
-    if (!homeRes.ok) {
-      throw new Error(`Failed to fetch homepage: ${homeRes.statusText}`);
-    }
-    const homeHtml = await homeRes.text();
-    const $home = cheerio.load(homeHtml);
-    
-    // 2. Extract detail page URLs
-    const detailUrls = [];
-    $home('a').each((i, el) => {
-      const href = $home(el).attr('href');
-      if (href && href.includes('/midjourney/') && href !== 'https://promptlibrary.org/midjourney/') {
-        // Normalize URL (strip query params, trailing slashes, etc.)
-        const normalized = href.split('?')[0];
-        if (!detailUrls.includes(normalized)) {
-          detailUrls.push(normalized);
-        }
-      }
-    });
-
-    console.log(`[HARVESTER] Found ${detailUrls.length} unique prompt detail pages.`);
-
-    // We can limit or crawl all. Let's try to crawl up to 45 prompts.
-    const maxPrompts = 45;
-    const targets = detailUrls.slice(0, maxPrompts);
-    console.log(`[HARVESTER] Harvesting first ${targets.length} prompts...`);
-
-    const scrapedPrompts = [];
-
-    // 3. Crawl each page
-    for (let i = 0; i < targets.length; i++) {
-      const url = targets[i];
-      const slug = url.replace('https://promptlibrary.org/midjourney/', '').replace(/\//g, '');
-      console.log(`[${i + 1}/${targets.length}] Fetching ${url} (slug: ${slug})...`);
-      
-      try {
-        const detailRes = await fetch(url);
-        if (!detailRes.ok) {
-          console.error(`[ERROR] Failed to fetch ${url}: ${detailRes.statusText}`);
-          continue;
-        }
-        
-        const detailHtml = await detailRes.text();
-        const $detail = cheerio.load(detailHtml);
-        
-        // Extract Title
-        const title = $detail('.elementor-widget-theme-post-title h1.elementor-heading-title').first().text().trim() ||
-                      $detail('h1.elementor-heading-title').first().text().trim() ||
-                      $detail('h1').first().text().trim();
-        
-        // Extract Prompt text
-        const promptText = $detail('.elementor-widget-theme-post-content pre code').first().text().trim() ||
-                           $detail('pre.wp-block-code code').first().text().trim() ||
-                           $detail('pre').first().text().trim();
-        
-        // Extract Image
-        const imageUrl = $detail('meta[property="og:image"]').attr('content') ||
-                          $detail('.elementor-widget-theme-post-featured-image img').attr('src') ||
-                          $detail('article img').first().attr('src');
-                          
-        // Extract Tags
-        const tags = [];
-        $detail('.elementor-post-info__terms-list a, .elementor-widget-post-info a').each((_, el) => {
-          const tagText = $detail(el).text().trim().toLowerCase();
-          if (tagText && tagText !== 'midjourney' && !tags.includes(tagText) && !tagText.includes('tags:')) {
-            tags.push(tagText);
-          }
-        });
-        
-        if (!title || !promptText) {
-          console.warn(`[WARNING] Incomplete data for ${url}. Skipping.`);
-          continue;
-        }
-
-        const promptItem = {
-          title,
-          slug,
-          prompt: promptText,
-          imageUrl,
-          tags: tags.length > 0 ? tags : ['midjourney', 'ai-image'],
-          category: 'midjourney',
-          url
-        };
-        
-        scrapedPrompts.push(promptItem);
-        console.log(`[SUCCESS] Scraped: "${title}"`);
-        
-        // Politeness delay
-        await sleep(300);
-      } catch (err) {
-        console.error(`[ERROR] Error scraping ${url}:`, err.message);
-      }
-    }
-    
-    // Save to file (merging with existing if exists)
+    // 1. Read existing prompts database
     let existingPrompts = [];
     if (fs.existsSync(OUTPUT_FILE)) {
       try {
         existingPrompts = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
       } catch (err) {
-        console.warn(`[WARNING] Failed to parse existing prompts file: ${err.message}`);
+        console.warn(`[WARNING] Failed to parse existing prompts: ${err.message}`);
       }
     }
-    const mergedMap = new Map();
-    existingPrompts.forEach(item => mergedMap.set(item.slug, item));
-    scrapedPrompts.forEach(item => mergedMap.set(item.slug, item));
-    const mergedPrompts = Array.from(mergedMap.values());
+    
+    const existingSlugs = new Set(existingPrompts.map(p => p.slug));
+    console.log(`[HARVESTER] Loaded ${existingPrompts.length} existing prompts.`);
 
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(mergedPrompts, null, 2), 'utf-8');
-    console.log(`[HARVESTER] Harvest complete! Crawled ${scrapedPrompts.length} prompts. Total database size: ${mergedPrompts.length} prompts.`);
+    // 2. Read and parse CSV
+    const targetCSV = fs.existsSync(SCRATCH_CSV_PATH) ? SCRATCH_CSV_PATH : path.join(__dirname, '../scratch/the-prompt-library/data/master_100_ai_prompts.csv');
+    if (!fs.existsSync(targetCSV)) {
+      throw new Error(`Master prompts CSV not found at ${targetCSV}`);
+    }
+    
+    console.log(`[HARVESTER] Reading CSV from ${targetCSV}...`);
+    const csvContent = fs.readFileSync(targetCSV, 'utf-8');
+    const rows = parseCSV(csvContent);
+    console.log(`[HARVESTER] Parsed ${rows.length} rows from CSV.`);
+
+    const newPrompts = [];
+    let fabricCount = 0;
+    
+    // Skip header row
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      if (row.length < 2) continue;
+      
+      const rawCategory = row[0] || 'General';
+      const promptText = row[1] || '';
+      const author = row[3] || 'Julius Brussee';
+      
+      if (!promptText.trim()) continue;
+
+      // Skip most of Fabric prompts to keep static build size performant (capping Fabric at 20 items)
+      if (rawCategory.toLowerCase() === 'fabric') {
+        if (fabricCount >= 20) {
+          continue;
+        }
+        fabricCount++;
+      }
+
+      // Extract title from ROLE line
+      const roleMatch = promptText.match(/^ROLE:\s*(.*)/i);
+      let title = '';
+      if (roleMatch) {
+        title = roleMatch[1].trim();
+      } else {
+        const firstLine = promptText.split('\n')[0].trim();
+        title = firstLine.replace(/^ROLE:\s*/i, '').trim();
+      }
+      
+      // Clean up title
+      if (title.endsWith('.')) {
+        title = title.slice(0, -1);
+      }
+      title = title.trim();
+      
+      // Truncate title if too long
+      if (title.length > 80) {
+        title = title.substring(0, 77) + '...';
+      }
+      
+      if (!title) {
+        title = `${rawCategory} Assistant ${i}`;
+      }
+
+      let slug = slugify(title).substring(0, 50);
+      if (slug.endsWith('-')) {
+        slug = slug.slice(0, -1);
+      }
+      if (!slug) {
+        slug = 'prompt';
+      }
+      
+      let finalSlug = slug;
+      let suffix = 1;
+      while (existingSlugs.has(finalSlug) || newPrompts.some(p => p.slug === finalSlug)) {
+        finalSlug = `${slug}-${suffix}`;
+        suffix++;
+      }
+
+      // Clean up tags
+      const categoryTag = slugify(rawCategory);
+      const tags = [categoryTag, 'chatgpt', 'open-source'];
+      
+      const promptItem = {
+        title,
+        slug: finalSlug,
+        prompt: promptText.trim(),
+        imageUrl: null, // text templates have no image preview
+        tags,
+        category: rawCategory,
+        url: 'https://github.com/JuliusBrussee/the-prompt-library'
+      };
+
+      newPrompts.push(promptItem);
+    }
+
+    console.log(`[HARVESTER] Identified ${newPrompts.length} new unique prompts to add.`);
+    
+    // Merge and save
+    const mergedMap = new Map();
+    existingPrompts.forEach(p => mergedMap.set(p.slug, p));
+    newPrompts.forEach(p => mergedMap.set(p.slug, p));
+    
+    const mergedList = Array.from(mergedMap.values());
+    
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(mergedList, null, 2), 'utf-8');
+    console.log(`[HARVESTER] Success! Total database now has ${mergedList.length} prompts.`);
   } catch (err) {
-    console.error('[HARVESTER] Critical error during harvesting:', err.message);
+    console.error(`[ERROR] Failed to run open-source harvest:`, err.message);
     process.exit(1);
   }
 }
