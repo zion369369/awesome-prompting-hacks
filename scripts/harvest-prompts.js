@@ -1,6 +1,8 @@
 /**
  * scripts/harvest-prompts.js
- * Parses open-source prompt templates from JuliusBrussee/the-prompt-library CSV dataset
+ * Parses open-source prompt templates from:
+ * 1. JuliusBrussee/the-prompt-library CSV dataset
+ * 2. f/awesome-chatgpt-prompts CSV dataset
  * and merges them into our active Awesome Prompting Hacks database.
  */
 
@@ -13,6 +15,7 @@ const __dirname = path.dirname(__filename);
 
 const OUTPUT_FILE = path.join(__dirname, '../src/data/scraped_prompts.json');
 const SCRATCH_CSV_PATH = 'C:\\Users\\SURFACE LAPTOP\\.gemini\\antigravity\\brain\\de1e8602-6656-4fce-a355-6c2147e8ca68\\scratch\\the-prompt-library\\data\\master_100_ai_prompts.csv';
+const CHATGPT_CSV_PATH = 'C:\\Users\\SURFACE LAPTOP\\.gemini\\antigravity\\brain\\de1e8602-6656-4fce-a355-6c2147e8ca68\\scratch\\awesome-chatgpt-prompts\\prompts.csv';
 
 function slugify(text) {
   return text.toLowerCase()
@@ -63,7 +66,7 @@ function parseCSV(content) {
 }
 
 async function harvest() {
-  console.log('[HARVESTER] Harvesting from open-source JuliusBrussee/the-prompt-library repository...');
+  console.log('[HARVESTER] Harvesting from multiple open-source repositories...');
   
   try {
     // 1. Read existing prompts database
@@ -79,94 +82,124 @@ async function harvest() {
     const existingSlugs = new Set(existingPrompts.map(p => p.slug));
     console.log(`[HARVESTER] Loaded ${existingPrompts.length} existing prompts.`);
 
-    // 2. Read and parse CSV
-    const targetCSV = fs.existsSync(SCRATCH_CSV_PATH) ? SCRATCH_CSV_PATH : path.join(__dirname, '../scratch/the-prompt-library/data/master_100_ai_prompts.csv');
-    if (!fs.existsSync(targetCSV)) {
-      throw new Error(`Master prompts CSV not found at ${targetCSV}`);
-    }
-    
-    console.log(`[HARVESTER] Reading CSV from ${targetCSV}...`);
-    const csvContent = fs.readFileSync(targetCSV, 'utf-8');
-    const rows = parseCSV(csvContent);
-    console.log(`[HARVESTER] Parsed ${rows.length} rows from CSV.`);
-
     const newPrompts = [];
-    let fabricCount = 0;
-    
-    // Skip header row
-    for (let i = 1; i < rows.length; i++) {
-      const row = rows[i];
-      if (row.length < 2) continue;
-      
-      const rawCategory = row[0] || 'General';
-      const promptText = row[1] || '';
-      const author = row[3] || 'Julius Brussee';
-      
-      if (!promptText.trim()) continue;
 
-      // Skip most of Fabric prompts to keep static build size performant (capping Fabric at 20 items)
-      if (rawCategory.toLowerCase() === 'fabric') {
-        if (fabricCount >= 20) {
+    // 2. Parse JuliusBrussee/the-prompt-library CSV
+    const targetCSV1 = fs.existsSync(SCRATCH_CSV_PATH) ? SCRATCH_CSV_PATH : path.join(__dirname, '../scratch/the-prompt-library/data/master_100_ai_prompts.csv');
+    if (fs.existsSync(targetCSV1)) {
+      console.log(`[HARVESTER] Reading CSV 1 from ${targetCSV1}...`);
+      const csvContent1 = fs.readFileSync(targetCSV1, 'utf-8');
+      const rows1 = parseCSV(csvContent1);
+      console.log(`[HARVESTER] Parsed ${rows1.length} rows from CSV 1.`);
+
+      let fabricCount = 0;
+      for (let i = 1; i < rows1.length; i++) {
+        const row = rows1[i];
+        if (row.length < 2) continue;
+        
+        const rawCategory = row[0] || 'General';
+        const promptText = row[1] || '';
+        if (!promptText.trim()) continue;
+
+        if (rawCategory.toLowerCase() === 'fabric') {
+          if (fabricCount >= 20) continue;
+          fabricCount++;
+        }
+
+        const roleMatch = promptText.match(/^ROLE:\s*(.*)/i);
+        let title = roleMatch ? roleMatch[1].trim() : promptText.split('\n')[0].trim().replace(/^ROLE:\s*/i, '').trim();
+        
+        if (title.endsWith('.')) title = title.slice(0, -1);
+        title = title.trim();
+        if (title.length > 80) title = title.substring(0, 77) + '...';
+        if (!title) title = `${rawCategory} Assistant ${i}`;
+
+        let slug = slugify(title).substring(0, 50);
+        if (slug.endsWith('-')) slug = slug.slice(0, -1);
+        if (!slug) slug = 'prompt';
+        
+        if (existingSlugs.has(slug)) {
           continue;
         }
-        fabricCount++;
-      }
+        
+        let finalSlug = slug;
+        let suffix = 1;
+        while (existingSlugs.has(finalSlug) || newPrompts.some(p => p.slug === finalSlug)) {
+          finalSlug = `${slug}-${suffix}`;
+          suffix++;
+        }
 
-      // Extract title from ROLE line
-      const roleMatch = promptText.match(/^ROLE:\s*(.*)/i);
-      let title = '';
-      if (roleMatch) {
-        title = roleMatch[1].trim();
-      } else {
-        const firstLine = promptText.split('\n')[0].trim();
-        title = firstLine.replace(/^ROLE:\s*/i, '').trim();
+        const categoryTag = slugify(rawCategory);
+        newPrompts.push({
+          title,
+          slug: finalSlug,
+          prompt: promptText.trim(),
+          imageUrl: null,
+          tags: [categoryTag, 'chatgpt', 'open-source'],
+          category: rawCategory,
+          url: 'https://github.com/JuliusBrussee/the-prompt-library'
+        });
       }
-      
-      // Clean up title
-      if (title.endsWith('.')) {
-        title = title.slice(0, -1);
-      }
-      title = title.trim();
-      
-      // Truncate title if too long
-      if (title.length > 80) {
-        title = title.substring(0, 77) + '...';
-      }
-      
-      if (!title) {
-        title = `${rawCategory} Assistant ${i}`;
-      }
+    } else {
+      console.log(`[HARVESTER] CSV 1 not found at ${targetCSV1}. Skipping.`);
+    }
 
-      let slug = slugify(title).substring(0, 50);
-      if (slug.endsWith('-')) {
-        slug = slug.slice(0, -1);
-      }
-      if (!slug) {
-        slug = 'prompt';
-      }
-      
-      let finalSlug = slug;
-      let suffix = 1;
-      while (existingSlugs.has(finalSlug) || newPrompts.some(p => p.slug === finalSlug)) {
-        finalSlug = `${slug}-${suffix}`;
-        suffix++;
-      }
+    // 3. Parse f/awesome-chatgpt-prompts CSV
+    const targetCSV2 = fs.existsSync(CHATGPT_CSV_PATH) ? CHATGPT_CSV_PATH : path.join(__dirname, '../scratch/awesome-chatgpt-prompts/prompts.csv');
+    if (fs.existsSync(targetCSV2)) {
+      console.log(`[HARVESTER] Reading CSV 2 from ${targetCSV2}...`);
+      const csvContent2 = fs.readFileSync(targetCSV2, 'utf-8');
+      const rows2 = parseCSV(csvContent2);
+      console.log(`[HARVESTER] Parsed ${rows2.length} rows from CSV 2.`);
 
-      // Clean up tags
-      const categoryTag = slugify(rawCategory);
-      const tags = [categoryTag, 'chatgpt', 'open-source'];
-      
-      const promptItem = {
-        title,
-        slug: finalSlug,
-        prompt: promptText.trim(),
-        imageUrl: null, // text templates have no image preview
-        tags,
-        category: rawCategory,
-        url: 'https://github.com/JuliusBrussee/the-prompt-library'
-      };
+      // Crop awesome-chatgpt-prompts to first 250 entries to keep static build efficient
+      const chatgptLimit = 250;
+      let count = 0;
 
-      newPrompts.push(promptItem);
+      for (let i = 1; i < rows2.length; i++) {
+        if (count >= chatgptLimit) break;
+        
+        const row = rows2[i];
+        if (row.length < 2) continue;
+
+        let title = (row[0] || '').trim();
+        const promptText = (row[1] || '').trim();
+        
+        if (!title || !promptText) continue;
+        if (title.endsWith('.')) title = title.slice(0, -1);
+        title = title.trim();
+        if (title.length > 80) title = title.substring(0, 77) + '...';
+
+        let slug = slugify(title).substring(0, 50);
+        if (slug.endsWith('-')) slug = slug.slice(0, -1);
+        if (!slug) slug = 'prompt';
+
+        if (existingSlugs.has(slug)) {
+          continue;
+        }
+        
+        let finalSlug = slug;
+        let suffix = 1;
+        while (existingSlugs.has(finalSlug) || newPrompts.some(p => p.slug === finalSlug)) {
+          finalSlug = `${slug}-${suffix}`;
+          suffix++;
+        }
+
+        newPrompts.push({
+          title,
+          slug: finalSlug,
+          prompt: promptText,
+          imageUrl: null,
+          tags: ['roleplay', 'chatgpt', 'open-source'],
+          category: 'Roleplay',
+          url: 'https://github.com/f/awesome-chatgpt-prompts'
+        });
+        
+        count++;
+      }
+      console.log(`[HARVESTER] Added ${count} prompts from awesome-chatgpt-prompts.`);
+    } else {
+      console.log(`[HARVESTER] CSV 2 not found at ${targetCSV2}. Skipping.`);
     }
 
     console.log(`[HARVESTER] Identified ${newPrompts.length} new unique prompts to add.`);
