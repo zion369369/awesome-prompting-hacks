@@ -46,6 +46,7 @@ const jsonLd = {
     "query-input": "required name=search_term_string"
   }
 };
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
 <BaseLayout title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
@@ -78,7 +79,7 @@ const jsonLd = {
     {prompts.map((item) => {
       const keywords = `${item.title} ${item.prompt} ${item.tags.join(' ')}`.toLowerCase();
       return (
-        <a href={`${import.meta.env.BASE_URL}prompts/${item.slug}`} class="prompt-card card-glass" data-keywords={keywords} data-tags={JSON.stringify(item.tags)}>
+        <a href={`${baseUrl}prompts/${item.slug}`} class="prompt-card card-glass" data-keywords={keywords} data-tags={JSON.stringify(item.tags)}>
           {item.imageUrl && (
             <div class="card-image-wrap">
               <img src={item.imageUrl} alt={item.title} class="card-image" loading="lazy" />

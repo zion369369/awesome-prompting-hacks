@@ -12,18 +12,20 @@ interface Props {
 const { title, description, image, jsonLd } = Astro.props;
 const canonicalUrl = Astro.url.href;
 
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
 // Build absolute OG image path
 const ogImage = image
-  ? (image.startsWith('http') ? image : new URL(import.meta.env.BASE_URL + image.replace(/^\//, ''), Astro.url).href)
-  : new URL(import.meta.env.BASE_URL + 'og-image.png', Astro.url).href;
+  ? (image.startsWith('http') ? image : new URL(baseUrl + image.replace(/^\//, ''), Astro.url).href)
+  : new URL(baseUrl + 'og-image.png', Astro.url).href;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
-    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
+    <link rel="icon" href={`${baseUrl}favicon.ico`} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     
@@ -61,7 +63,7 @@ const ogImage = image
     <div class="app-container">
       <header>
         <div class="header-inner">
-          <a href={import.meta.env.BASE_URL} class="logo">
+          <a href={baseUrl} class="logo">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="4 17 10 11 4 5"></polyline>
               <line x1="12" y1="19" x2="20" y2="19"></line>
@@ -79,8 +81,8 @@ const ogImage = image
         <div class="footer-inner">
           <p>&copy; {new Date().getFullYear()} Awesome Prompting Hacks. All prompt templates are community resources.</p>
           <div class="footer-links">
-            <a href={`${import.meta.env.BASE_URL}privacy`}>Privacy Policy</a>
-            <a href={`${import.meta.env.BASE_URL}terms`}>Terms of Service</a>
+            <a href={`${baseUrl}privacy`}>Privacy Policy</a>
+            <a href={`${baseUrl}terms`}>Terms of Service</a>
           </div>
         </div>
       </footer>
