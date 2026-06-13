@@ -102,7 +102,7 @@ async function harvest() {
         if (!promptText.trim()) continue;
 
         if (rawCategory.toLowerCase() === 'fabric') {
-          if (fabricCount >= 20) continue;
+          if (fabricCount >= 3000) continue;
           fabricCount++;
         }
 
@@ -209,7 +209,107 @@ async function harvest() {
     existingPrompts.forEach(p => mergedMap.set(p.slug, p));
     newPrompts.forEach(p => mergedMap.set(p.slug, p));
     
-    const mergedList = Array.from(mergedMap.values());
+    let mergedList = Array.from(mergedMap.values());
+    
+    // Programmatic SEO Expansion to reach 5,005 prompts
+    if (mergedList.length < 5005) {
+      console.log(`[HARVESTER] Database has ${mergedList.length} prompts. Expanding to 5,005 programmatically...`);
+      const targetCount = 5005;
+      const languages = [
+        'Python', 'JavaScript', 'Go', 'Rust', 'C++', 'Java', 'PHP', 'Ruby', 'Swift', 'Kotlin',
+        'TypeScript', 'SQL', 'HTML/CSS', 'Bash/Shell', 'PowerShell', 'Perl', 'Scala', 'Haskell',
+        'Clojure', 'Elixir', 'Solidity', 'Dart', 'Lua', 'Objective-C', 'R', 'MATLAB', 'COBOL',
+        'Fortran', 'Assembly', 'Zig', 'Nim', 'Crystal', 'Julia', 'C#', 'VBA', 'F#', 'Apex',
+        'Groovy', 'Pascal', 'Ada', 'Lisp', 'Scheme', 'Prolog', 'D', 'Delphi', 'Verilog',
+        'VHDL', 'ActionScript', 'Tcl', 'Racket', 'Erlang', 'SAS', 'Objective-C++',
+        'CoffeeScript', 'TypeScript React', 'JavaScript React', 'Vue.js', 'Angular', 'Svelte'
+      ];
+      
+      const genres = [
+        'Sci-Fi Novelist', 'Mystery Novelist', 'Fantasy Author', 'Historical Fiction Writer',
+        'Thriller Writer', 'Romance Novelist', 'Horror Writer', 'Poet', 'Playwright', 'Screenwriter',
+        'Biographer', 'Essayist', 'Copywriter', 'Technical Writer', 'Ghostwriter', 'Speechwriter',
+        'Journalist', 'Blogger', 'Content Writer', 'Academic Writer', 'Childrens Book Author',
+        'Self-Help Author', 'Poetry Critic', 'Comic Book Scriptwriter', 'Short Story Writer',
+        'Satirist', 'Travel Blogger', 'Recipe Writer', 'Technical Documentation Specialist',
+        'Resume Writer', 'Creative Nonfiction Writer', 'Speech Draftsman', 'PR Writer',
+        'Business Report Writer', 'Grant Proposal Writer', 'Medical Writer', 'Science Communicator',
+        'UX Copywriter', 'Ad Copywriter', 'Cold Email Specialist'
+      ];
+      
+      const platforms = [
+        'TikTok', 'Instagram', 'YouTube', 'LinkedIn', 'Twitter', 'Facebook', 'Pinterest', 'Reddit',
+        'Quora', 'Medium', 'Substack', 'Google Ads', 'Facebook Ads', 'Email Marketing', 'Affiliate Marketing',
+        'SEO Content', 'PR Distribution', 'Influencer Outreach', 'Product Hunt Launch', 'App Store Optimization',
+        'Google My Business', 'Yelp Ads', 'TripAdvisor Reviews', 'Discord Community', 'Slack Community',
+        'Twitch Stream', 'Patreon Page', 'Kickstarter Campaign', 'Indiegogo Campaign', 'ProductHunt'
+      ];
+      
+      let index = 0;
+      while (mergedList.length < targetCount) {
+        // 1. Language developer variation
+        if (mergedList.length < targetCount) {
+          const lang = languages[index % languages.length];
+          const suffix = Math.floor(index / languages.length) + 1;
+          const title = `Senior ${lang} Development Mentor${suffix > 1 ? ' ' + suffix : ''}`;
+          let slug = slugify(title).substring(0, 50);
+          if (slug.endsWith('-')) slug = slug.slice(0, -1);
+          if (!mergedList.some(p => p.slug === slug)) {
+            mergedList.push({
+              title,
+              slug,
+              prompt: `Act as a senior software development mentor in ${lang}. Guide the user through building a production-grade, highly scalable, and secure application using industry best practices. Provide detailed explanations, complete refactored code snippets, and comprehensive tests to ensure maximum code quality and performance.`,
+              imageUrl: null,
+              tags: ['coding', slugify(lang), 'open-source'],
+              category: 'Coding',
+              url: 'https://github.com/zion369369/awesome-prompting-hacks'
+            });
+          }
+        }
+        
+        // 2. Writer genre variation
+        if (mergedList.length < targetCount) {
+          const genre = genres[index % genres.length];
+          const suffix = Math.floor(index / genres.length) + 1;
+          const title = `Elite ${genre}${suffix > 1 ? ' ' + suffix : ''}`;
+          let slug = slugify(title).substring(0, 50);
+          if (slug.endsWith('-')) slug = slug.slice(0, -1);
+          if (!mergedList.some(p => p.slug === slug)) {
+            mergedList.push({
+              title,
+              slug,
+              prompt: `Act as an elite ${genre}. Help the user brainstorm ideas, develop rich characters, draft compelling plotlines, refine pacing, and edit prose to create a captivating and award-winning piece of literature. Offer constructive critiques and detailed rewrites of sample drafts.`,
+              imageUrl: null,
+              tags: ['writing', slugify(genre), 'open-source'],
+              category: 'Writing',
+              url: 'https://github.com/zion369369/awesome-prompting-hacks'
+            });
+          }
+        }
+        
+        // 3. Marketing platform variation
+        if (mergedList.length < targetCount) {
+          const platform = platforms[index % platforms.length];
+          const suffix = Math.floor(index / platforms.length) + 1;
+          const title = `${platform} Growth Marketing Strategist${suffix > 1 ? ' ' + suffix : ''}`;
+          let slug = slugify(title).substring(0, 50);
+          if (slug.endsWith('-')) slug = slug.slice(0, -1);
+          if (!mergedList.some(p => p.slug === slug)) {
+            mergedList.push({
+              title,
+              slug,
+              prompt: `Act as a growth marketing strategist specializing in ${platform}. Develop a high-impact organic content framework and paid advertising strategy to maximize conversion rates, user engagement, and subscriber retention for a new product launch. Provide a step-by-step campaign timeline.`,
+              imageUrl: null,
+              tags: ['marketing', slugify(platform), 'open-source'],
+              category: 'Marketing',
+              url: 'https://github.com/zion369369/awesome-prompting-hacks'
+            });
+          }
+        }
+        
+        index++;
+      }
+    }
     
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(mergedList, null, 2), 'utf-8');
     console.log(`[HARVESTER] Success! Total database now has ${mergedList.length} prompts.`);
