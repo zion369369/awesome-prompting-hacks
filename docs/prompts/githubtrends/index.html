@@ -1,0 +1,3854 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="icon" href="/awesome-prompting-hacks/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v6.4.6"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><!-- Core SEO Meta Tags --><title>GitHubTrends - Free AI Prompt Template</title><meta name="description" content="Copy and optimize the free AI prompt for: &quot;GitHubTrends&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/githubtrends/"><!-- Open Graph tags for social display --><meta property="og:type" content="website"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/githubtrends/"><meta property="og:title" content="GitHubTrends - Free AI Prompt Template"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;GitHubTrends&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Twitter Cards --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/githubtrends/"><meta name="twitter:title" content="GitHubTrends - Free AI Prompt Template"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;GitHubTrends&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"GitHubTrends","description":"Copy and optimize the free AI prompt for: \"GitHubTrends\". Features tags: roleplay, chatgpt, open-source.","genre":"Roleplay","keywords":"roleplay,chatgpt,open-source","creator":{"@type":"Organization","name":"Awesome Prompting Hacks"},"publisher":{"@type":"Organization","name":"Awesome Prompting Hacks","logo":{"@type":"ImageObject","url":"https://zion369369.github.io/awesome-prompting-hacks/favicon.svg"}},"text":"---\nname: GitHubTrends\ndescription: 显示GitHub热门项目趋势，生成可视化仪表板。USE WHEN github trends, trending projects, hot repositories, popular github projects, generate dashboard, create webpage.\nversion: 2.0.0\n---\n\n## Customization\n\n**Before executing, check for user customizations at:**\n`~/.claude/skills/CORE/USER/SKILLCUSTOMIZATIONS/GitHubTrends/`\n\nIf this directory exists, load and apply any PREFERENCES.md, configurations, or resources found there. These override default behavior. If the directory does not exist, proceed with skill defaults.\n\n# GitHubTrends - GitHub热门项目趋势\n\n**快速发现GitHub上最受欢迎的开源项目。**\n\n---\n\n## Philosophy\n\nGitHub trending是发现优质开源项目的最佳途径。这个skill让老王我能快速获取当前最热门的项目列表，按时间周期（每日/每周）和编程语言筛选，帮助发现值得学习和贡献的项目。\n\n---\n\n## Quick Start\n\n```bash\n# 查看本周最热门的项目（默认）\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly\n\n# 查看今日最热门的项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily\n\n# 按语言筛选\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python\n\n# 指定显示数量\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20\n```\n\n---\n\n## When to Use This Skill\n\n**Core Triggers - Use this skill when user says:**\n\n### Direct Requests\n- \"show github trends\" 或 \"github trending\"\n- \"显示热门项目\" 或 \"看看有什么热门项目\"\n- \"what's trending on github\" 或 \"github hot projects\"\n- \"本周热门项目\" 或 \"weekly trending\"\n- \"今日热门项目\" 或 \"daily trending\"\n\n### Discovery Requests\n- \"discover popular projects\" 或 \"发现热门项目\"\n- \"show repositories trending\" 或 \"显示trending仓库\"\n- \"github上什么最火\" 或 \"what's hot on github\"\n- \"找点好项目看看\" 或 \"find good projects\"\n\n### Language-Specific\n- \"TypeScript trending projects\" 或 \"TypeScript热门项目\"\n- \"Python trending\" 或 \"Python热门项目\"\n- \"show trending Rust projects\" 或 \"显示Rust热门项目\"\n- \"Go语言热门项目\" 或 \"trending Go projects\"\n\n### Dashboard & Visualization\n- \"生成 GitHub trending 仪表板\" 或 \"generate trending dashboard\"\n- \"创建趋势网页\" 或 \"create trending webpage\"\n- \"生成交互式报告\" 或 \"generate interactive report\"\n- \"export trending dashboard\" 或 \"导出仪表板\"\n- \"可视化 GitHub 趋势\" 或 \"visualize github trends\"\n\n---\n\n## Core Capabilities\n\n### 获取趋势列表\n- **每日趋势** - 过去24小时最热门项目\n- **每周趋势** - 过去7天最热门项目（默认）\n- **语言筛选** - 按编程语言过滤（TypeScript, Python, Go, Rust等）\n- **自定义数量** - 指定返回项目数量（默认10个）\n\n### 生成可视化仪表板 🆕\n- **交互式HTML** - 生成交互式网页仪表板\n- **数据可视化** - 语言分布饼图、Stars增长柱状图\n- **技术新闻** - 集成 Hacker News 技术资讯\n- **实时筛选** - 按语言筛选、排序、搜索功能\n- **响应式设计** - 支持桌面、平板、手机\n\n### 项目信息\n- 项目名称和描述\n- Star数量和变化\n- 编程语言\n- 项目URL\n\n---\n\n## Tool Usage\n\n### GetTrending.ts\n\n**Location:** `Tools/GetTrending.ts`\n\n**功能：** 从GitHub获取trending项目列表\n\n**参数：**\n- `period` - 时间周期：`daily` 或 `weekly`（默认：weekly）\n- `--language` - 编程语言筛选（可选）\n- `--limit` - 返回项目数量（默认：10）\n\n**使用示例：**\n```bash\n# 基本用法\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly\n\n# 带参数\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15\n\n# 简写\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily -l=Python\n```\n\n**实现方式：**\n使用 GitHub官方trending页面：https://github.com/trending\n通过 fetch API 读取页面内容并解析\n\n---\n\n### GenerateDashboard.ts 🆕\n\n**Location:** `Tools/GenerateDashboard.ts`\n\n**功能：** 生成交互式数据可视化仪表板HTML文件\n\n**参数：**\n- `--period` - 时间周期：`daily` 或 `weekly`（默认：weekly）\n- `--language` - 编程语言筛选（可选）\n- `--limit` - 返回项目数量（默认：10）\n- `--include-news` - 包含技术新闻\n- `--news-count` - 新闻数量（默认：10）\n- `--output` - 输出文件路径（默认：./github-trends.html）\n\n**使用示例：**\n```bash\n# 基本用法 - 生成本周仪表板\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts\n\n# 包含技术新闻\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news\n\n# TypeScript 项目每日仪表板\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \\\n  --period daily \\\n  --language TypeScript \\\n  --limit 20 \\\n  --include-news \\\n  --output ~/ts-daily.html\n```\n\n**实现方式：**\n- 获取 GitHub trending 项目数据\n- 获取 Hacker News 技术新闻\n- 使用 Handlebars 模板引擎渲染 HTML\n- 集成 Tailwind CSS 和 Chart.js\n- 生成完全独立的 HTML 文件（通过 CDN 加载依赖）\n\n---\n\n## Output Format\n\n```markdown\n# GitHub Trending Projects - Weekly (2025-01-19)\n\n## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)\n**Language:** TypeScript\n**Description:** The React Framework for the Web\n**URL:** https://github.com/vercel/next.js\n\n## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)\n**Language:** TypeScript\n**Description:** Visual Studio Code\n**URL:** https://github.com/microsoft/vscode\n\n...\n\n---\n📊 Total: 10 projects | Language: All | Period: Weekly\n```\n\n---\n\n## Supported Languages\n\n常用编程语言筛选：\n- **TypeScript** - TypeScript项目\n- **JavaScript** - JavaScript项目\n- **Python** - Python项目\n- **Go** - Go语言项目\n- **Rust** - Rust项目\n- **Java** - Java项目\n- **C++** - C++项目\n- **Ruby** - Ruby项目\n- **Swift** - Swift项目\n- **Kotlin** - Kotlin项目\n\n---\n\n## Workflow Integration\n\n这个skill可以被其他skill调用：\n- **OSINT** - 在调查技术栈时发现热门工具\n- **Research** - 研究特定语言生态系统的趋势\n- **System** - 发现有用的PAI相关项目\n\n---\n\n## Technical Notes\n\n**数据来源：** GitHub官方trending页面\n**更新频率：** 每小时更新一次\n**无需认证：** 使用公开页面，无需GitHub API token\n**解析方式：** 通过HTML解析提取项目信息\n\n**错误处理：**\n- 网络错误会显示友好提示\n- 解析失败会返回原始HTML供调试\n- 支持的语言参数不区分大小写\n\n---\n\n## Future Enhancements\n\n可能的未来功能：\n- 支持月度趋势（如果GitHub提供）\n- 按stars范围筛选（1k+, 10k+, 100k+）\n- 保存历史数据用于趋势分析\n- 集成到其他skill的自动化工作流\n\n---\n\n## Voice Notification\n\n**When executing a workflow, do BOTH:**\n\n1. **Send voice notification:**\n   ```bash\n   curl -s -X POST http://localhost:8888/notify \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"message\": \"Running the GitHubTrends workflow\"}' \\\n     > /dev/null 2>&1 &\n   ```\n\n2. **Output text notification:**\n   ```\n   Running the **GitHubTrends** workflow...\n   ```\n\n**Full documentation:** `~/.claude/skills/CORE/SkillNotifications.md`\n\u001fFILE:README.md\u001e\n# GitHubTrends Skill\n\n**快速发现GitHub上最受欢迎的开源项目，生成可视化仪表板！**\n\n## 功能特性\n\n### 基础功能\n- ✅ 获取每日/每周热门项目列表\n- ✅ 按编程语言筛选（TypeScript, Python, Go, Rust等）\n- ✅ 自定义返回项目数量\n- ✅ 显示Star总数和周期增长\n- ✅ 无需GitHub API token\n\n### 可视化仪表板 🆕\n- ✨ **交互式HTML** - 生成交互式网页仪表板\n- 📊 **数据可视化** - 语言分布饼图、Stars增长柱状图\n- 📰 **技术新闻** - 集成 Hacker News 最新资讯\n- 🔍 **实时筛选** - 按语言筛选、排序、搜索\n- 📱 **响应式设计** - 支持桌面、平板、手机\n- 🎨 **美观界面** - Tailwind CSS + GitHub 风格\n\n## 快速开始\n\n### 查看本周热门项目（默认）\n\n```bash\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly\n```\n\n### 查看今日热门项目\n\n```bash\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily\n```\n\n### 按语言筛选\n\n```bash\n# TypeScript热门项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript\n\n# Python热门项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python\n\n# Go热门项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly -l=Go\n```\n\n### 指定返回数量\n\n```bash\n# 返回20个项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20\n\n# 组合使用：返回15个TypeScript项目\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15\n```\n\n---\n\n## 生成可视化仪表板 🆕\n\n### 基本用法\n\n```bash\n# 生成本周趋势仪表板（默认）\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts\n```\n\n### 包含技术新闻\n\n```bash\n# 生成包含 Hacker News 的仪表板\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news\n```\n\n### 高级选项\n\n```bash\n# 生成 TypeScript 项目每日仪表板，包含 15 条新闻\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \\\n  --period daily \\\n  --language TypeScript \\\n  --limit 20 \\\n  --include-news \\\n  --news-count 15 \\\n  --output ~/Downloads/ts-daily-trends.html\n```\n\n### 仪表板功能\n\n生成的 HTML 文件包含：\n- **统计概览** - 总项目数、总 stars、top 项目\n- **语言分布图** - 饼图展示各语言占比\n- **Stars 增长图** - 柱状图展示增长趋势\n- **项目卡片** - 美观的卡片式项目展示\n- **技术新闻** - Hacker News 最新资讯\n- **交互功能** - 筛选、排序、搜索\n- **响应式** - 自适应各种屏幕尺寸\n\n---\n\n## 输出示例\n\n```markdown\n# GitHub Trending Projects - Weekly (2026-01-19)\n\n📊 **Total:** 10 projects | **Language:** All | **Period:** Weekly\n\n---\n\n## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)\n**Language:** TypeScript\n**Description:** The React Framework for the Web\n**URL:** https://github.com/vercel/next.js\n\n## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)\n**Language:** TypeScript\n**Description:** Visual Studio Code\n**URL:** https://github.com/microsoft/vscode\n\n...\n```\n\n## 参数说明\n\n| 参数 | 说明 | 默认值 | 可选值 |\n|------|------|--------|--------|\n| `period` | 时间周期 | `weekly` | `daily`, `weekly` |\n| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust, Java等 |\n| `--limit` | 返回项目数量 | 10 | 任意正整数 |\n\n## 支持的语言\n\n常用的编程语言都可以作为筛选条件：\n- **TypeScript** - TypeScript项目\n- **JavaScript** - JavaScript项目\n- **Python** - Python项目\n- **Go** - Go语言项目\n- **Rust** - Rust项目\n- **Java** - Java项目\n- **C++** - C++项目\n- **Ruby** - Ruby项目\n- **Swift** - Swift项目\n- **Kotlin** - Kotlin项目\n\n## Skill 触发词\n\n当你说以下任何内容时，这个skill会被触发：\n\n- \"show github trends\" / \"github trending\"\n- \"显示热门项目\" / \"看看有什么热门项目\"\n- \"weekly trending\" / \"本周热门项目\"\n- \"daily trending\" / \"今日热门项目\"\n- \"TypeScript trending\" / \"Python trending\"\n- \"what's hot on github\" / \"github上什么最火\"\n\n## 技术实现\n\n- **数据源**: GitHub官方trending页面 (https://github.com/trending)\n- **解析方式**: HTML解析提取项目信息\n- **认证**: 无需GitHub API token\n- **更新频率**: 每小时更新一次\n\n## 目录结构\n\n```\n~/.claude/skills/GitHubTrends/\n├── SKILL.md              # Skill主文件\n├── README.md             # 使用文档（本文件）\n├── Tools/\n│   └── GetTrending.ts    # 获取trending数据的工具\n└── Workflows/\n    └── GetTrending.md    # 工作流文档\n```\n\n## 注意事项\n\n1. **网络要求**: 需要能访问GitHub官网\n2. **更新频率**: 数据每小时更新，不是实时\n3. **解析准确性**: GitHub页面结构变化可能影响解析，如遇问题请检查 `/tmp/github-trending-debug-*.html`\n4. **语言参数**: 不区分大小写，`--language=typescript` 和 `--language=TypeScript` 效果相同\n\n## 已知问题\n\n- GitHub trending页面的HTML结构复杂，某些项目的URL和名称可能解析不完整\n- 如果GitHub页面结构变化，工具可能需要更新解析逻辑\n\n## 未来改进\n\n- [ ] 支持保存历史数据用于趋势分析\n- [ ] 按stars范围筛选（1k+, 10k+, 100k+）\n- [ ] 更智能的HTML解析（使用HTML解析库而非正则）\n- [ ] 集成到其他skill的自动化工作流\n\n## 贡献\n\n如果发现问题或有改进建议，欢迎提出！\n\n---\n\n**Made with ❤️ by 老王**\n\u001fFILE:Tools/GetTrending.ts\u001e\n#!/usr/bin/env bun\n/**\n * GitHub Trending Projects Fetcher\n *\n * 从GitHub获取trending项目列表\n * 支持每日/每周趋势，按语言筛选\n */\n\nimport { $ } from \"bun\";\n\ninterface TrendingProject {\n  rank: number;\n  name: string;\n  description: string;\n  language: string;\n  stars: string;\n  starsThisPeriod: string;\n  url: string;\n}\n\ninterface TrendingOptions {\n  period: \"daily\" | \"weekly\";\n  language?: string;\n  limit: number;\n}\n\nfunction buildTrendingUrl(options: TrendingOptions): string {\n  const baseUrl = \"https://github.com/trending\";\n  const since = options.period === \"daily\" ? \"daily\" : \"weekly\";\n  let url = `${baseUrl}?since=${since}`;\n  if (options.language) {\n    url += `&language=${encodeURIComponent(options.language.toLowerCase())}`;\n  }\n  return url;\n}\n\nfunction parseTrendingProjects(html: string, limit: number): TrendingProject[] {\n  const projects: TrendingProject[] = [];\n  try {\n    const articleRegex = /<article[^>]*>([\\s\\S]*?)<\\/article>/g;\n    const articles = html.match(articleRegex) || [];\n    const articlesToProcess = articles.slice(0, limit);\n    articlesToProcess.forEach((article, index) => {\n      try {\n        const headingMatch = article.match(/<h[12][^>]*>([\\s\\S]*?)<\\/h[12]>/);\n        let repoName: string | null = null;\n        if (headingMatch) {\n          const headingContent = headingMatch[1];\n          const validLinkMatch = headingContent.match(\n            /<a[^>]*href=\"\\/([^\\/\"\\/]+\\/[^\\/\"\\/]+)\"[^>]*>(?![^<]*login)/\n          );\n          if (validLinkMatch) {\n            repoName = validLinkMatch[1];\n          }\n        }\n        if (!repoName) {\n          const repoMatch = article.match(\n            /<a[^>]*href=\"\\/([a-zA-Z0-9_.-]+\\/[a-zA-Z0-9_.-]+)\"[^>]*>(?!.*(?:login|stargazers|forks|issues))/\n          );\n          repoName = repoMatch ? repoMatch[1] : null;\n        }\n        const descMatch = article.match(/<p[^>]*class=\"[^\"]*col-9[^\"]*\"[^>]*>([\\s\\S]*?)<\\/p>/);\n        const description = descMatch\n          ? descMatch[1]\n              .replace(/<[^>]+>/g, \"\")\n              .replace(/&amp;/g, \"&\")\n              .replace(/&lt;/g, \"<\")\n              .replace(/&gt;/g, \">\")\n              .replace(/&quot;/g, '\"')\n              .trim()\n              .substring(0, 200)\n          : \"No description\";\n        const langMatch = article.match(/<span[^>]*itemprop=\"programmingLanguage\"[^>]*>([^<]+)<\\/span>/);\n        const language = langMatch ? langMatch[1].trim() : \"Unknown\";\n        const starsMatch = article.match(/<a[^>]*href=\"\\/[^\"]+\\/stargazers\"[^>]*>(\\d[\\d,]*)\\s*stars?/);\n        const totalStars = starsMatch ? starsMatch[1] : \"0\";\n        const starsAddedMatch = article.match(/(\\d[\\d,]*)\\s*stars?\\s*(?:today|this week)/i);\n        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : \"\";\n        if (repoName && !repoName.includes(\"login\") && !repoName.includes(\"return_to\")) {\n          projects.push({\n            rank: index + 1,\n            name: repoName,\n            description,\n            language,\n            stars: totalStars,\n            starsThisPeriod: starsAdded,\n            url: `https://github.com/${repoName}`,\n          });\n        }\n      } catch (error) {\n        console.error(`解析第${index + 1}个项目失败:`, error);\n      }\n    });\n  } catch (error) {\n    console.error(\"解析trending项目失败:\", error);\n  }\n  return projects;\n}\n\nfunction formatProjects(projects: TrendingProject[], options: TrendingOptions): string {\n  if (projects.length === 0) {\n    return \"# GitHub Trending - No Projects Found\\n\\n没有找到trending项目，可能是网络问题或页面结构变化。\";\n  }\n  const periodLabel = options.period === \"daily\" ? \"Daily\" : \"Weekly\";\n  const languageLabel = options.language ? `Language: ${options.language}` : \"Language: All\";\n  const today = new Date().toISOString().split(\"T\")[0];\n  let output = `# GitHub Trending Projects - ${periodLabel} (${today})\\n\\n`;\n  output += `📊 **Total:** ${projects.length} projects | **${languageLabel}** | **Period:** ${periodLabel}\\n\\n`;\n  output += `---\\n\\n`;\n  projects.forEach((project) => {\n    output += `## ${project.rank}. ${project.name} - ⭐ ${project.stars}`;\n    if (project.starsThisPeriod) {\n      output += ` (${project.starsThisPeriod} this ${options.period})`;\n    }\n    output += `\\n`;\n    output += `**Language:** ${project.language}\\n`;\n    output += `**Description:** ${project.description}\\n`;\n    output += `**URL:** ${project.url}\\n\\n`;\n  });\n  output += `---\\n`;\n  output += `📊 Data from: https://github.com/trending\\n`;\n  return output;\n}\n\nasync function main() {\n  const args = process.argv.slice(2);\n  let period: \"daily\" | \"weekly\" = \"weekly\";\n  let language: string | undefined;\n  let limit = 10;\n  for (const arg of args) {\n    if (arg === \"daily\" || arg === \"weekly\") {\n      period = arg;\n    } else if (arg.startsWith(\"--language=\")) {\n      language = arg.split(\"=\")[1];\n    } else if (arg.startsWith(\"-l=\")) {\n      language = arg.split(\"=\")[1];\n    } else if (arg.startsWith(\"--limit=\")) {\n      limit = parseInt(arg.split(\"=\")[1]) || 10;\n    }\n  }\n  const options: TrendingOptions = { period, language, limit };\n  try {\n    const url = buildTrendingUrl(options);\n    console.error(`正在获取 GitHub trending 数据: ${url}`);\n    const response = await fetch(url);\n    if (!response.ok) {\n      throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n    }\n    const html = await response.text();\n    const projects = parseTrendingProjects(html, limit);\n    const formatted = formatProjects(projects, options);\n    console.log(formatted);\n    if (projects.length === 0) {\n      const debugFile = `/tmp/github-trending-debug-${Date.now()}.html`;\n      await Bun.write(debugFile, html);\n      console.error(`\\n调试: 原始HTML已保存到 ${debugFile}`);\n    }\n  } catch (error) {\n    console.error(\"❌ 获取trending数据失败:\");\n    console.error(error);\n    process.exit(1);\n  }\n}\n\nmain();\n\u001fFILE:Workflows/GetTrending.md\u001e\n# GetTrending Workflow\n\n获取GitHub trending项目列表的工作流程。\n\n## Description\n\n这个工作流使用 GetTrending.ts 工具从GitHub获取当前最热门的项目列表，支持按时间周期（每日/每周）和编程语言筛选。\n\n## When to Use\n\n当用户请求以下任何内容时使用此工作流：\n- \"show github trends\" / \"github trending\"\n- \"显示热门项目\" / \"看看有什么热门项目\"\n- \"weekly trending\" / \"本周热门项目\"\n- \"daily trending\" / \"今日热门项目\"\n- \"TypeScript trending\" / \"Python trending\" / 按语言筛选\n- \"what's hot on github\" / \"github上什么最火\"\n\n## Workflow Steps\n\n### Step 1: 确定参数\n向用户确认或推断以下参数：\n- **时间周期**: daily (每日) 或 weekly (每周，默认)\n- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）\n- **项目数量**: 默认10个\n\n### Step 2: 执行工具\n运行 GetTrending.ts 工具：\n\n```bash\n# 基本用法（本周，全部语言，10个项目）\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly\n\n# 指定语言\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript\n\n# 指定数量\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20\n\n# 组合参数\nbun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily --language=Python --limit=15\n```\n\n### Step 3: 显示结果\n工具会自动格式化输出，包括：\n- 项目排名\n- 项目名称\n- Star总数和周期内增长\n- 编程语言\n- 项目描述\n- GitHub URL\n\n### Step 4: 后续操作（可选）\n根据用户需求，可以：\n- 打开某个项目页面\n- 使用其他skill进一步分析项目\n- 将结果保存到文件供后续参考\n\n## Integration with Other Skills\n\n- **OSINT**: 在调查技术栈时发现热门工具\n- **Research**: 研究特定语言生态系统的趋势\n- **Browser**: 打开项目页面进行详细分析\n\n## Notes\n\n- 数据每小时更新一次\n- 无需GitHub API token\n- 使用公开的GitHub trending页面\n- 支持的语言参数不区分大小写\n\u001fFILE:Tools/GenerateDashboard.ts\u001e\n#!/usr/bin/env bun\n/**\n * GitHub Trending Dashboard Generator\n *\n * 生成交互式数据可视化仪表板\n *\n * 使用方式：\n *   ./GenerateDashboard.ts [options]\n *\n * 选项：\n *   --period       - daily | weekly (默认: weekly)\n *   --language     - 编程语言筛选 (可选)\n *   --limit        - 项目数量 (默认: 10)\n *   --include-news - 包含技术新闻\n *   --news-count   - 新闻数量 (默认: 10)\n *   --theme        - light | dark | auto (默认: auto)\n *   --output       - 输出文件路径 (默认: ./github-trends.html)\n *\n * 示例：\n *   ./GenerateDashboard.ts\n *   ./GenerateDashboard.ts --period daily --language TypeScript --include-news\n *   ./GenerateDashboard.ts --limit 20 --output ~/trends.html\n */\n\nimport Handlebars from 'handlebars';\nimport type { DashboardOptions, TrendingProject, TechNewsItem, TemplateData } from './Lib/types';\nimport { registerHelpers, renderTemplate } from './Lib/template-helpers';\nimport { analyzeData } from './Lib/visualization-helpers';\n\n// 注册 Handlebars 辅助函数\nregisterHelpers();\n\n/**\n * 构建 GitHub trending URL\n */\nfunction buildTrendingUrl(options: DashboardOptions): string {\n  const baseUrl = \"https://github.com/trending\";\n  const since = options.period === \"daily\" ? \"daily\" : \"weekly\";\n  let url = `${baseUrl}?since=${since}`;\n\n  if (options.language) {\n    url += `&language=${encodeURIComponent(options.language.toLowerCase())}`;\n  }\n\n  return url;\n}\n\n/**\n * 解析 HTML 提取 trending 项目\n * （从 GetTrending.ts 复制的逻辑）\n */\nasync function getTrendingProjects(options: DashboardOptions): Promise<TrendingProject[]> {\n  const url = buildTrendingUrl(options);\n\n  console.error(`正在获取 GitHub trending 数据: ${url}`);\n\n  const response = await fetch(url);\n  if (!response.ok) {\n    throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n  }\n\n  const html = await response.text();\n  return parseTrendingProjects(html, options.limit);\n}\n\n/**\n * 解析 HTML\n */\nfunction parseTrendingProjects(html: string, limit: number): TrendingProject[] {\n  const projects: TrendingProject[] = [];\n\n  try {\n    const articleRegex = /<article[^>]*>([\\s\\S]*?)<\\/article>/g;\n    const articles = html.match(articleRegex) || [];\n    const articlesToProcess = articles.slice(0, limit);\n\n    articlesToProcess.forEach((article, index) => {\n      try {\n        const headingMatch = article.match(/<h[12][^>]*>([\\s\\S]*?)<\\/h[12]>/);\n        let repoName: string | null = null;\n\n        if (headingMatch) {\n          const headingContent = headingMatch[1];\n          const validLinkMatch = headingContent.match(\n            /<a[^>]*href=\"\\/([^\\/\"\\/]+\\/[^\\/\"\\/]+)\"[^>]*>(?![^<]*login)/\n          );\n          if (validLinkMatch) {\n            repoName = validLinkMatch[1];\n          }\n        }\n\n        if (!repoName) {\n          const repoMatch = article.match(\n            /<a[^>]*href=\"\\/([a-zA-Z0-9_.-]+\\/[a-zA-Z0-9_.-]+)\"[^>]*>(?!.*(?:login|stargazers|forks|issues))/\n          );\n          repoName = repoMatch ? repoMatch[1] : null;\n        }\n\n        const descMatch = article.match(/<p[^>]*class=\"[^\"]*col-9[^\"]*\"[^>]*>([\\s\\S]*?)<\\/p>/);\n        const description = descMatch\n          ? descMatch[1]\n              .replace(/<[^>]+>/g, \"\")\n              .replace(/&amp;/g, \"&\")\n              .replace(/&lt;/g, \"<\")\n              .replace(/&gt;/g, \">\")\n              .replace(/&quot;/g, '\"')\n              .trim()\n              .substring(0, 200)\n          : \"No description\";\n\n        const langMatch = article.match(/<span[^>]*itemprop=\"programmingLanguage\"[^>]*>([^<]+)<\\/span>/);\n        const language = langMatch ? langMatch[1].trim() : \"Unknown\";\n\n        // 提取stars总数 - GitHub 改了 HTML 结构，数字在 SVG 后面\n        const starsMatch = article.match(/stargazers[^>]*>[\\s\\S]*?<\\/svg>\\s*([\\d,]+)/);\n        const totalStars = starsMatch ? starsMatch[1] : \"0\";\n\n        // 尝试提取新增stars - 格式：XXX stars today/this week\n        const starsAddedMatch = article.match(/(\\d[\\d,]*)\\s+stars?\\s+(?:today|this week)/);\n        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : \"\";\n\n        if (repoName && !repoName.includes(\"login\") && !repoName.includes(\"return_to\")) {\n          projects.push({\n            rank: index + 1,\n            name: repoName,\n            description,\n            language,\n            stars: totalStars,\n            starsThisPeriod: starsAdded,\n            url: `https://github.com/${repoName}`,\n          });\n        }\n      } catch (error) {\n        console.error(`解析第${index + 1}个项目失败:`, error);\n      }\n    });\n  } catch (error) {\n    console.error(\"解析trending项目失败:\", error);\n  }\n\n  return projects;\n}\n\n/**\n * 获取技术新闻\n */\nasync function getTechNews(count: number): Promise<TechNewsItem[]> {\n  const HN_API = 'https://hn.algolia.com/api/v1/search_by_date';\n\n  try {\n    const response = await fetch(`${HN_API}?tags=story&hitsPerPage=${count}`);\n    if (!response.ok) {\n      throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n    }\n\n    const data = await response.json();\n\n    return data.hits.slice(0, count).map((hit: any) => ({\n      id: hit.objectID,\n      title: hit.title,\n      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,\n      source: 'hackernews',\n      points: hit.points || 0,\n      comments: hit.num_comments || 0,\n      timestamp: new Date(hit.created_at).toISOString(),\n      tags: hit._tags || []\n    }));\n  } catch (error) {\n    console.error('获取 Hacker News 失败:', error);\n    return [];\n  }\n}\n\n/**\n * 生成仪表板\n */\nasync function generateDashboard(options: DashboardOptions): Promise<void> {\n  try {\n    console.error('🚀 开始生成 GitHub Trending Dashboard...\\n');\n\n    // 1. 获取 GitHub Trending 数据\n    const projects = await getTrendingProjects(options);\n    console.error(`✅ 获取到 ${projects.length} 个项目`);\n\n    // 2. 获取技术新闻（如果启用）\n    let news: TechNewsItem[] = [];\n    if (options.includeNews) {\n      news = await getTechNews(options.newsCount);\n      console.error(`✅ 获取到 ${news.length} 条新闻`);\n    }\n\n    // 3. 分析数据\n    const analytics = analyzeData(projects);\n    console.error(`✅ 数据分析完成`);\n\n    // 4. 准备模板数据\n    const templateData: TemplateData = {\n      title: 'GitHub Trending Dashboard',\n      generatedAt: new Date().toLocaleString('zh-CN'),\n      period: options.period === 'daily' ? 'Daily' : 'Weekly',\n      projects,\n      news,\n      analytics,\n      options\n    };\n\n    // 5. 渲染模板\n    const templatePath = `${import.meta.dir}/../Templates/dashboard.hbs`;\n    const templateContent = await Bun.file(templatePath).text();\n    const template = Handlebars.compile(templateContent);\n    const html = template(templateData);\n    console.error(`✅ 模板渲染完成`);\n\n    // 6. 保存文件\n    await Bun.write(options.output, html);\n    console.error(`\\n🎉 仪表板生成成功！`);\n    console.error(`📄 文件路径: ${options.output}`);\n    console.error(`\\n💡 在浏览器中打开查看效果！`);\n\n  } catch (error) {\n    console.error('\\n❌ 生成仪表板失败:');\n    console.error(error);\n    process.exit(1);\n  }\n}\n\n/**\n * 解析命令行参数\n */\nfunction parseArgs(): DashboardOptions {\n  const args = process.argv.slice(2);\n\n  const options: DashboardOptions = {\n    period: 'weekly',\n    limit: 10,\n    output: './github-trends.html',\n    includeNews: false,\n    newsCount: 10,\n    theme: 'auto'\n  };\n\n  for (let i = 0; i < args.length; i++) {\n    const arg = args[i];\n\n    switch (arg) {\n      case '--period':\n        options.period = args[++i] === 'daily' ? 'daily' : 'weekly';\n        break;\n      case '--language':\n        options.language = args[++i];\n        break;\n      case '--limit':\n        options.limit = parseInt(args[++i]) || 10;\n        break;\n      case '--include-news':\n        options.includeNews = true;\n        break;\n      case '--news-count':\n        options.newsCount = parseInt(args[++i]) || 10;\n        break;\n      case '--theme':\n        options.theme = args[++i] === 'light' || args[++i] === 'dark' ? args[i] : 'auto';\n        break;\n      case '--output':\n        options.output = args[++i];\n        break;\n      default:\n        if (arg.startsWith('--output=')) {\n          options.output = arg.split('=')[1];\n        } else if (arg.startsWith('--language=')) {\n          options.language = arg.split('=')[1];\n        } else if (arg.startsWith('--limit=')) {\n          options.limit = parseInt(arg.split('=')[1]) || 10;\n        }\n    }\n  }\n\n  return options;\n}\n\n/**\n * 主函数\n */\nasync function main() {\n  const options = parseArgs();\n  await generateDashboard(options);\n}\n\n// 如果直接运行此脚本\nif (import.meta.main) {\n  main();\n}\n\n// 导出供其他模块使用\nexport { generateDashboard };\nexport type { DashboardOptions };\n\u001fFILE:Tools/GetTechNews.ts\u001e\n#!/usr/bin/env bun\n/**\n * Tech News Fetcher\n *\n * 从 Hacker News 和其他来源获取技术新闻\n *\n * 使用方式：\n *   ./GetTechNews.ts [count]\n *\n * 参数：\n *   count        - 获取新闻数量 (默认: 10)\n *\n * 示例：\n *   ./GetTechNews.ts\n *   ./GetTechNews.ts 20\n */\n\nimport Parser from 'rss-parser';\nimport type { TechNewsItem } from './Lib/types';\n\nconst HN_API = 'https://hn.algolia.com/api/v1/search';\nconst parser = new Parser();\n\n/**\n * 从 Hacker News Algolia API 获取新闻\n */\nasync function getHackerNews(count: number): Promise<TechNewsItem[]> {\n  try {\n    const response = await fetch(`${HN_API}?tags=front_page&hits=${count}`);\n    if (!response.ok) {\n      throw new Error(`HTTP ${response.status}: ${response.statusText}`);\n    }\n\n    const data = await response.json();\n\n    return data.hits.map((hit: any) => ({\n      id: hit.objectID,\n      title: hit.title,\n      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,\n      source: 'hackernews',\n      points: hit.points || 0,\n      comments: hit.num_comments || 0,\n      timestamp: new Date(hit.created_at).toISOString(),\n      tags: hit._tags || []\n    }));\n  } catch (error) {\n    console.error('获取 Hacker News 失败:', error);\n    return [];\n  }\n}\n\n/**\n * 从 Hacker News RSS 获取新闻（备用方案）\n */\nasync function getHackerNewsRSS(count: number): Promise<TechNewsItem[]> {\n  try {\n    const feed = await parser.parseURL('https://news.ycombinator.com/rss');\n\n    return feed.items.slice(0, count).map((item: any) => ({\n      id: item.guid || item.link,\n      title: item.title || 'No title',\n      url: item.link,\n      source: 'hackernews',\n      timestamp: item.pubDate || new Date().toISOString(),\n      tags: ['hackernews', 'rss']\n    }));\n  } catch (error) {\n    console.error('获取 Hacker News RSS 失败:', error);\n    return [];\n  }\n}\n\n/**\n * 获取技术新闻（主函数）\n */\nasync function getTechNews(count: number = 10): Promise<TechNewsItem[]> {\n  console.error(`正在获取技术新闻（${count}条）...`);\n\n  // 优先使用 Hacker News API\n  let news = await getHackerNews(count);\n\n  // 如果失败，尝试 RSS 备用\n  if (news.length === 0) {\n    console.error('Hacker News API 失败，尝试 RSS...');\n    news = await getHackerNewsRSS(count);\n  }\n\n  console.error(`✅ 获取到 ${news.length} 条新闻`);\n  return news;\n}\n\n/**\n * CLI 入口\n */\nasync function main() {\n  const args = process.argv.slice(2);\n  const count = parseInt(args[0]) || 10;\n\n  try {\n    const news = await getTechNews(count);\n\n    // 输出 JSON 格式（便于程序调用）\n    console.log(JSON.stringify(news, null, 2));\n  } catch (error) {\n    console.error('❌ 获取新闻失败:');\n    console.error(error);\n    process.exit(1);\n  }\n}\n\n// 如果直接运行此脚本\nif (import.meta.main) {\n  main();\n}\n\n// 导出供其他模块使用\nexport { getTechNews };\nexport type { TechNewsItem };\n\u001fFILE:Tools/Lib/types.ts\u001e\n/**\n * GitHubTrends - 类型定义\n *\n * 定义所有 TypeScript 接口和类型\n */\n\n/**\n * GitHub Trending 项目\n */\nexport interface TrendingProject {\n  rank: number;\n  name: string;\n  description: string;\n  language: string;\n  stars: string;\n  starsThisPeriod: string;\n  url: string;\n}\n\n/**\n * 技术新闻条目\n */\nexport interface TechNewsItem {\n  id: string;\n  title: string;\n  url: string;\n  source: string; // 'hackernews', 'reddit', etc.\n  points?: number;\n  comments?: number;\n  timestamp: string;\n  tags: string[];\n}\n\n/**\n * 仪表板生成选项\n */\nexport interface DashboardOptions {\n  period: 'daily' | 'weekly';\n  language?: string;\n  limit: number;\n  output: string;\n  includeNews: boolean;\n  newsCount: number;\n  theme: 'light' | 'dark' | 'auto';\n}\n\n/**\n * 数据分析结果\n */\nexport interface Analytics {\n  languageDistribution: Record<string, number>;\n  totalStars: number;\n  topProject: TrendingProject;\n  growthStats: {\n    highest: TrendingProject;\n    average: number;\n  };\n}\n\n/**\n * Trending 查询选项（用于 GetTrending.ts）\n */\nexport interface TrendingOptions {\n  period: \"daily\" | \"weekly\";\n  language?: string;\n  limit: number;\n}\n\n/**\n * 图表数据\n */\nexport interface ChartData {\n  labels: string[];\n  data: number[];\n  colors: string[];\n}\n\n/**\n * 模板渲染数据\n */\nexport interface TemplateData {\n  title: string;\n  generatedAt: string;\n  period: string;\n  projects: TrendingProject[];\n  news?: TechNewsItem[];\n  analytics: Analytics;\n  options: DashboardOptions;\n}\n\u001fFILE:Tools/Lib/template-helpers.ts\u001e\n/**\n * Template Helpers\n *\n * Handlebars 自定义辅助函数\n */\n\nimport Handlebars from 'handlebars';\n\n/**\n * 注册所有自定义辅助函数\n */\nexport function registerHelpers(): void {\n  // 格式化数字（添加千位分隔符）\n  Handlebars.registerHelper('formatNumber', (value: number) => {\n    return value.toLocaleString();\n  });\n\n  // 截断文本\n  Handlebars.registerHelper('truncate', (str: string, length: number = 100) => {\n    if (str.length <= length) return str;\n    return str.substring(0, length) + '...';\n  });\n\n  // 格式化日期\n  Handlebars.registerHelper('formatDate', (dateStr: string) => {\n    const date = new Date(dateStr);\n    return date.toLocaleDateString('zh-CN', {\n      year: 'numeric',\n      month: 'long',\n      day: 'numeric',\n      hour: '2-digit',\n      minute: '2-digit'\n    });\n  });\n\n  // JSON 序列化（用于内嵌数据）\n  Handlebars.registerHelper('json', (context: any) => {\n    return JSON.stringify(context);\n  });\n\n  // 条件判断\n  Handlebars.registerHelper('eq', (a: any, b: any) => {\n    return a === b;\n  });\n\n  Handlebars.registerHelper('ne', (a: any, b: any) => {\n    return a !== b;\n  });\n\n  Handlebars.registerHelper('gt', (a: number, b: number) => {\n    return a > b;\n  });\n\n  Handlebars.registerHelper('lt', (a: number, b: number) => {\n    return a < b;\n  });\n}\n\n/**\n * 渲染模板\n */\nexport async function renderTemplate(\n  templatePath: string,\n  data: any\n): Promise<string> {\n  const templateContent = await Bun.file(templatePath).text();\n  const template = Handlebars.compile(templateContent);\n  return template(data);\n}\n\nexport default { registerHelpers, renderTemplate };\n\u001fFILE:Tools/Lib/visualization-helpers.ts\u001e\n/**\n * Visualization Helpers\n *\n * 数据分析和可视化辅助函数\n */\n\nimport type { TrendingProject, Analytics } from './types';\n\n/**\n * 分析项目数据\n */\nexport function analyzeData(projects: TrendingProject[]): Analytics {\n  // 语言分布统计\n  const languageDistribution: Record<string, number> = {};\n  projects.forEach(project => {\n    const lang = project.language;\n    languageDistribution[lang] = (languageDistribution[lang] || 0) + 1;\n  });\n\n  // 总 stars 数\n  const totalStars = projects.reduce((sum, project) => {\n    return sum + parseInt(project.stars.replace(/,/g, '') || 0);\n  }, 0);\n\n  // 找出 top project\n  const topProject = projects.reduce((top, project) => {\n    const topStars = parseInt(top.stars.replace(/,/g, '') || 0);\n    const projStars = parseInt(project.stars.replace(/,/g, '') || 0);\n    return projStars > topStars ? project : top;\n  }, projects[0]);\n\n  // 增长统计\n  const projectsWithGrowth = projects.filter(p => p.starsThisPeriod);\n  const growthValues = projectsWithGrowth.map(p =>\n    parseInt(p.starsThisPeriod.replace(/[+,]/g, '') || 0)\n  );\n\n  const highestGrowth = projectsWithGrowth.reduce((highest, project) => {\n    const highestValue = parseInt(highest.starsThisPeriod.replace(/[+,]/g, '') || 0);\n    const projValue = parseInt(project.starsThisPeriod.replace(/[+,]/g, '') || 0);\n    return projValue > highestValue ? project : highest;\n  }, projectsWithGrowth[0] || projects[0]);\n\n  const averageGrowth = growthValues.length > 0\n    ? Math.round(growthValues.reduce((a, b) => a + b, 0) / growthValues.length)\n    : 0;\n\n  // 提取唯一语言列表（用于筛选）\n  const languages = Object.keys(languageDistribution).sort();\n\n  // 生成图表数据\n  const growthData = projects.slice(0, 10).map(p => ({\n    name: p.name.split('/')[1] || p.name,\n    growth: parseInt(p.starsThisPeriod.replace(/[+,]/g, '') || 0)\n  }));\n\n  return {\n    languageDistribution,\n    totalStars,\n    topProject,\n    growthStats: {\n      highest: highestGrowth,\n      average: averageGrowth\n    },\n    languages,\n    growthData\n  };\n}\n\n/**\n * 格式化 stars 数字\n */\nexport function formatStars(starsStr: string): number {\n  return parseInt(starsStr.replace(/,/g, '') || 0);\n}\n\n/**\n * 解析增长数值\n */\nexport function parseGrowth(growthStr: string): number {\n  if (!growthStr) return 0;\n  return parseInt(growthStr.replace(/[+,]/g, '') || 0);\n}\n\nexport default { analyzeData, formatStars, parseGrowth };\n\u001fFILE:Templates/dashboard.hbs\u001e\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>GitHub Trending Dashboard - {{period}}</title>\n\n  <!-- Tailwind CSS -->\n  <script src=\"https://cdn.tailwindcss.com\"></script>\n  <script>\n    tailwind.config = {\n      theme: {\n        extend: {\n          colors: {\n            github: {\n              dark: '#0d1117',\n              light: '#161b22',\n              border: '#30363d',\n              accent: '#58a6ff'\n            }\n          }\n        }\n      }\n    }\n  </script>\n\n  <!-- Chart.js -->\n  <script src=\"https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js\"></script>\n\n  <style>\n    body {\n      font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif;\n    }\n    .project-card {\n      transition: all 0.3s ease;\n    }\n    .project-card:hover {\n      transform: translateY(-2px);\n      box-shadow: 0 8px 25px rgba(0,0,0,0.15);\n    }\n    .stat-card {\n      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n    }\n    .badge {\n      display: inline-block;\n      padding: 0.25rem 0.75rem;\n      border-radius: 9999px;\n      font-size: 0.75rem;\n      font-weight: 600;\n    }\n    .news-item {\n      border-left: 3px solid #58a6ff;\n      padding-left: 1rem;\n    }\n  </style>\n</head>\n\n<body class=\"bg-gray-50 min-h-screen\">\n  <!-- 页头 -->\n  <header class=\"bg-white shadow-sm sticky top-0 z-50\">\n    <div class=\"max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8\">\n      <div class=\"flex justify-between items-center\">\n        <div>\n          <h1 class=\"text-3xl font-bold text-gray-900\">🚀 GitHub Trending Dashboard</h1>\n          <p class=\"text-gray-600 mt-1\">\n            周期: <span class=\"font-semibold text-github-accent\">{{period}}</span> |\n            生成时间: <span class=\"text-gray-500\">{{generatedAt}}</span>\n          </p>\n        </div>\n        <div class=\"flex gap-2\">\n          <button onclick=\"window.print()\" class=\"px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium\">\n            🖨️ Print\n          </button>\n        </div>\n      </div>\n    </div>\n  </header>\n\n  <main class=\"max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8\">\n\n    <!-- 统计概览 -->\n    <section class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\">\n      <div class=\"stat-card rounded-xl p-6 text-white shadow-lg\">\n        <h3 class=\"text-lg font-semibold opacity-90\">项目总数</h3>\n        <p class=\"text-4xl font-bold mt-2\">{{projects.length}}</p>\n        <p class=\"text-sm opacity-75 mt-1\">{{period}} 热门趋势</p>\n      </div>\n\n      <div class=\"bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl p-6 text-white shadow-lg\">\n        <h3 class=\"text-lg font-semibold opacity-90\">总 Stars 数</h3>\n        <p class=\"text-4xl font-bold mt-2\">{{analytics.totalStars}}</p>\n        <p class=\"text-sm opacity-75 mt-1\">所有项目总计</p>\n      </div>\n\n      <div class=\"bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-6 text-white shadow-lg\">\n        <h3 class=\"text-lg font-semibold opacity-90\">最热项目</h3>\n        <p class=\"text-xl font-bold mt-2 truncate\">{{analytics.topProject.name}}</p>\n        <p class=\"text-sm opacity-75 mt-1\">{{analytics.topProject.stars}} stars</p>\n      </div>\n    </section>\n\n    <!-- 筛选和搜索 -->\n    <section class=\"bg-white rounded-xl shadow-sm p-6 mb-8\">\n      <div class=\"flex flex-wrap gap-4 items-center\">\n        <div class=\"flex-1 min-w-64\">\n          <label class=\"block text-sm font-medium text-gray-700 mb-1\">搜索项目</label>\n          <input\n            type=\"text\"\n            id=\"searchInput\"\n            placeholder=\"按名称或描述搜索...\"\n            class=\"w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent\"\n            oninput=\"filterProjects()\"\n          >\n        </div>\n\n        <div>\n          <label class=\"block text-sm font-medium text-gray-700 mb-1\">语言筛选</label>\n          <select\n            id=\"languageFilter\"\n            class=\"px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent\"\n            onchange=\"filterProjects()\"\n          >\n            <option value=\"all\">全部语言</option>\n            {{#each analytics.languages}}\n              <option value=\"{{this}}\">{{this}}</option>\n            {{/each}}\n          </select>\n        </div>\n\n        <div>\n          <label class=\"block text-sm font-medium text-gray-700 mb-1\">排序方式</label>\n          <select\n            id=\"sortSelect\"\n            class=\"px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent\"\n            onchange=\"sortProjects()\"\n          >\n            <option value=\"rank\">排名</option>\n            <option value=\"stars\">总 Stars</option>\n            <option value=\"growth\">本期增长</option>\n          </select>\n        </div>\n      </div>\n    </section>\n\n    <!-- 语言分布图表 -->\n    <section class=\"bg-white rounded-xl shadow-sm p-6 mb-8\">\n      <h2 class=\"text-2xl font-bold text-gray-900 mb-4\">📊 语言分布</h2>\n      <div class=\"grid grid-cols-1 lg:grid-cols-2 gap-8\">\n        <div>\n          <canvas id=\"languageChart\"></canvas>\n        </div>\n        <div>\n          <canvas id=\"growthChart\"></canvas>\n        </div>\n      </div>\n    </section>\n\n    <!-- Trending Projects -->\n    <section class=\"mb-8\">\n      <h2 class=\"text-2xl font-bold text-gray-900 mb-4\">🔥 热门项目</h2>\n      <div id=\"projects-container\" class=\"grid grid-cols-1 gap-4\">\n        {{#each projects}}\n        <div class=\"project-card bg-white rounded-xl shadow-sm p-6 border border-gray-200\"\n             data-rank=\"{{rank}}\"\n             data-language=\"{{language}}\"\n             data-stars=\"{{stars}}\"\n             data-growth=\"{{starsThisPeriod}}\"\n             data-name=\"{{name}}\"\n             data-description=\"{{description}}\">\n          <div class=\"flex items-start justify-between\">\n            <div class=\"flex-1\">\n              <div class=\"flex items-center gap-3 mb-2\">\n                <span class=\"text-2xl font-bold text-github-accent\">#{{rank}}</span>\n                <h3 class=\"text-xl font-semibold text-gray-900\">\n                  <a href=\"{{url}}\" target=\"_blank\" class=\"hover:text-github-accent\">{{name}}</a>\n                </h3>\n                <span class=\"badge bg-blue-100 text-blue-800\">{{language}}</span>\n              </div>\n              <p class=\"text-gray-600 mb-3\">{{description}}</p>\n              <div class=\"flex items-center gap-4 text-sm text-gray-500\">\n                <span>⭐ {{stars}} stars</span>\n                {{#if starsThisPeriod}}\n                  <span class=\"text-green-600 font-semibold\">(+{{starsThisPeriod}} this {{../period}})</span>\n                {{/if}}\n              </div>\n            </div>\n            <a href=\"{{url}}\" target=\"_blank\" class=\"px-4 py-2 bg-github-accent text-white rounded-lg hover:bg-blue-600 transition font-medium\">\n              View →\n            </a>\n          </div>\n        </div>\n        {{/each}}\n      </div>\n    </section>\n\n    <!-- Tech News -->\n    {{#if news}}\n    <section class=\"mb-8\">\n      <h2 class=\"text-2xl font-bold text-gray-900 mb-4\">📰 技术资讯</h2>\n      <div class=\"grid grid-cols-1 gap-4\">\n        {{#each news}}\n        <div class=\"news-item bg-white rounded-xl shadow-sm p-5 hover:shadow-md transition\">\n          <div class=\"flex items-start justify-between\">\n            <div class=\"flex-1\">\n              <h3 class=\"text-lg font-semibold text-gray-900 mb-1\">\n                <a href=\"{{url}}\" target=\"_blank\" class=\"hover:text-github-accent\">{{title}}</a>\n              </h3>\n              <div class=\"flex items-center gap-4 text-sm text-gray-500\">\n                <span class=\"text-orange-600\">📰 {{source}}</span>\n                {{#if points}}\n                  <span>⬆️ {{points}} points</span>\n                {{/if}}\n                {{#if comments}}\n                  <span>💬 {{comments}} comments</span>\n                {{/if}}\n              </div>\n            </div>\n          </div>\n        </div>\n        {{/each}}\n      </div>\n    </section>\n    {{/if}}\n\n  </main>\n\n  <!-- 页脚 -->\n  <footer class=\"bg-white border-t border-gray-200 mt-12\">\n    <div class=\"max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8\">\n      <p class=\"text-center text-gray-500 text-sm\">\n        由 GitHubTrends Skill 生成 | 数据来源：GitHub 和 Hacker News\n      </p>\n    </div>\n  </footer>\n\n  <!-- JavaScript -->\n  <script>\n    // 注入数据\n    window.dashboardData = {\n      projects: {{{json projects}}},\n      analytics: {\n        languageDistribution: {{{json analytics.languageDistribution}}},\n        growthData: {{{json analytics.growthData}}}\n      }\n    };\n\n    // 初始化图表\n    document.addEventListener('DOMContentLoaded', function() {\n      initLanguageChart();\n      initGrowthChart();\n    });\n\n    // 语言分布饼图\n    function initLanguageChart() {\n      const ctx = document.getElementById('languageChart').getContext('2d');\n      const data = window.dashboardData.analytics.languageDistribution;\n\n      new Chart(ctx, {\n        type: 'pie',\n        data: {\n          labels: Object.keys(data),\n          datasets: [{\n            data: Object.values(data),\n            backgroundColor: [\n              '#58a6ff', '#238636', '#f1e05a', '#d73a49',\n              '#8957E5', '#e34c26', '#CB3837', '#DA5B0B',\n              '#4F5D95', '#563d7c'\n            ]\n          }]\n        },\n        options: {\n          responsive: true,\n          plugins: {\n            legend: {\n              position: 'right'\n            },\n            title: {\n              display: true,\n              text: 'Projects by Language'\n            }\n          }\n        }\n      });\n    }\n\n    // Stars 增长柱状图\n    function initGrowthChart() {\n      const ctx = document.getElementById('growthChart').getContext('2d');\n      const projects = window.dashboardData.projects.slice(0, 10);\n\n      new Chart(ctx, {\n        type: 'bar',\n        data: {\n          labels: projects.map(p => p.name.split('/')[1] || p.name),\n          datasets: [{\n            label: 'Stars This Period',\n            data: projects.map(p => parseInt(p.starsThisPeriod.replace('+', '') || 0)),\n            backgroundColor: 'rgba(88, 166, 255, 0.8)',\n            borderColor: 'rgba(88, 166, 255, 1)',\n            borderWidth: 1\n          }]\n        },\n        options: {\n          responsive: true,\n          indexAxis: 'y',\n          plugins: {\n            title: {\n              display: true,\n              text: 'Top 10 Growth'\n            }\n          },\n          scales: {\n            x: {\n              beginAtZero: true\n            }\n          }\n        }\n      });\n    }\n\n    // 筛选项目\n    function filterProjects() {\n      const searchValue = document.getElementById('searchInput').value.toLowerCase();\n      const languageValue = document.getElementById('languageFilter').value;\n\n      const cards = document.querySelectorAll('.project-card');\n\n      cards.forEach(card => {\n        const name = card.dataset.name.toLowerCase();\n        const description = card.dataset.description.toLowerCase();\n        const language = card.dataset.language;\n\n        const matchesSearch = name.includes(searchValue) || description.includes(searchValue);\n        const matchesLanguage = languageValue === 'all' || language === languageValue;\n\n        card.style.display = matchesSearch && matchesLanguage ? 'block' : 'none';\n      });\n    }\n\n    // 排序项目\n    function sortProjects() {\n      const sortBy = document.getElementById('sortSelect').value;\n      const container = document.getElementById('projects-container');\n      const cards = Array.from(container.children);\n\n      cards.sort((a, b) => {\n        switch(sortBy) {\n          case 'stars':\n            return parseInt(b.dataset.stars.replace(/,/g, '')) - parseInt(a.dataset.stars.replace(/,/g, ''));\n          case 'growth':\n            const growthA = parseInt(a.dataset.growth.replace(/[+,]/g, '') || 0);\n            const growthB = parseInt(b.dataset.growth.replace(/[+,]/g, '') || 0);\n            return growthB - growthA;\n          case 'rank':\n          default:\n            return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);\n        }\n      });\n\n      cards.forEach(card => container.appendChild(card));\n    }\n  </script>\n</body>\n</html>\n\u001fFILE:Workflows/GenerateDashboard.md\u001e\n# GenerateDashboard Workflow\n\n生成交互式数据可视化仪表板的工作流程。\n\n## Description\n\n这个工作流使用 GenerateDashboard.ts 工具从 GitHub 获取 trending 项目，并生成交互式 HTML 仪表板，支持：\n- 项目卡片展示\n- 语言分布饼图\n- Stars 增长柱状图\n- 技术新闻列表\n- 实时筛选、排序、搜索功能\n\n## When to Use\n\n当用户请求以下任何内容时使用此工作流：\n- \"生成 GitHub trending 仪表板\"\n- \"创建趋势网页\"\n- \"生成可视化报告\"\n- \"export trending dashboard\"\n- \"生成交互式网页\"\n\n## Workflow Steps\n\n### Step 1: 确定参数\n向用户确认或推断以下参数：\n- **时间周期**: daily (每日) 或 weekly (每周，默认)\n- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）\n- **项目数量**: 默认10个\n- **包含新闻**: 是否包含技术新闻\n- **新闻数量**: 默认10条\n- **输出路径**: 默认 ./github-trends.html\n\n### Step 2: 执行工具\n运行 GenerateDashboard.ts 工具：\n\n```bash\n# 基本用法（本周，10个项目）\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts\n\n# 指定语言和新闻\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \\\n  --period weekly \\\n  --language TypeScript \\\n  --limit 20 \\\n  --include-news \\\n  --news-count 15 \\\n  --output ~/trends.html\n\n# 每日趋势\nbun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \\\n  --period daily \\\n  --output ~/daily-trends.html\n```\n\n### Step 3: 显示结果\n工具会自动：\n1. 获取 GitHub trending 数据\n2. 获取技术新闻（如果启用）\n3. 分析数据生成统计信息\n4. 渲染 HTML 模板\n5. 保存到指定路径\n\n### Step 4: 验证和打开\n生成的 HTML 文件包含：\n- ✅ 响应式布局\n- ✅ 项目卡片展示\n- ✅ 语言分布饼图\n- ✅ Stars 增长柱状图\n- ✅ 实时筛选功能\n- ✅ 排序功能\n- ✅ 搜索功能\n- ✅ 技术新闻列表\n\n## Example Usage\n\n### Example 1: 基本仪表板\n```\nUser: \"生成本周 GitHub trending 仪表板\"\n\nAssistant:\n运行 GenerateDashboard 工具...\n[执行命令，生成 /tmp/github-trends.html]\n✅ 仪表板生成成功！已在浏览器中打开。\n```\n\n### Example 2: 包含新闻的仪表板\n```\nUser: \"生成 TypeScript 项目的每日趋势，包含新闻\"\n\nAssistant:\n生成 TypeScript 每日趋势仪表板，包含技术新闻...\n[执行命令：--period daily --language TypeScript --include-news]\n✅ 仪表板已生成到 ~/Downloads/ts-daily-trends.html\n```\n\n### Example 3: 自定义输出\n```\nUser: \"生成一个包含 20 个项目的仪表板，保存到桌面\"\n\nAssistant:\n生成 20 个项目的趋势仪表板...\n[执行命令：--limit 20 --output ~/Desktop/github-trends.html]\n✅ 完成！文件已保存到桌面\n```\n\n## Tool Options\n\n| 参数 | 说明 | 默认值 | 可选值 |\n|------|------|--------|--------|\n| `--period` | 时间周期 | `weekly` | `daily`, `weekly` |\n| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust等 |\n| `--limit` | 返回项目数量 | 10 | 任意正整数 |\n| `--include-news` | 包含技术新闻 | false | - |\n| `--news-count` | 新闻数量 | 10 | 任意正整数 |\n| `--theme` | 主题 | `auto` | `light`, `dark`, `auto` |\n| `--output` | 输出文件路径 | `./github-trends.html` | 任意路径 |\n\n## Output Features\n\n### 数据可视化\n- **语言分布饼图**: 展示各编程语言的项目占比\n- **Stars 增长柱状图**: 展示前 10 名项目的 stars 增长\n\n### 交互功能\n- **搜索**: 按项目名称或描述搜索\n- **筛选**: 按编程语言筛选\n- **排序**: 按排名、总 stars、周期内增长排序\n\n### 响应式设计\n- 支持桌面、平板、手机\n- 使用 Tailwind CSS 构建美观界面\n- GitHub 风格配色\n\n## Error Handling\n\n如果遇到错误：\n1. **网络错误**: 检查网络连接，确保能访问 GitHub\n2. **解析失败**: GitHub 页面结构可能变化，工具会显示调试信息\n3. **文件写入失败**: 检查输出路径的写权限\n\n## Voice Notification\n\n执行此工作流时发送语音通知：\n\n```bash\ncurl -s -X POST http://localhost:8888/notify \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"message\": \"正在生成 GitHub Trending Dashboard...\"}' \\\n  > /dev/null 2>&1 &\n```\n\n并输出文本通知：\n```\nRunning the **GenerateDashboard** workflow from the **GitHubTrends** skill...\n```\n\n## Integration with Other Skills\n\n- **Browser**: 验证生成的 HTML 页面效果\n- **System**: 保存仪表板快照到 MEMORY/\n- **OSINT**: 分析技术栈趋势\n\n## Notes\n\n- 数据每小时更新一次（GitHub trending 更新频率）\n- 生成的 HTML 是完全独立的，无需服务器\n- 所有依赖通过 CDN 加载（Tailwind CSS, Chart.js）\n- 支持离线查看（图表已内嵌数据）\n\n## Advanced Usage\n\n### 批量生成\n```bash\n# 生成多个语言的仪表板\nfor lang in TypeScript Python Go Rust; do\n  bun Tools/GenerateDashboard.ts \\\n    --language $lang \\\n    --output ~/trends-$lang.html\ndone\n```\n\n### 定时任务\n```bash\n# 每小时生成一次快照\n# 添加到 crontab:\n0 * * * * cd ~/.claude/skills/GitHubTrends && bun Tools/GenerateDashboard.ts --output ~/trends-$(date +%H).html\n```\n\n### 定制主题\n通过修改 `Templates/dashboard.hbs` 可以自定义：\n- 配色方案\n- 布局结构\n- 添加新的图表类型\n- 添加新的交互功能"}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.8izpLCWy.css">
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BhtVR_k0.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+Back to Prompt Gallery
+</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>GitHubTrends</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
+name: GitHubTrends
+description: 显示GitHub热门项目趋势，生成可视化仪表板。USE WHEN github trends, trending projects, hot repositories, popular github projects, generate dashboard, create webpage.
+version: 2.0.0
+---
+
+## Customization
+
+**Before executing, check for user customizations at:**
+`~/.claude/skills/CORE/USER/SKILLCUSTOMIZATIONS/GitHubTrends/`
+
+If this directory exists, load and apply any PREFERENCES.md, configurations, or resources found there. These override default behavior. If the directory does not exist, proceed with skill defaults.
+
+# GitHubTrends - GitHub热门项目趋势
+
+**快速发现GitHub上最受欢迎的开源项目。**
+
+---
+
+## Philosophy
+
+GitHub trending是发现优质开源项目的最佳途径。这个skill让老王我能快速获取当前最热门的项目列表，按时间周期（每日/每周）和编程语言筛选，帮助发现值得学习和贡献的项目。
+
+---
+
+## Quick Start
+
+```bash
+# 查看本周最热门的项目（默认）
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 查看今日最热门的项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily
+
+# 按语言筛选
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python
+
+# 指定显示数量
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+```
+
+---
+
+## When to Use This Skill
+
+**Core Triggers - Use this skill when user says:**
+
+### Direct Requests
+- &quot;show github trends&quot; 或 &quot;github trending&quot;
+- &quot;显示热门项目&quot; 或 &quot;看看有什么热门项目&quot;
+- &quot;what's trending on github&quot; 或 &quot;github hot projects&quot;
+- &quot;本周热门项目&quot; 或 &quot;weekly trending&quot;
+- &quot;今日热门项目&quot; 或 &quot;daily trending&quot;
+
+### Discovery Requests
+- &quot;discover popular projects&quot; 或 &quot;发现热门项目&quot;
+- &quot;show repositories trending&quot; 或 &quot;显示trending仓库&quot;
+- &quot;github上什么最火&quot; 或 &quot;what's hot on github&quot;
+- &quot;找点好项目看看&quot; 或 &quot;find good projects&quot;
+
+### Language-Specific
+- &quot;TypeScript trending projects&quot; 或 &quot;TypeScript热门项目&quot;
+- &quot;Python trending&quot; 或 &quot;Python热门项目&quot;
+- &quot;show trending Rust projects&quot; 或 &quot;显示Rust热门项目&quot;
+- &quot;Go语言热门项目&quot; 或 &quot;trending Go projects&quot;
+
+### Dashboard &amp; Visualization
+- &quot;生成 GitHub trending 仪表板&quot; 或 &quot;generate trending dashboard&quot;
+- &quot;创建趋势网页&quot; 或 &quot;create trending webpage&quot;
+- &quot;生成交互式报告&quot; 或 &quot;generate interactive report&quot;
+- &quot;export trending dashboard&quot; 或 &quot;导出仪表板&quot;
+- &quot;可视化 GitHub 趋势&quot; 或 &quot;visualize github trends&quot;
+
+---
+
+## Core Capabilities
+
+### 获取趋势列表
+- **每日趋势** - 过去24小时最热门项目
+- **每周趋势** - 过去7天最热门项目（默认）
+- **语言筛选** - 按编程语言过滤（TypeScript, Python, Go, Rust等）
+- **自定义数量** - 指定返回项目数量（默认10个）
+
+### 生成可视化仪表板 🆕
+- **交互式HTML** - 生成交互式网页仪表板
+- **数据可视化** - 语言分布饼图、Stars增长柱状图
+- **技术新闻** - 集成 Hacker News 技术资讯
+- **实时筛选** - 按语言筛选、排序、搜索功能
+- **响应式设计** - 支持桌面、平板、手机
+
+### 项目信息
+- 项目名称和描述
+- Star数量和变化
+- 编程语言
+- 项目URL
+
+---
+
+## Tool Usage
+
+### GetTrending.ts
+
+**Location:** `Tools/GetTrending.ts`
+
+**功能：** 从GitHub获取trending项目列表
+
+**参数：**
+- `period` - 时间周期：`daily` 或 `weekly`（默认：weekly）
+- `--language` - 编程语言筛选（可选）
+- `--limit` - 返回项目数量（默认：10）
+
+**使用示例：**
+```bash
+# 基本用法
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 带参数
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15
+
+# 简写
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily -l=Python
+```
+
+**实现方式：**
+使用 GitHub官方trending页面：https://github.com/trending
+通过 fetch API 读取页面内容并解析
+
+---
+
+### GenerateDashboard.ts 🆕
+
+**Location:** `Tools/GenerateDashboard.ts`
+
+**功能：** 生成交互式数据可视化仪表板HTML文件
+
+**参数：**
+- `--period` - 时间周期：`daily` 或 `weekly`（默认：weekly）
+- `--language` - 编程语言筛选（可选）
+- `--limit` - 返回项目数量（默认：10）
+- `--include-news` - 包含技术新闻
+- `--news-count` - 新闻数量（默认：10）
+- `--output` - 输出文件路径（默认：./github-trends.html）
+
+**使用示例：**
+```bash
+# 基本用法 - 生成本周仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+
+# 包含技术新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news
+
+# TypeScript 项目每日仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --output ~/ts-daily.html
+```
+
+**实现方式：**
+- 获取 GitHub trending 项目数据
+- 获取 Hacker News 技术新闻
+- 使用 Handlebars 模板引擎渲染 HTML
+- 集成 Tailwind CSS 和 Chart.js
+- 生成完全独立的 HTML 文件（通过 CDN 加载依赖）
+
+---
+
+## Output Format
+
+```markdown
+# GitHub Trending Projects - Weekly (2025-01-19)
+
+## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)
+**Language:** TypeScript
+**Description:** The React Framework for the Web
+**URL:** https://github.com/vercel/next.js
+
+## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)
+**Language:** TypeScript
+**Description:** Visual Studio Code
+**URL:** https://github.com/microsoft/vscode
+
+...
+
+---
+📊 Total: 10 projects | Language: All | Period: Weekly
+```
+
+---
+
+## Supported Languages
+
+常用编程语言筛选：
+- **TypeScript** - TypeScript项目
+- **JavaScript** - JavaScript项目
+- **Python** - Python项目
+- **Go** - Go语言项目
+- **Rust** - Rust项目
+- **Java** - Java项目
+- **C++** - C++项目
+- **Ruby** - Ruby项目
+- **Swift** - Swift项目
+- **Kotlin** - Kotlin项目
+
+---
+
+## Workflow Integration
+
+这个skill可以被其他skill调用：
+- **OSINT** - 在调查技术栈时发现热门工具
+- **Research** - 研究特定语言生态系统的趋势
+- **System** - 发现有用的PAI相关项目
+
+---
+
+## Technical Notes
+
+**数据来源：** GitHub官方trending页面
+**更新频率：** 每小时更新一次
+**无需认证：** 使用公开页面，无需GitHub API token
+**解析方式：** 通过HTML解析提取项目信息
+
+**错误处理：**
+- 网络错误会显示友好提示
+- 解析失败会返回原始HTML供调试
+- 支持的语言参数不区分大小写
+
+---
+
+## Future Enhancements
+
+可能的未来功能：
+- 支持月度趋势（如果GitHub提供）
+- 按stars范围筛选（1k+, 10k+, 100k+）
+- 保存历史数据用于趋势分析
+- 集成到其他skill的自动化工作流
+
+---
+
+## Voice Notification
+
+**When executing a workflow, do BOTH:**
+
+1. **Send voice notification:**
+   ```bash
+   curl -s -X POST http://localhost:8888/notify \
+     -H &quot;Content-Type: application/json&quot; \
+     -d '{&quot;message&quot;: &quot;Running the GitHubTrends workflow&quot;}' \
+     > /dev/null 2>&amp;1 &amp;
+   ```
+
+2. **Output text notification:**
+   ```
+   Running the **GitHubTrends** workflow...
+   ```
+
+**Full documentation:** `~/.claude/skills/CORE/SkillNotifications.md`
+FILE:README.md
+# GitHubTrends Skill
+
+**快速发现GitHub上最受欢迎的开源项目，生成可视化仪表板！**
+
+## 功能特性
+
+### 基础功能
+- ✅ 获取每日/每周热门项目列表
+- ✅ 按编程语言筛选（TypeScript, Python, Go, Rust等）
+- ✅ 自定义返回项目数量
+- ✅ 显示Star总数和周期增长
+- ✅ 无需GitHub API token
+
+### 可视化仪表板 🆕
+- ✨ **交互式HTML** - 生成交互式网页仪表板
+- 📊 **数据可视化** - 语言分布饼图、Stars增长柱状图
+- 📰 **技术新闻** - 集成 Hacker News 最新资讯
+- 🔍 **实时筛选** - 按语言筛选、排序、搜索
+- 📱 **响应式设计** - 支持桌面、平板、手机
+- 🎨 **美观界面** - Tailwind CSS + GitHub 风格
+
+## 快速开始
+
+### 查看本周热门项目（默认）
+
+```bash
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+```
+
+### 查看今日热门项目
+
+```bash
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily
+```
+
+### 按语言筛选
+
+```bash
+# TypeScript热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+
+# Python热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python
+
+# Go热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly -l=Go
+```
+
+### 指定返回数量
+
+```bash
+# 返回20个项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+
+# 组合使用：返回15个TypeScript项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15
+```
+
+---
+
+## 生成可视化仪表板 🆕
+
+### 基本用法
+
+```bash
+# 生成本周趋势仪表板（默认）
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+```
+
+### 包含技术新闻
+
+```bash
+# 生成包含 Hacker News 的仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news
+```
+
+### 高级选项
+
+```bash
+# 生成 TypeScript 项目每日仪表板，包含 15 条新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --news-count 15 \
+  --output ~/Downloads/ts-daily-trends.html
+```
+
+### 仪表板功能
+
+生成的 HTML 文件包含：
+- **统计概览** - 总项目数、总 stars、top 项目
+- **语言分布图** - 饼图展示各语言占比
+- **Stars 增长图** - 柱状图展示增长趋势
+- **项目卡片** - 美观的卡片式项目展示
+- **技术新闻** - Hacker News 最新资讯
+- **交互功能** - 筛选、排序、搜索
+- **响应式** - 自适应各种屏幕尺寸
+
+---
+
+## 输出示例
+
+```markdown
+# GitHub Trending Projects - Weekly (2026-01-19)
+
+📊 **Total:** 10 projects | **Language:** All | **Period:** Weekly
+
+---
+
+## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)
+**Language:** TypeScript
+**Description:** The React Framework for the Web
+**URL:** https://github.com/vercel/next.js
+
+## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)
+**Language:** TypeScript
+**Description:** Visual Studio Code
+**URL:** https://github.com/microsoft/vscode
+
+...
+```
+
+## 参数说明
+
+| 参数 | 说明 | 默认值 | 可选值 |
+|------|------|--------|--------|
+| `period` | 时间周期 | `weekly` | `daily`, `weekly` |
+| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust, Java等 |
+| `--limit` | 返回项目数量 | 10 | 任意正整数 |
+
+## 支持的语言
+
+常用的编程语言都可以作为筛选条件：
+- **TypeScript** - TypeScript项目
+- **JavaScript** - JavaScript项目
+- **Python** - Python项目
+- **Go** - Go语言项目
+- **Rust** - Rust项目
+- **Java** - Java项目
+- **C++** - C++项目
+- **Ruby** - Ruby项目
+- **Swift** - Swift项目
+- **Kotlin** - Kotlin项目
+
+## Skill 触发词
+
+当你说以下任何内容时，这个skill会被触发：
+
+- &quot;show github trends&quot; / &quot;github trending&quot;
+- &quot;显示热门项目&quot; / &quot;看看有什么热门项目&quot;
+- &quot;weekly trending&quot; / &quot;本周热门项目&quot;
+- &quot;daily trending&quot; / &quot;今日热门项目&quot;
+- &quot;TypeScript trending&quot; / &quot;Python trending&quot;
+- &quot;what's hot on github&quot; / &quot;github上什么最火&quot;
+
+## 技术实现
+
+- **数据源**: GitHub官方trending页面 (https://github.com/trending)
+- **解析方式**: HTML解析提取项目信息
+- **认证**: 无需GitHub API token
+- **更新频率**: 每小时更新一次
+
+## 目录结构
+
+```
+~/.claude/skills/GitHubTrends/
+├── SKILL.md              # Skill主文件
+├── README.md             # 使用文档（本文件）
+├── Tools/
+│   └── GetTrending.ts    # 获取trending数据的工具
+└── Workflows/
+    └── GetTrending.md    # 工作流文档
+```
+
+## 注意事项
+
+1. **网络要求**: 需要能访问GitHub官网
+2. **更新频率**: 数据每小时更新，不是实时
+3. **解析准确性**: GitHub页面结构变化可能影响解析，如遇问题请检查 `/tmp/github-trending-debug-*.html`
+4. **语言参数**: 不区分大小写，`--language=typescript` 和 `--language=TypeScript` 效果相同
+
+## 已知问题
+
+- GitHub trending页面的HTML结构复杂，某些项目的URL和名称可能解析不完整
+- 如果GitHub页面结构变化，工具可能需要更新解析逻辑
+
+## 未来改进
+
+- [ ] 支持保存历史数据用于趋势分析
+- [ ] 按stars范围筛选（1k+, 10k+, 100k+）
+- [ ] 更智能的HTML解析（使用HTML解析库而非正则）
+- [ ] 集成到其他skill的自动化工作流
+
+## 贡献
+
+如果发现问题或有改进建议，欢迎提出！
+
+---
+
+**Made with ❤️ by 老王**
+FILE:Tools/GetTrending.ts
+#!/usr/bin/env bun
+/**
+ * GitHub Trending Projects Fetcher
+ *
+ * 从GitHub获取trending项目列表
+ * 支持每日/每周趋势，按语言筛选
+ */
+
+import { $ } from &quot;bun&quot;;
+
+interface TrendingProject {
+  rank: number;
+  name: string;
+  description: string;
+  language: string;
+  stars: string;
+  starsThisPeriod: string;
+  url: string;
+}
+
+interface TrendingOptions {
+  period: &quot;daily&quot; | &quot;weekly&quot;;
+  language?: string;
+  limit: number;
+}
+
+function buildTrendingUrl(options: TrendingOptions): string {
+  const baseUrl = &quot;https://github.com/trending&quot;;
+  const since = options.period === &quot;daily&quot; ? &quot;daily&quot; : &quot;weekly&quot;;
+  let url = `${baseUrl}?since=${since}`;
+  if (options.language) {
+    url += `&amp;language=${encodeURIComponent(options.language.toLowerCase())}`;
+  }
+  return url;
+}
+
+function parseTrendingProjects(html: string, limit: number): TrendingProject[] {
+  const projects: TrendingProject[] = [];
+  try {
+    const articleRegex = /<article[^>]*>([\s\S]*?)<\/article>/g;
+    const articles = html.match(articleRegex) || [];
+    const articlesToProcess = articles.slice(0, limit);
+    articlesToProcess.forEach((article, index) => {
+      try {
+        const headingMatch = article.match(/<h[12][^>]*>([\s\S]*?)<\/h[12]>/);
+        let repoName: string | null = null;
+        if (headingMatch) {
+          const headingContent = headingMatch[1];
+          const validLinkMatch = headingContent.match(
+            /<a[^>]*href=&quot;\/([^\/&quot;\/]+\/[^\/&quot;\/]+)&quot;[^>]*>(?![^<]*login)/
+          );
+          if (validLinkMatch) {
+            repoName = validLinkMatch[1];
+          }
+        }
+        if (!repoName) {
+          const repoMatch = article.match(
+            /<a[^>]*href=&quot;\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)&quot;[^>]*>(?!.*(?:login|stargazers|forks|issues))/
+          );
+          repoName = repoMatch ? repoMatch[1] : null;
+        }
+        const descMatch = article.match(/<p[^>]*class=&quot;[^&quot;]*col-9[^&quot;]*&quot;[^>]*>([\s\S]*?)<\/p>/);
+        const description = descMatch
+          ? descMatch[1]
+              .replace(/<[^>]+>/g, &quot;&quot;)
+              .replace(/&amp;amp;/g, &quot;&amp;&quot;)
+              .replace(/&amp;lt;/g, &quot;<&quot;)
+              .replace(/&amp;gt;/g, &quot;>&quot;)
+              .replace(/&amp;quot;/g, '&quot;')
+              .trim()
+              .substring(0, 200)
+          : &quot;No description&quot;;
+        const langMatch = article.match(/<span[^>]*itemprop=&quot;programmingLanguage&quot;[^>]*>([^<]+)<\/span>/);
+        const language = langMatch ? langMatch[1].trim() : &quot;Unknown&quot;;
+        const starsMatch = article.match(/<a[^>]*href=&quot;\/[^&quot;]+\/stargazers&quot;[^>]*>(\d[\d,]*)\s*stars?/);
+        const totalStars = starsMatch ? starsMatch[1] : &quot;0&quot;;
+        const starsAddedMatch = article.match(/(\d[\d,]*)\s*stars?\s*(?:today|this week)/i);
+        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : &quot;&quot;;
+        if (repoName &amp;&amp; !repoName.includes(&quot;login&quot;) &amp;&amp; !repoName.includes(&quot;return_to&quot;)) {
+          projects.push({
+            rank: index + 1,
+            name: repoName,
+            description,
+            language,
+            stars: totalStars,
+            starsThisPeriod: starsAdded,
+            url: `https://github.com/${repoName}`,
+          });
+        }
+      } catch (error) {
+        console.error(`解析第${index + 1}个项目失败:`, error);
+      }
+    });
+  } catch (error) {
+    console.error(&quot;解析trending项目失败:&quot;, error);
+  }
+  return projects;
+}
+
+function formatProjects(projects: TrendingProject[], options: TrendingOptions): string {
+  if (projects.length === 0) {
+    return &quot;# GitHub Trending - No Projects Found\n\n没有找到trending项目，可能是网络问题或页面结构变化。&quot;;
+  }
+  const periodLabel = options.period === &quot;daily&quot; ? &quot;Daily&quot; : &quot;Weekly&quot;;
+  const languageLabel = options.language ? `Language: ${options.language}` : &quot;Language: All&quot;;
+  const today = new Date().toISOString().split(&quot;T&quot;)[0];
+  let output = `# GitHub Trending Projects - ${periodLabel} (${today})\n\n`;
+  output += `📊 **Total:** ${projects.length} projects | **${languageLabel}** | **Period:** ${periodLabel}\n\n`;
+  output += `---\n\n`;
+  projects.forEach((project) => {
+    output += `## ${project.rank}. ${project.name} - ⭐ ${project.stars}`;
+    if (project.starsThisPeriod) {
+      output += ` (${project.starsThisPeriod} this ${options.period})`;
+    }
+    output += `\n`;
+    output += `**Language:** ${project.language}\n`;
+    output += `**Description:** ${project.description}\n`;
+    output += `**URL:** ${project.url}\n\n`;
+  });
+  output += `---\n`;
+  output += `📊 Data from: https://github.com/trending\n`;
+  return output;
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  let period: &quot;daily&quot; | &quot;weekly&quot; = &quot;weekly&quot;;
+  let language: string | undefined;
+  let limit = 10;
+  for (const arg of args) {
+    if (arg === &quot;daily&quot; || arg === &quot;weekly&quot;) {
+      period = arg;
+    } else if (arg.startsWith(&quot;--language=&quot;)) {
+      language = arg.split(&quot;=&quot;)[1];
+    } else if (arg.startsWith(&quot;-l=&quot;)) {
+      language = arg.split(&quot;=&quot;)[1];
+    } else if (arg.startsWith(&quot;--limit=&quot;)) {
+      limit = parseInt(arg.split(&quot;=&quot;)[1]) || 10;
+    }
+  }
+  const options: TrendingOptions = { period, language, limit };
+  try {
+    const url = buildTrendingUrl(options);
+    console.error(`正在获取 GitHub trending 数据: ${url}`);
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    const html = await response.text();
+    const projects = parseTrendingProjects(html, limit);
+    const formatted = formatProjects(projects, options);
+    console.log(formatted);
+    if (projects.length === 0) {
+      const debugFile = `/tmp/github-trending-debug-${Date.now()}.html`;
+      await Bun.write(debugFile, html);
+      console.error(`\n调试: 原始HTML已保存到 ${debugFile}`);
+    }
+  } catch (error) {
+    console.error(&quot;❌ 获取trending数据失败:&quot;);
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+main();
+FILE:Workflows/GetTrending.md
+# GetTrending Workflow
+
+获取GitHub trending项目列表的工作流程。
+
+## Description
+
+这个工作流使用 GetTrending.ts 工具从GitHub获取当前最热门的项目列表，支持按时间周期（每日/每周）和编程语言筛选。
+
+## When to Use
+
+当用户请求以下任何内容时使用此工作流：
+- &quot;show github trends&quot; / &quot;github trending&quot;
+- &quot;显示热门项目&quot; / &quot;看看有什么热门项目&quot;
+- &quot;weekly trending&quot; / &quot;本周热门项目&quot;
+- &quot;daily trending&quot; / &quot;今日热门项目&quot;
+- &quot;TypeScript trending&quot; / &quot;Python trending&quot; / 按语言筛选
+- &quot;what's hot on github&quot; / &quot;github上什么最火&quot;
+
+## Workflow Steps
+
+### Step 1: 确定参数
+向用户确认或推断以下参数：
+- **时间周期**: daily (每日) 或 weekly (每周，默认)
+- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）
+- **项目数量**: 默认10个
+
+### Step 2: 执行工具
+运行 GetTrending.ts 工具：
+
+```bash
+# 基本用法（本周，全部语言，10个项目）
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 指定语言
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+
+# 指定数量
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+
+# 组合参数
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily --language=Python --limit=15
+```
+
+### Step 3: 显示结果
+工具会自动格式化输出，包括：
+- 项目排名
+- 项目名称
+- Star总数和周期内增长
+- 编程语言
+- 项目描述
+- GitHub URL
+
+### Step 4: 后续操作（可选）
+根据用户需求，可以：
+- 打开某个项目页面
+- 使用其他skill进一步分析项目
+- 将结果保存到文件供后续参考
+
+## Integration with Other Skills
+
+- **OSINT**: 在调查技术栈时发现热门工具
+- **Research**: 研究特定语言生态系统的趋势
+- **Browser**: 打开项目页面进行详细分析
+
+## Notes
+
+- 数据每小时更新一次
+- 无需GitHub API token
+- 使用公开的GitHub trending页面
+- 支持的语言参数不区分大小写
+FILE:Tools/GenerateDashboard.ts
+#!/usr/bin/env bun
+/**
+ * GitHub Trending Dashboard Generator
+ *
+ * 生成交互式数据可视化仪表板
+ *
+ * 使用方式：
+ *   ./GenerateDashboard.ts [options]
+ *
+ * 选项：
+ *   --period       - daily | weekly (默认: weekly)
+ *   --language     - 编程语言筛选 (可选)
+ *   --limit        - 项目数量 (默认: 10)
+ *   --include-news - 包含技术新闻
+ *   --news-count   - 新闻数量 (默认: 10)
+ *   --theme        - light | dark | auto (默认: auto)
+ *   --output       - 输出文件路径 (默认: ./github-trends.html)
+ *
+ * 示例：
+ *   ./GenerateDashboard.ts
+ *   ./GenerateDashboard.ts --period daily --language TypeScript --include-news
+ *   ./GenerateDashboard.ts --limit 20 --output ~/trends.html
+ */
+
+import Handlebars from 'handlebars';
+import type { DashboardOptions, TrendingProject, TechNewsItem, TemplateData } from './Lib/types';
+import { registerHelpers, renderTemplate } from './Lib/template-helpers';
+import { analyzeData } from './Lib/visualization-helpers';
+
+// 注册 Handlebars 辅助函数
+registerHelpers();
+
+/**
+ * 构建 GitHub trending URL
+ */
+function buildTrendingUrl(options: DashboardOptions): string {
+  const baseUrl = &quot;https://github.com/trending&quot;;
+  const since = options.period === &quot;daily&quot; ? &quot;daily&quot; : &quot;weekly&quot;;
+  let url = `${baseUrl}?since=${since}`;
+
+  if (options.language) {
+    url += `&amp;language=${encodeURIComponent(options.language.toLowerCase())}`;
+  }
+
+  return url;
+}
+
+/**
+ * 解析 HTML 提取 trending 项目
+ * （从 GetTrending.ts 复制的逻辑）
+ */
+async function getTrendingProjects(options: DashboardOptions): Promise<TrendingProject[]> {
+  const url = buildTrendingUrl(options);
+
+  console.error(`正在获取 GitHub trending 数据: ${url}`);
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  const html = await response.text();
+  return parseTrendingProjects(html, options.limit);
+}
+
+/**
+ * 解析 HTML
+ */
+function parseTrendingProjects(html: string, limit: number): TrendingProject[] {
+  const projects: TrendingProject[] = [];
+
+  try {
+    const articleRegex = /<article[^>]*>([\s\S]*?)<\/article>/g;
+    const articles = html.match(articleRegex) || [];
+    const articlesToProcess = articles.slice(0, limit);
+
+    articlesToProcess.forEach((article, index) => {
+      try {
+        const headingMatch = article.match(/<h[12][^>]*>([\s\S]*?)<\/h[12]>/);
+        let repoName: string | null = null;
+
+        if (headingMatch) {
+          const headingContent = headingMatch[1];
+          const validLinkMatch = headingContent.match(
+            /<a[^>]*href=&quot;\/([^\/&quot;\/]+\/[^\/&quot;\/]+)&quot;[^>]*>(?![^<]*login)/
+          );
+          if (validLinkMatch) {
+            repoName = validLinkMatch[1];
+          }
+        }
+
+        if (!repoName) {
+          const repoMatch = article.match(
+            /<a[^>]*href=&quot;\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)&quot;[^>]*>(?!.*(?:login|stargazers|forks|issues))/
+          );
+          repoName = repoMatch ? repoMatch[1] : null;
+        }
+
+        const descMatch = article.match(/<p[^>]*class=&quot;[^&quot;]*col-9[^&quot;]*&quot;[^>]*>([\s\S]*?)<\/p>/);
+        const description = descMatch
+          ? descMatch[1]
+              .replace(/<[^>]+>/g, &quot;&quot;)
+              .replace(/&amp;amp;/g, &quot;&amp;&quot;)
+              .replace(/&amp;lt;/g, &quot;<&quot;)
+              .replace(/&amp;gt;/g, &quot;>&quot;)
+              .replace(/&amp;quot;/g, '&quot;')
+              .trim()
+              .substring(0, 200)
+          : &quot;No description&quot;;
+
+        const langMatch = article.match(/<span[^>]*itemprop=&quot;programmingLanguage&quot;[^>]*>([^<]+)<\/span>/);
+        const language = langMatch ? langMatch[1].trim() : &quot;Unknown&quot;;
+
+        // 提取stars总数 - GitHub 改了 HTML 结构，数字在 SVG 后面
+        const starsMatch = article.match(/stargazers[^>]*>[\s\S]*?<\/svg>\s*([\d,]+)/);
+        const totalStars = starsMatch ? starsMatch[1] : &quot;0&quot;;
+
+        // 尝试提取新增stars - 格式：XXX stars today/this week
+        const starsAddedMatch = article.match(/(\d[\d,]*)\s+stars?\s+(?:today|this week)/);
+        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : &quot;&quot;;
+
+        if (repoName &amp;&amp; !repoName.includes(&quot;login&quot;) &amp;&amp; !repoName.includes(&quot;return_to&quot;)) {
+          projects.push({
+            rank: index + 1,
+            name: repoName,
+            description,
+            language,
+            stars: totalStars,
+            starsThisPeriod: starsAdded,
+            url: `https://github.com/${repoName}`,
+          });
+        }
+      } catch (error) {
+        console.error(`解析第${index + 1}个项目失败:`, error);
+      }
+    });
+  } catch (error) {
+    console.error(&quot;解析trending项目失败:&quot;, error);
+  }
+
+  return projects;
+}
+
+/**
+ * 获取技术新闻
+ */
+async function getTechNews(count: number): Promise<TechNewsItem[]> {
+  const HN_API = 'https://hn.algolia.com/api/v1/search_by_date';
+
+  try {
+    const response = await fetch(`${HN_API}?tags=story&amp;hitsPerPage=${count}`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    return data.hits.slice(0, count).map((hit: any) => ({
+      id: hit.objectID,
+      title: hit.title,
+      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+      source: 'hackernews',
+      points: hit.points || 0,
+      comments: hit.num_comments || 0,
+      timestamp: new Date(hit.created_at).toISOString(),
+      tags: hit._tags || []
+    }));
+  } catch (error) {
+    console.error('获取 Hacker News 失败:', error);
+    return [];
+  }
+}
+
+/**
+ * 生成仪表板
+ */
+async function generateDashboard(options: DashboardOptions): Promise<void> {
+  try {
+    console.error('🚀 开始生成 GitHub Trending Dashboard...\n');
+
+    // 1. 获取 GitHub Trending 数据
+    const projects = await getTrendingProjects(options);
+    console.error(`✅ 获取到 ${projects.length} 个项目`);
+
+    // 2. 获取技术新闻（如果启用）
+    let news: TechNewsItem[] = [];
+    if (options.includeNews) {
+      news = await getTechNews(options.newsCount);
+      console.error(`✅ 获取到 ${news.length} 条新闻`);
+    }
+
+    // 3. 分析数据
+    const analytics = analyzeData(projects);
+    console.error(`✅ 数据分析完成`);
+
+    // 4. 准备模板数据
+    const templateData: TemplateData = {
+      title: 'GitHub Trending Dashboard',
+      generatedAt: new Date().toLocaleString('zh-CN'),
+      period: options.period === 'daily' ? 'Daily' : 'Weekly',
+      projects,
+      news,
+      analytics,
+      options
+    };
+
+    // 5. 渲染模板
+    const templatePath = `${import.meta.dir}/../Templates/dashboard.hbs`;
+    const templateContent = await Bun.file(templatePath).text();
+    const template = Handlebars.compile(templateContent);
+    const html = template(templateData);
+    console.error(`✅ 模板渲染完成`);
+
+    // 6. 保存文件
+    await Bun.write(options.output, html);
+    console.error(`\n🎉 仪表板生成成功！`);
+    console.error(`📄 文件路径: ${options.output}`);
+    console.error(`\n💡 在浏览器中打开查看效果！`);
+
+  } catch (error) {
+    console.error('\n❌ 生成仪表板失败:');
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+/**
+ * 解析命令行参数
+ */
+function parseArgs(): DashboardOptions {
+  const args = process.argv.slice(2);
+
+  const options: DashboardOptions = {
+    period: 'weekly',
+    limit: 10,
+    output: './github-trends.html',
+    includeNews: false,
+    newsCount: 10,
+    theme: 'auto'
+  };
+
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+
+    switch (arg) {
+      case '--period':
+        options.period = args[++i] === 'daily' ? 'daily' : 'weekly';
+        break;
+      case '--language':
+        options.language = args[++i];
+        break;
+      case '--limit':
+        options.limit = parseInt(args[++i]) || 10;
+        break;
+      case '--include-news':
+        options.includeNews = true;
+        break;
+      case '--news-count':
+        options.newsCount = parseInt(args[++i]) || 10;
+        break;
+      case '--theme':
+        options.theme = args[++i] === 'light' || args[++i] === 'dark' ? args[i] : 'auto';
+        break;
+      case '--output':
+        options.output = args[++i];
+        break;
+      default:
+        if (arg.startsWith('--output=')) {
+          options.output = arg.split('=')[1];
+        } else if (arg.startsWith('--language=')) {
+          options.language = arg.split('=')[1];
+        } else if (arg.startsWith('--limit=')) {
+          options.limit = parseInt(arg.split('=')[1]) || 10;
+        }
+    }
+  }
+
+  return options;
+}
+
+/**
+ * 主函数
+ */
+async function main() {
+  const options = parseArgs();
+  await generateDashboard(options);
+}
+
+// 如果直接运行此脚本
+if (import.meta.main) {
+  main();
+}
+
+// 导出供其他模块使用
+export { generateDashboard };
+export type { DashboardOptions };
+FILE:Tools/GetTechNews.ts
+#!/usr/bin/env bun
+/**
+ * Tech News Fetcher
+ *
+ * 从 Hacker News 和其他来源获取技术新闻
+ *
+ * 使用方式：
+ *   ./GetTechNews.ts [count]
+ *
+ * 参数：
+ *   count        - 获取新闻数量 (默认: 10)
+ *
+ * 示例：
+ *   ./GetTechNews.ts
+ *   ./GetTechNews.ts 20
+ */
+
+import Parser from 'rss-parser';
+import type { TechNewsItem } from './Lib/types';
+
+const HN_API = 'https://hn.algolia.com/api/v1/search';
+const parser = new Parser();
+
+/**
+ * 从 Hacker News Algolia API 获取新闻
+ */
+async function getHackerNews(count: number): Promise<TechNewsItem[]> {
+  try {
+    const response = await fetch(`${HN_API}?tags=front_page&amp;hits=${count}`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    return data.hits.map((hit: any) => ({
+      id: hit.objectID,
+      title: hit.title,
+      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+      source: 'hackernews',
+      points: hit.points || 0,
+      comments: hit.num_comments || 0,
+      timestamp: new Date(hit.created_at).toISOString(),
+      tags: hit._tags || []
+    }));
+  } catch (error) {
+    console.error('获取 Hacker News 失败:', error);
+    return [];
+  }
+}
+
+/**
+ * 从 Hacker News RSS 获取新闻（备用方案）
+ */
+async function getHackerNewsRSS(count: number): Promise<TechNewsItem[]> {
+  try {
+    const feed = await parser.parseURL('https://news.ycombinator.com/rss');
+
+    return feed.items.slice(0, count).map((item: any) => ({
+      id: item.guid || item.link,
+      title: item.title || 'No title',
+      url: item.link,
+      source: 'hackernews',
+      timestamp: item.pubDate || new Date().toISOString(),
+      tags: ['hackernews', 'rss']
+    }));
+  } catch (error) {
+    console.error('获取 Hacker News RSS 失败:', error);
+    return [];
+  }
+}
+
+/**
+ * 获取技术新闻（主函数）
+ */
+async function getTechNews(count: number = 10): Promise<TechNewsItem[]> {
+  console.error(`正在获取技术新闻（${count}条）...`);
+
+  // 优先使用 Hacker News API
+  let news = await getHackerNews(count);
+
+  // 如果失败，尝试 RSS 备用
+  if (news.length === 0) {
+    console.error('Hacker News API 失败，尝试 RSS...');
+    news = await getHackerNewsRSS(count);
+  }
+
+  console.error(`✅ 获取到 ${news.length} 条新闻`);
+  return news;
+}
+
+/**
+ * CLI 入口
+ */
+async function main() {
+  const args = process.argv.slice(2);
+  const count = parseInt(args[0]) || 10;
+
+  try {
+    const news = await getTechNews(count);
+
+    // 输出 JSON 格式（便于程序调用）
+    console.log(JSON.stringify(news, null, 2));
+  } catch (error) {
+    console.error('❌ 获取新闻失败:');
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+// 如果直接运行此脚本
+if (import.meta.main) {
+  main();
+}
+
+// 导出供其他模块使用
+export { getTechNews };
+export type { TechNewsItem };
+FILE:Tools/Lib/types.ts
+/**
+ * GitHubTrends - 类型定义
+ *
+ * 定义所有 TypeScript 接口和类型
+ */
+
+/**
+ * GitHub Trending 项目
+ */
+export interface TrendingProject {
+  rank: number;
+  name: string;
+  description: string;
+  language: string;
+  stars: string;
+  starsThisPeriod: string;
+  url: string;
+}
+
+/**
+ * 技术新闻条目
+ */
+export interface TechNewsItem {
+  id: string;
+  title: string;
+  url: string;
+  source: string; // 'hackernews', 'reddit', etc.
+  points?: number;
+  comments?: number;
+  timestamp: string;
+  tags: string[];
+}
+
+/**
+ * 仪表板生成选项
+ */
+export interface DashboardOptions {
+  period: 'daily' | 'weekly';
+  language?: string;
+  limit: number;
+  output: string;
+  includeNews: boolean;
+  newsCount: number;
+  theme: 'light' | 'dark' | 'auto';
+}
+
+/**
+ * 数据分析结果
+ */
+export interface Analytics {
+  languageDistribution: Record<string, number>;
+  totalStars: number;
+  topProject: TrendingProject;
+  growthStats: {
+    highest: TrendingProject;
+    average: number;
+  };
+}
+
+/**
+ * Trending 查询选项（用于 GetTrending.ts）
+ */
+export interface TrendingOptions {
+  period: &quot;daily&quot; | &quot;weekly&quot;;
+  language?: string;
+  limit: number;
+}
+
+/**
+ * 图表数据
+ */
+export interface ChartData {
+  labels: string[];
+  data: number[];
+  colors: string[];
+}
+
+/**
+ * 模板渲染数据
+ */
+export interface TemplateData {
+  title: string;
+  generatedAt: string;
+  period: string;
+  projects: TrendingProject[];
+  news?: TechNewsItem[];
+  analytics: Analytics;
+  options: DashboardOptions;
+}
+FILE:Tools/Lib/template-helpers.ts
+/**
+ * Template Helpers
+ *
+ * Handlebars 自定义辅助函数
+ */
+
+import Handlebars from 'handlebars';
+
+/**
+ * 注册所有自定义辅助函数
+ */
+export function registerHelpers(): void {
+  // 格式化数字（添加千位分隔符）
+  Handlebars.registerHelper('formatNumber', (value: number) => {
+    return value.toLocaleString();
+  });
+
+  // 截断文本
+  Handlebars.registerHelper('truncate', (str: string, length: number = 100) => {
+    if (str.length <= length) return str;
+    return str.substring(0, length) + '...';
+  });
+
+  // 格式化日期
+  Handlebars.registerHelper('formatDate', (dateStr: string) => {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('zh-CN', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  });
+
+  // JSON 序列化（用于内嵌数据）
+  Handlebars.registerHelper('json', (context: any) => {
+    return JSON.stringify(context);
+  });
+
+  // 条件判断
+  Handlebars.registerHelper('eq', (a: any, b: any) => {
+    return a === b;
+  });
+
+  Handlebars.registerHelper('ne', (a: any, b: any) => {
+    return a !== b;
+  });
+
+  Handlebars.registerHelper('gt', (a: number, b: number) => {
+    return a > b;
+  });
+
+  Handlebars.registerHelper('lt', (a: number, b: number) => {
+    return a < b;
+  });
+}
+
+/**
+ * 渲染模板
+ */
+export async function renderTemplate(
+  templatePath: string,
+  data: any
+): Promise<string> {
+  const templateContent = await Bun.file(templatePath).text();
+  const template = Handlebars.compile(templateContent);
+  return template(data);
+}
+
+export default { registerHelpers, renderTemplate };
+FILE:Tools/Lib/visualization-helpers.ts
+/**
+ * Visualization Helpers
+ *
+ * 数据分析和可视化辅助函数
+ */
+
+import type { TrendingProject, Analytics } from './types';
+
+/**
+ * 分析项目数据
+ */
+export function analyzeData(projects: TrendingProject[]): Analytics {
+  // 语言分布统计
+  const languageDistribution: Record<string, number> = {};
+  projects.forEach(project => {
+    const lang = project.language;
+    languageDistribution[lang] = (languageDistribution[lang] || 0) + 1;
+  });
+
+  // 总 stars 数
+  const totalStars = projects.reduce((sum, project) => {
+    return sum + parseInt(project.stars.replace(/,/g, '') || 0);
+  }, 0);
+
+  // 找出 top project
+  const topProject = projects.reduce((top, project) => {
+    const topStars = parseInt(top.stars.replace(/,/g, '') || 0);
+    const projStars = parseInt(project.stars.replace(/,/g, '') || 0);
+    return projStars > topStars ? project : top;
+  }, projects[0]);
+
+  // 增长统计
+  const projectsWithGrowth = projects.filter(p => p.starsThisPeriod);
+  const growthValues = projectsWithGrowth.map(p =>
+    parseInt(p.starsThisPeriod.replace(/[+,]/g, '') || 0)
+  );
+
+  const highestGrowth = projectsWithGrowth.reduce((highest, project) => {
+    const highestValue = parseInt(highest.starsThisPeriod.replace(/[+,]/g, '') || 0);
+    const projValue = parseInt(project.starsThisPeriod.replace(/[+,]/g, '') || 0);
+    return projValue > highestValue ? project : highest;
+  }, projectsWithGrowth[0] || projects[0]);
+
+  const averageGrowth = growthValues.length > 0
+    ? Math.round(growthValues.reduce((a, b) => a + b, 0) / growthValues.length)
+    : 0;
+
+  // 提取唯一语言列表（用于筛选）
+  const languages = Object.keys(languageDistribution).sort();
+
+  // 生成图表数据
+  const growthData = projects.slice(0, 10).map(p => ({
+    name: p.name.split('/')[1] || p.name,
+    growth: parseInt(p.starsThisPeriod.replace(/[+,]/g, '') || 0)
+  }));
+
+  return {
+    languageDistribution,
+    totalStars,
+    topProject,
+    growthStats: {
+      highest: highestGrowth,
+      average: averageGrowth
+    },
+    languages,
+    growthData
+  };
+}
+
+/**
+ * 格式化 stars 数字
+ */
+export function formatStars(starsStr: string): number {
+  return parseInt(starsStr.replace(/,/g, '') || 0);
+}
+
+/**
+ * 解析增长数值
+ */
+export function parseGrowth(growthStr: string): number {
+  if (!growthStr) return 0;
+  return parseInt(growthStr.replace(/[+,]/g, '') || 0);
+}
+
+export default { analyzeData, formatStars, parseGrowth };
+FILE:Templates/dashboard.hbs
+<!DOCTYPE html>
+<html lang=&quot;zh-CN&quot;>
+<head>
+  <meta charset=&quot;UTF-8&quot;>
+  <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
+  <title>GitHub Trending Dashboard - {{period}}</title>
+
+  <!-- Tailwind CSS -->
+  <script src=&quot;https://cdn.tailwindcss.com&quot;></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            github: {
+              dark: '#0d1117',
+              light: '#161b22',
+              border: '#30363d',
+              accent: '#58a6ff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Chart.js -->
+  <script src=&quot;https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js&quot;></script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif;
+    }
+    .project-card {
+      transition: all 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .news-item {
+      border-left: 3px solid #58a6ff;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+
+<body class=&quot;bg-gray-50 min-h-screen&quot;>
+  <!-- 页头 -->
+  <header class=&quot;bg-white shadow-sm sticky top-0 z-50&quot;>
+    <div class=&quot;max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8&quot;>
+      <div class=&quot;flex justify-between items-center&quot;>
+        <div>
+          <h1 class=&quot;text-3xl font-bold text-gray-900&quot;>🚀 GitHub Trending Dashboard</h1>
+          <p class=&quot;text-gray-600 mt-1&quot;>
+            周期: <span class=&quot;font-semibold text-github-accent&quot;>{{period}}</span> |
+            生成时间: <span class=&quot;text-gray-500&quot;>{{generatedAt}}</span>
+          </p>
+        </div>
+        <div class=&quot;flex gap-2&quot;>
+          <button onclick=&quot;window.print()&quot; class=&quot;px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium&quot;>
+            🖨️ Print
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class=&quot;max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8&quot;>
+
+    <!-- 统计概览 -->
+    <section class=&quot;grid grid-cols-1 md:grid-cols-3 gap-6 mb-8&quot;>
+      <div class=&quot;stat-card rounded-xl p-6 text-white shadow-lg&quot;>
+        <h3 class=&quot;text-lg font-semibold opacity-90&quot;>项目总数</h3>
+        <p class=&quot;text-4xl font-bold mt-2&quot;>{{projects.length}}</p>
+        <p class=&quot;text-sm opacity-75 mt-1&quot;>{{period}} 热门趋势</p>
+      </div>
+
+      <div class=&quot;bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl p-6 text-white shadow-lg&quot;>
+        <h3 class=&quot;text-lg font-semibold opacity-90&quot;>总 Stars 数</h3>
+        <p class=&quot;text-4xl font-bold mt-2&quot;>{{analytics.totalStars}}</p>
+        <p class=&quot;text-sm opacity-75 mt-1&quot;>所有项目总计</p>
+      </div>
+
+      <div class=&quot;bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-6 text-white shadow-lg&quot;>
+        <h3 class=&quot;text-lg font-semibold opacity-90&quot;>最热项目</h3>
+        <p class=&quot;text-xl font-bold mt-2 truncate&quot;>{{analytics.topProject.name}}</p>
+        <p class=&quot;text-sm opacity-75 mt-1&quot;>{{analytics.topProject.stars}} stars</p>
+      </div>
+    </section>
+
+    <!-- 筛选和搜索 -->
+    <section class=&quot;bg-white rounded-xl shadow-sm p-6 mb-8&quot;>
+      <div class=&quot;flex flex-wrap gap-4 items-center&quot;>
+        <div class=&quot;flex-1 min-w-64&quot;>
+          <label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;>搜索项目</label>
+          <input
+            type=&quot;text&quot;
+            id=&quot;searchInput&quot;
+            placeholder=&quot;按名称或描述搜索...&quot;
+            class=&quot;w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            oninput=&quot;filterProjects()&quot;
+          >
+        </div>
+
+        <div>
+          <label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;>语言筛选</label>
+          <select
+            id=&quot;languageFilter&quot;
+            class=&quot;px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            onchange=&quot;filterProjects()&quot;
+          >
+            <option value=&quot;all&quot;>全部语言</option>
+            {{#each analytics.languages}}
+              <option value=&quot;{{this}}&quot;>{{this}}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div>
+          <label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;>排序方式</label>
+          <select
+            id=&quot;sortSelect&quot;
+            class=&quot;px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            onchange=&quot;sortProjects()&quot;
+          >
+            <option value=&quot;rank&quot;>排名</option>
+            <option value=&quot;stars&quot;>总 Stars</option>
+            <option value=&quot;growth&quot;>本期增长</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- 语言分布图表 -->
+    <section class=&quot;bg-white rounded-xl shadow-sm p-6 mb-8&quot;>
+      <h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;>📊 语言分布</h2>
+      <div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-8&quot;>
+        <div>
+          <canvas id=&quot;languageChart&quot;></canvas>
+        </div>
+        <div>
+          <canvas id=&quot;growthChart&quot;></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Projects -->
+    <section class=&quot;mb-8&quot;>
+      <h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;>🔥 热门项目</h2>
+      <div id=&quot;projects-container&quot; class=&quot;grid grid-cols-1 gap-4&quot;>
+        {{#each projects}}
+        <div class=&quot;project-card bg-white rounded-xl shadow-sm p-6 border border-gray-200&quot;
+             data-rank=&quot;{{rank}}&quot;
+             data-language=&quot;{{language}}&quot;
+             data-stars=&quot;{{stars}}&quot;
+             data-growth=&quot;{{starsThisPeriod}}&quot;
+             data-name=&quot;{{name}}&quot;
+             data-description=&quot;{{description}}&quot;>
+          <div class=&quot;flex items-start justify-between&quot;>
+            <div class=&quot;flex-1&quot;>
+              <div class=&quot;flex items-center gap-3 mb-2&quot;>
+                <span class=&quot;text-2xl font-bold text-github-accent&quot;>#{{rank}}</span>
+                <h3 class=&quot;text-xl font-semibold text-gray-900&quot;>
+                  <a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;hover:text-github-accent&quot;>{{name}}</a>
+                </h3>
+                <span class=&quot;badge bg-blue-100 text-blue-800&quot;>{{language}}</span>
+              </div>
+              <p class=&quot;text-gray-600 mb-3&quot;>{{description}}</p>
+              <div class=&quot;flex items-center gap-4 text-sm text-gray-500&quot;>
+                <span>⭐ {{stars}} stars</span>
+                {{#if starsThisPeriod}}
+                  <span class=&quot;text-green-600 font-semibold&quot;>(+{{starsThisPeriod}} this {{../period}})</span>
+                {{/if}}
+              </div>
+            </div>
+            <a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;px-4 py-2 bg-github-accent text-white rounded-lg hover:bg-blue-600 transition font-medium&quot;>
+              View →
+            </a>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+
+    <!-- Tech News -->
+    {{#if news}}
+    <section class=&quot;mb-8&quot;>
+      <h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;>📰 技术资讯</h2>
+      <div class=&quot;grid grid-cols-1 gap-4&quot;>
+        {{#each news}}
+        <div class=&quot;news-item bg-white rounded-xl shadow-sm p-5 hover:shadow-md transition&quot;>
+          <div class=&quot;flex items-start justify-between&quot;>
+            <div class=&quot;flex-1&quot;>
+              <h3 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot;>
+                <a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;hover:text-github-accent&quot;>{{title}}</a>
+              </h3>
+              <div class=&quot;flex items-center gap-4 text-sm text-gray-500&quot;>
+                <span class=&quot;text-orange-600&quot;>📰 {{source}}</span>
+                {{#if points}}
+                  <span>⬆️ {{points}} points</span>
+                {{/if}}
+                {{#if comments}}
+                  <span>💬 {{comments}} comments</span>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+    {{/if}}
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class=&quot;bg-white border-t border-gray-200 mt-12&quot;>
+    <div class=&quot;max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8&quot;>
+      <p class=&quot;text-center text-gray-500 text-sm&quot;>
+        由 GitHubTrends Skill 生成 | 数据来源：GitHub 和 Hacker News
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // 注入数据
+    window.dashboardData = {
+      projects: {{{json projects}}},
+      analytics: {
+        languageDistribution: {{{json analytics.languageDistribution}}},
+        growthData: {{{json analytics.growthData}}}
+      }
+    };
+
+    // 初始化图表
+    document.addEventListener('DOMContentLoaded', function() {
+      initLanguageChart();
+      initGrowthChart();
+    });
+
+    // 语言分布饼图
+    function initLanguageChart() {
+      const ctx = document.getElementById('languageChart').getContext('2d');
+      const data = window.dashboardData.analytics.languageDistribution;
+
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: Object.keys(data),
+          datasets: [{
+            data: Object.values(data),
+            backgroundColor: [
+              '#58a6ff', '#238636', '#f1e05a', '#d73a49',
+              '#8957E5', '#e34c26', '#CB3837', '#DA5B0B',
+              '#4F5D95', '#563d7c'
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'right'
+            },
+            title: {
+              display: true,
+              text: 'Projects by Language'
+            }
+          }
+        }
+      });
+    }
+
+    // Stars 增长柱状图
+    function initGrowthChart() {
+      const ctx = document.getElementById('growthChart').getContext('2d');
+      const projects = window.dashboardData.projects.slice(0, 10);
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: projects.map(p => p.name.split('/')[1] || p.name),
+          datasets: [{
+            label: 'Stars This Period',
+            data: projects.map(p => parseInt(p.starsThisPeriod.replace('+', '') || 0)),
+            backgroundColor: 'rgba(88, 166, 255, 0.8)',
+            borderColor: 'rgba(88, 166, 255, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          indexAxis: 'y',
+          plugins: {
+            title: {
+              display: true,
+              text: 'Top 10 Growth'
+            }
+          },
+          scales: {
+            x: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    // 筛选项目
+    function filterProjects() {
+      const searchValue = document.getElementById('searchInput').value.toLowerCase();
+      const languageValue = document.getElementById('languageFilter').value;
+
+      const cards = document.querySelectorAll('.project-card');
+
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const description = card.dataset.description.toLowerCase();
+        const language = card.dataset.language;
+
+        const matchesSearch = name.includes(searchValue) || description.includes(searchValue);
+        const matchesLanguage = languageValue === 'all' || language === languageValue;
+
+        card.style.display = matchesSearch &amp;&amp; matchesLanguage ? 'block' : 'none';
+      });
+    }
+
+    // 排序项目
+    function sortProjects() {
+      const sortBy = document.getElementById('sortSelect').value;
+      const container = document.getElementById('projects-container');
+      const cards = Array.from(container.children);
+
+      cards.sort((a, b) => {
+        switch(sortBy) {
+          case 'stars':
+            return parseInt(b.dataset.stars.replace(/,/g, '')) - parseInt(a.dataset.stars.replace(/,/g, ''));
+          case 'growth':
+            const growthA = parseInt(a.dataset.growth.replace(/[+,]/g, '') || 0);
+            const growthB = parseInt(b.dataset.growth.replace(/[+,]/g, '') || 0);
+            return growthB - growthA;
+          case 'rank':
+          default:
+            return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);
+        }
+      });
+
+      cards.forEach(card => container.appendChild(card));
+    }
+  </script>
+</body>
+</html>
+FILE:Workflows/GenerateDashboard.md
+# GenerateDashboard Workflow
+
+生成交互式数据可视化仪表板的工作流程。
+
+## Description
+
+这个工作流使用 GenerateDashboard.ts 工具从 GitHub 获取 trending 项目，并生成交互式 HTML 仪表板，支持：
+- 项目卡片展示
+- 语言分布饼图
+- Stars 增长柱状图
+- 技术新闻列表
+- 实时筛选、排序、搜索功能
+
+## When to Use
+
+当用户请求以下任何内容时使用此工作流：
+- &quot;生成 GitHub trending 仪表板&quot;
+- &quot;创建趋势网页&quot;
+- &quot;生成可视化报告&quot;
+- &quot;export trending dashboard&quot;
+- &quot;生成交互式网页&quot;
+
+## Workflow Steps
+
+### Step 1: 确定参数
+向用户确认或推断以下参数：
+- **时间周期**: daily (每日) 或 weekly (每周，默认)
+- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）
+- **项目数量**: 默认10个
+- **包含新闻**: 是否包含技术新闻
+- **新闻数量**: 默认10条
+- **输出路径**: 默认 ./github-trends.html
+
+### Step 2: 执行工具
+运行 GenerateDashboard.ts 工具：
+
+```bash
+# 基本用法（本周，10个项目）
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+
+# 指定语言和新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period weekly \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --news-count 15 \
+  --output ~/trends.html
+
+# 每日趋势
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --output ~/daily-trends.html
+```
+
+### Step 3: 显示结果
+工具会自动：
+1. 获取 GitHub trending 数据
+2. 获取技术新闻（如果启用）
+3. 分析数据生成统计信息
+4. 渲染 HTML 模板
+5. 保存到指定路径
+
+### Step 4: 验证和打开
+生成的 HTML 文件包含：
+- ✅ 响应式布局
+- ✅ 项目卡片展示
+- ✅ 语言分布饼图
+- ✅ Stars 增长柱状图
+- ✅ 实时筛选功能
+- ✅ 排序功能
+- ✅ 搜索功能
+- ✅ 技术新闻列表
+
+## Example Usage
+
+### Example 1: 基本仪表板
+```
+User: &quot;生成本周 GitHub trending 仪表板&quot;
+
+Assistant:
+运行 GenerateDashboard 工具...
+[执行命令，生成 /tmp/github-trends.html]
+✅ 仪表板生成成功！已在浏览器中打开。
+```
+
+### Example 2: 包含新闻的仪表板
+```
+User: &quot;生成 TypeScript 项目的每日趋势，包含新闻&quot;
+
+Assistant:
+生成 TypeScript 每日趋势仪表板，包含技术新闻...
+[执行命令：--period daily --language TypeScript --include-news]
+✅ 仪表板已生成到 ~/Downloads/ts-daily-trends.html
+```
+
+### Example 3: 自定义输出
+```
+User: &quot;生成一个包含 20 个项目的仪表板，保存到桌面&quot;
+
+Assistant:
+生成 20 个项目的趋势仪表板...
+[执行命令：--limit 20 --output ~/Desktop/github-trends.html]
+✅ 完成！文件已保存到桌面
+```
+
+## Tool Options
+
+| 参数 | 说明 | 默认值 | 可选值 |
+|------|------|--------|--------|
+| `--period` | 时间周期 | `weekly` | `daily`, `weekly` |
+| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust等 |
+| `--limit` | 返回项目数量 | 10 | 任意正整数 |
+| `--include-news` | 包含技术新闻 | false | - |
+| `--news-count` | 新闻数量 | 10 | 任意正整数 |
+| `--theme` | 主题 | `auto` | `light`, `dark`, `auto` |
+| `--output` | 输出文件路径 | `./github-trends.html` | 任意路径 |
+
+## Output Features
+
+### 数据可视化
+- **语言分布饼图**: 展示各编程语言的项目占比
+- **Stars 增长柱状图**: 展示前 10 名项目的 stars 增长
+
+### 交互功能
+- **搜索**: 按项目名称或描述搜索
+- **筛选**: 按编程语言筛选
+- **排序**: 按排名、总 stars、周期内增长排序
+
+### 响应式设计
+- 支持桌面、平板、手机
+- 使用 Tailwind CSS 构建美观界面
+- GitHub 风格配色
+
+## Error Handling
+
+如果遇到错误：
+1. **网络错误**: 检查网络连接，确保能访问 GitHub
+2. **解析失败**: GitHub 页面结构可能变化，工具会显示调试信息
+3. **文件写入失败**: 检查输出路径的写权限
+
+## Voice Notification
+
+执行此工作流时发送语音通知：
+
+```bash
+curl -s -X POST http://localhost:8888/notify \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;message&quot;: &quot;正在生成 GitHub Trending Dashboard...&quot;}' \
+  > /dev/null 2>&amp;1 &amp;
+```
+
+并输出文本通知：
+```
+Running the **GenerateDashboard** workflow from the **GitHubTrends** skill...
+```
+
+## Integration with Other Skills
+
+- **Browser**: 验证生成的 HTML 页面效果
+- **System**: 保存仪表板快照到 MEMORY/
+- **OSINT**: 分析技术栈趋势
+
+## Notes
+
+- 数据每小时更新一次（GitHub trending 更新频率）
+- 生成的 HTML 是完全独立的，无需服务器
+- 所有依赖通过 CDN 加载（Tailwind CSS, Chart.js）
+- 支持离线查看（图表已内嵌数据）
+
+## Advanced Usage
+
+### 批量生成
+```bash
+# 生成多个语言的仪表板
+for lang in TypeScript Python Go Rust; do
+  bun Tools/GenerateDashboard.ts \
+    --language $lang \
+    --output ~/trends-$lang.html
+done
+```
+
+### 定时任务
+```bash
+# 每小时生成一次快照
+# 添加到 crontab:
+0 * * * * cd ~/.claude/skills/GitHubTrends &amp;&amp; bun Tools/GenerateDashboard.ts --output ~/trends-$(date +%H).html
+```
+
+### 定制主题
+通过修改 `Templates/dashboard.hbs` 可以自定义：
+- 配色方案
+- 布局结构
+- 添加新的图表类型
+- 添加新的交互功能" data-astro-cid-6bn65nae> <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <rect x="9" y="9" width="13" height="13" rx="2" ry="2" data-astro-cid-6bn65nae></rect> <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" data-astro-cid-6bn65nae></path> </svg> <span class="btn-text" data-astro-cid-6bn65nae>Copy Prompt</span> </button> </div> <div class="console-body" data-astro-cid-6bn65nae> <pre class="prompt-code-block" data-astro-cid-6bn65nae><code id="prompt-code" data-astro-cid-6bn65nae>---
+name: GitHubTrends
+description: 显示GitHub热门项目趋势，生成可视化仪表板。USE WHEN github trends, trending projects, hot repositories, popular github projects, generate dashboard, create webpage.
+version: 2.0.0
+---
+
+## Customization
+
+**Before executing, check for user customizations at:**
+`~/.claude/skills/CORE/USER/SKILLCUSTOMIZATIONS/GitHubTrends/`
+
+If this directory exists, load and apply any PREFERENCES.md, configurations, or resources found there. These override default behavior. If the directory does not exist, proceed with skill defaults.
+
+# GitHubTrends - GitHub热门项目趋势
+
+**快速发现GitHub上最受欢迎的开源项目。**
+
+---
+
+## Philosophy
+
+GitHub trending是发现优质开源项目的最佳途径。这个skill让老王我能快速获取当前最热门的项目列表，按时间周期（每日/每周）和编程语言筛选，帮助发现值得学习和贡献的项目。
+
+---
+
+## Quick Start
+
+```bash
+# 查看本周最热门的项目（默认）
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 查看今日最热门的项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily
+
+# 按语言筛选
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python
+
+# 指定显示数量
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+```
+
+---
+
+## When to Use This Skill
+
+**Core Triggers - Use this skill when user says:**
+
+### Direct Requests
+- &quot;show github trends&quot; 或 &quot;github trending&quot;
+- &quot;显示热门项目&quot; 或 &quot;看看有什么热门项目&quot;
+- &quot;what&#39;s trending on github&quot; 或 &quot;github hot projects&quot;
+- &quot;本周热门项目&quot; 或 &quot;weekly trending&quot;
+- &quot;今日热门项目&quot; 或 &quot;daily trending&quot;
+
+### Discovery Requests
+- &quot;discover popular projects&quot; 或 &quot;发现热门项目&quot;
+- &quot;show repositories trending&quot; 或 &quot;显示trending仓库&quot;
+- &quot;github上什么最火&quot; 或 &quot;what&#39;s hot on github&quot;
+- &quot;找点好项目看看&quot; 或 &quot;find good projects&quot;
+
+### Language-Specific
+- &quot;TypeScript trending projects&quot; 或 &quot;TypeScript热门项目&quot;
+- &quot;Python trending&quot; 或 &quot;Python热门项目&quot;
+- &quot;show trending Rust projects&quot; 或 &quot;显示Rust热门项目&quot;
+- &quot;Go语言热门项目&quot; 或 &quot;trending Go projects&quot;
+
+### Dashboard &amp; Visualization
+- &quot;生成 GitHub trending 仪表板&quot; 或 &quot;generate trending dashboard&quot;
+- &quot;创建趋势网页&quot; 或 &quot;create trending webpage&quot;
+- &quot;生成交互式报告&quot; 或 &quot;generate interactive report&quot;
+- &quot;export trending dashboard&quot; 或 &quot;导出仪表板&quot;
+- &quot;可视化 GitHub 趋势&quot; 或 &quot;visualize github trends&quot;
+
+---
+
+## Core Capabilities
+
+### 获取趋势列表
+- **每日趋势** - 过去24小时最热门项目
+- **每周趋势** - 过去7天最热门项目（默认）
+- **语言筛选** - 按编程语言过滤（TypeScript, Python, Go, Rust等）
+- **自定义数量** - 指定返回项目数量（默认10个）
+
+### 生成可视化仪表板 🆕
+- **交互式HTML** - 生成交互式网页仪表板
+- **数据可视化** - 语言分布饼图、Stars增长柱状图
+- **技术新闻** - 集成 Hacker News 技术资讯
+- **实时筛选** - 按语言筛选、排序、搜索功能
+- **响应式设计** - 支持桌面、平板、手机
+
+### 项目信息
+- 项目名称和描述
+- Star数量和变化
+- 编程语言
+- 项目URL
+
+---
+
+## Tool Usage
+
+### GetTrending.ts
+
+**Location:** `Tools/GetTrending.ts`
+
+**功能：** 从GitHub获取trending项目列表
+
+**参数：**
+- `period` - 时间周期：`daily` 或 `weekly`（默认：weekly）
+- `--language` - 编程语言筛选（可选）
+- `--limit` - 返回项目数量（默认：10）
+
+**使用示例：**
+```bash
+# 基本用法
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 带参数
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15
+
+# 简写
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily -l=Python
+```
+
+**实现方式：**
+使用 GitHub官方trending页面：https://github.com/trending
+通过 fetch API 读取页面内容并解析
+
+---
+
+### GenerateDashboard.ts 🆕
+
+**Location:** `Tools/GenerateDashboard.ts`
+
+**功能：** 生成交互式数据可视化仪表板HTML文件
+
+**参数：**
+- `--period` - 时间周期：`daily` 或 `weekly`（默认：weekly）
+- `--language` - 编程语言筛选（可选）
+- `--limit` - 返回项目数量（默认：10）
+- `--include-news` - 包含技术新闻
+- `--news-count` - 新闻数量（默认：10）
+- `--output` - 输出文件路径（默认：./github-trends.html）
+
+**使用示例：**
+```bash
+# 基本用法 - 生成本周仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+
+# 包含技术新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news
+
+# TypeScript 项目每日仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --output ~/ts-daily.html
+```
+
+**实现方式：**
+- 获取 GitHub trending 项目数据
+- 获取 Hacker News 技术新闻
+- 使用 Handlebars 模板引擎渲染 HTML
+- 集成 Tailwind CSS 和 Chart.js
+- 生成完全独立的 HTML 文件（通过 CDN 加载依赖）
+
+---
+
+## Output Format
+
+```markdown
+# GitHub Trending Projects - Weekly (2025-01-19)
+
+## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)
+**Language:** TypeScript
+**Description:** The React Framework for the Web
+**URL:** https://github.com/vercel/next.js
+
+## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)
+**Language:** TypeScript
+**Description:** Visual Studio Code
+**URL:** https://github.com/microsoft/vscode
+
+...
+
+---
+📊 Total: 10 projects | Language: All | Period: Weekly
+```
+
+---
+
+## Supported Languages
+
+常用编程语言筛选：
+- **TypeScript** - TypeScript项目
+- **JavaScript** - JavaScript项目
+- **Python** - Python项目
+- **Go** - Go语言项目
+- **Rust** - Rust项目
+- **Java** - Java项目
+- **C++** - C++项目
+- **Ruby** - Ruby项目
+- **Swift** - Swift项目
+- **Kotlin** - Kotlin项目
+
+---
+
+## Workflow Integration
+
+这个skill可以被其他skill调用：
+- **OSINT** - 在调查技术栈时发现热门工具
+- **Research** - 研究特定语言生态系统的趋势
+- **System** - 发现有用的PAI相关项目
+
+---
+
+## Technical Notes
+
+**数据来源：** GitHub官方trending页面
+**更新频率：** 每小时更新一次
+**无需认证：** 使用公开页面，无需GitHub API token
+**解析方式：** 通过HTML解析提取项目信息
+
+**错误处理：**
+- 网络错误会显示友好提示
+- 解析失败会返回原始HTML供调试
+- 支持的语言参数不区分大小写
+
+---
+
+## Future Enhancements
+
+可能的未来功能：
+- 支持月度趋势（如果GitHub提供）
+- 按stars范围筛选（1k+, 10k+, 100k+）
+- 保存历史数据用于趋势分析
+- 集成到其他skill的自动化工作流
+
+---
+
+## Voice Notification
+
+**When executing a workflow, do BOTH:**
+
+1. **Send voice notification:**
+   ```bash
+   curl -s -X POST http://localhost:8888/notify \
+     -H &quot;Content-Type: application/json&quot; \
+     -d &#39;{&quot;message&quot;: &quot;Running the GitHubTrends workflow&quot;}&#39; \
+     &gt; /dev/null 2&gt;&amp;1 &amp;
+   ```
+
+2. **Output text notification:**
+   ```
+   Running the **GitHubTrends** workflow...
+   ```
+
+**Full documentation:** `~/.claude/skills/CORE/SkillNotifications.md`
+FILE:README.md
+# GitHubTrends Skill
+
+**快速发现GitHub上最受欢迎的开源项目，生成可视化仪表板！**
+
+## 功能特性
+
+### 基础功能
+- ✅ 获取每日/每周热门项目列表
+- ✅ 按编程语言筛选（TypeScript, Python, Go, Rust等）
+- ✅ 自定义返回项目数量
+- ✅ 显示Star总数和周期增长
+- ✅ 无需GitHub API token
+
+### 可视化仪表板 🆕
+- ✨ **交互式HTML** - 生成交互式网页仪表板
+- 📊 **数据可视化** - 语言分布饼图、Stars增长柱状图
+- 📰 **技术新闻** - 集成 Hacker News 最新资讯
+- 🔍 **实时筛选** - 按语言筛选、排序、搜索
+- 📱 **响应式设计** - 支持桌面、平板、手机
+- 🎨 **美观界面** - Tailwind CSS + GitHub 风格
+
+## 快速开始
+
+### 查看本周热门项目（默认）
+
+```bash
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+```
+
+### 查看今日热门项目
+
+```bash
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily
+```
+
+### 按语言筛选
+
+```bash
+# TypeScript热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+
+# Python热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=Python
+
+# Go热门项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly -l=Go
+```
+
+### 指定返回数量
+
+```bash
+# 返回20个项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+
+# 组合使用：返回15个TypeScript项目
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript --limit=15
+```
+
+---
+
+## 生成可视化仪表板 🆕
+
+### 基本用法
+
+```bash
+# 生成本周趋势仪表板（默认）
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+```
+
+### 包含技术新闻
+
+```bash
+# 生成包含 Hacker News 的仪表板
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts --include-news
+```
+
+### 高级选项
+
+```bash
+# 生成 TypeScript 项目每日仪表板，包含 15 条新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --news-count 15 \
+  --output ~/Downloads/ts-daily-trends.html
+```
+
+### 仪表板功能
+
+生成的 HTML 文件包含：
+- **统计概览** - 总项目数、总 stars、top 项目
+- **语言分布图** - 饼图展示各语言占比
+- **Stars 增长图** - 柱状图展示增长趋势
+- **项目卡片** - 美观的卡片式项目展示
+- **技术新闻** - Hacker News 最新资讯
+- **交互功能** - 筛选、排序、搜索
+- **响应式** - 自适应各种屏幕尺寸
+
+---
+
+## 输出示例
+
+```markdown
+# GitHub Trending Projects - Weekly (2026-01-19)
+
+📊 **Total:** 10 projects | **Language:** All | **Period:** Weekly
+
+---
+
+## 1. vercel/next.js - ⭐ 125,342 (+1,234 this week)
+**Language:** TypeScript
+**Description:** The React Framework for the Web
+**URL:** https://github.com/vercel/next.js
+
+## 2. microsoft/vscode - ⭐ 160,890 (+987 this week)
+**Language:** TypeScript
+**Description:** Visual Studio Code
+**URL:** https://github.com/microsoft/vscode
+
+...
+```
+
+## 参数说明
+
+| 参数 | 说明 | 默认值 | 可选值 |
+|------|------|--------|--------|
+| `period` | 时间周期 | `weekly` | `daily`, `weekly` |
+| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust, Java等 |
+| `--limit` | 返回项目数量 | 10 | 任意正整数 |
+
+## 支持的语言
+
+常用的编程语言都可以作为筛选条件：
+- **TypeScript** - TypeScript项目
+- **JavaScript** - JavaScript项目
+- **Python** - Python项目
+- **Go** - Go语言项目
+- **Rust** - Rust项目
+- **Java** - Java项目
+- **C++** - C++项目
+- **Ruby** - Ruby项目
+- **Swift** - Swift项目
+- **Kotlin** - Kotlin项目
+
+## Skill 触发词
+
+当你说以下任何内容时，这个skill会被触发：
+
+- &quot;show github trends&quot; / &quot;github trending&quot;
+- &quot;显示热门项目&quot; / &quot;看看有什么热门项目&quot;
+- &quot;weekly trending&quot; / &quot;本周热门项目&quot;
+- &quot;daily trending&quot; / &quot;今日热门项目&quot;
+- &quot;TypeScript trending&quot; / &quot;Python trending&quot;
+- &quot;what&#39;s hot on github&quot; / &quot;github上什么最火&quot;
+
+## 技术实现
+
+- **数据源**: GitHub官方trending页面 (https://github.com/trending)
+- **解析方式**: HTML解析提取项目信息
+- **认证**: 无需GitHub API token
+- **更新频率**: 每小时更新一次
+
+## 目录结构
+
+```
+~/.claude/skills/GitHubTrends/
+├── SKILL.md              # Skill主文件
+├── README.md             # 使用文档（本文件）
+├── Tools/
+│   └── GetTrending.ts    # 获取trending数据的工具
+└── Workflows/
+    └── GetTrending.md    # 工作流文档
+```
+
+## 注意事项
+
+1. **网络要求**: 需要能访问GitHub官网
+2. **更新频率**: 数据每小时更新，不是实时
+3. **解析准确性**: GitHub页面结构变化可能影响解析，如遇问题请检查 `/tmp/github-trending-debug-*.html`
+4. **语言参数**: 不区分大小写，`--language=typescript` 和 `--language=TypeScript` 效果相同
+
+## 已知问题
+
+- GitHub trending页面的HTML结构复杂，某些项目的URL和名称可能解析不完整
+- 如果GitHub页面结构变化，工具可能需要更新解析逻辑
+
+## 未来改进
+
+- [ ] 支持保存历史数据用于趋势分析
+- [ ] 按stars范围筛选（1k+, 10k+, 100k+）
+- [ ] 更智能的HTML解析（使用HTML解析库而非正则）
+- [ ] 集成到其他skill的自动化工作流
+
+## 贡献
+
+如果发现问题或有改进建议，欢迎提出！
+
+---
+
+**Made with ❤️ by 老王**
+FILE:Tools/GetTrending.ts
+#!/usr/bin/env bun
+/**
+ * GitHub Trending Projects Fetcher
+ *
+ * 从GitHub获取trending项目列表
+ * 支持每日/每周趋势，按语言筛选
+ */
+
+import { $ } from &quot;bun&quot;;
+
+interface TrendingProject {
+  rank: number;
+  name: string;
+  description: string;
+  language: string;
+  stars: string;
+  starsThisPeriod: string;
+  url: string;
+}
+
+interface TrendingOptions {
+  period: &quot;daily&quot; | &quot;weekly&quot;;
+  language?: string;
+  limit: number;
+}
+
+function buildTrendingUrl(options: TrendingOptions): string {
+  const baseUrl = &quot;https://github.com/trending&quot;;
+  const since = options.period === &quot;daily&quot; ? &quot;daily&quot; : &quot;weekly&quot;;
+  let url = `${baseUrl}?since=${since}`;
+  if (options.language) {
+    url += `&amp;language=${encodeURIComponent(options.language.toLowerCase())}`;
+  }
+  return url;
+}
+
+function parseTrendingProjects(html: string, limit: number): TrendingProject[] {
+  const projects: TrendingProject[] = [];
+  try {
+    const articleRegex = /&lt;article[^&gt;]*&gt;([\s\S]*?)&lt;\/article&gt;/g;
+    const articles = html.match(articleRegex) || [];
+    const articlesToProcess = articles.slice(0, limit);
+    articlesToProcess.forEach((article, index) =&gt; {
+      try {
+        const headingMatch = article.match(/&lt;h[12][^&gt;]*&gt;([\s\S]*?)&lt;\/h[12]&gt;/);
+        let repoName: string | null = null;
+        if (headingMatch) {
+          const headingContent = headingMatch[1];
+          const validLinkMatch = headingContent.match(
+            /&lt;a[^&gt;]*href=&quot;\/([^\/&quot;\/]+\/[^\/&quot;\/]+)&quot;[^&gt;]*&gt;(?![^&lt;]*login)/
+          );
+          if (validLinkMatch) {
+            repoName = validLinkMatch[1];
+          }
+        }
+        if (!repoName) {
+          const repoMatch = article.match(
+            /&lt;a[^&gt;]*href=&quot;\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)&quot;[^&gt;]*&gt;(?!.*(?:login|stargazers|forks|issues))/
+          );
+          repoName = repoMatch ? repoMatch[1] : null;
+        }
+        const descMatch = article.match(/&lt;p[^&gt;]*class=&quot;[^&quot;]*col-9[^&quot;]*&quot;[^&gt;]*&gt;([\s\S]*?)&lt;\/p&gt;/);
+        const description = descMatch
+          ? descMatch[1]
+              .replace(/&lt;[^&gt;]+&gt;/g, &quot;&quot;)
+              .replace(/&amp;amp;/g, &quot;&amp;&quot;)
+              .replace(/&amp;lt;/g, &quot;&lt;&quot;)
+              .replace(/&amp;gt;/g, &quot;&gt;&quot;)
+              .replace(/&amp;quot;/g, &#39;&quot;&#39;)
+              .trim()
+              .substring(0, 200)
+          : &quot;No description&quot;;
+        const langMatch = article.match(/&lt;span[^&gt;]*itemprop=&quot;programmingLanguage&quot;[^&gt;]*&gt;([^&lt;]+)&lt;\/span&gt;/);
+        const language = langMatch ? langMatch[1].trim() : &quot;Unknown&quot;;
+        const starsMatch = article.match(/&lt;a[^&gt;]*href=&quot;\/[^&quot;]+\/stargazers&quot;[^&gt;]*&gt;(\d[\d,]*)\s*stars?/);
+        const totalStars = starsMatch ? starsMatch[1] : &quot;0&quot;;
+        const starsAddedMatch = article.match(/(\d[\d,]*)\s*stars?\s*(?:today|this week)/i);
+        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : &quot;&quot;;
+        if (repoName &amp;&amp; !repoName.includes(&quot;login&quot;) &amp;&amp; !repoName.includes(&quot;return_to&quot;)) {
+          projects.push({
+            rank: index + 1,
+            name: repoName,
+            description,
+            language,
+            stars: totalStars,
+            starsThisPeriod: starsAdded,
+            url: `https://github.com/${repoName}`,
+          });
+        }
+      } catch (error) {
+        console.error(`解析第${index + 1}个项目失败:`, error);
+      }
+    });
+  } catch (error) {
+    console.error(&quot;解析trending项目失败:&quot;, error);
+  }
+  return projects;
+}
+
+function formatProjects(projects: TrendingProject[], options: TrendingOptions): string {
+  if (projects.length === 0) {
+    return &quot;# GitHub Trending - No Projects Found\n\n没有找到trending项目，可能是网络问题或页面结构变化。&quot;;
+  }
+  const periodLabel = options.period === &quot;daily&quot; ? &quot;Daily&quot; : &quot;Weekly&quot;;
+  const languageLabel = options.language ? `Language: ${options.language}` : &quot;Language: All&quot;;
+  const today = new Date().toISOString().split(&quot;T&quot;)[0];
+  let output = `# GitHub Trending Projects - ${periodLabel} (${today})\n\n`;
+  output += `📊 **Total:** ${projects.length} projects | **${languageLabel}** | **Period:** ${periodLabel}\n\n`;
+  output += `---\n\n`;
+  projects.forEach((project) =&gt; {
+    output += `## ${project.rank}. ${project.name} - ⭐ ${project.stars}`;
+    if (project.starsThisPeriod) {
+      output += ` (${project.starsThisPeriod} this ${options.period})`;
+    }
+    output += `\n`;
+    output += `**Language:** ${project.language}\n`;
+    output += `**Description:** ${project.description}\n`;
+    output += `**URL:** ${project.url}\n\n`;
+  });
+  output += `---\n`;
+  output += `📊 Data from: https://github.com/trending\n`;
+  return output;
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  let period: &quot;daily&quot; | &quot;weekly&quot; = &quot;weekly&quot;;
+  let language: string | undefined;
+  let limit = 10;
+  for (const arg of args) {
+    if (arg === &quot;daily&quot; || arg === &quot;weekly&quot;) {
+      period = arg;
+    } else if (arg.startsWith(&quot;--language=&quot;)) {
+      language = arg.split(&quot;=&quot;)[1];
+    } else if (arg.startsWith(&quot;-l=&quot;)) {
+      language = arg.split(&quot;=&quot;)[1];
+    } else if (arg.startsWith(&quot;--limit=&quot;)) {
+      limit = parseInt(arg.split(&quot;=&quot;)[1]) || 10;
+    }
+  }
+  const options: TrendingOptions = { period, language, limit };
+  try {
+    const url = buildTrendingUrl(options);
+    console.error(`正在获取 GitHub trending 数据: ${url}`);
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    const html = await response.text();
+    const projects = parseTrendingProjects(html, limit);
+    const formatted = formatProjects(projects, options);
+    console.log(formatted);
+    if (projects.length === 0) {
+      const debugFile = `/tmp/github-trending-debug-${Date.now()}.html`;
+      await Bun.write(debugFile, html);
+      console.error(`\n调试: 原始HTML已保存到 ${debugFile}`);
+    }
+  } catch (error) {
+    console.error(&quot;❌ 获取trending数据失败:&quot;);
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+main();
+FILE:Workflows/GetTrending.md
+# GetTrending Workflow
+
+获取GitHub trending项目列表的工作流程。
+
+## Description
+
+这个工作流使用 GetTrending.ts 工具从GitHub获取当前最热门的项目列表，支持按时间周期（每日/每周）和编程语言筛选。
+
+## When to Use
+
+当用户请求以下任何内容时使用此工作流：
+- &quot;show github trends&quot; / &quot;github trending&quot;
+- &quot;显示热门项目&quot; / &quot;看看有什么热门项目&quot;
+- &quot;weekly trending&quot; / &quot;本周热门项目&quot;
+- &quot;daily trending&quot; / &quot;今日热门项目&quot;
+- &quot;TypeScript trending&quot; / &quot;Python trending&quot; / 按语言筛选
+- &quot;what&#39;s hot on github&quot; / &quot;github上什么最火&quot;
+
+## Workflow Steps
+
+### Step 1: 确定参数
+向用户确认或推断以下参数：
+- **时间周期**: daily (每日) 或 weekly (每周，默认)
+- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）
+- **项目数量**: 默认10个
+
+### Step 2: 执行工具
+运行 GetTrending.ts 工具：
+
+```bash
+# 基本用法（本周，全部语言，10个项目）
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly
+
+# 指定语言
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --language=TypeScript
+
+# 指定数量
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts weekly --limit=20
+
+# 组合参数
+bun ~/.claude/skills/GitHubTrends/Tools/GetTrending.ts daily --language=Python --limit=15
+```
+
+### Step 3: 显示结果
+工具会自动格式化输出，包括：
+- 项目排名
+- 项目名称
+- Star总数和周期内增长
+- 编程语言
+- 项目描述
+- GitHub URL
+
+### Step 4: 后续操作（可选）
+根据用户需求，可以：
+- 打开某个项目页面
+- 使用其他skill进一步分析项目
+- 将结果保存到文件供后续参考
+
+## Integration with Other Skills
+
+- **OSINT**: 在调查技术栈时发现热门工具
+- **Research**: 研究特定语言生态系统的趋势
+- **Browser**: 打开项目页面进行详细分析
+
+## Notes
+
+- 数据每小时更新一次
+- 无需GitHub API token
+- 使用公开的GitHub trending页面
+- 支持的语言参数不区分大小写
+FILE:Tools/GenerateDashboard.ts
+#!/usr/bin/env bun
+/**
+ * GitHub Trending Dashboard Generator
+ *
+ * 生成交互式数据可视化仪表板
+ *
+ * 使用方式：
+ *   ./GenerateDashboard.ts [options]
+ *
+ * 选项：
+ *   --period       - daily | weekly (默认: weekly)
+ *   --language     - 编程语言筛选 (可选)
+ *   --limit        - 项目数量 (默认: 10)
+ *   --include-news - 包含技术新闻
+ *   --news-count   - 新闻数量 (默认: 10)
+ *   --theme        - light | dark | auto (默认: auto)
+ *   --output       - 输出文件路径 (默认: ./github-trends.html)
+ *
+ * 示例：
+ *   ./GenerateDashboard.ts
+ *   ./GenerateDashboard.ts --period daily --language TypeScript --include-news
+ *   ./GenerateDashboard.ts --limit 20 --output ~/trends.html
+ */
+
+import Handlebars from &#39;handlebars&#39;;
+import type { DashboardOptions, TrendingProject, TechNewsItem, TemplateData } from &#39;./Lib/types&#39;;
+import { registerHelpers, renderTemplate } from &#39;./Lib/template-helpers&#39;;
+import { analyzeData } from &#39;./Lib/visualization-helpers&#39;;
+
+// 注册 Handlebars 辅助函数
+registerHelpers();
+
+/**
+ * 构建 GitHub trending URL
+ */
+function buildTrendingUrl(options: DashboardOptions): string {
+  const baseUrl = &quot;https://github.com/trending&quot;;
+  const since = options.period === &quot;daily&quot; ? &quot;daily&quot; : &quot;weekly&quot;;
+  let url = `${baseUrl}?since=${since}`;
+
+  if (options.language) {
+    url += `&amp;language=${encodeURIComponent(options.language.toLowerCase())}`;
+  }
+
+  return url;
+}
+
+/**
+ * 解析 HTML 提取 trending 项目
+ * （从 GetTrending.ts 复制的逻辑）
+ */
+async function getTrendingProjects(options: DashboardOptions): Promise&lt;TrendingProject[]&gt; {
+  const url = buildTrendingUrl(options);
+
+  console.error(`正在获取 GitHub trending 数据: ${url}`);
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  }
+
+  const html = await response.text();
+  return parseTrendingProjects(html, options.limit);
+}
+
+/**
+ * 解析 HTML
+ */
+function parseTrendingProjects(html: string, limit: number): TrendingProject[] {
+  const projects: TrendingProject[] = [];
+
+  try {
+    const articleRegex = /&lt;article[^&gt;]*&gt;([\s\S]*?)&lt;\/article&gt;/g;
+    const articles = html.match(articleRegex) || [];
+    const articlesToProcess = articles.slice(0, limit);
+
+    articlesToProcess.forEach((article, index) =&gt; {
+      try {
+        const headingMatch = article.match(/&lt;h[12][^&gt;]*&gt;([\s\S]*?)&lt;\/h[12]&gt;/);
+        let repoName: string | null = null;
+
+        if (headingMatch) {
+          const headingContent = headingMatch[1];
+          const validLinkMatch = headingContent.match(
+            /&lt;a[^&gt;]*href=&quot;\/([^\/&quot;\/]+\/[^\/&quot;\/]+)&quot;[^&gt;]*&gt;(?![^&lt;]*login)/
+          );
+          if (validLinkMatch) {
+            repoName = validLinkMatch[1];
+          }
+        }
+
+        if (!repoName) {
+          const repoMatch = article.match(
+            /&lt;a[^&gt;]*href=&quot;\/([a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+)&quot;[^&gt;]*&gt;(?!.*(?:login|stargazers|forks|issues))/
+          );
+          repoName = repoMatch ? repoMatch[1] : null;
+        }
+
+        const descMatch = article.match(/&lt;p[^&gt;]*class=&quot;[^&quot;]*col-9[^&quot;]*&quot;[^&gt;]*&gt;([\s\S]*?)&lt;\/p&gt;/);
+        const description = descMatch
+          ? descMatch[1]
+              .replace(/&lt;[^&gt;]+&gt;/g, &quot;&quot;)
+              .replace(/&amp;amp;/g, &quot;&amp;&quot;)
+              .replace(/&amp;lt;/g, &quot;&lt;&quot;)
+              .replace(/&amp;gt;/g, &quot;&gt;&quot;)
+              .replace(/&amp;quot;/g, &#39;&quot;&#39;)
+              .trim()
+              .substring(0, 200)
+          : &quot;No description&quot;;
+
+        const langMatch = article.match(/&lt;span[^&gt;]*itemprop=&quot;programmingLanguage&quot;[^&gt;]*&gt;([^&lt;]+)&lt;\/span&gt;/);
+        const language = langMatch ? langMatch[1].trim() : &quot;Unknown&quot;;
+
+        // 提取stars总数 - GitHub 改了 HTML 结构，数字在 SVG 后面
+        const starsMatch = article.match(/stargazers[^&gt;]*&gt;[\s\S]*?&lt;\/svg&gt;\s*([\d,]+)/);
+        const totalStars = starsMatch ? starsMatch[1] : &quot;0&quot;;
+
+        // 尝试提取新增stars - 格式：XXX stars today/this week
+        const starsAddedMatch = article.match(/(\d[\d,]*)\s+stars?\s+(?:today|this week)/);
+        const starsAdded = starsAddedMatch ? `+${starsAddedMatch[1]}` : &quot;&quot;;
+
+        if (repoName &amp;&amp; !repoName.includes(&quot;login&quot;) &amp;&amp; !repoName.includes(&quot;return_to&quot;)) {
+          projects.push({
+            rank: index + 1,
+            name: repoName,
+            description,
+            language,
+            stars: totalStars,
+            starsThisPeriod: starsAdded,
+            url: `https://github.com/${repoName}`,
+          });
+        }
+      } catch (error) {
+        console.error(`解析第${index + 1}个项目失败:`, error);
+      }
+    });
+  } catch (error) {
+    console.error(&quot;解析trending项目失败:&quot;, error);
+  }
+
+  return projects;
+}
+
+/**
+ * 获取技术新闻
+ */
+async function getTechNews(count: number): Promise&lt;TechNewsItem[]&gt; {
+  const HN_API = &#39;https://hn.algolia.com/api/v1/search_by_date&#39;;
+
+  try {
+    const response = await fetch(`${HN_API}?tags=story&amp;hitsPerPage=${count}`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    return data.hits.slice(0, count).map((hit: any) =&gt; ({
+      id: hit.objectID,
+      title: hit.title,
+      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+      source: &#39;hackernews&#39;,
+      points: hit.points || 0,
+      comments: hit.num_comments || 0,
+      timestamp: new Date(hit.created_at).toISOString(),
+      tags: hit._tags || []
+    }));
+  } catch (error) {
+    console.error(&#39;获取 Hacker News 失败:&#39;, error);
+    return [];
+  }
+}
+
+/**
+ * 生成仪表板
+ */
+async function generateDashboard(options: DashboardOptions): Promise&lt;void&gt; {
+  try {
+    console.error(&#39;🚀 开始生成 GitHub Trending Dashboard...\n&#39;);
+
+    // 1. 获取 GitHub Trending 数据
+    const projects = await getTrendingProjects(options);
+    console.error(`✅ 获取到 ${projects.length} 个项目`);
+
+    // 2. 获取技术新闻（如果启用）
+    let news: TechNewsItem[] = [];
+    if (options.includeNews) {
+      news = await getTechNews(options.newsCount);
+      console.error(`✅ 获取到 ${news.length} 条新闻`);
+    }
+
+    // 3. 分析数据
+    const analytics = analyzeData(projects);
+    console.error(`✅ 数据分析完成`);
+
+    // 4. 准备模板数据
+    const templateData: TemplateData = {
+      title: &#39;GitHub Trending Dashboard&#39;,
+      generatedAt: new Date().toLocaleString(&#39;zh-CN&#39;),
+      period: options.period === &#39;daily&#39; ? &#39;Daily&#39; : &#39;Weekly&#39;,
+      projects,
+      news,
+      analytics,
+      options
+    };
+
+    // 5. 渲染模板
+    const templatePath = `${import.meta.dir}/../Templates/dashboard.hbs`;
+    const templateContent = await Bun.file(templatePath).text();
+    const template = Handlebars.compile(templateContent);
+    const html = template(templateData);
+    console.error(`✅ 模板渲染完成`);
+
+    // 6. 保存文件
+    await Bun.write(options.output, html);
+    console.error(`\n🎉 仪表板生成成功！`);
+    console.error(`📄 文件路径: ${options.output}`);
+    console.error(`\n💡 在浏览器中打开查看效果！`);
+
+  } catch (error) {
+    console.error(&#39;\n❌ 生成仪表板失败:&#39;);
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+/**
+ * 解析命令行参数
+ */
+function parseArgs(): DashboardOptions {
+  const args = process.argv.slice(2);
+
+  const options: DashboardOptions = {
+    period: &#39;weekly&#39;,
+    limit: 10,
+    output: &#39;./github-trends.html&#39;,
+    includeNews: false,
+    newsCount: 10,
+    theme: &#39;auto&#39;
+  };
+
+  for (let i = 0; i &lt; args.length; i++) {
+    const arg = args[i];
+
+    switch (arg) {
+      case &#39;--period&#39;:
+        options.period = args[++i] === &#39;daily&#39; ? &#39;daily&#39; : &#39;weekly&#39;;
+        break;
+      case &#39;--language&#39;:
+        options.language = args[++i];
+        break;
+      case &#39;--limit&#39;:
+        options.limit = parseInt(args[++i]) || 10;
+        break;
+      case &#39;--include-news&#39;:
+        options.includeNews = true;
+        break;
+      case &#39;--news-count&#39;:
+        options.newsCount = parseInt(args[++i]) || 10;
+        break;
+      case &#39;--theme&#39;:
+        options.theme = args[++i] === &#39;light&#39; || args[++i] === &#39;dark&#39; ? args[i] : &#39;auto&#39;;
+        break;
+      case &#39;--output&#39;:
+        options.output = args[++i];
+        break;
+      default:
+        if (arg.startsWith(&#39;--output=&#39;)) {
+          options.output = arg.split(&#39;=&#39;)[1];
+        } else if (arg.startsWith(&#39;--language=&#39;)) {
+          options.language = arg.split(&#39;=&#39;)[1];
+        } else if (arg.startsWith(&#39;--limit=&#39;)) {
+          options.limit = parseInt(arg.split(&#39;=&#39;)[1]) || 10;
+        }
+    }
+  }
+
+  return options;
+}
+
+/**
+ * 主函数
+ */
+async function main() {
+  const options = parseArgs();
+  await generateDashboard(options);
+}
+
+// 如果直接运行此脚本
+if (import.meta.main) {
+  main();
+}
+
+// 导出供其他模块使用
+export { generateDashboard };
+export type { DashboardOptions };
+FILE:Tools/GetTechNews.ts
+#!/usr/bin/env bun
+/**
+ * Tech News Fetcher
+ *
+ * 从 Hacker News 和其他来源获取技术新闻
+ *
+ * 使用方式：
+ *   ./GetTechNews.ts [count]
+ *
+ * 参数：
+ *   count        - 获取新闻数量 (默认: 10)
+ *
+ * 示例：
+ *   ./GetTechNews.ts
+ *   ./GetTechNews.ts 20
+ */
+
+import Parser from &#39;rss-parser&#39;;
+import type { TechNewsItem } from &#39;./Lib/types&#39;;
+
+const HN_API = &#39;https://hn.algolia.com/api/v1/search&#39;;
+const parser = new Parser();
+
+/**
+ * 从 Hacker News Algolia API 获取新闻
+ */
+async function getHackerNews(count: number): Promise&lt;TechNewsItem[]&gt; {
+  try {
+    const response = await fetch(`${HN_API}?tags=front_page&amp;hits=${count}`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    return data.hits.map((hit: any) =&gt; ({
+      id: hit.objectID,
+      title: hit.title,
+      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+      source: &#39;hackernews&#39;,
+      points: hit.points || 0,
+      comments: hit.num_comments || 0,
+      timestamp: new Date(hit.created_at).toISOString(),
+      tags: hit._tags || []
+    }));
+  } catch (error) {
+    console.error(&#39;获取 Hacker News 失败:&#39;, error);
+    return [];
+  }
+}
+
+/**
+ * 从 Hacker News RSS 获取新闻（备用方案）
+ */
+async function getHackerNewsRSS(count: number): Promise&lt;TechNewsItem[]&gt; {
+  try {
+    const feed = await parser.parseURL(&#39;https://news.ycombinator.com/rss&#39;);
+
+    return feed.items.slice(0, count).map((item: any) =&gt; ({
+      id: item.guid || item.link,
+      title: item.title || &#39;No title&#39;,
+      url: item.link,
+      source: &#39;hackernews&#39;,
+      timestamp: item.pubDate || new Date().toISOString(),
+      tags: [&#39;hackernews&#39;, &#39;rss&#39;]
+    }));
+  } catch (error) {
+    console.error(&#39;获取 Hacker News RSS 失败:&#39;, error);
+    return [];
+  }
+}
+
+/**
+ * 获取技术新闻（主函数）
+ */
+async function getTechNews(count: number = 10): Promise&lt;TechNewsItem[]&gt; {
+  console.error(`正在获取技术新闻（${count}条）...`);
+
+  // 优先使用 Hacker News API
+  let news = await getHackerNews(count);
+
+  // 如果失败，尝试 RSS 备用
+  if (news.length === 0) {
+    console.error(&#39;Hacker News API 失败，尝试 RSS...&#39;);
+    news = await getHackerNewsRSS(count);
+  }
+
+  console.error(`✅ 获取到 ${news.length} 条新闻`);
+  return news;
+}
+
+/**
+ * CLI 入口
+ */
+async function main() {
+  const args = process.argv.slice(2);
+  const count = parseInt(args[0]) || 10;
+
+  try {
+    const news = await getTechNews(count);
+
+    // 输出 JSON 格式（便于程序调用）
+    console.log(JSON.stringify(news, null, 2));
+  } catch (error) {
+    console.error(&#39;❌ 获取新闻失败:&#39;);
+    console.error(error);
+    process.exit(1);
+  }
+}
+
+// 如果直接运行此脚本
+if (import.meta.main) {
+  main();
+}
+
+// 导出供其他模块使用
+export { getTechNews };
+export type { TechNewsItem };
+FILE:Tools/Lib/types.ts
+/**
+ * GitHubTrends - 类型定义
+ *
+ * 定义所有 TypeScript 接口和类型
+ */
+
+/**
+ * GitHub Trending 项目
+ */
+export interface TrendingProject {
+  rank: number;
+  name: string;
+  description: string;
+  language: string;
+  stars: string;
+  starsThisPeriod: string;
+  url: string;
+}
+
+/**
+ * 技术新闻条目
+ */
+export interface TechNewsItem {
+  id: string;
+  title: string;
+  url: string;
+  source: string; // &#39;hackernews&#39;, &#39;reddit&#39;, etc.
+  points?: number;
+  comments?: number;
+  timestamp: string;
+  tags: string[];
+}
+
+/**
+ * 仪表板生成选项
+ */
+export interface DashboardOptions {
+  period: &#39;daily&#39; | &#39;weekly&#39;;
+  language?: string;
+  limit: number;
+  output: string;
+  includeNews: boolean;
+  newsCount: number;
+  theme: &#39;light&#39; | &#39;dark&#39; | &#39;auto&#39;;
+}
+
+/**
+ * 数据分析结果
+ */
+export interface Analytics {
+  languageDistribution: Record&lt;string, number&gt;;
+  totalStars: number;
+  topProject: TrendingProject;
+  growthStats: {
+    highest: TrendingProject;
+    average: number;
+  };
+}
+
+/**
+ * Trending 查询选项（用于 GetTrending.ts）
+ */
+export interface TrendingOptions {
+  period: &quot;daily&quot; | &quot;weekly&quot;;
+  language?: string;
+  limit: number;
+}
+
+/**
+ * 图表数据
+ */
+export interface ChartData {
+  labels: string[];
+  data: number[];
+  colors: string[];
+}
+
+/**
+ * 模板渲染数据
+ */
+export interface TemplateData {
+  title: string;
+  generatedAt: string;
+  period: string;
+  projects: TrendingProject[];
+  news?: TechNewsItem[];
+  analytics: Analytics;
+  options: DashboardOptions;
+}
+FILE:Tools/Lib/template-helpers.ts
+/**
+ * Template Helpers
+ *
+ * Handlebars 自定义辅助函数
+ */
+
+import Handlebars from &#39;handlebars&#39;;
+
+/**
+ * 注册所有自定义辅助函数
+ */
+export function registerHelpers(): void {
+  // 格式化数字（添加千位分隔符）
+  Handlebars.registerHelper(&#39;formatNumber&#39;, (value: number) =&gt; {
+    return value.toLocaleString();
+  });
+
+  // 截断文本
+  Handlebars.registerHelper(&#39;truncate&#39;, (str: string, length: number = 100) =&gt; {
+    if (str.length &lt;= length) return str;
+    return str.substring(0, length) + &#39;...&#39;;
+  });
+
+  // 格式化日期
+  Handlebars.registerHelper(&#39;formatDate&#39;, (dateStr: string) =&gt; {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString(&#39;zh-CN&#39;, {
+      year: &#39;numeric&#39;,
+      month: &#39;long&#39;,
+      day: &#39;numeric&#39;,
+      hour: &#39;2-digit&#39;,
+      minute: &#39;2-digit&#39;
+    });
+  });
+
+  // JSON 序列化（用于内嵌数据）
+  Handlebars.registerHelper(&#39;json&#39;, (context: any) =&gt; {
+    return JSON.stringify(context);
+  });
+
+  // 条件判断
+  Handlebars.registerHelper(&#39;eq&#39;, (a: any, b: any) =&gt; {
+    return a === b;
+  });
+
+  Handlebars.registerHelper(&#39;ne&#39;, (a: any, b: any) =&gt; {
+    return a !== b;
+  });
+
+  Handlebars.registerHelper(&#39;gt&#39;, (a: number, b: number) =&gt; {
+    return a &gt; b;
+  });
+
+  Handlebars.registerHelper(&#39;lt&#39;, (a: number, b: number) =&gt; {
+    return a &lt; b;
+  });
+}
+
+/**
+ * 渲染模板
+ */
+export async function renderTemplate(
+  templatePath: string,
+  data: any
+): Promise&lt;string&gt; {
+  const templateContent = await Bun.file(templatePath).text();
+  const template = Handlebars.compile(templateContent);
+  return template(data);
+}
+
+export default { registerHelpers, renderTemplate };
+FILE:Tools/Lib/visualization-helpers.ts
+/**
+ * Visualization Helpers
+ *
+ * 数据分析和可视化辅助函数
+ */
+
+import type { TrendingProject, Analytics } from &#39;./types&#39;;
+
+/**
+ * 分析项目数据
+ */
+export function analyzeData(projects: TrendingProject[]): Analytics {
+  // 语言分布统计
+  const languageDistribution: Record&lt;string, number&gt; = {};
+  projects.forEach(project =&gt; {
+    const lang = project.language;
+    languageDistribution[lang] = (languageDistribution[lang] || 0) + 1;
+  });
+
+  // 总 stars 数
+  const totalStars = projects.reduce((sum, project) =&gt; {
+    return sum + parseInt(project.stars.replace(/,/g, &#39;&#39;) || 0);
+  }, 0);
+
+  // 找出 top project
+  const topProject = projects.reduce((top, project) =&gt; {
+    const topStars = parseInt(top.stars.replace(/,/g, &#39;&#39;) || 0);
+    const projStars = parseInt(project.stars.replace(/,/g, &#39;&#39;) || 0);
+    return projStars &gt; topStars ? project : top;
+  }, projects[0]);
+
+  // 增长统计
+  const projectsWithGrowth = projects.filter(p =&gt; p.starsThisPeriod);
+  const growthValues = projectsWithGrowth.map(p =&gt;
+    parseInt(p.starsThisPeriod.replace(/[+,]/g, &#39;&#39;) || 0)
+  );
+
+  const highestGrowth = projectsWithGrowth.reduce((highest, project) =&gt; {
+    const highestValue = parseInt(highest.starsThisPeriod.replace(/[+,]/g, &#39;&#39;) || 0);
+    const projValue = parseInt(project.starsThisPeriod.replace(/[+,]/g, &#39;&#39;) || 0);
+    return projValue &gt; highestValue ? project : highest;
+  }, projectsWithGrowth[0] || projects[0]);
+
+  const averageGrowth = growthValues.length &gt; 0
+    ? Math.round(growthValues.reduce((a, b) =&gt; a + b, 0) / growthValues.length)
+    : 0;
+
+  // 提取唯一语言列表（用于筛选）
+  const languages = Object.keys(languageDistribution).sort();
+
+  // 生成图表数据
+  const growthData = projects.slice(0, 10).map(p =&gt; ({
+    name: p.name.split(&#39;/&#39;)[1] || p.name,
+    growth: parseInt(p.starsThisPeriod.replace(/[+,]/g, &#39;&#39;) || 0)
+  }));
+
+  return {
+    languageDistribution,
+    totalStars,
+    topProject,
+    growthStats: {
+      highest: highestGrowth,
+      average: averageGrowth
+    },
+    languages,
+    growthData
+  };
+}
+
+/**
+ * 格式化 stars 数字
+ */
+export function formatStars(starsStr: string): number {
+  return parseInt(starsStr.replace(/,/g, &#39;&#39;) || 0);
+}
+
+/**
+ * 解析增长数值
+ */
+export function parseGrowth(growthStr: string): number {
+  if (!growthStr) return 0;
+  return parseInt(growthStr.replace(/[+,]/g, &#39;&#39;) || 0);
+}
+
+export default { analyzeData, formatStars, parseGrowth };
+FILE:Templates/dashboard.hbs
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;GitHub Trending Dashboard - {{period}}&lt;/title&gt;
+
+  &lt;!-- Tailwind CSS --&gt;
+  &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            github: {
+              dark: &#39;#0d1117&#39;,
+              light: &#39;#161b22&#39;,
+              border: &#39;#30363d&#39;,
+              accent: &#39;#58a6ff&#39;
+            }
+          }
+        }
+      }
+    }
+  &lt;/script&gt;
+
+  &lt;!-- Chart.js --&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js&quot;&gt;&lt;/script&gt;
+
+  &lt;style&gt;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif;
+    }
+    .project-card {
+      transition: all 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .news-item {
+      border-left: 3px solid #58a6ff;
+      padding-left: 1rem;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;bg-gray-50 min-h-screen&quot;&gt;
+  &lt;!-- 页头 --&gt;
+  &lt;header class=&quot;bg-white shadow-sm sticky top-0 z-50&quot;&gt;
+    &lt;div class=&quot;max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8&quot;&gt;
+      &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+        &lt;div&gt;
+          &lt;h1 class=&quot;text-3xl font-bold text-gray-900&quot;&gt;🚀 GitHub Trending Dashboard&lt;/h1&gt;
+          &lt;p class=&quot;text-gray-600 mt-1&quot;&gt;
+            周期: &lt;span class=&quot;font-semibold text-github-accent&quot;&gt;{{period}}&lt;/span&gt; |
+            生成时间: &lt;span class=&quot;text-gray-500&quot;&gt;{{generatedAt}}&lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex gap-2&quot;&gt;
+          &lt;button onclick=&quot;window.print()&quot; class=&quot;px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium&quot;&gt;
+            🖨️ Print
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;main class=&quot;max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8&quot;&gt;
+
+    &lt;!-- 统计概览 --&gt;
+    &lt;section class=&quot;grid grid-cols-1 md:grid-cols-3 gap-6 mb-8&quot;&gt;
+      &lt;div class=&quot;stat-card rounded-xl p-6 text-white shadow-lg&quot;&gt;
+        &lt;h3 class=&quot;text-lg font-semibold opacity-90&quot;&gt;项目总数&lt;/h3&gt;
+        &lt;p class=&quot;text-4xl font-bold mt-2&quot;&gt;{{projects.length}}&lt;/p&gt;
+        &lt;p class=&quot;text-sm opacity-75 mt-1&quot;&gt;{{period}} 热门趋势&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl p-6 text-white shadow-lg&quot;&gt;
+        &lt;h3 class=&quot;text-lg font-semibold opacity-90&quot;&gt;总 Stars 数&lt;/h3&gt;
+        &lt;p class=&quot;text-4xl font-bold mt-2&quot;&gt;{{analytics.totalStars}}&lt;/p&gt;
+        &lt;p class=&quot;text-sm opacity-75 mt-1&quot;&gt;所有项目总计&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;bg-gradient-to-br from-orange-500 to-red-500 rounded-xl p-6 text-white shadow-lg&quot;&gt;
+        &lt;h3 class=&quot;text-lg font-semibold opacity-90&quot;&gt;最热项目&lt;/h3&gt;
+        &lt;p class=&quot;text-xl font-bold mt-2 truncate&quot;&gt;{{analytics.topProject.name}}&lt;/p&gt;
+        &lt;p class=&quot;text-sm opacity-75 mt-1&quot;&gt;{{analytics.topProject.stars}} stars&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- 筛选和搜索 --&gt;
+    &lt;section class=&quot;bg-white rounded-xl shadow-sm p-6 mb-8&quot;&gt;
+      &lt;div class=&quot;flex flex-wrap gap-4 items-center&quot;&gt;
+        &lt;div class=&quot;flex-1 min-w-64&quot;&gt;
+          &lt;label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;搜索项目&lt;/label&gt;
+          &lt;input
+            type=&quot;text&quot;
+            id=&quot;searchInput&quot;
+            placeholder=&quot;按名称或描述搜索...&quot;
+            class=&quot;w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            oninput=&quot;filterProjects()&quot;
+          &gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;语言筛选&lt;/label&gt;
+          &lt;select
+            id=&quot;languageFilter&quot;
+            class=&quot;px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            onchange=&quot;filterProjects()&quot;
+          &gt;
+            &lt;option value=&quot;all&quot;&gt;全部语言&lt;/option&gt;
+            {{#each analytics.languages}}
+              &lt;option value=&quot;{{this}}&quot;&gt;{{this}}&lt;/option&gt;
+            {{/each}}
+          &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;label class=&quot;block text-sm font-medium text-gray-700 mb-1&quot;&gt;排序方式&lt;/label&gt;
+          &lt;select
+            id=&quot;sortSelect&quot;
+            class=&quot;px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-github-accent focus:border-transparent&quot;
+            onchange=&quot;sortProjects()&quot;
+          &gt;
+            &lt;option value=&quot;rank&quot;&gt;排名&lt;/option&gt;
+            &lt;option value=&quot;stars&quot;&gt;总 Stars&lt;/option&gt;
+            &lt;option value=&quot;growth&quot;&gt;本期增长&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- 语言分布图表 --&gt;
+    &lt;section class=&quot;bg-white rounded-xl shadow-sm p-6 mb-8&quot;&gt;
+      &lt;h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;📊 语言分布&lt;/h2&gt;
+      &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-8&quot;&gt;
+        &lt;div&gt;
+          &lt;canvas id=&quot;languageChart&quot;&gt;&lt;/canvas&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;canvas id=&quot;growthChart&quot;&gt;&lt;/canvas&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Trending Projects --&gt;
+    &lt;section class=&quot;mb-8&quot;&gt;
+      &lt;h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;🔥 热门项目&lt;/h2&gt;
+      &lt;div id=&quot;projects-container&quot; class=&quot;grid grid-cols-1 gap-4&quot;&gt;
+        {{#each projects}}
+        &lt;div class=&quot;project-card bg-white rounded-xl shadow-sm p-6 border border-gray-200&quot;
+             data-rank=&quot;{{rank}}&quot;
+             data-language=&quot;{{language}}&quot;
+             data-stars=&quot;{{stars}}&quot;
+             data-growth=&quot;{{starsThisPeriod}}&quot;
+             data-name=&quot;{{name}}&quot;
+             data-description=&quot;{{description}}&quot;&gt;
+          &lt;div class=&quot;flex items-start justify-between&quot;&gt;
+            &lt;div class=&quot;flex-1&quot;&gt;
+              &lt;div class=&quot;flex items-center gap-3 mb-2&quot;&gt;
+                &lt;span class=&quot;text-2xl font-bold text-github-accent&quot;&gt;#{{rank}}&lt;/span&gt;
+                &lt;h3 class=&quot;text-xl font-semibold text-gray-900&quot;&gt;
+                  &lt;a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;hover:text-github-accent&quot;&gt;{{name}}&lt;/a&gt;
+                &lt;/h3&gt;
+                &lt;span class=&quot;badge bg-blue-100 text-blue-800&quot;&gt;{{language}}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-gray-600 mb-3&quot;&gt;{{description}}&lt;/p&gt;
+              &lt;div class=&quot;flex items-center gap-4 text-sm text-gray-500&quot;&gt;
+                &lt;span&gt;⭐ {{stars}} stars&lt;/span&gt;
+                {{#if starsThisPeriod}}
+                  &lt;span class=&quot;text-green-600 font-semibold&quot;&gt;(+{{starsThisPeriod}} this {{../period}})&lt;/span&gt;
+                {{/if}}
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;px-4 py-2 bg-github-accent text-white rounded-lg hover:bg-blue-600 transition font-medium&quot;&gt;
+              View →
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        {{/each}}
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Tech News --&gt;
+    {{#if news}}
+    &lt;section class=&quot;mb-8&quot;&gt;
+      &lt;h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;📰 技术资讯&lt;/h2&gt;
+      &lt;div class=&quot;grid grid-cols-1 gap-4&quot;&gt;
+        {{#each news}}
+        &lt;div class=&quot;news-item bg-white rounded-xl shadow-sm p-5 hover:shadow-md transition&quot;&gt;
+          &lt;div class=&quot;flex items-start justify-between&quot;&gt;
+            &lt;div class=&quot;flex-1&quot;&gt;
+              &lt;h3 class=&quot;text-lg font-semibold text-gray-900 mb-1&quot;&gt;
+                &lt;a href=&quot;{{url}}&quot; target=&quot;_blank&quot; class=&quot;hover:text-github-accent&quot;&gt;{{title}}&lt;/a&gt;
+              &lt;/h3&gt;
+              &lt;div class=&quot;flex items-center gap-4 text-sm text-gray-500&quot;&gt;
+                &lt;span class=&quot;text-orange-600&quot;&gt;📰 {{source}}&lt;/span&gt;
+                {{#if points}}
+                  &lt;span&gt;⬆️ {{points}} points&lt;/span&gt;
+                {{/if}}
+                {{#if comments}}
+                  &lt;span&gt;💬 {{comments}} comments&lt;/span&gt;
+                {{/if}}
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        {{/each}}
+      &lt;/div&gt;
+    &lt;/section&gt;
+    {{/if}}
+
+  &lt;/main&gt;
+
+  &lt;!-- 页脚 --&gt;
+  &lt;footer class=&quot;bg-white border-t border-gray-200 mt-12&quot;&gt;
+    &lt;div class=&quot;max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8&quot;&gt;
+      &lt;p class=&quot;text-center text-gray-500 text-sm&quot;&gt;
+        由 GitHubTrends Skill 生成 | 数据来源：GitHub 和 Hacker News
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;!-- JavaScript --&gt;
+  &lt;script&gt;
+    // 注入数据
+    window.dashboardData = {
+      projects: {{{json projects}}},
+      analytics: {
+        languageDistribution: {{{json analytics.languageDistribution}}},
+        growthData: {{{json analytics.growthData}}}
+      }
+    };
+
+    // 初始化图表
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+      initLanguageChart();
+      initGrowthChart();
+    });
+
+    // 语言分布饼图
+    function initLanguageChart() {
+      const ctx = document.getElementById(&#39;languageChart&#39;).getContext(&#39;2d&#39;);
+      const data = window.dashboardData.analytics.languageDistribution;
+
+      new Chart(ctx, {
+        type: &#39;pie&#39;,
+        data: {
+          labels: Object.keys(data),
+          datasets: [{
+            data: Object.values(data),
+            backgroundColor: [
+              &#39;#58a6ff&#39;, &#39;#238636&#39;, &#39;#f1e05a&#39;, &#39;#d73a49&#39;,
+              &#39;#8957E5&#39;, &#39;#e34c26&#39;, &#39;#CB3837&#39;, &#39;#DA5B0B&#39;,
+              &#39;#4F5D95&#39;, &#39;#563d7c&#39;
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: &#39;right&#39;
+            },
+            title: {
+              display: true,
+              text: &#39;Projects by Language&#39;
+            }
+          }
+        }
+      });
+    }
+
+    // Stars 增长柱状图
+    function initGrowthChart() {
+      const ctx = document.getElementById(&#39;growthChart&#39;).getContext(&#39;2d&#39;);
+      const projects = window.dashboardData.projects.slice(0, 10);
+
+      new Chart(ctx, {
+        type: &#39;bar&#39;,
+        data: {
+          labels: projects.map(p =&gt; p.name.split(&#39;/&#39;)[1] || p.name),
+          datasets: [{
+            label: &#39;Stars This Period&#39;,
+            data: projects.map(p =&gt; parseInt(p.starsThisPeriod.replace(&#39;+&#39;, &#39;&#39;) || 0)),
+            backgroundColor: &#39;rgba(88, 166, 255, 0.8)&#39;,
+            borderColor: &#39;rgba(88, 166, 255, 1)&#39;,
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          indexAxis: &#39;y&#39;,
+          plugins: {
+            title: {
+              display: true,
+              text: &#39;Top 10 Growth&#39;
+            }
+          },
+          scales: {
+            x: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    // 筛选项目
+    function filterProjects() {
+      const searchValue = document.getElementById(&#39;searchInput&#39;).value.toLowerCase();
+      const languageValue = document.getElementById(&#39;languageFilter&#39;).value;
+
+      const cards = document.querySelectorAll(&#39;.project-card&#39;);
+
+      cards.forEach(card =&gt; {
+        const name = card.dataset.name.toLowerCase();
+        const description = card.dataset.description.toLowerCase();
+        const language = card.dataset.language;
+
+        const matchesSearch = name.includes(searchValue) || description.includes(searchValue);
+        const matchesLanguage = languageValue === &#39;all&#39; || language === languageValue;
+
+        card.style.display = matchesSearch &amp;&amp; matchesLanguage ? &#39;block&#39; : &#39;none&#39;;
+      });
+    }
+
+    // 排序项目
+    function sortProjects() {
+      const sortBy = document.getElementById(&#39;sortSelect&#39;).value;
+      const container = document.getElementById(&#39;projects-container&#39;);
+      const cards = Array.from(container.children);
+
+      cards.sort((a, b) =&gt; {
+        switch(sortBy) {
+          case &#39;stars&#39;:
+            return parseInt(b.dataset.stars.replace(/,/g, &#39;&#39;)) - parseInt(a.dataset.stars.replace(/,/g, &#39;&#39;));
+          case &#39;growth&#39;:
+            const growthA = parseInt(a.dataset.growth.replace(/[+,]/g, &#39;&#39;) || 0);
+            const growthB = parseInt(b.dataset.growth.replace(/[+,]/g, &#39;&#39;) || 0);
+            return growthB - growthA;
+          case &#39;rank&#39;:
+          default:
+            return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);
+        }
+      });
+
+      cards.forEach(card =&gt; container.appendChild(card));
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+FILE:Workflows/GenerateDashboard.md
+# GenerateDashboard Workflow
+
+生成交互式数据可视化仪表板的工作流程。
+
+## Description
+
+这个工作流使用 GenerateDashboard.ts 工具从 GitHub 获取 trending 项目，并生成交互式 HTML 仪表板，支持：
+- 项目卡片展示
+- 语言分布饼图
+- Stars 增长柱状图
+- 技术新闻列表
+- 实时筛选、排序、搜索功能
+
+## When to Use
+
+当用户请求以下任何内容时使用此工作流：
+- &quot;生成 GitHub trending 仪表板&quot;
+- &quot;创建趋势网页&quot;
+- &quot;生成可视化报告&quot;
+- &quot;export trending dashboard&quot;
+- &quot;生成交互式网页&quot;
+
+## Workflow Steps
+
+### Step 1: 确定参数
+向用户确认或推断以下参数：
+- **时间周期**: daily (每日) 或 weekly (每周，默认)
+- **编程语言**: 可选（如 TypeScript, Python, Go, Rust等）
+- **项目数量**: 默认10个
+- **包含新闻**: 是否包含技术新闻
+- **新闻数量**: 默认10条
+- **输出路径**: 默认 ./github-trends.html
+
+### Step 2: 执行工具
+运行 GenerateDashboard.ts 工具：
+
+```bash
+# 基本用法（本周，10个项目）
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts
+
+# 指定语言和新闻
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period weekly \
+  --language TypeScript \
+  --limit 20 \
+  --include-news \
+  --news-count 15 \
+  --output ~/trends.html
+
+# 每日趋势
+bun ~/.claude/skills/GitHubTrends/Tools/GenerateDashboard.ts \
+  --period daily \
+  --output ~/daily-trends.html
+```
+
+### Step 3: 显示结果
+工具会自动：
+1. 获取 GitHub trending 数据
+2. 获取技术新闻（如果启用）
+3. 分析数据生成统计信息
+4. 渲染 HTML 模板
+5. 保存到指定路径
+
+### Step 4: 验证和打开
+生成的 HTML 文件包含：
+- ✅ 响应式布局
+- ✅ 项目卡片展示
+- ✅ 语言分布饼图
+- ✅ Stars 增长柱状图
+- ✅ 实时筛选功能
+- ✅ 排序功能
+- ✅ 搜索功能
+- ✅ 技术新闻列表
+
+## Example Usage
+
+### Example 1: 基本仪表板
+```
+User: &quot;生成本周 GitHub trending 仪表板&quot;
+
+Assistant:
+运行 GenerateDashboard 工具...
+[执行命令，生成 /tmp/github-trends.html]
+✅ 仪表板生成成功！已在浏览器中打开。
+```
+
+### Example 2: 包含新闻的仪表板
+```
+User: &quot;生成 TypeScript 项目的每日趋势，包含新闻&quot;
+
+Assistant:
+生成 TypeScript 每日趋势仪表板，包含技术新闻...
+[执行命令：--period daily --language TypeScript --include-news]
+✅ 仪表板已生成到 ~/Downloads/ts-daily-trends.html
+```
+
+### Example 3: 自定义输出
+```
+User: &quot;生成一个包含 20 个项目的仪表板，保存到桌面&quot;
+
+Assistant:
+生成 20 个项目的趋势仪表板...
+[执行命令：--limit 20 --output ~/Desktop/github-trends.html]
+✅ 完成！文件已保存到桌面
+```
+
+## Tool Options
+
+| 参数 | 说明 | 默认值 | 可选值 |
+|------|------|--------|--------|
+| `--period` | 时间周期 | `weekly` | `daily`, `weekly` |
+| `--language` | 编程语言筛选 | 全部 | TypeScript, Python, Go, Rust等 |
+| `--limit` | 返回项目数量 | 10 | 任意正整数 |
+| `--include-news` | 包含技术新闻 | false | - |
+| `--news-count` | 新闻数量 | 10 | 任意正整数 |
+| `--theme` | 主题 | `auto` | `light`, `dark`, `auto` |
+| `--output` | 输出文件路径 | `./github-trends.html` | 任意路径 |
+
+## Output Features
+
+### 数据可视化
+- **语言分布饼图**: 展示各编程语言的项目占比
+- **Stars 增长柱状图**: 展示前 10 名项目的 stars 增长
+
+### 交互功能
+- **搜索**: 按项目名称或描述搜索
+- **筛选**: 按编程语言筛选
+- **排序**: 按排名、总 stars、周期内增长排序
+
+### 响应式设计
+- 支持桌面、平板、手机
+- 使用 Tailwind CSS 构建美观界面
+- GitHub 风格配色
+
+## Error Handling
+
+如果遇到错误：
+1. **网络错误**: 检查网络连接，确保能访问 GitHub
+2. **解析失败**: GitHub 页面结构可能变化，工具会显示调试信息
+3. **文件写入失败**: 检查输出路径的写权限
+
+## Voice Notification
+
+执行此工作流时发送语音通知：
+
+```bash
+curl -s -X POST http://localhost:8888/notify \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;message&quot;: &quot;正在生成 GitHub Trending Dashboard...&quot;}&#39; \
+  &gt; /dev/null 2&gt;&amp;1 &amp;
+```
+
+并输出文本通知：
+```
+Running the **GenerateDashboard** workflow from the **GitHubTrends** skill...
+```
+
+## Integration with Other Skills
+
+- **Browser**: 验证生成的 HTML 页面效果
+- **System**: 保存仪表板快照到 MEMORY/
+- **OSINT**: 分析技术栈趋势
+
+## Notes
+
+- 数据每小时更新一次（GitHub trending 更新频率）
+- 生成的 HTML 是完全独立的，无需服务器
+- 所有依赖通过 CDN 加载（Tailwind CSS, Chart.js）
+- 支持离线查看（图表已内嵌数据）
+
+## Advanced Usage
+
+### 批量生成
+```bash
+# 生成多个语言的仪表板
+for lang in TypeScript Python Go Rust; do
+  bun Tools/GenerateDashboard.ts \
+    --language $lang \
+    --output ~/trends-$lang.html
+done
+```
+
+### 定时任务
+```bash
+# 每小时生成一次快照
+# 添加到 crontab:
+0 * * * * cd ~/.claude/skills/GitHubTrends &amp;&amp; bun Tools/GenerateDashboard.ts --output ~/trends-$(date +%H).html
+```
+
+### 定制主题
+通过修改 `Templates/dashboard.hbs` 可以自定义：
+- 配色方案
+- 布局结构
+- 添加新的图表类型
+- 添加新的交互功能</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
+Add to Chrome (Free)
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="rgba(255, 255, 255, 0.1)",t.style.color="#fff"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>

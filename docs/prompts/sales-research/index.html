@@ -1,0 +1,1752 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="icon" href="/awesome-prompting-hacks/favicon.ico"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v6.4.6"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><!-- Core SEO Meta Tags --><title>Sales Research - Free AI Prompt Template</title><meta name="description" content="Copy and optimize the free AI prompt for: &quot;Sales Research&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/sales-research/"><!-- Open Graph tags for social display --><meta property="og:type" content="website"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/sales-research/"><meta property="og:title" content="Sales Research - Free AI Prompt Template"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;Sales Research&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Twitter Cards --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/sales-research/"><meta name="twitter:title" content="Sales Research - Free AI Prompt Template"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;Sales Research&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-image.png"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Sales Research","description":"Copy and optimize the free AI prompt for: \"Sales Research\". Features tags: roleplay, chatgpt, open-source.","genre":"Roleplay","keywords":"roleplay,chatgpt,open-source","creator":{"@type":"Organization","name":"Awesome Prompting Hacks"},"publisher":{"@type":"Organization","name":"Awesome Prompting Hacks","logo":{"@type":"ImageObject","url":"https://zion369369.github.io/awesome-prompting-hacks/favicon.svg"}},"text":"---\nname: sales-research\ndescription: This skill provides methodology and best practices for researching sales prospects.\n---\n\n# Sales Research\n\n## Overview\n\nThis skill provides methodology and best practices for researching sales prospects. It covers company research, contact profiling, and signal detection to surface actionable intelligence.\n\n## Usage\n\nThe company-researcher and contact-researcher sub-agents reference this skill when:\n- Researching new prospects\n- Finding company information\n- Profiling individual contacts\n- Detecting buying signals\n\n## Research Methodology\n\n### Company Research Checklist\n\n1. **Basic Profile**\n   - Company name, industry, size (employees, revenue)\n   - Headquarters and key locations\n   - Founded date, growth stage\n\n2. **Recent Developments**\n   - Funding announcements (last 12 months)\n   - M&A activity\n   - Leadership changes\n   - Product launches\n\n3. **Tech Stack**\n   - Known technologies (BuiltWith, StackShare)\n   - Job postings mentioning tools\n   - Integration partnerships\n\n4. **Signals**\n   - Job postings (scaling = opportunity)\n   - Glassdoor reviews (pain points)\n   - News mentions (context)\n   - Social media activity\n\n### Contact Research Checklist\n\n1. **Professional Background**\n   - Current role and tenure\n   - Previous companies and roles\n   - Education\n\n2. **Influence Indicators**\n   - Reporting structure\n   - Decision-making authority\n   - Budget ownership\n\n3. **Engagement Hooks**\n   - Recent LinkedIn posts\n   - Published articles\n   - Speaking engagements\n   - Mutual connections\n\n## Resources\n\n- `resources/signal-indicators.md` - Taxonomy of buying signals\n- `resources/research-checklist.md` - Complete research checklist\n\n## Scripts\n\n- `scripts/company-enricher.py` - Aggregate company data from multiple sources\n- `scripts/linkedin-parser.py` - Structure LinkedIn profile data\n\u001fFILE:company-enricher.py\u001e\n#!/usr/bin/env python3\n\"\"\"\ncompany-enricher.py - Aggregate company data from multiple sources\n\nInputs:\n  - company_name: string\n  - domain: string (optional)\n\nOutputs:\n  - profile:\n      name: string\n      industry: string\n      size: string\n      funding: string\n      tech_stack: [string]\n      recent_news: [news items]\n\nDependencies:\n  - requests, beautifulsoup4\n\"\"\"\n\n# Requirements: requests, beautifulsoup4\n\nimport json\nfrom typing import Any\nfrom dataclasses import dataclass, asdict\nfrom datetime import datetime\n\n\n@dataclass\nclass NewsItem:\n    title: str\n    date: str\n    source: str\n    url: str\n    summary: str\n\n\n@dataclass\nclass CompanyProfile:\n    name: str\n    domain: str\n    industry: str\n    size: str\n    location: str\n    founded: str\n    funding: str\n    tech_stack: list[str]\n    recent_news: list[dict]\n    competitors: list[str]\n    description: str\n\n\ndef search_company_info(company_name: str, domain: str = None) -> dict:\n    \"\"\"\n    Search for basic company information.\n    In production, this would call APIs like Clearbit, Crunchbase, etc.\n    \"\"\"\n    # TODO: Implement actual API calls\n    # Placeholder return structure\n    return {\n        \"name\": company_name,\n        \"domain\": domain or f\"{company_name.lower().replace(' ', '')}.com\",\n        \"industry\": \"Technology\",  # Would come from API\n        \"size\": \"Unknown\",\n        \"location\": \"Unknown\",\n        \"founded\": \"Unknown\",\n        \"description\": f\"Information about {company_name}\"\n    }\n\n\ndef search_funding_info(company_name: str) -> dict:\n    \"\"\"\n    Search for funding information.\n    In production, would call Crunchbase, PitchBook, etc.\n    \"\"\"\n    # TODO: Implement actual API calls\n    return {\n        \"total_funding\": \"Unknown\",\n        \"last_round\": \"Unknown\",\n        \"last_round_date\": \"Unknown\",\n        \"investors\": []\n    }\n\n\ndef search_tech_stack(domain: str) -> list[str]:\n    \"\"\"\n    Detect technology stack.\n    In production, would call BuiltWith, Wappalyzer, etc.\n    \"\"\"\n    # TODO: Implement actual API calls\n    return []\n\n\ndef search_recent_news(company_name: str, days: int = 90) -> list[dict]:\n    \"\"\"\n    Search for recent news about the company.\n    In production, would call news APIs.\n    \"\"\"\n    # TODO: Implement actual API calls\n    return []\n\n\ndef main(\n    company_name: str,\n    domain: str = None\n) -> dict[str, Any]:\n    \"\"\"\n    Aggregate company data from multiple sources.\n\n    Args:\n        company_name: Company name to research\n        domain: Company domain (optional, will be inferred)\n\n    Returns:\n        dict with company profile including industry, size, funding, tech stack, news\n    \"\"\"\n    # Get basic company info\n    basic_info = search_company_info(company_name, domain)\n\n    # Get funding information\n    funding_info = search_funding_info(company_name)\n\n    # Detect tech stack\n    company_domain = basic_info.get(\"domain\", domain)\n    tech_stack = search_tech_stack(company_domain) if company_domain else []\n\n    # Get recent news\n    news = search_recent_news(company_name)\n\n    # Compile profile\n    profile = CompanyProfile(\n        name=basic_info[\"name\"],\n        domain=basic_info[\"domain\"],\n        industry=basic_info[\"industry\"],\n        size=basic_info[\"size\"],\n        location=basic_info[\"location\"],\n        founded=basic_info[\"founded\"],\n        funding=funding_info.get(\"total_funding\", \"Unknown\"),\n        tech_stack=tech_stack,\n        recent_news=news,\n        competitors=[],  # Would be enriched from industry analysis\n        description=basic_info[\"description\"]\n    )\n\n    return {\n        \"profile\": asdict(profile),\n        \"funding_details\": funding_info,\n        \"enriched_at\": datetime.now().isoformat(),\n        \"sources_checked\": [\"company_info\", \"funding\", \"tech_stack\", \"news\"]\n    }\n\n\nif __name__ == \"__main__\":\n    import sys\n\n    # Example usage\n    result = main(\n        company_name=\"DataFlow Systems\",\n        domain=\"dataflow.io\"\n    )\n    print(json.dumps(result, indent=2))\n\u001fFILE:linkedin-parser.py\u001e\n#!/usr/bin/env python3\n\"\"\"\nlinkedin-parser.py - Structure LinkedIn profile data\n\nInputs:\n  - profile_url: string\n  - or name + company: strings\n\nOutputs:\n  - contact:\n      name: string\n      title: string\n      tenure: string\n      previous_roles: [role objects]\n      mutual_connections: [string]\n      recent_activity: [post summaries]\n\nDependencies:\n  - requests\n\"\"\"\n\n# Requirements: requests\n\nimport json\nfrom typing import Any\nfrom dataclasses import dataclass, asdict\nfrom datetime import datetime\n\n\n@dataclass\nclass PreviousRole:\n    title: str\n    company: str\n    duration: str\n    description: str\n\n\n@dataclass\nclass RecentPost:\n    date: str\n    content_preview: str\n    engagement: int\n    topic: str\n\n\n@dataclass\nclass ContactProfile:\n    name: str\n    title: str\n    company: str\n    location: str\n    tenure: str\n    previous_roles: list[dict]\n    education: list[str]\n    mutual_connections: list[str]\n    recent_activity: list[dict]\n    profile_url: str\n    headline: str\n\n\ndef search_linkedin_profile(name: str = None, company: str = None, profile_url: str = None) -> dict:\n    \"\"\"\n    Search for LinkedIn profile information.\n    In production, would use LinkedIn API or Sales Navigator.\n    \"\"\"\n    # TODO: Implement actual LinkedIn API integration\n    # Note: LinkedIn's API has strict terms of service\n\n    return {\n        \"found\": False,\n        \"name\": name or \"Unknown\",\n        \"title\": \"Unknown\",\n        \"company\": company or \"Unknown\",\n        \"location\": \"Unknown\",\n        \"headline\": \"\",\n        \"tenure\": \"Unknown\",\n        \"profile_url\": profile_url or \"\"\n    }\n\n\ndef get_career_history(profile_data: dict) -> list[dict]:\n    \"\"\"\n    Extract career history from profile.\n    \"\"\"\n    # TODO: Implement career extraction\n    return []\n\n\ndef get_mutual_connections(profile_data: dict, user_network: list = None) -> list[str]:\n    \"\"\"\n    Find mutual connections.\n    \"\"\"\n    # TODO: Implement mutual connection detection\n    return []\n\n\ndef get_recent_activity(profile_data: dict, days: int = 30) -> list[dict]:\n    \"\"\"\n    Get recent posts and activity.\n    \"\"\"\n    # TODO: Implement activity extraction\n    return []\n\n\ndef main(\n    name: str = None,\n    company: str = None,\n    profile_url: str = None\n) -> dict[str, Any]:\n    \"\"\"\n    Structure LinkedIn profile data for sales prep.\n\n    Args:\n        name: Person's name\n        company: Company they work at\n        profile_url: Direct LinkedIn profile URL\n\n    Returns:\n        dict with structured contact profile\n    \"\"\"\n    if not profile_url and not (name and company):\n        return {\"error\": \"Provide either profile_url or name + company\"}\n\n    # Search for profile\n    profile_data = search_linkedin_profile(\n        name=name,\n        company=company,\n        profile_url=profile_url\n    )\n\n    if not profile_data.get(\"found\"):\n        return {\n            \"found\": False,\n            \"name\": name or \"Unknown\",\n            \"company\": company or \"Unknown\",\n            \"message\": \"Profile not found or limited access\",\n            \"suggestions\": [\n                \"Try searching directly on LinkedIn\",\n                \"Check for alternative spellings\",\n                \"Verify the person still works at this company\"\n            ]\n        }\n\n    # Get career history\n    previous_roles = get_career_history(profile_data)\n\n    # Find mutual connections\n    mutual_connections = get_mutual_connections(profile_data)\n\n    # Get recent activity\n    recent_activity = get_recent_activity(profile_data)\n\n    # Compile contact profile\n    contact = ContactProfile(\n        name=profile_data[\"name\"],\n        title=profile_data[\"title\"],\n        company=profile_data[\"company\"],\n        location=profile_data[\"location\"],\n        tenure=profile_data[\"tenure\"],\n        previous_roles=previous_roles,\n        education=[],  # Would be extracted from profile\n        mutual_connections=mutual_connections,\n        recent_activity=recent_activity,\n        profile_url=profile_data[\"profile_url\"],\n        headline=profile_data[\"headline\"]\n    )\n\n    return {\n        \"found\": True,\n        \"contact\": asdict(contact),\n        \"research_date\": datetime.now().isoformat(),\n        \"data_completeness\": calculate_completeness(contact)\n    }\n\n\ndef calculate_completeness(contact: ContactProfile) -> dict:\n    \"\"\"Calculate how complete the profile data is.\"\"\"\n    fields = {\n        \"basic_info\": bool(contact.name and contact.title and contact.company),\n        \"career_history\": len(contact.previous_roles) > 0,\n        \"mutual_connections\": len(contact.mutual_connections) > 0,\n        \"recent_activity\": len(contact.recent_activity) > 0,\n        \"education\": len(contact.education) > 0\n    }\n\n    complete_count = sum(fields.values())\n    return {\n        \"fields\": fields,\n        \"score\": f\"{complete_count}/{len(fields)}\",\n        \"percentage\": int((complete_count / len(fields)) * 100)\n    }\n\n\nif __name__ == \"__main__\":\n    import sys\n\n    # Example usage\n    result = main(\n        name=\"Sarah Chen\",\n        company=\"DataFlow Systems\"\n    )\n    print(json.dumps(result, indent=2))\n\u001fFILE:priority-scorer.py\u001e\n#!/usr/bin/env python3\n\"\"\"\npriority-scorer.py - Calculate and rank prospect priorities\n\nInputs:\n  - prospects: [prospect objects with signals]\n  - weights: {deal_size, timing, warmth, signals}\n\nOutputs:\n  - ranked: [prospects with scores and reasoning]\n\nDependencies:\n  - (none - pure Python)\n\"\"\"\n\nimport json\nfrom typing import Any\nfrom dataclasses import dataclass\n\n\n# Default scoring weights\nDEFAULT_WEIGHTS = {\n    \"deal_size\": 0.25,\n    \"timing\": 0.30,\n    \"warmth\": 0.20,\n    \"signals\": 0.25\n}\n\n# Signal score mapping\nSIGNAL_SCORES = {\n    # High-intent signals\n    \"recent_funding\": 10,\n    \"leadership_change\": 8,\n    \"job_postings_relevant\": 9,\n    \"expansion_news\": 7,\n    \"competitor_mention\": 6,\n\n    # Medium-intent signals\n    \"general_hiring\": 4,\n    \"industry_event\": 3,\n    \"content_engagement\": 3,\n\n    # Relationship signals\n    \"mutual_connection\": 5,\n    \"previous_contact\": 6,\n    \"referred_lead\": 8,\n\n    # Negative signals\n    \"recent_layoffs\": -3,\n    \"budget_freeze_mentioned\": -5,\n    \"competitor_selected\": -7,\n}\n\n\n@dataclass\nclass ScoredProspect:\n    company: str\n    contact: str\n    call_time: str\n    raw_score: float\n    normalized_score: int\n    priority_rank: int\n    score_breakdown: dict\n    reasoning: str\n    is_followup: bool\n\n\ndef score_deal_size(prospect: dict) -> tuple[float, str]:\n    \"\"\"Score based on estimated deal size.\"\"\"\n    size_indicators = prospect.get(\"size_indicators\", {})\n\n    employee_count = size_indicators.get(\"employees\", 0)\n    revenue_estimate = size_indicators.get(\"revenue\", 0)\n\n    # Simple scoring based on company size\n    if employee_count > 1000 or revenue_estimate > 100_000_000:\n        return 10.0, \"Enterprise-scale opportunity\"\n    elif employee_count > 200 or revenue_estimate > 20_000_000:\n        return 7.0, \"Mid-market opportunity\"\n    elif employee_count > 50:\n        return 5.0, \"SMB opportunity\"\n    else:\n        return 3.0, \"Small business\"\n\n\ndef score_timing(prospect: dict) -> tuple[float, str]:\n    \"\"\"Score based on timing signals.\"\"\"\n    timing_signals = prospect.get(\"timing_signals\", [])\n\n    score = 5.0  # Base score\n    reasons = []\n\n    for signal in timing_signals:\n        if signal == \"budget_cycle_q4\":\n            score += 3\n            reasons.append(\"Q4 budget planning\")\n        elif signal == \"contract_expiring\":\n            score += 4\n            reasons.append(\"Contract expiring soon\")\n        elif signal == \"active_evaluation\":\n            score += 5\n            reasons.append(\"Actively evaluating\")\n        elif signal == \"just_funded\":\n            score += 3\n            reasons.append(\"Recently funded\")\n\n    return min(score, 10.0), \"; \".join(reasons) if reasons else \"Standard timing\"\n\n\ndef score_warmth(prospect: dict) -> tuple[float, str]:\n    \"\"\"Score based on relationship warmth.\"\"\"\n    relationship = prospect.get(\"relationship\", {})\n\n    if relationship.get(\"is_followup\"):\n        last_outcome = relationship.get(\"last_outcome\", \"neutral\")\n        if last_outcome == \"positive\":\n            return 9.0, \"Warm follow-up (positive last contact)\"\n        elif last_outcome == \"neutral\":\n            return 7.0, \"Follow-up (neutral last contact)\"\n        else:\n            return 5.0, \"Follow-up (needs re-engagement)\"\n\n    if relationship.get(\"referred\"):\n        return 8.0, \"Referred lead\"\n\n    if relationship.get(\"mutual_connections\", 0) > 0:\n        return 6.0, f\"{relationship['mutual_connections']} mutual connections\"\n\n    if relationship.get(\"inbound\"):\n        return 7.0, \"Inbound interest\"\n\n    return 4.0, \"Cold outreach\"\n\n\ndef score_signals(prospect: dict) -> tuple[float, str]:\n    \"\"\"Score based on buying signals detected.\"\"\"\n    signals = prospect.get(\"signals\", [])\n\n    total_score = 0\n    signal_reasons = []\n\n    for signal in signals:\n        signal_score = SIGNAL_SCORES.get(signal, 0)\n        total_score += signal_score\n        if signal_score > 0:\n            signal_reasons.append(signal.replace(\"_\", \" \"))\n\n    # Normalize to 0-10 scale\n    normalized = min(max(total_score / 2, 0), 10)\n\n    reason = f\"Signals: {', '.join(signal_reasons)}\" if signal_reasons else \"No strong signals\"\n    return normalized, reason\n\n\ndef calculate_priority_score(\n    prospect: dict,\n    weights: dict = None\n) -> ScoredProspect:\n    \"\"\"Calculate overall priority score for a prospect.\"\"\"\n    weights = weights or DEFAULT_WEIGHTS\n\n    # Calculate component scores\n    deal_score, deal_reason = score_deal_size(prospect)\n    timing_score, timing_reason = score_timing(prospect)\n    warmth_score, warmth_reason = score_warmth(prospect)\n    signal_score, signal_reason = score_signals(prospect)\n\n    # Weighted total\n    raw_score = (\n        deal_score * weights[\"deal_size\"] +\n        timing_score * weights[\"timing\"] +\n        warmth_score * weights[\"warmth\"] +\n        signal_score * weights[\"signals\"]\n    )\n\n    # Compile reasoning\n    reasons = []\n    if timing_score >= 8:\n        reasons.append(timing_reason)\n    if signal_score >= 7:\n        reasons.append(signal_reason)\n    if warmth_score >= 7:\n        reasons.append(warmth_reason)\n    if deal_score >= 8:\n        reasons.append(deal_reason)\n\n    return ScoredProspect(\n        company=prospect.get(\"company\", \"Unknown\"),\n        contact=prospect.get(\"contact\", \"Unknown\"),\n        call_time=prospect.get(\"call_time\", \"Unknown\"),\n        raw_score=round(raw_score, 2),\n        normalized_score=int(raw_score * 10),\n        priority_rank=0,  # Will be set after sorting\n        score_breakdown={\n            \"deal_size\": {\"score\": deal_score, \"reason\": deal_reason},\n            \"timing\": {\"score\": timing_score, \"reason\": timing_reason},\n            \"warmth\": {\"score\": warmth_score, \"reason\": warmth_reason},\n            \"signals\": {\"score\": signal_score, \"reason\": signal_reason}\n        },\n        reasoning=\"; \".join(reasons) if reasons else \"Standard priority\",\n        is_followup=prospect.get(\"relationship\", {}).get(\"is_followup\", False)\n    )\n\n\ndef main(\n    prospects: list[dict],\n    weights: dict = None\n) -> dict[str, Any]:\n    \"\"\"\n    Calculate and rank prospect priorities.\n\n    Args:\n        prospects: List of prospect objects with signals\n        weights: Optional custom weights for scoring components\n\n    Returns:\n        dict with ranked prospects and scoring details\n    \"\"\"\n    weights = weights or DEFAULT_WEIGHTS\n\n    # Score all prospects\n    scored = [calculate_priority_score(p, weights) for p in prospects]\n\n    # Sort by raw score descending\n    scored.sort(key=lambda x: x.raw_score, reverse=True)\n\n    # Assign ranks\n    for i, prospect in enumerate(scored, 1):\n        prospect.priority_rank = i\n\n    # Convert to dicts for JSON serialization\n    ranked = []\n    for s in scored:\n        ranked.append({\n            \"company\": s.company,\n            \"contact\": s.contact,\n            \"call_time\": s.call_time,\n            \"priority_rank\": s.priority_rank,\n            \"score\": s.normalized_score,\n            \"reasoning\": s.reasoning,\n            \"is_followup\": s.is_followup,\n            \"breakdown\": s.score_breakdown\n        })\n\n    return {\n        \"ranked\": ranked,\n        \"weights_used\": weights,\n        \"total_prospects\": len(prospects)\n    }\n\n\nif __name__ == \"__main__\":\n    import sys\n\n    # Example usage\n    example_prospects = [\n        {\n            \"company\": \"DataFlow Systems\",\n            \"contact\": \"Sarah Chen\",\n            \"call_time\": \"2pm\",\n            \"size_indicators\": {\"employees\": 200, \"revenue\": 25_000_000},\n            \"timing_signals\": [\"just_funded\", \"active_evaluation\"],\n            \"signals\": [\"recent_funding\", \"job_postings_relevant\"],\n            \"relationship\": {\"is_followup\": False, \"mutual_connections\": 2}\n        },\n        {\n            \"company\": \"Acme Manufacturing\",\n            \"contact\": \"Tom Bradley\",\n            \"call_time\": \"10am\",\n            \"size_indicators\": {\"employees\": 500},\n            \"timing_signals\": [\"contract_expiring\"],\n            \"signals\": [],\n            \"relationship\": {\"is_followup\": True, \"last_outcome\": \"neutral\"}\n        },\n        {\n            \"company\": \"FirstRate Financial\",\n            \"contact\": \"Linda Thompson\",\n            \"call_time\": \"4pm\",\n            \"size_indicators\": {\"employees\": 300},\n            \"timing_signals\": [],\n            \"signals\": [],\n            \"relationship\": {\"is_followup\": False}\n        }\n    ]\n\n    result = main(prospects=example_prospects)\n    print(json.dumps(result, indent=2))\n\u001fFILE:research-checklist.md\u001e\n# Prospect Research Checklist\n\n## Company Research\n\n### Basic Information\n- [ ] Company name (verify spelling)\n- [ ] Industry/vertical\n- [ ] Headquarters location\n- [ ] Employee count (LinkedIn, website)\n- [ ] Revenue estimate (if available)\n- [ ] Founded date\n- [ ] Funding stage/history\n\n### Recent News (Last 90 Days)\n- [ ] Funding announcements\n- [ ] Acquisitions or mergers\n- [ ] Leadership changes\n- [ ] Product launches\n- [ ] Major customer wins\n- [ ] Press mentions\n- [ ] Earnings/financial news\n\n### Digital Footprint\n- [ ] Website review\n- [ ] Blog/content topics\n- [ ] Social media presence\n- [ ] Job postings (careers page + LinkedIn)\n- [ ] Tech stack (BuiltWith, job postings)\n\n### Competitive Landscape\n- [ ] Known competitors\n- [ ] Market position\n- [ ] Differentiators claimed\n- [ ] Recent competitive moves\n\n### Pain Point Indicators\n- [ ] Glassdoor reviews (themes)\n- [ ] G2/Capterra reviews (if B2B)\n- [ ] Social media complaints\n- [ ] Job posting patterns\n\n## Contact Research\n\n### Professional Profile\n- [ ] Current title\n- [ ] Time in role\n- [ ] Time at company\n- [ ] Previous companies\n- [ ] Previous roles\n- [ ] Education\n\n### Decision Authority\n- [ ] Reports to whom\n- [ ] Team size (if manager)\n- [ ] Budget authority (inferred)\n- [ ] Buying involvement history\n\n### Engagement Hooks\n- [ ] Recent LinkedIn posts\n- [ ] Published articles\n- [ ] Podcast appearances\n- [ ] Conference talks\n- [ ] Mutual connections\n- [ ] Shared interests/groups\n\n### Communication Style\n- [ ] Post tone (formal/casual)\n- [ ] Topics they engage with\n- [ ] Response patterns\n\n## CRM Check (If Available)\n\n- [ ] Any prior touchpoints\n- [ ] Previous opportunities\n- [ ] Related contacts at company\n- [ ] Notes from colleagues\n- [ ] Email engagement history\n\n## Time-Based Research Depth\n\n| Time Available | Research Depth |\n|----------------|----------------|\n| 5 minutes | Company basics + contact title only |\n| 15 minutes | + Recent news + LinkedIn profile |\n| 30 minutes | + Pain point signals + engagement hooks |\n| 60 minutes | Full checklist + competitive analysis |\n\u001fFILE:signal-indicators.md\u001e\n# Signal Indicators Reference\n\n## High-Intent Signals\n\n### Job Postings\n- **3+ relevant roles posted** = Active initiative, budget allocated\n- **Senior hire in your domain** = Strategic priority\n- **Urgency language (\"ASAP\", \"immediate\")** = Pain is acute\n- **Specific tool mentioned** = Competitor or category awareness\n\n### Financial Events\n- **Series B+ funding** = Growth capital, buying power\n- **IPO preparation** = Operational maturity needed\n- **Acquisition announced** = Integration challenges coming\n- **Revenue milestone PR** = Budget available\n\n### Leadership Changes\n- **New CXO in your domain** = 90-day priority setting\n- **New CRO/CMO** = Tech stack evaluation likely\n- **Founder transition to CEO** = Professionalizing operations\n\n## Medium-Intent Signals\n\n### Expansion Signals\n- **New office opening** = Infrastructure needs\n- **International expansion** = Localization, compliance\n- **New product launch** = Scaling challenges\n- **Major customer win** = Delivery pressure\n\n### Technology Signals\n- **RFP published** = Active buying process\n- **Vendor review mentioned** = Comparison shopping\n- **Tech stack change** = Integration opportunity\n- **Legacy system complaints** = Modernization need\n\n### Content Signals\n- **Blog post on your topic** = Educating themselves\n- **Webinar attendance** = Interest confirmed\n- **Whitepaper download** = Problem awareness\n- **Conference speaking** = Thought leadership, visibility\n\n## Low-Intent Signals (Nurture)\n\n### General Activity\n- **Industry event attendance** = Market participant\n- **Generic hiring** = Company growing\n- **Positive press** = Healthy company\n- **Social media activity** = Engaged leadership\n\n## Signal Scoring\n\n| Signal Type | Score | Action |\n|-------------|-------|--------|\n| Job posting (relevant) | +3 | Prioritize outreach |\n| Recent funding | +3 | Reference in conversation |\n| Leadership change | +2 | Time-sensitive opportunity |\n| Expansion news | +2 | Growth angle |\n| Negative reviews | +2 | Pain point angle |\n| Content engagement | +1 | Nurture track |\n| No signals | 0 | Discovery focus |"}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.8izpLCWy.css">
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BhtVR_k0.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+Back to Prompt Gallery
+</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>Sales Research</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
+name: sales-research
+description: This skill provides methodology and best practices for researching sales prospects.
+---
+
+# Sales Research
+
+## Overview
+
+This skill provides methodology and best practices for researching sales prospects. It covers company research, contact profiling, and signal detection to surface actionable intelligence.
+
+## Usage
+
+The company-researcher and contact-researcher sub-agents reference this skill when:
+- Researching new prospects
+- Finding company information
+- Profiling individual contacts
+- Detecting buying signals
+
+## Research Methodology
+
+### Company Research Checklist
+
+1. **Basic Profile**
+   - Company name, industry, size (employees, revenue)
+   - Headquarters and key locations
+   - Founded date, growth stage
+
+2. **Recent Developments**
+   - Funding announcements (last 12 months)
+   - M&amp;A activity
+   - Leadership changes
+   - Product launches
+
+3. **Tech Stack**
+   - Known technologies (BuiltWith, StackShare)
+   - Job postings mentioning tools
+   - Integration partnerships
+
+4. **Signals**
+   - Job postings (scaling = opportunity)
+   - Glassdoor reviews (pain points)
+   - News mentions (context)
+   - Social media activity
+
+### Contact Research Checklist
+
+1. **Professional Background**
+   - Current role and tenure
+   - Previous companies and roles
+   - Education
+
+2. **Influence Indicators**
+   - Reporting structure
+   - Decision-making authority
+   - Budget ownership
+
+3. **Engagement Hooks**
+   - Recent LinkedIn posts
+   - Published articles
+   - Speaking engagements
+   - Mutual connections
+
+## Resources
+
+- `resources/signal-indicators.md` - Taxonomy of buying signals
+- `resources/research-checklist.md` - Complete research checklist
+
+## Scripts
+
+- `scripts/company-enricher.py` - Aggregate company data from multiple sources
+- `scripts/linkedin-parser.py` - Structure LinkedIn profile data
+FILE:company-enricher.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+company-enricher.py - Aggregate company data from multiple sources
+
+Inputs:
+  - company_name: string
+  - domain: string (optional)
+
+Outputs:
+  - profile:
+      name: string
+      industry: string
+      size: string
+      funding: string
+      tech_stack: [string]
+      recent_news: [news items]
+
+Dependencies:
+  - requests, beautifulsoup4
+&quot;&quot;&quot;
+
+# Requirements: requests, beautifulsoup4
+
+import json
+from typing import Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+
+
+@dataclass
+class NewsItem:
+    title: str
+    date: str
+    source: str
+    url: str
+    summary: str
+
+
+@dataclass
+class CompanyProfile:
+    name: str
+    domain: str
+    industry: str
+    size: str
+    location: str
+    founded: str
+    funding: str
+    tech_stack: list[str]
+    recent_news: list[dict]
+    competitors: list[str]
+    description: str
+
+
+def search_company_info(company_name: str, domain: str = None) -> dict:
+    &quot;&quot;&quot;
+    Search for basic company information.
+    In production, this would call APIs like Clearbit, Crunchbase, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    # Placeholder return structure
+    return {
+        &quot;name&quot;: company_name,
+        &quot;domain&quot;: domain or f&quot;{company_name.lower().replace(' ', '')}.com&quot;,
+        &quot;industry&quot;: &quot;Technology&quot;,  # Would come from API
+        &quot;size&quot;: &quot;Unknown&quot;,
+        &quot;location&quot;: &quot;Unknown&quot;,
+        &quot;founded&quot;: &quot;Unknown&quot;,
+        &quot;description&quot;: f&quot;Information about {company_name}&quot;
+    }
+
+
+def search_funding_info(company_name: str) -> dict:
+    &quot;&quot;&quot;
+    Search for funding information.
+    In production, would call Crunchbase, PitchBook, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return {
+        &quot;total_funding&quot;: &quot;Unknown&quot;,
+        &quot;last_round&quot;: &quot;Unknown&quot;,
+        &quot;last_round_date&quot;: &quot;Unknown&quot;,
+        &quot;investors&quot;: []
+    }
+
+
+def search_tech_stack(domain: str) -> list[str]:
+    &quot;&quot;&quot;
+    Detect technology stack.
+    In production, would call BuiltWith, Wappalyzer, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return []
+
+
+def search_recent_news(company_name: str, days: int = 90) -> list[dict]:
+    &quot;&quot;&quot;
+    Search for recent news about the company.
+    In production, would call news APIs.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return []
+
+
+def main(
+    company_name: str,
+    domain: str = None
+) -> dict[str, Any]:
+    &quot;&quot;&quot;
+    Aggregate company data from multiple sources.
+
+    Args:
+        company_name: Company name to research
+        domain: Company domain (optional, will be inferred)
+
+    Returns:
+        dict with company profile including industry, size, funding, tech stack, news
+    &quot;&quot;&quot;
+    # Get basic company info
+    basic_info = search_company_info(company_name, domain)
+
+    # Get funding information
+    funding_info = search_funding_info(company_name)
+
+    # Detect tech stack
+    company_domain = basic_info.get(&quot;domain&quot;, domain)
+    tech_stack = search_tech_stack(company_domain) if company_domain else []
+
+    # Get recent news
+    news = search_recent_news(company_name)
+
+    # Compile profile
+    profile = CompanyProfile(
+        name=basic_info[&quot;name&quot;],
+        domain=basic_info[&quot;domain&quot;],
+        industry=basic_info[&quot;industry&quot;],
+        size=basic_info[&quot;size&quot;],
+        location=basic_info[&quot;location&quot;],
+        founded=basic_info[&quot;founded&quot;],
+        funding=funding_info.get(&quot;total_funding&quot;, &quot;Unknown&quot;),
+        tech_stack=tech_stack,
+        recent_news=news,
+        competitors=[],  # Would be enriched from industry analysis
+        description=basic_info[&quot;description&quot;]
+    )
+
+    return {
+        &quot;profile&quot;: asdict(profile),
+        &quot;funding_details&quot;: funding_info,
+        &quot;enriched_at&quot;: datetime.now().isoformat(),
+        &quot;sources_checked&quot;: [&quot;company_info&quot;, &quot;funding&quot;, &quot;tech_stack&quot;, &quot;news&quot;]
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    result = main(
+        company_name=&quot;DataFlow Systems&quot;,
+        domain=&quot;dataflow.io&quot;
+    )
+    print(json.dumps(result, indent=2))
+FILE:linkedin-parser.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+linkedin-parser.py - Structure LinkedIn profile data
+
+Inputs:
+  - profile_url: string
+  - or name + company: strings
+
+Outputs:
+  - contact:
+      name: string
+      title: string
+      tenure: string
+      previous_roles: [role objects]
+      mutual_connections: [string]
+      recent_activity: [post summaries]
+
+Dependencies:
+  - requests
+&quot;&quot;&quot;
+
+# Requirements: requests
+
+import json
+from typing import Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+
+
+@dataclass
+class PreviousRole:
+    title: str
+    company: str
+    duration: str
+    description: str
+
+
+@dataclass
+class RecentPost:
+    date: str
+    content_preview: str
+    engagement: int
+    topic: str
+
+
+@dataclass
+class ContactProfile:
+    name: str
+    title: str
+    company: str
+    location: str
+    tenure: str
+    previous_roles: list[dict]
+    education: list[str]
+    mutual_connections: list[str]
+    recent_activity: list[dict]
+    profile_url: str
+    headline: str
+
+
+def search_linkedin_profile(name: str = None, company: str = None, profile_url: str = None) -> dict:
+    &quot;&quot;&quot;
+    Search for LinkedIn profile information.
+    In production, would use LinkedIn API or Sales Navigator.
+    &quot;&quot;&quot;
+    # TODO: Implement actual LinkedIn API integration
+    # Note: LinkedIn's API has strict terms of service
+
+    return {
+        &quot;found&quot;: False,
+        &quot;name&quot;: name or &quot;Unknown&quot;,
+        &quot;title&quot;: &quot;Unknown&quot;,
+        &quot;company&quot;: company or &quot;Unknown&quot;,
+        &quot;location&quot;: &quot;Unknown&quot;,
+        &quot;headline&quot;: &quot;&quot;,
+        &quot;tenure&quot;: &quot;Unknown&quot;,
+        &quot;profile_url&quot;: profile_url or &quot;&quot;
+    }
+
+
+def get_career_history(profile_data: dict) -> list[dict]:
+    &quot;&quot;&quot;
+    Extract career history from profile.
+    &quot;&quot;&quot;
+    # TODO: Implement career extraction
+    return []
+
+
+def get_mutual_connections(profile_data: dict, user_network: list = None) -> list[str]:
+    &quot;&quot;&quot;
+    Find mutual connections.
+    &quot;&quot;&quot;
+    # TODO: Implement mutual connection detection
+    return []
+
+
+def get_recent_activity(profile_data: dict, days: int = 30) -> list[dict]:
+    &quot;&quot;&quot;
+    Get recent posts and activity.
+    &quot;&quot;&quot;
+    # TODO: Implement activity extraction
+    return []
+
+
+def main(
+    name: str = None,
+    company: str = None,
+    profile_url: str = None
+) -> dict[str, Any]:
+    &quot;&quot;&quot;
+    Structure LinkedIn profile data for sales prep.
+
+    Args:
+        name: Person's name
+        company: Company they work at
+        profile_url: Direct LinkedIn profile URL
+
+    Returns:
+        dict with structured contact profile
+    &quot;&quot;&quot;
+    if not profile_url and not (name and company):
+        return {&quot;error&quot;: &quot;Provide either profile_url or name + company&quot;}
+
+    # Search for profile
+    profile_data = search_linkedin_profile(
+        name=name,
+        company=company,
+        profile_url=profile_url
+    )
+
+    if not profile_data.get(&quot;found&quot;):
+        return {
+            &quot;found&quot;: False,
+            &quot;name&quot;: name or &quot;Unknown&quot;,
+            &quot;company&quot;: company or &quot;Unknown&quot;,
+            &quot;message&quot;: &quot;Profile not found or limited access&quot;,
+            &quot;suggestions&quot;: [
+                &quot;Try searching directly on LinkedIn&quot;,
+                &quot;Check for alternative spellings&quot;,
+                &quot;Verify the person still works at this company&quot;
+            ]
+        }
+
+    # Get career history
+    previous_roles = get_career_history(profile_data)
+
+    # Find mutual connections
+    mutual_connections = get_mutual_connections(profile_data)
+
+    # Get recent activity
+    recent_activity = get_recent_activity(profile_data)
+
+    # Compile contact profile
+    contact = ContactProfile(
+        name=profile_data[&quot;name&quot;],
+        title=profile_data[&quot;title&quot;],
+        company=profile_data[&quot;company&quot;],
+        location=profile_data[&quot;location&quot;],
+        tenure=profile_data[&quot;tenure&quot;],
+        previous_roles=previous_roles,
+        education=[],  # Would be extracted from profile
+        mutual_connections=mutual_connections,
+        recent_activity=recent_activity,
+        profile_url=profile_data[&quot;profile_url&quot;],
+        headline=profile_data[&quot;headline&quot;]
+    )
+
+    return {
+        &quot;found&quot;: True,
+        &quot;contact&quot;: asdict(contact),
+        &quot;research_date&quot;: datetime.now().isoformat(),
+        &quot;data_completeness&quot;: calculate_completeness(contact)
+    }
+
+
+def calculate_completeness(contact: ContactProfile) -> dict:
+    &quot;&quot;&quot;Calculate how complete the profile data is.&quot;&quot;&quot;
+    fields = {
+        &quot;basic_info&quot;: bool(contact.name and contact.title and contact.company),
+        &quot;career_history&quot;: len(contact.previous_roles) > 0,
+        &quot;mutual_connections&quot;: len(contact.mutual_connections) > 0,
+        &quot;recent_activity&quot;: len(contact.recent_activity) > 0,
+        &quot;education&quot;: len(contact.education) > 0
+    }
+
+    complete_count = sum(fields.values())
+    return {
+        &quot;fields&quot;: fields,
+        &quot;score&quot;: f&quot;{complete_count}/{len(fields)}&quot;,
+        &quot;percentage&quot;: int((complete_count / len(fields)) * 100)
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    result = main(
+        name=&quot;Sarah Chen&quot;,
+        company=&quot;DataFlow Systems&quot;
+    )
+    print(json.dumps(result, indent=2))
+FILE:priority-scorer.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+priority-scorer.py - Calculate and rank prospect priorities
+
+Inputs:
+  - prospects: [prospect objects with signals]
+  - weights: {deal_size, timing, warmth, signals}
+
+Outputs:
+  - ranked: [prospects with scores and reasoning]
+
+Dependencies:
+  - (none - pure Python)
+&quot;&quot;&quot;
+
+import json
+from typing import Any
+from dataclasses import dataclass
+
+
+# Default scoring weights
+DEFAULT_WEIGHTS = {
+    &quot;deal_size&quot;: 0.25,
+    &quot;timing&quot;: 0.30,
+    &quot;warmth&quot;: 0.20,
+    &quot;signals&quot;: 0.25
+}
+
+# Signal score mapping
+SIGNAL_SCORES = {
+    # High-intent signals
+    &quot;recent_funding&quot;: 10,
+    &quot;leadership_change&quot;: 8,
+    &quot;job_postings_relevant&quot;: 9,
+    &quot;expansion_news&quot;: 7,
+    &quot;competitor_mention&quot;: 6,
+
+    # Medium-intent signals
+    &quot;general_hiring&quot;: 4,
+    &quot;industry_event&quot;: 3,
+    &quot;content_engagement&quot;: 3,
+
+    # Relationship signals
+    &quot;mutual_connection&quot;: 5,
+    &quot;previous_contact&quot;: 6,
+    &quot;referred_lead&quot;: 8,
+
+    # Negative signals
+    &quot;recent_layoffs&quot;: -3,
+    &quot;budget_freeze_mentioned&quot;: -5,
+    &quot;competitor_selected&quot;: -7,
+}
+
+
+@dataclass
+class ScoredProspect:
+    company: str
+    contact: str
+    call_time: str
+    raw_score: float
+    normalized_score: int
+    priority_rank: int
+    score_breakdown: dict
+    reasoning: str
+    is_followup: bool
+
+
+def score_deal_size(prospect: dict) -> tuple[float, str]:
+    &quot;&quot;&quot;Score based on estimated deal size.&quot;&quot;&quot;
+    size_indicators = prospect.get(&quot;size_indicators&quot;, {})
+
+    employee_count = size_indicators.get(&quot;employees&quot;, 0)
+    revenue_estimate = size_indicators.get(&quot;revenue&quot;, 0)
+
+    # Simple scoring based on company size
+    if employee_count > 1000 or revenue_estimate > 100_000_000:
+        return 10.0, &quot;Enterprise-scale opportunity&quot;
+    elif employee_count > 200 or revenue_estimate > 20_000_000:
+        return 7.0, &quot;Mid-market opportunity&quot;
+    elif employee_count > 50:
+        return 5.0, &quot;SMB opportunity&quot;
+    else:
+        return 3.0, &quot;Small business&quot;
+
+
+def score_timing(prospect: dict) -> tuple[float, str]:
+    &quot;&quot;&quot;Score based on timing signals.&quot;&quot;&quot;
+    timing_signals = prospect.get(&quot;timing_signals&quot;, [])
+
+    score = 5.0  # Base score
+    reasons = []
+
+    for signal in timing_signals:
+        if signal == &quot;budget_cycle_q4&quot;:
+            score += 3
+            reasons.append(&quot;Q4 budget planning&quot;)
+        elif signal == &quot;contract_expiring&quot;:
+            score += 4
+            reasons.append(&quot;Contract expiring soon&quot;)
+        elif signal == &quot;active_evaluation&quot;:
+            score += 5
+            reasons.append(&quot;Actively evaluating&quot;)
+        elif signal == &quot;just_funded&quot;:
+            score += 3
+            reasons.append(&quot;Recently funded&quot;)
+
+    return min(score, 10.0), &quot;; &quot;.join(reasons) if reasons else &quot;Standard timing&quot;
+
+
+def score_warmth(prospect: dict) -> tuple[float, str]:
+    &quot;&quot;&quot;Score based on relationship warmth.&quot;&quot;&quot;
+    relationship = prospect.get(&quot;relationship&quot;, {})
+
+    if relationship.get(&quot;is_followup&quot;):
+        last_outcome = relationship.get(&quot;last_outcome&quot;, &quot;neutral&quot;)
+        if last_outcome == &quot;positive&quot;:
+            return 9.0, &quot;Warm follow-up (positive last contact)&quot;
+        elif last_outcome == &quot;neutral&quot;:
+            return 7.0, &quot;Follow-up (neutral last contact)&quot;
+        else:
+            return 5.0, &quot;Follow-up (needs re-engagement)&quot;
+
+    if relationship.get(&quot;referred&quot;):
+        return 8.0, &quot;Referred lead&quot;
+
+    if relationship.get(&quot;mutual_connections&quot;, 0) > 0:
+        return 6.0, f&quot;{relationship['mutual_connections']} mutual connections&quot;
+
+    if relationship.get(&quot;inbound&quot;):
+        return 7.0, &quot;Inbound interest&quot;
+
+    return 4.0, &quot;Cold outreach&quot;
+
+
+def score_signals(prospect: dict) -> tuple[float, str]:
+    &quot;&quot;&quot;Score based on buying signals detected.&quot;&quot;&quot;
+    signals = prospect.get(&quot;signals&quot;, [])
+
+    total_score = 0
+    signal_reasons = []
+
+    for signal in signals:
+        signal_score = SIGNAL_SCORES.get(signal, 0)
+        total_score += signal_score
+        if signal_score > 0:
+            signal_reasons.append(signal.replace(&quot;_&quot;, &quot; &quot;))
+
+    # Normalize to 0-10 scale
+    normalized = min(max(total_score / 2, 0), 10)
+
+    reason = f&quot;Signals: {', '.join(signal_reasons)}&quot; if signal_reasons else &quot;No strong signals&quot;
+    return normalized, reason
+
+
+def calculate_priority_score(
+    prospect: dict,
+    weights: dict = None
+) -> ScoredProspect:
+    &quot;&quot;&quot;Calculate overall priority score for a prospect.&quot;&quot;&quot;
+    weights = weights or DEFAULT_WEIGHTS
+
+    # Calculate component scores
+    deal_score, deal_reason = score_deal_size(prospect)
+    timing_score, timing_reason = score_timing(prospect)
+    warmth_score, warmth_reason = score_warmth(prospect)
+    signal_score, signal_reason = score_signals(prospect)
+
+    # Weighted total
+    raw_score = (
+        deal_score * weights[&quot;deal_size&quot;] +
+        timing_score * weights[&quot;timing&quot;] +
+        warmth_score * weights[&quot;warmth&quot;] +
+        signal_score * weights[&quot;signals&quot;]
+    )
+
+    # Compile reasoning
+    reasons = []
+    if timing_score >= 8:
+        reasons.append(timing_reason)
+    if signal_score >= 7:
+        reasons.append(signal_reason)
+    if warmth_score >= 7:
+        reasons.append(warmth_reason)
+    if deal_score >= 8:
+        reasons.append(deal_reason)
+
+    return ScoredProspect(
+        company=prospect.get(&quot;company&quot;, &quot;Unknown&quot;),
+        contact=prospect.get(&quot;contact&quot;, &quot;Unknown&quot;),
+        call_time=prospect.get(&quot;call_time&quot;, &quot;Unknown&quot;),
+        raw_score=round(raw_score, 2),
+        normalized_score=int(raw_score * 10),
+        priority_rank=0,  # Will be set after sorting
+        score_breakdown={
+            &quot;deal_size&quot;: {&quot;score&quot;: deal_score, &quot;reason&quot;: deal_reason},
+            &quot;timing&quot;: {&quot;score&quot;: timing_score, &quot;reason&quot;: timing_reason},
+            &quot;warmth&quot;: {&quot;score&quot;: warmth_score, &quot;reason&quot;: warmth_reason},
+            &quot;signals&quot;: {&quot;score&quot;: signal_score, &quot;reason&quot;: signal_reason}
+        },
+        reasoning=&quot;; &quot;.join(reasons) if reasons else &quot;Standard priority&quot;,
+        is_followup=prospect.get(&quot;relationship&quot;, {}).get(&quot;is_followup&quot;, False)
+    )
+
+
+def main(
+    prospects: list[dict],
+    weights: dict = None
+) -> dict[str, Any]:
+    &quot;&quot;&quot;
+    Calculate and rank prospect priorities.
+
+    Args:
+        prospects: List of prospect objects with signals
+        weights: Optional custom weights for scoring components
+
+    Returns:
+        dict with ranked prospects and scoring details
+    &quot;&quot;&quot;
+    weights = weights or DEFAULT_WEIGHTS
+
+    # Score all prospects
+    scored = [calculate_priority_score(p, weights) for p in prospects]
+
+    # Sort by raw score descending
+    scored.sort(key=lambda x: x.raw_score, reverse=True)
+
+    # Assign ranks
+    for i, prospect in enumerate(scored, 1):
+        prospect.priority_rank = i
+
+    # Convert to dicts for JSON serialization
+    ranked = []
+    for s in scored:
+        ranked.append({
+            &quot;company&quot;: s.company,
+            &quot;contact&quot;: s.contact,
+            &quot;call_time&quot;: s.call_time,
+            &quot;priority_rank&quot;: s.priority_rank,
+            &quot;score&quot;: s.normalized_score,
+            &quot;reasoning&quot;: s.reasoning,
+            &quot;is_followup&quot;: s.is_followup,
+            &quot;breakdown&quot;: s.score_breakdown
+        })
+
+    return {
+        &quot;ranked&quot;: ranked,
+        &quot;weights_used&quot;: weights,
+        &quot;total_prospects&quot;: len(prospects)
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    example_prospects = [
+        {
+            &quot;company&quot;: &quot;DataFlow Systems&quot;,
+            &quot;contact&quot;: &quot;Sarah Chen&quot;,
+            &quot;call_time&quot;: &quot;2pm&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 200, &quot;revenue&quot;: 25_000_000},
+            &quot;timing_signals&quot;: [&quot;just_funded&quot;, &quot;active_evaluation&quot;],
+            &quot;signals&quot;: [&quot;recent_funding&quot;, &quot;job_postings_relevant&quot;],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: False, &quot;mutual_connections&quot;: 2}
+        },
+        {
+            &quot;company&quot;: &quot;Acme Manufacturing&quot;,
+            &quot;contact&quot;: &quot;Tom Bradley&quot;,
+            &quot;call_time&quot;: &quot;10am&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 500},
+            &quot;timing_signals&quot;: [&quot;contract_expiring&quot;],
+            &quot;signals&quot;: [],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: True, &quot;last_outcome&quot;: &quot;neutral&quot;}
+        },
+        {
+            &quot;company&quot;: &quot;FirstRate Financial&quot;,
+            &quot;contact&quot;: &quot;Linda Thompson&quot;,
+            &quot;call_time&quot;: &quot;4pm&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 300},
+            &quot;timing_signals&quot;: [],
+            &quot;signals&quot;: [],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: False}
+        }
+    ]
+
+    result = main(prospects=example_prospects)
+    print(json.dumps(result, indent=2))
+FILE:research-checklist.md
+# Prospect Research Checklist
+
+## Company Research
+
+### Basic Information
+- [ ] Company name (verify spelling)
+- [ ] Industry/vertical
+- [ ] Headquarters location
+- [ ] Employee count (LinkedIn, website)
+- [ ] Revenue estimate (if available)
+- [ ] Founded date
+- [ ] Funding stage/history
+
+### Recent News (Last 90 Days)
+- [ ] Funding announcements
+- [ ] Acquisitions or mergers
+- [ ] Leadership changes
+- [ ] Product launches
+- [ ] Major customer wins
+- [ ] Press mentions
+- [ ] Earnings/financial news
+
+### Digital Footprint
+- [ ] Website review
+- [ ] Blog/content topics
+- [ ] Social media presence
+- [ ] Job postings (careers page + LinkedIn)
+- [ ] Tech stack (BuiltWith, job postings)
+
+### Competitive Landscape
+- [ ] Known competitors
+- [ ] Market position
+- [ ] Differentiators claimed
+- [ ] Recent competitive moves
+
+### Pain Point Indicators
+- [ ] Glassdoor reviews (themes)
+- [ ] G2/Capterra reviews (if B2B)
+- [ ] Social media complaints
+- [ ] Job posting patterns
+
+## Contact Research
+
+### Professional Profile
+- [ ] Current title
+- [ ] Time in role
+- [ ] Time at company
+- [ ] Previous companies
+- [ ] Previous roles
+- [ ] Education
+
+### Decision Authority
+- [ ] Reports to whom
+- [ ] Team size (if manager)
+- [ ] Budget authority (inferred)
+- [ ] Buying involvement history
+
+### Engagement Hooks
+- [ ] Recent LinkedIn posts
+- [ ] Published articles
+- [ ] Podcast appearances
+- [ ] Conference talks
+- [ ] Mutual connections
+- [ ] Shared interests/groups
+
+### Communication Style
+- [ ] Post tone (formal/casual)
+- [ ] Topics they engage with
+- [ ] Response patterns
+
+## CRM Check (If Available)
+
+- [ ] Any prior touchpoints
+- [ ] Previous opportunities
+- [ ] Related contacts at company
+- [ ] Notes from colleagues
+- [ ] Email engagement history
+
+## Time-Based Research Depth
+
+| Time Available | Research Depth |
+|----------------|----------------|
+| 5 minutes | Company basics + contact title only |
+| 15 minutes | + Recent news + LinkedIn profile |
+| 30 minutes | + Pain point signals + engagement hooks |
+| 60 minutes | Full checklist + competitive analysis |
+FILE:signal-indicators.md
+# Signal Indicators Reference
+
+## High-Intent Signals
+
+### Job Postings
+- **3+ relevant roles posted** = Active initiative, budget allocated
+- **Senior hire in your domain** = Strategic priority
+- **Urgency language (&quot;ASAP&quot;, &quot;immediate&quot;)** = Pain is acute
+- **Specific tool mentioned** = Competitor or category awareness
+
+### Financial Events
+- **Series B+ funding** = Growth capital, buying power
+- **IPO preparation** = Operational maturity needed
+- **Acquisition announced** = Integration challenges coming
+- **Revenue milestone PR** = Budget available
+
+### Leadership Changes
+- **New CXO in your domain** = 90-day priority setting
+- **New CRO/CMO** = Tech stack evaluation likely
+- **Founder transition to CEO** = Professionalizing operations
+
+## Medium-Intent Signals
+
+### Expansion Signals
+- **New office opening** = Infrastructure needs
+- **International expansion** = Localization, compliance
+- **New product launch** = Scaling challenges
+- **Major customer win** = Delivery pressure
+
+### Technology Signals
+- **RFP published** = Active buying process
+- **Vendor review mentioned** = Comparison shopping
+- **Tech stack change** = Integration opportunity
+- **Legacy system complaints** = Modernization need
+
+### Content Signals
+- **Blog post on your topic** = Educating themselves
+- **Webinar attendance** = Interest confirmed
+- **Whitepaper download** = Problem awareness
+- **Conference speaking** = Thought leadership, visibility
+
+## Low-Intent Signals (Nurture)
+
+### General Activity
+- **Industry event attendance** = Market participant
+- **Generic hiring** = Company growing
+- **Positive press** = Healthy company
+- **Social media activity** = Engaged leadership
+
+## Signal Scoring
+
+| Signal Type | Score | Action |
+|-------------|-------|--------|
+| Job posting (relevant) | +3 | Prioritize outreach |
+| Recent funding | +3 | Reference in conversation |
+| Leadership change | +2 | Time-sensitive opportunity |
+| Expansion news | +2 | Growth angle |
+| Negative reviews | +2 | Pain point angle |
+| Content engagement | +1 | Nurture track |
+| No signals | 0 | Discovery focus |" data-astro-cid-6bn65nae> <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <rect x="9" y="9" width="13" height="13" rx="2" ry="2" data-astro-cid-6bn65nae></rect> <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" data-astro-cid-6bn65nae></path> </svg> <span class="btn-text" data-astro-cid-6bn65nae>Copy Prompt</span> </button> </div> <div class="console-body" data-astro-cid-6bn65nae> <pre class="prompt-code-block" data-astro-cid-6bn65nae><code id="prompt-code" data-astro-cid-6bn65nae>---
+name: sales-research
+description: This skill provides methodology and best practices for researching sales prospects.
+---
+
+# Sales Research
+
+## Overview
+
+This skill provides methodology and best practices for researching sales prospects. It covers company research, contact profiling, and signal detection to surface actionable intelligence.
+
+## Usage
+
+The company-researcher and contact-researcher sub-agents reference this skill when:
+- Researching new prospects
+- Finding company information
+- Profiling individual contacts
+- Detecting buying signals
+
+## Research Methodology
+
+### Company Research Checklist
+
+1. **Basic Profile**
+   - Company name, industry, size (employees, revenue)
+   - Headquarters and key locations
+   - Founded date, growth stage
+
+2. **Recent Developments**
+   - Funding announcements (last 12 months)
+   - M&amp;A activity
+   - Leadership changes
+   - Product launches
+
+3. **Tech Stack**
+   - Known technologies (BuiltWith, StackShare)
+   - Job postings mentioning tools
+   - Integration partnerships
+
+4. **Signals**
+   - Job postings (scaling = opportunity)
+   - Glassdoor reviews (pain points)
+   - News mentions (context)
+   - Social media activity
+
+### Contact Research Checklist
+
+1. **Professional Background**
+   - Current role and tenure
+   - Previous companies and roles
+   - Education
+
+2. **Influence Indicators**
+   - Reporting structure
+   - Decision-making authority
+   - Budget ownership
+
+3. **Engagement Hooks**
+   - Recent LinkedIn posts
+   - Published articles
+   - Speaking engagements
+   - Mutual connections
+
+## Resources
+
+- `resources/signal-indicators.md` - Taxonomy of buying signals
+- `resources/research-checklist.md` - Complete research checklist
+
+## Scripts
+
+- `scripts/company-enricher.py` - Aggregate company data from multiple sources
+- `scripts/linkedin-parser.py` - Structure LinkedIn profile data
+FILE:company-enricher.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+company-enricher.py - Aggregate company data from multiple sources
+
+Inputs:
+  - company_name: string
+  - domain: string (optional)
+
+Outputs:
+  - profile:
+      name: string
+      industry: string
+      size: string
+      funding: string
+      tech_stack: [string]
+      recent_news: [news items]
+
+Dependencies:
+  - requests, beautifulsoup4
+&quot;&quot;&quot;
+
+# Requirements: requests, beautifulsoup4
+
+import json
+from typing import Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+
+
+@dataclass
+class NewsItem:
+    title: str
+    date: str
+    source: str
+    url: str
+    summary: str
+
+
+@dataclass
+class CompanyProfile:
+    name: str
+    domain: str
+    industry: str
+    size: str
+    location: str
+    founded: str
+    funding: str
+    tech_stack: list[str]
+    recent_news: list[dict]
+    competitors: list[str]
+    description: str
+
+
+def search_company_info(company_name: str, domain: str = None) -&gt; dict:
+    &quot;&quot;&quot;
+    Search for basic company information.
+    In production, this would call APIs like Clearbit, Crunchbase, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    # Placeholder return structure
+    return {
+        &quot;name&quot;: company_name,
+        &quot;domain&quot;: domain or f&quot;{company_name.lower().replace(&#39; &#39;, &#39;&#39;)}.com&quot;,
+        &quot;industry&quot;: &quot;Technology&quot;,  # Would come from API
+        &quot;size&quot;: &quot;Unknown&quot;,
+        &quot;location&quot;: &quot;Unknown&quot;,
+        &quot;founded&quot;: &quot;Unknown&quot;,
+        &quot;description&quot;: f&quot;Information about {company_name}&quot;
+    }
+
+
+def search_funding_info(company_name: str) -&gt; dict:
+    &quot;&quot;&quot;
+    Search for funding information.
+    In production, would call Crunchbase, PitchBook, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return {
+        &quot;total_funding&quot;: &quot;Unknown&quot;,
+        &quot;last_round&quot;: &quot;Unknown&quot;,
+        &quot;last_round_date&quot;: &quot;Unknown&quot;,
+        &quot;investors&quot;: []
+    }
+
+
+def search_tech_stack(domain: str) -&gt; list[str]:
+    &quot;&quot;&quot;
+    Detect technology stack.
+    In production, would call BuiltWith, Wappalyzer, etc.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return []
+
+
+def search_recent_news(company_name: str, days: int = 90) -&gt; list[dict]:
+    &quot;&quot;&quot;
+    Search for recent news about the company.
+    In production, would call news APIs.
+    &quot;&quot;&quot;
+    # TODO: Implement actual API calls
+    return []
+
+
+def main(
+    company_name: str,
+    domain: str = None
+) -&gt; dict[str, Any]:
+    &quot;&quot;&quot;
+    Aggregate company data from multiple sources.
+
+    Args:
+        company_name: Company name to research
+        domain: Company domain (optional, will be inferred)
+
+    Returns:
+        dict with company profile including industry, size, funding, tech stack, news
+    &quot;&quot;&quot;
+    # Get basic company info
+    basic_info = search_company_info(company_name, domain)
+
+    # Get funding information
+    funding_info = search_funding_info(company_name)
+
+    # Detect tech stack
+    company_domain = basic_info.get(&quot;domain&quot;, domain)
+    tech_stack = search_tech_stack(company_domain) if company_domain else []
+
+    # Get recent news
+    news = search_recent_news(company_name)
+
+    # Compile profile
+    profile = CompanyProfile(
+        name=basic_info[&quot;name&quot;],
+        domain=basic_info[&quot;domain&quot;],
+        industry=basic_info[&quot;industry&quot;],
+        size=basic_info[&quot;size&quot;],
+        location=basic_info[&quot;location&quot;],
+        founded=basic_info[&quot;founded&quot;],
+        funding=funding_info.get(&quot;total_funding&quot;, &quot;Unknown&quot;),
+        tech_stack=tech_stack,
+        recent_news=news,
+        competitors=[],  # Would be enriched from industry analysis
+        description=basic_info[&quot;description&quot;]
+    )
+
+    return {
+        &quot;profile&quot;: asdict(profile),
+        &quot;funding_details&quot;: funding_info,
+        &quot;enriched_at&quot;: datetime.now().isoformat(),
+        &quot;sources_checked&quot;: [&quot;company_info&quot;, &quot;funding&quot;, &quot;tech_stack&quot;, &quot;news&quot;]
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    result = main(
+        company_name=&quot;DataFlow Systems&quot;,
+        domain=&quot;dataflow.io&quot;
+    )
+    print(json.dumps(result, indent=2))
+FILE:linkedin-parser.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+linkedin-parser.py - Structure LinkedIn profile data
+
+Inputs:
+  - profile_url: string
+  - or name + company: strings
+
+Outputs:
+  - contact:
+      name: string
+      title: string
+      tenure: string
+      previous_roles: [role objects]
+      mutual_connections: [string]
+      recent_activity: [post summaries]
+
+Dependencies:
+  - requests
+&quot;&quot;&quot;
+
+# Requirements: requests
+
+import json
+from typing import Any
+from dataclasses import dataclass, asdict
+from datetime import datetime
+
+
+@dataclass
+class PreviousRole:
+    title: str
+    company: str
+    duration: str
+    description: str
+
+
+@dataclass
+class RecentPost:
+    date: str
+    content_preview: str
+    engagement: int
+    topic: str
+
+
+@dataclass
+class ContactProfile:
+    name: str
+    title: str
+    company: str
+    location: str
+    tenure: str
+    previous_roles: list[dict]
+    education: list[str]
+    mutual_connections: list[str]
+    recent_activity: list[dict]
+    profile_url: str
+    headline: str
+
+
+def search_linkedin_profile(name: str = None, company: str = None, profile_url: str = None) -&gt; dict:
+    &quot;&quot;&quot;
+    Search for LinkedIn profile information.
+    In production, would use LinkedIn API or Sales Navigator.
+    &quot;&quot;&quot;
+    # TODO: Implement actual LinkedIn API integration
+    # Note: LinkedIn&#39;s API has strict terms of service
+
+    return {
+        &quot;found&quot;: False,
+        &quot;name&quot;: name or &quot;Unknown&quot;,
+        &quot;title&quot;: &quot;Unknown&quot;,
+        &quot;company&quot;: company or &quot;Unknown&quot;,
+        &quot;location&quot;: &quot;Unknown&quot;,
+        &quot;headline&quot;: &quot;&quot;,
+        &quot;tenure&quot;: &quot;Unknown&quot;,
+        &quot;profile_url&quot;: profile_url or &quot;&quot;
+    }
+
+
+def get_career_history(profile_data: dict) -&gt; list[dict]:
+    &quot;&quot;&quot;
+    Extract career history from profile.
+    &quot;&quot;&quot;
+    # TODO: Implement career extraction
+    return []
+
+
+def get_mutual_connections(profile_data: dict, user_network: list = None) -&gt; list[str]:
+    &quot;&quot;&quot;
+    Find mutual connections.
+    &quot;&quot;&quot;
+    # TODO: Implement mutual connection detection
+    return []
+
+
+def get_recent_activity(profile_data: dict, days: int = 30) -&gt; list[dict]:
+    &quot;&quot;&quot;
+    Get recent posts and activity.
+    &quot;&quot;&quot;
+    # TODO: Implement activity extraction
+    return []
+
+
+def main(
+    name: str = None,
+    company: str = None,
+    profile_url: str = None
+) -&gt; dict[str, Any]:
+    &quot;&quot;&quot;
+    Structure LinkedIn profile data for sales prep.
+
+    Args:
+        name: Person&#39;s name
+        company: Company they work at
+        profile_url: Direct LinkedIn profile URL
+
+    Returns:
+        dict with structured contact profile
+    &quot;&quot;&quot;
+    if not profile_url and not (name and company):
+        return {&quot;error&quot;: &quot;Provide either profile_url or name + company&quot;}
+
+    # Search for profile
+    profile_data = search_linkedin_profile(
+        name=name,
+        company=company,
+        profile_url=profile_url
+    )
+
+    if not profile_data.get(&quot;found&quot;):
+        return {
+            &quot;found&quot;: False,
+            &quot;name&quot;: name or &quot;Unknown&quot;,
+            &quot;company&quot;: company or &quot;Unknown&quot;,
+            &quot;message&quot;: &quot;Profile not found or limited access&quot;,
+            &quot;suggestions&quot;: [
+                &quot;Try searching directly on LinkedIn&quot;,
+                &quot;Check for alternative spellings&quot;,
+                &quot;Verify the person still works at this company&quot;
+            ]
+        }
+
+    # Get career history
+    previous_roles = get_career_history(profile_data)
+
+    # Find mutual connections
+    mutual_connections = get_mutual_connections(profile_data)
+
+    # Get recent activity
+    recent_activity = get_recent_activity(profile_data)
+
+    # Compile contact profile
+    contact = ContactProfile(
+        name=profile_data[&quot;name&quot;],
+        title=profile_data[&quot;title&quot;],
+        company=profile_data[&quot;company&quot;],
+        location=profile_data[&quot;location&quot;],
+        tenure=profile_data[&quot;tenure&quot;],
+        previous_roles=previous_roles,
+        education=[],  # Would be extracted from profile
+        mutual_connections=mutual_connections,
+        recent_activity=recent_activity,
+        profile_url=profile_data[&quot;profile_url&quot;],
+        headline=profile_data[&quot;headline&quot;]
+    )
+
+    return {
+        &quot;found&quot;: True,
+        &quot;contact&quot;: asdict(contact),
+        &quot;research_date&quot;: datetime.now().isoformat(),
+        &quot;data_completeness&quot;: calculate_completeness(contact)
+    }
+
+
+def calculate_completeness(contact: ContactProfile) -&gt; dict:
+    &quot;&quot;&quot;Calculate how complete the profile data is.&quot;&quot;&quot;
+    fields = {
+        &quot;basic_info&quot;: bool(contact.name and contact.title and contact.company),
+        &quot;career_history&quot;: len(contact.previous_roles) &gt; 0,
+        &quot;mutual_connections&quot;: len(contact.mutual_connections) &gt; 0,
+        &quot;recent_activity&quot;: len(contact.recent_activity) &gt; 0,
+        &quot;education&quot;: len(contact.education) &gt; 0
+    }
+
+    complete_count = sum(fields.values())
+    return {
+        &quot;fields&quot;: fields,
+        &quot;score&quot;: f&quot;{complete_count}/{len(fields)}&quot;,
+        &quot;percentage&quot;: int((complete_count / len(fields)) * 100)
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    result = main(
+        name=&quot;Sarah Chen&quot;,
+        company=&quot;DataFlow Systems&quot;
+    )
+    print(json.dumps(result, indent=2))
+FILE:priority-scorer.py
+#!/usr/bin/env python3
+&quot;&quot;&quot;
+priority-scorer.py - Calculate and rank prospect priorities
+
+Inputs:
+  - prospects: [prospect objects with signals]
+  - weights: {deal_size, timing, warmth, signals}
+
+Outputs:
+  - ranked: [prospects with scores and reasoning]
+
+Dependencies:
+  - (none - pure Python)
+&quot;&quot;&quot;
+
+import json
+from typing import Any
+from dataclasses import dataclass
+
+
+# Default scoring weights
+DEFAULT_WEIGHTS = {
+    &quot;deal_size&quot;: 0.25,
+    &quot;timing&quot;: 0.30,
+    &quot;warmth&quot;: 0.20,
+    &quot;signals&quot;: 0.25
+}
+
+# Signal score mapping
+SIGNAL_SCORES = {
+    # High-intent signals
+    &quot;recent_funding&quot;: 10,
+    &quot;leadership_change&quot;: 8,
+    &quot;job_postings_relevant&quot;: 9,
+    &quot;expansion_news&quot;: 7,
+    &quot;competitor_mention&quot;: 6,
+
+    # Medium-intent signals
+    &quot;general_hiring&quot;: 4,
+    &quot;industry_event&quot;: 3,
+    &quot;content_engagement&quot;: 3,
+
+    # Relationship signals
+    &quot;mutual_connection&quot;: 5,
+    &quot;previous_contact&quot;: 6,
+    &quot;referred_lead&quot;: 8,
+
+    # Negative signals
+    &quot;recent_layoffs&quot;: -3,
+    &quot;budget_freeze_mentioned&quot;: -5,
+    &quot;competitor_selected&quot;: -7,
+}
+
+
+@dataclass
+class ScoredProspect:
+    company: str
+    contact: str
+    call_time: str
+    raw_score: float
+    normalized_score: int
+    priority_rank: int
+    score_breakdown: dict
+    reasoning: str
+    is_followup: bool
+
+
+def score_deal_size(prospect: dict) -&gt; tuple[float, str]:
+    &quot;&quot;&quot;Score based on estimated deal size.&quot;&quot;&quot;
+    size_indicators = prospect.get(&quot;size_indicators&quot;, {})
+
+    employee_count = size_indicators.get(&quot;employees&quot;, 0)
+    revenue_estimate = size_indicators.get(&quot;revenue&quot;, 0)
+
+    # Simple scoring based on company size
+    if employee_count &gt; 1000 or revenue_estimate &gt; 100_000_000:
+        return 10.0, &quot;Enterprise-scale opportunity&quot;
+    elif employee_count &gt; 200 or revenue_estimate &gt; 20_000_000:
+        return 7.0, &quot;Mid-market opportunity&quot;
+    elif employee_count &gt; 50:
+        return 5.0, &quot;SMB opportunity&quot;
+    else:
+        return 3.0, &quot;Small business&quot;
+
+
+def score_timing(prospect: dict) -&gt; tuple[float, str]:
+    &quot;&quot;&quot;Score based on timing signals.&quot;&quot;&quot;
+    timing_signals = prospect.get(&quot;timing_signals&quot;, [])
+
+    score = 5.0  # Base score
+    reasons = []
+
+    for signal in timing_signals:
+        if signal == &quot;budget_cycle_q4&quot;:
+            score += 3
+            reasons.append(&quot;Q4 budget planning&quot;)
+        elif signal == &quot;contract_expiring&quot;:
+            score += 4
+            reasons.append(&quot;Contract expiring soon&quot;)
+        elif signal == &quot;active_evaluation&quot;:
+            score += 5
+            reasons.append(&quot;Actively evaluating&quot;)
+        elif signal == &quot;just_funded&quot;:
+            score += 3
+            reasons.append(&quot;Recently funded&quot;)
+
+    return min(score, 10.0), &quot;; &quot;.join(reasons) if reasons else &quot;Standard timing&quot;
+
+
+def score_warmth(prospect: dict) -&gt; tuple[float, str]:
+    &quot;&quot;&quot;Score based on relationship warmth.&quot;&quot;&quot;
+    relationship = prospect.get(&quot;relationship&quot;, {})
+
+    if relationship.get(&quot;is_followup&quot;):
+        last_outcome = relationship.get(&quot;last_outcome&quot;, &quot;neutral&quot;)
+        if last_outcome == &quot;positive&quot;:
+            return 9.0, &quot;Warm follow-up (positive last contact)&quot;
+        elif last_outcome == &quot;neutral&quot;:
+            return 7.0, &quot;Follow-up (neutral last contact)&quot;
+        else:
+            return 5.0, &quot;Follow-up (needs re-engagement)&quot;
+
+    if relationship.get(&quot;referred&quot;):
+        return 8.0, &quot;Referred lead&quot;
+
+    if relationship.get(&quot;mutual_connections&quot;, 0) &gt; 0:
+        return 6.0, f&quot;{relationship[&#39;mutual_connections&#39;]} mutual connections&quot;
+
+    if relationship.get(&quot;inbound&quot;):
+        return 7.0, &quot;Inbound interest&quot;
+
+    return 4.0, &quot;Cold outreach&quot;
+
+
+def score_signals(prospect: dict) -&gt; tuple[float, str]:
+    &quot;&quot;&quot;Score based on buying signals detected.&quot;&quot;&quot;
+    signals = prospect.get(&quot;signals&quot;, [])
+
+    total_score = 0
+    signal_reasons = []
+
+    for signal in signals:
+        signal_score = SIGNAL_SCORES.get(signal, 0)
+        total_score += signal_score
+        if signal_score &gt; 0:
+            signal_reasons.append(signal.replace(&quot;_&quot;, &quot; &quot;))
+
+    # Normalize to 0-10 scale
+    normalized = min(max(total_score / 2, 0), 10)
+
+    reason = f&quot;Signals: {&#39;, &#39;.join(signal_reasons)}&quot; if signal_reasons else &quot;No strong signals&quot;
+    return normalized, reason
+
+
+def calculate_priority_score(
+    prospect: dict,
+    weights: dict = None
+) -&gt; ScoredProspect:
+    &quot;&quot;&quot;Calculate overall priority score for a prospect.&quot;&quot;&quot;
+    weights = weights or DEFAULT_WEIGHTS
+
+    # Calculate component scores
+    deal_score, deal_reason = score_deal_size(prospect)
+    timing_score, timing_reason = score_timing(prospect)
+    warmth_score, warmth_reason = score_warmth(prospect)
+    signal_score, signal_reason = score_signals(prospect)
+
+    # Weighted total
+    raw_score = (
+        deal_score * weights[&quot;deal_size&quot;] +
+        timing_score * weights[&quot;timing&quot;] +
+        warmth_score * weights[&quot;warmth&quot;] +
+        signal_score * weights[&quot;signals&quot;]
+    )
+
+    # Compile reasoning
+    reasons = []
+    if timing_score &gt;= 8:
+        reasons.append(timing_reason)
+    if signal_score &gt;= 7:
+        reasons.append(signal_reason)
+    if warmth_score &gt;= 7:
+        reasons.append(warmth_reason)
+    if deal_score &gt;= 8:
+        reasons.append(deal_reason)
+
+    return ScoredProspect(
+        company=prospect.get(&quot;company&quot;, &quot;Unknown&quot;),
+        contact=prospect.get(&quot;contact&quot;, &quot;Unknown&quot;),
+        call_time=prospect.get(&quot;call_time&quot;, &quot;Unknown&quot;),
+        raw_score=round(raw_score, 2),
+        normalized_score=int(raw_score * 10),
+        priority_rank=0,  # Will be set after sorting
+        score_breakdown={
+            &quot;deal_size&quot;: {&quot;score&quot;: deal_score, &quot;reason&quot;: deal_reason},
+            &quot;timing&quot;: {&quot;score&quot;: timing_score, &quot;reason&quot;: timing_reason},
+            &quot;warmth&quot;: {&quot;score&quot;: warmth_score, &quot;reason&quot;: warmth_reason},
+            &quot;signals&quot;: {&quot;score&quot;: signal_score, &quot;reason&quot;: signal_reason}
+        },
+        reasoning=&quot;; &quot;.join(reasons) if reasons else &quot;Standard priority&quot;,
+        is_followup=prospect.get(&quot;relationship&quot;, {}).get(&quot;is_followup&quot;, False)
+    )
+
+
+def main(
+    prospects: list[dict],
+    weights: dict = None
+) -&gt; dict[str, Any]:
+    &quot;&quot;&quot;
+    Calculate and rank prospect priorities.
+
+    Args:
+        prospects: List of prospect objects with signals
+        weights: Optional custom weights for scoring components
+
+    Returns:
+        dict with ranked prospects and scoring details
+    &quot;&quot;&quot;
+    weights = weights or DEFAULT_WEIGHTS
+
+    # Score all prospects
+    scored = [calculate_priority_score(p, weights) for p in prospects]
+
+    # Sort by raw score descending
+    scored.sort(key=lambda x: x.raw_score, reverse=True)
+
+    # Assign ranks
+    for i, prospect in enumerate(scored, 1):
+        prospect.priority_rank = i
+
+    # Convert to dicts for JSON serialization
+    ranked = []
+    for s in scored:
+        ranked.append({
+            &quot;company&quot;: s.company,
+            &quot;contact&quot;: s.contact,
+            &quot;call_time&quot;: s.call_time,
+            &quot;priority_rank&quot;: s.priority_rank,
+            &quot;score&quot;: s.normalized_score,
+            &quot;reasoning&quot;: s.reasoning,
+            &quot;is_followup&quot;: s.is_followup,
+            &quot;breakdown&quot;: s.score_breakdown
+        })
+
+    return {
+        &quot;ranked&quot;: ranked,
+        &quot;weights_used&quot;: weights,
+        &quot;total_prospects&quot;: len(prospects)
+    }
+
+
+if __name__ == &quot;__main__&quot;:
+    import sys
+
+    # Example usage
+    example_prospects = [
+        {
+            &quot;company&quot;: &quot;DataFlow Systems&quot;,
+            &quot;contact&quot;: &quot;Sarah Chen&quot;,
+            &quot;call_time&quot;: &quot;2pm&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 200, &quot;revenue&quot;: 25_000_000},
+            &quot;timing_signals&quot;: [&quot;just_funded&quot;, &quot;active_evaluation&quot;],
+            &quot;signals&quot;: [&quot;recent_funding&quot;, &quot;job_postings_relevant&quot;],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: False, &quot;mutual_connections&quot;: 2}
+        },
+        {
+            &quot;company&quot;: &quot;Acme Manufacturing&quot;,
+            &quot;contact&quot;: &quot;Tom Bradley&quot;,
+            &quot;call_time&quot;: &quot;10am&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 500},
+            &quot;timing_signals&quot;: [&quot;contract_expiring&quot;],
+            &quot;signals&quot;: [],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: True, &quot;last_outcome&quot;: &quot;neutral&quot;}
+        },
+        {
+            &quot;company&quot;: &quot;FirstRate Financial&quot;,
+            &quot;contact&quot;: &quot;Linda Thompson&quot;,
+            &quot;call_time&quot;: &quot;4pm&quot;,
+            &quot;size_indicators&quot;: {&quot;employees&quot;: 300},
+            &quot;timing_signals&quot;: [],
+            &quot;signals&quot;: [],
+            &quot;relationship&quot;: {&quot;is_followup&quot;: False}
+        }
+    ]
+
+    result = main(prospects=example_prospects)
+    print(json.dumps(result, indent=2))
+FILE:research-checklist.md
+# Prospect Research Checklist
+
+## Company Research
+
+### Basic Information
+- [ ] Company name (verify spelling)
+- [ ] Industry/vertical
+- [ ] Headquarters location
+- [ ] Employee count (LinkedIn, website)
+- [ ] Revenue estimate (if available)
+- [ ] Founded date
+- [ ] Funding stage/history
+
+### Recent News (Last 90 Days)
+- [ ] Funding announcements
+- [ ] Acquisitions or mergers
+- [ ] Leadership changes
+- [ ] Product launches
+- [ ] Major customer wins
+- [ ] Press mentions
+- [ ] Earnings/financial news
+
+### Digital Footprint
+- [ ] Website review
+- [ ] Blog/content topics
+- [ ] Social media presence
+- [ ] Job postings (careers page + LinkedIn)
+- [ ] Tech stack (BuiltWith, job postings)
+
+### Competitive Landscape
+- [ ] Known competitors
+- [ ] Market position
+- [ ] Differentiators claimed
+- [ ] Recent competitive moves
+
+### Pain Point Indicators
+- [ ] Glassdoor reviews (themes)
+- [ ] G2/Capterra reviews (if B2B)
+- [ ] Social media complaints
+- [ ] Job posting patterns
+
+## Contact Research
+
+### Professional Profile
+- [ ] Current title
+- [ ] Time in role
+- [ ] Time at company
+- [ ] Previous companies
+- [ ] Previous roles
+- [ ] Education
+
+### Decision Authority
+- [ ] Reports to whom
+- [ ] Team size (if manager)
+- [ ] Budget authority (inferred)
+- [ ] Buying involvement history
+
+### Engagement Hooks
+- [ ] Recent LinkedIn posts
+- [ ] Published articles
+- [ ] Podcast appearances
+- [ ] Conference talks
+- [ ] Mutual connections
+- [ ] Shared interests/groups
+
+### Communication Style
+- [ ] Post tone (formal/casual)
+- [ ] Topics they engage with
+- [ ] Response patterns
+
+## CRM Check (If Available)
+
+- [ ] Any prior touchpoints
+- [ ] Previous opportunities
+- [ ] Related contacts at company
+- [ ] Notes from colleagues
+- [ ] Email engagement history
+
+## Time-Based Research Depth
+
+| Time Available | Research Depth |
+|----------------|----------------|
+| 5 minutes | Company basics + contact title only |
+| 15 minutes | + Recent news + LinkedIn profile |
+| 30 minutes | + Pain point signals + engagement hooks |
+| 60 minutes | Full checklist + competitive analysis |
+FILE:signal-indicators.md
+# Signal Indicators Reference
+
+## High-Intent Signals
+
+### Job Postings
+- **3+ relevant roles posted** = Active initiative, budget allocated
+- **Senior hire in your domain** = Strategic priority
+- **Urgency language (&quot;ASAP&quot;, &quot;immediate&quot;)** = Pain is acute
+- **Specific tool mentioned** = Competitor or category awareness
+
+### Financial Events
+- **Series B+ funding** = Growth capital, buying power
+- **IPO preparation** = Operational maturity needed
+- **Acquisition announced** = Integration challenges coming
+- **Revenue milestone PR** = Budget available
+
+### Leadership Changes
+- **New CXO in your domain** = 90-day priority setting
+- **New CRO/CMO** = Tech stack evaluation likely
+- **Founder transition to CEO** = Professionalizing operations
+
+## Medium-Intent Signals
+
+### Expansion Signals
+- **New office opening** = Infrastructure needs
+- **International expansion** = Localization, compliance
+- **New product launch** = Scaling challenges
+- **Major customer win** = Delivery pressure
+
+### Technology Signals
+- **RFP published** = Active buying process
+- **Vendor review mentioned** = Comparison shopping
+- **Tech stack change** = Integration opportunity
+- **Legacy system complaints** = Modernization need
+
+### Content Signals
+- **Blog post on your topic** = Educating themselves
+- **Webinar attendance** = Interest confirmed
+- **Whitepaper download** = Problem awareness
+- **Conference speaking** = Thought leadership, visibility
+
+## Low-Intent Signals (Nurture)
+
+### General Activity
+- **Industry event attendance** = Market participant
+- **Generic hiring** = Company growing
+- **Positive press** = Healthy company
+- **Social media activity** = Engaged leadership
+
+## Signal Scoring
+
+| Signal Type | Score | Action |
+|-------------|-------|--------|
+| Job posting (relevant) | +3 | Prioritize outreach |
+| Recent funding | +3 | Reference in conversation |
+| Leadership change | +2 | Time-sensitive opportunity |
+| Expansion news | +2 | Growth angle |
+| Negative reviews | +2 | Pain point angle |
+| Content engagement | +1 | Nurture track |
+| No signals | 0 | Discovery focus |</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
+Add to Chrome (Free)
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="rgba(255, 255, 255, 0.1)",t.style.color="#fff"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
