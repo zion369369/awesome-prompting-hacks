@@ -10,16 +10,21 @@
  * 3. Run: node scripts/index-submit.js
  */
 
-const { google } = require('googleapis');
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { google } from 'googleapis';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const CREDENTIALS_PATH = path.join(__dirname, '../config/service-account.json');
+const DATA_PATH = path.join(__dirname, '../src/data/scraped_prompts.json');
 
 // Check credentials file exists
 if (!fs.existsSync(CREDENTIALS_PATH)) {
   console.warn(`[WARNING] Service account credentials file was not found at: ${CREDENTIALS_PATH}`);
-  console.log('To activate this script, download a JSON key from your Google Cloud Console Service Account and place it there.');
+  console.log('To activate this script, download a JSON key from your Google Cloud Console Service Account and place it at config/service-account.json.');
   process.exit(0);
 }
 
@@ -57,24 +62,37 @@ async function notifyUrl(url, type = 'URL_UPDATED') {
   }
 }
 
-// Compile sitemap list matching your database structures
-const TARGET_DOMAIN = 'https://omnivaluation.example.com';
-
-const urlsToIndex = [
-  `${TARGET_DOMAIN}/`,
-  `${TARGET_DOMAIN}/compare/salesforce-vs-hubspot-for-real-estate`,
-  `${TARGET_DOMAIN}/compare/salesforce-vs-hubspot-for-healthcare`,
-  `${TARGET_DOMAIN}/compare/clickup-vs-jira-for-software-development`,
-  `${TARGET_DOMAIN}/compare/quickbooks-vs-xero-for-ecommerce`,
-  `${TARGET_DOMAIN}/tax/real-estate-bracket-35-zip-90210`,
-  `${TARGET_DOMAIN}/tax/crypto-assets-bracket-22-zip-10001`,
-  `${TARGET_DOMAIN}/tax/stocks-bracket-37-zip-33139`
-];
-
 async function main() {
+  console.log('[STARTING] Loading prompts database...');
+  let prompts = [];
+  if (fs.existsSync(DATA_PATH)) {
+    try {
+      prompts = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+    } catch (err) {
+      console.error('Failed to parse database:', err.message);
+      process.exit(1);
+    }
+  }
+
+  const TARGET_DOMAIN = 'https://zion369369.github.io/awesome-prompting-hacks';
+  const urlsToIndex = [
+    `${TARGET_DOMAIN}/`,
+    `${TARGET_DOMAIN}/privacy/`,
+    `${TARGET_DOMAIN}/terms/`,
+    ...prompts.map(item => `${TARGET_DOMAIN}/prompts/${item.slug}/`)
+  ];
+
   console.log(`[STARTING] Requesting crawls for ${urlsToIndex.length} programmatic pages...`);
   
-  for (const url of urlsToIndex) {
+  // Note: Standard service accounts have a daily indexing quota (typically 200 URLs per day)
+  const quotaLimit = 200;
+  const targetUrls = urlsToIndex.slice(0, quotaLimit);
+  if (urlsToIndex.length > quotaLimit) {
+    console.warn(`[WARNING] Target list size (${urlsToIndex.length}) exceeds standard daily Indexing API quota limit of ${quotaLimit}.`);
+    console.warn(`Submitting first ${quotaLimit} URLs in this batch. Run again tomorrow to process the next batch.`);
+  }
+
+  for (const url of targetUrls) {
     await notifyUrl(url);
     // Standard delay to avoid rate limits
     await new Promise(resolve => setTimeout(resolve, 1200));
