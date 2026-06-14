@@ -1,18 +1,33 @@
 ---
 // src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
+import prompts from '../data/scraped_prompts.json';
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const dataPath = path.join(__dirname, '../data/scraped_prompts.json');
+// Write search index at build time
+const searchIndexPathPublic = path.join(process.cwd(), 'public/search-index.json');
+const searchIndexPathDocs = path.join(process.cwd(), 'docs/search-index.json');
+const indexData = prompts.map(p => ({
+  title: p.title,
+  slug: p.slug,
+  category: p.category,
+  tags: p.tags,
+  imageUrl: p.imageUrl,
+  promptExcerpt: p.prompt.substring(0, 150)
+}));
 
-let prompts = [];
-if (fs.existsSync(dataPath)) {
-  prompts = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+const publicDir = path.dirname(searchIndexPathPublic);
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
 }
+fs.writeFileSync(searchIndexPathPublic, JSON.stringify(indexData));
+
+const docsDir = path.dirname(searchIndexPathDocs);
+if (!fs.existsSync(docsDir)) {
+  fs.mkdirSync(docsDir, { recursive: true });
+}
+fs.writeFileSync(searchIndexPathDocs, JSON.stringify(indexData));
 
 // Extract unique popular tags for quick filter buttons
 const tagCounts = {};
@@ -76,7 +91,7 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
 
   <!-- Prompts Gallery Grid -->
   <div class="gallery-grid" id="prompts-gallery">
-    {prompts.map((item) => {
+    {prompts.slice(0, 48).map((item) => {
       const keywords = `${item.title} ${item.prompt} ${item.tags.join(' ')}`.toLowerCase();
       return (
         <a href={`${baseUrl}prompts/${item.slug}`} class="prompt-card card-glass" data-keywords={keywords} data-tags={JSON.stringify(item.tags)}>
@@ -388,37 +403,102 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
   </style>
 
   <!-- Instant Search & Category Filter Script -->
-  <script>
+  <script is:inline define:vars={{ baseUrl }}>
+    let searchIndex = null;
     const searchInput = document.getElementById('prompt-search');
     const filterButtons = document.querySelectorAll('.tag-filter-btn');
-    const cards = document.querySelectorAll('.prompt-card');
+    const gallery = document.getElementById('prompts-gallery');
     const noResults = document.getElementById('no-results');
+
+    // Keep initial HTML to restore if search/filter is cleared
+    const initialHtml = gallery ? gallery.innerHTML : '';
 
     let activeTag = 'all';
     let searchQuery = '';
 
-    function filterGallery() {
-      let visibleCount = 0;
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
 
-      cards.forEach((card) => {
-        const keywords = card.getAttribute('data-keywords') || '';
-        const tags = JSON.parse(card.getAttribute('data-tags') || '[]');
+    async function loadSearchIndex() {
+      if (searchIndex) return searchIndex;
+      try {
+        const res = await fetch(`${baseUrl}search-index.json`);
+        searchIndex = await res.json();
+        return searchIndex;
+      } catch (err) {
+        console.error('Failed to load search index:', err);
+        return [];
+      }
+    }
+
+    async function filterGallery() {
+      if (searchQuery === '' && activeTag === 'all') {
+        if (gallery) gallery.innerHTML = initialHtml;
+        if (noResults) noResults.style.display = 'none';
+        return;
+      }
+
+      const index = await loadSearchIndex();
+      let visibleCount = 0;
+      let html = '';
+
+      for (let i = 0; i < index.length; i++) {
+        const item = index[i];
         
-        const matchesQuery = searchQuery === '' || keywords.includes(searchQuery);
-        const matchesTag = activeTag === 'all' || tags.includes(activeTag);
+        // Search matches query
+        const matchesQuery = searchQuery === '' || 
+          item.title.toLowerCase().includes(searchQuery) ||
+          item.category.toLowerCase().includes(searchQuery) ||
+          item.tags.some(tag => tag.toLowerCase().includes(searchQuery)) ||
+          item.promptExcerpt.toLowerCase().includes(searchQuery);
+
+        const matchesTag = activeTag === 'all' || item.tags.includes(activeTag);
 
         if (matchesQuery && matchesTag) {
-          card.style.display = 'flex';
           visibleCount++;
-        } else {
-          card.style.display = 'none';
+          html += `
+            <a href="${baseUrl}prompts/${item.slug}" class="prompt-card card-glass">
+              ${item.imageUrl ? `
+                <div class="card-image-wrap">
+                  <img src="${item.imageUrl}" alt="${escapeHtml(item.title)}" class="card-image" loading="lazy" />
+                  <div class="card-image-overlay"></div>
+                </div>
+              ` : ''}
+              <div class="card-content">
+                <span class="card-category">${escapeHtml(item.category.toUpperCase())}</span>
+                <h3 class="card-title">${escapeHtml(item.title)}</h3>
+                <div class="card-tags">
+                  ${item.tags.slice(0, 3).map(tag => `<span class="card-tag">#${escapeHtml(tag)}</span>`).join('')}
+                  ${item.tags.length > 3 ? `<span class="card-tag-more">+${item.tags.length - 3}</span>` : ''}
+                </div>
+                <div class="card-footer">
+                  <span class="action-text">View Prompt</span>
+                  <svg class="action-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          `;
         }
-      });
+      }
 
+      if (gallery) gallery.innerHTML = html;
       if (noResults) {
         noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
       }
     }
+
+    // Prefetch search index on page load
+    loadSearchIndex();
 
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
@@ -429,7 +509,6 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
 
     filterButtons.forEach((btn) => {
       btn.addEventListener('click', () => {
-        // Toggle active button
         filterButtons.forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
 
