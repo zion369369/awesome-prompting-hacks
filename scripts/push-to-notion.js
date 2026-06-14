@@ -49,10 +49,13 @@ if (!notionKey || !databaseId) {
 }
 
 const PLATFORM_ICONS = {
-  'ChatGPT': '💬',
-  'Claude': '🧠',
-  'Gemini': '♊',
-  'Midjourney': '🎨',
+  'GPT-5.5': '🟢',
+  'GPT-5.4 mini': '🧠',
+  'Claude Fable 5': '🧡',
+  'Gemini 3.5 Pro': '✨',
+  'DeepSeek R1': '🔵',
+  'Grok 4.3': '🛸',
+  'Kimi Chat': '🌙',
   'Universal': '🤖'
 };
 
@@ -67,15 +70,13 @@ const CATEGORY_ICONS = {
 };
 
 const COVER_IMAGES = {
-  'ChatGPT': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
-  'Claude': 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1200&auto=format&fit=crop',
-  'Gemini': 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1200&auto=format&fit=crop',
-  'Midjourney': 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200&auto=format&fit=crop',
-  'Writing': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop',
-  'Marketing': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
-  'Coding': 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
-  'Fabric': 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1200&auto=format&fit=crop',
-  'Roleplay': 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop',
+  'GPT-5.5': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+  'GPT-5.4 mini': 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1200&auto=format&fit=crop',
+  'Claude Fable 5': 'https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1200&auto=format&fit=crop',
+  'Gemini 3.5 Pro': 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1200&auto=format&fit=crop',
+  'DeepSeek R1': 'https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=1200&auto=format&fit=crop',
+  'Grok 4.3': 'https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1200&auto=format&fit=crop',
+  'Kimi Chat': 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1200&auto=format&fit=crop',
   'Default': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop'
 };
 
@@ -86,50 +87,50 @@ function determinePlatform(item) {
   const text = `${title} ${category} ${tags.join(' ')}`.toLowerCase();
   
   // Explicit keyword matches first
-  if (text.includes('claude') || text.includes('anthropic') || text.includes('sonnet') || text.includes('opus')) {
-    return 'Claude 3.5 Sonnet';
+  if (text.includes('claude') || text.includes('anthropic') || text.includes('sonnet') || text.includes('opus') || text.includes('fable')) {
+    return 'Claude Fable 5';
   }
-  if (text.includes('gemini') || text.includes('google') || text.includes('1.5 pro') || text.includes('2.0 pro')) {
-    return 'Gemini 1.5 Pro';
+  if (text.includes('gemini') || text.includes('google') || text.includes('1.5 pro') || text.includes('2.0 pro') || text.includes('3.5 pro')) {
+    return 'Gemini 3.5 Pro';
   }
   if (text.includes('deepseek') || text.includes('deep-seek') || text.includes('r1')) {
     return 'DeepSeek R1';
   }
   if (text.includes('grok') || text.includes('xai') || text.includes('twitter')) {
-    return 'Grok 2';
+    return 'Grok 4.3';
   }
   if (text.includes('kimi') || text.includes('moonshot')) {
     return 'Kimi Chat';
   }
-  if (text.includes('chatgpt') || text.includes('gpt-4') || text.includes('openai') || text.includes('o1') || text.includes('o3')) {
-    if (text.includes('coding') || text.includes('developer')) return 'ChatGPT (o1)';
-    return 'GPT-4o';
+  if (text.includes('chatgpt') || text.includes('gpt-4') || text.includes('gpt-5') || text.includes('openai') || text.includes('o1') || text.includes('o3')) {
+    if (text.includes('coding') || text.includes('developer')) return 'GPT-5.4 mini';
+    return 'GPT-5.5';
   }
 
   // If no explicit matches, classify based on task category for maximum performance
   if (category === 'Coding' || text.includes('code') || text.includes('program') || text.includes('developer')) {
-    return (title.length % 2 === 0) ? 'Claude 3.5 Sonnet' : 'DeepSeek R1';
+    return (title.length % 2 === 0) ? 'Claude Fable 5' : 'DeepSeek R1';
   }
   if (category === 'Writing' || text.includes('write') || text.includes('book') || text.includes('novel')) {
     const val = title.length % 3;
-    if (val === 0) return 'Claude 3.5 Sonnet';
+    if (val === 0) return 'Claude Fable 5';
     if (val === 1) return 'Kimi Chat';
-    return 'GPT-4o';
+    return 'GPT-5.5';
   }
   if (category === 'Marketing' || text.includes('seo') || text.includes('marketing') || text.includes('ads')) {
     const val = title.length % 3;
-    if (val === 0) return 'Gemini 1.5 Pro';
-    if (val === 1) return 'Grok 2';
-    return 'GPT-4o';
+    if (val === 0) return 'Gemini 3.5 Pro';
+    if (val === 1) return 'Grok 4.3';
+    return 'GPT-5.5';
   }
   
   // Default fallback: Distribute evenly using simple hash of the title
   const models = [
-    'GPT-4o',
-    'Claude 3.5 Sonnet',
-    'Gemini 1.5 Pro',
+    'GPT-5.5',
+    'Claude Fable 5',
+    'Gemini 3.5 Pro',
     'DeepSeek R1',
-    'Grok 2',
+    'Grok 4.3',
     'Kimi Chat'
   ];
   let hash = 0;
