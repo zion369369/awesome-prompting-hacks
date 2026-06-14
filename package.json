@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate-llms-txt.js",
+    "build": "astro build && node scripts/generate-llms-txt.js && node scripts/generate-rss.js",
     "preview": "astro preview",
     "astro": "astro",
     "submit-sitemap": "node scripts/submit-sitemap.js"
