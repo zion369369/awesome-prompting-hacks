@@ -26,4 +26,5 @@ pnpm-debug.log*
 # generated distribution drafts
 quora_drafts_*.md
 youtube_description_*.md
+medium_drafts/
 

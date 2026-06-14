@@ -142,17 +142,27 @@ async function main() {
   console.log(`Found ${targetPrompts.length} high-value prompts out of ${prompts.length} total entries.`);
 
   if (!MEDIUM_INTEGRATION_TOKEN) {
-    console.log('\n[INFO] MEDIUM_INTEGRATION_TOKEN environment variable is not set.');
-    console.log('Running in DRY-RUN mode. Here is a sample of the compiled Medium post markdown:\n');
-    if (targetPrompts.length > 0) {
-      console.log(formatArticleBody(targetPrompts[0]));
-    } else {
-      console.log('No eligible prompts found to preview.');
+    const draftsDir = path.join(__dirname, '../medium_drafts');
+    if (!fs.existsSync(draftsDir)) {
+      fs.mkdirSync(draftsDir, { recursive: true });
     }
-    console.log('\nTo publish this programmatically:');
-    console.log('1. Go to Medium Settings -> Security -> Integration Tokens and generate a token.');
-    console.log('2. Add it to your local .env file: MEDIUM_INTEGRATION_TOKEN=your_token_value');
-    console.log('3. Run: node --env-file=.env scripts/medium-publisher.js\n');
+
+    console.log('\n[INFO] MEDIUM_INTEGRATION_TOKEN is not set.');
+    console.log(`Writing the top 10 clean Markdown drafts to: ${draftsDir}/ ...`);
+
+    const sampleLimit = Math.min(targetPrompts.length, 10);
+    for (let i = 0; i < sampleLimit; i++) {
+      const prompt = targetPrompts[i];
+      const articleBody = formatArticleBody(prompt);
+      const filePath = path.join(draftsDir, `${prompt.slug}.md`);
+      fs.writeFileSync(filePath, articleBody, 'utf-8');
+    }
+
+    console.log(`\n[SUCCESS] Generated ${sampleLimit} drafts!`);
+    console.log('To publish cleanly:');
+    console.log(`1. Open any file in: medium_drafts/`);
+    console.log('2. Copy all text.');
+    console.log('3. Paste it directly into a new story on Medium (it will format perfectly!).\n');
     process.exit(0);
   }
 
