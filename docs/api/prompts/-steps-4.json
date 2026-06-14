@@ -1,0 +1,1 @@
+{"title":"# Steps","slug":"-steps-4","prompt":"# Steps\n- Read the full RSS feed.\n- Find the latest posted video URL.\n- Output the full video URL and nothing else.\n# EXAMPLE OUTPUT\nhttps://www.youtube.com/watch?v=abc123\n#","imageUrl":null,"tags":["fabric","chatgpt","open-source"],"category":"Fabric","url":"https://github.com/JuliusBrussee/the-prompt-library"}

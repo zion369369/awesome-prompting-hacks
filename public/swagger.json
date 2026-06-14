@@ -1,0 +1,154 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Awesome Prompting Hacks API",
+    "description": "A zero-cost, high-performance static JSON API providing access to over 5,000 production-ready AI prompt templates for ChatGPT, Midjourney, Gemini, and Claude.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Awesome Prompting Hacks Support",
+      "url": "https://zion369369.github.io/awesome-prompting-hacks/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://zion369369.github.io/awesome-prompting-hacks",
+      "description": "Production GitHub Pages Server"
+    }
+  ],
+  "paths": {
+    "/api/index.json": {
+      "get": {
+        "summary": "Retrieve lightweight prompt search index",
+        "description": "Returns a lightweight metadata list of all available prompts, including titles, categories, tags, slugs, and live landing page URLs. Use this for quick search indexes.",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PromptMetadata"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/prompts.json": {
+      "get": {
+        "summary": "Retrieve the complete prompts dataset",
+        "description": "Returns the entire prompts database including titles, full prompt template bodies, categories, tags, and slugs. WARNING: The payload is approximately 11MB.",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PromptFull"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/prompts/{slug}.json": {
+      "get": {
+        "summary": "Retrieve details of a single prompt",
+        "description": "Returns the full details (title, template body, category, tags, and slug) for a specific prompt by its slug name.",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "description": "The unique, URL-safe slug for the prompt template (e.g. `act-as-linux-terminal`).",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PromptFull"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Prompt not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PromptMetadata": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "example": "Act as a Linux Terminal"
+          },
+          "slug": {
+            "type": "string",
+            "example": "act-as-a-linux-terminal"
+          },
+          "category": {
+            "type": "string",
+            "example": "developer"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["linux", "terminal", "system"]
+          },
+          "url": {
+            "type": "string",
+            "example": "https://zion369369.github.io/awesome-prompting-hacks/prompts/act-as-a-linux-terminal"
+          }
+        }
+      },
+      "PromptFull": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "example": "Act as a Linux Terminal"
+          },
+          "prompt": {
+            "type": "string",
+            "example": "I want you to act as a linux terminal. I will type commands and you will reply with what the terminal should show..."
+          },
+          "category": {
+            "type": "string",
+            "example": "developer"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["linux", "terminal", "system"]
+          },
+          "slug": {
+            "type": "string",
+            "example": "act-as-a-linux-terminal"
+          }
+        }
+      }
+    }
+  }
+}
