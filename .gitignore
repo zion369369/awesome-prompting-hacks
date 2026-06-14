@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# generated distribution drafts
+quora_drafts_*.md
+youtube_description_*.md
+
