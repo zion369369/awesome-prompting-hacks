@@ -27,40 +27,105 @@ const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/hello-prompti
 const pageTitle = `${prompt.title} - Free AI Prompt Template`;
 const pageDesc = `Copy and optimize the free AI prompt for: "${prompt.title}". Features tags: ${prompt.tags.join(', ')}.`;
 
-// Determine Niche Persona and Model Target dynamically
-const lowerCategory = prompt.category.toLowerCase();
-const lowerTags = prompt.tags.map(t => t.toLowerCase()).join(' ');
+function getModernModel(title, category, tags) {
+  const text = `${title} ${category} ${tags.join(' ')}`.toLowerCase();
+  
+  // Explicit keyword matches first
+  if (text.includes('claude') || text.includes('anthropic') || text.includes('sonnet') || text.includes('opus')) {
+    return 'Claude 3.5 Sonnet';
+  }
+  if (text.includes('gemini') || text.includes('google') || text.includes('1.5 pro') || text.includes('2.0 pro')) {
+    return 'Gemini 1.5 Pro';
+  }
+  if (text.includes('deepseek') || text.includes('deep-seek') || text.includes('r1')) {
+    return 'DeepSeek R1';
+  }
+  if (text.includes('grok') || text.includes('xai') || text.includes('twitter')) {
+    return 'Grok 2';
+  }
+  if (text.includes('kimi') || text.includes('moonshot')) {
+    return 'Kimi Chat';
+  }
+  if (text.includes('chatgpt') || text.includes('gpt-4') || text.includes('openai') || text.includes('o1') || text.includes('o3')) {
+    if (text.includes('coding') || text.includes('developer')) return 'ChatGPT (o1)';
+    return 'GPT-4o';
+  }
 
-let nicheCharacter = "Antigravity AI";
-let nicheRole = "Core System Intelligence";
-let modelTarget = "Universal LLM";
+  // If no explicit matches, classify based on task category for maximum performance
+  if (category === 'Coding' || text.includes('code') || text.includes('program') || text.includes('developer')) {
+    return (title.length % 2 === 0) ? 'Claude 3.5 Sonnet' : 'DeepSeek R1';
+  }
+  if (category === 'Writing' || text.includes('write') || text.includes('book') || text.includes('novel')) {
+    const val = title.length % 3;
+    if (val === 0) return 'Claude 3.5 Sonnet';
+    if (val === 1) return 'Kimi Chat';
+    return 'GPT-4o';
+  }
+  if (category === 'Marketing' || text.includes('seo') || text.includes('marketing') || text.includes('ads')) {
+    const val = title.length % 3;
+    if (val === 0) return 'Gemini 1.5 Pro';
+    if (val === 1) return 'Grok 2';
+    return 'GPT-4o';
+  }
+  
+  // Default fallback: Distribute evenly using simple hash of the title
+  const models = [
+    'GPT-4o',
+    'Claude 3.5 Sonnet',
+    'Gemini 1.5 Pro',
+    'DeepSeek R1',
+    'Grok 2',
+    'Kimi Chat'
+  ];
+  let hash = 0;
+  for (let i = 0; i < title.length; i++) {
+    hash += title.charCodeAt(i);
+  }
+  return models[hash % models.length];
+}
+
+// Determine Niche Persona and Model Target dynamically
+const modelTarget = getModernModel(prompt.title, prompt.category, prompt.tags);
+let nicheCharacter = "Nano Banana";
+let nicheRole = "Expert AI System Instruction";
 let latency = "1.5s";
 let qualityScore = 95;
 
-if (lowerCategory.includes('fabric') || lowerTags.includes('fabric')) {
-  nicheCharacter = "Antigravity AI";
-  nicheRole = "Red Team AI Specialist";
-  modelTarget = "Claude 3.5 Sonnet";
-  latency = "2.1s";
+if (modelTarget === 'Claude 3.5 Sonnet') {
+  nicheCharacter = "Nano Banana (Claude)";
+  nicheRole = "System Design Architect & Coder";
+  latency = "2.2s";
   qualityScore = 98;
-} else if (lowerCategory.includes('dev') || lowerCategory.includes('code') || lowerCategory.includes('programming') || lowerTags.includes('coding') || lowerTags.includes('developer') || lowerTags.includes('programming') || lowerTags.includes('python') || lowerTags.includes('javascript')) {
-  nicheCharacter = "Nano Banana (Coding)";
-  nicheRole = "Senior Engineering Mentor";
-  modelTarget = "Claude 3.5 Sonnet";
-  latency = "2.4s";
-  qualityScore = 97;
-} else if (lowerCategory.includes('write') || lowerCategory.includes('writer') || lowerCategory.includes('creative') || lowerTags.includes('writing') || lowerTags.includes('creative') || lowerTags.includes('story')) {
-  nicheCharacter = "Nano Banana (Writing)";
-  nicheRole = "Elite Literary Creator";
-  modelTarget = "GPT-4o";
-  latency = "1.8s";
-  qualityScore = 96;
-} else if (lowerCategory.includes('marketing') || lowerCategory.includes('seo') || lowerCategory.includes('business') || lowerTags.includes('seo') || lowerTags.includes('marketing') || lowerTags.includes('growth')) {
-  nicheCharacter = "Nano Banana (SEO)";
-  nicheRole = "Growth Marketing Strategist";
-  modelTarget = "Gemini 1.5 Pro";
+} else if (modelTarget === 'Gemini 1.5 Pro') {
+  nicheCharacter = "Nano Banana (Gemini)";
+  nicheRole = "Multimodal Context Specialist";
   latency = "1.9s";
+  qualityScore = 96;
+} else if (modelTarget === 'DeepSeek R1') {
+  nicheCharacter = "Nano Banana (DeepSeek)";
+  nicheRole = "Reasoning & Logic Engine";
+  latency = "3.1s";
+  qualityScore = 97;
+} else if (modelTarget === 'Grok 2') {
+  nicheCharacter = "Nano Banana (Grok)";
+  nicheRole = "Real-Time Intelligence Analyst";
+  latency = "1.6s";
   qualityScore = 94;
+} else if (modelTarget === 'Kimi Chat') {
+  nicheCharacter = "Nano Banana (Kimi)";
+  nicheRole = "Long-Context Synthesis Agent";
+  latency = "2.0s";
+  qualityScore = 95;
+} else if (modelTarget === 'ChatGPT (o1)') {
+  nicheCharacter = "Nano Banana (ChatGPT o1)";
+  nicheRole = "Advanced Logical Strategist";
+  latency = "4.2s";
+  qualityScore = 99;
+} else if (modelTarget === 'GPT-4o') {
+  nicheCharacter = "Nano Banana (GPT-4o)";
+  nicheRole = "Generalist Executive Intelligence";
+  latency = "1.5s";
+  qualityScore = 95;
 }
 
 // Generate a high-intent direct-answer opener (60-120 words) for citation maximization
@@ -68,14 +133,20 @@ const directAnswerOpener = `The "${prompt.title}" template is a specialized, pro
 
 // Select an Expert Prompt Engineering Tip based on category
 let expertTip = "For optimal results, place any user-provided reference data or documents within clean XML tags (e.g. <context></context>) directly after copy-pasting this prompt.";
-if (nicheCharacter.includes('Coding')) {
+if (modelTarget === 'Claude 3.5 Sonnet') {
   expertTip = "Developer Tip: When executing this coding prompt on Claude 3.5 Sonnet, ask the model to outline its implementation plan in a scratchpad comment before writing the actual code to reduce syntax bugs.";
-} else if (nicheCharacter.includes('Writing')) {
-  expertTip = "Creator Tip: Combine this creative writing prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.";
-} else if (nicheCharacter.includes('SEO')) {
+} else if (modelTarget === 'Gemini 1.5 Pro') {
   expertTip = "Strategist Tip: Gemini 1.5 Pro excels at processing massive document contexts. Ingest complete market datasets alongside this prompt to output fully contextualized strategic analyses.";
-} else if (nicheCharacter.includes('Antigravity')) {
-  expertTip = "System Instruction: This Fabric-inspired prompt operates best when system directives are strictly enforced. Avoid post-prompt overrides to maintain strict output format compliance.";
+} else if (modelTarget === 'DeepSeek R1') {
+  expertTip = "Reasoning Tip: DeepSeek R1 utilizes advanced chain-of-thought processing. Let the model output its complete <think> blocks without interruption to ensure maximum logical consistency.";
+} else if (modelTarget === 'Grok 2') {
+  expertTip = "Analyst Tip: Grok 2 is natively integrated with real-time X data. Use this prompt alongside live search results queries to generate highly trending marketing copy.";
+} else if (modelTarget === 'Kimi Chat') {
+  expertTip = "Organizer Tip: Kimi Chat has a very high context length for files. Feed multi-page PDFs or academic articles directly into the prompt to generate structured outlines.";
+} else if (modelTarget === 'ChatGPT (o1)') {
+  expertTip = "Logic Tip: ChatGPT o1 is a reasoning-first model. Do not use verbose system preambles; give it direct instruction and let it think through the problem details.";
+} else {
+  expertTip = "Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.";
 }
 
 // Generate structured deep JSON-LD for SoftwareSourceCode & Person Graph

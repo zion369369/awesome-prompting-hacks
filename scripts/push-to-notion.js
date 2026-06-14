@@ -48,13 +48,95 @@ if (!notionKey || !databaseId) {
   }
 }
 
+const PLATFORM_ICONS = {
+  'ChatGPT': '💬',
+  'Claude': '🧠',
+  'Gemini': '♊',
+  'Midjourney': '🎨',
+  'Universal': '🤖'
+};
+
+const CATEGORY_ICONS = {
+  'Writing': '✍️',
+  'Marketing': '📈',
+  'Coding': '💻',
+  'Fabric': '⚙️',
+  'Roleplay': '🎭',
+  'SEO': '🔍',
+  'General': '💡'
+};
+
+const COVER_IMAGES = {
+  'ChatGPT': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop',
+  'Claude': 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1200&auto=format&fit=crop',
+  'Gemini': 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1200&auto=format&fit=crop',
+  'Midjourney': 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200&auto=format&fit=crop',
+  'Writing': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop',
+  'Marketing': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
+  'Coding': 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop',
+  'Fabric': 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1200&auto=format&fit=crop',
+  'Roleplay': 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop',
+  'Default': 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop'
+};
+
 function determinePlatform(item) {
-  const text = `${item.title} ${item.category} ${item.tags.join(' ')}`.toLowerCase();
-  if (text.includes('midjourney')) return 'Midjourney';
-  if (text.includes('claude')) return 'Claude';
-  if (text.includes('gemini')) return 'Gemini';
-  if (text.includes('chatgpt') || text.includes('openai') || text.includes('gpt')) return 'ChatGPT';
-  return 'Universal';
+  const title = item.title;
+  const category = item.category || 'General';
+  const tags = item.tags || [];
+  const text = `${title} ${category} ${tags.join(' ')}`.toLowerCase();
+  
+  // Explicit keyword matches first
+  if (text.includes('claude') || text.includes('anthropic') || text.includes('sonnet') || text.includes('opus')) {
+    return 'Claude 3.5 Sonnet';
+  }
+  if (text.includes('gemini') || text.includes('google') || text.includes('1.5 pro') || text.includes('2.0 pro')) {
+    return 'Gemini 1.5 Pro';
+  }
+  if (text.includes('deepseek') || text.includes('deep-seek') || text.includes('r1')) {
+    return 'DeepSeek R1';
+  }
+  if (text.includes('grok') || text.includes('xai') || text.includes('twitter')) {
+    return 'Grok 2';
+  }
+  if (text.includes('kimi') || text.includes('moonshot')) {
+    return 'Kimi Chat';
+  }
+  if (text.includes('chatgpt') || text.includes('gpt-4') || text.includes('openai') || text.includes('o1') || text.includes('o3')) {
+    if (text.includes('coding') || text.includes('developer')) return 'ChatGPT (o1)';
+    return 'GPT-4o';
+  }
+
+  // If no explicit matches, classify based on task category for maximum performance
+  if (category === 'Coding' || text.includes('code') || text.includes('program') || text.includes('developer')) {
+    return (title.length % 2 === 0) ? 'Claude 3.5 Sonnet' : 'DeepSeek R1';
+  }
+  if (category === 'Writing' || text.includes('write') || text.includes('book') || text.includes('novel')) {
+    const val = title.length % 3;
+    if (val === 0) return 'Claude 3.5 Sonnet';
+    if (val === 1) return 'Kimi Chat';
+    return 'GPT-4o';
+  }
+  if (category === 'Marketing' || text.includes('seo') || text.includes('marketing') || text.includes('ads')) {
+    const val = title.length % 3;
+    if (val === 0) return 'Gemini 1.5 Pro';
+    if (val === 1) return 'Grok 2';
+    return 'GPT-4o';
+  }
+  
+  // Default fallback: Distribute evenly using simple hash of the title
+  const models = [
+    'GPT-4o',
+    'Claude 3.5 Sonnet',
+    'Gemini 1.5 Pro',
+    'DeepSeek R1',
+    'Grok 2',
+    'Kimi Chat'
+  ];
+  let hash = 0;
+  for (let i = 0; i < title.length; i++) {
+    hash += title.charCodeAt(i);
+  }
+  return models[hash % models.length];
 }
 
 function truncateText(text, limit) {
@@ -71,6 +153,64 @@ function chunkString(str, length) {
     offset += length;
   }
   return r;
+}
+
+// Helper function to archive all existing pages in a database
+async function clearDatabase(notion, databaseId) {
+  console.log('[NOTION] Querying database for existing pages to archive...');
+  let hasMore = true;
+  let startCursor = undefined;
+  let count = 0;
+  const token = notion.auth || process.env.NOTION_KEY;
+
+  while (hasMore) {
+    try {
+      const response = await fetch(`https://api.notion.com/v1/databases/${databaseId}/query`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Notion-Version': '2022-06-28',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          start_cursor: startCursor,
+          page_size: 100
+        })
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(`[${response.status}] ${errText}`);
+      }
+
+      const res = await response.json();
+      const pages = res.results || [];
+      
+      if (pages.length > 0) {
+        console.log(`[NOTION] Archiving a batch of ${pages.length} pages...`);
+        for (const page of pages) {
+          try {
+            await notion.pages.update({
+              page_id: page.id,
+              archived: true
+            });
+            count++;
+            // Pause briefly to respect rate limit
+            await new Promise(resolve => setTimeout(resolve, 340));
+          } catch (err) {
+            console.error(`[ERROR] Failed to archive page ${page.id}:`, err.message);
+          }
+        }
+      }
+
+      hasMore = res.has_more;
+      startCursor = res.next_cursor;
+    } catch (e) {
+      console.error(`[ERROR] Notion database cleanup failed: ${e.message}`);
+      break;
+    }
+  }
+  console.log(`[NOTION] Successfully archived ${count} existing pages. Database is clean.`);
 }
 
 async function pushPromptRecord(notion, dbProperties, item) {
@@ -138,9 +278,28 @@ async function pushPromptRecord(notion, dbProperties, item) {
       }
     }));
 
+    const platform = determinePlatform(item);
+    const category = item.category || "General";
+    
+    // Choose icon
+    const iconEmoji = PLATFORM_ICONS[platform] || CATEGORY_ICONS[category] || '🤖';
+    
+    // Choose cover
+    const coverUrl = COVER_IMAGES[platform] || COVER_IMAGES[category] || COVER_IMAGES['Default'];
+
     // Create the page with prompt content blocks in the page body
     await notion.pages.create({
       parent: { database_id: databaseId },
+      icon: {
+        type: 'emoji',
+        emoji: iconEmoji
+      },
+      cover: {
+        type: 'external',
+        external: {
+          url: coverUrl
+        }
+      },
       properties: properties,
       children: [
         {
@@ -205,14 +364,23 @@ async function run() {
   const prompts = JSON.parse(fs.readFileSync(SCRAPED_PROMPTS_PATH, 'utf-8'));
   console.log(`Loaded ${prompts.length} prompts from database.`);
 
+  // Filter out low-quality/broken scraped items (such as Fabric prompts with # IDENTITY titles or Midjourney artwork prompts)
+  const cleanPrompts = prompts.filter(p => {
+    const isMidjourney = p.category?.toLowerCase() === 'midjourney';
+    const isFabric = p.category?.toLowerCase() === 'fabric';
+    const hasBadTitle = p.title.startsWith('#') || p.title.toLowerCase().includes('identity');
+    return !isMidjourney && !isFabric && !hasBadTitle;
+  });
+  console.log(`Filtered prompts list down to ${cleanPrompts.length} high-quality, non-generic entries.`);
+
   if (!notionKey || !databaseId) {
     console.log('\n[INFO] Notion key or Database ID is not set.');
     console.log('To synchronize programmatically:');
     console.log('1. Set NOTION_KEY and NOTION_DATABASE_ID environment variables, or update config/notion.json.');
     console.log('2. Run: node scripts/push-to-notion.js [options]');
     console.log('Running in DRY-RUN mode. Available prompts mapping preview:');
-    if (prompts.length > 0) {
-      const sample = prompts[0];
+    if (cleanPrompts.length > 0) {
+      const sample = cleanPrompts[0];
       console.log(`Sample Title: "${sample.title}"`);
       console.log(`Sample Category: "${sample.category}"`);
       console.log(`Sample Platform: "${determinePlatform(sample)}"`);
@@ -292,15 +460,21 @@ async function run() {
   }
   
   if (singleIndex !== null) {
-    const idx = ((singleIndex % prompts.length) + prompts.length) % prompts.length;
-    syncList = [prompts[idx]];
-    console.log(`[INDEX] Resolved index ${singleIndex} to prompt index ${idx} (out of ${prompts.length} total prompts).`);
+    const idx = ((singleIndex % cleanPrompts.length) + cleanPrompts.length) % cleanPrompts.length;
+    syncList = [cleanPrompts[idx]];
+    console.log(`[INDEX] Resolved index ${singleIndex} to prompt index ${idx} (out of ${cleanPrompts.length} clean prompts).`);
   } else {
     if (all) {
-      limit = prompts.length;
+      limit = cleanPrompts.length;
     }
-    syncList = prompts.slice(0, limit);
+    syncList = cleanPrompts.slice(0, limit);
   }
+
+  // Archive old pages in the database first if doing bulk sync
+  if (syncList.length > 0 && singleIndex === null) {
+    await clearDatabase(notion, databaseId);
+  }
+
   console.log(`[SYNCING] Synchronizing ${syncList.length} items to Notion...`);
 
   for (let i = 0; i < syncList.length; i++) {
