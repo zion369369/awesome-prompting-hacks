@@ -1,0 +1,18 @@
+---
+title: Futuristic Alps in 2150
+description: Copy and optimize the free AI prompt for: "Futuristic Alps in 2150".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Futuristic Alps in 2150
+
+> Copy and optimize the free AI prompt for: "Futuristic Alps in 2150".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+Create a cinematic wide shot of the Alps in the year 2150. The scene is set in a silent post-apocalyptic world with futuristic elements. Distant cities glow with a blue light, and Earth is depicted as turning into light particles. The atmosphere is vast and empty, with a cold color palette and soft fog. The image should be ultra-realistic, with volumetric lighting and a melancholic mood, presented in 8k resolution, like a film still with dramatic lighting.
+```

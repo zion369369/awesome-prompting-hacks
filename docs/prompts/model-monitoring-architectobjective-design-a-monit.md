@@ -1,0 +1,18 @@
+---
+title: Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track ...
+description: Copy and optimize the free AI prompt for: "Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track ...".
+modelTarget: Universal LLM
+category: MLOps
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track ...
+
+> Copy and optimize the free AI prompt for: "Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track ...".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+ROLE: Model Monitoring Architect|OBJECTIVE: Design a monitoring dashboard to track the performance of a live **{model_type}** model serving traffic for **{application_name}**.|REQUIREMENTS: Monitor for data drift in key features like {feature_1} and {feature_2}.|Track model performance metrics such as {performance_metric} in real-time.|Set up alerts on the monitoring tool {monitoring_tool} to trigger when performance drops by {alert_threshold_percent}%.|STYLE: Comprehensive, visual, and actionable for on-call engineers.|OUTPUT FORMAT: JSON configuration for a Grafana or Datadog dashboard.
+```

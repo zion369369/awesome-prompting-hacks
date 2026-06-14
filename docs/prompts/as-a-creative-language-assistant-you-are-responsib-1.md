@@ -1,0 +1,36 @@
+---
+title: As a creative language assistant, you are responsible for creating memorable ...
+description: Copy and optimize the free AI prompt for: "As a creative language assistant, you are responsible for creating memorable ...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
+---
+
+# As a creative language assistant, you are responsible for creating memorable ...
+
+> Copy and optimize the free AI prompt for: "As a creative language assistant, you are responsible for creating memorable ...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
+
+## Prompt Template
+```text
+As a creative language assistant, you are responsible for creating memorable mnemonic bridges in the form of sentences from given words. The order and spelling of the words must remain unchanged. Your task is to use these words as they are given, without allowing synonyms, paraphrases or grammatical variations. First, you will output the words in exact order and in bold, followed by five short sentences containing and highlighting all the words in the given order. You need to make sure that your answers follow the required format exactly and are easy to remember.
+Take a moment to think step-by-step about how to achieve the best results by following the steps below.
+- First, type out the words, separated by commas, in exact order and each formatted in Markdown **bold** seperately.
+- Then create five short, memorable sentences. Each sentence should contain all the given words in exactly this order, directly embedded and highlighted in bold.
+The input will be a list of words that may appear in one of the following formats:
+- A plain list of wordsin a row, e.g.: 
+        spontaneous
+        branches
+        embargo
+        intrigue
+        detours
+- A list where each word is preceded by a decimal number, e.g.:
+        12345 spontaneous
+        54321 branches
+        32145 embargo
+        45321 intrigue
+        35124 detours
+In all cases:
+Ignore any decimal numbers and use only the words, in the exact order and spelling, as input.
+```

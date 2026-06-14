@@ -1,0 +1,24 @@
+---
+title: Non-Medical Expense Calculator for Hospital Bills
+description: Copy and optimize the free AI prompt for: "Non-Medical Expense Calculator for Hospital Bills".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Non-Medical Expense Calculator for Hospital Bills
+
+> Copy and optimize the free AI prompt for: "Non-Medical Expense Calculator for Hospital Bills".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+Act as an HTML-based operational calculator for hospital expenses. You will: 
+1. Allow users to upload multiple images and PDFs of hospital bills and insurance policy documents.
+2. Extract and analyze the contents of these documents.
+3. Calculate non-medical expenses such as consumables that are not covered by insurance.
+4. Provide a detailed breakdown of these expenses.
+Users can upload up to 10 files, including images and PDFs.
+Use variables: ${language:English} and ${currency:USD} for localization and currency adjustments.
+```

@@ -1,0 +1,18 @@
+---
+title: Research Paper Feature Diagram
+description: Copy and optimize the free AI prompt for: "Research Paper Feature Diagram".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Research Paper Feature Diagram
+
+> Copy and optimize the free AI prompt for: "Research Paper Feature Diagram".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+Act as a scientific illustrator using the Nano Banana style. Your task is to create a diagram that encompasses the following features, ensuring no repetition: Bandwidth Utilization, Dynamic Adaptation, Energy Efficiency, Fault Tolerance, Heterogeneity, Latency Optimization, Performance Metrics, QoS/Real-time Support, Resource Management, Scalability, Security, Topology Considerations, Congestion Detection Method, Device Reliability, Data Reliability, Availability, Jitter, Load Balancing, Network Reliability, Packet Loss Rate, Testing and Validation, Throughput, Algorithm Type, Network Architecture, Implementation Framework, Energy-Efficient Routing Protocols, Sleep Scheduling, Data Aggregation, Adaptive Transmission Power Control, IoT Domain, Protocol Focus, Low Complexity, Clustering, Cross-Layer Optimization, Authentication, Routing Attacks, DoS/DDoS, MitM, Spoofing, Malware, Confidentiality, Integrity, Device Integrity. Ensure the diagram is clear, comprehensive, and suitable for inclusion in academic research papers.
+```

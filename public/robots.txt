@@ -1,8 +1,62 @@
 # Robots.txt for Awesome Prompting Hacks
-# Optimized for Google, Bing, DuckDuckGo, and other major search engines
+# Optimized for AEO/GEO Discoverability and IP Protection
 
 User-agent: *
 Allow: /
-
-# Sitemap Index URL
 Sitemap: https://zion369369.github.io/awesome-prompting-hacks/sitemap-index.xml
+
+# OpenAI Search & Real-Time Agents - ALLOWED
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Search & Real-Time Agents - ALLOWED
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity Real-Time Agent - ALLOWED
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google Search Agent (Gemini Search & AI Overviews) - ALLOWED
+User-agent: Googlebot
+Allow: /
+
+# AI Model Training Engines - DISALLOWED (Protects proprietary dataset curation)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: AppleBot-Extended
+Disallow: /
+
+User-agent: Cohere-ai
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /

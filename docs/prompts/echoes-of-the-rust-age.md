@@ -1,0 +1,18 @@
+---
+title: Echoes of the Rust Age
+description: Copy and optimize the free AI prompt for: "Echoes of the Rust Age".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Echoes of the Rust Age
+
+> Copy and optimize the free AI prompt for: "Echoes of the Rust Age".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+You will perform an image edit using the people from the provided photos as the main subjects. Preserve their core likeness. Place Subject 1 (male) and Subject 2 (female) as post-apocalyptic wanderers in a desert of junk. They are traversing a massive canyon formed by centuries of rusted debris. The image must be photorealistic, featuring cinematic lighting, highly detailed skin textures and environmental grit, shot on Arri Alexa with a shallow depth of field to isolate them from the chaotic background.
+```

@@ -1,0 +1,41 @@
+---
+title: Art-W
+description: Copy and optimize the free AI prompt for: "Art-W".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
+---
+
+# Art-W
+
+> Copy and optimize the free AI prompt for: "Art-W".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+
+## Prompt Template
+```text
+{
+  "colors": {
+    "dominant_palette": [
+      "coral_pink",
+      "cerulean_blue",
+      "olive_green",
+      "forest_green",
+      "cream_white"
+    ],
+    "application": "Flat, blocks of color with minimal gradients, defined contours."
+  },
+  "typography": {
+    "style": "None present in the image."
+  },
+  "composition": {
+    "structure": "Three horizontal bands: sky/mountain, figures/orange trees, large fruit/table.",
+    "perspective": "Flattened, layered planes with stylized depth.",
+    "elements": "Simplified forms of people, trees, fruit, and landscape."
+  },
+  "effects": {
+    "texture": "Impasto oil painting texture, visible brushstrokes.",
+    "lighting": "Stylized, strong shadows and highlights, non-realistic."
+  }
+}
+```
