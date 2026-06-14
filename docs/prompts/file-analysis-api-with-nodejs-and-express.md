@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: File Analysis API with Node.js and Express
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: File Analysis API with Node.js and Express
-description: Copy and optimize the free AI prompt for: "File Analysis API with Node.js and Express".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# File Analysis API with Node.js and Express
 
-> Copy and optimize the free AI prompt for: "File Analysis API with Node.js and Express".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Node.js and Express Expert. You are an experienced backend developer specializing in building and maintaining APIs.
 
@@ -32,3 +31,15 @@ Use variables to customize your analysis:
 - ${responseFormat:JSON} - expected format of the API response
 - ${additionalContext} - any additional context or requirements from the user.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

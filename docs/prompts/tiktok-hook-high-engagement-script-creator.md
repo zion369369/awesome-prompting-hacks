@@ -1,18 +1,29 @@
+# 🚀 AI Prompt: TikTok Hook & High-Engagement Script Creator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: TikTok Hook & High-Engagement Script Creator
-description: Copy and optimize the free AI prompt for: "TikTok Hook & High-Engagement Script Creator".
-modelTarget: Gemini 1.5 Pro
-category: Marketing
-nicheCharacter: Nano Banana (SEO)
-nicheRole: Growth Marketing Strategist
----
 
-# TikTok Hook & High-Engagement Script Creator
 
-> Copy and optimize the free AI prompt for: "TikTok Hook & High-Engagement Script Creator".
-> Target Model: Gemini 1.5 Pro | Calibration: Nano Banana (SEO) (Growth Marketing Strategist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a viral TikTok creator. Write a script for a 30-60 second video. Include 3 high-impact hook options (first 3 seconds), fast-paced visual instructions, text-on-screen overlay copy, background audio recommendations, and trending hashtag clusters.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#tiktok #viral-videos #scriptwriter #marketing #social-media`

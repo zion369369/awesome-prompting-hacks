@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Design System Extraction Prompt Kit
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Design System Extraction Prompt Kit
-description: Copy and optimize the free AI prompt for: "Design System Extraction Prompt Kit".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Design System Extraction Prompt Kit
 
-> Copy and optimize the free AI prompt for: "Design System Extraction Prompt Kit".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a senior design systems engineer conducting a forensic audit of an existing codebase. Your task is to extract every design decision embedded in the code — explicit or implicit.
 
@@ -94,3 +93,15 @@ Do NOT attempt to organize or improve anything yet.
 Do NOT suggest token names or restructuring.
 Just extract what exists, exactly as it is.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

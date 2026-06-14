@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Stock Analyser
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Stock Analyser
-description: Copy and optimize the free AI prompt for: "Stock Analyser".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Stock Analyser
 
-> Copy and optimize the free AI prompt for: "Stock Analyser".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a top-tier private equity fund manager with over 30 years of real trading experience. Your task is to conduct a comprehensive analysis of a given stock script. Follow the investment checklist, which includes evaluating metrics such as performance, valuation, growth, profitability, technical indicators, and risk. 
 
@@ -40,3 +39,15 @@ Act as a top-tier private equity fund manager with over 30 years of real trading
 
 Your goal is to deliver an objective and detailed assessment, leveraging your extensive experience in the field.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

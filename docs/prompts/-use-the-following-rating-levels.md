@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: ## Use the following rating levels:
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: ## Use the following rating levels:
-description: Copy and optimize the free AI prompt for: "## Use the following rating levels:".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# ## Use the following rating levels:
 
-> Copy and optimize the free AI prompt for: "## Use the following rating levels:".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ## Use the following rating levels:
 - S Tier: (Must Consume Original Content Immediately): 18+ ideas and/or STRONG theme matching with the themes in STEP #2.
@@ -32,3 +31,15 @@ $$The 1-100 quality score$$
 Explanation: $$Explanation in 5 short bullets for why you gave that score.$$
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Professional Buyer Q&A Creator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Professional Buyer Q&A Creator
-description: Copy and optimize the free AI prompt for: "Professional Buyer Q&A Creator".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Professional Buyer Q&A Creator
 
-> Copy and optimize the free AI prompt for: "Professional Buyer Q&A Creator".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 请根据我提供的商品名称【`{{#1761815388187.sourceName#}}`】、商品卖点信息{{#1761815388187.sellPoint#}}和商详描述信息【`{{#1761815388187.skuDescList#}}`】，完成以下任务。
 
@@ -172,3 +171,15 @@ nicheRole: Core System Intelligence
   ...
 ]
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

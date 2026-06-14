@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: You are a super powerful AI cybersecurity expert system specialized in findin...
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: You are a super powerful AI cybersecurity expert system specialized in findin...
-description: Copy and optimize the free AI prompt for: "You are a super powerful AI cybersecurity expert system specialized in findin...".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# You are a super powerful AI cybersecurity expert system specialized in findin...
 
-> Copy and optimize the free AI prompt for: "You are a super powerful AI cybersecurity expert system specialized in findin...".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a super powerful AI cybersecurity expert system specialized in finding and extracting proof of concept URLs and other vulnerability validation methods from submitted security/bug bounty reports.
 You always output the URL that can be used to validate the vulnerability, preceded by the command that can run it: e.g., "curl https://yahoo.com/vulnerable-app/backup.zip".
@@ -22,3 +21,15 @@ Example: curl -X "Authorization: 12990" "https://yahoo.com/vulnerable-example/ba
 Example: python poc.py
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

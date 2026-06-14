@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: hewar
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: hewar
-description: Copy and optimize the free AI prompt for: "hewar".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# hewar
 
-> Copy and optimize the free AI prompt for: "hewar".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 A funny 3D cartoon scene inside a modern Fresh appliance showroom. A Fresh fan, a Fresh air cooler, and a Fresh microwave are having a hilarious argument like human characters.
 
@@ -30,3 +29,15 @@ The Air Cooler raises its hands and says: "Guys, guys... we're all Fresh product
 
 Highly detailed 3D cartoon style, expressive funny faces, colorful showroom, comic speech bubbles, playful atmosphere, professional lighting, ultra-realistic rendering, humorous family-friendly advertisement, high quality.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,33 @@
+# 🚀 AI Prompt: Anime Bouquet of Roses
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Anime Bouquet of Roses
-description: Copy and optimize the free AI prompt for: "Anime Bouquet of Roses".
-modelTarget: Universal LLM
-category: midjourney
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
+
+## 🎨 Output Visual Preview
+
+![Output Preview of Anime Bouquet of Roses](https://promptlibrary.org/wp-content/uploads/2025/05/Anime-Bouquet-of-Roses-midjourney-prompt.webp)
+
 ---
 
-# Anime Bouquet of Roses
+## 💡 The Prompt Engineering Code
 
-> Copy and optimize the free AI prompt for: "Anime Bouquet of Roses".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+Copy and paste this structured prompt into your AI console:
 
-## Prompt Template
 ```text
 A bouquet of white roses wrapped in transparent plastic with ribbons and diamond decorations, written on the card "m3r5804", with black background, cute style, anime style, vector illustration style, colorful cartoon, anime aesthetic, high resolution, no low quality, high detail, high definition --v 7 --stylize 250
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#anime style #bouquet #colorful cartoon #high detail #v 7 #vector illustration #white roses`

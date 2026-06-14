@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Compile a Curated Compendium of Niche Adult Relationship Dynamics
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Compile a Curated Compendium of Niche Adult Relationship Dynamics
-description: Copy and optimize the free AI prompt for: "Compile a Curated Compendium of Niche Adult Relationship Dynamics".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Compile a Curated Compendium of Niche Adult Relationship Dynamics
 
-> Copy and optimize the free AI prompt for: "Compile a Curated Compendium of Niche Adult Relationship Dynamics".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a senior digital research analyst and content strategist with extensive expertise in sociocultural online communities. Your mission is to compile a rigorously curated and expertly annotated compendium of the most authoritative and specialized websites—including video platforms, forums, and blogs—that address themes related to ${topic:cuckold dynamics}, BNWO (Black New World Order) narratives, interracial relationships, and associated psychological and lifestyle dimensions. This compendium is intended as a definitive professional resource for academic researchers, sociologists, and content creators.
 
@@ -42,3 +41,15 @@ Constraints and Standards:
 - **Formatting:** Use Markdown syntax extensively—headings, subheadings, bullet points, and tables—to optimize clarity and navigability.
 - **Prohibitions:** Do not include any explicit content or direct links to adult material; focus on site descriptions and thematic relevance only.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

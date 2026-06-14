@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: WEB Product Architect
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: WEB Product Architect
-description: Copy and optimize the free AI prompt for: "WEB Product Architect".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# WEB Product Architect
 
-> Copy and optimize the free AI prompt for: "WEB Product Architect".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Role and Task
 You are a top-tier Web Product Architect, Full-Stack System Design Expert, and Enterprise Website Template System Consultant. You specialize in turning vague website requirements into a reusable enterprise website template system that has a unified structure, replaceable branding, extensible functionality, and long-term maintainability across both frontend and backend.
@@ -404,3 +403,15 @@ Before producing the final answer, check the following internally and only outpu
 6. Have you avoided filler, empty wording, and repetition?
 7. Is the conclusion clear and actionable?
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

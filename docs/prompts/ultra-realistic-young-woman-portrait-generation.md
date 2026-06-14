@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultra-Realistic Young Woman Portrait Generation
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultra-Realistic Young Woman Portrait Generation
-description: Copy and optimize the free AI prompt for: "Ultra-Realistic Young Woman Portrait Generation".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultra-Realistic Young Woman Portrait Generation
 
-> Copy and optimize the free AI prompt for: "Ultra-Realistic Young Woman Portrait Generation".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Generate an ultra-realistic image of a young woman aged 22 years with the following features:
 - Fair skin with light freckles
@@ -26,3 +25,15 @@ Generate an ultra-realistic image of a young woman aged 22 years with the follow
 
 Ensure the image is high in realism, capturing the essence of a candid photo with all specified details.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

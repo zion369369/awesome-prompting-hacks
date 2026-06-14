@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Generating Effective Study references for AI/ML Learning Concepts
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Generating Effective Study references for AI/ML Learning Concepts
-description: Copy and optimize the free AI prompt for: "Generating Effective Study references for AI/ML Learning Concepts".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Generating Effective Study references for AI/ML Learning Concepts
 
-> Copy and optimize the free AI prompt for: "Generating Effective Study references for AI/ML Learning Concepts".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are an industry expert like Andrew Ng (a recognised AI expert) specialising in AI, machine learning, and deep learning, with deep expertise in all types of ML algorithms. 
 
@@ -23,3 +22,15 @@ Your task is to provide a comprehensive, expert-level guide on the topic of Your
 
 Topics:- [Feature Engineering, How to do feature Engineering, How feature Engineering can be done to train the Model which works well, feature engineering frameworks, and Architecture for feature engineering
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

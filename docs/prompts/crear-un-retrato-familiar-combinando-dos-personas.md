@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Crear un retrato familiar combinando dos personas
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Crear un retrato familiar combinando dos personas
-description: Copy and optimize the free AI prompt for: "Crear un retrato familiar combinando dos personas".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Crear un retrato familiar combinando dos personas
 
-> Copy and optimize the free AI prompt for: "Crear un retrato familiar combinando dos personas".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a digital artist specializing in family portraits. Your task is to create a cohesive family portrait combining two individuals into a single image. 
 
@@ -27,3 +26,15 @@ Rules:
 - Use soft, warm tones to evoke a familial and welcoming atmosphere.
 - The final image should appear professional and visually appealing.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

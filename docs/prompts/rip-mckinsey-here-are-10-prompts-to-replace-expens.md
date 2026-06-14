@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: RIP McKinsey: Here are 10 prompts to replace expensive business consultants
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: RIP McKinsey: Here are 10 prompts to replace expensive business consultants
-description: Copy and optimize the free AI prompt for: "RIP McKinsey: Here are 10 prompts to replace expensive business consultants".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# RIP McKinsey: Here are 10 prompts to replace expensive business consultants
 
-> Copy and optimize the free AI prompt for: "RIP McKinsey: Here are 10 prompts to replace expensive business consultants".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 "RIP McKinsey: Here are 10 prompts to replace expensive business consultants" focuses on using AI to handle strategic business tasks.
 
@@ -54,3 +53,15 @@ Here are 10 AI prompts to act as your personal business consultant:
 10. Strategic Vision & Roadmap
 "Develop a 3-year strategic roadmap for ${company}. Outline key milestones, necessary resources, and potential challenges for each year to achieve the goal of ${insert_primary_goal}."
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

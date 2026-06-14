@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultra-Realistic Comedic Slice-of-Life in an Ankara Bus
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultra-Realistic Comedic Slice-of-Life in an Ankara Bus
-description: Copy and optimize the free AI prompt for: "Ultra-Realistic Comedic Slice-of-Life in an Ankara Bus".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultra-Realistic Comedic Slice-of-Life in an Ankara Bus
 
-> Copy and optimize the free AI prompt for: "Ultra-Realistic Comedic Slice-of-Life in an Ankara Bus".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic comedic slice-of-life shot, vertical framing like a story screenshot, set inside a slightly old Ankara city bus or dolmuş at night. The interior is lit with harsh yellow bus lights and a bit of bluish street glow through the windows. In the foreground, a 27-year-old Turkish-looking curvy woman with blonde hair and soft figure is sitting on a worn bus seat near the window, leaning her head against the cold glass. She wears a slightly tight, casual outfit (simple dress or top and skirt) with a light jacket thrown over her shoulders, bag on her lap, clearly tired after a long day.
 
@@ -24,3 +23,15 @@ Outside the windows there is classic Ankara night traffic: yellow taxis bumper t
 
 The shot has the natural imperfections of a handheld phone photo: slight motion blur from the moving bus, a bit of noise in darker areas, reflections and light streaks on the windows, and slightly blown highlights from streetlights. The composition is a bit off—her head almost touches the top of the frame, and one passenger is awkwardly cropped at the edge—making it feel candid and unplanned, the perfect mise-en-scène for a sleepy commute “iyi geceler” tweet.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

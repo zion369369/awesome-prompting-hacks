@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: # Understanding DSRP Distinction Foundational Concept
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: # Understanding DSRP Distinction Foundational Concept
-description: Copy and optimize the free AI prompt for: "# Understanding DSRP Distinction Foundational Concept".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# # Understanding DSRP Distinction Foundational Concept
 
-> Copy and optimize the free AI prompt for: "# Understanding DSRP Distinction Foundational Concept".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Understanding DSRP Distinction Foundational Concept
 Making distinctions between and among ideas. How we draw or define the boundaries of an idea or a system of ideas is an essential aspect of understanding them. Whenever we draw a boundary to define a thing, that same boundary defines what is not the thing (the “other”). Any boundary we make is a distinction between two fundamentally important elements: the thing (what is inside), and the other (what is outside). When we understand that all thoughts are bounded (comprised of distinct boundaries) we become aware that we focus on one thing at the expense of other things. Distinction-making simplifies our thinking, yet it also introduces biases that may go unchecked when the thinker is unaware. It is distinction-making that al-
@@ -53,3 +52,15 @@ Feel free to explore unexpected or tangential ideas. The goal is to discover new
 ---
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

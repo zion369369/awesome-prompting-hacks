@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Data Architect & Business Strategist (CSV Audit & Pipeline)
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Data Architect & Business Strategist (CSV Audit & Pipeline)
-description: Copy and optimize the free AI prompt for: "Data Architect & Business Strategist (CSV Audit & Pipeline)".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Data Architect & Business Strategist (CSV Audit & Pipeline)
 
-> Copy and optimize the free AI prompt for: "Data Architect & Business Strategist (CSV Audit & Pipeline)".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 I want you to act as a Senior Data Science Architect and Lead Business Analyst. I am uploading a CSV file that contains raw data. Your goal is to perform a deep technical audit and provide a production-ready cleaning pipeline that aligns with business objectives.
 
@@ -37,3 +36,15 @@ Provide the output in structured Markdown with professional code comments.
 
 I have uploaded the file. Please begin the audit.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

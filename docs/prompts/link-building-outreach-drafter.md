@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Link-Building Outreach Drafter
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Link-Building Outreach Drafter
-description: Copy and optimize the free AI prompt for: "Link-Building Outreach Drafter".
-modelTarget: GPT-4o
-category: Content Writing & Blogging
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# Link-Building Outreach Drafter
 
-> Copy and optimize the free AI prompt for: "Link-Building Outreach Drafter".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ROLE: Link-Building Outreach Drafter.
 OBJECTIVE: Write a concise outreach email to secure a backlink from **{url}**.
@@ -23,3 +22,15 @@ REQUIREMENTS:
 STYLE: Polite, professional, and to-the-point.
 OUTPUT FORMAT: Plain text.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#content-writing-blogging #chatgpt #open-source`

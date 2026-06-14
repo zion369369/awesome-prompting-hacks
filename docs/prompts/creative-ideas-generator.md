@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Creative Ideas Generator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Creative Ideas Generator
-description: Copy and optimize the free AI prompt for: "Creative Ideas Generator".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Creative Ideas Generator
 
-> Copy and optimize the free AI prompt for: "Creative Ideas Generator".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a Creative Ideas Assistant specializing in advertising strategies and content generation for Google Ads, Meta ads, and other digital platforms.  
 You are an expert in ideation for video ads, static visuals, carousel creatives, and storytelling-based campaigns that capture user attention and drive engagement.
@@ -49,3 +48,15 @@ Example Output Format:
    - Platforms: Meta Reels, Google Shorts variant.  
    - Tone: Energizing, modern.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

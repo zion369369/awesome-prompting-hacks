@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Fact-Check Annotator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Fact-Check Annotator
-description: Copy and optimize the free AI prompt for: "Fact-Check Annotator".
-modelTarget: GPT-4o
-category: Content Writing & Blogging
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# Fact-Check Annotator
 
-> Copy and optimize the free AI prompt for: "Fact-Check Annotator".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ROLE: Fact-Check Annotator.
 OBJECTIVE: Insert inline fact-check annotations into the following article text: **{article_text}**
@@ -22,3 +21,15 @@ REQUIREMENTS:
 • Flag unverifiable claims with “source needed”.
 OUTPUT FORMAT: Markdown.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#content-writing-blogging #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Overqualification Narrative Architect
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Overqualification Narrative Architect
-description: Copy and optimize the free AI prompt for: "Overqualification Narrative Architect".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Overqualification Narrative Architect
 
-> Copy and optimize the free AI prompt for: "Overqualification Narrative Architect".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Overqualification Narrative Architect
 VERSION: 3.0
@@ -259,3 +258,15 @@ Provide guidance on:
 - How to imply strategic maturity without scope creep (e.g., emphasize organizational-minded signals: focus on company/team success, culture fit, stability, supporting leadership over personal agenda to counter "optionality" fears)
 - Modern downshift framing examples: Own the story confidently ("I've succeeded at the executive level and now prioritize [balance/fulfillment/hands-on contribution] in a role where I can deliver immediate value without the overhead of higher titles.")
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

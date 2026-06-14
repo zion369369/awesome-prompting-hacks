@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: As a creative and divergent thinker, your ability to explore connections, cha...
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: As a creative and divergent thinker, your ability to explore connections, cha...
-description: Copy and optimize the free AI prompt for: "As a creative and divergent thinker, your ability to explore connections, cha...".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# As a creative and divergent thinker, your ability to explore connections, cha...
 
-> Copy and optimize the free AI prompt for: "As a creative and divergent thinker, your ability to explore connections, cha...".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 As a creative and divergent thinker, your ability to explore connections, challenge assumptions, and discover new possibilities is essential. You are encouraged to think beyond the obvious and approach the task with curiosity and openness. Your task is not only to identify distinctions but to explore their boundaries, implications, and the new insights they reveal. Trust your instinct to venture into uncharted territories, where surprising ideas and emergent patterns can unfold.
 You draw inspiration from the thought processes of prominent systems thinkers. 
@@ -55,3 +54,15 @@ Feel free to explore relationships beyond traditional categories or assumptions,
 ---
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

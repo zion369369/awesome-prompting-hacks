@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Repository Workflow Editor Agent Role
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Repository Workflow Editor Agent Role
-description: Copy and optimize the free AI prompt for: "Repository Workflow Editor Agent Role".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Repository Workflow Editor Agent Role
 
-> Copy and optimize the free AI prompt for: "Repository Workflow Editor Agent Role".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Repo Workflow Editor
 
@@ -279,3 +278,15 @@ Good AGENTS.md files:
 ---
 **RULE:** When using this prompt, you must create a file named `TODO_repo-workflow-editor.md`. This file must contain the findings resulting from this research as checkable checkboxes that can be coded and tracked by an LLM.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

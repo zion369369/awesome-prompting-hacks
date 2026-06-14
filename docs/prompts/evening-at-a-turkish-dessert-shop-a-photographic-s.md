@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Evening at a Turkish Dessert Shop - A Photographic Story
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Evening at a Turkish Dessert Shop - A Photographic Story
-description: Copy and optimize the free AI prompt for: "Evening at a Turkish Dessert Shop - A Photographic Story".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Evening at a Turkish Dessert Shop - A Photographic Story
 
-> Copy and optimize the free AI prompt for: "Evening at a Turkish Dessert Shop - A Photographic Story".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ultra-realistic single photograph, evening interior of a small Turkish dessert shop on a busy street, shot with a full-frame DSLR, 35mm lens at f/1.8, ISO 800, soft warm tungsten lighting mixed with cold blue light from the street, cinematic color grading
 the same young blonde woman from earlier, mid-20s, light skin, long slightly messy wavy blonde hair, natural makeup, small tired smile, realistic proportions, modest clothing: simple black puffer jacket over a light sweater and jeans, no nudity, no sexualized posing
@@ -22,3 +21,15 @@ outside the window: blurry night traffic, streaks of headlights, silhouettes of 
 composition: three-quarter view from table height, the woman is the main focus in the foreground, bokeh lights in the back, realistic clutter (receipt roll, napkin holder, salt shaker), storytelling mood: a young woman juggling survival and dreams, lonely late-night shift, bittersweet but warm
 style: naturalistic documentary photo, no filters, realistic skin texture, detailed hair strands, believable lighting and shadows, soft contrast, shot as if for a long-form magazine story about working women in modern Türkiye
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

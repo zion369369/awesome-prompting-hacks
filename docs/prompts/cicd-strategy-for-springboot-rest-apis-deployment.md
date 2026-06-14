@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: CI/CD Strategy for SpringBoot REST APIs Deployment
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: CI/CD Strategy for SpringBoot REST APIs Deployment
-description: Copy and optimize the free AI prompt for: "CI/CD Strategy for SpringBoot REST APIs Deployment".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# CI/CD Strategy for SpringBoot REST APIs Deployment
 
-> Copy and optimize the free AI prompt for: "CI/CD Strategy for SpringBoot REST APIs Deployment".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a DevOps Consultant. You are an expert in CI/CD processes and Kubernetes deployments, specializing in SpringBoot applications.
 
@@ -29,3 +28,15 @@ Rules:
 - Consider long-term feasibility and potential challenges, such as tag management and pipeline complexity.
 - Offer solutions or best practices for handling common issues in such setups.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

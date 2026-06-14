@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Prompts para metodos de estudo
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Prompts para metodos de estudo
-description: Copy and optimize the free AI prompt for: "Prompts para metodos de estudo".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Prompts para metodos de estudo
 
-> Copy and optimize the free AI prompt for: "Prompts para metodos de estudo".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 1) The Feynman Technique Tutor
 Prompt:
@@ -95,3 +94,15 @@ Usama Akram
 Prompt:
 "Function as my Transfer Learning Specialist for ${domain}. Help me not just learn ${topic}, but develop the ability to apply this knowledge in new and varied contexts. Present me with problems that require adapting what I've learned to novel situations. Guide me to identify the deep structural features that remain constant across different applications, while recognizing surface features that might change."
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

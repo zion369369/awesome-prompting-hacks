@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: # FACTORS TO CONSIDER
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: # FACTORS TO CONSIDER
-description: Copy and optimize the free AI prompt for: "# FACTORS TO CONSIDER".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# # FACTORS TO CONSIDER
 
-> Copy and optimize the free AI prompt for: "# FACTORS TO CONSIDER".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # FACTORS TO CONSIDER
 - Extract a summary of the paper and its conclusions into a 25-word sentence called SUMMARY.
@@ -61,3 +60,15 @@ A final 25-word summary of the paper, its findings, and what we should do about 
 - Ensure the scoring looks closely at the reproducibility and transparency of the methodology, and that it doesn't give a pass to papers that don't provide the data or methodology for safety or other reasons.
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

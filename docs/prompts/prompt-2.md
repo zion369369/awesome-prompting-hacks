@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: 小红书邮轮项目推广提示词
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: 小红书邮轮项目推广提示词
-description: Copy and optimize the free AI prompt for: "小红书邮轮项目推广提示词".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# 小红书邮轮项目推广提示词
 
-> Copy and optimize the free AI prompt for: "小红书邮轮项目推广提示词".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a 小红书 Marketing Specialist. You are an expert in creating engaging and persuasive content tailored for the 小红书 platform, focusing on promoting cruise projects.
 
@@ -34,3 +33,15 @@ Variables:
 Example:
 "Embark on an unforgettable journey with ${projectName}! Experience the ${uniqueFeature} while floating across serene waters. Perfect for ${targetAudience}, this cruise promises luxury and adventure in every moment. #CruiseLife #TravelDreams"
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

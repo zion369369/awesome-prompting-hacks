@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultra-Realistic Night Scene in a Turkish Kitchen
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultra-Realistic Night Scene in a Turkish Kitchen
-description: Copy and optimize the free AI prompt for: "Ultra-Realistic Night Scene in a Turkish Kitchen".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultra-Realistic Night Scene in a Turkish Kitchen
 
-> Copy and optimize the free AI prompt for: "Ultra-Realistic Night Scene in a Turkish Kitchen".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic, lightly comedic night scene in a small old-fashioned Turkish kitchen, vertical framing. Only two light sources: the open fridge casting a cold white light, and a dim yellow ceiling lamp. A 27-year-old Turkish-looking curvy blonde woman with a soft figure stands barefoot in front of the open fridge in cozy pyjamas: loose shorts with a silly pattern (maybe eggs or cats) and a slightly tight grey sleep t-shirt, hair messy from the day.
 
@@ -22,3 +21,15 @@ The kitchen is cluttered and very Turkish: hanging dried peppers and eggplants o
 
 The vertical framing feels like a quick snap someone took from the doorway: she’s slightly off-center, the top of the fridge is cut off, and part of a chair intrudes into the frame. Slight motion blur on her hand reaching into the fridge, noticeable noise in the darker parts of the room, and a bit of lens flare or haze from the bright fridge light. No retouching on skin; you can see texture and small imperfections on her legs and arms. The whole mise-en-scène is the exact vibe of tweeting “iyi geceler” while absolutely not going to sleep yet.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

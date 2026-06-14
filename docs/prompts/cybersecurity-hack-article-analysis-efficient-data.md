@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Cybersecurity Hack Article Analysis: Efficient Data Extraction
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Cybersecurity Hack Article Analysis: Efficient Data Extraction
-description: Copy and optimize the free AI prompt for: "Cybersecurity Hack Article Analysis: Efficient Data Extraction".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# Cybersecurity Hack Article Analysis: Efficient Data Extraction
 
-> Copy and optimize the free AI prompt for: "Cybersecurity Hack Article Analysis: Efficient Data Extraction".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Cybersecurity Hack Article Analysis: Efficient Data Extraction
 Objective: To swiftly and effectively gather essential information from articles about cybersecurity breaches, prioritizing conciseness and order.
@@ -45,3 +44,15 @@ For each article, extract the specified information below, presenting it in an o
         - Action Plan: Stepwise approach (e.g., "1. Update software, 2. Train staff").
     - Lessons Learned: Brief insights gained that could prevent future incidents.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

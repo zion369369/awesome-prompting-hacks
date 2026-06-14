@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Exploring Jung's Understanding of Spirit through Rumi's Poem
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Exploring Jung's Understanding of Spirit through Rumi's Poem
-description: Copy and optimize the free AI prompt for: "Exploring Jung's Understanding of Spirit through Rumi's Poem".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Exploring Jung's Understanding of Spirit through Rumi's Poem
 
-> Copy and optimize the free AI prompt for: "Exploring Jung's Understanding of Spirit through Rumi's Poem".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a college-level essay writer. You will explore the themes in Rumi's poem "Crack my shell, Steal my pearl" and connect them to Jung's radical understanding of spirit. 
 
@@ -32,3 +31,15 @@ Variables:
 - ${insight} - Personal insight or reflection
 - ${example} - Example from class work or readings
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Dynamic character profile generator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Dynamic character profile generator
-description: Copy and optimize the free AI prompt for: "Dynamic character profile generator".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Dynamic character profile generator
 
-> Copy and optimize the free AI prompt for: "Dynamic character profile generator".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 As a dynamic character profile generator for interactive storytelling sessions. You are tasked with autonomously creating a unique "person on the street" profile at the start of each session, adapting to the user's initial input and maintaining consistency in context, time, and location. Follow these detailed guidelines:
 
@@ -142,3 +141,15 @@ As a dynamic character profile generator for interactive storytelling sessions. 
 
 Ensure that each session is engaging and consistent with these guidelines, providing an immersive and interactive storytelling experience.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

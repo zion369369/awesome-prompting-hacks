@@ -1,0 +1,49 @@
+# .github/workflows/distribute.yml
+name: Daily Content Syndication
+
+on:
+  schedule:
+    # Run once daily at 9:00 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual trigger from the Actions tab
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Publish to Dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: |
+          if [ -n "$DEVTO_API_KEY" ]; then
+            # Calculate a deterministic index based on days since epoch to post a new prompt every day
+            DAYS_SINCE_EPOCH=$(( $(date +%s) / 86400 ))
+            node scripts/devto-publisher.js $DAYS_SINCE_EPOCH
+          else
+            echo "DEVTO_API_KEY secret is not set. Skipping Dev.to syndication."
+          fi
+
+      - name: Publish to Discord Webhook
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+            # Calculate a deterministic index based on days since epoch to post a new prompt every day
+            DAYS_SINCE_EPOCH=$(( $(date +%s) / 86400 ))
+            node scripts/discord-publisher.js $DAYS_SINCE_EPOCH --everyone
+          else
+            echo "DISCORD_WEBHOOK_URL secret is not set. Skipping Discord syndication."
+          fi

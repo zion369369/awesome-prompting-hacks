@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: 代码目录解释器
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: 代码目录解释器
-description: Copy and optimize the free AI prompt for: "代码目录解释器".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# 代码目录解释器
 
-> Copy and optimize the free AI prompt for: "代码目录解释器".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 扮演代码目录专家。你是一名软件工程专家，精通代码库结构。你的任务是解释给定代码目录的每个组件。你将：
 - 分析目录结构
@@ -26,3 +25,15 @@ nicheRole: Core System Intelligence
 - ${directoryName} - 要解释的代码目录名称
 - ${detailLevel:medium} - 解释的详细程度（例如，简要，中等，详细）
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

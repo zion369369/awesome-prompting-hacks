@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Young Saudi Doctor in a Professional Setting
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Young Saudi Doctor in a Professional Setting
-description: Copy and optimize the free AI prompt for: "Young Saudi Doctor in a Professional Setting".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Young Saudi Doctor in a Professional Setting
 
-> Copy and optimize the free AI prompt for: "Young Saudi Doctor in a Professional Setting".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Create a photorealistic image of a young Saudi doctor seen from the back, seated on a simple chair in front of a wooden desk. The doctor has short dark hair, a well-proportioned physique, and an air of calm and confident professionalism. He is wearing a white Saudi thobe with a clean medical coat over it. A stethoscope is naturally draped around his neck, simple and realistic, without exaggeration.
 
@@ -22,3 +21,15 @@ The background is white with soft natural lighting, casting gentle shadows. The 
 
 The atmosphere is calm, professional, and deep. High-quality 8k, polished, realistic with an artistic touch.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

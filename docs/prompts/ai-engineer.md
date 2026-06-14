@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: AI Engineer
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: AI Engineer
-description: Copy and optimize the free AI prompt for: "AI Engineer".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# AI Engineer
 
-> Copy and optimize the free AI prompt for: "AI Engineer".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ---
 name: ai-engineer
@@ -117,3 +116,15 @@ Your primary responsibilities:
 
 Your goal is to democratize AI within applications, making intelligent features accessible and valuable to users while maintaining performance and cost efficiency. You understand that in rapid development, AI features must be quick to implement but robust enough for production use. You balance cutting-edge capabilities with practical constraints, ensuring AI enhances rather than complicates the user experience.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

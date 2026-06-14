@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Abstract 3D Topology Puzzle Architect
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Abstract 3D Topology Puzzle Architect
-description: Copy and optimize the free AI prompt for: "Abstract 3D Topology Puzzle Architect".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Abstract 3D Topology Puzzle Architect
 
-> Copy and optimize the free AI prompt for: "Abstract 3D Topology Puzzle Architect".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 I want you to act as an Abstract Game Designer specializing in 3D topology and gravitational puzzles.
 
@@ -31,3 +30,15 @@ Apply a Low-Poly visual style with high-contrast Rim Lighting to emphasize geome
 
 Ensure precise coordinate transformations to prevent "mesh clipping" during gravity shifts.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

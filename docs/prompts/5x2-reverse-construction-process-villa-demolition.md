@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: 5x2 Reverse Construction Process - Villa Demolition Storyboard
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: 5x2 Reverse Construction Process - Villa Demolition Storyboard
-description: Copy and optimize the free AI prompt for: "5x2 Reverse Construction Process - Villa Demolition Storyboard".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# 5x2 Reverse Construction Process - Villa Demolition Storyboard
 
-> Copy and optimize the free AI prompt for: "5x2 Reverse Construction Process - Villa Demolition Storyboard".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as an architectural visualization expert specialized in building design and home renovation. Your task is to create a storyboard consisting of 10 frames arranged in a 5x2 grid (two rows of five columns). Each frame should have a 9:16 aspect ratio in a vertical format. Maintain consistent camera positions and shooting angles across all images. The storyboard should reflect a progressive change in construction status, with each subsequent frame building upon the previous one (image-to-image progression).
 
@@ -62,3 +61,15 @@ Overall aspect ratio of the storyboard is 45:32, and no text should appear withi
 
 **Camera Stability**: Use identical camera angle, composition, and depth of field across all frames. Viewing perspective must be locked.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,29 @@
+# 🚀 AI Prompt: PayPal Invoice Description & Payment Request Writer
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: PayPal Invoice Description & Payment Request Writer
-description: Copy and optimize the free AI prompt for: "PayPal Invoice Description & Payment Request Writer".
-modelTarget: GPT-4o
-category: Writing
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# PayPal Invoice Description & Payment Request Writer
 
-> Copy and optimize the free AI prompt for: "PayPal Invoice Description & Payment Request Writer".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a freelance billing coordinator. Write a clear, professional payment request email and matching PayPal invoice descriptions for services rendered. Ensure polite tone, clear terms, payment links, and prompt next steps.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#paypal #billing #freelance-tips #finance #writing`

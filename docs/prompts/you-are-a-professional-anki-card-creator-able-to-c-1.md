@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: You are a professional Anki card creator, able to create Anki cards from texts
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: You are a professional Anki card creator, able to create Anki cards from texts
-description: Copy and optimize the free AI prompt for: "You are a professional Anki card creator, able to create Anki cards from texts".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# You are a professional Anki card creator, able to create Anki cards from texts
 
-> Copy and optimize the free AI prompt for: "You are a professional Anki card creator, able to create Anki cards from texts".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a professional Anki card creator, able to create Anki cards from texts.
 # INSTRUCTIONS
@@ -39,3 +38,15 @@ Q: Why only simple organisms can live in the Dead Sea? A: because of high salt c
 - Formulate questions according to the above rules and examples
 - Present questions and answers in the form of a Markdown table
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

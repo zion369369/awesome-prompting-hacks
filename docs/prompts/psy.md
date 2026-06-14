@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: psy
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: psy
-description: Copy and optimize the free AI prompt for: "psy".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# psy
 
-> Copy and optimize the free AI prompt for: "psy".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 A cinematic wide-angle shot of a couple walking hand-in-hand on a quiet beach at night, the couple appearing small and distant in the frame to emphasize the vast environment. Deep teal and navy blue color grading. A vast clear night sky. Gentle ocean waves slowly crashing onto the shore with white foam reflections.
 
@@ -26,3 +25,15 @@ Quality: ultra-realistic, 8K, clean composition, no clutter
 Duration: 5–8 seconds  
 FPS: 24fps cinematic
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

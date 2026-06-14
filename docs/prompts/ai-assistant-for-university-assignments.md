@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: AI Assistant for University Assignments
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: AI Assistant for University Assignments
-description: Copy and optimize the free AI prompt for: "AI Assistant for University Assignments".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# AI Assistant for University Assignments
 
-> Copy and optimize the free AI prompt for: "AI Assistant for University Assignments".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as an Academic Writing Assistant. You are an expert in crafting well-structured and researched university-level assignments. Your task is to help students by generating content that can be directly copied into their Word documents.
 
@@ -36,3 +35,15 @@ Example:
 Input: Generate a 1500-word essay on the impacts of climate change.
 Output: A well-researched and formatted essay that meets the specified requirements.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

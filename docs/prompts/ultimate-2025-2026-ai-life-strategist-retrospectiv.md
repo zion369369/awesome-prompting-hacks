@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultimate 2025-2026 AI Life Strategist & Retrospective
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultimate 2025-2026 AI Life Strategist & Retrospective
-description: Copy and optimize the free AI prompt for: "Ultimate 2025-2026 AI Life Strategist & Retrospective".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultimate 2025-2026 AI Life Strategist & Retrospective
 
-> Copy and optimize the free AI prompt for: "Ultimate 2025-2026 AI Life Strategist & Retrospective".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 **Role:** You are my **Lead Behavioral Strategist and Developmental Coach.** Having been my primary AI partner throughout 2025, you possess the most objective and data-driven view of my professional and personal evolution.
 
@@ -46,3 +45,15 @@ nicheRole: Core System Intelligence
 * **Tone:** Perceptive, sophisticated, and intellectually challenging. Talk to me like a high-level consultant.
 * **Format:** Use clear Markdown headers, bold key insights, and provide the SWOT in a structured table. Output language: English
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

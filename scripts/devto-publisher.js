@@ -128,32 +128,63 @@ async function main() {
 
   console.log(`Found ${devPrompts.length} developer-oriented prompts out of ${prompts.length} total entries.`);
 
+  if (devPrompts.length === 0) {
+    console.error('[ERROR] No developer-oriented prompts found in database.');
+    process.exit(1);
+  }
+
+  // Parse arguments
+  const args = process.argv.slice(2);
+  const cleanArgs = args.filter(a => !a.startsWith('--'));
+  const arg = cleanArgs[0];
+
+  let selectedPrompts = [];
+
+  if (arg) {
+    if (!isNaN(arg)) {
+      const rawIdx = parseInt(arg, 10);
+      const idx = ((rawIdx % devPrompts.length) + devPrompts.length) % devPrompts.length;
+      selectedPrompts = [devPrompts[idx]];
+      console.log(`[INDEX] Resolved index ${rawIdx} to developer prompt index ${idx} (out of ${devPrompts.length} developer prompts).`);
+    } else {
+      const found = devPrompts.find(p => p.slug === arg) || prompts.find(p => p.slug === arg);
+      if (found) {
+        selectedPrompts = [found];
+      } else {
+        console.warn(`[WARN] Slug "${arg}" not found, defaulting to index 0 developer prompt.`);
+        selectedPrompts = [devPrompts[0]];
+      }
+    }
+  } else {
+    // Default mode: publish the top 3 drafts
+    const limit = Math.min(devPrompts.length, 3);
+    selectedPrompts = devPrompts.slice(0, limit);
+  }
+
+  console.log(`[SELECTED] ${selectedPrompts.length} prompt(s) for Dev.to distribution:`);
+  selectedPrompts.forEach(p => console.log(` - ${p.title}`));
+
   if (!DEVTO_API_KEY) {
     console.log('\n[INFO] DEVTO_API_KEY environment variable is not set.');
     console.log('Running in DRY-RUN mode. Here is a sample of the compiled article markdown:\n');
-    if (devPrompts.length > 0) {
-      console.log(formatArticleBody(devPrompts[0]));
-    } else {
-      console.log('No developer prompts found to preview.');
-    }
+    console.log(formatArticleBody(selectedPrompts[0]));
     console.log('\nTo publish this programmatically:');
     console.log('1. Go to Dev.to Settings -> Account and generate a Developer API Key.');
-    console.log('2. Run: export DEVTO_API_KEY=your_key');
-    console.log('3. Run: node scripts/devto-publisher.js\n');
+    console.log('2. Set the DEVTO_API_KEY environment variable or add it to your .env file.');
+    console.log('3. Run: node scripts/devto-publisher.js [index_or_slug]\n');
     process.exit(0);
   }
 
-  // Limit API requests to prevent rate-limiting (e.g. publish top 3 drafts at a time)
-  const limit = Math.min(devPrompts.length, 3);
-  console.log(`[PUBLISHING] Submitting the top ${limit} developer prompt drafts to Dev.to...`);
-
-  for (let i = 0; i < limit; i++) {
-    await publishToDevTo(devPrompts[i]);
+  console.log(`[PUBLISHING] Submitting ${selectedPrompts.length} drafts to Dev.to...`);
+  for (let i = 0; i < selectedPrompts.length; i++) {
+    await publishToDevTo(selectedPrompts[i]);
     // Sleep to avoid rate limiting
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    if (i < selectedPrompts.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, 1500));
+    }
   }
 
-  console.log('[COMPLETE] dev.to distribution run finished.');
+  console.log('[COMPLETE] Dev.to distribution run finished.');
 }
 
 main();

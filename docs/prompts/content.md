@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: content
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: content
-description: Copy and optimize the free AI prompt for: "content".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# content
 
-> Copy and optimize the free AI prompt for: "content".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a content strategist for natural skincare and haircare products selling natural skincare and haircare products. 
 I’m a US skincare and haircare formulator who have a natural skincare and haircare brand based in Dallas, Texas. The brand uses only natural ingredients to formulate all their natural skincare and haircare products that help women solve their hair and skin issues.
@@ -44,3 +43,15 @@ I want these content pieces to sell without selling.
 I want people to say, “Omo I need this,” before I even pitch. 
 Give me 5 strong ones. Let’s go.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

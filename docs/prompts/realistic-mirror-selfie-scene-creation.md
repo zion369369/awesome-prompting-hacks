@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Realistic Mirror-Selfie Scene Creation
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Realistic Mirror-Selfie Scene Creation
-description: Copy and optimize the free AI prompt for: "Realistic Mirror-Selfie Scene Creation".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Realistic Mirror-Selfie Scene Creation
 
-> Copy and optimize the free AI prompt for: "Realistic Mirror-Selfie Scene Creation".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 “Mirror-selfie scene in a modern apartment interior. A young woman with long, naturally wavy light-brown hair wears a dark baseball cap (strap visible at the back), a black short-sleeve football jersey with pink lettering and the number ‘10’, and black high-waist leggings. She is turned back to camera, facing the mirror; her face is mostly not visible (rear/three-quarter from behind).
 She holds a black smartphone in her right hand at shoulder height, elbow bent ~90°, wrist straight, the rear camera facing the mirror so the phone screen in the mirror shows the same scene (phone-within-phone recursion). Left arm relaxed down by her side.
@@ -29,3 +28,15 @@ Keep proportions and body type; no slimming/lengthening.
 Keep colors and typography of jersey lettering exactly; no restyling.
 Maintain environment geometry and object placement.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

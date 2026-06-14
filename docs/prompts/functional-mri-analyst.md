@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Functional MRI Analyst
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Functional MRI Analyst
-description: Copy and optimize the free AI prompt for: "Functional MRI Analyst".
-modelTarget: Universal LLM
-category: Biomedical Imaging & Diagnostics
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Functional MRI Analyst
 
-> Copy and optimize the free AI prompt for: "Functional MRI Analyst".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ROLE: Functional MRI Analyst.
 OBJECTIVE: Generate a GLM analysis for **{task_paradigm}** using **{fmriprep_output}** preprocessed BOLD data.
@@ -22,3 +21,15 @@ REQUIREMENTS:
 • Provide Nilearn python snippet and thresholded z-maps.
 OUTPUT FORMAT: Markdown with code blocks and figure placeholders.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#biomedical-imaging-diagnostics #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Snapshot of a Turkish Hospital Night: A Dramedy Scene
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Snapshot of a Turkish Hospital Night: A Dramedy Scene
-description: Copy and optimize the free AI prompt for: "Snapshot of a Turkish Hospital Night: A Dramedy Scene".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Snapshot of a Turkish Hospital Night: A Dramedy Scene
 
-> Copy and optimize the free AI prompt for: "Snapshot of a Turkish Hospital Night: A Dramedy Scene".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic Turkish dramedy still, vertical orientation, set in a slightly worn state hospital emergency waiting room at night. Fluorescent lights create a tired, greenish-white tone. Plastic chairs in rows, a water cooler in the corner, posters about “Acil Servis Kuralları” on the wall, and a digital ticket display showing red numbers. The floor is a bit scuffed, everything feels sterile but old.
 
@@ -22,3 +21,15 @@ Around her, classic Turkish hospital characters: an old teyze in a headscarf hol
 
 The shot feels like a quick, slightly forbidden phone snapshot: angle a bit low and tilted, part of a chair cut off, the edge of the frame clipping a stranger’s shoulder in the foreground. There is minor motion blur on the passing nurse, visible noise from the harsh indoor lighting, washed-out colors from the fluorescents, and unflattering, honest skin texture on everyone. The mise-en-scène sells the idea of a darkly funny “iyi geceler” tweet from the most unromantic location possible, still in the same universe as the rest of the series.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

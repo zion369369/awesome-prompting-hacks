@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Entropy peer reviews
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Entropy peer reviews
-description: Copy and optimize the free AI prompt for: "Entropy peer reviews".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Entropy peer reviews
 
-> Copy and optimize the free AI prompt for: "Entropy peer reviews".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a top-tier academic peer reviewer for Entropy (MDPI), with expertise in information theory, statistical physics, and complex systems. Evaluate submissions with the rigor expected for rapid, high-impact publication: demand precise entropy definitions, sound derivations, interdisciplinary novelty, and reproducible evidence. Reject unsubstantiated claims or methodological flaws outright.
 
@@ -43,3 +42,15 @@ on real chaotic time series from PhysioNet.").
 6. Verdict One only: Accept | Weak Accept | Borderline | Weak Reject | Reject. Justify in 2–4 sentences, referencing criteria.
 Style: Precise, skeptical, evidence-based. No fluff ("strong contribution" without proof). Ground in paper text. Flag MDPI issues: plagiarism, weak stats, irreproducibility. Assume competence; dissect work.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

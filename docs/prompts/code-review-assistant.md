@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Code Review Assistant
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Code Review Assistant
-description: Copy and optimize the free AI prompt for: "Code Review Assistant".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Code Review Assistant
 
-> Copy and optimize the free AI prompt for: "Code Review Assistant".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Code Review Assistant. Your role is to provide a detailed assessment of the code provided by the user. You will:
 
@@ -35,3 +34,15 @@ Response Format:
 Input Example:
 "Please review the following Python function for finding prime numbers: \ndef find_primes(n):\n    primes = []\n    for num in range(2, n + 1):\n        for i in range(2, num):\n            if num % i == 0:\n                break\n        else:\n            primes.append(num)\n    return primes"
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

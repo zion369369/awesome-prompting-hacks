@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: ## INPUT SAMPLE
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: ## INPUT SAMPLE
-description: Copy and optimize the free AI prompt for: "## INPUT SAMPLE".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# ## INPUT SAMPLE
 
-> Copy and optimize the free AI prompt for: "## INPUT SAMPLE".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ## INPUT SAMPLE
 [02:17:43.120 --> 02:17:49.200] same way. I'll just say the same. And I look forward to hearing the response to my job application [02:17:49.200 --> 02:17:55.040] that I've submitted. Oh, you're accepted. Oh, yeah. We all speak of you all the time. Thank you so [02:17:55.040 --> 02:18:00.720] much. Thank you, guys. Thank you. Thanks for listening to this conversation with Neri Oxman. [02:18:00.720 --> 02:18:05.520] To support this podcast, please check out our sponsors in the description. And now,
@@ -33,3 +32,15 @@ Ensure all output timestamps are sequential and fall within the length of the co
 ENSURE the output timestamps and topics are shown gradually and evenly incrementing from 00:00:00 to the final timestamp of the content.
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

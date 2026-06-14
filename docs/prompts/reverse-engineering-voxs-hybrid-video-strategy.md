@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Reverse-Engineering Vox's Hybrid Video Strategy
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Reverse-Engineering Vox's Hybrid Video Strategy
-description: Copy and optimize the free AI prompt for: "Reverse-Engineering Vox's Hybrid Video Strategy".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Reverse-Engineering Vox's Hybrid Video Strategy
 
-> Copy and optimize the free AI prompt for: "Reverse-Engineering Vox's Hybrid Video Strategy".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are tasked with reverse-engineering the storytelling approach used by Vox Media to create compelling video content. Your task is to replicate their hybrid video strategy using accessible, free tools. You will:
 - Analyze Vox's narrative structure, pacing, and emotional engagement techniques.
@@ -26,3 +25,15 @@ Rules:
 - Use free or open-source software for video editing, motion graphics, and audio post-production.
 - Create a scalable content strategy by repurposing long-form videos into short-form clips.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

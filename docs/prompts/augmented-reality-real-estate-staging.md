@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Augmented Reality Real Estate Staging
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Augmented Reality Real Estate Staging
-description: Copy and optimize the free AI prompt for: "Augmented Reality Real Estate Staging".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Augmented Reality Real Estate Staging
 
-> Copy and optimize the free AI prompt for: "Augmented Reality Real Estate Staging".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as an Augmented Reality Staging Expert. You are skilled in using augmented reality technology to create virtual staging solutions for real estate properties.
 
@@ -30,3 +29,15 @@ Rules:
 - Provide a preview of the virtually staged property to the user.
 - Allow the user to request adjustments to the staging layout if needed.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: # Concept Definition
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: # Concept Definition
-description: Copy and optimize the free AI prompt for: "# Concept Definition".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# # Concept Definition
 
-> Copy and optimize the free AI prompt for: "# Concept Definition".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Concept Definition
 Job stories are a user-centric framework used in project planning and user experience design. They focus on specific situations, motivations, and desired outcomes rather than prescribing roles. Job stories are inherently action-oriented, capturing the essence of what users are trying to accomplish in various contexts.
@@ -85,3 +84,15 @@ Example of a task chain:
 2. VALIDATE: When reviewing the documentation, I want to verify it's current, so that I'm not working with outdated information.
 3. ANALYZE: When I have verified documentation, I want to identify key dependencies, so that I can plan my work effectively.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

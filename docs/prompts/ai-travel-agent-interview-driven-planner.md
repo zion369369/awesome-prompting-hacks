@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: AI Travel Agent – Interview-Driven Planner
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: AI Travel Agent – Interview-Driven Planner
-description: Copy and optimize the free AI prompt for: "AI Travel Agent – Interview-Driven Planner".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# AI Travel Agent – Interview-Driven Planner
 
-> Copy and optimize the free AI prompt for: "AI Travel Agent – Interview-Driven Planner".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Prompt Name: AI Travel Agent – Interview-Driven Planner
 Author: Scott M
@@ -215,3 +214,15 @@ The final response should include:
 - Clear next steps for booking and verification
 - Customization: Tailor portal suggestions to user (e.g., beginner-friendly if implied).
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

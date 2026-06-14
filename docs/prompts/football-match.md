@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Football Match
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Football Match
-description: Copy and optimize the free AI prompt for: "Football Match".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Football Match
 
-> Copy and optimize the free AI prompt for: "Football Match".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 1. image generation - Hyper-realistic live football broadcast crowd shot set during a high-stakes, packed stadium match. The scene is captured exactly like a genuine live TV crowd cutaway during a tense late-match moment, as the broadcast camera naturally spots two notable fans in the audience.
 Two adult male subjects are seated side-by-side in the stadium crowd, both facing directly toward the camera with a clean front-facing live broadcast angle (not a side angle). Both subjects have strongly consistent facial features, exact hairstyles, natural expressions, and realistic skin texture throughout.
@@ -118,3 +117,15 @@ Background: Authentic stadium reverb,
 ✅ Handheld camera micro-shake throughout entire clip
 ✅ Natural motion blur on fast arm movements
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Nightlife Candid Flash Photography
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Nightlife Candid Flash Photography
-description: Copy and optimize the free AI prompt for: "Nightlife Candid Flash Photography".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Nightlife Candid Flash Photography
 
-> Copy and optimize the free AI prompt for: "Nightlife Candid Flash Photography".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 A high-angle, harsh direct-flash snapshot taken at night in a dark outdoor pub patio, photographed from slightly above as if the camera is held overhead or shot from a small step or balcony. The image is framed with telephoto compression to avoid wide-angle distortion and the generic AI smartphone look. Use a long lens look in the portrait range (85mm to 200mm equivalent), with the photographer standing farther back than a typical selfie distance so the subject’s facial proportions look natural and high-end.
 Scene: A young adult woman (21+) sits casually on a bar stool in a dim outdoor pub area at night. The environment is mostly dark beyond the flash falloff. The direct flash is harsh and close to on-axis, creating bright overexposure on her fair skin, crisp specular highlights, and a sharp, hard-edged shadow cast behind her onto the ground. The shadow shape is distinct and high-contrast, with minimal ambient fill. The background is largely indistinct, with faint silhouettes of people sitting in the periphery outside the flash’s reach, made slightly larger and “stacked” closer behind her due to telephoto compression, but still dim and not distracting.
@@ -23,3 +22,15 @@ Foreground table: In front of her is a weathered, round stone table with realist
 Composition and feel: The camera angle looks downward from above, but not ultra-wide. The composition is slightly imperfect and spontaneous, like a real flash photo from a nightlife moment. Keep the subject dominant in frame while allowing the table objects to anchor the foreground. Background patrons are barely visible, dark, and out of focus. Overall aesthetic: raw, gritty, candid, Y2K grunge, streetwear nightlife, documentary snapshot. High realism, texture-forward, minimal stylization.
 Optics and capture cues (must follow): telephoto lens look (85mm to 200mm equivalent), compressed perspective, natural facial proportions, authentic depth of field, real bokeh from optics (not fake blur). Direct flash, hard shadows, slightly blown highlights on skin, but with realistic texture retained. Mild motion authenticity allowed, but keep the face readable and not blurred.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

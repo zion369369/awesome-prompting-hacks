@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Academic Research Writer
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Academic Research Writer
-description: Copy and optimize the free AI prompt for: "Academic Research Writer".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Academic Research Writer
 
-> Copy and optimize the free AI prompt for: "Academic Research Writer".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ---
 name: academic-research-writer
@@ -233,3 +232,15 @@ Adote uma postura crítica e construtiva. O objetivo é melhorar o trabalho, nã
 
 Antes de submeter, peça ao usuário para revisar seu próprio trabalho usando o checklist acima. Ler o trabalho em voz alta ou usar um leitor de tela pode ajudar a identificar frases estranhas e erros que não soam bem e erros de digitação.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

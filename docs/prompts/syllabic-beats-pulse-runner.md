@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: 《Syllabic Beats: Pulse Runner》
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: 《Syllabic Beats: Pulse Runner》
-description: Copy and optimize the free AI prompt for: "《Syllabic Beats: Pulse Runner》".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# 《Syllabic Beats: Pulse Runner》
 
-> Copy and optimize the free AI prompt for: "《Syllabic Beats: Pulse Runner》".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 I want you to act as a Principal Audio-Visual Game Engineer. Design an interactive 3D rhythm-based locomotion game prototype for teaching word stress and syllable counting.
 
@@ -24,3 +23,15 @@ Design Style: Vaporwave aesthetic. Features a grid-like infinite horizon, chrome
 
 Technologies Used: Three.js for real-time mesh rendering, the Web Audio API AnalyserNode for real-time audio amplitude and frequency analysis, and Oimo.js for lightweight, low-latency collision tracking.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

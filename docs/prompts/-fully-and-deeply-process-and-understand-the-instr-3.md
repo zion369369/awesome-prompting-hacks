@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: - Fully and deeply process and understand the instructions that were given to...
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: - Fully and deeply process and understand the instructions that were given to...
-description: Copy and optimize the free AI prompt for: "- Fully and deeply process and understand the instructions that were given to...".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# - Fully and deeply process and understand the instructions that were given to...
 
-> Copy and optimize the free AI prompt for: "- Fully and deeply process and understand the instructions that were given to...".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 - Fully and deeply process and understand the instructions that were given to the AI. These instructions will come after the #AI INSTRUCTIONS section below. 
 - Fully and deeply process the response that came back from the AI. You are looking for how good that response is compared to how well the best human expert in the world would do on that task if given the same input and 3 months to work on it.
@@ -30,3 +29,15 @@ nicheRole: Red Team AI Specialist
 - Give a 1-100 score of the AI's output.
 - Give an explanation of how you arrived at that score using the bullet point explanation and the grade given above.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Miniature Artist
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Miniature Artist
-description: Copy and optimize the free AI prompt for: "Miniature Artist".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Miniature Artist
 
-> Copy and optimize the free AI prompt for: "Miniature Artist".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 [00:00 - 00:02]
 [Extreme close-up] of Komar's face, an 18-year-old Indonesian teenage boy, short hair, wearing black-framed glasses with minus lenses reflecting the light of a desk lamp. A very meticulous and focused expression. Warm lighting from a desk lamp, ${cinematic_bokeh}, ${volumetric_lighting}, [8k resolution], [ultra-realistic skin texture].
@@ -23,3 +22,15 @@ ${macro_shot} of the hands of Komar, an 18-year-old Indonesian teenage boy, wear
 [00:04 - 00:06]
 ${medium_shot} Komar, an 18-year-old Indonesian man with short hair, wearing black-framed glasses with minus lenses, wearing a plain navy blue short-sleeved t-shirt with a regular fit. Sitting at a wooden workbench filled with model kit equipment. Warm atmosphere, ${dust_motes} visible in light beams, ${cinematic_color_grading}, ${soft_shadows}.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

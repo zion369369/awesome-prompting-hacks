@@ -1,18 +1,33 @@
+# 🚀 AI Prompt: Korean Actress Portrait in Pastels
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Korean Actress Portrait in Pastels
-description: Copy and optimize the free AI prompt for: "Korean Actress Portrait in Pastels".
-modelTarget: Universal LLM
-category: midjourney
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
+
+## 🎨 Output Visual Preview
+
+![Output Preview of Korean Actress Portrait in Pastels](https://promptlibrary.org/wp-content/uploads/2025/05/Korean-Actress-Portrait-in-Pastels-midjourney-prompt.webp)
+
 ---
 
-# Korean Actress Portrait in Pastels
+## 💡 The Prompt Engineering Code
 
-> Copy and optimize the free AI prompt for: "Korean Actress Portrait in Pastels".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
+Copy and paste this structured prompt into your AI console:
 
-## Prompt Template
 ```text
 A full body a candid portrait of a young woman with short hair, inspired by the natural and elegant style of Korean actresses in their 20s. She is wearing a soft white dress and casual sneakers. She holds a picnic bag and wears or carries a straw hat. The background is a peaceful lakeside park in spring, with soft sunlight, fresh grass, and calm water. Her pose is relaxed, with a gentle breeze blowing through her hair. The atmosphere is warm, realistic yet dreamy, like a storybook. Pastel color palette. Subtitles at the bottom: "DAILY LOOK", "AIPATISSIER WORK SHOP". --ar 9:16 --v 7 --stylize 777
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#candid style #korean actresses #lakeside park #pastel color palette #portrait photography #spring fashion #v 7`

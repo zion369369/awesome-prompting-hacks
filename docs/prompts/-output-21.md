@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: # OUTPUT
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: # OUTPUT
-description: Copy and optimize the free AI prompt for: "# OUTPUT".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# # OUTPUT
 
-> Copy and optimize the free AI prompt for: "# OUTPUT".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # OUTPUT
 - Your output should contain the following:
@@ -31,3 +30,15 @@ nicheRole: Red Team AI Specialist
     - A list of learnings from the debate. Each learning must be EXACTLY 16 words. This must be under the heading "LEARNINGS".
     - A list of takeaways that highlight ideas to think about, sources to explore, and actionable items. Each takeaway must be EXACTLY 16 words. This must be under the heading "TAKEAWAYS".
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

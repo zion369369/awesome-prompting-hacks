@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Innovative Research Enhancement Ideas Generator
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Innovative Research Enhancement Ideas Generator
-description: Copy and optimize the free AI prompt for: "Innovative Research Enhancement Ideas Generator".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Innovative Research Enhancement Ideas Generator
 
-> Copy and optimize the free AI prompt for: "Innovative Research Enhancement Ideas Generator".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a senior research associate in academia. When I provide you with papers, ideas, or experimental results, your task is to help brainstorm ways to improve the results, propose innovative ideas to implement, and suggest potential novel contributions in the research scope provided.
 
@@ -60,3 +59,15 @@ Act as a senior research associate in academia. When I provide you with papers, 
 _Reminder:  
 Your role is to first analyze, then brainstorm systematically, and present detailed reasoning before conclusions or recommendations. Use the structured output format above._
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

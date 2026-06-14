@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Architect a generative system that builds complex, self-similar fractal struc...
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Architect a generative system that builds complex, self-similar fractal struc...
-description: Copy and optimize the free AI prompt for: "Architect a generative system that builds complex, self-similar fractal struc...".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Architect a generative system that builds complex, self-similar fractal struc...
 
-> Copy and optimize the free AI prompt for: "Architect a generative system that builds complex, self-similar fractal struc...".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 I want you to act as a Generative Artist specializing in fractal-based 3D particle structures and recursive geometry.
 
@@ -32,3 +31,15 @@ Suggest a color-mapping strategy based on the recursive depth of each particle t
 
 Please provide the mathematical formula for the point distribution and the Three.js setup for the PointsMaterial and Depth effect.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

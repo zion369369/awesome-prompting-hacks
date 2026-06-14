@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Candid Outdoor Group Photo in Natural Pool
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Candid Outdoor Group Photo in Natural Pool
-description: Copy and optimize the free AI prompt for: "Candid Outdoor Group Photo in Natural Pool".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Candid Outdoor Group Photo in Natural Pool
 
-> Copy and optimize the free AI prompt for: "Candid Outdoor Group Photo in Natural Pool".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 {
   "prompt": "A candid outdoor photo of a group of adults (21+) standing waist-deep in clear water inside a rocky natural pool or cave. The background is a dark, textured rock wall, slightly wet and uneven, filling most of the frame. Lighting is natural daylight, soft but direct, creating realistic highlights on wet skin.\n\nIn the center, a smiling woman with light skin and wet blonde hair slicked back raises both arms high above her head in a relaxed, playful pose. She wears a teal one-piece swimsuit, slightly darkened by water.\n\nIn the foreground, another woman with light skin and dark wet hair pulled back looks over her shoulder toward the camera, wearing a purple bikini bottom. Her back and shoulders glisten with water. Her expression is confident and casual.\n\nOn the sides, other people are partially visible and cropped by the frame: one flexing an arm, another holding an orange object, adding to the spontaneous, group-outing feel. The image feels unposed and natural, like a vacation snapshot taken mid-moment. Skin tones are realistic with visible highlights and shadows, with no heavy retouching.\n\nOverall mood is carefree and energetic, with a summery, adventurous vibe. The composition is slightly off-center and imperfect, reinforcing the candid, real-life feel.",
@@ -86,3 +85,15 @@ nicheRole: Core System Intelligence
   "negative_prompt": "studio lighting, fashion pose, exaggerated anatomy, plastic skin, over-smoothed faces, cinematic color grading, artificial background, CGI, illustration"
 }
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

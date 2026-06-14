@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultra-Realistic Street Photo Prompt: Turkish Woman in Ankara
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultra-Realistic Street Photo Prompt: Turkish Woman in Ankara
-description: Copy and optimize the free AI prompt for: "Ultra-Realistic Street Photo Prompt: Turkish Woman in Ankara".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultra-Realistic Street Photo Prompt: Turkish Woman in Ankara
 
-> Copy and optimize the free AI prompt for: "Ultra-Realistic Street Photo Prompt: Turkish Woman in Ankara".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic amateur street photo of a 27-year-old Turkish-looking curvy woman walking in the middle of a busy Ankara street, soft slightly chubby figure, blonde hair loose around her shoulders, wearing a tight white tank top, patterned high-waisted pants that emphasize her curves, and a small crossbody bag. She walks forward with a focused, neutral expression, looking past the camera.
 
@@ -26,3 +25,15 @@ Shot on a regular iPhone from a few steps behind the main woman, handheld, sligh
 
 The image quality is that of a candid phone snapshot: slight motion blur on walking clones and moving taxis, digital noise in the shadowy areas between buildings, subtle lens flare near the top of the frame, unedited colors, natural skin texture with pores and minor imperfections on all versions of the woman. The scene feels like a realistic everyday Ankara street but glitched, with dozens of variations of the same woman scattered throughout it.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

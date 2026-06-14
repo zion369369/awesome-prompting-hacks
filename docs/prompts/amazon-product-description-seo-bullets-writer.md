@@ -1,18 +1,29 @@
+# 🚀 AI Prompt: Amazon Product Description & SEO Bullets Writer
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Amazon Product Description & SEO Bullets Writer
-description: Copy and optimize the free AI prompt for: "Amazon Product Description & SEO Bullets Writer".
-modelTarget: GPT-4o
-category: Marketing
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# Amazon Product Description & SEO Bullets Writer
 
-> Copy and optimize the free AI prompt for: "Amazon Product Description & SEO Bullets Writer".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as an Amazon listing copywriter. Create a fully optimized product listing including a keyword-rich title, 5 benefit-driven bullet points, and an HTML-formatted product description that complies with Amazon's guidelines and maximizes search visibility.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#amazon #ecommerce #copywriting #product-description #seo`

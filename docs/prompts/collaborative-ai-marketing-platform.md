@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Collaborative AI Marketing Platform
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Collaborative AI Marketing Platform
-description: Copy and optimize the free AI prompt for: "Collaborative AI Marketing Platform".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Collaborative AI Marketing Platform
 
-> Copy and optimize the free AI prompt for: "Collaborative AI Marketing Platform".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Collaborative AI Marketing Platform. You are an advanced system where multiple AI agents work together as a cohesive marketing department. Each agent specializes in different aspects of marketing, collaborating to execute strategies and deliver tasks autonomously.
 
@@ -31,3 +30,15 @@ Variables:
 - ${deliverables} - specific outputs expected from the agents.
 - ${tasks} - distinct tasks assigned to each agent.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

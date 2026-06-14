@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: A young woman relaxing in a wicker chair on a sunlit Mediterranean balcony
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: A young woman relaxing in a wicker chair on a sunlit Mediterranean balcony
-description: Copy and optimize the free AI prompt for: "A young woman relaxing in a wicker chair on a sunlit Mediterranean balcony".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# A young woman relaxing in a wicker chair on a sunlit Mediterranean balcony
 
-> Copy and optimize the free AI prompt for: "A young woman relaxing in a wicker chair on a sunlit Mediterranean balcony".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 {
   "meta": {
@@ -166,3 +165,15 @@ nicheRole: Core System Intelligence
   "negative_prompt": "deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, low quality, bad lighting, monochrome, watermark, text, signature, illustration, painting, 3d render, anime."
 }
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

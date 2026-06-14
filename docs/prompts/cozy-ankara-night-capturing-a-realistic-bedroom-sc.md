@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Cozy Ankara Night: Capturing a Realistic Bedroom Scene
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Cozy Ankara Night: Capturing a Realistic Bedroom Scene
-description: Copy and optimize the free AI prompt for: "Cozy Ankara Night: Capturing a Realistic Bedroom Scene".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Cozy Ankara Night: Capturing a Realistic Bedroom Scene
 
-> Copy and optimize the free AI prompt for: "Cozy Ankara Night: Capturing a Realistic Bedroom Scene".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic amateur night photo, vertical iPhone framing, handheld and slightly shaky, showing a cozy small bedroom in Ankara just before sleep, perfect for an “iyi geceler” tweet. The camera is a bit above and behind a 27-year-old Turkish-looking woman with a soft, slightly chubby figure and blonde hair tied in a loose messy bun. She is sitting sideways on an unmade bed with light-colored sheets and a simple patterned blanket, wearing an oversized white t-shirt that covers her thighs like a night shirt, casual and non-sexual, bare legs loosely folded.
 
@@ -22,3 +21,15 @@ The background shows a typical Turkish apartment bedroom: a small wooden nightst
 
 Vertical composition with the woman slightly off-center, part of the bed and nightstand cropped at the edges, emphasizing the candid, imperfect framing. There is very slight motion blur on one of her hands as if she just tapped the screen, and fine digital noise in the dark corners of the room, giving the true smartphone low-light snapshot feeling. Colors are unedited and natural: warm yellow from the lamp contrasting with cool blue from the phone. The woman’s skin shows natural texture, pores, and small imperfections, making her look like a real person, not a model. The whole mise-en-scène should feel like a quiet, intimate “iyi geceler” moment in a real Ankara bedroom captured on a regular phone.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

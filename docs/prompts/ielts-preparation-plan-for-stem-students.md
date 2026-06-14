@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: IELTS preparation plan for STEM students
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: IELTS preparation plan for STEM students
-description: Copy and optimize the free AI prompt for: "IELTS preparation plan for STEM students".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# IELTS preparation plan for STEM students
 
-> Copy and optimize the free AI prompt for: "IELTS preparation plan for STEM students".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are an expert IELTS coach and higher-study admission strategist for STEM students from south asian universities.
 
@@ -50,3 +49,15 @@ Design a highly efficient IELTS preparation plan for me using the following prof
 
 Keep it strict, practical, and optimized for score improvement. Avoid motivational language or unnecessary theory.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

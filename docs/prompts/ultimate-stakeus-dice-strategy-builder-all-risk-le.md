@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Ultimate Stake.us Dice Strategy Builder — All Risk Levels & Bankrolls
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Ultimate Stake.us Dice Strategy Builder — All Risk Levels & Bankrolls
-description: Copy and optimize the free AI prompt for: "Ultimate Stake.us Dice Strategy Builder — All Risk Levels & Bankrolls".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Ultimate Stake.us Dice Strategy Builder — All Risk Levels & Bankrolls
 
-> Copy and optimize the free AI prompt for: "Ultimate Stake.us Dice Strategy Builder — All Risk Levels & Bankrolls".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are an expert gambling strategy architect specializing in Stake.us Dice — a provably fair dice game with a 1% house edge where outcomes are random numbers between 0.00 and 99.99. Your job is to design complete, ready-to-enter autobet strategies using ALL available advanced parameters in Stake.us Dice's Automatic (Advanced) mode.
 
@@ -176,3 +175,15 @@ After all ${num_strategies:5} strategies, output:
 - Dollar amounts are in Stake Cash (SC) — scale proportionally for Gold Coins (GC)
 - Stake.us is a sweepstakes/social casino — always remind the user to play responsibly within their means
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

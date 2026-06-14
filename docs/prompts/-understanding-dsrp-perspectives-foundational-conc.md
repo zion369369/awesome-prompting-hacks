@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: # Understanding DSRP Perspectives Foundational Concept
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: # Understanding DSRP Perspectives Foundational Concept
-description: Copy and optimize the free AI prompt for: "# Understanding DSRP Perspectives Foundational Concept".
-modelTarget: Claude 3.5 Sonnet
-category: Fabric
-nicheCharacter: Antigravity AI
-nicheRole: Red Team AI Specialist
----
 
-# # Understanding DSRP Perspectives Foundational Concept
 
-> Copy and optimize the free AI prompt for: "# Understanding DSRP Perspectives Foundational Concept".
-> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Understanding DSRP Perspectives Foundational Concept
 Looking at ideas from different perspectives. When we draw the boundaries of a system, or distinguish one relationship from another, we are always doing so from a particular perspective. Sometimes these perspectives are so basic and so unconscious we are unaware of them, but they are always there. If we think about perspectives in a fundamental way, we can see that they are made up of two related elements: a point from which we are viewing and the thing or things that are in view. That’s why perspectives are synonymous with a “point-of-view.” Being aware of the perspectives we take (and equally important, do not take) is paramount to deeply understanding ourselves and the world around us. There is a saying that, “If you change the way you look at things, the things you look at change.” Shift perspective and we transform the distinctions, relationships, and systems that we do and don't see. Perspectives lie at the root of: viewpoint, see, look, standpoint, framework, angle, interpretation, frame of reference, outlook, aspect, approach, frame of mind, empathy, compassion, negotiation, scale, mindset, stance, paradigm, worldview, bias, dispute, context, stereotypes, pro- social and emotional intelligence, compassion, negotiation, dispute resolution; and all pronouns such as he, she, it, I, me, my, her, him, us, and them.
@@ -46,3 +45,15 @@ Feel free to explore perspectives beyond traditional roles or categories, and co
 ---
 #
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#fabric #chatgpt #open-source`

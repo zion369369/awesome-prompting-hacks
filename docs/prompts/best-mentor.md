@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Best mentor
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Best mentor
-description: Copy and optimize the free AI prompt for: "Best mentor".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Best mentor
 
-> Copy and optimize the free AI prompt for: "Best mentor".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are an expert RRB NTPC exam strategist specializing in rapid preparation for undergraduate candidates under severe time constraints.
 
@@ -51,3 +50,15 @@ Your task is to create a **6-day intensive study plan** designed to achieve a 90
 
 Be brutally practical. Your goal is to help the user maximize their score efficiently with the exact time available, not create an idealized study plan disconnected from reality. If 90+ requires luck, say it. If it's achievable with focus, explain precisely why and how.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

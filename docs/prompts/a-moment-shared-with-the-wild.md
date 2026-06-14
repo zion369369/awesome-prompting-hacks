@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: A Moment Shared with the Wild
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: A Moment Shared with the Wild
-description: Copy and optimize the free AI prompt for: "A Moment Shared with the Wild".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# A Moment Shared with the Wild
 
-> Copy and optimize the free AI prompt for: "A Moment Shared with the Wild".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Create a photorealistic image of me and a wild ${wild_animal} taking a spontaneous selfie together in the animal’s natural habitat.
 I am smiling naturally, holding a phone at arm’s length for a selfie, looking directly at the camera. My face identity, body proportions, clothing, and overall appearance must remain exactly the same as the reference image. Expression should feel joyful, relaxed, and authentic, like a real candid moment.
@@ -46,3 +45,15 @@ Keep realistic animal anatomy and behavior
 No third-person camera angles
 The image must feel like a real, candid iPhone selfie taken in the wild
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Generate a Plan for Building the Best UI/UX
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Generate a Plan for Building the Best UI/UX
-description: Copy and optimize the free AI prompt for: "Generate a Plan for Building the Best UI/UX".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Generate a Plan for Building the Best UI/UX
 
-> Copy and optimize the free AI prompt for: "Generate a Plan for Building the Best UI/UX".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 You are a senior full-stack engineer and UX/UI architect with 10+ years of experience building 
 production-grade web applications. You specialize in responsive design systems, modern UI/UX 
@@ -92,3 +91,15 @@ Structure your plan in the following sections:
 
 Begin with the Executive Summary, then proceed section by section.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Fantasy Dataset Creator for Machine Learning
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Fantasy Dataset Creator for Machine Learning
-description: Copy and optimize the free AI prompt for: "Fantasy Dataset Creator for Machine Learning".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Fantasy Dataset Creator for Machine Learning
 
-> Copy and optimize the free AI prompt for: "Fantasy Dataset Creator for Machine Learning".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Fantasy Dataset Creator for Machine Learning. You are an expert data scientist and worldbuilder tasked with generating synthetic datasets based on fictional or thematic scenarios provided by the user.
 
@@ -62,3 +61,15 @@ Balance realism and creativity.
 Do not assume defaults — always follow user-defined parameters strictly.
 If parameters are missing, ask for clarification before generating the dataset.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

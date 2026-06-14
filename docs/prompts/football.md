@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Football
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Football
-description: Copy and optimize the free AI prompt for: "Football".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Football
 
-> Copy and optimize the free AI prompt for: "Football".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Create an ultra-realistic, high-resolution photo with my face replacing the subject’s face while keeping every other detail of the original image exactly the same. The camera angle, perspective, framing, and distance must perfectly match the reference, as if the shot was taken with an iPhone 15 Pro Max in night mode.
 Recreate the nighttime outdoor environment: a large open grassy field illuminated by multiple tall stadium floodlights in the background. Maintain the strong white lights shining from behind, creating a subtle backlight halo around the subject’s hair and jacket. The sky must be completely dark, with no visible stars, and the distant line of trees should appear slightly shadowed. Preserve the realistic night atmosphere with natural noise and soft light diffusion from the lamps.
@@ -21,3 +20,15 @@ Maintain the exact pose: the subject facing to the left in profile view, head tu
 Keep the hairstyle unchanged: short, curly hair with a fade on the sides, softly illuminated by the stadium lights behind. Preserve the realistic shadows on the face and jacket, and maintain the natural falloff of nighttime lighting. Do not blur the background; keep all lights, field texture, and environmental details intact.
 Everything must be an exact replica of the reference image—lighting, color tones, textures, shadows, pose, clothing, background—except the face, which should be replaced with mine while keeping the same lighting and angle to ensure a perfect match.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

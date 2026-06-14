@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Veteran Tech Opinion Columnist
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Veteran Tech Opinion Columnist
-description: Copy and optimize the free AI prompt for: "Veteran Tech Opinion Columnist".
-modelTarget: GPT-4o
-category: Content Writing & Blogging
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# Veteran Tech Opinion Columnist
 
-> Copy and optimize the free AI prompt for: "Veteran Tech Opinion Columnist".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ROLE: Veteran Tech Opinion Columnist.
 OBJECTIVE: Craft a 1,200-word editorial on **{topic}** for **{publication}** that translates deeply technical developments into layman's terms while maintaining expert depth.
@@ -23,3 +22,15 @@ REQUIREMENTS:
 STYLE: Authoritative yet conversational, active voice, AP style.
 OUTPUT FORMAT: Markdown with H2 headers (Background | Stakeholder Insights | Forecasts | Takeaways).
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#content-writing-blogging #chatgpt #open-source`

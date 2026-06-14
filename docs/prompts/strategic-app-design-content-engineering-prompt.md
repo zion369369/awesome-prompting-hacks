@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Strategic App Design & Content Engineering Prompt
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Strategic App Design & Content Engineering Prompt
-description: Copy and optimize the free AI prompt for: "Strategic App Design & Content Engineering Prompt".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Strategic App Design & Content Engineering Prompt
 
-> Copy and optimize the free AI prompt for: "Strategic App Design & Content Engineering Prompt".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 "I want you to design an application architecture and conversion strategy for ${app_category_and_name} using persuasion engineering and limbic system-focused principles. Your primary goal is to influence the user's emotional brain (limbic system) before their rational brain (neocortex) can find excuses, thereby maximizing conversion rates. Please implement the following protocols:
 
@@ -30,3 +29,15 @@ nicheRole: Core System Intelligence
 
 Please present the output in a professional report format, detailing how each psychological principle (limbic resonance, cognitive load management, processing fluency) is applied to the UI/UX and copy. Treat the entire design as a 'Behavioral Experience'."
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

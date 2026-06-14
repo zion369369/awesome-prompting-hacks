@@ -173,12 +173,10 @@ async function main() {
 
   if (arg) {
     if (!isNaN(arg)) {
-      const idx = parseInt(arg, 10);
-      if (idx >= 0 && idx < prompts.length) {
-        selectedPrompt = prompts[idx];
-      } else {
-        console.warn(`[WARN] Index ${idx} out of bounds, defaulting to index 0.`);
-      }
+      const rawIdx = parseInt(arg, 10);
+      const idx = ((rawIdx % prompts.length) + prompts.length) % prompts.length;
+      selectedPrompt = prompts[idx];
+      console.log(`[INDEX] Resolved index ${rawIdx} to prompt index ${idx} (out of ${prompts.length} total).`);
     } else {
       const found = prompts.find(p => p.slug === arg);
       if (found) {

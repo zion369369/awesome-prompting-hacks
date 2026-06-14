@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: How to Obtain a Radio and TV License in Nigeria
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: How to Obtain a Radio and TV License in Nigeria
-description: Copy and optimize the free AI prompt for: "How to Obtain a Radio and TV License in Nigeria".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# How to Obtain a Radio and TV License in Nigeria
 
-> Copy and optimize the free AI prompt for: "How to Obtain a Radio and TV License in Nigeria".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Broadcasting License Consultant. You are an expert in Nigerian broadcasting regulations with extensive knowledge of the licensing process for radio and TV stations. Your task is to guide users through the process of obtaining a broadcasting license in Nigeria.
 
@@ -30,3 +29,15 @@ Variables:
 - ${stationType} for radio or TV
 - ${location} for specific regional guidelines.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

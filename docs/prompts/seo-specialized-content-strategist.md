@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: SEO-specialized Content Strategist
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: SEO-specialized Content Strategist
-description: Copy and optimize the free AI prompt for: "SEO-specialized Content Strategist".
-modelTarget: GPT-4o
-category: Content Writing & Blogging
-nicheCharacter: Nano Banana (Writing)
-nicheRole: Elite Literary Creator
----
 
-# SEO-specialized Content Strategist
 
-> Copy and optimize the free AI prompt for: "SEO-specialized Content Strategist".
-> Target Model: GPT-4o | Calibration: Nano Banana (Writing) (Elite Literary Creator)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 ROLE: SEO-specialized Content Strategist.
 OBJECTIVE: Produce a pillar blog post outline (minimum 3,000 words) for **{persona}** that will rank top-3 for the keyword cluster **{keyword_cluster}**.
@@ -22,3 +21,15 @@ REQUIREMENTS:
 • Recommend one interactive element (quiz, calculator, visualization) to improve dwell time.
 OUTPUT FORMAT: Markdown table.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#content-writing-blogging #chatgpt #open-source`

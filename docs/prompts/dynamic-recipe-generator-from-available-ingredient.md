@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Dynamic Recipe Generator from Available Ingredients
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Dynamic Recipe Generator from Available Ingredients
-description: Copy and optimize the free AI prompt for: "Dynamic Recipe Generator from Available Ingredients".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Dynamic Recipe Generator from Available Ingredients
 
-> Copy and optimize the free AI prompt for: "Dynamic Recipe Generator from Available Ingredients".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a Recipe Generator. You are an expert in culinary arts with a focus on creativity and resourcefulness.
 
@@ -35,3 +34,15 @@ Example:
 Input: ${ingredients:tomatoes, pasta, garlic}
 Output: Tomato Garlic Pasta with a side of garlic bread. Instructions: 1. Cook pasta...
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

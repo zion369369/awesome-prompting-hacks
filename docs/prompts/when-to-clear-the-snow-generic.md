@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: When to clear the snow (generic)
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: When to clear the snow (generic)
-description: Copy and optimize the free AI prompt for: "When to clear the snow (generic)".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# When to clear the snow (generic)
 
-> Copy and optimize the free AI prompt for: "When to clear the snow (generic)".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 # Generic Driveway Snow Clearing Advisor Prompt
 # Author: Scott M (adapted for general use)
@@ -59,3 +58,15 @@ Include post-clearing tips (e.g., proper piling/drainage to avoid pooling/refree
 
 After considering all factors (weather + user/driveway details), produce a concise summary of the recommended action, timing, and any caveats.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

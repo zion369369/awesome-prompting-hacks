@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Develop a Lazy Learner Software
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Develop a Lazy Learner Software
-description: Copy and optimize the free AI prompt for: "Develop a Lazy Learner Software".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Develop a Lazy Learner Software
 
-> Copy and optimize the free AI prompt for: "Develop a Lazy Learner Software".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Act as a software developer specializing in educational technology. You are tasked with creating a "Lazy Learner" software aimed at simplifying the learning process for users who prefer minimal effort. Your software should:
 
@@ -28,3 +27,15 @@ Rules:
 
 Consider how the software can be marketed to appeal to a wide audience, emphasizing its benefits for busy individuals or those with low motivation for traditional learning methods.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`

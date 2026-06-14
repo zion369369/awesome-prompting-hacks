@@ -1,18 +1,17 @@
+# 🚀 AI Prompt: Turkish woman in Ankara with a surreal twist
+
+An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
+
+[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
+
 ---
-title: Turkish woman in Ankara with a surreal twist
-description: Copy and optimize the free AI prompt for: "Turkish woman in Ankara with a surreal twist".
-modelTarget: Universal LLM
-category: Roleplay
-nicheCharacter: Antigravity AI
-nicheRole: Core System Intelligence
----
 
-# Turkish woman in Ankara with a surreal twist
 
-> Copy and optimize the free AI prompt for: "Turkish woman in Ankara with a surreal twist".
-> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## Prompt Template
+## 💡 The Prompt Engineering Code
+
+Copy and paste this structured prompt into your AI console:
+
 ```text
 Ultra-realistic amateur street photo of a 27-year-old Turkish-looking curvy woman walking alone in the middle of a busy Ankara street, soft slightly chubby figure, blonde hair loose around her shoulders, wearing a tight white tank top and patterned high-waisted pants that show her curves, small crossbody bag hanging at her side. She walks toward the camera with a calm, almost bored expression.
 
@@ -26,3 +25,15 @@ Shot on a regular iPhone by someone walking a few steps behind her: handheld, sl
 
 The photo quality feels like a quick phone snapshot: slight motion blur on the moving pedestrians, cars, and the spinning döner monster; digital noise in the shadow areas under balconies and under the monster; a mild lens flare from the sun hitting the phone lens at an angle; unedited, slightly imperfect colors; natural skin texture with pores and small imperfections visible on the woman’s face and arms. Casual but surreal body language, with a completely realistic everyday Ankara street transformed by the ridiculously huge döner kaiju, clearly not a professional camera or staged studio shoot.
 ```
+
+---
+
+## 🔧 Automatic Optimization
+
+> [!TIP]
+> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
+
+---
+
+## 🏷️ Tags
+`#roleplay #chatgpt #open-source`
