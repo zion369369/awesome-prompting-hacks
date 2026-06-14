@@ -2,6 +2,7 @@
 // src/layouts/BaseLayout.astro
 import '../styles/global.css';
 import seoConfig from '../../config/seo.json';
+import { SEO } from 'astro-seo';
 
 interface Props {
   title: string;
@@ -25,39 +26,47 @@ const ogImage = image
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    {seoConfig.google_site_verification && (
-      <meta name="google-site-verification" content={seoConfig.google_site_verification} />
-    )}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="llms-txt" href="https://zion369369.github.io/awesome-prompting-hacks/llms.txt" />
     <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
     <link rel="icon" href={`${baseUrl}favicon.ico`} />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
     
     <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     
-    <!-- Core SEO Meta Tags -->
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href={canonicalUrl} />
-    
-    <!-- Open Graph tags for social display -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={canonicalUrl} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImage} />
+    <SEO
+      title={title}
+      description={description}
+      canonical={canonicalUrl}
+      openGraph={{
+        basic: {
+          title: title,
+          type: "website",
+          image: ogImage,
+          url: canonicalUrl,
+        },
+        optional: {
+          siteName: "Awesome Prompting Hacks",
+          locale: "en_US",
+          description: description,
+        }
+      }}
+      twitter={{
+        card: "summary_large_image",
+        title: title,
+        description: description,
+        image: ogImage,
+      }}
+      extend={{
+        meta: [
+          { name: "robots", content: "index, follow" },
+          { name: "generator", content: Astro.generator },
+          ...(seoConfig.google_site_verification ? [{ name: "google-site-verification", content: seoConfig.google_site_verification }] : [])
+        ]
+      }}
+    />
     
     <!-- Inline Dynamic JSON-LD structured schema block -->
     {jsonLd && (
