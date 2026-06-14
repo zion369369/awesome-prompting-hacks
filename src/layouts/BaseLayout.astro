@@ -1,6 +1,7 @@
 ---
 // src/layouts/BaseLayout.astro
 import '../styles/global.css';
+import seoConfig from '../../config/seo.json';
 
 interface Props {
   title: string;
@@ -24,6 +25,9 @@ const ogImage = image
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    {seoConfig.google_site_verification && (
+      <meta name="google-site-verification" content={seoConfig.google_site_verification} />
+    )}
     <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
     <link rel="icon" href={`${baseUrl}favicon.ico`} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
