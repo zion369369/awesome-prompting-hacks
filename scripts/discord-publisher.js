@@ -43,46 +43,71 @@ function truncateText(text, limit) {
   return text.substring(0, limit - 3) + '...';
 }
 
-function formatDiscordPayload(prompt) {
+function formatDiscordPayload(prompt, mentionType = null) {
   const liveUrl = `${TARGET_DOMAIN}/prompts/${prompt.slug}`;
+  const repoUrl = 'https://github.com/zion369369/awesome-prompting-hacks';
   
   // Truncate the prompt code snippet to 1000 chars to avoid hitting embed limits (6000 total)
   const maxPromptLength = 1000;
   const truncatedPrompt = truncateText(prompt.prompt, maxPromptLength);
   
-  // Create description content
-  const description = `**Copy and run this optimized prompt template in Claude, ChatGPT, or Gemini:**\n\n\`\`\`text\n${truncatedPrompt}\n\`\`\`\n${
-    prompt.prompt.length > maxPromptLength ? `*...Note: Prompt truncated. [Read full prompt on the website](${liveUrl})*\n` : ''
-  }`;
+  // Custom headers to maximize reach and CTR
+  let contentStr = `🔥 **[NEW] Production-Grade AI Prompt Template Released!**\nOptimize your developer workflow with our latest curated engineering hack.`;
+  if (mentionType === 'everyone') {
+    contentStr = `@everyone\n${contentStr}`;
+  } else if (mentionType === 'here') {
+    contentStr = `@here\n${contentStr}`;
+  }
 
-  // Custom embed colors: HSL/Hex tailored dark-premium look
-  // Discord uses base-10 integers for colors. Hex #7B2CBF (purple) is 8072383 in decimal.
-  const embedColor = 8072383; 
+  // Choose visually rich emojis based on category to make the embed pop
+  let categoryEmoji = "📂";
+  const cat = (prompt.category || "").toLowerCase();
+  if (cat.includes("coding") || cat.includes("dev") || cat.includes("chatgpt")) categoryEmoji = "💻";
+  else if (cat.includes("writing") || cat.includes("content")) categoryEmoji = "✍️";
+  else if (cat.includes("marketing") || cat.includes("seo")) categoryEmoji = "📈";
+
+  // Create description content with a quick-copy markdown block
+  const description = `
+**📋 QUICK-COPY PROMPT TEMPLATE**
+\`\`\`text
+${truncatedPrompt}
+\`\`\`
+${prompt.prompt.length > maxPromptLength ? `*⚠️ Note: Prompt is truncated. [Get the full un-truncated template here](${liveUrl})*\n` : ''}
+💡 *Copy the code block above and paste it directly into Claude, ChatGPT, or Gemini as a system instruction.*
+`;
+
+  // Hex #5865F2 (Discord Blurple) in decimal is 5793266
+  const embedColor = 5793266; 
 
   const payload = {
     username: "Awesome Prompting Hacks",
     avatar_url: FAVICON_URL,
-    content: `🚀 **New AI Prompt Template Released!**\nAutomate your development workflows with this high-performance template.`,
+    content: contentStr,
     embeds: [
       {
-        title: prompt.title,
+        title: `⚡ ${prompt.title}`,
         description: description,
         url: liveUrl,
         color: embedColor,
         fields: [
           {
-            name: "📂 Category",
-            value: prompt.category || "General",
+            name: `${categoryEmoji} Category`,
+            value: `**${prompt.category || "General"}**`,
             inline: true
           },
           {
             name: "🏷️ Tags",
-            value: prompt.tags.slice(0, 5).join(', ') || "ai, prompt",
+            value: prompt.tags.slice(0, 4).map(t => `\`${t}\``).join(' ') || "`ai` `prompt`",
             inline: true
+          },
+          {
+            name: "🚀 Drive Your Reach & Support Us",
+            value: `⭐ **[Star our GitHub Repository](${repoUrl})** to track 5,000+ free prompt engineering hacks!\n🧩 **[Download the Chrome Extension](${CHROME_STORE_URL})** to get real-time prompt scores inside your AI chat console.`,
+            inline: false
           }
         ],
         footer: {
-          text: "Awesome Prompting Hacks • Free Production-Grade AI Prompts",
+          text: "Awesome Prompting Hacks • Curated AI Templates",
           icon_url: FAVICON_URL
         },
         timestamp: new Date().toISOString()
@@ -93,8 +118,8 @@ function formatDiscordPayload(prompt) {
   return payload;
 }
 
-async function publishToDiscord(prompt) {
-  const payload = formatDiscordPayload(prompt);
+async function publishToDiscord(prompt, mentionType = null) {
+  const payload = formatDiscordPayload(prompt, mentionType);
 
   try {
     const response = await fetch(webhookUrl, {
@@ -129,9 +154,22 @@ async function main() {
     process.exit(1);
   }
 
-  // Select prompt: check command arguments first
-  let selectedPrompt = prompts[0]; // Default to first
-  const arg = process.argv[2];
+  const args = process.argv.slice(2);
+  
+  // Parse mention flags
+  let mentionType = null;
+  if (args.includes('--everyone')) {
+    mentionType = 'everyone';
+  } else if (args.includes('--here')) {
+    mentionType = 'here';
+  }
+
+  // Filter out command line flags to locate the target prompt slug/index
+  const cleanArgs = args.filter(a => !a.startsWith('--'));
+  const arg = cleanArgs[0];
+
+  // Select prompt: default to first prompt
+  let selectedPrompt = prompts[0];
 
   if (arg) {
     if (!isNaN(arg)) {
@@ -152,21 +190,24 @@ async function main() {
   }
 
   console.log(`[SELECTED] "${selectedPrompt.title}" for Discord distribution.`);
+  if (mentionType) {
+    console.log(`[MENTION] Configured to notify: @${mentionType}`);
+  }
 
   if (!webhookUrl) {
     console.log('\n[INFO] DISCORD_WEBHOOK_URL is not set.');
     console.log('Running in DRY-RUN mode. Here is a sample of the compiled JSON payload:\n');
-    console.log(JSON.stringify(formatDiscordPayload(selectedPrompt), null, 2));
+    console.log(JSON.stringify(formatDiscordPayload(selectedPrompt, mentionType), null, 2));
     console.log('\nTo publish this programmatically:');
     console.log('1. Open your Discord server settings -> Integrations -> Webhooks.');
     console.log('2. Create/copy a Webhook URL.');
     console.log('3. Set the DISCORD_WEBHOOK_URL environment variable or save it in your .env file.');
-    console.log('4. Run: node scripts/discord-publisher.js [index_or_slug]\n');
+    console.log('4. Run: node scripts/discord-publisher.js [index_or_slug] [--everyone | --here]\n');
     process.exit(0);
   }
 
   console.log(`[PUBLISHING] Sending payload to Discord webhook...`);
-  await publishToDiscord(selectedPrompt);
+  await publishToDiscord(selectedPrompt, mentionType);
   console.log('[COMPLETE] Discord distribution run finished.');
 }
 
