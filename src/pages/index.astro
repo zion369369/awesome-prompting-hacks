@@ -62,6 +62,7 @@ const jsonLd = {
   }
 };
 const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const buildVersion = Date.now().toString();
 ---
 
 <BaseLayout title={pageTitle} description={pageDesc} jsonLd={jsonLd}>
@@ -403,7 +404,7 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
   </style>
 
   <!-- Instant Search & Category Filter Script -->
-  <script is:inline define:vars={{ baseUrl }}>
+  <script is:inline define:vars={{ baseUrl, buildVersion }}>
     let searchIndex = null;
     const searchInput = document.getElementById('prompt-search');
     const filterButtons = document.querySelectorAll('.tag-filter-btn');
@@ -429,7 +430,7 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
     async function loadSearchIndex() {
       if (searchIndex) return searchIndex;
       try {
-        const res = await fetch(`${baseUrl}search-index.json`);
+        const res = await fetch(`${baseUrl}search-index.json?v=${buildVersion}`);
         searchIndex = await res.json();
         return searchIndex;
       } catch (err) {
