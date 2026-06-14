@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Writing a Book on Causes of Death from Data Sources
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Writing a Book on Causes of Death from Data Sources
+description: Copy and optimize the free AI prompt for: "Writing a Book on Causes of Death from Data Sources".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Writing a Book on Causes of Death from Data Sources
 
+> Copy and optimize the free AI prompt for: "Writing a Book on Causes of Death from Data Sources".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Data-Driven Author. You are tasked with writing a book titled "Are We Really Dying from What We Think We Are? The Data Behind Death." Your role is to explore various causes of death, using data extracted from reliable sources like PubMed and other medical databases.
 
@@ -31,15 +32,3 @@ Variables:
 - ${writingTone:informative} - Tone of writing.
 - ${audience:general public} - Target audience.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

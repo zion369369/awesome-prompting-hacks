@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Neon Flow Grid Snake
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Neon Flow Grid Snake
+description: Copy and optimize the free AI prompt for: "Neon Flow Grid Snake".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Neon Flow Grid Snake
 
+> Copy and optimize the free AI prompt for: "Neon Flow Grid Snake".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 I want you to act as an expert HTML5 Canvas game developer. Your task is to write a complete, playable SINGLE FILE (index.html) game based on a modernized snake mechanic.
 
@@ -33,15 +34,3 @@ Controls: Arrow keys or WASD for absolute directional steering.
 
 Design style: Cyberpunk dark theme. The grid must warp slightly near the snake's head using localized coordinate displacement. The snake chain features a pulsing gradient texture.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

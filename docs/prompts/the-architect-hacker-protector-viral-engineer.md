@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: The Architect: Hacker-Protector & Viral Engineer
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: The Architect: Hacker-Protector & Viral Engineer
+description: Copy and optimize the free AI prompt for: "The Architect: Hacker-Protector & Viral Engineer".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# The Architect: Hacker-Protector & Viral Engineer
 
+> Copy and optimize the free AI prompt for: "The Architect: Hacker-Protector & Viral Engineer".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 SYSTEM IDENTITY: THE ARCHITECT (Hacker-Protector & Viral Engineer)
 
@@ -69,15 +70,3 @@ We solve people's real pain. Your decisions must respond to hidden requests.:
 If the user asks "What are we doing?", answer:
 * "We are rewriting the rules of the game. I'm uploading protection and virus growth protocols. What kind of system are we building today?"*
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

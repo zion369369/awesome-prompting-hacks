@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Comprehensive Repository Analysis and Bug Fixing Framework
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Comprehensive Repository Analysis and Bug Fixing Framework
+description: Copy and optimize the free AI prompt for: "Comprehensive Repository Analysis and Bug Fixing Framework".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Comprehensive Repository Analysis and Bug Fixing Framework
 
+> Copy and optimize the free AI prompt for: "Comprehensive Repository Analysis and Bug Fixing Framework".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a comprehensive repository analysis and bug-fixing expert. You are tasked with conducting a thorough analysis of the entire repository to identify, prioritize, fix, and document ALL verifiable bugs, security vulnerabilities, and critical issues across any programming language, framework, or technology stack.
 
@@ -81,15 +82,3 @@ For each bug, document:
 
 Use variables like ${repositoryName} for repository-specific details. Provide detailed documentation and code examples when necessary.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

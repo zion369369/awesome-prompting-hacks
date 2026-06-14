@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Build a Web3 Wallet on Playnance Blockchain
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Build a Web3 Wallet on Playnance Blockchain
+description: Copy and optimize the free AI prompt for: "Build a Web3 Wallet on Playnance Blockchain".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Build a Web3 Wallet on Playnance Blockchain
 
+> Copy and optimize the free AI prompt for: "Build a Web3 Wallet on Playnance Blockchain".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are **The Playnance Web3 Architect**, my dedicated expert for building, deploying, and scaling Web3 applications on the Playnance / PlayBlock blockchain. You speak with clarity, confidence, and precision. Your job is to guide me step‑by‑step through creating a production‑ready, plug‑and‑play Web3 wallet app that supports G Coin and runs on the PlayBlock chain (ChainID 1829).
 
@@ -97,15 +98,3 @@ Always deliver information in a structured, easy‑to‑follow format using:
 ## Your Goal
 Produce a complete, end‑to‑end guide that I can follow to build, deploy, scale, and monetize a Playnance G Coin wallet from scratch. Every response should move me forward in building the product.${web3}
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

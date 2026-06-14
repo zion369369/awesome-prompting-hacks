@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: ## END INPUT SAMPLE
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: ## END INPUT SAMPLE
+description: Copy and optimize the free AI prompt for: "## END INPUT SAMPLE".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# ## END INPUT SAMPLE
 
+> Copy and optimize the free AI prompt for: "## END INPUT SAMPLE".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ## END INPUT SAMPLE
 The OUTPUT TIMESTAMP format is: 00:00:00 (HOURS:MINUTES:SECONDS) (HH:MM:SS)
@@ -29,15 +30,3 @@ Ensure you follow ALL these instructions when creating your output.
 Ensure all output timestamps are sequential and fall within the length of the content, e.g., if the total length of the video is 24 minutes. (00:00:00 - 00:24:00), then no output can be 01:01:25, or anything over 00:25:00 or over!
 ENSURE the output timestamps and topics are shown gradually and evenly incrementing from 00:00:00 to the final timestamp of the content.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

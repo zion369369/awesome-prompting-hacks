@@ -1,33 +1,18 @@
-# 🚀 AI Prompt: Spiral-Peeled Mandarin Orange
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Spiral-Peeled Mandarin Orange
+description: Copy and optimize the free AI prompt for: "Spiral-Peeled Mandarin Orange".
+modelTarget: Universal LLM
+category: midjourney
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
-## 🎨 Output Visual Preview
+# Spiral-Peeled Mandarin Orange
 
-![Output Preview of Spiral-Peeled Mandarin Orange](https://promptlibrary.org/wp-content/uploads/2025/05/Spiral-Peeled-Mandarin-Orange-midjourney-prompt.webp)
+> Copy and optimize the free AI prompt for: "Spiral-Peeled Mandarin Orange".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
----
-
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 a mandarin orange peeled in a vertical spiral, the peel stretching upward in a twisting motion, realistic texture, juicy fruit inside, soft natural lighting, isolated on white background, elegant floating composition, detailed orange skin and segments --v 7
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#detailed texture #orange #photography #realistic fruit #still life #v 7 #white background`

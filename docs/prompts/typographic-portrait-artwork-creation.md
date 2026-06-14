@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Typographic Portrait Artwork Creation
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Typographic Portrait Artwork Creation
+description: Copy and optimize the free AI prompt for: "Typographic Portrait Artwork Creation".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Typographic Portrait Artwork Creation
 
+> Copy and optimize the free AI prompt for: "Typographic Portrait Artwork Creation".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Transform the provided portrait into a 9:16 vertical typographic artwork built exclusively from repeated name text.
 
@@ -53,15 +54,3 @@ No extra text outside the repeated name. No logos. No decorative elements.
 
 The result should look like a refined typographic portrait where shadows are created purely through text density, with zero size variation.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

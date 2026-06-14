@@ -1,29 +1,18 @@
-# 🚀 AI Prompt: Pinterest Pin Description & SEO Keywords Planner
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Pinterest Pin Description & SEO Keywords Planner
+description: Copy and optimize the free AI prompt for: "Pinterest Pin Description & SEO Keywords Planner".
+modelTarget: Gemini 1.5 Pro
+category: Marketing
+nicheCharacter: Nano Banana (SEO)
+nicheRole: Growth Marketing Strategist
 ---
 
+# Pinterest Pin Description & SEO Keywords Planner
 
+> Copy and optimize the free AI prompt for: "Pinterest Pin Description & SEO Keywords Planner".
+> Target Model: Gemini 1.5 Pro | Calibration: Nano Banana (SEO) (Growth Marketing Strategist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Pinterest SEO expert. Design 3 pin description options based on the user's blog post or product. Include high-traffic keywords, a compelling description that encourages clicks, a call to action, and relevant hashtags.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#pinterest #pinterest-seo #social-media #marketing #blogging`

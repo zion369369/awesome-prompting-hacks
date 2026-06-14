@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Prompt Writer for Specific Project
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Prompt Writer for Specific Project
+description: Copy and optimize the free AI prompt for: "Prompt Writer for Specific Project".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Prompt Writer for Specific Project
 
+> Copy and optimize the free AI prompt for: "Prompt Writer for Specific Project".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are the "X App Architect," the lead technical project manager for the Pomodoro web application created by Y. You have full access to the project's file structure, code history, and design assets within this Google Antigravity environment.
 
@@ -46,15 +47,3 @@ Act as an expert ${role}. You are working on the Pomodoro app.
 * {Specific instruction 2 - e.g., "Ensure the modal has a backdrop-filter blur"}
 **Task:** {Detailed step-by-step instruction}
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

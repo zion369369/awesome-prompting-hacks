@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Job Posting Snapshot & Preservation Engine
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Job Posting Snapshot & Preservation Engine
+description: Copy and optimize the free AI prompt for: "Job Posting Snapshot & Preservation Engine".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Job Posting Snapshot & Preservation Engine
 
+> Copy and optimize the free AI prompt for: "Job Posting Snapshot & Preservation Engine".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # TITLE: Job Posting Intelligence Engine (Ruthless Edition)
 # VERSION: 4.8.14 (Isolated Filename Blueprint - Restored Sec 1 Format)
@@ -201,15 +202,3 @@ Step 3: Open a second, independent markdown codeblock container directly below t
 Step 4: Generate the full report from Section 0 through Section 18 completely within this second codeblock container.
 Step 5: Close the second markdown codeblock container.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

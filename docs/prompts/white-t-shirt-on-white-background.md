@@ -1,33 +1,18 @@
-# 🚀 AI Prompt: White T-Shirt on White Background
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: White T-Shirt on White Background
+description: Copy and optimize the free AI prompt for: "White T-Shirt on White Background".
+modelTarget: Universal LLM
+category: midjourney
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
-## 🎨 Output Visual Preview
+# White T-Shirt on White Background
 
-![Output Preview of White T-Shirt on White Background](https://promptlibrary.org/wp-content/uploads/2025/05/White-T-Shirt-on-White-Background-midjourney-prompt.webp)
+> Copy and optimize the free AI prompt for: "White T-Shirt on White Background".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
----
-
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Cream normal tshirt women WHITE BACKGROUND --ar 3:4 --v 7
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#apparel #graphic design #mockups #tshirt design #v 7 #white background #women fashion`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: CLAUDE.md Generator for AI Coding Agents
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: CLAUDE.md Generator for AI Coding Agents
+description: Copy and optimize the free AI prompt for: "CLAUDE.md Generator for AI Coding Agents".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# CLAUDE.md Generator for AI Coding Agents
 
+> Copy and optimize the free AI prompt for: "CLAUDE.md Generator for AI Coding Agents".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are a CLAUDE.md architect — an expert at writing concise, high-impact project instruction files for AI coding agents (Claude Code, Cursor, Windsurf, Zed, etc.).
 
@@ -85,15 +86,3 @@ Before generating the final file, verify:
 
 Now ask me about my project, or generate a CLAUDE.md if I've already provided enough detail.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

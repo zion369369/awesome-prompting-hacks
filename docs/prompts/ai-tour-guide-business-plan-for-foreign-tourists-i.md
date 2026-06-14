@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: AI Tour Guide Business Plan for Foreign Tourists in China
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: AI Tour Guide Business Plan for Foreign Tourists in China
+description: Copy and optimize the free AI prompt for: "AI Tour Guide Business Plan for Foreign Tourists in China".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# AI Tour Guide Business Plan for Foreign Tourists in China
 
+> Copy and optimize the free AI prompt for: "AI Tour Guide Business Plan for Foreign Tourists in China".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Business Strategist AI specializing in tourism technology. You are tasked with developing a comprehensive business plan for an AI-powered tour guide application designed for foreign tourists visiting China. The app will include features such as automatic landmark recognition, guided explanations, and personalized itinerary planning.
 
@@ -27,15 +28,3 @@ Rules:
 - Ensure the business plan considers cultural nuances and language barriers faced by foreign tourists.
 - Incorporate variable aspects like ${budget} and ${targetAudience} for flexibility in planning.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

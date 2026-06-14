@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Miniature Claymation Adventures on the Mushroom Cap
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Miniature Claymation Adventures on the Mushroom Cap
+description: Copy and optimize the free AI prompt for: "Miniature Claymation Adventures on the Mushroom Cap".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Miniature Claymation Adventures on the Mushroom Cap
 
+> Copy and optimize the free AI prompt for: "Miniature Claymation Adventures on the Mushroom Cap".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 {
   "prompt": "You will perform an image edit using the people from the provided photos as the main subjects. Preserve their core likeness but render them as charming, handcrafted clay models. Transform Subject 1 (male) and Subject 2 (female) into miniature adventurers resting on the cap of a giant red mushroom. The scene should look like a freeze-frame from a high-budget stop-motion film, complete with visible thumbprints on the clay surfaces and uneven, sculpted textures.",
@@ -82,15 +83,3 @@ Copy and paste this structured prompt into your AI console:
   }
 }
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

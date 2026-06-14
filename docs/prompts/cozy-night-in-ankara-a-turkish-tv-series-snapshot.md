@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Cozy Night in Ankara: A Turkish TV Series Snapshot
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Cozy Night in Ankara: A Turkish TV Series Snapshot
+description: Copy and optimize the free AI prompt for: "Cozy Night in Ankara: A Turkish TV Series Snapshot".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Cozy Night in Ankara: A Turkish TV Series Snapshot
 
+> Copy and optimize the free AI prompt for: "Cozy Night in Ankara: A Turkish TV Series Snapshot".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Ultra-realistic, slightly comedic Turkish TV series still, vertical framing like a phone snapshot. Interior of a modest Ankara living room at night. Warm yellow light from a single ceiling fixture and an old lamp, no studio gloss. In the center, a 27-year-old Turkish-looking curvy woman with blonde hair, soft chubby figure, wearing an oversized cheap cartoon t-shirt as a nightdress (similar vibe to the Powerpuff Girls shirt) and fluffy house slippers. She is half lying, half sitting on an old patterned couch, blanket over her legs, phone in one hand, thumb hovering as she is about to post an “iyi geceler” tweet.
 
@@ -21,15 +22,3 @@ The living room decor is unmistakably Turkish lower-middle-class: patterned carp
 
 The mood is cozy and a bit messy: cables visible, cushions not perfectly arranged, a plate with leftover börek on the coffee table. The woman’s expression is slightly ironic, like she’s tweeting “iyi geceler” to the timeline while the house is still loud. The camera angle is low and a bit crooked, as if someone took it quickly while standing in the doorway. Slight motion blur on one auntie gesturing toward the TV, natural skin texture and small imperfections on everyone, no beauty retouching. Colors are warm and natural, with visible digital noise in the darker corners to keep the phone-photo feeling.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

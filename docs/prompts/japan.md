@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Japan
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Japan
+description: Copy and optimize the free AI prompt for: "Japan".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Japan
 
+> Copy and optimize the free AI prompt for: "Japan".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 {
   "prompt": "You will perform an image edit using the person from the provided photo as the main subject. The face must remain clear and unaltered. Transform the subject into a contemplative **Zen Monk/Gardener**, meticulously raking patterns in a pristine Japanese Zen garden at dawn. Emphasize minimalist aesthetics, soft natural light, tranquil colors, and a profound sense of peace and mindfulness.",
@@ -30,15 +31,3 @@ Copy and paste this structured prompt into your AI console:
     "environmental_elements": "Perfectly defined, flowing patterns in the white gravel. The texture of the weathered rocks. Fine dew drops might be visible on the moss or the rake. The distant bamboo fence provides a subtle, natural boundary to the tranquil space."
   }
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

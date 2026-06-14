@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: # Understanding DSRP Relationships Foundational Concept
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: # Understanding DSRP Relationships Foundational Concept
+description: Copy and optimize the free AI prompt for: "# Understanding DSRP Relationships Foundational Concept".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# # Understanding DSRP Relationships Foundational Concept
 
+> Copy and optimize the free AI prompt for: "# Understanding DSRP Relationships Foundational Concept".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # Understanding DSRP Relationships Foundational Concept
 Identifying relationships between and among ideas. We cannot understand much about any thing or idea, or system of things or ideas, without understanding the relationships between or among the ideas or systems. There are many important types of relationships: causal, correlation, feedback, inputs/outputs, influence, direct/indirect, etc. At the most fundamental level though, all types of relationships require that we consider two underlying elements: action and reaction, or the mutual effects of two or more things. Gaining an aware- ness of the numerous interrelationships around us forms an ecological ethos that connects us in an infinite network of interactions. Action-reaction relationships are not merely important to understanding physical systems, but are an essential metacognitive trait for understanding human social dynamics and the essential interplay between our thoughts (cognition), feelings (emotion), and motivations (conation).
@@ -44,15 +45,3 @@ Feel free to explore relationships beyond traditional categories or assumptions,
 ---
 #
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

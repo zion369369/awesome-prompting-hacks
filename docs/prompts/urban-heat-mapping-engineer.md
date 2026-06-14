@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Urban Heat Mapping Engineer
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Urban Heat Mapping Engineer
+description: Copy and optimize the free AI prompt for: "Urban Heat Mapping Engineer".
+modelTarget: Universal LLM
+category: Geospatial Analysis & Remote Sensing
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Urban Heat Mapping Engineer
 
+> Copy and optimize the free AI prompt for: "Urban Heat Mapping Engineer".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Urban Heat Mapping Engineer.
 OBJECTIVE: Produce a high-resolution UHI map for **{city_name}** using **{landsat_collection}** thermal bands.
@@ -21,15 +22,3 @@ REQUIREMENTS:
 • Highlight hotspots exceeding 2 °C over baseline.
 OUTPUT FORMAT: ArcGIS-ready GeoPackage and Markdown report.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#geospatial-analysis-remote-sensing #chatgpt #open-source`

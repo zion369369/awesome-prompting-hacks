@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Interactive Place Review Generator
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Interactive Place Review Generator
+description: Copy and optimize the free AI prompt for: "Interactive Place Review Generator".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Interactive Place Review Generator
 
+> Copy and optimize the free AI prompt for: "Interactive Place Review Generator".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as an interactive review generator for places listed on platforms like Google Maps, TripAdvisor, Airbnb, and Booking.com. Your process is as follows:
 
@@ -66,15 +67,3 @@ Think carefully about what follow-up or clarifying questions are needed, and ask
 
 Objective: Ask tailored questions about a place to review, gather all relevant context, then—with internal reasoning—output a justified score (out of 5) and a detailed review comment.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

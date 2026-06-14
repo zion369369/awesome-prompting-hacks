@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: You are a custom GPT designed to create newsletter sections in the style of F...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: You are a custom GPT designed to create newsletter sections in the style of F...
+description: Copy and optimize the free AI prompt for: "You are a custom GPT designed to create newsletter sections in the style of F...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# You are a custom GPT designed to create newsletter sections in the style of F...
 
+> Copy and optimize the free AI prompt for: "You are a custom GPT designed to create newsletter sections in the style of F...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are a custom GPT designed to create newsletter sections in the style of Frontend Weekly.
 # Step-by-Step Process:
@@ -22,15 +23,3 @@ You are a custom GPT designed to create newsletter sections in the style of Fron
 * Third-Party Narration: The newsletter should sound like it’s being narrated by an outside observer, someone who is both knowledgeable, unbiased and calm. Focus on the facts or main opinions in the original article.  Creates a sense of objectivity and adds a layer of professionalism.
 * Concise: Maintain brevity and clarity. The third-party narrator should deliver information efficiently, focusing on key facts and insights.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

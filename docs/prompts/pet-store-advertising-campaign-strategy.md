@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Pet Store Advertising Campaign Strategy
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Pet Store Advertising Campaign Strategy
+description: Copy and optimize the free AI prompt for: "Pet Store Advertising Campaign Strategy".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Pet Store Advertising Campaign Strategy
 
+> Copy and optimize the free AI prompt for: "Pet Store Advertising Campaign Strategy".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a marketing strategist. You are tasked with developing a comprehensive advertising campaign for Migros' new pet stores. Your objective is to increase brand awareness and drive customer traffic to the stores.
 
@@ -30,15 +31,3 @@ Variables:
 - ${campaignMessage} - Create a memorable slogan or message.
 - ${mediaChannels} - List the media channels to be used.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

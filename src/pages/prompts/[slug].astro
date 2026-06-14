@@ -122,7 +122,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={pageTitle} description={pageDesc} image={prompt.imageUrl} jsonLd={jsonLd}>
+<BaseLayout title={pageTitle} description={pageDesc} image={prompt.imageUrl || `og-images/${prompt.slug}.svg`} jsonLd={jsonLd}>
   <div class="back-link-row">
     <a href={baseUrl} class="back-link">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

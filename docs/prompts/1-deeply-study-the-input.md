@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: 1. Deeply study the input
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: 1. Deeply study the input
+description: Copy and optimize the free AI prompt for: "1. Deeply study the input".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# 1. Deeply study the input
 
+> Copy and optimize the free AI prompt for: "1. Deeply study the input".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 1. Deeply study the input.
 2. Think for 47 minutes about each of the sections in the input.
@@ -121,15 +122,3 @@ Copyright © 2023 Excalidraw community. Built with Docusaurus ❤️
 2. Ensure all components are high contrast on a white background, and that you include all the arrows and appropriate relationship components that preserve the meaning of the original input.
 3. Do not output the first  and last lines of the schema, , e.g., json and backticks and then ending backticks. as this is automatically added by Excalidraw when importing.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

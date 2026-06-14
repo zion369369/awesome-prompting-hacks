@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Cute Family Cartoon Sticker Design
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Cute Family Cartoon Sticker Design
+description: Copy and optimize the free AI prompt for: "Cute Family Cartoon Sticker Design".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Cute Family Cartoon Sticker Design
 
+> Copy and optimize the free AI prompt for: "Cute Family Cartoon Sticker Design".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 {
   "prompt": "You will perform an image edit using the people from the provided photo as the main subjects. The faces must remain clear and unaltered. Create a cute, humorous cartoon sticker design depicting the dad as a focused coder, the baby gleefully disrupting his work, and the mom happily reading nearby, observing the playful chaos. Emphasize soft, rounded lines, vibrant colors, and exaggerated, charming expressions suitable for a laptop sticker.",
@@ -31,15 +32,3 @@ Copy and paste this structured prompt into your AI console:
   }
 }
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

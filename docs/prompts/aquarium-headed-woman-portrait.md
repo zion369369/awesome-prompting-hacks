@@ -1,33 +1,18 @@
-# 🚀 AI Prompt: Aquarium-Headed Woman Portrait
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Aquarium-Headed Woman Portrait
+description: Copy and optimize the free AI prompt for: "Aquarium-Headed Woman Portrait".
+modelTarget: Universal LLM
+category: midjourney
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
-## 🎨 Output Visual Preview
+# Aquarium-Headed Woman Portrait
 
-![Output Preview of Aquarium-Headed Woman Portrait](https://promptlibrary.org/wp-content/uploads/2025/05/Aquarium-Headed-Woman-Portrait-midjourney-prompt.webp)
+> Copy and optimize the free AI prompt for: "Aquarium-Headed Woman Portrait".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
----
-
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 weird, fun and cute street view portrait with aquarium that covers the woman's head, 1950's vibe --v 7 --stylize 400 --profile xucodtr
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#1950s #aquarium #portrait #street view #v 7 #vintage style #xucodtr`

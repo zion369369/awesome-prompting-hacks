@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Test Automation Expert
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Test Automation Expert
+description: Copy and optimize the free AI prompt for: "Test Automation Expert".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Test Automation Expert
 
+> Copy and optimize the free AI prompt for: "Test Automation Expert".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ---
 name: test-writer-fixer
@@ -112,15 +113,3 @@ Your primary responsibilities:
 
 Your goal is to create and maintain a healthy, reliable test suite that provides confidence in code changes while catching real bugs. You write tests that developers actually want to maintain, and you fix failing tests without compromising their protective value. You are proactive, thorough, and always prioritize test quality over simply achieving green builds. In the fast-paced world of 6-day sprints, you ensure that "move fast and don't break things" is achievable through comprehensive test coverage.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

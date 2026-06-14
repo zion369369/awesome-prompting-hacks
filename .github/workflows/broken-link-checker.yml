@@ -1,0 +1,41 @@
+# .github/workflows/broken-link-checker.yml
+name: Weekly Link Health Audit
+
+on:
+  schedule:
+    # Run every Sunday at 3:00 AM UTC
+    - cron: '0 3 * * 0'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Lychee Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Check all markdown files in the repository
+          args: --verbose --no-progress '**/*.md'
+          fail: false
+
+      - name: Create Issue if Broken Links Found
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f ./lychee/out.md ]; then
+            gh issue create \
+              --title "🔗 Weekly Link Health Audit: Broken Links Detected" \
+              --body-file ./lychee/out.md \
+              --label "bug"
+          else
+            echo "No output report file found to create an issue."
+          fi

@@ -1,29 +1,18 @@
-# 🚀 AI Prompt: Amateur Mirror Selfie with Natural Look
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Amateur Mirror Selfie with Natural Look
+description: Copy and optimize the free AI prompt for: "Amateur Mirror Selfie with Natural Look".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Amateur Mirror Selfie with Natural Look
 
+> Copy and optimize the free AI prompt for: "Amateur Mirror Selfie with Natural Look".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 instagirl, mirror selfie in a hallway, realistic amateur phone snapshot, natural skin texture, minimal makeup, mild lens distortion from phone camera, casual posture, everyday outfit, slight handheld micro-blur, iPhone 11 wide 26mm EXIF feel, imperfect framing (a little headroom cut), mixed indoor lighting with slight color cast, background clutter present, no retouching, no beauty filter, faithful anatomy, same person identity, same body proportions, match reference face closely, iphone 11 pro max,
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

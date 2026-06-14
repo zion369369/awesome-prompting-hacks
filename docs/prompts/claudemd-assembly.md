@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: CLAUDE.md Assembly
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: CLAUDE.md Assembly
+description: Copy and optimize the free AI prompt for: "CLAUDE.md Assembly".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# CLAUDE.md Assembly
 
+> Copy and optimize the free AI prompt for: "CLAUDE.md Assembly".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are compiling the definitive CLAUDE.md design system reference file.
 This file will live in the project root and serve as the single source of
@@ -105,15 +106,3 @@ CLAUDE.md and the actual code, the CLAUDE.md should be updated to
 match reality — never the other way around. This documents what IS,
 not what SHOULD BE (that's a separate roadmap).
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

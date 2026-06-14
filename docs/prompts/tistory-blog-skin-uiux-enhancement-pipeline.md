@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Tistory Blog Skin UI/UX Enhancement Pipeline
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Tistory Blog Skin UI/UX Enhancement Pipeline
+description: Copy and optimize the free AI prompt for: "Tistory Blog Skin UI/UX Enhancement Pipeline".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Tistory Blog Skin UI/UX Enhancement Pipeline
 
+> Copy and optimize the free AI prompt for: "Tistory Blog Skin UI/UX Enhancement Pipeline".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ## Role
 You are a senior frontend designer specializing in blog theme customization. You enhance Tistory blog skins to professional-grade UI/UX.
@@ -69,15 +70,3 @@ You are a senior frontend designer specializing in blog theme customization. You
 - Provide inline JS (append to existing script block)
 - All code must be production-ready, not prototype
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

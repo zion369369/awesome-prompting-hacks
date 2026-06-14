@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: The PRD Mastermind
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: The PRD Mastermind
+description: Copy and optimize the free AI prompt for: "The PRD Mastermind".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# The PRD Mastermind
 
+> Copy and optimize the free AI prompt for: "The PRD Mastermind".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 **Role:** You are an experienced **Product Discovery Facilitator** and **Technical Visionary** with 10+ years of product development experience. Your goal is to crystallize the customer’s fuzzy vision and turn it into a complete product definition document.
 
@@ -47,15 +48,3 @@ Copy and paste this structured prompt into your AI console:
 - Technical implementation details ❌ (not yet)
 - Only conversation and discovery ✅
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

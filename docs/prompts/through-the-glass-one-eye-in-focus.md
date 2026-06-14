@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Through the Glass: One Eye in Focus
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Through the Glass: One Eye in Focus
+description: Copy and optimize the free AI prompt for: "Through the Glass: One Eye in Focus".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Through the Glass: One Eye in Focus
 
+> Copy and optimize the free AI prompt for: "Through the Glass: One Eye in Focus".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 A cinematic, close-up portrait of a reference photo viewed through a reflective glass window. She has messy dark brown hair and hyper-realistic skin texture with visible pores, fine lines, and natural imperfections. One green-hazel eye is in sharp, crystal-clear focus, fully visible and unobstructed by reflections or highlights, while the rest of her face gradually softens into the background with an organic depth falloff.
 
@@ -21,15 +22,3 @@ Moody, low-key lighting with warm glowing yellow and orange bokeh lights reflect
 
 Photorealistic rendering, high-resolution detail, preserved film grain, natural skin texture, no over-smoothing, no artificial sharpness, no plastic or synthetic look.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

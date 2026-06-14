@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: # Understanding DSRP Systems Foundational Concept
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: # Understanding DSRP Systems Foundational Concept
+description: Copy and optimize the free AI prompt for: "# Understanding DSRP Systems Foundational Concept".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# # Understanding DSRP Systems Foundational Concept
 
+> Copy and optimize the free AI prompt for: "# Understanding DSRP Systems Foundational Concept".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # Understanding DSRP Systems Foundational Concept
 Organizing ideas into systems of parts and wholes. Every thing or idea is a system because it contains parts.  Every book contains paragraphs that contain words with letters, and letters are made up of ink strokes which are comprised of pixels made up of atoms. To construct or deconstruct meaning is to organize different ideas into part-whole configurations. A change in the way the ideas are organized leads to a change in meaning itself. Every system can become a part of some larger system. The process of thinking means that we must draw a distinction where we stop zooming in or zooming out. The act of thinking is defined by splitting things up or lumping them together. Nothing exists in isolation, but in systems of context. We can study the parts separated from the whole or the whole generalized from the parts, but in order to gain understanding of any system, we must do both in the end. Part-whole systems lie at the root of a number of terms that you will be familiar with: chunking, grouping, sorting, organizing, part-whole, categorizing, hierarchies, tree mapping, sets, clusters, together, apart, piece, combine, amalgamate, codify, systematize, taxonomy, classify, total sum, entirety, break down, take apart, deconstruct, collection, collective, assemble. Also included are most words starting with the prefix org- such as organization, organ, or organism.
@@ -49,15 +50,3 @@ Additionally, reflect on:
 Remember to consider both the explicit systems mentioned in the brief and implicit systems that might be relevant to the project's success.](<# Understanding DSRP Distinctions
 ---
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

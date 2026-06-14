@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Dynamic glows -->
+  <circle cx="1000" cy="150" r="280" fill="#6366f1" opacity="0.12" filter="blur(80px)" />
+  <circle cx="200" cy="500" r="220" fill="#ec4899" opacity="0.08" filter="blur(80px)" />
+
+  <!-- Outer Frame / Card -->
+  <rect x="80" y="60" width="1040" height="510" rx="28" fill="url(#cardBg)" stroke="#374151" stroke-width="2" filter="url(#shadow)" />
+  
+  <!-- Glowing Top Border Bar -->
+  <rect x="80" y="60" width="1040" height="8" rx="4" fill="url(#accent)" />
+
+  <!-- Logo and Branding Header -->
+  <g transform="translate(130, 120)">
+    <!-- Terminal Shell Icon -->
+    <rect width="46" height="46" rx="10" fill="url(#accent)" />
+    <path d="M12 28L20 20L12 12" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(6, 6) scale(0.65)" />
+    <line x1="16" y1="20" x2="28" y2="20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" transform="translate(6, 6) scale(0.65)" />
+    
+    <text x="65" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="1.5">AWESOME PROMPTING HACKS</text>
+  </g>
+
+  <!-- Category Badge -->
+  <g transform="translate(130, 195)">
+    <rect width="180" height="36" rx="18" fill="#6366f1" fill-opacity="0.18" stroke="#818cf8" stroke-width="1.5" />
+    <text x="90" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#a5b4fc" letter-spacing="1" text-anchor="middle">WRITING</text>
+  </g>
+
+  <!-- Prompt Title -->
+  <text x="130" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" fill="#ffffff" line-height="1.2">
+    <tspan x="150" dy="0">Elite Poetry Critic 2</tspan>
+  </text>
+
+  <!-- Tags Footer Block -->
+  <text x="130" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#9ca3af" letter-spacing="0.5">#writing   #poetry-critic   #open-source</text>
+
+  <!-- Bottom Divider Line -->
+  <line x1="130" y1="500" x2="1070" y2="500" stroke="#374151" stroke-width="1" opacity="0.6" />
+
+  <!-- Footnotes -->
+  <text x="130" y="535" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#6b7280">Free Production-Grade AI Templates • Calibrated Output Engines</text>
+  <text x="1070" y="535" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#818cf8" text-anchor="end">zion369369.github.io/awesome-prompting-hacks</text>
+</svg>

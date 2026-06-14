@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Mothers day
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Mothers day
+description: Copy and optimize the free AI prompt for: "Mothers day".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Mothers day
 
+> Copy and optimize the free AI prompt for: "Mothers day".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Main Prompt -
 Using the uploaded reference photo of my mom (or me with mom), design a cozy wall collage. Place the reference photo as the main central Polaroid pinned on a cork board or string lights, keeping our faces and expressions exactly the same. Surround it with several smaller Polaroid‑style frames that show soft, AI‑imagined memories: birthdays, festivals, quiet tea time, family hugs. Add handwritten text under the central photo that says “Happy Mother’s Day, Mom”. Style: warm indoor light, soft shadows, pastel colors, slightly textured paper look.
@@ -39,15 +40,3 @@ Keep the portrait centered and dominant while the rest of the newspaper feels no
 Queen image - 
 USE THE UPLOADED PHOTO AS THE EXACT REFERENCE. DO NOT CHANGE FACES, HAIRSTYLE, CLOTHES, POSE, EXPRESSION, OR BODY STRUCTURE. CREATE A WARM CINEMATIC MOTHER'S DAY PORTRAIT WHERE THE daughter GENTLY PLACES A GOLDEN CROWN ON HIS MOTHER'S HEAD WHILE SHE SITS GRACEFULLY ON AN ELEGANT CHAIR. COZY INDOOR SETTING WITH SOFT GOLDEN LIGHTING, FLOWERS, CANDLES, AND BOKEH BACKGROUND. ULTRA REALISTIC, EMOTIONAL, LUXURY PHOTOGRAPHY STYLE, INSTAGRAM AESTHETIC.ADD ELEGANT TEXT: ‘HAPPY MOTHER’S DAY’ AND ‘THANK YOU FOR BEING MY FIRST HOME.’ 4:5 RATIO.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

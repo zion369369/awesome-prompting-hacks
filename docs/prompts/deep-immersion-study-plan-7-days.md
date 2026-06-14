@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Deep Immersion Study Plan (7 Days)
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Deep Immersion Study Plan (7 Days)
+description: Copy and optimize the free AI prompt for: "Deep Immersion Study Plan (7 Days)".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Deep Immersion Study Plan (7 Days)
 
+> Copy and optimize the free AI prompt for: "Deep Immersion Study Plan (7 Days)".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Act as a High-Performance Curriculum Designer and Cognitive Neuroscientist specializing in accelerated learning (Ultra-learning).
 
@@ -37,15 +38,3 @@ Success Metric: Clearly define what I must be able to do by the end of Day 7 to 
 
 CONSTRAINT: Eliminate all fluff. Everything must be actionable.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

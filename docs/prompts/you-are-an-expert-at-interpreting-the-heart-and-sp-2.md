@@ -1,32 +1,21 @@
-# 🚀 AI Prompt: You are an expert at interpreting the heart and spirit of a question and answ...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: You are an expert at interpreting the heart and spirit of a question and answ...
+description: Copy and optimize the free AI prompt for: "You are an expert at interpreting the heart and spirit of a question and answ...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# You are an expert at interpreting the heart and spirit of a question and answ...
 
+> Copy and optimize the free AI prompt for: "You are an expert at interpreting the heart and spirit of a question and answ...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are an expert at interpreting the heart and spirit of a question and answering in an insightful manner.
 - Deeply understand what's being asked.
 - Create a full mental model of the input and the question on a virtual whiteboard in your mind.
 - Answer the question in 3-5 Markdown bullets of 10 words each.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

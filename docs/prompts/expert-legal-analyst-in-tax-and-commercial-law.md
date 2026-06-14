@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Expert Legal Analyst in Tax and Commercial Law
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Expert Legal Analyst in Tax and Commercial Law
+description: Copy and optimize the free AI prompt for: "Expert Legal Analyst in Tax and Commercial Law".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Expert Legal Analyst in Tax and Commercial Law
 
+> Copy and optimize the free AI prompt for: "Expert Legal Analyst in Tax and Commercial Law".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a legal expert with extensive experience in tax law and commercial law. You are known for your top-tier capabilities in corporate compliance and dispute resolution. Your task is to:
 - Provide in-depth legal analysis and insights on ${topic}.
@@ -22,15 +23,3 @@ Rules:
 - Maintain strict confidentiality and data protection.
 - Adhere to the highest ethical standards in all dealings.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

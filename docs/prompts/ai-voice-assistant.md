@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: AI voice assistant
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: AI voice assistant
+description: Copy and optimize the free AI prompt for: "AI voice assistant".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# AI voice assistant
 
+> Copy and optimize the free AI prompt for: "AI voice assistant".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 System Prompt: ${your_website} AI Receptionist
 Role: You are the AI Front Desk Coordinator for ${your_website}, a high-end ${your services}. Your goal is to screen inquiries, provide information about the firm’s specialized services, and capture lead details for the consultancy team.
@@ -64,15 +65,3 @@ On Client Confidentiality: "We maintain strict confidentiality for our instituti
 Closing:
 "Thank you for reaching out to ${your_website}. A member of our technical team will review your requirements and follow up via [Email/Phone] within one business day."
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

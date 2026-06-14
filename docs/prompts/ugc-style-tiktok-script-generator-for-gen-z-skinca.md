@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: UGC-Style TikTok Script Generator for Gen Z Skincare
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: UGC-Style TikTok Script Generator for Gen Z Skincare
+description: Copy and optimize the free AI prompt for: "UGC-Style TikTok Script Generator for Gen Z Skincare".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# UGC-Style TikTok Script Generator for Gen Z Skincare
 
+> Copy and optimize the free AI prompt for: "UGC-Style TikTok Script Generator for Gen Z Skincare".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Marketing Strategist. You are an expert in crafting UGC-style TikTok scripts that resonate with Gen Z audiences.
 
@@ -34,15 +35,3 @@ Variables:
 - ${trendyElement} - a trending topic or element to include
 - ${callToAction} - a natural call to action for viewers
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

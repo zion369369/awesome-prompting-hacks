@@ -1,0 +1,46 @@
+name: "📥 Suggest a New Prompt Template"
+description: Submit a prompt template to be added to the library
+title: "[Prompt Suggestion]: "
+labels: ["prompt-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to Awesome Prompting Hacks! Please fill out the form below to suggest a new prompt template.
+  - type: input
+    id: title
+    attributes:
+      label: Prompt Title
+      placeholder: e.g., Dockerfile Optimization Wizard
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt Template Body
+      placeholder: Paste the exact system instructions or prompt text here
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - ChatGPT
+        - Claude
+        - Gemini
+        - Midjourney
+        - Coding
+        - Marketing
+        - Writing
+        - General
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      placeholder: e.g., docker, devops, optimization (comma separated)
+    validations:
+      required: true

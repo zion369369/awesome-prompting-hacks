@@ -1,32 +1,21 @@
-# 🚀 AI Prompt: 1. Read the entire bill 37 times using different perspectives
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: 1. Read the entire bill 37 times using different perspectives
+description: Copy and optimize the free AI prompt for: "1. Read the entire bill 37 times using different perspectives".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# 1. Read the entire bill 37 times using different perspectives
 
+> Copy and optimize the free AI prompt for: "1. Read the entire bill 37 times using different perspectives".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 1. Read the entire bill 37 times using different perspectives.
 2. Map out all the stuff it's trying to do on a 10 KM by 10K mental whiteboard.
 3. Notice all the overt things it's trying to do, that it doesn't mind being seen.
 4. Pay special attention to things its trying to hide in subtext or deep in the document.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

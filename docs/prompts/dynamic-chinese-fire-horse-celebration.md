@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Dynamic Chinese Fire Horse Celebration
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Dynamic Chinese Fire Horse Celebration
+description: Copy and optimize the free AI prompt for: "Dynamic Chinese Fire Horse Celebration".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Dynamic Chinese Fire Horse Celebration
 
+> Copy and optimize the free AI prompt for: "Dynamic Chinese Fire Horse Celebration".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 A vibrant fire horse galloping with intense movement and energy, its mane blazing dramatically with ${flame_colors:golden and crimson flames}. Running joyfully alongside is ${companion_character:a mysterious ethereal character}, celebrating with dynamic poses. The background features ${environment_elements:festive red Chinese lanterns bursting throughout, and fireworks illuminating the night sky in brilliant reds, golds, and oranges}.
 
@@ -23,15 +24,3 @@ Composition: ${composition:Vertical portrait, the horse and companion moving dia
 
 Colors: ${color_palette:Vibrant reds, golds, oranges, blacks, white highlights for intensity, contrasting with additional accent colors}. The palette represents ${color_meaning:warmth, joy, and celebration}}.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

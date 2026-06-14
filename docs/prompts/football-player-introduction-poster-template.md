@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Football Player Introduction Poster Template
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Football Player Introduction Poster Template
+description: Copy and optimize the free AI prompt for: "Football Player Introduction Poster Template".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Football Player Introduction Poster Template
 
+> Copy and optimize the free AI prompt for: "Football Player Introduction Poster Template".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Situation
 You are creating a visual template for a football club to welcome and introduce a newly signed player. This poster will be displayed across the club's social media, stadium, and promotional materials to build excitement among fans and stakeholders about the new addition to the team. The poster serves as a formal introduction of the player to the club's community while simultaneously showcasing the club's identity and values.
@@ -39,15 +40,3 @@ A welcoming headline or tagline addressing the player (e.g., "Welcome to ${club_
 
 Background design that reflects the club's aesthetic (stadium elements, club colors, dynamic patterns)
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

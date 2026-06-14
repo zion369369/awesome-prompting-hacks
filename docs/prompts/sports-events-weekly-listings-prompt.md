@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Sports Events Weekly Listings Prompt
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Sports Events Weekly Listings Prompt
+description: Copy and optimize the free AI prompt for: "Sports Events Weekly Listings Prompt".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Sports Events Weekly Listings Prompt
 
+> Copy and optimize the free AI prompt for: "Sports Events Weekly Listings Prompt".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ### Sports Events Weekly Listings Prompt (v1.0 – Initial Version)
 
@@ -54,15 +55,3 @@ End the response with a brief notes section covering:
 
 If literally no major sports events in the week, state so briefly and suggest checking a broader range or popular ongoing seasons.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

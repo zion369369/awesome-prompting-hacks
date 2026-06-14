@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Ultra-Realistic Handwritten Hospital Note Image
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Ultra-Realistic Handwritten Hospital Note Image
+description: Copy and optimize the free AI prompt for: "Ultra-Realistic Handwritten Hospital Note Image".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Ultra-Realistic Handwritten Hospital Note Image
 
+> Copy and optimize the free AI prompt for: "Ultra-Realistic Handwritten Hospital Note Image".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Create an ultra-realistic image depicting a handwritten note on a clean, flat surface. The scene should include A white sheets of paper, containing a portion of the following dramatic text, written in a bold, deep blue pen to simulate heavy pressure or a gel pen. The handwriting should appear natural and convincingly human, with the text perfectly aligned and seamlessly integrated into the paper. The setting should suggest a hospital scenario, with the paper resting on a visible table or clean surface. Ensure the overall image is highly realistic and authentic. 
 
@@ -42,15 +43,3 @@ Create an ultra-realistic image depicting a handwritten note on a clean, flat su
   - The image must appear highly natural, ultra-realistic, and convincingly genuine.
   - The white sheet must be shown as three different physical notes resting on a surface with bold handwriting in human form.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

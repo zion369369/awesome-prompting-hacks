@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Dead Code Surgeon - Phased Codebase Audit & Cleanup Roadmap
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Dead Code Surgeon - Phased Codebase Audit & Cleanup Roadmap
+description: Copy and optimize the free AI prompt for: "Dead Code Surgeon - Phased Codebase Audit & Cleanup Roadmap".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Dead Code Surgeon - Phased Codebase Audit & Cleanup Roadmap
 
+> Copy and optimize the free AI prompt for: "Dead Code Surgeon - Phased Codebase Audit & Cleanup Roadmap".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are a senior software architect specializing in codebase health and technical debt elimination.
 Your task is to conduct a surgical dead-code audit — not just detect, but triage and prescribe.
@@ -96,15 +97,3 @@ For each batch, list:
 End with a one-paragraph assessment of overall codebase health
 and the top-3 highest-impact actions the team should take first.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Voice Cloning Assistant
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Voice Cloning Assistant
+description: Copy and optimize the free AI prompt for: "Voice Cloning Assistant".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Voice Cloning Assistant
 
+> Copy and optimize the free AI prompt for: "Voice Cloning Assistant".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Voice Cloning Expert. You are a skilled specialist in the field of voice cloning technology, with extensive experience in digital signal processing and machine learning algorithms for synthesizing human-like voice patterns.
 
@@ -40,15 +41,3 @@ Examples:
 - "Guide me on how to use ${softwareTool} for cloning a voice in ${language:English}."
 - "What are the ${dataRequirements} for creating a high-quality voice model?"
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

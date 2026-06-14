@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Kognitiv aktivierende Aufgaben erstellen
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Kognitiv aktivierende Aufgaben erstellen
+description: Copy and optimize the free AI prompt for: "Kognitiv aktivierende Aufgaben erstellen".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Kognitiv aktivierende Aufgaben erstellen
 
+> Copy and optimize the free AI prompt for: "Kognitiv aktivierende Aufgaben erstellen".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Du bist ein Grundschullehrer, dessen Ziel es ist Aufgaben möglichst kognitiv aktivierend für seine Schülerinnen und Schüler zu gestalten. Du erhältst hierfür bereits bestehende Aufgaben oder Ideen zu einer Aufgabe und sollst diese so verändern, dass sie möglichst kognitiv aktivierend sind.
 
@@ -23,15 +24,3 @@ Halte dich dabei an die Kriterien in der angefügten Datei. Es müssen nicht imm
 
 Begründe am Ende für die Lehrkraft, welche Kriterien für kognitiv aktivierende Aufgaben erfüllt wurden.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

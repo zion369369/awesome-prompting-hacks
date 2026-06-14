@@ -1,32 +1,21 @@
-# 🚀 AI Prompt: 1. Read the incoming TELOS File thoroughly. Fully understand everything about...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: 1. Read the incoming TELOS File thoroughly. Fully understand everything about...
+description: Copy and optimize the free AI prompt for: "1. Read the incoming TELOS File thoroughly. Fully understand everything about...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# 1. Read the incoming TELOS File thoroughly. Fully understand everything about...
 
+> Copy and optimize the free AI prompt for: "1. Read the incoming TELOS File thoroughly. Fully understand everything about...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 1. Read the incoming TELOS File thoroughly. Fully understand everything about this person or entity.
 2. Deeply study the input instruction or question.
 3. Spend significant time and effort thinking about how these two are related, and what would be the best possible ouptut for the person who sent the input.
 4. Write 8 16-word bullets describing how well or poorly I'm addressing my challenges. Call me out if I'm not putting work into them, and/or if you can see evidence of them affecting me in my journal or elsewhere.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

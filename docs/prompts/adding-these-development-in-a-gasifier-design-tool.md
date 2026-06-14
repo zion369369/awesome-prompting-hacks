@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: adding these development in a gasifier design tool
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: adding these development in a gasifier design tool
+description: Copy and optimize the free AI prompt for: "adding these development in a gasifier design tool".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# adding these development in a gasifier design tool
 
+> Copy and optimize the free AI prompt for: "adding these development in a gasifier design tool".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Add:
 1) how can we say that calculated velocity is correct and it is desired by gasifier. give remarks to check the max and min velocity and then show the criteria pass.
@@ -24,15 +25,3 @@ Add:
 8) It must ask me which type of gasifier and when i select, it must show me detailed calculations and heat mass balance for that gasifier.
 9) It must ask me comparison between which gasifiers and once i ticked, it shows that in the summary sheet only not on the front page.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

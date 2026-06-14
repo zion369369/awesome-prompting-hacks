@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Ultra-Realistic Ankara Indie Bar Scene Description
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Ultra-Realistic Ankara Indie Bar Scene Description
+description: Copy and optimize the free AI prompt for: "Ultra-Realistic Ankara Indie Bar Scene Description".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Ultra-Realistic Ankara Indie Bar Scene Description
 
+> Copy and optimize the free AI prompt for: "Ultra-Realistic Ankara Indie Bar Scene Description".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Ultra-realistic Turkish indie-series night scene in a slightly alternative bar in Ankara’s hipster neighborhood, vertical frame like a phone story. Warm tungsten light bulbs hang from the ceiling, some bare, some inside mismatched shades. Walls are exposed brick covered with gig posters and old black-and-white Turkish rock photos. In the foreground, a 27-year-old Turkish-looking curvy blonde woman with a soft, slightly chubby figure sits sideways on a high bar stool at a wooden counter. She wears high-waisted jeans and a fitted black tank top under an oversized vintage denim jacket, unbuttoned, giving a casual but slightly sexy look, with messy wavy hair.
 
@@ -23,15 +24,3 @@ Around her, the bar crowd is very Ankara-hipster: a small group in the backgroun
 
 The handheld vertical composition is slightly skewed: the top of a neon **Efes Pilsen** sign is cut off at the top edge; the corner of the bar and one customer are cropped at the side. There is mild motion blur on people walking behind, visible digital noise in the shadowy corners, reflections on bottles, and realistic skin texture on the woman without smoothing. Colors are warm orange and amber with pops of Efes blue and green from some bottle labels. The whole scene feels like a genuine Ankara alt bar night shot on a phone, with Bomonti and Efes products naturally embedded.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

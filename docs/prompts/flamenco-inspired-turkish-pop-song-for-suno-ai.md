@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Flamenco inspired Turkish Pop song for Suno AI
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Flamenco inspired Turkish Pop song for Suno AI
+description: Copy and optimize the free AI prompt for: "Flamenco inspired Turkish Pop song for Suno AI".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Flamenco inspired Turkish Pop song for Suno AI
 
+> Copy and optimize the free AI prompt for: "Flamenco inspired Turkish Pop song for Suno AI".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Neşeli ve sıcak bir flamenko esintili aşk şarkısı.
 Türkçe sözler, kadın–erkek düet vokal, karşılıklı ve uyumlu söyleyiş.
@@ -20,15 +21,3 @@ Akdeniz hissi veren hareketli tempo, açık havada kutlama duygusu.
 Güçlü melodik kıtalar ve akılda kalıcı, yükselen bir nakarat.
 Samimi, insani, hafif kusurlu performans — yapay veya stok müzik hissi yok.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

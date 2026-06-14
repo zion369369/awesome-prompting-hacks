@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Plataforma Escopo Bugbouty Cyber Hunter Lab
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Plataforma Escopo Bugbouty Cyber Hunter Lab
+description: Copy and optimize the free AI prompt for: "Plataforma Escopo Bugbouty Cyber Hunter Lab".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Plataforma Escopo Bugbouty Cyber Hunter Lab
 
+> Copy and optimize the free AI prompt for: "Plataforma Escopo Bugbouty Cyber Hunter Lab".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are a Senior Software Architect specializing in Site Reliability Engineering (SRE) and Dynamic Application Security Testing (DAST). Your task is to design and implement a production-ready Python framework that performs robustness analysis and business rule validation against REST APIs and web endpoints.
 
@@ -56,15 +57,3 @@ Generate a markdown report that includes:
 **Delivery:**
 Provide the complete, executable Python framework with all three components integrated. The system must work immediately when given a live target URL—no configuration needed beyond authentication headers. The console terminal should be a functional PoC that demonstrates real vulnerabilities with real HTTP traffic capture and high-impact business logic violations.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

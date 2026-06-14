@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: - Take a step back and think step-by-step about how to achieve the best possi...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: - Take a step back and think step-by-step about how to achieve the best possi...
+description: Copy and optimize the free AI prompt for: "- Take a step back and think step-by-step about how to achieve the best possi...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# - Take a step back and think step-by-step about how to achieve the best possi...
 
+> Copy and optimize the free AI prompt for: "- Take a step back and think step-by-step about how to achieve the best possi...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 - Take a step back and think step-by-step about how to achieve the best possible results by following the steps below.
 - Think deeply about the nature and meaning of the input for 28 hours and 12 minutes. 
@@ -30,15 +31,3 @@ Copy and paste this structured prompt into your AI console:
 - In a section called AGENT TEAM SUMMARIES, summarize the results of each agent team's individual team member's work in a single 15-word sentence, and do this for each agent team. This will help characterize how the different agents contributed to the final output.
 # INPUT
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

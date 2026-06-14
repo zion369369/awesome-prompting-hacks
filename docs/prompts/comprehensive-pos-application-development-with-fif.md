@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Comprehensive POS Application Development with FIFO and Reporting
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Comprehensive POS Application Development with FIFO and Reporting
+description: Copy and optimize the free AI prompt for: "Comprehensive POS Application Development with FIFO and Reporting".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Comprehensive POS Application Development with FIFO and Reporting
 
+> Copy and optimize the free AI prompt for: "Comprehensive POS Application Development with FIFO and Reporting".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ---
 name: comprehensive-pos-application-development-with-fifo-and-reporting
@@ -59,15 +60,3 @@ Your task is to develop:
 
 Ensure the application is production-ready with proper data persistence and can handle multiple daily transactions efficiently.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

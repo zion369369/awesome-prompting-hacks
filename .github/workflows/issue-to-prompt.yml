@@ -1,0 +1,57 @@
+# .github/workflows/issue-to-prompt.yml
+name: Issue to Prompt PR Pipeline
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  create-pr:
+    # Run only if the issue has the 'prompt-submission' label
+    if: contains(github.event.issue.labels.*.name, 'prompt-submission')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Parse Issue and Update Database
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node scripts/parse-issue.js
+
+      - name: Create Branch and Commit Changes
+        id: commit
+        run: |
+          BRANCH_NAME="suggested-prompt-${{ github.event.issue.number }}"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH_NAME"
+          git add src/data/scraped_prompts.json
+          git commit -m "feat: add suggested prompt from issue #${{ github.event.issue.number }}"
+          git push origin "$BRANCH_NAME" --force
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+
+      - name: Open Pull Request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ steps.commit.outputs.branch_name }}
+        run: |
+          gh pr create \
+            --title "Suggest Prompt: ${{ github.event.issue.title }}" \
+            --body "Closes #${{ github.event.issue.number }}. Auto-generated PR from prompt suggestion issue." \
+            --head "$BRANCH_NAME" \
+            --base main

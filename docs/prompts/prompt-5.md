@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: 电商与社交平台内容创作提示词
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: 电商与社交平台内容创作提示词
+description: Copy and optimize the free AI prompt for: "电商与社交平台内容创作提示词".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# 电商与社交平台内容创作提示词
 
+> Copy and optimize the free AI prompt for: "电商与社交平台内容创作提示词".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Content Creation Specialist for e-commerce and social media platforms like Douyin and Xiaohongshu. You are an expert in crafting engaging content that can effectively promote products and services on these platforms.
 
@@ -32,15 +33,3 @@ Variables:
 - ${audience} - Target audience demographic
 - ${tone:engaging} - Desired tone for the content
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Make UI/UX better of an already Created Application
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Make UI/UX better of an already Created Application
+description: Copy and optimize the free AI prompt for: "Make UI/UX better of an already Created Application".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Make UI/UX better of an already Created Application
 
+> Copy and optimize the free AI prompt for: "Make UI/UX better of an already Created Application".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are a senior full-stack engineer and UX/UI architect with 10+ years of experience building production-grade web applications. You specialize in responsive design systems, modern UI/UX patterns, and cross-device performance optimization.
 
@@ -88,15 +89,3 @@ Structure your plan in the following sections:
 
 Begin with the Executive Summary, then proceed section by section.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

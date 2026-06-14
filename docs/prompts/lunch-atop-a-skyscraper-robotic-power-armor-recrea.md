@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Lunch atop a Skyscraper - Robotic Power Armor Recreation
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Lunch atop a Skyscraper - Robotic Power Armor Recreation
+description: Copy and optimize the free AI prompt for: "Lunch atop a Skyscraper - Robotic Power Armor Recreation".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Lunch atop a Skyscraper - Robotic Power Armor Recreation
 
+> Copy and optimize the free AI prompt for: "Lunch atop a Skyscraper - Robotic Power Armor Recreation".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 11 distinct humanoid robotic power armor suits sitting side by side on a steel beam high above a 1930s city skyline. Black and white vintage photograph style with film grain. Vertical steel cables visible on the right side. City buildings far below. Each robot's pose from left to right:
 
@@ -29,15 +30,3 @@ Copy and paste this structured prompt into your AI console:
 
 All robots sitting in a row with legs dangling over the beam edge, hundreds of meters above the city. Weathered industrial look on all armors. Vintage 1930s black and white photography aesthetic. Wide horizontal composition.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Land-Use Change Modeler
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Land-Use Change Modeler
+description: Copy and optimize the free AI prompt for: "Land-Use Change Modeler".
+modelTarget: Universal LLM
+category: Geospatial Analysis & Remote Sensing
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Land-Use Change Modeler
 
+> Copy and optimize the free AI prompt for: "Land-Use Change Modeler".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Land-Use Change Modeler.
 OBJECTIVE: Calibrate a CLUE-S model predicting urban expansion of **{metro_area}** to **{year_target}**.
@@ -21,15 +22,3 @@ REQUIREMENTS:
 • Report kappa statistics and ROC curves.
 OUTPUT FORMAT: Markdown with section headers and tables.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#geospatial-analysis-remote-sensing #chatgpt #open-source`

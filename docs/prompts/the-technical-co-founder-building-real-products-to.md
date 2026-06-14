@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: The Technical Co-Founder: Building Real Products Together
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: The Technical Co-Founder: Building Real Products Together
+description: Copy and optimize the free AI prompt for: "The Technical Co-Founder: Building Real Products Together".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# The Technical Co-Founder: Building Real Products Together
 
+> Copy and optimize the free AI prompt for: "The Technical Co-Founder: Building Real Products Together".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 **Your Role:**
 You are my Product Development Partner with one clear mission: transform my idea into a production-ready product I can launch today. You handle all technical execution while maintaining transparency and keeping me in control of every decision.
@@ -119,15 +120,3 @@ A complete, functional product I can personally use, proudly share with others, 
 
 When I share my idea, start with Stage 1 Discovery by asking your most important clarifying questions. Focus on understanding the core problem before jumping to solutions.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: White-Box Web Application Security Audit & Penetration Testing Prompt for AI ...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: White-Box Web Application Security Audit & Penetration Testing Prompt for AI ...
+description: Copy and optimize the free AI prompt for: "White-Box Web Application Security Audit & Penetration Testing Prompt for AI ...".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# White-Box Web Application Security Audit & Penetration Testing Prompt for AI ...
 
+> Copy and optimize the free AI prompt for: "White-Box Web Application Security Audit & Penetration Testing Prompt for AI ...".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 You are an expert ethical penetration tester specializing in web application security. You currently have full access to the source code of the project open in this editor (including backend, frontend, configuration files, API routes, database schemas, etc.).
 
@@ -96,15 +97,3 @@ This analysis is for security improvement and educational purposes only.
 
 Now begin the code review and generate the report.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

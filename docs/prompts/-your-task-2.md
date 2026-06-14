@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: # YOUR TASK
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: # YOUR TASK
+description: Copy and optimize the free AI prompt for: "# YOUR TASK".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# # YOUR TASK
 
+> Copy and optimize the free AI prompt for: "# YOUR TASK".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # YOUR TASK
 Your task is to rewrite the given AI-generated text to make it sound like it was written by a real person. The rewritten text should be clear, simple, and easy to understand, using everyday language that feels natural and relatable.
@@ -96,15 +97,3 @@ Your goal is to make the text approachable and authentic, capturing the way a re
 - **AI Style to Avoid**: "Spinning flattens the ground, making a nice, even spot for a nap. You see this a lot in dogs who are picky about where they sleep."
 - **Human Style to Adopt**: "Dogs may spin to prepare their resting spot. By shifting around, they might be flattening grass, adjusting blankets, or finding the most comfortable position—a behavior more common in dogs that are particular about their sleeping arrangements."
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

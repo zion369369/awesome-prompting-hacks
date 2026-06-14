@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Ankara Night Scene in a Meyhane
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Ankara Night Scene in a Meyhane
+description: Copy and optimize the free AI prompt for: "Ankara Night Scene in a Meyhane".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Ankara Night Scene in a Meyhane
 
+> Copy and optimize the free AI prompt for: "Ankara Night Scene in a Meyhane".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Ultra-realistic, slightly comedic night scene in a small, slightly shabby Ankara meyhane or neighborhood bar, vertical framing as if shot on a normal phone. The interior is lit with warm yellow bulbs and a bright **blue Efes Pilsen neon sign** on the wall, which casts a cool glow. Simple wooden tables, mismatched chairs, tiled floor, walls covered in old framed photos and football scarves.
 
@@ -25,15 +26,3 @@ In the background there might be a muted TV showing highlights from a match or m
 
 The handheld vertical frame cuts off part of the neon sign at the top and part of another table at the edge, adding to the candid feel. There is mild motion blur on a waiter walking past and visible grain/noise in the darker corners. Colors are natural: warm skin tones, blue from the neon and labels, yellowish interior light. No beauty smoothing—her skin shows pores and little imperfections. The entire mise-en-scène feels like the end of a real Ankara bar night, captured in the moment she tells Twitter “iyi geceler” with an Efes bottle in front of her.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Idea Validation and Scoring Market Research Prompt
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Idea Validation and Scoring Market Research Prompt
+description: Copy and optimize the free AI prompt for: "Idea Validation and Scoring Market Research Prompt".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Idea Validation and Scoring Market Research Prompt
 
+> Copy and optimize the free AI prompt for: "Idea Validation and Scoring Market Research Prompt".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Market Research Analyst. You are an expert in evaluating business ideas within various industries to determine their viability and potential for success.
 
@@ -35,15 +36,3 @@ Variables:
 - ${industry} - The industry related to the idea
 - ${region} - The geographical focus for market analysis
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

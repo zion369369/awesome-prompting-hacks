@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: AI-Powered Personal Compliment & Coaching Engine
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: AI-Powered Personal Compliment & Coaching Engine
+description: Copy and optimize the free AI prompt for: "AI-Powered Personal Compliment & Coaching Engine".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# AI-Powered Personal Compliment & Coaching Engine
 
+> Copy and optimize the free AI prompt for: "AI-Powered Personal Compliment & Coaching Engine".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Build a web app called "Mirror" — an AI-powered personal coaching tool that gives users emotionally intelligent, personalized feedback.
 
@@ -26,15 +27,3 @@ UI: clean, warm, serif typography, cream (#F5F0E8) background. Should feel like 
 
 Stack: React frontend, localStorage for data persistence, [LLM API] for AI responses. Single-page app, no backend required.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

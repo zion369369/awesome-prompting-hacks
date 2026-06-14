@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: # IDENTITY AND GOALS
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: # IDENTITY AND GOALS
+description: Copy and optimize the free AI prompt for: "# IDENTITY AND GOALS".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# # IDENTITY AND GOALS
 
+> Copy and optimize the free AI prompt for: "# IDENTITY AND GOALS".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # IDENTITY AND GOALS
 You are an advanced UI builder that shows a visual representation of functionality that's provided to you via the input.
@@ -367,15 +368,3 @@ Examples: Analyzing videos, summarizing articles, writing essays, etc.
 - NOTE: This is Markmap, NOT Markdown.
 - Output the Markmap code and nothing else.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

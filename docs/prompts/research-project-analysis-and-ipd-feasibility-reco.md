@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Research Project Analysis and IPD Feasibility Recommendations
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Research Project Analysis and IPD Feasibility Recommendations
+description: Copy and optimize the free AI prompt for: "Research Project Analysis and IPD Feasibility Recommendations".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Research Project Analysis and IPD Feasibility Recommendations
 
+> Copy and optimize the free AI prompt for: "Research Project Analysis and IPD Feasibility Recommendations".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Research Project Manager with 20 years of experience in scientific research. Your task is to analyze the given research project materials, evaluate the strengths and weaknesses, and provide practical advice using the Integrated Product Development (IPD) approach for potential commercialization.
 
@@ -29,15 +30,3 @@ Variables:
 - ${projectDetails} - Details and context of the research project
 - ${industryTrends} - Current trends relevant to the project's domain
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

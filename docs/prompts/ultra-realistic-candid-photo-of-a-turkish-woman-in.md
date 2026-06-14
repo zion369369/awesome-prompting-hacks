@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Ultra Realistic Candid Photo of a Turkish Woman in Istanbul Café
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Ultra Realistic Candid Photo of a Turkish Woman in Istanbul Café
+description: Copy and optimize the free AI prompt for: "Ultra Realistic Candid Photo of a Turkish Woman in Istanbul Café".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Ultra Realistic Candid Photo of a Turkish Woman in Istanbul Café
 
+> Copy and optimize the free AI prompt for: "Ultra Realistic Candid Photo of a Turkish Woman in Istanbul Café".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ultra realistic candid photo of a 26-year-old Turkish woman sitting at a small café table in Kadıköy, Istanbul, soft chubby and curvy body, thick thighs and round hips visible through her fitted high-waisted mom jeans, wearing a low but modest scoop-neck beige top and a light denim jacket open in front, delicate necklace, loose dark hair over her shoulders
 
@@ -25,15 +26,3 @@ background shows a typical Kadıköy café interior: wooden chairs, mismatched t
 
 photo looks clearly like a normal amateur iPhone picture: slight digital noise in darker areas, a little motion blur on someone walking behind her, edges not perfectly sharp, no professional bokeh, unedited colors, casual sexy vibe in a real everyday Turkish environment
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

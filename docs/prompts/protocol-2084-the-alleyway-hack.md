@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Protocol 2084: The Alleyway Hack
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Protocol 2084: The Alleyway Hack
+description: Copy and optimize the free AI prompt for: "Protocol 2084: The Alleyway Hack".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Protocol 2084: The Alleyway Hack
 
+> Copy and optimize the free AI prompt for: "Protocol 2084: The Alleyway Hack".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 {
   "prompt": "You will perform an image edit transforming the male subject into a fugitive netrunner in a gritty, high-tech future. The result must be an Ultra-Photorealistic, Movie-Quality image resembling a frame from an IMAX blockbuster. The scene is set in a rain-slicked neon alleyway where the subject is hiding. Ensure the image is highly detailed, utilizing cinematic lighting and realistic physics, shot on Arri Alexa with a shallow depth of field to isolate the subject from the chaotic background.",
@@ -85,15 +86,3 @@ Copy and paste this structured prompt into your AI console:
   }
 }
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

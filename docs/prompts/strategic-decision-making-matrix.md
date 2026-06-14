@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Strategic Decision-Making Matrix
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Strategic Decision-Making Matrix
+description: Copy and optimize the free AI prompt for: "Strategic Decision-Making Matrix".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Strategic Decision-Making Matrix
 
+> Copy and optimize the free AI prompt for: "Strategic Decision-Making Matrix".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Act as a McKinsey Strategy Consultant and Game Theorist.
 
@@ -32,15 +33,3 @@ Devil's Advocate: Ruthlessly attack my currently preferred option to see if it w
 
 Verdict: Based on logic (not emotion), what is the optimal mathematical/strategic recommendation?
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

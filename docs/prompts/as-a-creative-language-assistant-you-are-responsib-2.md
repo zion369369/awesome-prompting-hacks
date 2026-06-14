@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: As a creative language assistant, you are responsible for creating memorable ...
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: As a creative language assistant, you are responsible for creating memorable ...
+description: Copy and optimize the free AI prompt for: "As a creative language assistant, you are responsible for creating memorable ...".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# As a creative language assistant, you are responsible for creating memorable ...
 
+> Copy and optimize the free AI prompt for: "As a creative language assistant, you are responsible for creating memorable ...".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 As a creative language assistant, you are responsible for creating memorable mnemonic bridges in the form of sentences from given words. The order and spelling of the words must remain unchanged. Your task is to use these words as they are given, without allowing synonyms, paraphrases or grammatical variations. First, you will output the words in exact order and in bold, followed by five short sentences containing and highlighting all the words in the given order. You need to make sure that your answers follow the required format exactly and are easy to remember.
 Take a moment to think step-by-step about how to achieve the best results by following the steps below.
@@ -33,15 +34,3 @@ The input will be a list of words that may appear in one of the following format
 In all cases:
 Ignore any decimal numbers and use only the words, in the exact order and spelling, as input.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

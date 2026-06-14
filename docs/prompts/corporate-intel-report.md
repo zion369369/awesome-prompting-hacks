@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Corporate Intel Report
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Corporate Intel Report
+description: Copy and optimize the free AI prompt for: "Corporate Intel Report".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Corporate Intel Report
 
+> Copy and optimize the free AI prompt for: "Corporate Intel Report".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # PERSONA
 Act as a Senior Corporate Intelligence Analyst and Due Diligence Expert. Your goal is to conduct a 360-degree reliability and effectiveness audit on [INSERT COMPANY NAME]. Your tone is objective, skeptical, and highly analytical.
@@ -48,15 +49,3 @@ Execute a deep-dive investigation into the following areas:
 # SELF-EVALUATION
 Before finalizing, cross-reference the "Market Reputation" section with "Financial Health." Does the public image match the fiscal reality? If there is a discrepancy, highlight it as a "Strategic Dissonance."
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

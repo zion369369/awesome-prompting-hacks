@@ -6,6 +6,35 @@ All templates are optimized for execution using the [Hello Prompting Console Too
 
 ---
 
+<!-- STATS_START -->
+
+### 📊 Prompt Library Stats
+
+| ⚙️ Platform | 🔢 Count | 📈 Share |
+| :--- | :--- | :--- |
+| **Midjourney** | 88 | 1.7% |
+| **Claude** | 11 | 0.2% |
+| **Gemini** | 7 | 0.1% |
+| **ChatGPT** | 3389 | 67.2% |
+| **Universal** | 1547 | 30.7% |
+| **Total** | **5042** | **100%** |
+
+#### 🏷️ Top Categories
+- **Roleplay** (1875 templates)
+- **Fabric** (1331 templates)
+- **Writing** (531 templates)
+- **Coding** (509 templates)
+- **Marketing** (508 templates)
+- **midjourney** (83 templates)
+- **Content Writing & Blogging** (10 templates)
+- **Quantum Computing & Simulation** (10 templates)
+- **Geospatial Analysis & Remote Sensing** (10 templates)
+- **Biomedical Imaging & Diagnostics** (10 templates)
+
+*Last updated: Sun, 14 Jun 2026 18:33:38 GMT*
+
+<!-- STATS_END -->
+
 ## 🔧 Prompt Optimization Console Toolkit
 
 [![Hello Prompting Console](https://img.shields.io/badge/Hello_Prompting-Console_Toolkit-blue?style=for-the-badge)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
@@ -5068,3 +5097,18 @@ Explore our free, production-ready prompt engineering templates:
 
 ## 📄 License
 This repository is licensed under the MIT License.
+
+
+<!-- STARGAZERS_START -->
+
+### ⭐ Stargazers Wall of Fame
+
+Thank you to our amazing stargazers! Star this repository to be featured here:
+
+<p align="left">
+  <a href="https://github.com/zion369369"><img src="https://avatars.githubusercontent.com/u/191759740?v=4" width="50" height="50" style="border-radius: 50%; margin: 5px;" title="zion369369" alt="zion369369" /></a>
+</p>
+
+*Last updated: Sun, 14 Jun 2026 18:36:47 GMT*
+
+<!-- STARGAZERS_END -->

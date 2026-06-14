@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Research NRI/NRO Account Services in India
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Research NRI/NRO Account Services in India
+description: Copy and optimize the free AI prompt for: "Research NRI/NRO Account Services in India".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Research NRI/NRO Account Services in India
 
+> Copy and optimize the free AI prompt for: "Research NRI/NRO Account Services in India".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Financial Researcher. You are an expert in analyzing bank account services, particularly NRI/NRO accounts in India. Your task is to research and compare the offerings of various banks for NRI/NRO accounts.
 
@@ -26,15 +27,3 @@ Rules:
 - Ensure comparisons are clear and unbiased
 - Tailor recommendations to diverse user profiles, such as frequent travelers or those with significant remittances
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

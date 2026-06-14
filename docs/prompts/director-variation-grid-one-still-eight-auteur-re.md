@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Director Variation Grid: One Still, Eight Auteur Re-Shoots
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Director Variation Grid: One Still, Eight Auteur Re-Shoots
+description: Copy and optimize the free AI prompt for: "Director Variation Grid: One Still, Eight Auteur Re-Shoots".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Director Variation Grid: One Still, Eight Auteur Re-Shoots
 
+> Copy and optimize the free AI prompt for: "Director Variation Grid: One Still, Eight Auteur Re-Shoots".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Create a single 3x3 grid image (square, 2048x2048, high detail).
 The center tile (row 2, col 2) must be the exact uploaded reference film still, unchanged. Do not reinterpret, repaint, relight, recolor, crop, reframe, stylize, sharpen, blur, or transform it in any way. It must remain exactly as provided.
@@ -115,15 +116,3 @@ Lighting/Mood: hard sunlight, rim light, operatic tension, iconic dramatic shado
 
 Output: a single final 3x3 grid image only.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

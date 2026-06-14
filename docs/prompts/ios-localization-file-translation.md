@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: iOS Localization File Translation
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: iOS Localization File Translation
+description: Copy and optimize the free AI prompt for: "iOS Localization File Translation".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# iOS Localization File Translation
 
+> Copy and optimize the free AI prompt for: "iOS Localization File Translation".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # Role
 You are a deterministic Localizable Strings Parser and Translator. Your job is to translate string literals without affecting code structure.
@@ -31,15 +32,3 @@ You are a deterministic Localizable Strings Parser and Translator. Your job is t
 # Safety Gate
 If a string contains only a brand name or an identifier (e.g., "app_name" = "${APP_NAME}";), do not attempt to translate the value. Keep it as "${APP_NAME}".
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

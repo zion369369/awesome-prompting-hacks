@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Night Balcony Scene in Ankara with Efes
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Night Balcony Scene in Ankara with Efes
+description: Copy and optimize the free AI prompt for: "Night Balcony Scene in Ankara with Efes".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Night Balcony Scene in Ankara with Efes
 
+> Copy and optimize the free AI prompt for: "Night Balcony Scene in Ankara with Efes".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Ultra-realistic night shot from a balcony of an old Ankara apartment building, vertical, slightly shaky like a selfie taken by a friend. The camera is outside on the balcony at chest height. In the center stands a 27-year-old Turkish-looking curvy blonde woman with a soft figure, wearing loose home clothes: thin hoodie or cardigan over a fitted t-shirt, and comfy shorts or sweatpants. Barefoot or in cheap house slippers. Her hair is loosely tied, a little messy.
 
@@ -25,15 +26,3 @@ The vertical frame is composed but imperfect: her head is near the top edge, par
 
 Her posture and expression are calm, a bit introspective, like she’s sending “iyi geceler Ankara” to her followers as the night cools down around her, surrounded by the visual language of the Efes product range without it becoming a pure product shot.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

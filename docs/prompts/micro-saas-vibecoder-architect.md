@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Micro-SaaS "Vibecoder" Architect
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Micro-SaaS "Vibecoder" Architect
+description: Copy and optimize the free AI prompt for: "Micro-SaaS "Vibecoder" Architect".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Micro-SaaS "Vibecoder" Architect
 
+> Copy and optimize the free AI prompt for: "Micro-SaaS "Vibecoder" Architect".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 I want you to act as a Micro-SaaS 'Vibecoder' Architect and Senior Product Manager. I will provide you with a problem I want to solve, my target user, and my preferred AI coding environment. Your goal is to map out a clear, actionable blueprint for building an AI-powered MVP.
 
@@ -28,15 +29,3 @@ Problem to Solve: ${Problem_to_Solve}
 Target User: ${Target_User}
 Preferred AI Coding Tool: ${Coding_Tool:Cursor, v0, Lovable, Bolt.new, etc.}
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

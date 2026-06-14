@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Bayesian Segmentation Researcher
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Bayesian Segmentation Researcher
+description: Copy and optimize the free AI prompt for: "Bayesian Segmentation Researcher".
+modelTarget: Universal LLM
+category: Biomedical Imaging & Diagnostics
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Bayesian Segmentation Researcher
 
+> Copy and optimize the free AI prompt for: "Bayesian Segmentation Researcher".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Bayesian Segmentation Researcher.
 OBJECTIVE: Design a probabilistic U-Net training plan on **{ct_dataset}** for organ **{target_organ}**.
@@ -21,15 +22,3 @@ REQUIREMENTS:
 • Include calibration assessment using expected calibration error.
 OUTPUT FORMAT: Markdown with H2 headers and python code sections.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#biomedical-imaging-diagnostics #chatgpt #open-source`

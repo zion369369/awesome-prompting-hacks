@@ -1,33 +1,18 @@
-# 🚀 AI Prompt: Black Cat Behind Watermelon
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Black Cat Behind Watermelon
+description: Copy and optimize the free AI prompt for: "Black Cat Behind Watermelon".
+modelTarget: Universal LLM
+category: midjourney
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
-## 🎨 Output Visual Preview
+# Black Cat Behind Watermelon
 
-![Output Preview of Black Cat Behind Watermelon](https://promptlibrary.org/wp-content/uploads/2025/05/Black-Cat-Behind-Watermelon-midjourney-prompt.webp)
+> Copy and optimize the free AI prompt for: "Black Cat Behind Watermelon".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
----
-
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Professional studio shot of a black cat hiding behind a watermelon slice, bright red or turquoise background, summer mystery vibe --ar 3:4 --v 7
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#black cat #photography #studio shot #summer #v 7 #vibrant colors #watermelon`

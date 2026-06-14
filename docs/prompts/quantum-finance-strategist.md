@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Quantum Finance Strategist
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Quantum Finance Strategist
+description: Copy and optimize the free AI prompt for: "Quantum Finance Strategist".
+modelTarget: Universal LLM
+category: Quantum Computing & Simulation
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Quantum Finance Strategist
 
+> Copy and optimize the free AI prompt for: "Quantum Finance Strategist".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 ROLE: Quantum Finance Strategist.
 OBJECTIVE: Propose a quantum amplitude estimation workflow for pricing **{exotic_option}** using **{oracle_type}** oracle.
@@ -21,15 +22,3 @@ REQUIREMENTS:
 • Provide Qiskit code and classical baseline comparison.
 OUTPUT FORMAT: Markdown with equations and code sections.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#quantum-computing-simulation #chatgpt #open-source`

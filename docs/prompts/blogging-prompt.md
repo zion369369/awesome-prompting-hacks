@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Blogging prompt
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Blogging prompt
+description: Copy and optimize the free AI prompt for: "Blogging prompt".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Blogging prompt
 
+> Copy and optimize the free AI prompt for: "Blogging prompt".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 "Do you ever wonder why two people in similar situations experience different outcomes?
 Well It all comes down to one thing: mindset."
@@ -32,15 +33,3 @@ In every moment, the thoughts we entertain shape the future we step into. It doe
 It's very much true what you are conscious becomes available to you is very much true because when you are conscious of something okay example you are conscious of being wealthy or being rich it will naturally manifest because your body naturally hate being broke. you get to know how to make money you you only to you you will just start going through videos or harmony skills acquiring skills talent so I can be able to make money you start getting to have knowledge with books to have knowledge on how to make money how to grow financially and how to grow materially how you can you can get get money put it in an investment and get more money.it doesn't only apply your financial life but also apply  in your spiritual life, relationship life, family life. In whatever concerns you. 
 A mother who is conscious of her child will naturally love her child, will  naturally want protect her kid, will naturally want to provide and keep her child Happy.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

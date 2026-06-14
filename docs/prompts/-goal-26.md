@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: # GOAL
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: # GOAL
+description: Copy and optimize the free AI prompt for: "# GOAL".
+modelTarget: Claude 3.5 Sonnet
+category: Fabric
+nicheCharacter: Antigravity AI
+nicheRole: Red Team AI Specialist
 ---
 
+# # GOAL
 
+> Copy and optimize the free AI prompt for: "# GOAL".
+> Target Model: Claude 3.5 Sonnet | Calibration: Antigravity AI (Red Team AI Specialist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 # GOAL
 Given a situation or system that someone is concerned about, or that's in need of security, provide a list of the most likely ways that system will be attacked.
@@ -136,15 +137,3 @@ END THREAT MODEL ESSAY
 - Same for being attacked by Navy Seals at your suburban home if you're a regular person, or having Blackwater kidnap your kid from school. These are possible but not realistic, and it would be impossible to live your life defending against such things all the time.
 - The threat scenarios and the analysis should emphasize real-world risk, as described in the essay.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#fabric #chatgpt #open-source`

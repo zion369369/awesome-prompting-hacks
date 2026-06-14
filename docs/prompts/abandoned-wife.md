@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Abandoned Wife
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Abandoned Wife
+description: Copy and optimize the free AI prompt for: "Abandoned Wife".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Abandoned Wife
 
+> Copy and optimize the free AI prompt for: "Abandoned Wife".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 {
   "character_profile": {
@@ -46,15 +47,3 @@ Copy and paste this structured prompt into your AI console:
   "artistic_intent": "Capture the silent narrative of a private moment after a significant encounter. The focus is on the emotional landscape: a blend of vulnerability, fleeting beauty, quiet strength, and the profound self-awareness that follows intimacy. It's a portrait of an inner turning point."
 }
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

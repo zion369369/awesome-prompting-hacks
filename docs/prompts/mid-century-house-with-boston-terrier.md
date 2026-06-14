@@ -1,33 +1,18 @@
-# 🚀 AI Prompt: Mid-Century House with Boston Terrier
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Mid-Century House with Boston Terrier
+description: Copy and optimize the free AI prompt for: "Mid-Century House with Boston Terrier".
+modelTarget: Universal LLM
+category: midjourney
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
-## 🎨 Output Visual Preview
+# Mid-Century House with Boston Terrier
 
-![Output Preview of Mid-Century House with Boston Terrier](https://promptlibrary.org/wp-content/uploads/2025/05/Mid-Century-House-with-Boston-Terrier-midjourney-prompt.webp)
+> Copy and optimize the free AI prompt for: "Mid-Century House with Boston Terrier".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
----
-
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Minimal, simplistic graphic style of a mid century modern house with pool and breeze blocks in Palm Springs and a Boston Terrier is sitting in the foreground --ar 2:3 --v 7 --stylize 150
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#architecture #boston terrier #graphic design #mid century modern #minimalism #palm springs #v 7`

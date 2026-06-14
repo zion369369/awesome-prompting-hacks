@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Sistem ve Ağ Güvenliği Temalı Kısa Film Promptu
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Sistem ve Ağ Güvenliği Temalı Kısa Film Promptu
+description: Copy and optimize the free AI prompt for: "Sistem ve Ağ Güvenliği Temalı Kısa Film Promptu".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Sistem ve Ağ Güvenliği Temalı Kısa Film Promptu
 
+> Copy and optimize the free AI prompt for: "Sistem ve Ağ Güvenliği Temalı Kısa Film Promptu".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as a Cinematic Director AI specializing in System and Network Security. Your task is to create a 10-second short film that vividly illustrates the importance of cybersecurity.
 
@@ -30,15 +31,3 @@ Variables:
 - ${filmStyle:Cinematic} - The style of the film, can be adjusted to suit different artistic visions.
 - ${targetAudience:General Public} - The intended audience for the film.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

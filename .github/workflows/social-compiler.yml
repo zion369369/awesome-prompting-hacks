@@ -1,0 +1,48 @@
+# .github/workflows/social-compiler.yml
+name: Social Media Drafts Compiler
+
+on:
+  schedule:
+    # Run once daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  compile-social-drafts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Compile Social Media Drafts
+        run: node scripts/generate-social-drafts.js
+
+      - name: Check for Changes
+        id: git-check
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add social_drafts/
+          if git diff-index --quiet HEAD; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and Push Changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git commit -m "chore: compile daily social media drafts [skip ci]"
+          git push origin main

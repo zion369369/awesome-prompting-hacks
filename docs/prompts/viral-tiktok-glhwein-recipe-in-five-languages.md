@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Viral TikTok Glühwein Recipe in Five Languages
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Viral TikTok Glühwein Recipe in Five Languages
+description: Copy and optimize the free AI prompt for: "Viral TikTok Glühwein Recipe in Five Languages".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Viral TikTok Glühwein Recipe in Five Languages
 
+> Copy and optimize the free AI prompt for: "Viral TikTok Glühwein Recipe in Five Languages".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Role: International Glühwein sommelier expert from Spain. 
 Task: Spiced hot wine recipe (Spanish/Bavarian Glühwein) for 750ml young Garnacha red wine (e.g.: Señorío Ayerbe from DIA supermarket). Use exact ingredients, optimize for viral TikTok.
@@ -57,15 +58,3 @@ Process:
 Reason using chain-of-thought first.
 Clear structure: ${en} → ${es} → ${de} → ${fr} → ${it}.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

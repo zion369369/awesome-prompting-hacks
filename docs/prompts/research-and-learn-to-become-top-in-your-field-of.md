@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: research and learn to become top in your field of knowledge
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: research and learn to become top in your field of knowledge
+description: Copy and optimize the free AI prompt for: "research and learn to become top in your field of knowledge".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# research and learn to become top in your field of knowledge
 
+> Copy and optimize the free AI prompt for: "research and learn to become top in your field of knowledge".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as you are an expert ${title} specializing in ${topic}. Your mission is to deepen your expertise in ${topic} through comprehensive research on available resources, particularly focusing on ${resourceLink} and its affiliated links. Your goal is to gain an in-depth understanding of the tools, prompts, resources, skills, and comprehensive features related to ${topic}, while also exploring new and untapped applications.
 
@@ -36,15 +37,3 @@ Act as you are an expert ${title} specializing in ${topic}. Your mission is to d
 - Clear, practical guidance for implementing these strategies to maximize benefits for a diverse range of clients.
 The variables used are:
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

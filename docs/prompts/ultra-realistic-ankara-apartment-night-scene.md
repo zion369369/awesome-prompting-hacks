@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Ultra-Realistic Ankara Apartment Night Scene
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Ultra-Realistic Ankara Apartment Night Scene
+description: Copy and optimize the free AI prompt for: "Ultra-Realistic Ankara Apartment Night Scene".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Ultra-Realistic Ankara Apartment Night Scene
 
+> Copy and optimize the free AI prompt for: "Ultra-Realistic Ankara Apartment Night Scene".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Ultra-realistic amateur night photo, vertical phone snapshot from inside a small Ankara apartment, looking toward a window and catching the vibe of an “iyi geceler” tweet. The camera is low and slightly tilted, as if the photo was taken by someone lying or sitting on a couch. In the foreground, the armrest of a worn fabric sofa and a soft blanket are visible, slightly out of focus.
 
@@ -23,15 +24,3 @@ Inside the room, only a floor lamp with a warm bulb is on, casting a low, cozy l
 
 There is visible high-ISO noise in the dark areas, slight motion blur on a car passing outside, and no strong color grading—just natural warm and cool lights mixing. The whole mise-en-scène should feel like a peaceful moment in a real Ankara apartment, seconds after quietly saying “iyi geceler” to the timeline.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

@@ -1,17 +1,18 @@
-# 🚀 AI Prompt: Amateur Girls' Night Selfie - Casual and Imperfect
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Amateur Girls' Night Selfie - Casual and Imperfect
+description: Copy and optimize the free AI prompt for: "Amateur Girls' Night Selfie - Casual and Imperfect".
+modelTarget: Universal LLM
+category: Roleplay
+nicheCharacter: Antigravity AI
+nicheRole: Core System Intelligence
 ---
 
+# Amateur Girls' Night Selfie - Casual and Imperfect
 
+> Copy and optimize the free AI prompt for: "Amateur Girls' Night Selfie - Casual and Imperfect".
+> Target Model: Universal LLM | Calibration: Antigravity AI (Core System Intelligence)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Amateur girls’ night selfie, very casual and imperfect, 1:1 aspect ratio. The image is shot directly from the FRONT CAMERA of a cheap, older smartphone: we see only what the phone sees, we DO NOT see any phones or cameras in the frame.
 
@@ -31,15 +32,3 @@ Constraints: there are EXACTLY THREE women in the frame and NO other people. The
 
 Negative prompt: professional studio, pro lighting, softboxes, rim light, cinematic atmosphere, commercial photoshoot, perfect color grading, HDR, strong depth of field blur, bokeh, high-end DSLR or lens, ultra-clean fashion image, symmetrical composition, influencer preset, heavy airbrushed skin, filters, hotel room, staged set, extra people, extra arms, extra hands, any additional phones or cameras in the frame, mirrors showing another photographer, text, logo, watermark, surreal glitches, underage appearance.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#roleplay #chatgpt #open-source`

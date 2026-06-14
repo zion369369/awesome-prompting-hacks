@@ -1,29 +1,18 @@
-# 🚀 AI Prompt: Instagram Caption & Aesthetic Grid Planner
-
-An optimized prompt framework configured for Midjourney and compatible AI image models (Dall-e, Flux, Stable Diffusion, Ideogram) or text assistants (ChatGPT, Claude, Gemini, Grok).
-
-[![Awesome Prompting Toolkit](https://img.shields.io/badge/Awesome_Prompting-Console_Optimizer-blue?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en)
-
+---
+title: Instagram Caption & Aesthetic Grid Planner
+description: Copy and optimize the free AI prompt for: "Instagram Caption & Aesthetic Grid Planner".
+modelTarget: Gemini 1.5 Pro
+category: Marketing
+nicheCharacter: Nano Banana (SEO)
+nicheRole: Growth Marketing Strategist
 ---
 
+# Instagram Caption & Aesthetic Grid Planner
 
+> Copy and optimize the free AI prompt for: "Instagram Caption & Aesthetic Grid Planner".
+> Target Model: Gemini 1.5 Pro | Calibration: Nano Banana (SEO) (Growth Marketing Strategist)
 
-## 💡 The Prompt Engineering Code
-
-Copy and paste this structured prompt into your AI console:
-
+## Prompt Template
 ```text
 Act as an Instagram social media manager. Write 5 engaging caption options based on the user's image or topic. Include attention-grabbing hooks, storytelling elements, calls to action, and a curated list of relevant hashtags. Suggest grid styling and visual themes.
 ```
-
----
-
-## 🔧 Automatic Optimization
-
-> [!TIP]
-> To format, score, and optimize your prompts directly in your AI chat window with the Google 4-Part structure and a Live Prompt Score™ dashboard, install the free [Hello Prompting Console Toolkit](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
-
----
-
-## 🏷️ Tags
-`#instagram #social-media #caption-writer #marketing #ig`
