@@ -1,0 +1,34 @@
+# .github/workflows/notion-dispatcher.yml
+name: Notion Dispatch Syndication
+
+on:
+  repository_dispatch:
+    types: [notion-syndication]
+
+jobs:
+  dispatch-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Execute Syndication
+        env:
+          PROMPT_SLUG: ${{ github.event.client_payload.prompt_slug }}
+          PROMPT_INDEX: ${{ github.event.client_payload.prompt_index }}
+          TARGET_PLATFORMS: ${{ join(github.event.client_payload.platforms, ',') }}
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          NOTION_KEY: ${{ secrets.NOTION_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: node scripts/dispatch-publisher.js

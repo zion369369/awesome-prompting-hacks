@@ -1,0 +1,35 @@
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "SVG designer"
+
+Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
+
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/svg-designer
+
+--- TWEET 2 (191 chars) ---
+2/5 🔧 Calibration Details:
+
+• Category: Roleplay
+• Tags: #roleplay #chatgpt #open-source
+• Best Run On: Claude 3.5 Sonnet / GPT-4o
+
+Establish an expert persona in the LLM runtime in seconds.
+
+--- TWEET 3 (280 chars) ---
+3/5 📋 Prompt Preview:
+
+"""
+I would like you to act as an SVG designer. I will ask you to create images, and you will come up with SVG...
+"""
+
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/svg-designer
+
+--- TWEET 4 (205 chars) ---
+4/5 💡 Execution Tip:
+
+For optimal results, paste this system instruction first, then load your reference material or logs inside XML tags (e.g. <context>your_code</context>) to maintain format compliance.
+
+--- TWEET 5 (334 chars) ---
+5/5 🌟 Track 5,000+ free curated prompt templates by starring our GitHub repo:
+https://github.com/zion369369/awesome-prompting-hacks
+
+🧩 Or install the free Hello Prompting extension to get live prompt scoring in ChatGPT/Claude: https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en

@@ -26,18 +26,28 @@ function formatTwitterThread(prompt) {
   const liveUrl = `https://zion369369.github.io/awesome-prompting-hacks/prompts/${prompt.slug}`;
   const tweets = [];
   
-  // Tweet 1: Intro
-  tweets.push(`1/5 🚀 AI Prompt of the Day: "${prompt.title}"\n\nBoost your workflow with this production-grade template calibrated specifically for ${prompt.category} tasks.\n\nRead the thread to copy the prompt or view it here: ${liveUrl}`);
+  function safeTruncate(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength - 3) + '...';
+  }
+
+  // Tweet 1: Intro (Max length calculation)
+  const prefix1 = `1/5 🚀 AI Prompt of the Day: "`;
+  const suffix1 = `"\n\nBoost your workflow with this production-grade template calibrated specifically for ${prompt.category} tasks.\n\nRead the thread or copy here: ${liveUrl}`;
+  const maxTitleLen1 = 280 - (prefix1.length + suffix1.length);
+  const safeTitle = safeTruncate(prompt.title, maxTitleLen1);
+  tweets.push(`${prefix1}${safeTitle}${suffix1}`);
   
   // Tweet 2: Description & Calibration
-  tweets.push(`2/5 🔧 Calibration Details:\n\n• Category: ${prompt.category}\n• Tags: ${prompt.tags.slice(0, 3).map(t => `#${t}`).join(' ')}\n• Best Run On: Claude 3.5 Sonnet / GPT-4o\n\nEstablish an expert persona in the LLM runtime in seconds.`);
+  const tagsStr = prompt.tags.slice(0, 3).map(t => `#${t}`).join(' ');
+  tweets.push(`2/5 🔧 Calibration Details:\n\n• Category: ${prompt.category}\n• Tags: ${tagsStr}\n• Best Run On: Claude 3.5 Sonnet / GPT-4o\n\nEstablish an expert persona in the LLM runtime in seconds.`);
   
-  // Tweet 3: Prompt snippet
-  const maxSnippetLength = 160;
-  const promptSnippet = prompt.prompt.length > maxSnippetLength 
-    ? prompt.prompt.substring(0, maxSnippetLength) + '...'
-    : prompt.prompt;
-  tweets.push(`3/5 📋 Prompt Preview:\n\n"""\n${promptSnippet.trim()}\n"""\n\nGet the full, un-truncated copy-pasteable prompt template here: ${liveUrl}`);
+  // Tweet 3: Prompt snippet (Max length calculation)
+  const prefix3 = `3/5 📋 Prompt Preview:\n\n"""\n`;
+  const suffix3 = `\n"""\n\nGet the full, un-truncated copy-pasteable prompt template here: ${liveUrl}`;
+  const maxSnippetLen3 = 280 - (prefix3.length + suffix3.length);
+  const promptSnippet = safeTruncate(prompt.prompt.trim(), maxSnippetLen3);
+  tweets.push(`${prefix3}${promptSnippet}${suffix3}`);
   
   // Tweet 4: Tip
   tweets.push(`4/5 💡 Execution Tip:\n\nFor optimal results, paste this system instruction first, then load your reference material or logs inside XML tags (e.g. <context>your_code</context>) to maintain format compliance.`);
