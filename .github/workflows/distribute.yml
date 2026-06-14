@@ -47,3 +47,15 @@ jobs:
           else
             echo "DISCORD_WEBHOOK_URL secret is not set. Skipping Discord syndication."
           fi
+
+      - name: Sync to Notion Database
+        env:
+          NOTION_KEY: ${{ secrets.NOTION_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          if [ -n "$NOTION_KEY" ] && [ -n "$NOTION_DATABASE_ID" ]; then
+            DAYS_SINCE_EPOCH=$(( $(date +%s) / 86400 ))
+            node scripts/push-to-notion.js $DAYS_SINCE_EPOCH
+          else
+            echo "NOTION_KEY or NOTION_DATABASE_ID is not set. Skipping Notion database sync."
+          fi
