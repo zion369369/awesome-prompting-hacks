@@ -224,34 +224,79 @@ async function run() {
 
   const notion = new Client({ auth: notionKey });
 
-  // Dynamically retrieve the database schema to verify available columns
+  // Dynamically retrieve the database schema to verify/provision columns
   let dbProperties = {};
   try {
     const dbInfo = await notion.databases.retrieve({ database_id: databaseId });
     dbProperties = dbInfo.properties || {};
-    console.log(`[NOTION] Successfully connected. Schema columns: ${Object.keys(dbProperties).join(', ')}`);
+    console.log(`[NOTION] Successfully connected. Existing columns: ${Object.keys(dbProperties).join(', ')}`);
+
+    // Dynamic schema provisioning
+    const missingProps = {};
+    if (!dbProperties.Category) missingProps.Category = { select: {} };
+    if (!dbProperties.Platform) missingProps.Platform = { select: {} };
+    if (!dbProperties.Tags) missingProps.Tags = { multi_select: {} };
+    if (!dbProperties.Score) missingProps.Score = { number: {} };
+    if (!dbProperties["CWS Link"]) missingProps["CWS Link"] = { url: {} };
+
+    if (Object.keys(missingProps).length > 0) {
+      console.log(`[NOTION] Provisioning missing columns via HTTP PATCH: ${Object.keys(missingProps).join(', ')}...`);
+      const response = await fetch(`https://api.notion.com/v1/databases/${databaseId}`, {
+        method: 'PATCH',
+        headers: {
+          Authorization: `Bearer ${notionKey}`,
+          'Notion-Version': '2022-06-28',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          properties: missingProps
+        })
+      });
+      if (response.ok) {
+        const updatedDb = await response.json();
+        dbProperties = updatedDb.properties || {};
+        console.log('[NOTION] Notion database columns provisioned successfully!');
+      } else {
+        const text = await response.text();
+        console.warn(`[NOTION WARN] Failed to update schema (${response.status}): ${text}`);
+      }
+    }
   } catch (e) {
-    console.warn(`[NOTION WARN] Could not query database schema properties: ${e.message}. Using default columns.`);
+    console.warn(`[NOTION WARN] Could not query/update database properties: ${e.message}. Using default columns.`);
   }
 
   // Parse arguments
   const args = process.argv.slice(2);
-  const cleanArgs = args.filter(a => !a.startsWith('--'));
-  const arg = cleanArgs[0];
-
+  
   let syncList = [];
-
-  if (arg && !isNaN(arg)) {
-    const rawIdx = parseInt(arg, 10);
-    const idx = ((rawIdx % prompts.length) + prompts.length) % prompts.length;
+  let limit = 10;
+  let all = false;
+  let singleIndex = null;
+  
+  const limitIdx = args.findIndex(a => a === '--limit');
+  if (limitIdx !== -1 && args[limitIdx + 1]) {
+    limit = parseInt(args[limitIdx + 1], 10) || 10;
+  }
+  
+  if (args.includes('--all')) {
+    all = true;
+  }
+  
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (i > 0 && args[i - 1] === '--limit') continue;
+    if (!a.startsWith('--') && !isNaN(a)) {
+      singleIndex = parseInt(a, 10);
+      break;
+    }
+  }
+  
+  if (singleIndex !== null) {
+    const idx = ((singleIndex % prompts.length) + prompts.length) % prompts.length;
     syncList = [prompts[idx]];
-    console.log(`[INDEX] Resolved index ${rawIdx} to prompt index ${idx} (out of ${prompts.length} total prompts).`);
+    console.log(`[INDEX] Resolved index ${singleIndex} to prompt index ${idx} (out of ${prompts.length} total prompts).`);
   } else {
-    let limit = 10;
-    const limitIdx = args.findIndex(a => a === '--limit');
-    if (limitIdx !== -1 && args[limitIdx + 1]) {
-      limit = parseInt(args[limitIdx + 1], 10) || 10;
-    } else if (args.includes('--all')) {
+    if (all) {
       limit = prompts.length;
     }
     syncList = prompts.slice(0, limit);
