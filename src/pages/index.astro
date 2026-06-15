@@ -169,11 +169,11 @@ const buildVersion = Date.now().toString();
       display: flex;
       align-items: center;
       gap: 12px;
-      background: rgba(30, 41, 59, 0.4);
+      background: #ffffff;
       border-radius: 14px;
       margin-top: 8px;
-      border: 1px solid rgba(14, 165, 233, 0.15);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid hsl(var(--border));
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     }
 
     .search-icon {
@@ -186,6 +186,7 @@ const buildVersion = Date.now().toString();
       padding: 10px 0;
       font-size: 1.1rem;
       width: 100%;
+      color: hsl(var(--text-primary));
     }
 
     .search-input:focus {
@@ -205,8 +206,8 @@ const buildVersion = Date.now().toString();
     }
 
     .tag-filter-btn {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
       color: hsl(var(--text-secondary));
       padding: 6px 14px;
       border-radius: 9999px;
@@ -218,15 +219,15 @@ const buildVersion = Date.now().toString();
     }
 
     .tag-filter-btn:hover {
-      background: rgba(255, 255, 255, 0.08);
-      color: #fff;
-      border-color: rgba(255, 255, 255, 0.15);
+      background: hsl(var(--bg-surface));
+      color: hsl(var(--text-primary));
+      border-color: rgba(0, 0, 0, 0.1);
     }
 
     .tag-filter-btn.active {
-      background: rgba(14, 165, 233, 0.15);
+      background: rgba(37, 99, 235, 0.08);
       color: hsl(var(--primary));
-      border-color: rgba(14, 165, 233, 0.35);
+      border-color: rgba(37, 99, 235, 0.2);
     }
 
     /* Grid Gallery */
@@ -256,12 +257,14 @@ const buildVersion = Date.now().toString();
       overflow: hidden;
       text-decoration: none;
       transition: var(--transition-smooth);
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
     }
 
     .prompt-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(14, 165, 233, 0.25);
-      box-shadow: 0 12px 36px rgba(14, 165, 233, 0.08);
+      border-color: hsl(var(--primary));
+      box-shadow: 0 12px 36px rgba(37, 99, 235, 0.08);
     }
 
     .card-image-wrap {
@@ -269,7 +272,7 @@ const buildVersion = Date.now().toString();
       width: 100%;
       height: 200px;
       overflow: hidden;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.02);
     }
 
     .card-image {
@@ -289,7 +292,7 @@ const buildVersion = Date.now().toString();
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(to bottom, transparent 60%, rgba(30, 41, 59, 0.3));
+      background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.02));
     }
 
     .card-content {
@@ -310,7 +313,7 @@ const buildVersion = Date.now().toString();
     .card-title {
       font-size: 1.25rem;
       font-weight: 600;
-      color: #fff;
+      color: hsl(var(--text-primary));
       line-height: 1.3;
       margin-bottom: 12px;
       display: -webkit-box;
@@ -328,8 +331,8 @@ const buildVersion = Date.now().toString();
     }
 
     .card-tag {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
       color: hsl(var(--text-secondary));
       font-size: 0.75rem;
       padding: 2px 8px;
@@ -337,7 +340,7 @@ const buildVersion = Date.now().toString();
     }
 
     .card-tag-more {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(0, 0, 0, 0.04);
       color: hsl(var(--text-muted));
       font-size: 0.75rem;
       padding: 2px 6px;
@@ -350,7 +353,7 @@ const buildVersion = Date.now().toString();
       justify-content: space-between;
       align-items: center;
       margin-top: auto;
-      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      border-top: 1px solid hsl(var(--border));
       padding-top: 16px;
     }
 
@@ -385,7 +388,7 @@ const buildVersion = Date.now().toString();
       padding: 48px;
       gap: 12px;
       margin-top: 24px;
-      border-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid hsl(var(--border));
     }
 
     .no-results-icon {
@@ -393,7 +396,7 @@ const buildVersion = Date.now().toString();
     }
 
     .no-results h3 {
-      color: #fff;
+      color: hsl(var(--text-primary));
       font-size: 1.35rem;
     }
 

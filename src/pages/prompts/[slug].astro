@@ -347,7 +347,7 @@ const jsonLd = {
       font-size: 1.05rem;
       line-height: 1.6;
       color: hsl(var(--text-secondary));
-      background: rgba(14, 165, 233, 0.03);
+      background: rgba(37, 99, 235, 0.03);
       border-radius: 4px;
     }
     .opener-text {
@@ -359,7 +359,8 @@ const jsonLd = {
       gap: 16px;
       padding: 20px;
       margin-bottom: 20px;
-      background: rgba(30, 41, 59, 0.3);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
       border-radius: 8px;
     }
     .metric-card {
@@ -376,13 +377,13 @@ const jsonLd = {
     .metric-val {
       font-size: 1.1rem;
       font-weight: 600;
-      color: #fff;
+      color: hsl(var(--text-primary));
     }
     .aeo-expert-tip {
       padding: 16px 20px;
       margin-bottom: 32px;
-      border: 1px dashed rgba(14, 165, 233, 0.3);
-      background: rgba(14, 165, 233, 0.02);
+      border: 1px dashed rgba(37, 99, 235, 0.3);
+      background: rgba(37, 99, 235, 0.02);
       border-radius: 8px;
     }
     .tip-header {
@@ -423,6 +424,7 @@ const jsonLd = {
     .prompt-title {
       font-size: 2.5rem;
       margin-bottom: 8px;
+      color: hsl(var(--text-primary));
     }
 
     .category-meta {
@@ -442,9 +444,9 @@ const jsonLd = {
     }
 
     .category-badge {
-      background: rgba(14, 165, 233, 0.15);
+      background: rgba(37, 99, 235, 0.08);
       color: hsl(var(--primary));
-      border: 1px solid rgba(14, 165, 233, 0.3);
+      border: 1px solid rgba(37, 99, 235, 0.2);
     }
 
     .meta-label {
@@ -461,7 +463,8 @@ const jsonLd = {
       overflow: hidden;
       display: flex;
       justify-content: center;
-      background: rgba(30, 41, 59, 0.4);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
     }
 
     .image-preview {
@@ -483,7 +486,7 @@ const jsonLd = {
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at center, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(37, 99, 235, 0.04) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -492,7 +495,8 @@ const jsonLd = {
       padding: 0;
       border-radius: 12px;
       overflow: hidden;
-      background: rgba(15, 23, 42, 0.6);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
     }
 
     .console-header {
@@ -500,7 +504,7 @@ const jsonLd = {
       justify-content: space-between;
       align-items: center;
       padding: 12px 20px;
-      background: rgba(30, 41, 59, 0.5);
+      background: rgba(0, 0, 0, 0.02);
       border-bottom: 1px solid hsl(var(--border));
     }
 
@@ -514,9 +518,9 @@ const jsonLd = {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
+      color: hsl(var(--text-primary));
       font-family: inherit;
       font-size: 0.85rem;
       font-weight: 500;
@@ -527,8 +531,8 @@ const jsonLd = {
     }
 
     .btn-copy:hover {
-      background: rgba(14, 165, 233, 0.15);
-      border-color: rgba(14, 165, 233, 0.3);
+      background: rgba(37, 99, 235, 0.08);
+      border-color: rgba(37, 99, 235, 0.2);
       color: hsl(var(--primary));
     }
 
@@ -554,13 +558,13 @@ const jsonLd = {
     }
 
     .widget-extension {
-      border: 1px solid rgba(14, 165, 233, 0.25);
-      background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.06), transparent 70%), var(--glass-bg);
+      border: 1px solid rgba(37, 99, 235, 0.15);
+      background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.03), transparent 70%), var(--glass-bg);
     }
 
     .widget-extension h3 {
       font-size: 1.35rem;
-      color: #fff;
+      color: hsl(var(--text-primary));
       margin-bottom: 8px;
     }
 
@@ -601,9 +605,9 @@ const jsonLd = {
     /* Tag styles */
     .widget-tags h4, .widget-similar h4 {
       font-size: 1.1rem;
-      color: #fff;
+      color: hsl(var(--text-primary));
       margin-bottom: 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid hsl(var(--border));
       padding-bottom: 8px;
     }
 
@@ -614,8 +618,8 @@ const jsonLd = {
     }
 
     .tag-badge {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
       color: hsl(var(--text-secondary));
       font-size: 0.85rem;
       padding: 4px 10px;
@@ -635,21 +639,21 @@ const jsonLd = {
       gap: 4px;
       padding: 12px;
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.01);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
       text-decoration: none;
       transition: var(--transition-smooth);
     }
 
     .similar-item:hover {
-      border-color: rgba(14, 165, 233, 0.2);
-      background: rgba(14, 165, 233, 0.02);
+      border-color: rgba(37, 99, 235, 0.2);
+      background: rgba(37, 99, 235, 0.02);
       transform: translateY(-1px);
     }
 
     .similar-title {
       font-weight: 500;
-      color: #fff;
+      color: hsl(var(--text-primary));
       font-size: 0.95rem;
     }
 
@@ -681,8 +685,8 @@ const jsonLd = {
               btnText.textContent = originalText;
             }
             copyBtn.style.transform = 'none';
-            copyBtn.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-            copyBtn.style.color = '#fff';
+            copyBtn.style.borderColor = 'hsl(var(--border))';
+            copyBtn.style.color = 'hsl(var(--text-primary))';
           }, 2000);
         }).catch(err => {
           console.error('Copy failed:', err);
