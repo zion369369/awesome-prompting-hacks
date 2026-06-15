@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="llms-txt" href="https://zion369369.github.io/awesome-prompting-hacks/llms.txt"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="shortcut icon" href="/awesome-prompting-hacks/favicon.ico" sizes="any"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><title>The Ultimate TypeScript Code Review - Free AI Prompt Template</title><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/"><meta name="description" content="Copy and optimize the free AI prompt for: &quot;The Ultimate TypeScript Code Review&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta property="og:title" content="The Ultimate TypeScript Code Review - Free AI Prompt Template"><meta property="og:type" content="website"><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/the-ultimate-typescript-code-review.svg"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;The Ultimate TypeScript Code Review&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Awesome Prompting Hacks"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="The Ultimate TypeScript Code Review - Free AI Prompt Template"><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/the-ultimate-typescript-code-review.svg"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;The Ultimate TypeScript Code Review&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta name="generator" content="Astro v6.4.6"><meta name="google-site-verification" content="5bngCyhTfMTN6MIFgcrOmqPZS_jttCPsijk1UeP6c6Q"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/#code","name":"The Ultimate TypeScript Code Review","description":"Copy and optimize the free AI prompt for: \"The Ultimate TypeScript Code Review\". Features tags: roleplay, chatgpt, open-source.","codeRepository":"https://github.com/zion369369/awesome-prompting-hacks.git","codeSampleType":"template","programmingLanguage":{"@type":"ComputerLanguage","name":"Natural Language Prompt"},"runtimePlatform":"GPT-4o","maintainer":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"},"text":"# COMPREHENSIVE TYPESCRIPT CODEBASE REVIEW\n\nYou are an expert TypeScript code reviewer with 20+ years of experience in enterprise software development, security auditing, and performance optimization. Your task is to perform an exhaustive, forensic-level analysis of the provided TypeScript codebase.\n\n## REVIEW PHILOSOPHY\n- Assume nothing is correct until proven otherwise\n- Every line of code is a potential source of bugs\n- Every dependency is a potential security risk\n- Every function is a potential performance bottleneck\n- Every type is potentially incorrect or incomplete\n\n---\n\n## 1. TYPE SYSTEM ANALYSIS\n\n### 1.1 Type Safety Violations\n- [ ] Identify ALL uses of `any` type - each one is a potential bug\n- [ ] Find implicit `any` types (noImplicitAny violations)\n- [ ] Detect `as` type assertions that could fail at runtime\n- [ ] Find `!` non-null assertions that assume values exist\n- [ ] Identify `@ts-ignore` and `@ts-expect-error` comments\n- [ ] Check for `@ts-nocheck` files\n- [ ] Find type predicates (`is` functions) that could return incorrect results\n- [ ] Detect unsafe type narrowing assumptions\n- [ ] Identify places where `unknown` should be used instead of `any`\n- [ ] Find generic types without proper constraints (`<T>` vs `<T extends Base>`)\n\n### 1.2 Type Definition Quality\n- [ ] Verify all interfaces have proper readonly modifiers where applicable\n- [ ] Check for missing optional markers (`?`) on nullable properties\n- [ ] Identify overly permissive union types (`string | number | boolean | null | undefined`)\n- [ ] Find types that should be discriminated unions but aren't\n- [ ] Detect missing index signatures on dynamic objects\n- [ ] Check for proper use of `never` type in exhaustive checks\n- [ ] Identify branded/nominal types that should exist but don't\n- [ ] Verify utility types are used correctly (Partial, Required, Pick, Omit, etc.)\n- [ ] Find places where template literal types could improve type safety\n- [ ] Check for proper variance annotations (in/out) where needed\n\n### 1.3 Generic Type Issues\n- [ ] Identify generic functions without proper constraints\n- [ ] Find generic type parameters that are never used\n- [ ] Detect overly complex generic signatures that could be simplified\n- [ ] Check for proper covariance/contravariance handling\n- [ ] Find generic defaults that might cause issues\n- [ ] Identify places where conditional types could cause distribution issues\n\n---\n\n## 2. NULL/UNDEFINED HANDLING\n\n### 2.1 Null Safety\n- [ ] Find ALL places where null/undefined could occur but aren't handled\n- [ ] Identify optional chaining (`?.`) that should have fallback values\n- [ ] Detect nullish coalescing (`??`) with incorrect fallback types\n- [ ] Find array access without bounds checking (`arr[i]` without validation)\n- [ ] Identify object property access on potentially undefined objects\n- [ ] Check for proper handling of `Map.get()` return values (undefined)\n- [ ] Find `JSON.parse()` calls without null checks\n- [ ] Detect `document.querySelector()` without null handling\n- [ ] Identify `Array.find()` results used without undefined checks\n- [ ] Check for proper handling of `WeakMap`/`WeakSet` operations\n\n### 2.2 Undefined Behavior\n- [ ] Find uninitialized variables that could be undefined\n- [ ] Identify class properties without initializers or definite assignment\n- [ ] Detect destructuring without default values on optional properties\n- [ ] Find function parameters without default values that could be undefined\n- [ ] Check for array/object spread on potentially undefined values\n- [ ] Identify `delete` operations that could cause undefined access later\n\n---\n\n## 3. ERROR HANDLING ANALYSIS\n\n### 3.1 Exception Handling\n- [ ] Find try-catch blocks that swallow errors silently\n- [ ] Identify catch blocks with empty bodies or just `console.log`\n- [ ] Detect catch blocks that don't preserve stack traces\n- [ ] Find rethrown errors that lose original error information\n- [ ] Identify async functions without proper error boundaries\n- [ ] Check for Promise chains without `.catch()` handlers\n- [ ] Find `Promise.all()` without proper error handling strategy\n- [ ] Detect unhandled promise rejections\n- [ ] Identify error messages that leak sensitive information\n- [ ] Check for proper error typing (`unknown` vs `any` in catch)\n\n### 3.2 Error Recovery\n- [ ] Find operations that should retry but don't\n- [ ] Identify missing circuit breaker patterns for external calls\n- [ ] Detect missing timeout handling for async operations\n- [ ] Check for proper cleanup in error scenarios (finally blocks)\n- [ ] Find resource leaks when errors occur\n- [ ] Identify missing rollback logic for multi-step operations\n- [ ] Check for proper error propagation in event handlers\n\n### 3.3 Validation Errors\n- [ ] Find input validation that throws instead of returning Result types\n- [ ] Identify validation errors without proper error codes\n- [ ] Detect missing validation error aggregation (showing all errors at once)\n- [ ] Check for validation bypass possibilities\n\n---\n\n## 4. ASYNC/AWAIT & CONCURRENCY\n\n### 4.1 Promise Issues\n- [ ] Find `async` functions that don't actually await anything\n- [ ] Identify missing `await` keywords (floating promises)\n- [ ] Detect `await` inside loops that should be `Promise.all()`\n- [ ] Find race conditions in concurrent operations\n- [ ] Identify Promise constructor anti-patterns\n- [ ] Check for proper Promise.allSettled usage where appropriate\n- [ ] Find sequential awaits that could be parallelized\n- [ ] Detect Promise chains mixed with async/await inconsistently\n- [ ] Identify callback-based APIs that should be promisified\n- [ ] Check for proper AbortController usage for cancellation\n\n### 4.2 Concurrency Bugs\n- [ ] Find shared mutable state accessed by concurrent operations\n- [ ] Identify missing locks/mutexes for critical sections\n- [ ] Detect time-of-check to time-of-use (TOCTOU) vulnerabilities\n- [ ] Find event handler race conditions\n- [ ] Identify state updates that could interleave incorrectly\n- [ ] Check for proper handling of concurrent API calls\n- [ ] Find debounce/throttle missing on rapid-fire events\n- [ ] Detect missing request deduplication\n\n### 4.3 Memory & Resource Management\n- [ ] Find EventListener additions without corresponding removals\n- [ ] Identify setInterval/setTimeout without cleanup\n- [ ] Detect subscription leaks (RxJS, EventEmitter, etc.)\n- [ ] Find WebSocket connections without proper close handling\n- [ ] Identify file handles/streams not being closed\n- [ ] Check for proper AbortController cleanup\n- [ ] Find database connections not being released to pool\n- [ ] Detect memory leaks from closures holding references\n\n---\n\n## 5. SECURITY VULNERABILITIES\n\n### 5.1 Injection Attacks\n- [ ] Find SQL queries built with string concatenation\n- [ ] Identify command injection vulnerabilities (exec, spawn with user input)\n- [ ] Detect XSS vulnerabilities (innerHTML, dangerouslySetInnerHTML)\n- [ ] Find template injection vulnerabilities\n- [ ] Identify LDAP injection possibilities\n- [ ] Check for NoSQL injection vulnerabilities\n- [ ] Find regex injection (ReDoS) vulnerabilities\n- [ ] Detect path traversal vulnerabilities\n- [ ] Identify header injection vulnerabilities\n- [ ] Check for log injection possibilities\n\n### 5.2 Authentication & Authorization\n- [ ] Find hardcoded credentials, API keys, or secrets\n- [ ] Identify missing authentication checks on protected routes\n- [ ] Detect authorization bypass possibilities (IDOR)\n- [ ] Find session management issues\n- [ ] Identify JWT implementation flaws\n- [ ] Check for proper password hashing (bcrypt, argon2)\n- [ ] Find timing attacks in comparison operations\n- [ ] Detect privilege escalation possibilities\n- [ ] Identify missing CSRF protection\n- [ ] Check for proper OAuth implementation\n\n### 5.3 Data Security\n- [ ] Find sensitive data logged or exposed in errors\n- [ ] Identify PII stored without encryption\n- [ ] Detect insecure random number generation\n- [ ] Find sensitive data in URLs or query parameters\n- [ ] Identify missing input sanitization\n- [ ] Check for proper Content Security Policy\n- [ ] Find insecure cookie settings (missing HttpOnly, Secure, SameSite)\n- [ ] Detect sensitive data in localStorage/sessionStorage\n- [ ] Identify missing rate limiting\n- [ ] Check for proper CORS configuration\n\n### 5.4 Dependency Security\n- [ ] Run `npm audit` and analyze all vulnerabilities\n- [ ] Check for dependencies with known CVEs\n- [ ] Identify abandoned/unmaintained dependencies\n- [ ] Find dependencies with suspicious post-install scripts\n- [ ] Check for typosquatting risks in dependency names\n- [ ] Identify dependencies pulling from non-registry sources\n- [ ] Find circular dependencies\n- [ ] Check for dependency version inconsistencies\n\n---\n\n## 6. PERFORMANCE ANALYSIS\n\n### 6.1 Algorithmic Complexity\n- [ ] Find O(n²) or worse algorithms that could be optimized\n- [ ] Identify nested loops that could be flattened\n- [ ] Detect repeated array/object iterations that could be combined\n- [ ] Find linear searches that should use Map/Set for O(1) lookup\n- [ ] Identify sorting operations that could be avoided\n- [ ] Check for unnecessary array copying (slice, spread, concat)\n- [ ] Find recursive functions without memoization\n- [ ] Detect expensive operations inside hot loops\n\n### 6.2 Memory Performance\n- [ ] Find large object creation in loops\n- [ ] Identify string concatenation in loops (should use array.join)\n- [ ] Detect array pre-allocation opportunities\n- [ ] Find unnecessary object spreading creating copies\n- [ ] Identify large arrays that could use generators/iterators\n- [ ] Check for proper use of WeakMap/WeakSet for caching\n- [ ] Find closures capturing more than necessary\n- [ ] Detect potential memory leaks from circular references\n\n### 6.3 Runtime Performance\n- [ ] Find synchronous file operations (fs.readFileSync in hot paths)\n- [ ] Identify blocking operations in event handlers\n- [ ] Detect missing lazy loading opportunities\n- [ ] Find expensive computations that should be cached\n- [ ] Identify unnecessary re-renders in React components\n- [ ] Check for proper use of useMemo/useCallback\n- [ ] Find missing virtualization for large lists\n- [ ] Detect unnecessary DOM manipulations\n\n### 6.4 Network Performance\n- [ ] Find missing request batching opportunities\n- [ ] Identify unnecessary API calls that could be cached\n- [ ] Detect missing pagination for large data sets\n- [ ] Find oversized payloads that should be compressed\n- [ ] Identify N+1 query problems\n- [ ] Check for proper use of HTTP caching headers\n- [ ] Find missing prefetching opportunities\n- [ ] Detect unnecessary polling that could use WebSockets\n\n---\n\n## 7. CODE QUALITY ISSUES\n\n### 7.1 Dead Code Detection\n- [ ] Find unused exports\n- [ ] Identify unreachable code after return/throw/break\n- [ ] Detect unused function parameters\n- [ ] Find unused private class members\n- [ ] Identify unused imports\n- [ ] Check for commented-out code blocks\n- [ ] Find unused type definitions\n- [ ] Detect feature flags for removed features\n- [ ] Identify unused configuration options\n- [ ] Find orphaned test utilities\n\n### 7.2 Code Duplication\n- [ ] Find duplicate function implementations\n- [ ] Identify copy-pasted code blocks with minor variations\n- [ ] Detect similar logic that could be abstracted\n- [ ] Find duplicate type definitions\n- [ ] Identify repeated validation logic\n- [ ] Check for duplicate error handling patterns\n- [ ] Find similar API calls that could be generalized\n- [ ] Detect duplicate constants across files\n\n### 7.3 Code Smells\n- [ ] Find functions with too many parameters (>4)\n- [ ] Identify functions longer than 50 lines\n- [ ] Detect files larger than 500 lines\n- [ ] Find deeply nested conditionals (>3 levels)\n- [ ] Identify god classes/modules with too many responsibilities\n- [ ] Check for feature envy (excessive use of other class's data)\n- [ ] Find inappropriate intimacy between modules\n- [ ] Detect primitive obsession (should use value objects)\n- [ ] Identify data clumps (groups of data that appear together)\n- [ ] Find speculative generality (unused abstractions)\n\n### 7.4 Naming Issues\n- [ ] Find misleading variable/function names\n- [ ] Identify inconsistent naming conventions\n- [ ] Detect single-letter variable names (except loop counters)\n- [ ] Find abbreviations that reduce readability\n- [ ] Identify boolean variables without is/has/should prefix\n- [ ] Check for function names that don't describe their side effects\n- [ ] Find generic names (data, info, item, thing)\n- [ ] Detect names that shadow outer scope variables\n\n---\n\n## 8. ARCHITECTURE & DESIGN\n\n### 8.1 SOLID Principles Violations\n- [ ] **Single Responsibility**: Find classes/modules doing too much\n- [ ] **Open/Closed**: Find code that requires modification for extension\n- [ ] **Liskov Substitution**: Find subtypes that break parent contracts\n- [ ] **Interface Segregation**: Find fat interfaces that should be split\n- [ ] **Dependency Inversion**: Find high-level modules depending on low-level details\n\n### 8.2 Design Pattern Issues\n- [ ] Find singletons that create testing difficulties\n- [ ] Identify missing factory patterns for object creation\n- [ ] Detect strategy pattern opportunities\n- [ ] Find observer pattern implementations that could leak memory\n- [ ] Identify places where dependency injection is missing\n- [ ] Check for proper repository pattern implementation\n- [ ] Find command/query responsibility segregation violations\n- [ ] Detect missing adapter patterns for external dependencies\n\n### 8.3 Module Structure\n- [ ] Find circular dependencies between modules\n- [ ] Identify improper layering (UI calling data layer directly)\n- [ ] Detect barrel exports that cause bundle bloat\n- [ ] Find index.ts files that re-export too much\n- [ ] Identify missing module boundaries\n- [ ] Check for proper separation of concerns\n- [ ] Find shared mutable state between modules\n- [ ] Detect improper coupling between features\n\n---\n\n## 9. DEPENDENCY ANALYSIS\n\n### 9.1 Version Analysis\n- [ ] List ALL outdated dependencies with current vs latest versions\n- [ ] Identify dependencies with breaking changes available\n- [ ] Find deprecated dependencies that need replacement\n- [ ] Check for peer dependency conflicts\n- [ ] Identify duplicate dependencies at different versions\n- [ ] Find dependencies that should be devDependencies\n- [ ] Check for missing dependencies (used but not in package.json)\n- [ ] Identify phantom dependencies (using transitive deps directly)\n\n### 9.2 Dependency Health\n- [ ] Check last publish date for each dependency\n- [ ] Identify dependencies with declining download trends\n- [ ] Find dependencies with open critical issues\n- [ ] Check for dependencies with no TypeScript support\n- [ ] Identify heavy dependencies that could be replaced with lighter alternatives\n- [ ] Find dependencies with restrictive licenses\n- [ ] Check for dependencies with poor bus factor (single maintainer)\n- [ ] Identify dependencies that could be removed entirely\n\n### 9.3 Bundle Analysis\n- [ ] Identify dependencies contributing most to bundle size\n- [ ] Find dependencies that don't support tree-shaking\n- [ ] Detect unnecessary polyfills for supported browsers\n- [ ] Check for duplicate packages in bundle\n- [ ] Identify opportunities for code splitting\n- [ ] Find dynamic imports that could be static\n- [ ] Check for proper externalization of peer dependencies\n- [ ] Detect development-only code in production bundle\n\n---\n\n## 10. TESTING GAPS\n\n### 10.1 Coverage Analysis\n- [ ] Identify untested public functions\n- [ ] Find untested error paths\n- [ ] Detect untested edge cases in conditionals\n- [ ] Check for missing boundary value tests\n- [ ] Identify untested async error scenarios\n- [ ] Find untested input validation paths\n- [ ] Check for missing integration tests\n- [ ] Identify critical paths without E2E tests\n\n### 10.2 Test Quality\n- [ ] Find tests that don't actually assert anything meaningful\n- [ ] Identify flaky tests (timing-dependent, order-dependent)\n- [ ] Detect tests with excessive mocking hiding bugs\n- [ ] Find tests that test implementation instead of behavior\n- [ ] Identify tests with shared mutable state\n- [ ] Check for proper test isolation\n- [ ] Find tests that could be data-driven/parameterized\n- [ ] Detect missing negative test cases\n\n### 10.3 Test Maintenance\n- [ ] Find orphaned test utilities\n- [ ] Identify outdated test fixtures\n- [ ] Detect tests for removed functionality\n- [ ] Check for proper test organization\n- [ ] Find slow tests that could be optimized\n- [ ] Identify tests that need better descriptions\n- [ ] Check for proper use of beforeEach/afterEach cleanup\n\n---\n\n## 11. CONFIGURATION & ENVIRONMENT\n\n### 11.1 TypeScript Configuration\n- [ ] Check `strict` mode is enabled\n- [ ] Verify `noImplicitAny` is true\n- [ ] Check `strictNullChecks` is true\n- [ ] Verify `noUncheckedIndexedAccess` is considered\n- [ ] Check `exactOptionalPropertyTypes` is considered\n- [ ] Verify `noImplicitReturns` is true\n- [ ] Check `noFallthroughCasesInSwitch` is true\n- [ ] Verify target/module settings are appropriate\n- [ ] Check paths/baseUrl configuration is correct\n- [ ] Verify skipLibCheck isn't hiding type errors\n\n### 11.2 Build Configuration\n- [ ] Check for proper source maps configuration\n- [ ] Verify minification settings\n- [ ] Check for proper tree-shaking configuration\n- [ ] Verify environment variable handling\n- [ ] Check for proper output directory configuration\n- [ ] Verify declaration file generation\n- [ ] Check for proper module resolution settings\n\n### 11.3 Environment Handling\n- [ ] Find hardcoded environment-specific values\n- [ ] Identify missing environment variable validation\n- [ ] Detect improper fallback values for missing env vars\n- [ ] Check for proper .env file handling\n- [ ] Find environment variables without types\n- [ ] Identify sensitive values not using secrets management\n- [ ] Check for proper environment-specific configuration\n\n---\n\n## 12. DOCUMENTATION GAPS\n\n### 12.1 Code Documentation\n- [ ] Find public APIs without JSDoc comments\n- [ ] Identify functions with complex logic but no explanation\n- [ ] Detect missing parameter descriptions\n- [ ] Find missing return type documentation\n- [ ] Identify missing @throws documentation\n- [ ] Check for outdated comments\n- [ ] Find TODO/FIXME/HACK comments that need addressing\n- [ ] Identify magic numbers without explanation\n\n### 12.2 API Documentation\n- [ ] Find missing README documentation\n- [ ] Identify missing usage examples\n- [ ] Detect missing API reference documentation\n- [ ] Check for missing changelog entries\n- [ ] Find missing migration guides for breaking changes\n- [ ] Identify missing contribution guidelines\n- [ ] Check for missing license information\n\n---\n\n## 13. EDGE CASES CHECKLIST\n\n### 13.1 Input Edge Cases\n- [ ] Empty strings, arrays, objects\n- [ ] Extremely large numbers (Number.MAX_SAFE_INTEGER)\n- [ ] Negative numbers where positive expected\n- [ ] Zero values\n- [ ] NaN and Infinity\n- [ ] Unicode characters and emoji\n- [ ] Very long strings (>1MB)\n- [ ] Deeply nested objects\n- [ ] Circular references\n- [ ] Prototype pollution attempts\n\n### 13.2 Timing Edge Cases\n- [ ] Leap years and daylight saving time\n- [ ] Timezone handling\n- [ ] Date boundary conditions (month end, year end)\n- [ ] Very old dates (before 1970)\n- [ ] Very future dates\n- [ ] Invalid date strings\n- [ ] Timestamp precision issues\n\n### 13.3 State Edge Cases\n- [ ] Initial state before any operation\n- [ ] State after multiple rapid operations\n- [ ] State during concurrent modifications\n- [ ] State after error recovery\n- [ ] State after partial failures\n- [ ] Stale state from caching\n\n---\n\n## OUTPUT FORMAT\n\nFor each issue found, provide:\n\n### [SEVERITY: CRITICAL/HIGH/MEDIUM/LOW] Issue Title\n\n**Category**: [Type System/Security/Performance/etc.]\n**File**: path/to/file.ts\n**Line**: 123-145\n**Impact**: Description of what could go wrong\n\n**Current Code**:\n```typescript\n// problematic code\n```\n\n**Problem**: Detailed explanation of why this is an issue\n\n**Recommendation**:\n```typescript\n// fixed code\n```\n\n**References**: Links to documentation, CVEs, best practices\n\n---\n\n## PRIORITY MATRIX\n\n1. **CRITICAL** (Fix Immediately):\n   - Security vulnerabilities\n   - Data loss risks\n   - Production-breaking bugs\n\n2. **HIGH** (Fix This Sprint):\n   - Type safety violations\n   - Memory leaks\n   - Performance bottlenecks\n\n3. **MEDIUM** (Fix Soon):\n   - Code quality issues\n   - Test coverage gaps\n   - Documentation gaps\n\n4. **LOW** (Tech Debt):\n   - Style inconsistencies\n   - Minor optimizations\n   - Nice-to-have improvements\n\n---\n\n## FINAL SUMMARY\n\nAfter completing the review, provide:\n\n1. **Executive Summary**: 2-3 paragraphs overview\n2. **Risk Assessment**: Overall risk level with justification\n3. **Top 10 Critical Issues**: Prioritized list\n4. **Recommended Action Plan**: Phased approach to fixes\n5. **Estimated Effort**: Time estimates for remediation\n6. **Metrics**: \n   - Total issues found by severity\n   - Code health score (1-10)\n   - Security score (1-10)\n   - Maintainability score (1-10)"},{"@type":"WebPage","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/","url":"https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/","name":"The Ultimate TypeScript Code Review - Free AI Prompt Template","isPartOf":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/#website"},"about":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/the-ultimate-typescript-code-review/#code"},"author":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"}}]}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.CKsVMadi.css">
-<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.D_jRHePt.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BUjgLsBs.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="aquarium-banner" data-astro-cid-6bn65nae> <canvas id="aquarium-canvas" data-astro-cid-6bn65nae></canvas> <div class="aquarium-banner-content" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link-hero" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
 Back to Prompt Gallery
-</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>The Ultimate TypeScript Code Review</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;The Ultimate TypeScript Code Review&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 5262 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>5262 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="# COMPREHENSIVE TYPESCRIPT CODEBASE REVIEW
+</a> <div class="banner-title-row" data-astro-cid-6bn65nae> <span class="badge category-badge-hero" data-astro-cid-6bn65nae>ROLEPLAY</span> <h1 class="prompt-title-hero" data-astro-cid-6bn65nae>The Ultimate TypeScript Code Review</h1> </div> </div> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;The Ultimate TypeScript Code Review&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 5262 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>5262 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="# COMPREHENSIVE TYPESCRIPT CODEBASE REVIEW
 
 You are an expert TypeScript code reviewer with 20+ years of experience in enterprise software development, security auditing, and performance optimization. Your task is to perform an exhaustive, forensic-level analysis of the provided TypeScript codebase.
 
@@ -1071,4 +1071,397 @@ After completing the review, provide:
    - Security score (1-10)
    - Maintainability score (1-10)</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
 Add to Chrome (Free)
-</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  <script>
+    (function() {
+      const canvas = document.getElementById('aquarium-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      
+      let width = 0;
+      let height = 0;
+      
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        canvas.width = width * window.devicePixelRatio;
+        canvas.height = height * window.devicePixelRatio;
+        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      }
+      
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Vector Fish Drawing Helper
+      function drawFish(ctx, x, y, size, angle, color, tailWiggle, isFacingLeft) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        if (isFacingLeft) {
+          ctx.scale(-1, 1);
+        }
+        
+        // Body Gradient (adds 3D roundness)
+        const grad = ctx.createRadialGradient(size * 0.2, -size * 0.1, size * 0.1, 0, 0, size);
+        grad.addColorStop(0, '#ffffff');
+        grad.addColorStop(0.3, color.body || '#ff7e33');
+        grad.addColorStop(1, color.shading || '#992200');
+
+        // Tail fin (wagging)
+        ctx.save();
+        ctx.translate(-size * 0.85, 0);
+        ctx.rotate(Math.sin(tailWiggle) * 0.4);
+        
+        const tailGrad = ctx.createLinearGradient(0, 0, -size * 0.6, 0);
+        tailGrad.addColorStop(0, color.body || '#ff7e33');
+        tailGrad.addColorStop(1, color.tail || '#ff3b3b');
+        ctx.fillStyle = tailGrad;
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.quadraticCurveTo(-size * 0.4, -size * 0.5, -size * 0.6, -size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.35, 0, -size * 0.6, size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.4, size * 0.5, 0, 0);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        // Dorsal fin (top)
+        const finGrad = ctx.createLinearGradient(0, -size * 0.35, 0, 0);
+        finGrad.addColorStop(0, color.tail || '#ff3b3b');
+        finGrad.addColorStop(1, color.body || '#ff7e33');
+        ctx.fillStyle = finGrad;
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.4, -size * 0.3);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.7, size * 0.2, -size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.2, -size * 0.4, -size * 0.3);
+        ctx.closePath();
+        ctx.fill();
+
+        // Pectoral fin (bottom)
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.2, size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.3, size * 0.5, -size * 0.05, size * 0.45);
+        ctx.quadraticCurveTo(0, size * 0.25, -size * 0.2, size * 0.25);
+        ctx.closePath();
+        ctx.fill();
+
+        // Main body
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, size, size * 0.42, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Stripes
+        if (color.stripes === 'clownfish') {
+          ctx.fillStyle = '#ffffff';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.fill();
+          
+          ctx.strokeStyle = '#000000';
+          ctx.lineWidth = size * 0.04;
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        } else if (color.stripes === 'tang') {
+          ctx.fillStyle = '#000000';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.25, size * 0.3, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = color.body || '#1e40af';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.18, size * 0.22, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Eye
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.55, -size * 0.1, size * 0.12, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#000000';
+        ctx.beginPath();
+        ctx.arc(size * 0.6, -size * 0.1, size * 0.06, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Reflection
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.58, -size * 0.12, size * 0.02, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      // Bubble Particle System
+      class Bubble {
+        constructor() {
+          this.reset();
+          this.y = Math.random() * height; // distribute initial bubbles
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = height + 10;
+          this.radius = 1 + Math.random() * 4;
+          this.speed = 0.3 + Math.random() * 0.7;
+          this.wiggleSpeed = 0.02 + Math.random() * 0.04;
+          this.wiggleWidth = 1 + Math.random() * 2;
+          this.angle = Math.random() * Math.PI * 2;
+        }
+        update() {
+          this.y -= this.speed;
+          this.angle += this.wiggleSpeed;
+          this.xOffset = Math.sin(this.angle) * this.wiggleWidth;
+          if (this.y < -10) this.reset();
+        }
+        draw() {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      // Fish Particle System
+      class Fish {
+        constructor() {
+          this.reset(true);
+        }
+        reset(startRandom = false) {
+          this.size = 14 + Math.random() * 16;
+          this.depth = 0.5 + Math.random() * 0.5; // 3D depth multiplier
+          this.size *= this.depth;
+          
+          const species = ['clownfish', 'bluetang', 'goldfish', 'tetra'];
+          this.type = species[Math.floor(Math.random() * species.length)];
+          if (this.type === 'clownfish') {
+            this.color = { body: '#ff7e33', tail: '#ff3b3b', shading: '#882200', stripes: 'clownfish' };
+          } else if (this.type === 'bluetang') {
+            this.color = { body: '#2563eb', tail: '#facc15', shading: '#1e3a8a', stripes: 'tang' };
+          } else if (this.type === 'goldfish') {
+            this.color = { body: '#ffa500', tail: '#ef4444', shading: '#b45309' };
+          } else {
+            this.color = { body: '#06b6d4', tail: '#ec4899', shading: '#0891b2' };
+          }
+
+          this.isFacingLeft = Math.random() > 0.5;
+          this.x = startRandom ? Math.random() * width : (this.isFacingLeft ? width + 60 : -60);
+          this.y = 30 + Math.random() * (height - 60);
+          this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+          this.speedY = (Math.random() - 0.5) * 0.1;
+          this.tailWiggle = Math.random() * Math.PI * 2;
+          this.tailWiggleSpeed = 0.08 + Math.random() * 0.08;
+          this.angle = 0;
+          
+          this.isScared = false;
+          this.scareTimer = 0;
+        }
+        scare(mouseX, mouseY) {
+          const dx = this.x - mouseX;
+          const dy = this.y - mouseY;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 80) {
+            this.isScared = true;
+            this.scareTimer = 180;
+            this.speedX = (this.x > mouseX ? 2.5 : -2.5) * this.depth;
+            this.speedY = (this.y > mouseY ? 1.2 : -1.2) * this.depth;
+          }
+        }
+        update() {
+          if (this.isScared) {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed * 2.5;
+            this.angle = this.speedY * 0.4;
+            this.scareTimer--;
+            if (this.scareTimer <= 0) {
+              this.isScared = false;
+              this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+              this.speedY = (Math.random() - 0.5) * 0.1;
+            }
+          } else {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed;
+            this.angle = this.speedY * 0.5;
+          }
+
+          if (this.isFacingLeft && this.x < -80) this.reset();
+          if (!this.isFacingLeft && this.x > width + 80) this.reset();
+          if (this.y < 20 || this.y > height - 20) this.speedY *= -1;
+        }
+        draw() {
+          drawFish(ctx, this.x, this.y, this.size, this.angle, this.color, this.tailWiggle, this.isFacingLeft);
+        }
+      }
+
+      // Seaweed Class
+      class Seaweed {
+        constructor(x, heightValue) {
+          this.x = x;
+          this.height = heightValue;
+          this.angle = Math.random() * Math.PI * 2;
+          this.speed = 0.015 + Math.random() * 0.015;
+          this.width = 6 + Math.random() * 4;
+        }
+        update() {
+          this.angle += this.speed;
+        }
+        draw() {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(13, 148, 136, 0.2)';
+          ctx.lineWidth = this.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(this.x, height);
+          
+          const segments = 4;
+          const segmentHeight = this.height / segments;
+          let currentX = this.x;
+          let currentY = height;
+          
+          for (let i = 0; i < segments; i++) {
+            const targetY = height - (i + 1) * segmentHeight;
+            const sway = Math.sin(this.angle + i * 0.5) * 10;
+            const targetX = this.x + sway;
+            const ctrlX = currentX + (targetX - currentX) / 2 + Math.sin(this.angle) * 2;
+            const ctrlY = currentY - segmentHeight / 2;
+            
+            ctx.quadraticCurveTo(ctrlX, ctrlY, targetX, targetY);
+            currentX = targetX;
+            currentY = targetY;
+          }
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      // Volumetric Light Shafts
+      function drawLightShafts(time) {
+        ctx.save();
+        const numShafts = 4;
+        for (let i = 0; i < numShafts; i++) {
+          const shift = Math.sin(time * 0.001 + i * 1.5) * 40;
+          const startX = (width / numShafts) * i + shift + 30;
+          const shaftWidth = 40 + Math.sin(time * 0.002 + i) * 15;
+          
+          const grad = ctx.createLinearGradient(startX, 0, startX - 60, height);
+          grad.addColorStop(0, 'rgba(56, 189, 248, 0.04)');
+          grad.addColorStop(1, 'rgba(56, 189, 248, 0.0)');
+          
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.moveTo(startX - shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth * 1.3 - 60, height);
+          ctx.lineTo(startX - shaftWidth * 1.3 - 60, height);
+          ctx.closePath();
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+
+      // Initialize Particles
+      let bubbles = Array.from({ length: 25 }, () => new Bubble());
+      let fishes = Array.from({ length: 5 }, () => new Fish());
+      let seaweeds = Array.from({ length: 10 }, (_, i) => {
+        const spacing = width / 11;
+        return new Seaweed(spacing * (i + 0.5) + (Math.random() - 0.5) * 10, 40 + Math.random() * 50);
+      });
+
+      // Mouse Interaction
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => fish.scare(mouseX, mouseY));
+        
+        if (Math.random() < 0.2 && bubbles.length < 50) {
+          const b = new Bubble();
+          b.x = mouseX;
+          b.y = mouseY;
+          b.radius = 1 + Math.random() * 2;
+          b.speed = 0.8 + Math.random() * 0.8;
+          bubbles.push(b);
+        }
+      });
+
+      canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => {
+          fish.scare(mouseX, mouseY);
+          if (fish.isScared) {
+            fish.speedX *= 1.5;
+            fish.speedY *= 1.5;
+          }
+        });
+        
+        for (let i = 0; i < 10; i++) {
+          const b = new Bubble();
+          b.x = mouseX + (Math.random() - 0.5) * 15;
+          b.y = mouseY + (Math.random() - 0.5) * 15;
+          b.radius = 1 + Math.random() * 3;
+          b.speed = 0.6 + Math.random() * 1.2;
+          bubbles.push(b);
+        }
+      });
+
+      // Animation Loop
+      function animate(time) {
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Draw water background gradient
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
+        bgGrad.addColorStop(0, '#090d16');
+        bgGrad.addColorStop(0.5, '#0d182e');
+        bgGrad.addColorStop(1, '#02050b');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, width, height);
+
+        // 2. Draw light rays
+        drawLightShafts(time);
+
+        // 3. Draw Seaweed (background layer)
+        seaweeds.forEach(s => {
+          s.update();
+          s.draw();
+        });
+
+        // 4. Update & Draw Fishes
+        fishes.forEach(f => {
+          f.update();
+          f.draw();
+        });
+
+        // 5. Update & Draw Bubbles (foreground layer)
+        bubbles.forEach((b, idx) => {
+          b.update();
+          b.draw();
+          if (bubbles.length > 25 && b.y < -5) {
+            bubbles.splice(idx, 1);
+          }
+        });
+
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
+    })();
+  </script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="llms-txt" href="https://zion369369.github.io/awesome-prompting-hacks/llms.txt"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="shortcut icon" href="/awesome-prompting-hacks/favicon.ico" sizes="any"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><title>Skill Creator - Free AI Prompt Template</title><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/"><meta name="description" content="Copy and optimize the free AI prompt for: &quot;Skill Creator&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta property="og:title" content="Skill Creator - Free AI Prompt Template"><meta property="og:type" content="website"><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/skill-creator.svg"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;Skill Creator&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Awesome Prompting Hacks"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Skill Creator - Free AI Prompt Template"><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/skill-creator.svg"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;Skill Creator&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta name="generator" content="Astro v6.4.6"><meta name="google-site-verification" content="5bngCyhTfMTN6MIFgcrOmqPZS_jttCPsijk1UeP6c6Q"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/#code","name":"Skill Creator","description":"Copy and optimize the free AI prompt for: \"Skill Creator\". Features tags: roleplay, chatgpt, open-source.","codeRepository":"https://github.com/zion369369/awesome-prompting-hacks.git","codeSampleType":"template","programmingLanguage":{"@type":"ComputerLanguage","name":"Natural Language Prompt"},"runtimePlatform":"GPT-4o","maintainer":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"},"text":"---\nname: skill-creator\ndescription: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.\nlicense: Complete terms in LICENSE.txt\n---\n\n# Skill Creator\n\nThis skill provides guidance for creating effective skills.\n\n## About Skills\n\nSkills are modular, self-contained packages that extend Claude's capabilities by providing\nspecialized knowledge, workflows, and tools. Think of them as \"onboarding guides\" for specific\ndomains or tasks—they transform Claude from a general-purpose agent into a specialized agent\nequipped with procedural knowledge that no model can fully possess.\n\n### What Skills Provide\n\n1. Specialized workflows - Multi-step procedures for specific domains\n2. Tool integrations - Instructions for working with specific file formats or APIs\n3. Domain expertise - Company-specific knowledge, schemas, business logic\n4. Bundled resources - Scripts, references, and assets for complex and repetitive tasks\n\n## Core Principles\n\n### Concise is Key\n\nThe context window is a public good. Skills share the context window with everything else Claude needs: system prompt, conversation history, other Skills' metadata, and the actual user request.\n\n**Default assumption: Claude is already very smart.** Only add context Claude doesn't already have. Challenge each piece of information: \"Does Claude really need this explanation?\" and \"Does this paragraph justify its token cost?\"\n\nPrefer concise examples over verbose explanations.\n\n### Set Appropriate Degrees of Freedom\n\nMatch the level of specificity to the task's fragility and variability:\n\n**High freedom (text-based instructions)**: Use when multiple approaches are valid, decisions depend on context, or heuristics guide the approach.\n\n**Medium freedom (pseudocode or scripts with parameters)**: Use when a preferred pattern exists, some variation is acceptable, or configuration affects behavior.\n\n**Low freedom (specific scripts, few parameters)**: Use when operations are fragile and error-prone, consistency is critical, or a specific sequence must be followed.\n\nThink of Claude as exploring a path: a narrow bridge with cliffs needs specific guardrails (low freedom), while an open field allows many routes (high freedom).\n\n### Anatomy of a Skill\n\nEvery skill consists of a required SKILL.md file and optional bundled resources:\n\n```\nskill-name/\n├── SKILL.md (required)\n│   ├── YAML frontmatter metadata (required)\n│   │   ├── name: (required)\n│   │   └── description: (required)\n│   └── Markdown instructions (required)\n└── Bundled Resources (optional)\n    ├── scripts/          - Executable code (Python/Bash/etc.)\n    ├── references/       - Documentation intended to be loaded into context as needed\n    └── assets/           - Files used in output (templates, icons, fonts, etc.)\n```\n\n#### SKILL.md (required)\n\nEvery SKILL.md consists of:\n\n- **Frontmatter** (YAML): Contains `name` and `description` fields. These are the only fields that Claude reads to determine when the skill gets used, thus it is very important to be clear and comprehensive in describing what the skill is, and when it should be used.\n- **Body** (Markdown): Instructions and guidance for using the skill. Only loaded AFTER the skill triggers (if at all).\n\n#### Bundled Resources (optional)\n\n##### Scripts (`scripts/`)\n\nExecutable code (Python/Bash/etc.) for tasks that require deterministic reliability or are repeatedly rewritten.\n\n- **When to include**: When the same code is being rewritten repeatedly or deterministic reliability is needed\n- **Example**: `scripts/rotate_pdf.py` for PDF rotation tasks\n- **Benefits**: Token efficient, deterministic, may be executed without loading into context\n- **Note**: Scripts may still need to be read by Claude for patching or environment-specific adjustments\n\n##### References (`references/`)\n\nDocumentation and reference material intended to be loaded as needed into context to inform Claude's process and thinking.\n\n- **When to include**: For documentation that Claude should reference while working\n- **Examples**: `references/finance.md` for financial schemas, `references/mnda.md` for company NDA template, `references/policies.md` for company policies, `references/api_docs.md` for API specifications\n- **Use cases**: Database schemas, API documentation, domain knowledge, company policies, detailed workflow guides\n- **Benefits**: Keeps SKILL.md lean, loaded only when Claude determines it's needed\n- **Best practice**: If files are large (>10k words), include grep search patterns in SKILL.md\n- **Avoid duplication**: Information should live in either SKILL.md or references files, not both.\n\n##### Assets (`assets/`)\n\nFiles not intended to be loaded into context, but rather used within the output Claude produces.\n\n- **When to include**: When the skill needs files that will be used in the final output\n- **Examples**: `assets/logo.png` for brand assets, `assets/slides.pptx` for PowerPoint templates\n- **Use cases**: Templates, images, icons, boilerplate code, fonts, sample documents\n\n### Progressive Disclosure Design Principle\n\nSkills use a three-level loading system to manage context efficiently:\n\n1. **Metadata (name + description)** - Always in context (~100 words)\n2. **SKILL.md body** - When skill triggers (<5k words)\n3. **Bundled resources** - As needed by Claude\n\nKeep SKILL.md body to the essentials and under 500 lines to minimize context bloat.\n\n## Skill Creation Process\n\nSkill creation involves these steps:\n\n1. Understand the skill with concrete examples\n2. Plan reusable skill contents (scripts, references, assets)\n3. Initialize the skill (run init_skill.py)\n4. Edit the skill (implement resources and write SKILL.md)\n5. Package the skill (run package_skill.py)\n6. Iterate based on real usage\n\n### Step 3: Initializing the Skill\n\nWhen creating a new skill from scratch, always run the `init_skill.py` script:\n\n```bash\nscripts/init_skill.py <skill-name> --path <output-directory>\n```\n\n### Step 4: Edit the Skill\n\nConsult these helpful guides based on your skill's needs:\n\n- **Multi-step processes**: See references/workflows.md for sequential workflows and conditional logic\n- **Specific output formats or quality standards**: See references/output-patterns.md for template and example patterns\n\n### Step 5: Packaging a Skill\n\n```bash\nscripts/package_skill.py <path/to/skill-folder>\n```\n\nThe packaging script validates and creates a .skill file for distribution.\n\u001fFILE:references/workflows.md\u001e\n# Workflow Patterns\n\n## Sequential Workflows\n\nFor complex tasks, break operations into clear, sequential steps. It is often helpful to give Claude an overview of the process towards the beginning of SKILL.md:\n\n```markdown\nFilling a PDF form involves these steps:\n\n1. Analyze the form (run analyze_form.py)\n2. Create field mapping (edit fields.json)\n3. Validate mapping (run validate_fields.py)\n4. Fill the form (run fill_form.py)\n5. Verify output (run verify_output.py)\n```\n\n## Conditional Workflows\n\nFor tasks with branching logic, guide Claude through decision points:\n\n```markdown\n1. Determine the modification type:\n   **Creating new content?** → Follow \"Creation workflow\" below\n   **Editing existing content?** → Follow \"Editing workflow\" below\n\n2. Creation workflow: [steps]\n3. Editing workflow: [steps]\n```\n\u001fFILE:references/output-patterns.md\u001e\n# Output Patterns\n\nUse these patterns when skills need to produce consistent, high-quality output.\n\n## Template Pattern\n\nProvide templates for output format. Match the level of strictness to your needs.\n\n**For strict requirements (like API responses or data formats):**\n\n```markdown\n## Report structure\n\nALWAYS use this exact template structure:\n\n# [Analysis Title]\n\n## Executive summary\n[One-paragraph overview of key findings]\n\n## Key findings\n- Finding 1 with supporting data\n- Finding 2 with supporting data\n- Finding 3 with supporting data\n\n## Recommendations\n1. Specific actionable recommendation\n2. Specific actionable recommendation\n```\n\n**For flexible guidance (when adaptation is useful):**\n\n```markdown\n## Report structure\n\nHere is a sensible default format, but use your best judgment:\n\n# [Analysis Title]\n\n## Executive summary\n[Overview]\n\n## Key findings\n[Adapt sections based on what you discover]\n\n## Recommendations\n[Tailor to the specific context]\n\nAdjust sections as needed for the specific analysis type.\n```\n\n## Examples Pattern\n\nFor skills where output quality depends on seeing examples, provide input/output pairs:\n\n```markdown\n## Commit message format\n\nGenerate commit messages following these examples:\n\n**Example 1:**\nInput: Added user authentication with JWT tokens\nOutput:\n```\nfeat(auth): implement JWT-based authentication\n\nAdd login endpoint and token validation middleware\n```\n\n**Example 2:**\nInput: Fixed bug where dates displayed incorrectly in reports\nOutput:\n```\nfix(reports): correct date formatting in timezone conversion\n\nUse UTC timestamps consistently across report generation\n```\n\nFollow this style: type(scope): brief description, then detailed explanation.\n```\n\nExamples help Claude understand the desired style and level of detail more clearly than descriptions alone.\n\u001fFILE:scripts/quick_validate.py\u001e\n#!/usr/bin/env python3\n\"\"\"\nQuick validation script for skills - minimal version\n\"\"\"\n\nimport sys\nimport os\nimport re\nimport yaml\nfrom pathlib import Path\n\ndef validate_skill(skill_path):\n    \"\"\"Basic validation of a skill\"\"\"\n    skill_path = Path(skill_path)\n\n    # Check SKILL.md exists\n    skill_md = skill_path / 'SKILL.md'\n    if not skill_md.exists():\n        return False, \"SKILL.md not found\"\n\n    # Read and validate frontmatter\n    content = skill_md.read_text()\n    if not content.startswith('---'):\n        return False, \"No YAML frontmatter found\"\n\n    # Extract frontmatter\n    match = re.match(r'^---\\n(.*?)\\n---', content, re.DOTALL)\n    if not match:\n        return False, \"Invalid frontmatter format\"\n\n    frontmatter_text = match.group(1)\n\n    # Parse YAML frontmatter\n    try:\n        frontmatter = yaml.safe_load(frontmatter_text)\n        if not isinstance(frontmatter, dict):\n            return False, \"Frontmatter must be a YAML dictionary\"\n    except yaml.YAMLError as e:\n        return False, f\"Invalid YAML in frontmatter: {e}\"\n\n    # Define allowed properties\n    ALLOWED_PROPERTIES = {'name', 'description', 'license', 'allowed-tools', 'metadata'}\n\n    # Check for unexpected properties (excluding nested keys under metadata)\n    unexpected_keys = set(frontmatter.keys()) - ALLOWED_PROPERTIES\n    if unexpected_keys:\n        return False, (\n            f\"Unexpected key(s) in SKILL.md frontmatter: {', '.join(sorted(unexpected_keys))}. \"\n            f\"Allowed properties are: {', '.join(sorted(ALLOWED_PROPERTIES))}\"\n        )\n\n    # Check required fields\n    if 'name' not in frontmatter:\n        return False, \"Missing 'name' in frontmatter\"\n    if 'description' not in frontmatter:\n        return False, \"Missing 'description' in frontmatter\"\n\n    # Extract name for validation\n    name = frontmatter.get('name', '')\n    if not isinstance(name, str):\n        return False, f\"Name must be a string, got {type(name).__name__}\"\n    name = name.strip()\n    if name:\n        # Check naming convention (hyphen-case: lowercase with hyphens)\n        if not re.match(r'^[a-z0-9-]+$', name):\n            return False, f\"Name '{name}' should be hyphen-case (lowercase letters, digits, and hyphens only)\"\n        if name.startswith('-') or name.endswith('-') or '--' in name:\n            return False, f\"Name '{name}' cannot start/end with hyphen or contain consecutive hyphens\"\n        # Check name length (max 64 characters per spec)\n        if len(name) > 64:\n            return False, f\"Name is too long ({len(name)} characters). Maximum is 64 characters.\"\n\n    # Extract and validate description\n    description = frontmatter.get('description', '')\n    if not isinstance(description, str):\n        return False, f\"Description must be a string, got {type(description).__name__}\"\n    description = description.strip()\n    if description:\n        # Check for angle brackets\n        if '<' in description or '>' in description:\n            return False, \"Description cannot contain angle brackets (< or >)\"\n        # Check description length (max 1024 characters per spec)\n        if len(description) > 1024:\n            return False, f\"Description is too long ({len(description)} characters). Maximum is 1024 characters.\"\n\n    return True, \"Skill is valid!\"\n\nif __name__ == \"__main__\":\n    if len(sys.argv) != 2:\n        print(\"Usage: python quick_validate.py <skill_directory>\")\n        sys.exit(1)\n    \n    valid, message = validate_skill(sys.argv[1])\n    print(message)\n    sys.exit(0 if valid else 1)\n\u001fFILE:scripts/init_skill.py\u001e\n#!/usr/bin/env python3\n\"\"\"\nSkill Initializer - Creates a new skill from template\n\nUsage:\n    init_skill.py <skill-name> --path <path>\n\nExamples:\n    init_skill.py my-new-skill --path skills/public\n    init_skill.py my-api-helper --path skills/private\n    init_skill.py custom-skill --path /custom/location\n\"\"\"\n\nimport sys\nfrom pathlib import Path\n\n\nSKILL_TEMPLATE = \"\"\"---\nname: {skill_name}\ndescription: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]\n---\n\n# {skill_title}\n\n## Overview\n\n[TODO: 1-2 sentences explaining what this skill enables]\n\n## Resources\n\nThis skill includes example resource directories that demonstrate how to organize different types of bundled resources:\n\n### scripts/\nExecutable code (Python/Bash/etc.) that can be run directly to perform specific operations.\n\n### references/\nDocumentation and reference material intended to be loaded into context to inform Claude's process and thinking.\n\n### assets/\nFiles not intended to be loaded into context, but rather used within the output Claude produces.\n\n---\n\n**Any unneeded directories can be deleted.** Not every skill requires all three types of resources.\n\"\"\"\n\nEXAMPLE_SCRIPT = '''#!/usr/bin/env python3\n\"\"\"\nExample helper script for {skill_name}\n\nThis is a placeholder script that can be executed directly.\nReplace with actual implementation or delete if not needed.\n\"\"\"\n\ndef main():\n    print(\"This is an example script for {skill_name}\")\n    # TODO: Add actual script logic here\n\nif __name__ == \"__main__\":\n    main()\n'''\n\nEXAMPLE_REFERENCE = \"\"\"# Reference Documentation for {skill_title}\n\nThis is a placeholder for detailed reference documentation.\nReplace with actual reference content or delete if not needed.\n\"\"\"\n\nEXAMPLE_ASSET = \"\"\"# Example Asset File\n\nThis placeholder represents where asset files would be stored.\nReplace with actual asset files (templates, images, fonts, etc.) or delete if not needed.\n\"\"\"\n\n\ndef title_case_skill_name(skill_name):\n    \"\"\"Convert hyphenated skill name to Title Case for display.\"\"\"\n    return ' '.join(word.capitalize() for word in skill_name.split('-'))\n\n\ndef init_skill(skill_name, path):\n    \"\"\"Initialize a new skill directory with template SKILL.md.\"\"\"\n    skill_dir = Path(path).resolve() / skill_name\n\n    if skill_dir.exists():\n        print(f\"❌ Error: Skill directory already exists: {skill_dir}\")\n        return None\n\n    try:\n        skill_dir.mkdir(parents=True, exist_ok=False)\n        print(f\"✅ Created skill directory: {skill_dir}\")\n    except Exception as e:\n        print(f\"❌ Error creating directory: {e}\")\n        return None\n\n    skill_title = title_case_skill_name(skill_name)\n    skill_content = SKILL_TEMPLATE.format(skill_name=skill_name, skill_title=skill_title)\n\n    skill_md_path = skill_dir / 'SKILL.md'\n    try:\n        skill_md_path.write_text(skill_content)\n        print(\"✅ Created SKILL.md\")\n    except Exception as e:\n        print(f\"❌ Error creating SKILL.md: {e}\")\n        return None\n\n    try:\n        scripts_dir = skill_dir / 'scripts'\n        scripts_dir.mkdir(exist_ok=True)\n        example_script = scripts_dir / 'example.py'\n        example_script.write_text(EXAMPLE_SCRIPT.format(skill_name=skill_name))\n        example_script.chmod(0o755)\n        print(\"✅ Created scripts/example.py\")\n\n        references_dir = skill_dir / 'references'\n        references_dir.mkdir(exist_ok=True)\n        example_reference = references_dir / 'api_reference.md'\n        example_reference.write_text(EXAMPLE_REFERENCE.format(skill_title=skill_title))\n        print(\"✅ Created references/api_reference.md\")\n\n        assets_dir = skill_dir / 'assets'\n        assets_dir.mkdir(exist_ok=True)\n        example_asset = assets_dir / 'example_asset.txt'\n        example_asset.write_text(EXAMPLE_ASSET)\n        print(\"✅ Created assets/example_asset.txt\")\n    except Exception as e:\n        print(f\"❌ Error creating resource directories: {e}\")\n        return None\n\n    print(f\"\\n✅ Skill '{skill_name}' initialized successfully at {skill_dir}\")\n    return skill_dir\n\n\ndef main():\n    if len(sys.argv) < 4 or sys.argv[2] != '--path':\n        print(\"Usage: init_skill.py <skill-name> --path <path>\")\n        sys.exit(1)\n\n    skill_name = sys.argv[1]\n    path = sys.argv[3]\n\n    print(f\"🚀 Initializing skill: {skill_name}\")\n    print(f\"   Location: {path}\")\n    print()\n\n    result = init_skill(skill_name, path)\n    sys.exit(0 if result else 1)\n\n\nif __name__ == \"__main__\":\n    main()\n\u001fFILE:scripts/package_skill.py\u001e\n#!/usr/bin/env python3\n\"\"\"\nSkill Packager - Creates a distributable .skill file of a skill folder\n\nUsage:\n    python utils/package_skill.py <path/to/skill-folder> [output-directory]\n\nExample:\n    python utils/package_skill.py skills/public/my-skill\n    python utils/package_skill.py skills/public/my-skill ./dist\n\"\"\"\n\nimport sys\nimport zipfile\nfrom pathlib import Path\nfrom quick_validate import validate_skill\n\n\ndef package_skill(skill_path, output_dir=None):\n    \"\"\"Package a skill folder into a .skill file.\"\"\"\n    skill_path = Path(skill_path).resolve()\n\n    if not skill_path.exists():\n        print(f\"❌ Error: Skill folder not found: {skill_path}\")\n        return None\n\n    if not skill_path.is_dir():\n        print(f\"❌ Error: Path is not a directory: {skill_path}\")\n        return None\n\n    skill_md = skill_path / \"SKILL.md\"\n    if not skill_md.exists():\n        print(f\"❌ Error: SKILL.md not found in {skill_path}\")\n        return None\n\n    print(\"🔍 Validating skill...\")\n    valid, message = validate_skill(skill_path)\n    if not valid:\n        print(f\"❌ Validation failed: {message}\")\n        print(\"   Please fix the validation errors before packaging.\")\n        return None\n    print(f\"✅ {message}\\n\")\n\n    skill_name = skill_path.name\n    if output_dir:\n        output_path = Path(output_dir).resolve()\n        output_path.mkdir(parents=True, exist_ok=True)\n    else:\n        output_path = Path.cwd()\n\n    skill_filename = output_path / f\"{skill_name}.skill\"\n\n    try:\n        with zipfile.ZipFile(skill_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:\n            for file_path in skill_path.rglob('*'):\n                if file_path.is_file():\n                    arcname = file_path.relative_to(skill_path.parent)\n                    zipf.write(file_path, arcname)\n                    print(f\"  Added: {arcname}\")\n\n        print(f\"\\n✅ Successfully packaged skill to: {skill_filename}\")\n        return skill_filename\n\n    except Exception as e:\n        print(f\"❌ Error creating .skill file: {e}\")\n        return None\n\n\ndef main():\n    if len(sys.argv) < 2:\n        print(\"Usage: python utils/package_skill.py <path/to/skill-folder> [output-directory]\")\n        sys.exit(1)\n\n    skill_path = sys.argv[1]\n    output_dir = sys.argv[2] if len(sys.argv) > 2 else None\n\n    print(f\"📦 Packaging skill: {skill_path}\")\n    if output_dir:\n        print(f\"   Output directory: {output_dir}\")\n    print()\n\n    result = package_skill(skill_path, output_dir)\n    sys.exit(0 if result else 1)\n\n\nif __name__ == \"__main__\":\n    main()"},{"@type":"WebPage","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/","url":"https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/","name":"Skill Creator - Free AI Prompt Template","isPartOf":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/#website"},"about":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/skill-creator/#code"},"author":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"}}]}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.CKsVMadi.css">
-<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.D_jRHePt.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BUjgLsBs.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="aquarium-banner" data-astro-cid-6bn65nae> <canvas id="aquarium-canvas" data-astro-cid-6bn65nae></canvas> <div class="aquarium-banner-content" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link-hero" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
 Back to Prompt Gallery
-</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>Skill Creator</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;Skill Creator&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 4989 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>4989 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
+</a> <div class="banner-title-row" data-astro-cid-6bn65nae> <span class="badge category-badge-hero" data-astro-cid-6bn65nae>ROLEPLAY</span> <h1 class="prompt-title-hero" data-astro-cid-6bn65nae>Skill Creator</h1> </div> </div> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;Skill Creator&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 4989 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>4989 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
 name: skill-creator
 description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
 license: Complete terms in LICENSE.txt
@@ -1183,4 +1183,397 @@ def main():
 if __name__ == &quot;__main__&quot;:
     main()</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
 Add to Chrome (Free)
-</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  <script>
+    (function() {
+      const canvas = document.getElementById('aquarium-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      
+      let width = 0;
+      let height = 0;
+      
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        canvas.width = width * window.devicePixelRatio;
+        canvas.height = height * window.devicePixelRatio;
+        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      }
+      
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Vector Fish Drawing Helper
+      function drawFish(ctx, x, y, size, angle, color, tailWiggle, isFacingLeft) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        if (isFacingLeft) {
+          ctx.scale(-1, 1);
+        }
+        
+        // Body Gradient (adds 3D roundness)
+        const grad = ctx.createRadialGradient(size * 0.2, -size * 0.1, size * 0.1, 0, 0, size);
+        grad.addColorStop(0, '#ffffff');
+        grad.addColorStop(0.3, color.body || '#ff7e33');
+        grad.addColorStop(1, color.shading || '#992200');
+
+        // Tail fin (wagging)
+        ctx.save();
+        ctx.translate(-size * 0.85, 0);
+        ctx.rotate(Math.sin(tailWiggle) * 0.4);
+        
+        const tailGrad = ctx.createLinearGradient(0, 0, -size * 0.6, 0);
+        tailGrad.addColorStop(0, color.body || '#ff7e33');
+        tailGrad.addColorStop(1, color.tail || '#ff3b3b');
+        ctx.fillStyle = tailGrad;
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.quadraticCurveTo(-size * 0.4, -size * 0.5, -size * 0.6, -size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.35, 0, -size * 0.6, size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.4, size * 0.5, 0, 0);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        // Dorsal fin (top)
+        const finGrad = ctx.createLinearGradient(0, -size * 0.35, 0, 0);
+        finGrad.addColorStop(0, color.tail || '#ff3b3b');
+        finGrad.addColorStop(1, color.body || '#ff7e33');
+        ctx.fillStyle = finGrad;
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.4, -size * 0.3);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.7, size * 0.2, -size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.2, -size * 0.4, -size * 0.3);
+        ctx.closePath();
+        ctx.fill();
+
+        // Pectoral fin (bottom)
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.2, size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.3, size * 0.5, -size * 0.05, size * 0.45);
+        ctx.quadraticCurveTo(0, size * 0.25, -size * 0.2, size * 0.25);
+        ctx.closePath();
+        ctx.fill();
+
+        // Main body
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, size, size * 0.42, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Stripes
+        if (color.stripes === 'clownfish') {
+          ctx.fillStyle = '#ffffff';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.fill();
+          
+          ctx.strokeStyle = '#000000';
+          ctx.lineWidth = size * 0.04;
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        } else if (color.stripes === 'tang') {
+          ctx.fillStyle = '#000000';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.25, size * 0.3, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = color.body || '#1e40af';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.18, size * 0.22, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Eye
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.55, -size * 0.1, size * 0.12, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#000000';
+        ctx.beginPath();
+        ctx.arc(size * 0.6, -size * 0.1, size * 0.06, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Reflection
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.58, -size * 0.12, size * 0.02, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      // Bubble Particle System
+      class Bubble {
+        constructor() {
+          this.reset();
+          this.y = Math.random() * height; // distribute initial bubbles
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = height + 10;
+          this.radius = 1 + Math.random() * 4;
+          this.speed = 0.3 + Math.random() * 0.7;
+          this.wiggleSpeed = 0.02 + Math.random() * 0.04;
+          this.wiggleWidth = 1 + Math.random() * 2;
+          this.angle = Math.random() * Math.PI * 2;
+        }
+        update() {
+          this.y -= this.speed;
+          this.angle += this.wiggleSpeed;
+          this.xOffset = Math.sin(this.angle) * this.wiggleWidth;
+          if (this.y < -10) this.reset();
+        }
+        draw() {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      // Fish Particle System
+      class Fish {
+        constructor() {
+          this.reset(true);
+        }
+        reset(startRandom = false) {
+          this.size = 14 + Math.random() * 16;
+          this.depth = 0.5 + Math.random() * 0.5; // 3D depth multiplier
+          this.size *= this.depth;
+          
+          const species = ['clownfish', 'bluetang', 'goldfish', 'tetra'];
+          this.type = species[Math.floor(Math.random() * species.length)];
+          if (this.type === 'clownfish') {
+            this.color = { body: '#ff7e33', tail: '#ff3b3b', shading: '#882200', stripes: 'clownfish' };
+          } else if (this.type === 'bluetang') {
+            this.color = { body: '#2563eb', tail: '#facc15', shading: '#1e3a8a', stripes: 'tang' };
+          } else if (this.type === 'goldfish') {
+            this.color = { body: '#ffa500', tail: '#ef4444', shading: '#b45309' };
+          } else {
+            this.color = { body: '#06b6d4', tail: '#ec4899', shading: '#0891b2' };
+          }
+
+          this.isFacingLeft = Math.random() > 0.5;
+          this.x = startRandom ? Math.random() * width : (this.isFacingLeft ? width + 60 : -60);
+          this.y = 30 + Math.random() * (height - 60);
+          this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+          this.speedY = (Math.random() - 0.5) * 0.1;
+          this.tailWiggle = Math.random() * Math.PI * 2;
+          this.tailWiggleSpeed = 0.08 + Math.random() * 0.08;
+          this.angle = 0;
+          
+          this.isScared = false;
+          this.scareTimer = 0;
+        }
+        scare(mouseX, mouseY) {
+          const dx = this.x - mouseX;
+          const dy = this.y - mouseY;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 80) {
+            this.isScared = true;
+            this.scareTimer = 180;
+            this.speedX = (this.x > mouseX ? 2.5 : -2.5) * this.depth;
+            this.speedY = (this.y > mouseY ? 1.2 : -1.2) * this.depth;
+          }
+        }
+        update() {
+          if (this.isScared) {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed * 2.5;
+            this.angle = this.speedY * 0.4;
+            this.scareTimer--;
+            if (this.scareTimer <= 0) {
+              this.isScared = false;
+              this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+              this.speedY = (Math.random() - 0.5) * 0.1;
+            }
+          } else {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed;
+            this.angle = this.speedY * 0.5;
+          }
+
+          if (this.isFacingLeft && this.x < -80) this.reset();
+          if (!this.isFacingLeft && this.x > width + 80) this.reset();
+          if (this.y < 20 || this.y > height - 20) this.speedY *= -1;
+        }
+        draw() {
+          drawFish(ctx, this.x, this.y, this.size, this.angle, this.color, this.tailWiggle, this.isFacingLeft);
+        }
+      }
+
+      // Seaweed Class
+      class Seaweed {
+        constructor(x, heightValue) {
+          this.x = x;
+          this.height = heightValue;
+          this.angle = Math.random() * Math.PI * 2;
+          this.speed = 0.015 + Math.random() * 0.015;
+          this.width = 6 + Math.random() * 4;
+        }
+        update() {
+          this.angle += this.speed;
+        }
+        draw() {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(13, 148, 136, 0.2)';
+          ctx.lineWidth = this.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(this.x, height);
+          
+          const segments = 4;
+          const segmentHeight = this.height / segments;
+          let currentX = this.x;
+          let currentY = height;
+          
+          for (let i = 0; i < segments; i++) {
+            const targetY = height - (i + 1) * segmentHeight;
+            const sway = Math.sin(this.angle + i * 0.5) * 10;
+            const targetX = this.x + sway;
+            const ctrlX = currentX + (targetX - currentX) / 2 + Math.sin(this.angle) * 2;
+            const ctrlY = currentY - segmentHeight / 2;
+            
+            ctx.quadraticCurveTo(ctrlX, ctrlY, targetX, targetY);
+            currentX = targetX;
+            currentY = targetY;
+          }
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      // Volumetric Light Shafts
+      function drawLightShafts(time) {
+        ctx.save();
+        const numShafts = 4;
+        for (let i = 0; i < numShafts; i++) {
+          const shift = Math.sin(time * 0.001 + i * 1.5) * 40;
+          const startX = (width / numShafts) * i + shift + 30;
+          const shaftWidth = 40 + Math.sin(time * 0.002 + i) * 15;
+          
+          const grad = ctx.createLinearGradient(startX, 0, startX - 60, height);
+          grad.addColorStop(0, 'rgba(56, 189, 248, 0.04)');
+          grad.addColorStop(1, 'rgba(56, 189, 248, 0.0)');
+          
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.moveTo(startX - shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth * 1.3 - 60, height);
+          ctx.lineTo(startX - shaftWidth * 1.3 - 60, height);
+          ctx.closePath();
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+
+      // Initialize Particles
+      let bubbles = Array.from({ length: 25 }, () => new Bubble());
+      let fishes = Array.from({ length: 5 }, () => new Fish());
+      let seaweeds = Array.from({ length: 10 }, (_, i) => {
+        const spacing = width / 11;
+        return new Seaweed(spacing * (i + 0.5) + (Math.random() - 0.5) * 10, 40 + Math.random() * 50);
+      });
+
+      // Mouse Interaction
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => fish.scare(mouseX, mouseY));
+        
+        if (Math.random() < 0.2 && bubbles.length < 50) {
+          const b = new Bubble();
+          b.x = mouseX;
+          b.y = mouseY;
+          b.radius = 1 + Math.random() * 2;
+          b.speed = 0.8 + Math.random() * 0.8;
+          bubbles.push(b);
+        }
+      });
+
+      canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => {
+          fish.scare(mouseX, mouseY);
+          if (fish.isScared) {
+            fish.speedX *= 1.5;
+            fish.speedY *= 1.5;
+          }
+        });
+        
+        for (let i = 0; i < 10; i++) {
+          const b = new Bubble();
+          b.x = mouseX + (Math.random() - 0.5) * 15;
+          b.y = mouseY + (Math.random() - 0.5) * 15;
+          b.radius = 1 + Math.random() * 3;
+          b.speed = 0.6 + Math.random() * 1.2;
+          bubbles.push(b);
+        }
+      });
+
+      // Animation Loop
+      function animate(time) {
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Draw water background gradient
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
+        bgGrad.addColorStop(0, '#090d16');
+        bgGrad.addColorStop(0.5, '#0d182e');
+        bgGrad.addColorStop(1, '#02050b');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, width, height);
+
+        // 2. Draw light rays
+        drawLightShafts(time);
+
+        // 3. Draw Seaweed (background layer)
+        seaweeds.forEach(s => {
+          s.update();
+          s.draw();
+        });
+
+        // 4. Update & Draw Fishes
+        fishes.forEach(f => {
+          f.update();
+          f.draw();
+        });
+
+        // 5. Update & Draw Bubbles (foreground layer)
+        bubbles.forEach((b, idx) => {
+          b.update();
+          b.draw();
+          if (bubbles.length > 25 && b.y < -5) {
+            bubbles.splice(idx, 1);
+          }
+        });
+
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
+    })();
+  </script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>

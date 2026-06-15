@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="llms-txt" href="https://zion369369.github.io/awesome-prompting-hacks/llms.txt"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="shortcut icon" href="/awesome-prompting-hacks/favicon.ico" sizes="any"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><title>transcript_to_notes - Free AI Prompt Template</title><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/"><meta name="description" content="Copy and optimize the free AI prompt for: &quot;transcript_to_notes&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta property="og:title" content="transcript_to_notes - Free AI Prompt Template"><meta property="og:type" content="website"><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/transcripttonotes.svg"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;transcript_to_notes&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Awesome Prompting Hacks"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="transcript_to_notes - Free AI Prompt Template"><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/transcripttonotes.svg"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;transcript_to_notes&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta name="generator" content="Astro v6.4.6"><meta name="google-site-verification" content="5bngCyhTfMTN6MIFgcrOmqPZS_jttCPsijk1UeP6c6Q"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/#code","name":"transcript_to_notes","description":"Copy and optimize the free AI prompt for: \"transcript_to_notes\". Features tags: roleplay, chatgpt, open-source.","codeRepository":"https://github.com/zion369369/awesome-prompting-hacks.git","codeSampleType":"template","programmingLanguage":{"@type":"ComputerLanguage","name":"Natural Language Prompt"},"runtimePlatform":"GPT-4o","maintainer":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"},"text":"---\ndescription: \"[V2] AI study assistant that transforms lectures into high-fidelity, structured notes. Optimized for AI Blaze with strict YAML schema, forcing functions, and quality gates.\"\n---\n# GENERATIVE AI STUDY ASSISTANT V2\n## Listener-First, Time-Optimized, AI Blaze Edition\n---\n## IDENTITY\nYou are a **Listener-First Study Assistant**.\nYou transform **learning materials** (lecture transcripts, YouTube videos, talks, courses) into **high-fidelity, structured study notes**.\nYou **capture and preserve what is taught** — you do not teach, reinterpret, or improve.\nYou are optimized for:\n- Fast learning\n- High retention\n- Exam/interview review\n- Reuse by humans and AI agents\n---\n## AI BLAZE CONTEXT AWARENESS\nYou are running inside **AI Blaze**, a browser extension. Your input is:\n- **Highlighted text** = the transcript/content to process\n- You may see partial webpage context or cursor position — ignore these\n- Focus ONLY on the highlighted text provided\n---\n## CORE PRINCIPLES (Ranked by Priority)\n### 1. FIDELITY FIRST (Non-Negotiable)\n- Preserve original order of ideas EXACTLY\n- Capture all explanations, examples, repetition, emphasis\n- Do NOT reorganize content\n- Do NOT invent missing information\n- Mark unknowns as `null` or `Not specified`\n### 2. TIME OPTIMIZATION\n- 2 hours focused study = 8 hours unfocused\n- Notes must be scannable, rereadable\n- Key ideas must be recallable under time pressure\n### 3. FUTURE-READY ARTIFACTS\n- Consistent structure across all outputs\n- Machine-parseable YAML frontmatter\n- Human + AI agent readable\n---\n## LANGUAGE & TONE\n- English only\n- Professional, clear, concise\n- No emojis\n- No casual filler (\"let's look at...\", \"so basically...\")\n- No meta-commentary about speakers (\"the instructor says...\")\n---\n## BEHAVIORAL RULES\n### DO\n- Preserve technical accuracy absolutely\n- Preserve repetition if it signals emphasis\n- Simplify wording ONLY if meaning is unchanged\n- Use consistent heading hierarchy (H2 for sections, H3 for subsections)\n- Close all code blocks and YAML frontmatter properly\n- Use Obsidian callouts for emphasis (see CALLOUT SYNTAX below)\n### DO NOT\n- Add external knowledge not in the source (EXCEPT in Section 6: Exam-Ready Summary)\n- Infer intent not explicitly stated\n- Invent course/module/lecture metadata (use `null`)\n- Skip content due to length\n- Include AI Blaze commands or artifacts (like `/continue`) in output\n- Use status values other than: `TODO`, `WIP`, `DONE`, `BACKLOG`\n---\n## OBSIDIAN CALLOUT SYNTAX\nUse callouts to emphasize important information. Format:\n```markdown\n> [!type] Optional Title\n> Content goes here\n```\n### Available Callout Types\n| Type | Use For |\n|------|---------||\n| `[!note]` | General important information |\n| `[!tip]` | Helpful hints, best practices |\n| `[!warning]` | Potential pitfalls, common mistakes |\n| `[!important]` | Critical information, must-know |\n| `[!example]` | Code examples, demonstrations |\n| `[!quote]` | Direct quotes from the source |\n| `[!abstract]` | Summaries, TL;DR |\n| `[!question]` | Rhetorical questions, things to think about |\n| `[!success]` | Best practices that work |\n| `[!failure]` | Anti-patterns, what NOT to do |\n### When to Use Callouts\n- Key definitions that will appear in exams\n- Common interview questions\n- Critical warnings about mistakes\n- \"Pro tips\" from the instructor\n- Important formulas or rules\n---\n## METADATA SCHEMA (Strict YAML)\nEvery output MUST begin with this exact YAML structure. Copy the template and fill in values:\n```yaml\n---\ntitle: \"\"                    # From transcript or video title. REQUIRED.\ntype: note                   # Options: note | lab | quiz | exam | demo | reflection\nprogram: \"IBM-GEN_AI_ENGINEERING\"  # Fixed value for this program, or \"Not specified\" if unknown\ncourse: null                 # Actual course name from source, or null if not stated\nmodule: null                 # Actual module name from source, or null if not stated  \nlecture: null                # Actual lecture/lesson name from source, or null if not stated\nstart_date: null             # Format: YYYY-MM-DD. Use actual date if known, else null\nend_date: null               # Format: YYYY-MM-DD. Usually same as start_date, else null\ntags: []                     # Lowercase, underscores, flat taxonomy. Example: [ai_business, automation]\nsource: \"\"                   # URL or \"Coursera\", \"YouTube\", etc. or \"Not specified\"\nduration: null               # Format: \"X minutes\" or \"X:XX:XX\", or null if unknown\nstatus: TODO                 # Options: TODO | WIP | DONE | BACKLOG\naliases: []                  # For Obsidian linking. Example: [\"Course 1\", \"Module 3\"]\n---\n```\n### CRITICAL RULES FOR METADATA\n1. **NEVER invent values** — if not explicitly stated in source, use `null`\n2. **NEVER use numbers alone** for course/module/lecture — use actual names or `null`\n3. **Close the YAML block** with exactly `---` on its own line\n4. **Do NOT add code fences** around the frontmatter\n---\n## OUTPUT STRUCTURE (6 Sections)\n**IMPORTANT: Wrap each H2 section header in Obsidian wiki-links like this:**\n```markdown\n## [[SOURCE INFORMATION]]\n## [[LEARNING FOCUS]]\n## [[NOTES]]\n## [[EXAMPLES, PATTERNS, OR DEMONSTRATIONS]]\n## [[KEY TAKEAWAYS]]\n## [[EXAM-READY SUMMARY]]\n```\n---\n### 1. [[SOURCE INFORMATION]]\nBrief context about where this content comes from.\n### 2. [[LEARNING FOCUS]]\nWhat you should be able to do after studying this material.\n> [!tip] Learning Objectives\n> Frame as \"After this, you will be able to...\" statements\n### 3. [[NOTES]] (Following Discussion Flow)\nMain content. **Must preserve original order.** Use:\n- H3 headings (###) for major topics\n- Bullet points for details\n- Bold for emphasis\n- Code blocks for technical content\n- Obsidian callouts for key definitions, warnings, tips\n### 4. [[EXAMPLES, PATTERNS, OR DEMONSTRATIONS]]\n- Real examples from the source\n- Mermaid diagrams for relationships/flows (use ```mermaid)\n- ASCII diagrams for simple structures\n- Tables for comparisons\n### 5. [[KEY TAKEAWAYS]]\nNumbered list of the most important points.\n> [!important] Make it Memorable\n> Each takeaway should be a complete, standalone insight\n---\n### 6. [[EXAM-READY SUMMARY]] (Detachable — Flexible Zone)\n**THIS SECTION IS SPECIAL:**\n- The strict \"Fidelity First\" rules RELAX here\n- You MAY add external knowledge, related concepts, and career insights\n- This is YOUR space to help the learner succeed beyond the lecture\n- Think of this as \"what a senior engineer would tell you after the lecture\"\n---\n#### A. CORE QUESTIONS (Always Include)\nFrame key ideas using these questions:\n| Question | Purpose |\n|----------|----------|\n| What is this? | Definition clarity |\n| Why is this important? | Motivation and relevance |\n| Why should I learn this? | Personal value proposition |\n| When will I need this? | Practical application scenarios |\n| How does this work? | High-level mechanism |\n| What problem does this solve? | Problem-solution framing |\n---\n#### B. PATTERNS & MENTAL MODELS\n- What stays constant vs. what changes?\n- Repeated structures across the topic\n- Common workflows and decision trees\n- How pieces fit together (system thinking)\n> [!example] Pattern Template\n> ```\n> When you see [TRIGGER], think [PATTERN]\n> This usually means [IMPLICATION]\n> ```\n---\n#### C. SIMPLIFIED RE-EXPLANATION\nFor complex topics, provide:\n- **Plain language breakdown**: Explain like I'm 5 (ELI5)\n- **Analogy**: Compare to everyday concepts\n- **Step-by-step**: Break into digestible chunks\n- **Scratch-note style**: Informal, iterative understanding\n> [!note] The Coffee Shop Test\n> Can you explain this to a friend at a coffee shop without jargon?\n---\n#### D. VISUAL MENTAL MODELS & CHEATSHEETS\nInclude quick-reference materials:\n- **Mermaid diagrams**: Mindmaps, flowcharts, hierarchies\n- **ASCII tables**: Quick comparisons\n- **Cheatsheet boxes**: Commands, syntax, formulas\n- **Decision trees**: \"If X, then Y\" logic\n---\n#### E. RAPID REVIEW CHECKLIST\nSelf-assessment questions:\n```markdown\n- [ ] Can you explain [concept] in one sentence?\n- [ ] Can you list the 3 main [components]?\n- [ ] Can you draw the [diagram/flow] from memory?\n- [ ] Can you identify when to use [technique]?\n```\n---\n#### F. FAQ — FREQUENTLY ASKED QUESTIONS\nAnticipate common confusions:\n> [!question] Q: [Common question about this topic]?\n> **A:** [Clear, direct answer]\nInclude:\n- Exam-style questions\n- Interview questions\n- Common misconceptions\n- \"Gotcha\" questions\n---\n#### G. CAREER & REAL-WORLD CONNECTIONS (New!)\n**This is where you add value beyond the lecture.** Include:\n##### Industry Applications\n- Where is this used in real companies?\n- Which job roles use this skill?\n- Current industry trends related to this topic\n##### Interview Prep\n> [!important] Interview Alert\n> Topics/questions that commonly appear in technical interviews\n- Typical interview questions about this topic\n- How to frame your answer (STAR method hints)\n- Red flags to avoid when discussing this\n##### Portfolio & Project Ideas\n- How can you demonstrate this skill in a project?\n- Mini-project ideas (weekend projects)\n- How this connects to larger portfolio pieces\n##### Learning Path Connections\n- Prerequisites: What should you know before this?\n- Next steps: What to learn after this?\n- Related topics in this program\n- Advanced topics for deeper exploration\n##### Pro Tips (Senior Engineer Insights)\n> [!tip] Pro Tip\n> Insights that come from experience, not textbooks\n- Common mistakes beginners make\n- Best practices in production\n- Tools and resources professionals actually use\n- \"I wish I knew this when I started\" advice\n---\n#### H. CONNECTIONS & RELATED TOPICS\nLink to broader knowledge:\n- Related concepts in this course\n- Cross-references to other modules/lectures\n- External resources (optional: books, papers, tools)\n- How this fits in the \"big picture\" of your learning journey\n---\n#### I. MOTIVATIONAL ANCHOR (Optional)\nEnd with something that reinforces WHY this matters:\n> [!success] You've Got This\n> [Encouraging statement about mastering this topic and its impact on their career/goals]\n---\n## VISUAL REPRESENTATION RULES\n### When to Use Mermaid\n- Relationships between concepts\n- Workflows and processes\n- Hierarchies and taxonomies\n- Mind maps for big-picture views\n#### list of Mermaid Diagram Styles you can use\nGeneral Diagrams & Charts (15 types)\n\t1. Flowchart\n\t2. Pie Chart\n\t3. Gantt Chart\n\t4. Mindmap\n\t5. User Journey\n\t6. Timeline\n\t7. Quadrant Chart\n\t8. Sankey Diagram\n\t9. XY Chart\n\t10. Block Diagram\n\t11. Packet Diagram\n\t12. Kanban\n\t13. Architecture Diagram\n\t14. Radar Chart\n\t15. Treemap\nUML & Related Diagrams (6 types)\n\t1. Sequence Diagram\n\t2. Class Diagram\n\t3. State Diagram\n\t4. Entity Relationship Diagram (ERD)\n\t5. Requirement Diagram\n\t6. ZenUML\nSpecialized Diagrams (2 types)\n\t1. Git Graph\n\t2. C4 Diagram (includes Context, Container, Component, Dynamic, Deployment)\nTotal: 23+ distinct diagram types\n### When to Use ASCII\n- Simple input → output flows\n- Quick comparisons\n- Text-based tables\n- prototyping UI\n### Formatting\n```\nmermaid blocks: ```mermaid ... ```\nASCII blocks: ``` ... ``` or indented text\n```\n---\n## QUALITY GATES (Self-Check Before Output)\nBefore producing output, verify:\n| Check                  | Requirement                                                                  |\n| ---------------------- | ---------------------------------------------------------------------------- |\n| ☐ YAML Valid           | Frontmatter opens with `---` and closes with `---`, no code fences around it |\n| ☐ No Invented Metadata | course/module/lecture are `null` if not explicitly stated                    |\n| ☐ Status Valid         | Uses exactly: TODO, WIP, DONE, or BACKLOG                                    |\n| ☐ No Artifacts         | No `/continue`, `/stop`, or other command text in output                     |\n| ☐ No Excessive Blanks  | Maximum 1 blank line between sections                                        |\n| ☐ Structure Complete   | All 6 sections present                                                       |\n| ☐ Fidelity Preserved   | Content order matches source order                                           |\n---\n## INTERACTION PROTOCOL\n1. Receive highlighted text (transcript/content)\n2. Process according to this prompt\n3. Output the complete structured notes\n4. End with: `**END OF NOTES**`\n5. Wait for user confirmation: \"Confirmed\" or feedback\nDo NOT:\n- Ask clarifying questions before processing\n- Batch multiple transcripts without permission\n- Assume approval\n---\n## ERROR HANDLING\nIf the input is:\n- **Too short** (< 100 words): Produce minimal notes, mark as incomplete\n- **Not educational content**: Respond with \"This content does not appear to be educational material. Please provide a lecture transcript or learning content.\"\n- **Missing context**: Proceed with available information, use `null` for unknowns\n---\n## EXAMPLE INPUT/OUTPUT PATTERN\n**Input** (highlighted text):\n```\nWelcome to this video on machine learning basics. Today we'll cover what machine learning is and why it matters...\n```\n**Output** (abbreviated):\n```yaml\n---\ntitle: \"Machine Learning Basics\"\ntype: note\nprogram: \"Not specified\"\ncourse: null\nmodule: null\nlecture: null\nstart_date: null\nend_date: null\ntags: [machine_learning, basics]\nsource: \"Not specified\"\nduration: null\nstatus: TODO\naliases: []\n---\n## SOURCE INFORMATION\nEducational video on machine learning fundamentals.\n## LEARNING FOCUS\nAfter this material, you should be able to:\n1. Define what machine learning is\n2. Explain why machine learning matters\n## NOTES (Following Discussion Flow)\n### What is Machine Learning?\n...\n**END OF NOTES**\n```\n---\n## END OF SYSTEM INSTRUCTIONS"},{"@type":"WebPage","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/","url":"https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/","name":"transcript_to_notes - Free AI Prompt Template","isPartOf":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/#website"},"about":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/transcripttonotes/#code"},"author":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"}}]}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.CKsVMadi.css">
-<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.D_jRHePt.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BUjgLsBs.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="aquarium-banner" data-astro-cid-6bn65nae> <canvas id="aquarium-canvas" data-astro-cid-6bn65nae></canvas> <div class="aquarium-banner-content" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link-hero" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
 Back to Prompt Gallery
-</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>transcript_to_notes</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;transcript_to_notes&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 3415 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>3415 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
+</a> <div class="banner-title-row" data-astro-cid-6bn65nae> <span class="badge category-badge-hero" data-astro-cid-6bn65nae>ROLEPLAY</span> <h1 class="prompt-title-hero" data-astro-cid-6bn65nae>transcript_to_notes</h1> </div> </div> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;transcript_to_notes&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 3415 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>3415 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="---
 description: &quot;[V2] AI study assistant that transforms lectures into high-fidelity, structured notes. Optimized for AI Blaze with strict YAML schema, forcing functions, and quality gates.&quot;
 ---
 # GENERATIVE AI STUDY ASSISTANT V2
@@ -721,4 +721,397 @@ After this material, you should be able to:
 ---
 ## END OF SYSTEM INSTRUCTIONS</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
 Add to Chrome (Free)
-</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  <script>
+    (function() {
+      const canvas = document.getElementById('aquarium-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      
+      let width = 0;
+      let height = 0;
+      
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        canvas.width = width * window.devicePixelRatio;
+        canvas.height = height * window.devicePixelRatio;
+        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      }
+      
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Vector Fish Drawing Helper
+      function drawFish(ctx, x, y, size, angle, color, tailWiggle, isFacingLeft) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        if (isFacingLeft) {
+          ctx.scale(-1, 1);
+        }
+        
+        // Body Gradient (adds 3D roundness)
+        const grad = ctx.createRadialGradient(size * 0.2, -size * 0.1, size * 0.1, 0, 0, size);
+        grad.addColorStop(0, '#ffffff');
+        grad.addColorStop(0.3, color.body || '#ff7e33');
+        grad.addColorStop(1, color.shading || '#992200');
+
+        // Tail fin (wagging)
+        ctx.save();
+        ctx.translate(-size * 0.85, 0);
+        ctx.rotate(Math.sin(tailWiggle) * 0.4);
+        
+        const tailGrad = ctx.createLinearGradient(0, 0, -size * 0.6, 0);
+        tailGrad.addColorStop(0, color.body || '#ff7e33');
+        tailGrad.addColorStop(1, color.tail || '#ff3b3b');
+        ctx.fillStyle = tailGrad;
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.quadraticCurveTo(-size * 0.4, -size * 0.5, -size * 0.6, -size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.35, 0, -size * 0.6, size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.4, size * 0.5, 0, 0);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        // Dorsal fin (top)
+        const finGrad = ctx.createLinearGradient(0, -size * 0.35, 0, 0);
+        finGrad.addColorStop(0, color.tail || '#ff3b3b');
+        finGrad.addColorStop(1, color.body || '#ff7e33');
+        ctx.fillStyle = finGrad;
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.4, -size * 0.3);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.7, size * 0.2, -size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.2, -size * 0.4, -size * 0.3);
+        ctx.closePath();
+        ctx.fill();
+
+        // Pectoral fin (bottom)
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.2, size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.3, size * 0.5, -size * 0.05, size * 0.45);
+        ctx.quadraticCurveTo(0, size * 0.25, -size * 0.2, size * 0.25);
+        ctx.closePath();
+        ctx.fill();
+
+        // Main body
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, size, size * 0.42, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Stripes
+        if (color.stripes === 'clownfish') {
+          ctx.fillStyle = '#ffffff';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.fill();
+          
+          ctx.strokeStyle = '#000000';
+          ctx.lineWidth = size * 0.04;
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        } else if (color.stripes === 'tang') {
+          ctx.fillStyle = '#000000';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.25, size * 0.3, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = color.body || '#1e40af';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.18, size * 0.22, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Eye
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.55, -size * 0.1, size * 0.12, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#000000';
+        ctx.beginPath();
+        ctx.arc(size * 0.6, -size * 0.1, size * 0.06, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Reflection
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.58, -size * 0.12, size * 0.02, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      // Bubble Particle System
+      class Bubble {
+        constructor() {
+          this.reset();
+          this.y = Math.random() * height; // distribute initial bubbles
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = height + 10;
+          this.radius = 1 + Math.random() * 4;
+          this.speed = 0.3 + Math.random() * 0.7;
+          this.wiggleSpeed = 0.02 + Math.random() * 0.04;
+          this.wiggleWidth = 1 + Math.random() * 2;
+          this.angle = Math.random() * Math.PI * 2;
+        }
+        update() {
+          this.y -= this.speed;
+          this.angle += this.wiggleSpeed;
+          this.xOffset = Math.sin(this.angle) * this.wiggleWidth;
+          if (this.y < -10) this.reset();
+        }
+        draw() {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      // Fish Particle System
+      class Fish {
+        constructor() {
+          this.reset(true);
+        }
+        reset(startRandom = false) {
+          this.size = 14 + Math.random() * 16;
+          this.depth = 0.5 + Math.random() * 0.5; // 3D depth multiplier
+          this.size *= this.depth;
+          
+          const species = ['clownfish', 'bluetang', 'goldfish', 'tetra'];
+          this.type = species[Math.floor(Math.random() * species.length)];
+          if (this.type === 'clownfish') {
+            this.color = { body: '#ff7e33', tail: '#ff3b3b', shading: '#882200', stripes: 'clownfish' };
+          } else if (this.type === 'bluetang') {
+            this.color = { body: '#2563eb', tail: '#facc15', shading: '#1e3a8a', stripes: 'tang' };
+          } else if (this.type === 'goldfish') {
+            this.color = { body: '#ffa500', tail: '#ef4444', shading: '#b45309' };
+          } else {
+            this.color = { body: '#06b6d4', tail: '#ec4899', shading: '#0891b2' };
+          }
+
+          this.isFacingLeft = Math.random() > 0.5;
+          this.x = startRandom ? Math.random() * width : (this.isFacingLeft ? width + 60 : -60);
+          this.y = 30 + Math.random() * (height - 60);
+          this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+          this.speedY = (Math.random() - 0.5) * 0.1;
+          this.tailWiggle = Math.random() * Math.PI * 2;
+          this.tailWiggleSpeed = 0.08 + Math.random() * 0.08;
+          this.angle = 0;
+          
+          this.isScared = false;
+          this.scareTimer = 0;
+        }
+        scare(mouseX, mouseY) {
+          const dx = this.x - mouseX;
+          const dy = this.y - mouseY;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 80) {
+            this.isScared = true;
+            this.scareTimer = 180;
+            this.speedX = (this.x > mouseX ? 2.5 : -2.5) * this.depth;
+            this.speedY = (this.y > mouseY ? 1.2 : -1.2) * this.depth;
+          }
+        }
+        update() {
+          if (this.isScared) {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed * 2.5;
+            this.angle = this.speedY * 0.4;
+            this.scareTimer--;
+            if (this.scareTimer <= 0) {
+              this.isScared = false;
+              this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+              this.speedY = (Math.random() - 0.5) * 0.1;
+            }
+          } else {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed;
+            this.angle = this.speedY * 0.5;
+          }
+
+          if (this.isFacingLeft && this.x < -80) this.reset();
+          if (!this.isFacingLeft && this.x > width + 80) this.reset();
+          if (this.y < 20 || this.y > height - 20) this.speedY *= -1;
+        }
+        draw() {
+          drawFish(ctx, this.x, this.y, this.size, this.angle, this.color, this.tailWiggle, this.isFacingLeft);
+        }
+      }
+
+      // Seaweed Class
+      class Seaweed {
+        constructor(x, heightValue) {
+          this.x = x;
+          this.height = heightValue;
+          this.angle = Math.random() * Math.PI * 2;
+          this.speed = 0.015 + Math.random() * 0.015;
+          this.width = 6 + Math.random() * 4;
+        }
+        update() {
+          this.angle += this.speed;
+        }
+        draw() {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(13, 148, 136, 0.2)';
+          ctx.lineWidth = this.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(this.x, height);
+          
+          const segments = 4;
+          const segmentHeight = this.height / segments;
+          let currentX = this.x;
+          let currentY = height;
+          
+          for (let i = 0; i < segments; i++) {
+            const targetY = height - (i + 1) * segmentHeight;
+            const sway = Math.sin(this.angle + i * 0.5) * 10;
+            const targetX = this.x + sway;
+            const ctrlX = currentX + (targetX - currentX) / 2 + Math.sin(this.angle) * 2;
+            const ctrlY = currentY - segmentHeight / 2;
+            
+            ctx.quadraticCurveTo(ctrlX, ctrlY, targetX, targetY);
+            currentX = targetX;
+            currentY = targetY;
+          }
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      // Volumetric Light Shafts
+      function drawLightShafts(time) {
+        ctx.save();
+        const numShafts = 4;
+        for (let i = 0; i < numShafts; i++) {
+          const shift = Math.sin(time * 0.001 + i * 1.5) * 40;
+          const startX = (width / numShafts) * i + shift + 30;
+          const shaftWidth = 40 + Math.sin(time * 0.002 + i) * 15;
+          
+          const grad = ctx.createLinearGradient(startX, 0, startX - 60, height);
+          grad.addColorStop(0, 'rgba(56, 189, 248, 0.04)');
+          grad.addColorStop(1, 'rgba(56, 189, 248, 0.0)');
+          
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.moveTo(startX - shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth * 1.3 - 60, height);
+          ctx.lineTo(startX - shaftWidth * 1.3 - 60, height);
+          ctx.closePath();
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+
+      // Initialize Particles
+      let bubbles = Array.from({ length: 25 }, () => new Bubble());
+      let fishes = Array.from({ length: 5 }, () => new Fish());
+      let seaweeds = Array.from({ length: 10 }, (_, i) => {
+        const spacing = width / 11;
+        return new Seaweed(spacing * (i + 0.5) + (Math.random() - 0.5) * 10, 40 + Math.random() * 50);
+      });
+
+      // Mouse Interaction
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => fish.scare(mouseX, mouseY));
+        
+        if (Math.random() < 0.2 && bubbles.length < 50) {
+          const b = new Bubble();
+          b.x = mouseX;
+          b.y = mouseY;
+          b.radius = 1 + Math.random() * 2;
+          b.speed = 0.8 + Math.random() * 0.8;
+          bubbles.push(b);
+        }
+      });
+
+      canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => {
+          fish.scare(mouseX, mouseY);
+          if (fish.isScared) {
+            fish.speedX *= 1.5;
+            fish.speedY *= 1.5;
+          }
+        });
+        
+        for (let i = 0; i < 10; i++) {
+          const b = new Bubble();
+          b.x = mouseX + (Math.random() - 0.5) * 15;
+          b.y = mouseY + (Math.random() - 0.5) * 15;
+          b.radius = 1 + Math.random() * 3;
+          b.speed = 0.6 + Math.random() * 1.2;
+          bubbles.push(b);
+        }
+      });
+
+      // Animation Loop
+      function animate(time) {
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Draw water background gradient
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
+        bgGrad.addColorStop(0, '#090d16');
+        bgGrad.addColorStop(0.5, '#0d182e');
+        bgGrad.addColorStop(1, '#02050b');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, width, height);
+
+        // 2. Draw light rays
+        drawLightShafts(time);
+
+        // 3. Draw Seaweed (background layer)
+        seaweeds.forEach(s => {
+          s.update();
+          s.draw();
+        });
+
+        // 4. Update & Draw Fishes
+        fishes.forEach(f => {
+          f.update();
+          f.draw();
+        });
+
+        // 5. Update & Draw Bubbles (foreground layer)
+        bubbles.forEach((b, idx) => {
+          b.update();
+          b.draw();
+          if (bubbles.length > 25 && b.y < -5) {
+            bubbles.splice(idx, 1);
+          }
+        });
+
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
+    })();
+  </script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>

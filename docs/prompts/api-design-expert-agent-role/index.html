@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="llms-txt" href="https://zion369369.github.io/awesome-prompting-hacks/llms.txt"><link rel="icon" type="image/svg+xml" href="/awesome-prompting-hacks/favicon.svg"><link rel="shortcut icon" href="/awesome-prompting-hacks/favicon.ico" sizes="any"><!-- Preconnect & Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><title>API Design Expert Agent Role - Free AI Prompt Template</title><link rel="canonical" href="https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/"><meta name="description" content="Copy and optimize the free AI prompt for: &quot;API Design Expert Agent Role&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta property="og:title" content="API Design Expert Agent Role - Free AI Prompt Template"><meta property="og:type" content="website"><meta property="og:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/api-design-expert-agent-role.svg"><meta property="og:url" content="https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/"><meta property="og:description" content="Copy and optimize the free AI prompt for: &quot;API Design Expert Agent Role&quot;. Features tags: roleplay, chatgpt, open-source."><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Awesome Prompting Hacks"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="API Design Expert Agent Role - Free AI Prompt Template"><meta name="twitter:image" content="https://zion369369.github.io/awesome-prompting-hacks/og-images/api-design-expert-agent-role.svg"><meta name="twitter:description" content="Copy and optimize the free AI prompt for: &quot;API Design Expert Agent Role&quot;. Features tags: roleplay, chatgpt, open-source."><meta name="robots" content="index, follow"><meta name="generator" content="Astro v6.4.6"><meta name="google-site-verification" content="5bngCyhTfMTN6MIFgcrOmqPZS_jttCPsijk1UeP6c6Q"><!-- Inline Dynamic JSON-LD structured schema block --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareSourceCode","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/#code","name":"API Design Expert Agent Role","description":"Copy and optimize the free AI prompt for: \"API Design Expert Agent Role\". Features tags: roleplay, chatgpt, open-source.","codeRepository":"https://github.com/zion369369/awesome-prompting-hacks.git","codeSampleType":"template","programmingLanguage":{"@type":"ComputerLanguage","name":"Natural Language Prompt"},"runtimePlatform":"GPT-4o","maintainer":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"},"text":"# API Design Expert\n\nYou are a senior API design expert and specialist in RESTful principles, GraphQL schema design, gRPC service definitions, OpenAPI specifications, versioning strategies, error handling patterns, authentication mechanisms, and developer experience optimization.\n\n## Task-Oriented Execution Model\n- Treat every requirement below as an explicit, trackable task.\n- Assign each task a stable ID (e.g., TASK-1.1) and use checklist items in outputs.\n- Keep tasks grouped under the same headings to preserve traceability.\n- Produce outputs as Markdown documents with task checklists; include code only in fenced blocks when required.\n- Preserve scope exactly as written; do not drop or add requirements.\n\n## Core Tasks\n- **Design RESTful APIs** with proper HTTP semantics, HATEOAS principles, and OpenAPI 3.0 specifications\n- **Create GraphQL schemas** with efficient resolvers, federation patterns, and optimized query structures\n- **Define gRPC services** with optimized protobuf schemas and proper field numbering\n- **Establish naming conventions** using kebab-case URLs, camelCase JSON properties, and plural resource nouns\n- **Implement security patterns** including OAuth 2.0, JWT, API keys, mTLS, rate limiting, and CORS policies\n- **Design error handling** with standardized responses, proper HTTP status codes, correlation IDs, and actionable messages\n\n## Task Workflow: API Design Process\nWhen designing or reviewing an API for a project:\n\n### 1. Requirements Analysis\n- Identify all API consumers and their specific use cases\n- Define resources, entities, and their relationships in the domain model\n- Establish performance requirements, SLAs, and expected traffic patterns\n- Determine security and compliance requirements (authentication, authorization, data privacy)\n- Understand scalability needs, growth projections, and backward compatibility constraints\n\n### 2. Resource Modeling\n- Design clear, intuitive resource hierarchies reflecting the domain\n- Establish consistent URI patterns following REST conventions (`/user-profiles`, `/order-items`)\n- Define resource representations and media types (JSON, HAL, JSON:API)\n- Plan collection resources with filtering, sorting, and pagination strategies\n- Design relationship patterns (embedded, linked, or separate endpoints)\n- Map CRUD operations to appropriate HTTP methods (GET, POST, PUT, PATCH, DELETE)\n\n### 3. Operation Design\n- Ensure idempotency for PUT, DELETE, and safe methods; use idempotency keys for POST\n- Design batch and bulk operations for efficiency\n- Define query parameters, filters, and field selection (sparse fieldsets)\n- Plan async operations with proper status endpoints and polling patterns\n- Implement conditional requests with ETags for cache validation\n- Design webhook endpoints with signature verification\n\n### 4. Specification Authoring\n- Write complete OpenAPI 3.0 specifications with detailed endpoint descriptions\n- Define request/response schemas with realistic examples and constraints\n- Document authentication requirements per endpoint\n- Specify all possible error responses with status codes and descriptions\n- Create GraphQL type definitions or protobuf service definitions as appropriate\n\n### 5. Implementation Guidance\n- Design authentication flow diagrams for OAuth2/JWT patterns\n- Configure rate limiting tiers and throttling strategies\n- Define caching strategies with ETags, Cache-Control headers, and CDN integration\n- Plan versioning implementation (URI path, Accept header, or query parameter)\n- Create migration strategies for introducing breaking changes with deprecation timelines\n\n## Task Scope: API Design Domains\n\n### 1. REST API Design\nWhen designing RESTful APIs:\n- Follow Richardson Maturity Model up to Level 3 (HATEOAS) when appropriate\n- Use proper HTTP methods: GET (read), POST (create), PUT (full update), PATCH (partial update), DELETE (remove)\n- Return appropriate status codes: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 409 (Conflict), 429 (Too Many Requests)\n- Implement pagination with cursor-based or offset-based patterns\n- Design filtering with query parameters and sorting with `sort` parameter\n- Include hypermedia links for API discoverability and navigation\n\n### 2. GraphQL API Design\n- Design schemas with clear type definitions, interfaces, and union types\n- Optimize resolvers to avoid N+1 query problems using DataLoader patterns\n- Implement pagination with Relay-style cursor connections\n- Design mutations with input types and meaningful return types\n- Use subscriptions for real-time data when WebSockets are appropriate\n- Implement query complexity analysis and depth limiting for security\n\n### 3. gRPC Service Design\n- Design efficient protobuf messages with proper field numbering and types\n- Use streaming RPCs (server, client, bidirectional) for appropriate use cases\n- Implement proper error codes using gRPC status codes\n- Design service definitions with clear method semantics\n- Plan proto file organization and package structure\n- Implement health checking and reflection services\n\n### 4. Real-Time API Design\n- Choose between WebSockets, Server-Sent Events, and long-polling based on use case\n- Design event schemas with consistent naming and payload structures\n- Implement connection management with heartbeats and reconnection logic\n- Plan message ordering and delivery guarantees\n- Design backpressure handling for high-throughput scenarios\n\n## Task Checklist: API Specification Standards\n\n### 1. Endpoint Quality\n- Every endpoint has a clear purpose documented in the operation summary\n- HTTP methods match the semantic intent of each operation\n- URL paths use kebab-case with plural nouns for collections\n- Query parameters are documented with types, defaults, and validation rules\n- Request and response bodies have complete schemas with examples\n\n### 2. Error Handling Quality\n- Standardized error response format used across all endpoints\n- All possible error status codes documented per endpoint\n- Error messages are actionable and do not expose system internals\n- Correlation IDs included in all error responses for debugging\n- Graceful degradation patterns defined for downstream failures\n\n### 3. Security Quality\n- Authentication mechanism specified for each endpoint\n- Authorization scopes and roles documented clearly\n- Rate limiting tiers defined and documented\n- Input validation rules specified in request schemas\n- CORS policies configured correctly for intended consumers\n\n### 4. Documentation Quality\n- OpenAPI 3.0 spec is complete and validates without errors\n- Realistic examples provided for all request/response pairs\n- Authentication setup instructions included for onboarding\n- Changelog maintained with versioning and deprecation notices\n- SDK code samples provided in at least two languages\n\n## API Design Quality Task Checklist\n\nAfter completing the API design, verify:\n\n- [ ] HTTP method semantics are correct for every endpoint\n- [ ] Status codes match operation outcomes consistently\n- [ ] Responses include proper hypermedia links where appropriate\n- [ ] Pagination patterns are consistent across all collection endpoints\n- [ ] Error responses follow the standardized format with correlation IDs\n- [ ] Security headers are properly configured (CORS, CSP, rate limit headers)\n- [ ] Backward compatibility maintained or clear migration paths provided\n- [ ] All endpoints have realistic request/response examples\n\n## Task Best Practices\n\n### Naming and Consistency\n- Use kebab-case for URL paths (`/user-profiles`, `/order-items`)\n- Use camelCase for JSON request/response properties (`firstName`, `createdAt`)\n- Use plural nouns for collection resources (`/users`, `/products`)\n- Avoid verbs in URLs; let HTTP methods convey the action\n- Maintain consistent naming patterns across the entire API surface\n- Use descriptive resource names that reflect the domain model\n\n### Versioning Strategy\n- Version APIs from the start, even if only v1 exists initially\n- Prefer URI versioning (`/v1/users`) for simplicity or header versioning for flexibility\n- Deprecate old versions with clear timelines and migration guides\n- Never remove fields from responses without a major version bump\n- Use sunset headers to communicate deprecation dates programmatically\n\n### Idempotency and Safety\n- All GET, HEAD, OPTIONS methods must be safe (no side effects)\n- All PUT and DELETE methods must be idempotent\n- Use idempotency keys (via headers) for POST operations that create resources\n- Design retry-safe APIs that handle duplicate requests gracefully\n- Document idempotency behavior for each operation\n\n### Caching and Performance\n- Use ETags for conditional requests and cache validation\n- Set appropriate Cache-Control headers for each endpoint\n- Design responses to be cacheable at CDN and client levels\n- Implement field selection to reduce payload sizes\n- Support compression (gzip, brotli) for all responses\n\n## Task Guidance by Technology\n\n### REST (OpenAPI/Swagger)\n- Generate OpenAPI 3.0 specs with complete schemas, examples, and descriptions\n- Use `$ref` for reusable schema components and avoid duplication\n- Document security schemes at the spec level and apply per-operation\n- Include server definitions for different environments (dev, staging, prod)\n- Validate specs with spectral or swagger-cli before publishing\n\n### GraphQL (Apollo, Relay)\n- Use schema-first design with SDL for clear type definitions\n- Implement DataLoader for batching and caching resolver calls\n- Design input types separately from output types for mutations\n- Use interfaces and unions for polymorphic types\n- Implement persisted queries for production security and performance\n\n### gRPC (Protocol Buffers)\n- Use proto3 syntax with well-defined package namespaces\n- Reserve field numbers for removed fields to prevent reuse\n- Use wrapper types (google.protobuf.StringValue) for nullable fields\n- Implement interceptors for auth, logging, and error handling\n- Design services with unary and streaming RPCs as appropriate\n\n## Red Flags When Designing APIs\n\n- **Verbs in URL paths**: URLs like `/getUsers` or `/createOrder` violate REST semantics; use HTTP methods instead\n- **Inconsistent naming conventions**: Mixing camelCase and snake_case in the same API confuses consumers and causes bugs\n- **Missing pagination on collections**: Unbounded collection responses will fail catastrophically as data grows\n- **Generic 200 status for everything**: Using 200 OK for errors hides failures from clients, proxies, and monitoring\n- **No versioning strategy**: Any API change risks breaking all consumers simultaneously with no rollback path\n- **Exposing internal implementation**: Leaking database column names or internal IDs creates tight coupling and security risks\n- **No rate limiting**: Unprotected endpoints are vulnerable to abuse, scraping, and denial-of-service attacks\n- **Breaking changes without deprecation**: Removing or renaming fields without notice destroys consumer trust and stability\n\n## Output (TODO Only)\n\nWrite all proposed API designs and any code snippets to `TODO_api-design-expert.md` only. Do not create any other files. If specific files should be created or edited, include patch-style diffs or clearly labeled file blocks inside the TODO.\n\n## Output Format (Task-Based)\n\nEvery deliverable must include a unique Task ID and be expressed as a trackable checkbox item.\n\nIn `TODO_api-design-expert.md`, include:\n\n### Context\n- API purpose, target consumers, and use cases\n- Chosen architecture pattern (REST, GraphQL, gRPC) with justification\n- Security, performance, and compliance requirements\n\n### API Design Plan\n\nUse checkboxes and stable IDs (e.g., `API-PLAN-1.1`):\n\n- [ ] **API-PLAN-1.1 [Resource Model]**:\n  - **Resources**: List of primary resources and their relationships\n  - **URI Structure**: Base paths, hierarchy, and naming conventions\n  - **Versioning**: Strategy and implementation approach\n  - **Authentication**: Mechanism and per-endpoint requirements\n\n### API Design Items\n\nUse checkboxes and stable IDs (e.g., `API-ITEM-1.1`):\n\n- [ ] **API-ITEM-1.1 [Endpoint/Schema Name]**:\n  - **Method/Operation**: HTTP method or GraphQL operation type\n  - **Path/Type**: URI path or GraphQL type definition\n  - **Request Schema**: Input parameters, body, and validation rules\n  - **Response Schema**: Output format, status codes, and examples\n\n### Proposed Code Changes\n- Provide patch-style diffs (preferred) or clearly labeled file blocks.\n- Include any required helpers as part of the proposal.\n\n### Commands\n- Exact commands to run locally and in CI (if applicable)\n\n## Quality Assurance Task Checklist\n\nBefore finalizing, verify:\n\n- [ ] All endpoints follow consistent naming conventions and HTTP semantics\n- [ ] OpenAPI/GraphQL/protobuf specification is complete and validates without errors\n- [ ] Error responses are standardized with proper status codes and correlation IDs\n- [ ] Authentication and authorization documented for every endpoint\n- [ ] Pagination, filtering, and sorting implemented for all collections\n- [ ] Caching strategy defined with ETags and Cache-Control headers\n- [ ] Breaking changes have migration paths and deprecation timelines\n\n## Execution Reminders\n\nGood API designs:\n- Treat APIs as developer user interfaces prioritizing usability and consistency\n- Maintain stable contracts that consumers can rely on without fear of breakage\n- Balance REST purism with practical usability for real-world developer experience\n- Include complete documentation, examples, and SDK samples from the start\n- Design for idempotency so that retries and failures are handled gracefully\n- Proactively identify circular dependencies, missing pagination, and security gaps\n\n---\n**RULE:** When using this prompt, you must create a file named `TODO_api-design-expert.md`. This file must contain the findings resulting from this research as checkable checkboxes that can be coded and tracked by an LLM."},{"@type":"WebPage","@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/","url":"https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/","name":"API Design Expert Agent Role - Free AI Prompt Template","isPartOf":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/#website"},"about":{"@id":"https://zion369369.github.io/awesome-prompting-hacks/prompts/api-design-expert-agent-role/#code"},"author":{"@type":"Person","name":"Nano Banana (GPT-4o)","jobTitle":"Generalist Executive Intelligence"}}]}</script><link rel="stylesheet" href="/awesome-prompting-hacks/_astro/BaseLayout.CKsVMadi.css">
-<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.D_jRHePt.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="back-link-row" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
+<link rel="stylesheet" href="/awesome-prompting-hacks/_astro/_slug_.BUjgLsBs.css"></head> <body> <div class="app-container"> <header> <div class="header-inner"> <a href="/awesome-prompting-hacks/" class="logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polyline points="4 17 10 11 4 5"></polyline> <line x1="12" y1="19" x2="20" y2="19"></line> </svg> <span>Awesome Prompting Hacks</span> </a> </div> </header> <main class="main-content">  <div class="aquarium-banner" data-astro-cid-6bn65nae> <canvas id="aquarium-canvas" data-astro-cid-6bn65nae></canvas> <div class="aquarium-banner-content" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/" class="back-link-hero" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <line x1="19" y1="12" x2="5" y2="12" data-astro-cid-6bn65nae></line> <polyline points="12 19 5 12 12 5" data-astro-cid-6bn65nae></polyline> </svg>
 Back to Prompt Gallery
-</a> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <h1 class="prompt-title" data-astro-cid-6bn65nae>API Design Expert Agent Role</h1> <div class="category-meta" data-astro-cid-6bn65nae> <span class="badge category-badge" data-astro-cid-6bn65nae>ROLEPLAY</span> <span class="meta-label" data-astro-cid-6bn65nae>Output Preview</span> </div> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;API Design Expert Agent Role&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 3498 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>3498 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="# API Design Expert
+</a> <div class="banner-title-row" data-astro-cid-6bn65nae> <span class="badge category-badge-hero" data-astro-cid-6bn65nae>ROLEPLAY</span> <h1 class="prompt-title-hero" data-astro-cid-6bn65nae>API Design Expert Agent Role</h1> </div> </div> </div> <div class="layout-split" data-astro-cid-6bn65nae> <!-- Left: Title, image, and prompt box --> <div class="main-details" data-astro-cid-6bn65nae> <!-- AEO Direct-Answer Opener --> <div class="aeo-opener card-glass" data-astro-cid-6bn65nae> <p class="opener-text" data-astro-cid-6bn65nae>The &quot;API Design Expert Agent Role&quot; template is a specialized, production-ready system instruction designed to optimize output quality on GPT-4o. By running this template, you establish an expert persona roleplay as a Generalist Executive Intelligence inside the LLM runtime. This prompt has been structurally calibrated by the Nano Banana (GPT-4o) entity with a quality score of 95% and contains approximately 3498 tokens of instructions. Use it to generate structured outputs, handle complex compliance boundaries, and elevate prompt workflow performance.</p> </div> <!-- AEO Performance & Entity Anchors Card --> <div class="aeo-metrics-panel card-glass" data-astro-cid-6bn65nae> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Recommended Model</span> <span class="metric-val" data-astro-cid-6bn65nae>GPT-4o</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Calibration Entity</span> <span class="metric-val" data-astro-cid-6bn65nae>Nano Banana (GPT-4o)</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Estimated Size</span> <span class="metric-val" data-astro-cid-6bn65nae>3498 tokens</span> </div> <div class="metric-card" data-astro-cid-6bn65nae> <span class="metric-title" data-astro-cid-6bn65nae>Audit Score</span> <span class="metric-val text-success" data-astro-cid-6bn65nae>95%</span> </div> </div> <!-- Expert Citation & EEAT Tip --> <div class="aeo-expert-tip card-glass" data-astro-cid-6bn65nae> <div class="tip-header" data-astro-cid-6bn65nae> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-6bn65nae> <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" data-astro-cid-6bn65nae></path> </svg> <span class="tip-label" data-astro-cid-6bn65nae>Generative Engine Optimization (GEO) Attribution</span> </div> <p class="tip-text" data-astro-cid-6bn65nae>Creator Tip: Combine this creative prompt with temperature parameters of 0.7 to 0.8 in your API or playground to maximize narrative flow and vocabulary diversity.</p> </div> <!-- Featured Image Output Preview -->  <!-- Prompt Container --> <div class="card-glass prompt-console" data-astro-cid-6bn65nae> <div class="console-header" data-astro-cid-6bn65nae> <span class="console-title" data-astro-cid-6bn65nae>Prompt Template</span> <button id="copy-btn" class="btn-copy" data-prompt="# API Design Expert
 
 You are a senior API design expert and specialist in RESTful principles, GraphQL schema design, gRPC service definitions, OpenAPI specifications, versioning strategies, error handling patterns, authentication mechanisms, and developer experience optimization.
 
@@ -535,4 +535,397 @@ Good API designs:
 ---
 **RULE:** When using this prompt, you must create a file named `TODO_api-design-expert.md`. This file must contain the findings resulting from this research as checkable checkboxes that can be coded and tracked by an LLM.</code></pre> </div> </div> </div> <!-- Right: Sidebar with Hello Prompting Toolkit & Related Items --> <div class="sidebar" data-astro-cid-6bn65nae> <!-- Hello Prompting Console Widget --> <div class="card-glass widget-extension" data-astro-cid-6bn65nae> <h3 data-astro-cid-6bn65nae>⚡ Hello Prompting Toolkit</h3> <p class="widget-desc" data-astro-cid-6bn65nae>Automatically format, score, and expand generic inputs into production-grade prompts inside your AI interface.</p> <div class="widget-features" data-astro-cid-6bn65nae> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Google 4-Part Structure Auto-Injection</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>Live Prompt Score™ Evaluator</span> </div> <div class="feature-item" data-astro-cid-6bn65nae> <span class="feature-bullet" data-astro-cid-6bn65nae>✓</span> <span data-astro-cid-6bn65nae>One-Click Super Prompts Upgrader</span> </div> </div> <a href="https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en" target="_blank" rel="noopener" class="btn-primary install-btn" data-astro-cid-6bn65nae> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chrome-icon" data-astro-cid-6bn65nae> <circle cx="12" cy="12" r="10" data-astro-cid-6bn65nae></circle> <circle cx="12" cy="12" r="4" data-astro-cid-6bn65nae></circle> <line x1="12" y1="8" x2="12" y2="2" data-astro-cid-6bn65nae></line> <line x1="12" y1="16" x2="12" y2="22" data-astro-cid-6bn65nae></line> <line x1="8" y1="12" x2="2" y2="12" data-astro-cid-6bn65nae></line> <line x1="16" y1="12" x2="22" y2="12" data-astro-cid-6bn65nae></line> </svg>
 Add to Chrome (Free)
-</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
+</a> </div> <!-- Prompt Tags --> <div class="card-glass widget-tags" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Related Tags</h4> <div class="tags-cloud" data-astro-cid-6bn65nae> <span class="tag-badge" data-astro-cid-6bn65nae>#roleplay</span><span class="tag-badge" data-astro-cid-6bn65nae>#chatgpt</span><span class="tag-badge" data-astro-cid-6bn65nae>#open-source</span> </div> </div> <!-- Similar Prompts --> <div class="card-glass widget-similar" data-astro-cid-6bn65nae> <h4 data-astro-cid-6bn65nae>Similar Prompts</h4> <div class="similar-list" data-astro-cid-6bn65nae> <a href="/awesome-prompting-hacks/prompts/ethereum-developer" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Ethereum Developer</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/linux-terminal" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>Linux Terminal</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a><a href="/awesome-prompting-hacks/prompts/english-translator-and-improver" class="similar-item" data-astro-cid-6bn65nae> <span class="similar-title" data-astro-cid-6bn65nae>English Translator and Improver</span> <span class="similar-meta" data-astro-cid-6bn65nae>roleplay, chatgpt</span> </a> </div> </div> </div> </div>   <script type="module">const t=document.getElementById("copy-btn");t&&t.addEventListener("click",()=>{const o=t.getAttribute("data-prompt")||"";navigator.clipboard.writeText(o).then(()=>{const e=t.querySelector(".btn-text"),r=e?e.textContent:"Copy Prompt";e&&(e.textContent="Copied!"),t.style.transform="scale(0.95)",t.style.borderColor="hsl(var(--success))",t.style.color="#10b981",setTimeout(()=>{e&&(e.textContent=r),t.style.transform="none",t.style.borderColor="hsl(var(--border))",t.style.color="hsl(var(--text-primary))"},2e3)}).catch(e=>{console.error("Copy failed:",e)})});</script>  <script>
+    (function() {
+      const canvas = document.getElementById('aquarium-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      
+      let width = 0;
+      let height = 0;
+      
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        canvas.width = width * window.devicePixelRatio;
+        canvas.height = height * window.devicePixelRatio;
+        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      }
+      
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Vector Fish Drawing Helper
+      function drawFish(ctx, x, y, size, angle, color, tailWiggle, isFacingLeft) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        if (isFacingLeft) {
+          ctx.scale(-1, 1);
+        }
+        
+        // Body Gradient (adds 3D roundness)
+        const grad = ctx.createRadialGradient(size * 0.2, -size * 0.1, size * 0.1, 0, 0, size);
+        grad.addColorStop(0, '#ffffff');
+        grad.addColorStop(0.3, color.body || '#ff7e33');
+        grad.addColorStop(1, color.shading || '#992200');
+
+        // Tail fin (wagging)
+        ctx.save();
+        ctx.translate(-size * 0.85, 0);
+        ctx.rotate(Math.sin(tailWiggle) * 0.4);
+        
+        const tailGrad = ctx.createLinearGradient(0, 0, -size * 0.6, 0);
+        tailGrad.addColorStop(0, color.body || '#ff7e33');
+        tailGrad.addColorStop(1, color.tail || '#ff3b3b');
+        ctx.fillStyle = tailGrad;
+        
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.quadraticCurveTo(-size * 0.4, -size * 0.5, -size * 0.6, -size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.35, 0, -size * 0.6, size * 0.4);
+        ctx.quadraticCurveTo(-size * 0.4, size * 0.5, 0, 0);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        // Dorsal fin (top)
+        const finGrad = ctx.createLinearGradient(0, -size * 0.35, 0, 0);
+        finGrad.addColorStop(0, color.tail || '#ff3b3b');
+        finGrad.addColorStop(1, color.body || '#ff7e33');
+        ctx.fillStyle = finGrad;
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.4, -size * 0.3);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.7, size * 0.2, -size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.1, -size * 0.2, -size * 0.4, -size * 0.3);
+        ctx.closePath();
+        ctx.fill();
+
+        // Pectoral fin (bottom)
+        ctx.beginPath();
+        ctx.moveTo(-size * 0.2, size * 0.25);
+        ctx.quadraticCurveTo(-size * 0.3, size * 0.5, -size * 0.05, size * 0.45);
+        ctx.quadraticCurveTo(0, size * 0.25, -size * 0.2, size * 0.25);
+        ctx.closePath();
+        ctx.fill();
+
+        // Main body
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(0, 0, size, size * 0.42, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Stripes
+        if (color.stripes === 'clownfish') {
+          ctx.fillStyle = '#ffffff';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.fill();
+          
+          ctx.strokeStyle = '#000000';
+          ctx.lineWidth = size * 0.04;
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.15, size * 0.4, 0, 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.ellipse(size * 0.3, 0, size * 0.1, size * 0.35, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        } else if (color.stripes === 'tang') {
+          ctx.fillStyle = '#000000';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.25, size * 0.3, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = color.body || '#1e40af';
+          ctx.beginPath();
+          ctx.ellipse(-size * 0.1, 0, size * 0.18, size * 0.22, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Eye
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.55, -size * 0.1, size * 0.12, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#000000';
+        ctx.beginPath();
+        ctx.arc(size * 0.6, -size * 0.1, size * 0.06, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Reflection
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(size * 0.58, -size * 0.12, size * 0.02, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+      }
+
+      // Bubble Particle System
+      class Bubble {
+        constructor() {
+          this.reset();
+          this.y = Math.random() * height; // distribute initial bubbles
+        }
+        reset() {
+          this.x = Math.random() * width;
+          this.y = height + 10;
+          this.radius = 1 + Math.random() * 4;
+          this.speed = 0.3 + Math.random() * 0.7;
+          this.wiggleSpeed = 0.02 + Math.random() * 0.04;
+          this.wiggleWidth = 1 + Math.random() * 2;
+          this.angle = Math.random() * Math.PI * 2;
+        }
+        update() {
+          this.y -= this.speed;
+          this.angle += this.wiggleSpeed;
+          this.xOffset = Math.sin(this.angle) * this.wiggleWidth;
+          if (this.y < -10) this.reset();
+        }
+        draw() {
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+          ctx.fill();
+          ctx.beginPath();
+          ctx.arc(this.x + this.xOffset - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.2, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      // Fish Particle System
+      class Fish {
+        constructor() {
+          this.reset(true);
+        }
+        reset(startRandom = false) {
+          this.size = 14 + Math.random() * 16;
+          this.depth = 0.5 + Math.random() * 0.5; // 3D depth multiplier
+          this.size *= this.depth;
+          
+          const species = ['clownfish', 'bluetang', 'goldfish', 'tetra'];
+          this.type = species[Math.floor(Math.random() * species.length)];
+          if (this.type === 'clownfish') {
+            this.color = { body: '#ff7e33', tail: '#ff3b3b', shading: '#882200', stripes: 'clownfish' };
+          } else if (this.type === 'bluetang') {
+            this.color = { body: '#2563eb', tail: '#facc15', shading: '#1e3a8a', stripes: 'tang' };
+          } else if (this.type === 'goldfish') {
+            this.color = { body: '#ffa500', tail: '#ef4444', shading: '#b45309' };
+          } else {
+            this.color = { body: '#06b6d4', tail: '#ec4899', shading: '#0891b2' };
+          }
+
+          this.isFacingLeft = Math.random() > 0.5;
+          this.x = startRandom ? Math.random() * width : (this.isFacingLeft ? width + 60 : -60);
+          this.y = 30 + Math.random() * (height - 60);
+          this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+          this.speedY = (Math.random() - 0.5) * 0.1;
+          this.tailWiggle = Math.random() * Math.PI * 2;
+          this.tailWiggleSpeed = 0.08 + Math.random() * 0.08;
+          this.angle = 0;
+          
+          this.isScared = false;
+          this.scareTimer = 0;
+        }
+        scare(mouseX, mouseY) {
+          const dx = this.x - mouseX;
+          const dy = this.y - mouseY;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 80) {
+            this.isScared = true;
+            this.scareTimer = 180;
+            this.speedX = (this.x > mouseX ? 2.5 : -2.5) * this.depth;
+            this.speedY = (this.y > mouseY ? 1.2 : -1.2) * this.depth;
+          }
+        }
+        update() {
+          if (this.isScared) {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed * 2.5;
+            this.angle = this.speedY * 0.4;
+            this.scareTimer--;
+            if (this.scareTimer <= 0) {
+              this.isScared = false;
+              this.speedX = (0.4 + Math.random() * 0.6) * this.depth * (this.isFacingLeft ? -1 : 1);
+              this.speedY = (Math.random() - 0.5) * 0.1;
+            }
+          } else {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.tailWiggle += this.tailWiggleSpeed;
+            this.angle = this.speedY * 0.5;
+          }
+
+          if (this.isFacingLeft && this.x < -80) this.reset();
+          if (!this.isFacingLeft && this.x > width + 80) this.reset();
+          if (this.y < 20 || this.y > height - 20) this.speedY *= -1;
+        }
+        draw() {
+          drawFish(ctx, this.x, this.y, this.size, this.angle, this.color, this.tailWiggle, this.isFacingLeft);
+        }
+      }
+
+      // Seaweed Class
+      class Seaweed {
+        constructor(x, heightValue) {
+          this.x = x;
+          this.height = heightValue;
+          this.angle = Math.random() * Math.PI * 2;
+          this.speed = 0.015 + Math.random() * 0.015;
+          this.width = 6 + Math.random() * 4;
+        }
+        update() {
+          this.angle += this.speed;
+        }
+        draw() {
+          ctx.save();
+          ctx.strokeStyle = 'rgba(13, 148, 136, 0.2)';
+          ctx.lineWidth = this.width;
+          ctx.lineCap = 'round';
+          ctx.beginPath();
+          ctx.moveTo(this.x, height);
+          
+          const segments = 4;
+          const segmentHeight = this.height / segments;
+          let currentX = this.x;
+          let currentY = height;
+          
+          for (let i = 0; i < segments; i++) {
+            const targetY = height - (i + 1) * segmentHeight;
+            const sway = Math.sin(this.angle + i * 0.5) * 10;
+            const targetX = this.x + sway;
+            const ctrlX = currentX + (targetX - currentX) / 2 + Math.sin(this.angle) * 2;
+            const ctrlY = currentY - segmentHeight / 2;
+            
+            ctx.quadraticCurveTo(ctrlX, ctrlY, targetX, targetY);
+            currentX = targetX;
+            currentY = targetY;
+          }
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+
+      // Volumetric Light Shafts
+      function drawLightShafts(time) {
+        ctx.save();
+        const numShafts = 4;
+        for (let i = 0; i < numShafts; i++) {
+          const shift = Math.sin(time * 0.001 + i * 1.5) * 40;
+          const startX = (width / numShafts) * i + shift + 30;
+          const shaftWidth = 40 + Math.sin(time * 0.002 + i) * 15;
+          
+          const grad = ctx.createLinearGradient(startX, 0, startX - 60, height);
+          grad.addColorStop(0, 'rgba(56, 189, 248, 0.04)');
+          grad.addColorStop(1, 'rgba(56, 189, 248, 0.0)');
+          
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.moveTo(startX - shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth / 2, 0);
+          ctx.lineTo(startX + shaftWidth * 1.3 - 60, height);
+          ctx.lineTo(startX - shaftWidth * 1.3 - 60, height);
+          ctx.closePath();
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+
+      // Initialize Particles
+      let bubbles = Array.from({ length: 25 }, () => new Bubble());
+      let fishes = Array.from({ length: 5 }, () => new Fish());
+      let seaweeds = Array.from({ length: 10 }, (_, i) => {
+        const spacing = width / 11;
+        return new Seaweed(spacing * (i + 0.5) + (Math.random() - 0.5) * 10, 40 + Math.random() * 50);
+      });
+
+      // Mouse Interaction
+      canvas.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => fish.scare(mouseX, mouseY));
+        
+        if (Math.random() < 0.2 && bubbles.length < 50) {
+          const b = new Bubble();
+          b.x = mouseX;
+          b.y = mouseY;
+          b.radius = 1 + Math.random() * 2;
+          b.speed = 0.8 + Math.random() * 0.8;
+          bubbles.push(b);
+        }
+      });
+
+      canvas.addEventListener('click', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        fishes.forEach(fish => {
+          fish.scare(mouseX, mouseY);
+          if (fish.isScared) {
+            fish.speedX *= 1.5;
+            fish.speedY *= 1.5;
+          }
+        });
+        
+        for (let i = 0; i < 10; i++) {
+          const b = new Bubble();
+          b.x = mouseX + (Math.random() - 0.5) * 15;
+          b.y = mouseY + (Math.random() - 0.5) * 15;
+          b.radius = 1 + Math.random() * 3;
+          b.speed = 0.6 + Math.random() * 1.2;
+          bubbles.push(b);
+        }
+      });
+
+      // Animation Loop
+      function animate(time) {
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Draw water background gradient
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
+        bgGrad.addColorStop(0, '#090d16');
+        bgGrad.addColorStop(0.5, '#0d182e');
+        bgGrad.addColorStop(1, '#02050b');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, width, height);
+
+        // 2. Draw light rays
+        drawLightShafts(time);
+
+        // 3. Draw Seaweed (background layer)
+        seaweeds.forEach(s => {
+          s.update();
+          s.draw();
+        });
+
+        // 4. Update & Draw Fishes
+        fishes.forEach(f => {
+          f.update();
+          f.draw();
+        });
+
+        // 5. Update & Draw Bubbles (foreground layer)
+        bubbles.forEach((b, idx) => {
+          b.update();
+          b.draw();
+          if (bubbles.length > 25 && b.y < -5) {
+            bubbles.splice(idx, 1);
+          }
+        });
+
+        requestAnimationFrame(animate);
+      }
+      
+      requestAnimationFrame(animate);
+    })();
+  </script>  </main> <footer> <div class="footer-inner"> <p>&copy; 2026 Awesome Prompting Hacks. All prompt templates are community resources.</p> <div class="footer-links"> <a href="/awesome-prompting-hacks/privacy">Privacy Policy</a> <a href="/awesome-prompting-hacks/terms">Terms of Service</a> </div> </div> </footer> </div> </body></html>
