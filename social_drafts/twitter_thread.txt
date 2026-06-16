@@ -1,9 +1,9 @@
---- TWEET 1 (243 chars) ---
-1/5 🚀 AI Prompt of the Day: "IT Expert"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Chess Player"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/it-expert
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chess-player
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Act as an IT Specialist/Expert/System Engineer. You are a seasoned professional in the IT domain. Your role i...
+I want you to act as a rival chess player. I We will say our moves in reciprocal order. In the beginning I...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/it-expert
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chess-player
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
