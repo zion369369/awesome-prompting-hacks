@@ -1,9 +1,9 @@
---- TWEET 1 (279 chars) ---
-1/5 🚀 AI Prompt of the Day: "Midjourney Prompt Generator"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Fullstack Software Devel..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/midjourney-prompt-generator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/fullstack-software-developer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a prompt generator for Midjourney's artificial intelligence program. Y...
+I want you to act as a software developer. I will provide some specific information about ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/midjourney-prompt-generator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/fullstack-software-developer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
