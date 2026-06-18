@@ -1,0 +1,235 @@
+---
+// src/pages/directory/[page].astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import prompts from '../../data/scraped_prompts.json';
+
+export async function getStaticPaths({ paginate }) {
+  // Sort prompts alphabetically by title to make the directory structured
+  const sortedPrompts = [...prompts].sort((a, b) => a.title.localeCompare(b.title));
+  return paginate(sortedPrompts, { pageSize: 150 });
+}
+
+const { page } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const pageTitle = `Browse AI Prompt Directory - Page ${page.currentPage} of ${page.lastPage}`;
+const pageDesc = `Complete index of production-ready AI prompt templates. Page ${page.currentPage} of ${page.lastPage} listing prompts for ChatGPT, Gemini, and Claude.`;
+---
+
+<BaseLayout title={pageTitle} description={pageDesc}>
+  <div class="directory-container">
+    <div class="directory-header card-glass">
+      <h1 class="directory-title">AI Prompt Templates Directory</h1>
+      <p class="directory-subtitle">
+        Browse our complete library of production-grade prompts alphabetically. Page {page.currentPage} of {page.lastPage}.
+      </p>
+    </div>
+
+    <div class="directory-content card-glass">
+      <div class="directory-grid">
+        {page.data.map((item) => (
+          <a href={`${baseUrl}prompts/${item.slug}`} class="directory-item">
+            <div class="item-info">
+              <span class="item-title">{item.title}</span>
+              <span class="item-category">{item.category}</span>
+            </div>
+            <div class="item-tags">
+              {item.tags.slice(0, 2).map((tag) => (
+                <span class="directory-tag">#{tag}</span>
+              ))}
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Pagination Navigation -->
+      <div class="pagination-container">
+        {page.url.prev ? (
+          <a href={page.url.prev} class="pagination-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Previous
+          </a>
+        ) : (
+          <span class="pagination-btn disabled">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Previous
+          </span>
+        )}
+
+        <span class="pagination-info">
+          Page <strong>{page.currentPage}</strong> of <strong>{page.lastPage}</strong>
+        </span>
+
+        {page.url.next ? (
+          <a href={page.url.next} class="pagination-btn">
+            Next
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        ) : (
+          <span class="pagination-btn disabled">
+            Next
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        )}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .directory-container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .directory-header {
+      padding: 32px;
+      background: hsl(var(--bg-surface));
+      border: 1px solid hsl(var(--border));
+      border-radius: 16px;
+    }
+
+    .directory-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: hsl(var(--text-primary));
+      margin-bottom: 8px;
+    }
+
+    .directory-subtitle {
+      font-size: 1.05rem;
+      color: hsl(var(--text-secondary));
+      margin: 0;
+    }
+
+    .directory-content {
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
+      border-radius: 16px;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .directory-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .directory-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border: 1px solid hsl(var(--border));
+      border-radius: 8px;
+      background: hsl(var(--bg-surface));
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .directory-item:hover {
+      border-color: rgba(37, 99, 235, 0.2);
+      background: rgba(37, 99, 235, 0.02);
+      transform: translateY(-1px);
+    }
+
+    .item-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-width: 70%;
+    }
+
+    .item-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: hsl(var(--text-primary));
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .item-category {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: hsl(var(--primary));
+      letter-spacing: 0.05em;
+    }
+
+    .item-tags {
+      display: flex;
+      gap: 6px;
+    }
+
+    .directory-tag {
+      font-size: 0.75rem;
+      color: hsl(var(--text-secondary));
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .pagination-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid hsl(var(--border));
+    }
+
+    .pagination-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid hsl(var(--border));
+      color: hsl(var(--text-secondary));
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .pagination-btn:hover:not(.disabled) {
+      color: hsl(var(--primary));
+      border-color: rgba(37, 99, 235, 0.2);
+      background: rgba(37, 99, 235, 0.02);
+    }
+
+    .pagination-btn.disabled {
+      color: hsl(var(--text-muted));
+      background: hsl(var(--bg-surface));
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .pagination-info {
+      font-size: 0.95rem;
+      color: hsl(var(--text-secondary));
+    }
+  </style>
+</BaseLayout>
