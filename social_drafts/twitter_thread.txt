@@ -1,9 +1,9 @@
 --- TWEET 1 (259 chars) ---
-1/5 🚀 AI Prompt of the Day: "Time Travel Guide"
+1/5 🚀 AI Prompt of the Day: "Dream Interpreter"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/time-travel-guide
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dream-interpreter
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as my time travel guide. I will provide you with the historical period or future ti...
+I want you to act as a dream interpreter. I will give you descriptions of my dreams, and you will pro...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/time-travel-guide
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dream-interpreter
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
