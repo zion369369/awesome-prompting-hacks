@@ -1,9 +1,9 @@
---- TWEET 1 (259 chars) ---
-1/5 🚀 AI Prompt of the Day: "Dream Interpreter"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Talent Coach"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dream-interpreter
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/talent-coach
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a dream interpreter. I will give you descriptions of my dreams, and you will pro...
+I want you to act as a Talent Coach for interviews. I will give you a job title and you'll suggest what sh...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dream-interpreter
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/talent-coach
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
