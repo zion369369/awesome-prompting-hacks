@@ -1,9 +1,9 @@
---- TWEET 1 (275 chars) ---
-1/5 🚀 AI Prompt of the Day: "R Programming Interpreter"
+--- TWEET 1 (261 chars) ---
+1/5 🚀 AI Prompt of the Day: "StackOverflow Post"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/r-programming-interpreter
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/stackoverflow-post
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a R interpreter. I'll type commands and you'll reply with what the termi...
+I want you to act as a stackoverflow post. I will ask programming-related questions and you will rep...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/r-programming-interpreter
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/stackoverflow-post
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
