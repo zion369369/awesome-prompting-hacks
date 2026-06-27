@@ -1,9 +1,9 @@
---- TWEET 1 (257 chars) ---
-1/5 🚀 AI Prompt of the Day: "Emoji Translator"
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "PHP Interpreter"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/emoji-translator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/php-interpreter
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to translate the sentences I wrote into emojis. I will write the sentence, and you will exp...
+I want you to act like a php interpreter. I will write you the code and you will respond with the outpu...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/emoji-translator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/php-interpreter
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
