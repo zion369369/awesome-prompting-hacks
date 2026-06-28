@@ -1,9 +1,9 @@
---- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "PHP Interpreter"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Emergency Response Pr..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/php-interpreter
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/emergency-response-professional
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act like a php interpreter. I will write you the code and you will respond with the outpu...
+I want you to act as my first aid traffic or house accident emergency response crisis p...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/php-interpreter
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/emergency-response-professional
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
