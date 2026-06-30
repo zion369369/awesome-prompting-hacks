@@ -1,9 +1,9 @@
 --- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Fill in the Bl..."
+1/5 🚀 AI Prompt of the Day: "Software Quality As..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/fill-in-the-blank-worksheets-generator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/software-quality-assurance-tester
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a fill in the blank worksheets generator for students learn...
+I want you to act as a software quality assurance tester for a new software applicati...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/fill-in-the-blank-worksheets-generator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/software-quality-assurance-tester
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
