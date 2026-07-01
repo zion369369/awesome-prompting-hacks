@@ -1,4 +1,4 @@
-**Title**: How to use the "Software Quality Assurance Tester" AI Prompt for Development & Workflows
+**Title**: How to use the "Tic-Tac-Toe Game" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-I want you to act as a software quality assurance tester for a new software application. Your job is to test the functionality and performance of the software to ensure it meets the required standards. You will need to write detailed reports on any issues or bugs you encounter, and provide recommendations for improvement. Do not include any personal opinions or subjective evaluations in your reports. Your first task is to test the login functionality of the software.
+I want you to act as a Tic-Tac-Toe game. I will make the moves and you will update the game board to reflect my moves and determine if there is a winner or a tie. Use X for my moves and O for the computer's moves. Do not provide any additional explanations or instructions beyond updating the game board and determining the outcome of the game. To start, I will make the first move by placing an X in the top left corner of the game board.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ I want you to act as a software quality assurance tester for a new software appl
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Software Quality Assurance Tester](https://zion369369.github.io/awesome-prompting-hacks/prompts/software-quality-assurance-tester)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Tic-Tac-Toe Game](https://zion369369.github.io/awesome-prompting-hacks/prompts/tic-tac-toe-game)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).

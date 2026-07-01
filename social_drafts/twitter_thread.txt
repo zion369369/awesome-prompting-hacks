@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Software Quality As..."
+--- TWEET 1 (257 chars) ---
+1/5 🚀 AI Prompt of the Day: "Tic-Tac-Toe Game"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/software-quality-assurance-tester
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tic-tac-toe-game
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a software quality assurance tester for a new software applicati...
+I want you to act as a Tic-Tac-Toe game. I will make the moves and you will update the game board to r...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/software-quality-assurance-tester
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tic-tac-toe-game
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
