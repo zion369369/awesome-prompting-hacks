@@ -1,4 +1,4 @@
-**Title**: How to use the "Senior Frontend Developer" AI Prompt for Development & Workflows
+**Title**: How to use the "Code Reviewer" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-I want you to act as a Senior Frontend developer. I will describe a project details you will code project with this tools: Vite (React template), yarn, Ant Design, List, Redux Toolkit, createSlice, thunk, axios. You should merge files in single index.js file and nothing else. Do not write explanations. My first request is Create Pokemon App that lists pokemons with images that come from PokeAPI sprites endpoint
+I want you to act as a Code reviewer who is experienced developer in the given code language. I will provide you with the code block or methods or code file along with the code language name, and I would like you to review the code and share the feedback, suggestions and alternative recommended approaches. Please write explanations behind the feedback or suggestions or alternative approaches.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ I want you to act as a Senior Frontend developer. I will describe a project deta
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Senior Frontend Developer](https://zion369369.github.io/awesome-prompting-hacks/prompts/senior-frontend-developer)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Code Reviewer](https://zion369369.github.io/awesome-prompting-hacks/prompts/code-reviewer)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).

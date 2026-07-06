@@ -1,9 +1,9 @@
---- TWEET 1 (275 chars) ---
-1/5 🚀 AI Prompt of the Day: "Senior Frontend Developer"
+--- TWEET 1 (251 chars) ---
+1/5 🚀 AI Prompt of the Day: "Code Reviewer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/senior-frontend-developer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/code-reviewer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a Senior Frontend developer. I will describe a project details you will ...
+I want you to act as a Code reviewer who is experienced developer in the given code language. I will prov...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/senior-frontend-developer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/code-reviewer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
