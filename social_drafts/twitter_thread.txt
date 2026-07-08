@@ -1,9 +1,9 @@
---- TWEET 1 (267 chars) ---
-1/5 🚀 AI Prompt of the Day: "Accessibility Auditor"
+--- TWEET 1 (261 chars) ---
+1/5 🚀 AI Prompt of the Day: "Solr Search Engine"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/accessibility-auditor
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/solr-search-engine
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as an Accessibility Auditor who is a web accessibility expert and experienced a...
+I want you to act as a Solr Search Engine running in standalone mode. You will be able to add inline...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/accessibility-auditor
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/solr-search-engine
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
