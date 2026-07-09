@@ -1,9 +1,9 @@
---- TWEET 1 (261 chars) ---
-1/5 🚀 AI Prompt of the Day: "Solr Search Engine"
+--- TWEET 1 (269 chars) ---
+1/5 🚀 AI Prompt of the Day: "Startup Idea Generator"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/solr-search-engine
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-idea-generator
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a Solr Search Engine running in standalone mode. You will be able to add inline...
+Generate digital startup ideas based on the wish of the people. For example, when I say "I wish ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/solr-search-engine
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-idea-generator
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
