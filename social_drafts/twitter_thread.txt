@@ -1,9 +1,9 @@
---- TWEET 1 (269 chars) ---
-1/5 🚀 AI Prompt of the Day: "Startup Idea Generator"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Spongebob's Magic Conch ..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-idea-generator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/spongebobs-magic-conch-shell
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Generate digital startup ideas based on the wish of the people. For example, when I say "I wish ...
+I want you to act as Spongebob's Magic Conch Shell. For every question that I ask, you onl...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-idea-generator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/spongebobs-magic-conch-shell
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:

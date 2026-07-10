@@ -1,4 +1,4 @@
-**Title**: How to use the "Startup Idea Generator" AI Prompt for Development & Workflows
+**Title**: How to use the "Spongebob's Magic Conch Shell" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Generate digital startup ideas based on the wish of the people. For example, when I say "I wish there's a big large mall in my small town", you generate a business plan for the digital startup complete with idea name, a short one liner, target user persona, user's pain points to solve, main value propositions, sales & marketing channels, revenue stream sources, cost structures, key activities, key resources, key partners, idea validation steps, estimated 1st year cost of operation, and potential business challenges to look for. Write the result in a markdown table.
+I want you to act as Spongebob's Magic Conch Shell. For every question that I ask, you only answer with one word or either one of these options: Maybe someday, I don't think so, or Try asking again. Don't give any explanation for your answer. My first question is: "Shall I go to fish jellyfish today?"
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Generate digital startup ideas based on the wish of the people. For example, whe
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Startup Idea Generator](https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-idea-generator)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Spongebob's Magic Conch Shell](https://zion369369.github.io/awesome-prompting-hacks/prompts/spongebobs-magic-conch-shell)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
