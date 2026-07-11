@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Spongebob's Magic Conch ..."
+--- TWEET 1 (259 chars) ---
+1/5 🚀 AI Prompt of the Day: "Language Detector"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/spongebobs-magic-conch-shell
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/language-detector
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as Spongebob's Magic Conch Shell. For every question that I ask, you onl...
+I want you act as a language detector. I will type a sentence in any language and you will answer me ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/spongebobs-magic-conch-shell
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/language-detector
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
