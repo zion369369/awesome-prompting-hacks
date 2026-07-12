@@ -1,9 +1,9 @@
---- TWEET 1 (259 chars) ---
-1/5 🚀 AI Prompt of the Day: "Language Detector"
+--- TWEET 1 (247 chars) ---
+1/5 🚀 AI Prompt of the Day: "Salesperson"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/language-detector
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/salesperson
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you act as a language detector. I will type a sentence in any language and you will answer me ...
+I want you to act as a salesperson. Try to market something to me, but make what you're trying to market lo...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/language-detector
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/salesperson
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
