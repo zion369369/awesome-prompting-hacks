@@ -1,9 +1,9 @@
---- TWEET 1 (247 chars) ---
-1/5 🚀 AI Prompt of the Day: "Salesperson"
+--- TWEET 1 (273 chars) ---
+1/5 🚀 AI Prompt of the Day: "Commit Message Generator"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/salesperson
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/commit-message-generator
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a salesperson. Try to market something to me, but make what you're trying to market lo...
+I want you to act as a commit message generator. I will provide you with information about the...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/salesperson
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/commit-message-generator
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
