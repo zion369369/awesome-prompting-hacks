@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Conventional Co..."
+--- TWEET 1 (271 chars) ---
+1/5 🚀 AI Prompt of the Day: "Chief Executive Officer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/conventional-commit-message-generator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chief-executive-officer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a conventional commit message generator following the Conven...
+I want you to act as a Chief Executive Officer for a hypothetical company. You will be responsi...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/conventional-commit-message-generator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chief-executive-officer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
