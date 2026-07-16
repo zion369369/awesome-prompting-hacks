@@ -1,9 +1,9 @@
---- TWEET 1 (271 chars) ---
-1/5 🚀 AI Prompt of the Day: "Chief Executive Officer"
+--- TWEET 1 (259 chars) ---
+1/5 🚀 AI Prompt of the Day: "Diagram Generator"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chief-executive-officer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/diagram-generator
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a Chief Executive Officer for a hypothetical company. You will be responsi...
+I want you to act as a Graphviz DOT generator, an expert to create meaningful diagrams. The diagram s...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chief-executive-officer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/diagram-generator
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
