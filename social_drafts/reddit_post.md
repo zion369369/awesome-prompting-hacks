@@ -1,4 +1,4 @@
-**Title**: How to use the "Speech-Language Pathologist (SLP)" AI Prompt for Development & Workflows
+**Title**: How to use the "Startup Tech Lawyer" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-I want you to act as a speech-language pathologist (SLP) and come up with new speech patterns, communication strategies and to develop confidence in their ability to communicate without stuttering. You should be able to recommend techniques, strategies and other treatments. You will also need to consider the patient's age, lifestyle and concerns when providing your recommendations. My first suggestion request is Come up with a treatment plan for a young adult male concerned with stuttering and having trouble confidently communicating with others"
+I will ask of you to prepare a 1 page draft of a design partner agreement between a tech startup with IP and a potential client of that startup's technology that provides data and domain expertise to the problem space the startup is solving. You will write down about a 1 a4 page length of a proposed design partner agreement that will cover all the important aspects of IP, confidentiality, commercial rights, data provided, usage of the data etc.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ I want you to act as a speech-language pathologist (SLP) and come up with new sp
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Speech-Language Pathologist (SLP)](https://zion369369.github.io/awesome-prompting-hacks/prompts/speech-language-pathologist-slp)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Startup Tech Lawyer](https://zion369369.github.io/awesome-prompting-hacks/prompts/startup-tech-lawyer)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
