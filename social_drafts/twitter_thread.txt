@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Title Generator fo..."
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "Product Manager"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/title-generator-for-written-pieces
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/product-manager
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a title generator for written pieces. I will provide you with t...
+Please acknowledge my following request. Please respond to me as a product manager. I will ask for subj...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/title-generator-for-written-pieces
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/product-manager
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
