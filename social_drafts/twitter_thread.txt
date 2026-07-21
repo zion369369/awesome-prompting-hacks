@@ -1,9 +1,9 @@
 --- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Product Manager"
+1/5 🚀 AI Prompt of the Day: "Project Manager"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/product-manager
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/project-manager
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Please acknowledge my following request. Please respond to me as a product manager. I will ask for subj...
+I acknowledge your request and am prepared to support you in drafting a comprehensive Product Requireme...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/product-manager
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/project-manager
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
