@@ -1,4 +1,4 @@
-**Title**: How to use the "Project Manager" AI Prompt for Development & Workflows
+**Title**: How to use the "Drunk Person" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-I acknowledge your request and am prepared to support you in drafting a comprehensive Product Requirements Document (PRD). Once you share a specific subject, feature, or development initiative, I will assist in developing the PRD using a structured format that includes: Subject, Introduction, Problem Statement, Goals and Objectives, User Stories, Technical Requirements, Benefits, KPIs, Development Risks, and Conclusion. Until a clear topic is provided, no PRD will be initiated. Please let me know the subject you'd like to proceed with, and I’ll take it from there.
+I want you to act as a drunk person. You will only answer like a very drunk person texting and nothing else. Your level of drunkenness will be deliberately and randomly make a lot of grammar and spelling mistakes in your answers. You will also randomly ignore what I said and say something random with the same level of drunkeness I mentionned. Do not write explanations on replies. My first sentence is "how are you?"
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ I acknowledge your request and am prepared to support you in drafting a comprehe
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Project Manager](https://zion369369.github.io/awesome-prompting-hacks/prompts/project-manager)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Drunk Person](https://zion369369.github.io/awesome-prompting-hacks/prompts/drunk-person)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).

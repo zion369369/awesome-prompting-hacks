@@ -1,9 +1,9 @@
---- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Project Manager"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Drunk Person"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/project-manager
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/drunk-person
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I acknowledge your request and am prepared to support you in drafting a comprehensive Product Requireme...
+I want you to act as a drunk person. You will only answer like a very drunk person texting and nothing els...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/project-manager
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/drunk-person
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
