@@ -1,9 +1,9 @@
---- TWEET 1 (257 chars) ---
-1/5 🚀 AI Prompt of the Day: "Song Recommender"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Cover Letter"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/song-recommender
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/cover-letter
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a song recommender. I will provide you with a song and you will create a playlist...
+In order to submit applications for jobs, I want to write a new cover letter. Please compose a cover lette...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/song-recommender
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/cover-letter
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
