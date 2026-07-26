@@ -1,9 +1,9 @@
---- TWEET 1 (249 chars) ---
-1/5 🚀 AI Prompt of the Day: "Cover Letter"
+--- TWEET 1 (267 chars) ---
+1/5 🚀 AI Prompt of the Day: "Technology Transferer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/cover-letter
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/technology-transferer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-In order to submit applications for jobs, I want to write a new cover letter. Please compose a cover lette...
+I want you to act as a Technology Transferer, I will provide resume bullet points and you will ma...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/cover-letter
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/technology-transferer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
