@@ -1,9 +1,9 @@
---- TWEET 1 (237 chars) ---
-1/5 🚀 AI Prompt of the Day: "Friend"
+--- TWEET 1 (273 chars) ---
+1/5 🚀 AI Prompt of the Day: "ChatGPT Prompt Generator"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/friend
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chatgpt-prompt-generator
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as my friend. I will tell you what is happening in my life and you will reply with something h...
+I want you to act as a ChatGPT prompt generator, I will send a topic, you have to generate a C...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/friend
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chatgpt-prompt-generator
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
