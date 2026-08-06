@@ -1,9 +1,9 @@
---- TWEET 1 (279 chars) ---
-1/5 🚀 AI Prompt of the Day: "Japanese Kanji quiz machine"
+--- TWEET 1 (267 chars) ---
+1/5 🚀 AI Prompt of the Day: "Note-Taking assistant"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/japanese-kanji-quiz-machine
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/note-taking-assistant
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a Japanese Kanji quiz machine. Each time I ask you for the next questi...
+I want you to act as a note-taking assistant for a lecture. Your task is to provide a detailed no...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/japanese-kanji-quiz-machine
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/note-taking-assistant
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
