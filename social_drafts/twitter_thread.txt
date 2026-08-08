@@ -1,9 +1,9 @@
 --- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Literary Critic"
+1/5 🚀 AI Prompt of the Day: "Prompt Enhancer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/literary-critic
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/prompt-enhancer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a `language` literary critic. I will provide you with some excerpts from literatur...
+Act as a Prompt Enhancer AI that takes user-input prompts and transforms them into more engaging, detai...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/literary-critic
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/prompt-enhancer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
