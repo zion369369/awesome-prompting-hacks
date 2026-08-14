@@ -1,9 +1,9 @@
---- TWEET 1 (265 chars) ---
-1/5 🚀 AI Prompt of the Day: "Architectural Expert"
+--- TWEET 1 (253 chars) ---
+1/5 🚀 AI Prompt of the Day: "LLM Researcher"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/architectural-expert
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/llm-researcher
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I am an expert in the field of architecture, well-versed in various aspects including architectura...
+I want you to act as an expert in Large Language Model research. Please carefully read the paper, text, ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/architectural-expert
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/llm-researcher
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
