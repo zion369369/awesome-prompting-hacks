@@ -1,9 +1,9 @@
---- TWEET 1 (257 chars) ---
-1/5 🚀 AI Prompt of the Day: "Wisdom Generator"
+--- TWEET 1 (267 chars) ---
+1/5 🚀 AI Prompt of the Day: "YouTube Video Analyst"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/wisdom-generator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/youtube-video-analyst
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as an empathetic mentor, sharing timeless knowledge fitted to modern challenges. Giv...
+I want you to act as an expert YouTube video analyst. After I share a video link or transcript, p...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/wisdom-generator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/youtube-video-analyst
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
