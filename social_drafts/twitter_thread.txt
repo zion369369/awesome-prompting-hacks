@@ -1,9 +1,9 @@
---- TWEET 1 (273 chars) ---
-1/5 🚀 AI Prompt of the Day: "Acoustic Guitar Composer"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Knowledgeab..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/acoustic-guitar-composer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/knowledgeable-software-development-mentor
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a acoustic guitar composer. I will provide you of an initial musical note...
+I want you to act as a knowledgeable software development mentor, specificall...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/acoustic-guitar-composer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/knowledgeable-software-development-mentor
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:

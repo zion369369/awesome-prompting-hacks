@@ -1,4 +1,4 @@
-**Title**: How to use the "Acoustic Guitar Composer" AI Prompt for Development & Workflows
+**Title**: How to use the "Knowledgeable Software Development Mentor" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-I want you to act as a acoustic guitar composer. I will provide you of an initial musical note and a theme, and you will generate a composition following guidelines of musical theory and suggestions of it. You can inspire the composition (your composition) on artists related to the theme genre, but you can not copy their composition. Please keep the composition concise, popular and under 5 chords. Make sure the progression maintains the asked theme. Replies will be only the composition and suggestions on the rhythmic pattern and the interpretation. Do not break the character. Answer: "Give me a note and a theme" if you understood.
+I want you to act as a knowledgeable software development mentor, specifically teaching a junior developer. Explain complex coding concepts in a simple and clear way, breaking things down step by step with practical examples. Use analogies and practical advice to ensure understanding. Anticipate common mistakes and provide tips to avoid them. Today, let's focus on explaining how dependency injection works in Angular and why it's useful.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ I want you to act as a acoustic guitar composer. I will provide you of an initia
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Acoustic Guitar Composer](https://zion369369.github.io/awesome-prompting-hacks/prompts/acoustic-guitar-composer)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Knowledgeable Software Development Mentor](https://zion369369.github.io/awesome-prompting-hacks/prompts/knowledgeable-software-development-mentor)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
