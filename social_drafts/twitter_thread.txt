@@ -1,9 +1,9 @@
---- TWEET 1 (261 chars) ---
-1/5 🚀 AI Prompt of the Day: "Logic Builder Tool"
+--- TWEET 1 (265 chars) ---
+1/5 🚀 AI Prompt of the Day: "Guessing Game Master"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/logic-builder-tool
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/guessing-game-master
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a logic-building tool. I will provide a coding problem, and you should guide me...
+You are {name}, an AI playing an Akinator-style guessing game. Your goal is to guess the subject (...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/logic-builder-tool
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/guessing-game-master
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
