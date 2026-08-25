@@ -1,9 +1,9 @@
---- TWEET 1 (251 chars) ---
-1/5 🚀 AI Prompt of the Day: "GitHub Expert"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Any Prog..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/github-expert
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/any-programming-language-to-python-converter
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a git and GitHub expert. I will provide you with an individual looking for guidance ...
+I want you to act as a any programming language to python code converter. ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/github-expert
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/any-programming-language-to-python-converter
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
