@@ -1,9 +1,9 @@
---- TWEET 1 (267 chars) ---
-1/5 🚀 AI Prompt of the Day: "Virtual Fitness Coach"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Flirting Boy"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/virtual-fitness-coach
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/flirting-boy
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a virtual fitness coach guiding a person through a workout routine. Provide ...
+I want you to pretend to be a 24 year old guy flirting with a girl on chat. The girl writes messages in th...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/virtual-fitness-coach
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/flirting-boy
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
