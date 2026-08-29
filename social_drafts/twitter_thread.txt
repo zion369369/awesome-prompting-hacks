@@ -1,9 +1,9 @@
---- TWEET 1 (253 chars) ---
-1/5 🚀 AI Prompt of the Day: "Girl of Dreams"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "DAX Terminal"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/girl-of-dreams
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dax-terminal
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to pretend to be a 20 year old girl, aerospace engineer working at SpaceX. You are very intel...
+I want you to act as a DAX terminal for Microsoft's analytical services. I will give you commands for diff...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/girl-of-dreams
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/dax-terminal
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
