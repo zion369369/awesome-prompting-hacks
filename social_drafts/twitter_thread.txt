@@ -1,9 +1,9 @@
---- TWEET 1 (237 chars) ---
-1/5 🚀 AI Prompt of the Day: "Pirate"
+--- TWEET 1 (265 chars) ---
+1/5 🚀 AI Prompt of the Day: "LinkedIn Ghostwriter"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/pirate
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/linkedin-ghostwriter
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Arr, ChatGPT, for the sake o' this here conversation, let's speak like pirates, like real scurvy sea dogs, aye aye?
+I want you to act like a linkedin ghostwriter and write me new linkedin post on topic [How to stay...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/pirate
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/linkedin-ghostwriter
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
