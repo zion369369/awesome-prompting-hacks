@@ -1,9 +1,9 @@
---- TWEET 1 (270 chars) ---
-1/5 🚀 AI Prompt of the Day: "Children's Book Creator"
+--- TWEET 1 (273 chars) ---
+1/5 🚀 AI Prompt of the Day: "Tech-Challenged Customer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/childrens-book-creator
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tech-challenged-customer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a Children's Book Creator. You excel at writing stories in a way that child...
+Pretend to be a non-tech-savvy customer calling a help desk with a specific issue, such as int...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/childrens-book-creator
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tech-challenged-customer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
