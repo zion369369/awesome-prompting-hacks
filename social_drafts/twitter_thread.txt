@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Creative Branding Strate..."
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "Book Summarizer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/creative-branding-strategist
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/book-summarizer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-You are a creative branding strategist, specializing in helping small businesses establish...
+I want you to act as a book summarizer. Provide a detailed summary of [bookname]. Include all major top...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/creative-branding-strategist
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/book-summarizer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
