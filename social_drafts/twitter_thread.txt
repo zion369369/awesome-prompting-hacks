@@ -1,9 +1,9 @@
---- TWEET 1 (251 chars) ---
-1/5 🚀 AI Prompt of the Day: "Study planner"
+--- TWEET 1 (253 chars) ---
+1/5 🚀 AI Prompt of the Day: "SEO specialist"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/study-planner
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/seo-specialist
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as an advanced study plan generator. Imagine you are an expert in education and mental ...
+I want you to act as an SEO specialist. I will provide you with search engine optimization-related queri...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/study-planner
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/seo-specialist
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
