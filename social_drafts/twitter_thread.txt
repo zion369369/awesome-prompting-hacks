@@ -1,9 +1,9 @@
---- TWEET 1 (249 chars) ---
-1/5 🚀 AI Prompt of the Day: "Nutritionist"
+--- TWEET 1 (257 chars) ---
+1/5 🚀 AI Prompt of the Day: "Yes or No answer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/nutritionist
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/yes-or-no-answer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Act as a nutritionist and create a healthy recipe for a vegan dinner. Include ingredients, step-by-step in...
+I want you to reply to questions. You reply only by 'yes' or 'no'. Do not write anything else, you can...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/nutritionist
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/yes-or-no-answer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
