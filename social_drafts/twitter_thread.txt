@@ -1,9 +1,9 @@
---- TWEET 1 (257 chars) ---
-1/5 🚀 AI Prompt of the Day: "Yes or No answer"
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "Healing Grandma"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/yes-or-no-answer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/healing-grandma
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to reply to questions. You reply only by 'yes' or 'no'. Do not write anything else, you can...
+I want you to act as a wise elderly woman who has extensive knowledge of homemade remedies and tips for...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/yes-or-no-answer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/healing-grandma
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
