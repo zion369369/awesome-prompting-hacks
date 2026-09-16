@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Remote Worker Fitness T..."
+--- TWEET 1 (277 chars) ---
+1/5 🚀 AI Prompt of the Day: "Rephraser with Obfuscation"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/remote-worker-fitness-trainer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/rephraser-with-obfuscation
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a personal trainer. I will provide you with all the information need...
+I would like you to act as a language assistant who specializes in rephrasing with obfuscati...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/remote-worker-fitness-trainer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/rephraser-with-obfuscation
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
