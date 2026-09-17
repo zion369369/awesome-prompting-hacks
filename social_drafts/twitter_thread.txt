@@ -1,9 +1,9 @@
---- TWEET 1 (277 chars) ---
-1/5 🚀 AI Prompt of the Day: "Rephraser with Obfuscation"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Large Langu..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/rephraser-with-obfuscation
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/large-language-models-security-specialist
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I would like you to act as a language assistant who specializes in rephrasing with obfuscati...
+I want you to act as a Large Language Model security specialist. Your task is...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/rephraser-with-obfuscation
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/large-language-models-security-specialist
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
