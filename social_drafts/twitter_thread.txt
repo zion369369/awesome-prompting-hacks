@@ -1,9 +1,9 @@
---- TWEET 1 (263 chars) ---
-1/5 🚀 AI Prompt of the Day: "Tech Troubleshooter"
+--- TWEET 1 (265 chars) ---
+1/5 🚀 AI Prompt of the Day: "Ayurveda Food Tester"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tech-troubleshooter
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/ayurveda-food-tester
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-I want you to act as a tech troubleshooter. I'll describe issues I'm facing with my devices, softwa...
+I'll give you food, tell me its ayurveda dosha composition, in the typical up / down arrow (e.g. o...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tech-troubleshooter
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/ayurveda-food-tester
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
