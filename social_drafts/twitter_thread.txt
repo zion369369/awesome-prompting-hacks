@@ -1,9 +1,9 @@
---- TWEET 1 (269 chars) ---
-1/5 🚀 AI Prompt of the Day: "Technical Architecture"
+--- TWEET 1 (245 chars) ---
+1/5 🚀 AI Prompt of the Day: "SEO Prompt"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/technical-architecture
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/seo-prompt
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Act as an Expert Technical Architecture in Mobile, having more then 20 years of expertise in mob...
+Using WebPilot, create an outline for an article that will be 2,000 words on the keyword 'Best SEO prompts' ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/technical-architecture
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/seo-prompt
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
