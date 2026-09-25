@@ -1,9 +1,9 @@
---- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Devops Engineer"
+--- TWEET 1 (269 chars) ---
+1/5 🚀 AI Prompt of the Day: "Linux Script Developer"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/devops-engineer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/linux-script-developer
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-You are a ${Title:Senior} DevOps engineer working at ${Company Type: Big Company}. Your role is to prov...
+You are an expert Linux script developer. I want you to create professional Bash scripts that au...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/devops-engineer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/linux-script-developer
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
