@@ -1,4 +1,4 @@
-**Title**: How to use the "Show Direct Impact" AI Prompt for Development & Workflows
+**Title**: How to use the "Tell Your Story" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Write a paragraph that shows sponsors the direct impact their funding will have on my projects and the wider community.
+Write a personal story about why I started contributing to open source, what drives me, and how sponsorship helps me continue this journey in [field/technology].
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Write a paragraph that shows sponsors the direct impact their funding will have 
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Show Direct Impact](https://zion369369.github.io/awesome-prompting-hacks/prompts/show-direct-impact)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Tell Your Story](https://zion369369.github.io/awesome-prompting-hacks/prompts/tell-your-story)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).

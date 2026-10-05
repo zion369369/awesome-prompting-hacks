@@ -1,9 +1,9 @@
---- TWEET 1 (261 chars) ---
-1/5 🚀 AI Prompt of the Day: "Show Direct Impact"
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "Tell Your Story"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/show-direct-impact
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tell-your-story
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write a paragraph that shows sponsors the direct impact their funding will have on my projects and t...
+Write a personal story about why I started contributing to open source, what drives me, and how sponsor...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/show-direct-impact
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tell-your-story
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
