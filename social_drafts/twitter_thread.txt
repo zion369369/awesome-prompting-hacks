@@ -1,9 +1,9 @@
 --- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Tell Your Story"
+1/5 🚀 AI Prompt of the Day: "Monthly Updates"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tell-your-story
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/monthly-updates
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write a personal story about why I started contributing to open source, what drives me, and how sponsor...
+Create a template for monthly sponsor updates that includes progress, challenges, wins, and upcoming fe...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/tell-your-story
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/monthly-updates
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
