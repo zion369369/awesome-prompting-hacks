@@ -1,9 +1,9 @@
 --- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Monthly Updates"
+1/5 🚀 AI Prompt of the Day: "Success Stories"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/monthly-updates
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/success-stories
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a template for monthly sponsor updates that includes progress, challenges, wins, and upcoming fe...
+Write 3-5 brief success stories or testimonials from users who have benefited from [project name], show...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/monthly-updates
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/success-stories
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
