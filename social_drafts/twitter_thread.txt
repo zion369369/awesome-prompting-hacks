@@ -1,9 +1,9 @@
---- TWEET 1 (255 chars) ---
-1/5 🚀 AI Prompt of the Day: "Success Stories"
+--- TWEET 1 (261 chars) ---
+1/5 🚀 AI Prompt of the Day: "Announce Milestone"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/success-stories
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/announce-milestone
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write 3-5 brief success stories or testimonials from users who have benefited from [project name], show...
+Write an announcement for my Sponsors page about a new milestone or feature in [project], encouragin...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/success-stories
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/announce-milestone
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
