@@ -1,4 +1,4 @@
-**Title**: How to use the "Announce Milestone" AI Prompt for Development & Workflows
+**Title**: How to use the "Create a Professional Bio" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Write an announcement for my Sponsors page about a new milestone or feature in [project], encouraging new and existing sponsors to get involved.
+Write a GitHub Sponsors bio for my profile that highlights my experience in [your field], the impact of my open source work, and my commitment to community growth.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Write an announcement for my Sponsors page about a new milestone or feature in [
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Announce Milestone](https://zion369369.github.io/awesome-prompting-hacks/prompts/announce-milestone)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Create a Professional Bio](https://zion369369.github.io/awesome-prompting-hacks/prompts/create-a-professional-bio)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
