@@ -1,9 +1,9 @@
---- TWEET 1 (275 chars) ---
-1/5 🚀 AI Prompt of the Day: "Create a Professional Bio"
+--- TWEET 1 (255 chars) ---
+1/5 🚀 AI Prompt of the Day: "Time Commitment"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/create-a-professional-bio
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/time-commitment
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write a GitHub Sponsors bio for my profile that highlights my experience in [your field], the...
+Explain how sponsorship would allow me to dedicate [X hours/days] per week/month to open source, compar...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/create-a-professional-bio
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/time-commitment
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
