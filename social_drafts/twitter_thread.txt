@@ -1,9 +1,9 @@
---- TWEET 1 (253 chars) ---
-1/5 🚀 AI Prompt of the Day: "Creative Perks"
+--- TWEET 1 (269 chars) ---
+1/5 🚀 AI Prompt of the Day: "Explain Funding Impact"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/creative-perks
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/explain-funding-impact
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -14,14 +14,14 @@ Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hac
 
 Establish an expert persona in the LLM runtime in seconds.
 
---- TWEET 3 (276 chars) ---
+--- TWEET 3 (280 chars) ---
 3/5 📋 Prompt Preview:
 
 """
-Suggest creative perks or acknowledgments for sponsors to foster a sense of belonging and appreciation.
+Create a section for my Sponsors page that explains how funding will help me dedicate more time ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/creative-perks
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/explain-funding-impact
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:

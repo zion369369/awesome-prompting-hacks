@@ -1,4 +1,4 @@
-**Title**: How to use the "Creative Perks" AI Prompt for Development & Workflows
+**Title**: How to use the "Explain Funding Impact" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Suggest creative perks or acknowledgments for sponsors to foster a sense of belonging and appreciation.
+Create a section for my Sponsors page that explains how funding will help me dedicate more time to [project/topics], support new contributors, and ensure the sustainability of my open source work.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Suggest creative perks or acknowledgments for sponsors to foster a sense of belo
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Creative Perks](https://zion369369.github.io/awesome-prompting-hacks/prompts/creative-perks)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Explain Funding Impact](https://zion369369.github.io/awesome-prompting-hacks/prompts/explain-funding-impact)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
