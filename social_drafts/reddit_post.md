@@ -1,4 +1,4 @@
-**Title**: How to use the "Impact Metrics" AI Prompt for Development & Workflows
+**Title**: How to use the "Write Tier Descriptions" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Create a compelling data-driven section showing the impact of [project name]: downloads, users helped, issues resolved, and community growth statistics.
+Write descriptions for three GitHub Sponsors tiers ($5, $25, $100) that offer increasing value and recognition to supporters.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Create a compelling data-driven section showing the impact of [project name]: do
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Impact Metrics](https://zion369369.github.io/awesome-prompting-hacks/prompts/impact-metrics)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Write Tier Descriptions](https://zion369369.github.io/awesome-prompting-hacks/prompts/write-tier-descriptions)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
