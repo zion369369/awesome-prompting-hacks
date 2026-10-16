@@ -1,9 +1,9 @@
---- TWEET 1 (271 chars) ---
-1/5 🚀 AI Prompt of the Day: "Write Tier Descriptions"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Student Tier"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/write-tier-descriptions
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/student-tier
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write descriptions for three GitHub Sponsors tiers ($5, $25, $100) that offer increasing value ...
+Create a special $1-2 student sponsorship tier with meaningful benefits that acknowledges their support wh...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/write-tier-descriptions
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/student-tier
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
