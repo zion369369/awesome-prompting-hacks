@@ -1,9 +1,9 @@
---- TWEET 1 (249 chars) ---
-1/5 🚀 AI Prompt of the Day: "Student Tier"
+--- TWEET 1 (267 chars) ---
+1/5 🚀 AI Prompt of the Day: "Suggest Pricing Tiers"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/student-tier
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/suggest-pricing-tiers
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a special $1-2 student sponsorship tier with meaningful benefits that acknowledges their support wh...
+Suggest ideas for pricing tiers on GitHub Sponsors, including unique benefits at each level for i...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/student-tier
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/suggest-pricing-tiers
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
