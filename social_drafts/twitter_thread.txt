@@ -1,9 +1,9 @@
---- TWEET 1 (267 chars) ---
-1/5 🚀 AI Prompt of the Day: "Suggest Pricing Tiers"
+--- TWEET 1 (273 chars) ---
+1/5 🚀 AI Prompt of the Day: "Create Project Spotlight"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/suggest-pricing-tiers
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/create-project-spotlight
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Suggest ideas for pricing tiers on GitHub Sponsors, including unique benefits at each level for i...
+Draft a brief 'Project Spotlight' section for my Sponsors page, showcasing the goals, achievem...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/suggest-pricing-tiers
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/create-project-spotlight
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
