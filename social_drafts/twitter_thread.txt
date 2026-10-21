@@ -1,9 +1,9 @@
---- TWEET 1 (251 chars) ---
-1/5 🚀 AI Prompt of the Day: "Future Vision"
+--- TWEET 1 (275 chars) ---
+1/5 🚀 AI Prompt of the Day: "Showcase Top Repositories"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/future-vision
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/showcase-top-repositories
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Write a compelling vision statement about where I see [project/work] going in the next 2-3 years and how ...
+Summarize my top three repositories ([repo1], [repo2], [repo3]) in a way that inspires potent...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/future-vision
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/showcase-top-repositories
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
