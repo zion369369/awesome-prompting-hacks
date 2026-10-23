@@ -1,9 +1,9 @@
---- TWEET 1 (247 chars) ---
-1/5 🚀 AI Prompt of the Day: "3D FPS Game"
+--- TWEET 1 (257 chars) ---
+1/5 🚀 AI Prompt of the Day: "Interactive Quiz"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-fps-game
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/interactive-quiz
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Develop a first-person shooter game using Three.js and JavaScript. Create detailed weapon models with reali...
+Develop a comprehensive interactive quiz application with HTML5, CSS3 and JavaScript. Create an engagi...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-fps-game
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/interactive-quiz
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
