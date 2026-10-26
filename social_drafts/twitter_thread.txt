@@ -1,9 +1,9 @@
---- TWEET 1 (277 chars) ---
-1/5 🚀 AI Prompt of the Day: "Advanced Color Picker Tool"
+--- TWEET 1 (280 chars) ---
+1/5 🚀 AI Prompt of the Day: "Secure Password Genera..."
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/advanced-color-picker-tool
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/secure-password-generator-tool
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Build a professional-grade color tool with HTML5, CSS3 and JavaScript for designers and deve...
+Create a comprehensive secure password generator using HTML5, CSS3 and JavaScript with c...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/advanced-color-picker-tool
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/secure-password-generator-tool
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
