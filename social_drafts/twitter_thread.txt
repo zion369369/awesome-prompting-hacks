@@ -1,9 +1,9 @@
---- TWEET 1 (280 chars) ---
-1/5 🚀 AI Prompt of the Day: "Secure Password Genera..."
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Music Player"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/secure-password-generator-tool
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/music-player
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a comprehensive secure password generator using HTML5, CSS3 and JavaScript with c...
+Develop a web-based music player using HTML5, CSS3, and JavaScript with the Web Audio API. Create a modern...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/secure-password-generator-tool
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/music-player
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
