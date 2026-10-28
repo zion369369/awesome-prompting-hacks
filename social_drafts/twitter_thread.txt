@@ -1,9 +1,9 @@
---- TWEET 1 (249 chars) ---
-1/5 🚀 AI Prompt of the Day: "Music Player"
+--- TWEET 1 (247 chars) ---
+1/5 🚀 AI Prompt of the Day: "Drawing App"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/music-player
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/drawing-app
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Develop a web-based music player using HTML5, CSS3, and JavaScript with the Web Audio API. Create a modern...
+Create an interactive drawing application using HTML5 Canvas, CSS3, and JavaScript. Build a clean interface...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/music-player
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/drawing-app
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
