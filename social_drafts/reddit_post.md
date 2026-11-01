@@ -1,4 +1,4 @@
-**Title**: How to use the "Budget Tracker" AI Prompt for Development & Workflows
+**Title**: How to use the "Weather Dashboard" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Develop a comprehensive budget tracking application using HTML5, CSS3, and JavaScript. Create an intuitive dashboard showing income, expenses, savings, and budget status. Implement transaction management with categories, tags, and recurring transactions. Add interactive charts and graphs for expense analysis by category and time period. Include budget goal setting with progress tracking and alerts. Support multiple accounts and transfer between accounts. Implement receipt scanning and storage using the device camera. Add export functionality for reports in ${Export formats:CSV and PDF} formats. Create a responsive design with mobile-first approach. Include data backup and restore functionality. Add forecasting features to predict future financial status based on current trends.
+Build a comprehensive weather dashboard using HTML5, CSS3, JavaScript and the OpenWeatherMap API. Create a visually appealing interface showing current weather conditions with appropriate icons and background changes based on weather/time of day. Display a detailed 5-day forecast with expandable hourly breakdown for each day. Implement location search with autocomplete and history, supporting both city names and coordinates. Add geolocation support to automatically detect user's location. Include toggles for temperature units (°C/°F) and time formats. Display severe weather alerts with priority highlighting. Show detailed meteorological data including wind speed/direction, humidity, pressure, UV index, and air quality when available. Include sunrise/sunset times with visual indicators. Create a fully responsive layout using CSS Grid that adapts to all device sizes with appropriate information density.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Develop a comprehensive budget tracking application using HTML5, CSS3, and JavaS
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Budget Tracker](https://zion369369.github.io/awesome-prompting-hacks/prompts/budget-tracker)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Weather Dashboard](https://zion369369.github.io/awesome-prompting-hacks/prompts/weather-dashboard)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
