@@ -1,4 +1,4 @@
-**Title**: How to use the "File Encryption Tool" AI Prompt for Development & Workflows
+**Title**: How to use the "Code Snippet Manager" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Create a client-side file encryption tool using HTML5, CSS3, and JavaScript with the Web Crypto API. Build a drag-and-drop interface for file selection with progress indicators. Implement AES-256-GCM encryption with secure key derivation from passwords (PBKDF2). Add support for encrypting multiple files simultaneously with batch processing. Include password strength enforcement with entropy calculation. Generate downloadable encrypted files with custom file extension. Create a decryption interface with password verification. Implement secure memory handling with automatic clearing of sensitive data. Add detailed logs of encryption operations without storing sensitive information. Include export/import of encryption keys with proper security warnings. Support for large files using streaming encryption and chunked processing.
+Build a developer-focused code snippet manager using HTML5, CSS3, and JavaScript. Create a clean IDE-like interface with syntax highlighting for 30+ programming languages. Implement a tagging and categorization system for organizing snippets. Add a powerful search function with support for regex and filtering by language/tags. Include code editing with line numbers, indentation guides, and bracket matching. Support public/private visibility settings for each snippet. Implement export/import functionality in JSON and Gist formats. Add keyboard shortcuts for common operations. Create a responsive design that works well on all devices. Include automatic saving with version history. Add copy-to-clipboard functionality with syntax formatting preservation.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Create a client-side file encryption tool using HTML5, CSS3, and JavaScript with
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore File Encryption Tool](https://zion369369.github.io/awesome-prompting-hacks/prompts/file-encryption-tool)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Code Snippet Manager](https://zion369369.github.io/awesome-prompting-hacks/prompts/code-snippet-manager)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
