@@ -1,9 +1,9 @@
---- TWEET 1 (249 chars) ---
-1/5 🚀 AI Prompt of the Day: "Kanban Board"
+--- TWEET 1 (269 chars) ---
+1/5 🚀 AI Prompt of the Day: "Flashcard Study System"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/kanban-board
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/flashcard-study-system
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Build a Kanban project management board using HTML5, CSS3, and JavaScript. Create a flexible board layout ...
+Develop a comprehensive flashcard study system using HTML5, CSS3, and JavaScript. Create an intu...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/kanban-board
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/flashcard-study-system
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
