@@ -1,9 +1,9 @@
---- TWEET 1 (251 chars) ---
-1/5 🚀 AI Prompt of the Day: "Habit Tracker"
+--- TWEET 1 (249 chars) ---
+1/5 🚀 AI Prompt of the Day: "Image Editor"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/habit-tracker
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/image-editor
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a habit tracking application using HTML5, CSS3, and JavaScript. Build a clean interface showing da...
+Develop a web-based image editor using HTML5 Canvas, CSS3, and JavaScript. Create a professional interface...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/habit-tracker
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/image-editor
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
