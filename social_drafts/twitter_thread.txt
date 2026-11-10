@@ -1,9 +1,9 @@
---- TWEET 1 (247 chars) ---
-1/5 🚀 AI Prompt of the Day: "Sudoku Game"
+--- TWEET 1 (245 chars) ---
+1/5 🚀 AI Prompt of the Day: "Chess Game"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/sudoku-game
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chess-game
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create an interactive Sudoku game using HTML5, CSS3, and JavaScript. Build a clean, accessible game board w...
+Develop a feature-rich chess game using HTML5, CSS3, and JavaScript. Create a realistic chessboard with prop...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/sudoku-game
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/chess-game
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
