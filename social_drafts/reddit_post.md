@@ -1,4 +1,4 @@
-**Title**: How to use the "Chess Game" AI Prompt for Development & Workflows
+**Title**: How to use the "URL Shortener" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Develop a feature-rich chess game using HTML5, CSS3, and JavaScript. Create a realistic chessboard with proper piece rendering. Implement standard chess rules with move validation. Add move highlighting and piece movement animation. Include game clock with multiple time control options. Implement notation recording with PGN export. Add game analysis with move evaluation. Include AI opponent with adjustable difficulty levels. Support online play with WebRTC or WebSocket. Add opening book and common patterns recognition. Implement tournament mode with brackets and scoring.
+Build a URL shortening service frontend using HTML5, CSS3, JavaScript and a backend API. Create a clean interface with prominent input field. Implement URL validation and sanitization. Add QR code generation for shortened URLs. Include click tracking and analytics dashboard. Support custom alias creation for URLs. Implement expiration date setting for links. Add password protection option for sensitive URLs. Include copy-to-clipboard functionality with confirmation. Create a responsive design for all devices. Add history of shortened URLs with search and filtering.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Develop a feature-rich chess game using HTML5, CSS3, and JavaScript. Create a re
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Chess Game](https://zion369369.github.io/awesome-prompting-hacks/prompts/chess-game)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore URL Shortener](https://zion369369.github.io/awesome-prompting-hacks/prompts/url-shortener)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
