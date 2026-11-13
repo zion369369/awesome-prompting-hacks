@@ -1,9 +1,9 @@
---- TWEET 1 (259 chars) ---
-1/5 🚀 AI Prompt of the Day: "Typing Speed Test"
+--- TWEET 1 (257 chars) ---
+1/5 🚀 AI Prompt of the Day: "Memory Card Game"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/typing-speed-test
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-card-game
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Build an interactive typing speed test using HTML5, CSS3, and JavaScript. Create a clean interface wi...
+Develop a memory matching card game using HTML5, CSS3, and JavaScript. Create visually appealing card ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/typing-speed-test
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-card-game
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
