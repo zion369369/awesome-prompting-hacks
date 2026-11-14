@@ -1,9 +1,9 @@
---- TWEET 1 (257 chars) ---
-1/5 🚀 AI Prompt of the Day: "Memory Card Game"
+--- TWEET 1 (263 chars) ---
+1/5 🚀 AI Prompt of the Day: "Memory Profiler CLI"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-card-game
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-profiler-cli
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Develop a memory matching card game using HTML5, CSS3, and JavaScript. Create visually appealing card ...
+Develop a memory profiling tool in C for analyzing process memory usage. Implement process attachme...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-card-game
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/memory-profiler-cli
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
