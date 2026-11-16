@@ -1,9 +1,9 @@
---- TWEET 1 (271 chars) ---
-1/5 🚀 AI Prompt of the Day: "File System Indexer CLI"
+--- TWEET 1 (253 chars) ---
+1/5 🚀 AI Prompt of the Day: "3D Racing Game"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/file-system-indexer-cli
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-racing-game
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Build a high-performance file system indexer and search tool in Go. Implement recursive directo...
+Create an exciting 3D racing game using Three.js and JavaScript. Implement realistic vehicle physics wit...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/file-system-indexer-cli
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-racing-game
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
