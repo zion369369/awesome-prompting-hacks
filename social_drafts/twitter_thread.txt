@@ -1,9 +1,9 @@
---- TWEET 1 (259 chars) ---
-1/5 🚀 AI Prompt of the Day: "3D Space Explorer"
+--- TWEET 1 (279 chars) ---
+1/5 🚀 AI Prompt of the Day: "Network Packet Analyzer CLI"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-space-explorer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/network-packet-analyzer-cli
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Build an immersive 3D space exploration game using Three.js and JavaScript. Create a vast universe wi...
+Create a command-line network packet analyzer in C using libpcap. Implement packet capture ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-space-explorer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/network-packet-analyzer-cli
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:

@@ -1,4 +1,4 @@
-**Title**: How to use the "3D Space Explorer" AI Prompt for Development & Workflows
+**Title**: How to use the "Network Packet Analyzer CLI" AI Prompt for Development & Workflows
 
 Hey developers!
 
@@ -6,7 +6,7 @@ Automating tasks with AI is a core skill. Today's featured system prompt from ou
 
 ### ⚡ System Instruction / Prompt:
 ```text
-Build an immersive 3D space exploration game using Three.js and JavaScript. Create a vast universe with procedurally generated planets, stars, and nebulae. Implement realistic spacecraft controls with Newtonian physics. Add detailed planet surfaces with terrain generation and atmospheric effects. Create space stations and outposts for trading and missions. Implement resource collection and cargo management systems. Add alien species with unique behaviors and interactions. Create wormhole travel effects between star systems. Include detailed ship customization and upgrade system. Implement mining and combat mechanics with weapon effects. Add mission system with story elements and objectives.
+Create a command-line network packet analyzer in C using libpcap. Implement packet capture from network interfaces with filtering options. Add protocol analysis for common protocols (TCP, UDP, HTTP, DNS, etc.). Include traffic statistics with bandwidth usage and connection counts. Implement packet decoding with detailed header information. Add export functionality in PCAP and CSV formats. Include alert system for suspicious traffic patterns. Implement connection tracking with state information. Add geolocation lookup for IP addresses. Include command-line arguments for all options with sensible defaults. Implement color-coded output for better readability.
 ```
 
 ### 🔧 How to Use:
@@ -15,6 +15,6 @@ Build an immersive 3D space exploration game using Three.js and JavaScript. Crea
 3. Feed your reference material directly below it.
 
 ---
-* 🚀 **Interactive Version with copy-to-clipboard**: [Explore 3D Space Explorer](https://zion369369.github.io/awesome-prompting-hacks/prompts/3d-space-explorer)
+* 🚀 **Interactive Version with copy-to-clipboard**: [Explore Network Packet Analyzer CLI](https://zion369369.github.io/awesome-prompting-hacks/prompts/network-packet-analyzer-cli)
 * ⭐ **Support the Catalog**: Star our [Awesome Prompting Hacks GitHub Repo](https://github.com/zion369369/awesome-prompting-hacks) to track 5,000+ free prompt templates!
 * 🧩 **Chrome Extension**: Get real-time Prompt Scores directly inside your chat window via the [Hello Prompting Console](https://chromewebstore.google.com/detail/hello-prompting-best-ai-p/idfecahooccghgkjohelhjecjeeeapah?hl=en).
