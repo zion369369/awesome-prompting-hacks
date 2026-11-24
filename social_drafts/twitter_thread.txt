@@ -1,9 +1,9 @@
---- TWEET 1 (253 chars) ---
-1/5 🚀 AI Prompt of the Day: "Pomodoro Timer"
+--- TWEET 1 (275 chars) ---
+1/5 🚀 AI Prompt of the Day: "Multiplayer 3D Plane Game"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/pomodoro-timer
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/multiplayer-3d-plane-game
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a comprehensive pomodoro timer app using HTML5, CSS3 and JavaScript following the time management...
+Create an immersive multiplayer airplane combat game using Three.js, HTML5, CSS3, and JavaScr...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/pomodoro-timer
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/multiplayer-3d-plane-game
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
