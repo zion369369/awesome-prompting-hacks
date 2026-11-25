@@ -1,9 +1,9 @@
---- TWEET 1 (275 chars) ---
-1/5 🚀 AI Prompt of the Day: "Multiplayer 3D Plane Game"
+--- TWEET 1 (243 chars) ---
+1/5 🚀 AI Prompt of the Day: "Todo List"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/multiplayer-3d-plane-game
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/todo-list
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create an immersive multiplayer airplane combat game using Three.js, HTML5, CSS3, and JavaScr...
+Create a responsive todo app with HTML5, CSS3 and vanilla JavaScript. The app should have a modern, clean UI ...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/multiplayer-3d-plane-game
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/todo-list
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
