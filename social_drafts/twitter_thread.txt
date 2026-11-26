@@ -1,9 +1,9 @@
---- TWEET 1 (243 chars) ---
-1/5 🚀 AI Prompt of the Day: "Todo List"
+--- TWEET 1 (267 chars) ---
+1/5 🚀 AI Prompt of the Day: "Scientific Calculator"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/todo-list
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/scientific-calculator
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,10 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-Create a responsive todo app with HTML5, CSS3 and vanilla JavaScript. The app should have a modern, clean UI ...
+Create a comprehensive scientific calculator with HTML5, CSS3 and JavaScript that mimics professi...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/todo-list
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/scientific-calculator
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
