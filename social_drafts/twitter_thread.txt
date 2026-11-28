@@ -1,9 +1,9 @@
---- TWEET 1 (269 chars) ---
-1/5 🚀 AI Prompt of the Day: "Isometric City Diorama"
+--- TWEET 1 (263 chars) ---
+1/5 🚀 AI Prompt of the Day: "The Silent Standoff"
 
 Boost your workflow with this production-grade template calibrated specifically for Roleplay tasks.
 
-Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/isometric-city-diorama
+Read the thread or copy here: https://zion369369.github.io/awesome-prompting-hacks/prompts/the-silent-standoff
 
 --- TWEET 2 (191 chars) ---
 2/5 🔧 Calibration Details:
@@ -18,12 +18,10 @@ Establish an expert persona in the LLM runtime in seconds.
 3/5 📋 Prompt Preview:
 
 """
-{
-  "meta": {
-    "description": "Structured prompt for generating an isometric city diorama in ...
+High-angle top-down view of a dimly lit abandoned courtyard, cracked concrete ground, scattered old...
 """
 
-Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/isometric-city-diorama
+Get the full, un-truncated copy-pasteable prompt template here: https://zion369369.github.io/awesome-prompting-hacks/prompts/the-silent-standoff
 
 --- TWEET 4 (205 chars) ---
 4/5 💡 Execution Tip:
